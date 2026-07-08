@@ -52,17 +52,17 @@
     @apply mx-auto w-full max-w-content px-5 sm:px-8;
   }
 
-  /* ---------- Trapezoid shape system ---------- */
-  /* Escudo — the brand trapezoid (wider top, narrower bottom) */
+  /* ---------- Trapezoid shape system ----------
+     Official escudo orientation (measured from AF-ALLTAK-LOGO-CV):
+     NARROW top, WIDE bottom — the keystone form of the "A" symbol. */
   .clip-escudo {
-    clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
+    clip-path: polygon(14% 0, 86% 0, 100% 100%, 0 100%);
   }
-  /* Keystone — narrower top, wider bottom (the "A" form) */
   .clip-trapezoid {
     clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
   }
   .clip-trapezoid-alt {
-    clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
+    clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
   }
   /* Slanted parallelogram — for dividers and accents */
   .clip-slant {
@@ -76,7 +76,8 @@
   .btn-trapezoid {
     @apply relative inline-flex items-center justify-center gap-2 font-display font-bold uppercase
       tracking-wide text-sm px-8 py-3 transition-all duration-200 overflow-hidden;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    /* official escudo orientation: narrow top, wide bottom */
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
   }
   .btn-trapezoid:hover {
     transform: translateY(-2px);
@@ -104,10 +105,10 @@
     @apply border border-white/50 text-white hover:bg-white hover:text-alltak-black;
   }
 
-  /* Trapezoid tag/eyebrow badge */
+  /* Trapezoid tag/eyebrow badge — official escudo orientation */
   .tag {
     @apply inline-block bg-alltak-blue px-3.5 py-1 font-display text-xs font-bold uppercase tracking-[0.2em] text-white;
-    clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
+    clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
   }
 
   .eyebrow {

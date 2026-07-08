@@ -6,12 +6,12 @@ import * as THREE from 'three'
 // Slow drift + rotation, mouse parallax on the whole group.
 
 function trapezoidGeometry(depth = 0.55) {
-  // escudo: wider top, narrower bottom (matches .clip-escudo)
+  // official escudo orientation: NARROW top, WIDE bottom (keystone "A" form)
   const s = new THREE.Shape()
-  s.moveTo(-1.0, 0.45)
-  s.lineTo(1.0, 0.45)
-  s.lineTo(0.72, -0.45)
-  s.lineTo(-0.72, -0.45)
+  s.moveTo(-0.72, 0.45)
+  s.lineTo(0.72, 0.45)
+  s.lineTo(1.0, -0.45)
+  s.lineTo(-1.0, -0.45)
   s.closePath()
   const g = new THREE.ExtrudeGeometry(s, { depth, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.04, bevelSegments: 2 })
   g.center()
