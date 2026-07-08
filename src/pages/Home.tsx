@@ -2,8 +2,9 @@ import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { YOUTUBE_URL, STORE_URL } from '../data/site'
 
-// three.js scene is heavy — split it out; it streams in behind the preloader.
+// three.js scenes are heavy — split them out; they stream in behind the preloader.
 const Hero3D = lazy(() => import('../components/Hero3D'))
+const Car3D = lazy(() => import('../components/Car3D'))
 import BannerRoll from '../components/BannerRoll'
 import StickyUnits from '../components/StickyUnits'
 import HScroll from '../components/HScroll'
@@ -14,7 +15,6 @@ import SplitWords from '../components/SplitWords'
 import Counter from '../components/Counter'
 import Magnetic from '../components/Magnetic'
 import Logo from '../components/Logo'
-import CarSVG from '../components/CarSVG'
 
 export default function Home() {
   return (
@@ -166,11 +166,12 @@ export default function Home() {
             </Magnetic>
           </Reveal>
           <Reveal delay={140} dir="right">
-            <div className="group relative">
+            <div className="relative h-[340px] md:h-[440px]">
               <div className="absolute inset-x-8 bottom-4 h-16 rounded-[50%] bg-alltak-blue/25 blur-2xl" aria-hidden />
-              <div className="transition-transform duration-500 group-hover:-translate-y-2 group-hover:rotate-1">
-                <CarSVG model="coupe" color="#0080ff" finish="brilho" />
-              </div>
+              {/* the SAME 3D car used inside the visualizer, spinning in Azul Alltak */}
+              <Suspense fallback={null}>
+                <Car3D finish="brilho" color="#0080ff" className="h-full w-full cursor-hot" />
+              </Suspense>
             </div>
           </Reveal>
         </div>
