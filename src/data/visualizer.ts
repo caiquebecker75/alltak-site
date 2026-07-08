@@ -132,7 +132,7 @@ export const FINISHES: Finish[] = [
 
 export type CarModel = { key: string; label: string }
 export const CAR_MODELS: CarModel[] = [
-  { key: 'coupe', label: 'Esportivo' },
-  { key: 'sedan', label: 'Sedan' },
-  { key: 'suv', label: 'SUV' },
+  { key: 'coupe', label: 'Cupê GT' },
+  { key: 'sedan', label: 'Sedã Esportivo' },
+  { key: 'suv', label: 'SUV Coupé' },
 ]

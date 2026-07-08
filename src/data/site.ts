@@ -1,6 +1,9 @@
 // Central content model for the Alltak institutional site.
 // Structure follows "Alltak _ Organização Site" (Drive) and the
 // "AJUSTES SITE" refino briefing.
+import subWraps from '../brand/sub-wraps.png'
+import subDecor from '../brand/sub-decor.png'
+import subSigns from '../brand/sub-signs.png'
 
 export const STORE_URL = 'https://loja.alltak.com.br'
 export const YOUTUBE_URL = 'https://www.youtube.com/user/alltakAdesivos'
@@ -31,6 +34,12 @@ export type Unit = {
   bg: string // tailwind bg class
   accent: string // tailwind text class
   skull?: boolean
+  /** official submarca lockup (from AF-ALLTAK-SUBMARCAS) */
+  logo: string
+  /** render the lockup white (for dark-on-dark cases like Wraps on black) */
+  logoInvert?: boolean
+  /** submarca identity color (from the brand final files) */
+  color: string
 }
 
 // Business units — WRAPS (preto), DECOR (azul escuro), SIGNS (azul escuro)
@@ -45,6 +54,9 @@ export const UNITS: Unit[] = [
     bg: 'bg-alltak-black',
     accent: 'text-alltak-blue',
     skull: true,
+    logo: subWraps,
+    logoInvert: true, // black lockup on black section → white
+    color: '#0080ff',
   },
   {
     key: 'decor',
@@ -55,6 +67,8 @@ export const UNITS: Unit[] = [
     image: './assets/decor_01.avif',
     bg: 'bg-alltak-navy',
     accent: 'text-alltak-blue',
+    logo: subDecor,
+    color: '#b49a5e', // dourado da submarca Decor
   },
   {
     key: 'signs',
@@ -65,6 +79,8 @@ export const UNITS: Unit[] = [
     image: './assets/sign_01.avif',
     bg: 'bg-alltak-navy2',
     accent: 'text-alltak-blue',
+    logo: subSigns,
+    color: '#f4711f', // laranja da submarca Signs
   },
 ]
 

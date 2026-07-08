@@ -1,5 +1,6 @@
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
+import subAcademy from '../brand/sub-academy.png'
 
 const CURSOS = [
   { nome: 'Academia de Envelopamento', nivel: 'Básico', desc: 'Fundamentos de aplicação e manuseio dos materiais.' },
@@ -13,6 +14,12 @@ export default function Cursos() {
   return (
     <>
       <PageHeader eyebrow="Academia Alltak" title="Cursos">
+        <img
+          src={subAcademy}
+          alt="Alltak Academy"
+          className="mb-4 h-10 w-auto select-none md:h-12"
+          draggable={false}
+        />
         Treinamentos para elevar o nível da sua aplicação. Sem turmas com data aberta
         no momento — deixe seu interesse para as próximas.
       </PageHeader>

@@ -60,11 +60,15 @@ export default function StickyUnits() {
               <div className="container-x relative grid h-full items-center gap-10 md:grid-cols-2">
                 <div>
                   <span className="tag">Unidade de negócio · 0{i + 1}/0{n}</span>
-                  <h2 className="mt-6 text-7xl text-white md:text-9xl">
-                    <span className="block text-2xl font-bold text-white/40 md:text-3xl">Alltak</span>
-                    {u.name}
-                  </h2>
-                  <p className="mt-3 font-display text-lg font-bold uppercase tracking-wide text-alltak-blue">
+                  {/* official submarca lockup */}
+                  <img
+                    src={u.logo}
+                    alt={`Alltak ${u.name}`}
+                    className="mt-8 h-14 w-auto select-none md:h-20"
+                    style={u.logoInvert ? { filter: 'brightness(0) invert(1)' } : undefined}
+                    draggable={false}
+                  />
+                  <p className="mt-5 font-display text-lg font-bold uppercase tracking-wide" style={{ color: u.color }}>
                     {u.tagline}
                   </p>
                   <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70">{u.description}</p>
@@ -82,7 +86,7 @@ export default function StickyUnits() {
                   >
                     <img src={u.image} alt={`Alltak ${u.name}`} className="h-full w-full object-cover" loading="lazy" />
                   </div>
-                  <div className="absolute -bottom-3 left-8 h-6 w-28 bg-alltak-blue clip-escudo" aria-hidden />
+                  <div className="absolute -bottom-3 left-8 h-6 w-28 clip-escudo" style={{ background: u.color }} aria-hidden />
                 </div>
               </div>
             </section>
