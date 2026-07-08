@@ -1,30 +1,58 @@
-// Infinite scrolling brand strip — a trapezoid separator with attitude.
+import { useEffect, useRef } from 'react'
+
+// Infinite scrolling brand strip. The whole track skews with scroll velocity,
+// so fast scrolling gives the type a sense of drag/speed.
 export default function Marquee({
   items,
   reverse = false,
   className = '',
+  big = false,
 }: {
   items: string[]
   reverse?: boolean
   className?: string
+  big?: boolean
 }) {
+  const trackRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = trackRef.current
+    if (!el) return
+    let lastY = scrollY
+    let skew = 0
+    let raf = 0
+    const loop = () => {
+      const dy = scrollY - lastY
+      lastY = scrollY
+      const target = Math.max(-12, Math.min(12, dy * 0.35))
+      skew += (target - skew) * 0.12
+      el.style.transform = `skewX(${skew}deg)`
+      raf = requestAnimationFrame(loop)
+    }
+    raf = requestAnimationFrame(loop)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
   const row = [...items, ...items]
   return (
     <div className={`marquee-mask overflow-hidden ${className}`}>
-      <div
-        className={`flex w-max whitespace-nowrap ${reverse ? 'animate-marquee-rev' : 'animate-marquee'}`}
-      >
-        {row.map((t, i) => (
-          <span key={i} className="flex items-center">
-            <span className="px-6 font-display text-2xl font-extrabold uppercase tracking-tight md:text-3xl">
-              {t}
+      <div ref={trackRef} className="will-change-transform">
+        <div className={`flex w-max whitespace-nowrap ${reverse ? 'animate-marquee-rev' : 'animate-marquee'}`}>
+          {row.map((t, i) => (
+            <span key={i} className="flex items-center">
+              <span
+                className={`px-6 font-display font-black uppercase tracking-tight ${
+                  big ? 'text-5xl md:text-7xl' : 'text-2xl md:text-3xl'
+                }`}
+              >
+                {t}
+              </span>
+              <span aria-hidden>
+                <span className={`inline-block bg-current align-middle clip-escudo ${big ? 'h-5 w-8' : 'h-3 w-5'}`} style={{ opacity: 0.6 }} />
+              </span>
             </span>
-            <span className="text-alltak-blue" aria-hidden>
-              {/* trapezoid bullet */}
-              <span className="inline-block h-3 w-5 bg-alltak-blue clip-escudo align-middle" />
-            </span>
-          </span>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

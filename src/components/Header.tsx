@@ -1,93 +1,136 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { NAV } from '../data/site'
 import Logo from './Logo'
+import Magnetic from './Magnetic'
 
+// Header: logo + magnetic menu trigger. Navigation lives in a fullscreen
+// overlay with giant staggered links and a trapezoid wipe entrance.
+// The bar hides on scroll-down and returns on scroll-up.
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [hidden, setHidden] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { pathname } = useLocation()
+  const lastY = useRef(0)
+  const { pathname, hash } = useLocation()
 
-  useEffect(() => setOpen(false), [pathname])
+  useEffect(() => setOpen(false), [pathname, hash])
+
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24)
+    const onScroll = () => {
+      const y = scrollY
+      setScrolled(y > 30)
+      setHidden(y > 140 && y > lastY.current)
+      lastY.current = y
+    }
     onScroll()
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
+    addEventListener('scroll', onScroll, { passive: true })
+    return () => removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [open])
+
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled || open ? 'bg-alltak-black/95 backdrop-blur border-b border-white/10' : 'bg-gradient-to-b from-black/70 to-transparent'
-      }`}
-    >
-      <div className="container-x flex h-16 items-center justify-between md:h-20">
-        <Link to="/" aria-label="Alltak — início">
-          <Logo className="h-6 md:h-7" />
-        </Link>
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-[80] transition-all duration-500 ${
+          hidden && !open ? '-translate-y-full' : 'translate-y-0'
+        } ${scrolled && !open ? 'bg-black/85 backdrop-blur border-b border-white/10' : ''}`}
+      >
+        <div className="container-x flex h-16 items-center justify-between md:h-20">
+          <Link to="/" aria-label="Alltak — início" className="relative z-[92]">
+            <Logo className="h-6 md:h-7" />
+          </Link>
 
-        <nav className="hidden items-center gap-7 md:flex">
-          {NAV.map((item) =>
-            item.external ? (
-              <a
-                key={item.label}
-                href={item.to}
-                target="_blank"
-                rel="noreferrer"
-                className="link-underline font-display text-sm font-semibold uppercase tracking-wide text-white/85 transition-colors hover:text-alltak-blue"
+          <div className="flex items-center gap-5">
+            <Link
+              to="/visualizador"
+              className="tag !hidden transition-transform hover:-translate-y-0.5 md:!inline-block"
+            >
+              Visualizador
+            </Link>
+            <Magnetic strength={0.3}>
+              <button
+                onClick={() => setOpen((v) => !v)}
+                aria-label="Menu"
+                aria-expanded={open}
+                className="relative z-[92] flex h-12 w-14 flex-col items-center justify-center gap-[7px] bg-alltak-blue clip-escudo"
               >
-                {item.label} <span aria-hidden>↗</span>
-              </a>
-            ) : (
-              <Link
+                <span className={`h-[3px] w-6 bg-white transition-all duration-300 ${open ? 'translate-y-[5px] rotate-45' : ''}`} />
+                <span className={`h-[3px] w-6 bg-white transition-all duration-300 ${open ? '-translate-y-[5px] -rotate-45' : ''}`} />
+              </button>
+            </Magnetic>
+          </div>
+        </div>
+      </header>
+
+      {/* Fullscreen overlay menu */}
+      <div
+        className="fixed inset-0 z-[90] bg-alltak-navyDeep"
+        style={{
+          clipPath: open ? 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' : 'polygon(0 0, 100% 0, 86% 0, 0 0)',
+          transition: 'clip-path .7s cubic-bezier(.76,0,.24,1)',
+          pointerEvents: open ? 'auto' : 'none',
+        }}
+      >
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.07] bg-cover bg-center"
+          style={{ backgroundImage: "url('./assets/caveiras.avif')" }}
+          aria-hidden
+        />
+        {/* decorative trapezoids */}
+        <div className="pointer-events-none absolute right-[-6%] top-[12%] h-40 w-72 rotate-12 bg-alltak-blue/15 clip-escudo" aria-hidden />
+        <div className="pointer-events-none absolute bottom-[10%] left-[-4%] h-28 w-56 -rotate-6 bg-alltak-blue/10 clip-escudo" aria-hidden />
+
+        <nav className="container-x flex h-full flex-col justify-center">
+          {NAV.map((item, i) => {
+            const inner = (
+              <span className="group flex items-baseline gap-5">
+                <span className="font-display text-sm font-bold text-alltak-blue">0{i + 1}</span>
+                <span className="font-display text-5xl font-black uppercase leading-[1.05] text-white transition-all duration-300 group-hover:translate-x-4 group-hover:text-alltak-blue sm:text-6xl md:text-7xl">
+                  {item.label}
+                </span>
+                {item.external && <span className="text-2xl text-white/40">↗</span>}
+              </span>
+            )
+            return (
+              <div
                 key={item.label}
-                to={item.to}
-                className="link-underline font-display text-sm font-semibold uppercase tracking-wide text-white/85 transition-colors hover:text-alltak-blue"
+                className="overflow-hidden border-b border-white/10 py-2"
+                style={{
+                  transform: open ? 'translateY(0)' : 'translateY(110%)',
+                  opacity: open ? 1 : 0,
+                  transition: `transform .7s cubic-bezier(.2,.7,.1,1) ${120 + i * 70}ms, opacity .5s ease ${120 + i * 70}ms`,
+                }}
               >
-                {item.label}
-              </Link>
-            ),
-          )}
+                {item.external ? (
+                  <a href={item.to} target="_blank" rel="noreferrer">
+                    {inner}
+                  </a>
+                ) : (
+                  <Link to={item.to}>{inner}</Link>
+                )}
+              </div>
+            )
+          })}
+
+          <div
+            className="mt-10 flex flex-wrap items-center gap-6 text-sm text-white/50"
+            style={{
+              opacity: open ? 1 : 0,
+              transition: `opacity .6s ease ${120 + NAV.length * 70}ms`,
+            }}
+          >
+            <span className="font-display font-bold uppercase tracking-[0.3em]">Alltak®</span>
+            <span>Envelopamento · Decoração · Comunicação Visual</span>
+          </div>
         </nav>
-
-        <button
-          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Menu"
-          aria-expanded={open}
-        >
-          <span className={`h-0.5 w-6 bg-white transition ${open ? 'translate-y-2 rotate-45' : ''}`} />
-          <span className={`h-0.5 w-6 bg-white transition ${open ? 'opacity-0' : ''}`} />
-          <span className={`h-0.5 w-6 bg-white transition ${open ? '-translate-y-2 -rotate-45' : ''}`} />
-        </button>
       </div>
-
-      {open && (
-        <nav className="border-t border-white/10 bg-alltak-black px-5 pb-6 pt-2 md:hidden">
-          {NAV.map((item) =>
-            item.external ? (
-              <a
-                key={item.label}
-                href={item.to}
-                target="_blank"
-                rel="noreferrer"
-                className="block border-b border-white/5 py-3 font-display text-lg font-semibold uppercase tracking-wide text-white/90"
-              >
-                {item.label} ↗
-              </a>
-            ) : (
-              <Link
-                key={item.label}
-                to={item.to}
-                className="block border-b border-white/5 py-3 font-display text-lg font-semibold uppercase tracking-wide text-white/90"
-              >
-                {item.label}
-              </Link>
-            ),
-          )}
-        </nav>
-      )}
-    </header>
+    </>
   )
 }

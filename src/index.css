@@ -33,6 +33,18 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #0080ff;
   }
+  /* hide native cursor when the custom one is running (desktop pointers only) */
+  @media (pointer: fine) {
+    .has-cursor,
+    .has-cursor a,
+    .has-cursor button,
+    .has-cursor input,
+    .has-cursor select,
+    .has-cursor textarea,
+    .has-cursor [role='button'] {
+      cursor: none;
+    }
+  }
 }
 
 @layer components {

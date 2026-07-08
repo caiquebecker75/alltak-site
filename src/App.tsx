@@ -3,6 +3,8 @@ import { Routes, Route, useLocation, Link } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
+import Preloader from './components/Preloader'
+import Cursor from './components/Cursor'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
@@ -42,6 +44,8 @@ function NotFound() {
 export default function App() {
   return (
     <>
+      <Preloader />
+      <Cursor />
       <ScrollProgress />
       <ScrollManager />
       <Header />

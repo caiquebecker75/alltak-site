@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { onScrollChange } from '../lib/onScrollChange'
 
 // Translates its children vertically as the element scrolls through the
 // viewport, for a subtle depth effect. `speed` > 0 moves slower than scroll.
@@ -17,24 +18,11 @@ export default function Parallax({
   useEffect(() => {
     const el = ref.current
     if (!el) return
-    let raf = 0
-    const update = () => {
+    return onScrollChange(() => {
       const rect = el.getBoundingClientRect()
       const center = rect.top + rect.height / 2 - window.innerHeight / 2
       setY(-center * speed)
-      raf = 0
-    }
-    const onScroll = () => {
-      if (!raf) raf = requestAnimationFrame(update)
-    }
-    update()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
-      if (raf) cancelAnimationFrame(raf)
-    }
+    })
   }, [speed])
 
   return (
