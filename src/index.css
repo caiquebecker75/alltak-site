@@ -5,37 +5,37 @@
 /* ---------- Brand font: Big Shoulders Display (self-hosted) ---------- */
 @font-face {
   font-family: 'Big Shoulders Display';
-  src: url('/fonts/BigShouldersDisplay-Light.ttf') format('truetype');
+  src: url('./fonts/BigShouldersDisplay-Light.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: 'Big Shoulders Display';
-  src: url('/fonts/BigShouldersDisplay-Regular.ttf') format('truetype');
+  src: url('./fonts/BigShouldersDisplay-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: 'Big Shoulders Display';
-  src: url('/fonts/BigShouldersDisplay-Medium.ttf') format('truetype');
+  src: url('./fonts/BigShouldersDisplay-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: 'Big Shoulders Display';
-  src: url('/fonts/BigShouldersDisplay-SemiBold.ttf') format('truetype');
+  src: url('./fonts/BigShouldersDisplay-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: 'Big Shoulders Display';
-  src: url('/fonts/BigShouldersDisplay-Bold.ttf') format('truetype');
+  src: url('./fonts/BigShouldersDisplay-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: 'Big Shoulders Display';
-  src: url('/fonts/BigShouldersDisplay-Black.ttf') format('truetype');
+  src: url('./fonts/BigShouldersDisplay-Black.ttf') format('truetype');
   font-weight: 900;
   font-display: swap;
 }
