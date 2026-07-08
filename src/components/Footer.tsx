@@ -1,11 +1,21 @@
 import { Link } from 'react-router-dom'
 import { NAV, STORE_URL, YOUTUBE_URL, INSTAGRAM_URL } from '../data/site'
 import Logo from './Logo'
+import caveira from '../brand/caveira-simbolo.png'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-alltak-black">
-      <div className="container-x grid gap-10 py-14 md:grid-cols-4">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-alltak-black">
+      {/* official skull watermark */}
+      <img
+        src={caveira}
+        alt=""
+        aria-hidden
+        draggable={false}
+        className="pointer-events-none absolute -right-10 -top-6 h-64 w-auto opacity-[0.05]"
+        style={{ filter: 'brightness(0) invert(1)' }}
+      />
+      <div className="container-x relative grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <Logo className="h-9" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">

@@ -6,6 +6,7 @@ import { YOUTUBE_URL, STORE_URL } from '../data/site'
 const Hero3D = lazy(() => import('../components/Hero3D'))
 const Car3D = lazy(() => import('../components/Car3D'))
 import BannerRoll from '../components/BannerRoll'
+import BrandFamily from '../components/BrandFamily'
 import StickyUnits from '../components/StickyUnits'
 import HScroll from '../components/HScroll'
 import Marquee from '../components/Marquee'
@@ -112,7 +113,7 @@ export default function Home() {
 
       {/* big reversed marquee */}
       <div className="border-y border-white/10 bg-black py-6 text-white/10">
-        <Marquee big reverse items={['Alltak Wraps', 'Alltak Decor', 'Alltak Signs']} />
+        <Marquee big reverse invertSkull items={['Alltak Wraps', 'Alltak Decor', 'Alltak Signs']} />
       </div>
 
       {/* ============ 4 — VÍDEO / INSPIRAÇÃO (parallax) ============ */}
@@ -179,6 +180,9 @@ export default function Home() {
 
       {/* ============ 6 — LINHAS (horizontal scroll) ============ */}
       <HScroll />
+
+      {/* ============ 6.5 — FAMÍLIA DE SUBMARCAS OFICIAIS ============ */}
+      <BrandFamily />
 
       {/* ============ 7 — SOBRE (âncora) ============ */}
       <section id="sobre" className="relative overflow-hidden bg-alltak-navy py-24 md:py-32">

@@ -1,17 +1,22 @@
 import { useEffect, useRef } from 'react'
+import caveira from '../brand/caveira-simbolo.png'
 
 // Infinite scrolling brand strip. The whole track skews with scroll velocity,
-// so fast scrolling gives the type a sense of drag/speed.
+// so fast scrolling gives the type a sense of drag/speed. Items are separated
+// by the official Alltak skull symbol.
 export default function Marquee({
   items,
   reverse = false,
   className = '',
   big = false,
+  invertSkull = false,
 }: {
   items: string[]
   reverse?: boolean
   className?: string
   big?: boolean
+  /** render the skull separator white (for dark rows) */
+  invertSkull?: boolean
 }) {
   const trackRef = useRef<HTMLDivElement>(null)
 
@@ -47,9 +52,17 @@ export default function Marquee({
               >
                 {t}
               </span>
-              <span aria-hidden>
-                <span className={`inline-block bg-current align-middle clip-escudo ${big ? 'h-5 w-8' : 'h-3 w-5'}`} style={{ opacity: 0.6 }} />
-              </span>
+              <img
+                src={caveira}
+                alt=""
+                aria-hidden
+                draggable={false}
+                className={`w-auto select-none align-middle ${big ? 'h-8' : 'h-5'}`}
+                style={{
+                  opacity: 0.55,
+                  filter: invertSkull ? 'brightness(0) invert(1)' : 'brightness(0)',
+                }}
+              />
             </span>
           ))}
         </div>
