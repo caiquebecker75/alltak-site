@@ -58,13 +58,8 @@ export default function HScroll() {
               to="/produtos"
               className="group relative block w-[78vw] shrink-0 sm:w-[46vw] lg:w-[30vw]"
             >
-              <div className="aspect-[4/5] overflow-hidden clip-trapezoid bg-alltak-navy">
-                <img
-                  src={CATEGORY_IMAGE[c.slug]}
-                  alt={c.name}
-                  loading="lazy"
-                  className="h-full w-full object-cover opacity-90 transition-all duration-700 group-hover:scale-110 group-hover:opacity-100"
-                />
+              <div className="frame-trap aspect-[4/5] bg-alltak-navy">
+                <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="img-zoom opacity-90 group-hover:opacity-100" />
               </div>
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
                 <div>

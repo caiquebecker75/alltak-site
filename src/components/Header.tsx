@@ -42,18 +42,12 @@ export default function Header() {
           hidden && !open ? '-translate-y-full' : 'translate-y-0'
         } ${scrolled && !open ? 'bg-black/85 backdrop-blur border-b border-white/10' : ''}`}
       >
-        <div className="container-x flex h-16 items-center justify-between md:h-20">
+        <div className="container-x flex h-20 items-center justify-between md:h-24">
           <Link to="/" aria-label="Alltak — início" className="relative z-[92]">
-            <Logo className="h-6 md:h-7" />
+            <Logo className="h-9 md:h-12" />
           </Link>
 
           <div className="flex items-center gap-5">
-            <Link
-              to="/visualizador"
-              className="tag !hidden transition-transform hover:-translate-y-0.5 md:!inline-block"
-            >
-              Visualizador
-            </Link>
             <Magnetic strength={0.3}>
               <button
                 onClick={() => setOpen((v) => !v)}
@@ -88,6 +82,17 @@ export default function Header() {
         <div className="pointer-events-none absolute bottom-[10%] left-[-4%] h-28 w-56 -rotate-6 bg-alltak-blue/10 clip-escudo" aria-hidden />
 
         <nav className="container-x flex h-full flex-col justify-center">
+          {/* big escudo logo headlining the menu */}
+          <div
+            className="mb-8"
+            style={{
+              opacity: open ? 1 : 0,
+              transform: open ? 'translateY(0)' : 'translateY(-24px)',
+              transition: 'opacity .5s ease 80ms, transform .6s cubic-bezier(.2,.7,.1,1) 80ms',
+            }}
+          >
+            <Logo variant="escudo" className="h-16 md:h-24" />
+          </div>
           {NAV.map((item, i) => {
             const inner = (
               <span className="group flex items-baseline gap-5">

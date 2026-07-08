@@ -5,15 +5,18 @@ import { useEffect, useRef } from 'react'
 export default function Cursor() {
   const dotRef = useRef<HTMLDivElement>(null)
   const ringRef = useRef<HTMLDivElement>(null)
+  const glowRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (window.matchMedia('(pointer: coarse)').matches) return
     const dot = dotRef.current!
     const ring = ringRef.current!
+    const glow = glowRef.current!
     document.documentElement.classList.add('has-cursor')
 
     let x = innerWidth / 2, y = innerHeight / 2
     let rx = x, ry = y
+    let gx = x, gy = y
     let hot = false
     let raf = 0
 
@@ -26,9 +29,13 @@ export default function Cursor() {
     const loop = () => {
       rx += (x - rx) * 0.16
       ry += (y - ry) * 0.16
+      // glow trails slower for a comet-like tail
+      gx += (x - gx) * 0.07
+      gy += (y - gy) * 0.07
       dot.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%,-50%)`
       ring.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%,-50%) scale(${hot ? 2.2 : 1})`
       ring.style.borderColor = hot ? 'rgba(0,128,255,.9)' : 'rgba(255,255,255,.45)'
+      glow.style.transform = `translate3d(${gx}px, ${gy}px, 0) translate(-50%,-50%) scale(${hot ? 1.6 : 1})`
       raf = requestAnimationFrame(loop)
     }
     addEventListener('mousemove', onMove, { passive: true })
@@ -42,6 +49,16 @@ export default function Cursor() {
 
   return (
     <>
+      {/* soft blue comet glow that lags behind the pointer */}
+      <div
+        ref={glowRef}
+        className="pointer-events-none fixed left-0 top-0 z-[94] hidden h-24 w-24 rounded-full md:block"
+        style={{
+          background: 'radial-gradient(circle, rgba(0,128,255,0.28) 0%, rgba(0,128,255,0.08) 45%, transparent 70%)',
+          filter: 'blur(2px)',
+        }}
+        aria-hidden
+      />
       <div
         ref={dotRef}
         className="pointer-events-none fixed left-0 top-0 z-[95] hidden h-2.5 w-3.5 bg-alltak-blue clip-escudo md:block"

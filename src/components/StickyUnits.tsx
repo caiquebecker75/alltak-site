@@ -78,13 +78,13 @@ export default function StickyUnits() {
                 </div>
                 <div className="relative hidden md:block">
                   <div
-                    className="aspect-[4/3] w-full overflow-hidden clip-trapezoid"
+                    className="frame-trap aspect-[4/3] w-full cursor-hot"
                     style={{
                       transform: `translateY(${(1 - t) * 60}px) scale(${0.92 + t * 0.08})`,
                       transition: 'transform .1s linear',
                     }}
                   >
-                    <img src={u.image} alt={`Alltak ${u.name}`} className="h-full w-full object-cover" loading="lazy" />
+                    <img src={u.image} alt={`Alltak ${u.name}`} className="img-zoom" loading="lazy" />
                   </div>
                   <div className="absolute -bottom-3 left-8 h-6 w-28 clip-escudo" style={{ background: u.color }} aria-hidden />
                 </div>

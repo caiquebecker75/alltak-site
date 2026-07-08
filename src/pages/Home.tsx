@@ -4,6 +4,7 @@ import { YOUTUBE_URL, STORE_URL } from '../data/site'
 
 // three.js scene is heavy — split it out; it streams in behind the preloader.
 const Hero3D = lazy(() => import('../components/Hero3D'))
+import BannerRoll from '../components/BannerRoll'
 import StickyUnits from '../components/StickyUnits'
 import HScroll from '../components/HScroll'
 import Marquee from '../components/Marquee'
@@ -71,6 +72,9 @@ export default function Home() {
       <div className="border-y border-black bg-alltak-blue py-4 text-black">
         <Marquee items={['Envelopamento', 'Decoração', 'Comunicação Visual', 'Wraps', 'Decor', 'Signs']} />
       </div>
+
+      {/* banner roll-up — artes da marca deslizando com o scroll */}
+      <BannerRoll />
 
       {/* ============ 2 — MANIFESTO ============ */}
       <section className="bg-black py-24 md:py-36">
@@ -202,13 +206,8 @@ export default function Home() {
           </Reveal>
           <Reveal delay={140} dir="right">
             <Parallax speed={-0.06}>
-              <div className="group aspect-[4/5] w-full overflow-hidden clip-trapezoid">
-                <img
-                  src="./assets/sobre_01.avif"
-                  alt="Produção nacional Alltak"
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+              <div className="frame-trap aspect-[4/5] w-full cursor-hot">
+                <img src="./assets/sobre_01.avif" alt="Produção nacional Alltak" loading="lazy" className="img-zoom" />
               </div>
             </Parallax>
           </Reveal>

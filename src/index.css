@@ -64,12 +64,41 @@
   .clip-trapezoid-alt {
     clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
   }
-  /* Slanted parallelogram — for dividers and accents */
+  /* Accent bars — also keystone (base maior embaixo), matching the escudo */
   .clip-slant {
-    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
   }
   .clip-slant-r {
-    clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+  }
+
+  /* Trapezoid image frame with hover life: zoom + shine sweep.
+     Some Drive artworks are pre-masked; .img-zoom pushes their baked edges
+     outside the clip so every image reads as a clean keystone trapezoid. */
+  .frame-trap {
+    @apply relative overflow-hidden;
+    clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
+  }
+  .frame-trap::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-[160%] skew-x-[-18deg] bg-white/20;
+    transition: transform 0.7s ease;
+    pointer-events: none;
+  }
+  .frame-trap:hover::after {
+    transform: translateX(320%) skewX(-18deg);
+  }
+  .frame-trap > img {
+    @apply h-full w-full object-cover transition-transform duration-700;
+  }
+  .frame-trap:hover > img {
+    transform: scale(1.06);
+  }
+  .img-zoom {
+    transform: scale(1.5);
+  }
+  .frame-trap:hover > .img-zoom {
+    transform: scale(1.58);
   }
 
   /* ---------- Buttons (subtle escudo trapezoid) ---------- */

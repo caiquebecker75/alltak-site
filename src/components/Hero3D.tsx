@@ -41,8 +41,11 @@ function Prism({ spec, geo }: { spec: PrismSpec; geo: THREE.ExtrudeGeometry }) {
   const ref = useRef<THREE.Mesh>(null!)
   useFrame(({ clock }) => {
     const t = clock.elapsedTime * spec.speed
-    ref.current.rotation.x = t * spec.rot[0]
+    // spin around Y and only WOBBLE on X/Z — the keystone silhouette
+    // (base maior embaixo) never flips upside down
     ref.current.rotation.y = t * spec.rot[1]
+    ref.current.rotation.x = Math.sin(t * 0.7) * 0.18 * spec.rot[0]
+    ref.current.rotation.z = Math.cos(t * 0.5) * 0.08
     ref.current.position.y = spec.pos[1] + Math.sin(t * 0.9 + spec.pos[0]) * 0.35
   })
   const mat = useMemo(() => {
