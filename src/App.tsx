@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
+import Visualizador from './pages/Visualizador'
 import OndeComprar from './pages/OndeComprar'
 import Instaladores from './pages/Instaladores'
 import Cursos from './pages/Cursos'
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/catalogos" element={<Catalogos />} />
           <Route path="/produtos" element={<Produtos />} />
+          <Route path="/visualizador" element={<Visualizador />} />
           <Route path="/onde-comprar" element={<OndeComprar />} />
           <Route path="/instaladores" element={<Instaladores />} />
           <Route path="/cursos" element={<Cursos />} />

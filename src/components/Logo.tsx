@@ -1,14 +1,18 @@
+import logoUrl from '../brand/alltak-logo.png'
+
 type Props = { className?: string; onDark?: boolean }
 
-// Alltak wordmark rebuilt in the brand typeface (Big Shoulders Display)
-// with the signature red accent square.
+// Official Alltak wordmark — "ALLTAK®" with the skull inside the "A".
+// On dark surfaces it renders as a clean white monochrome (the treatment used
+// on the brand's own dark banners); on light it keeps the brand blue.
 export default function Logo({ className = '', onDark = true }: Props) {
   return (
-    <span
-      className={`inline-flex items-center font-display font-black uppercase leading-none tracking-tight ${className}`}
-    >
-      <span className={onDark ? 'text-white' : 'text-alltak-black'}>ALLTAK</span>
-      <span className="ml-1 h-2 w-2 translate-y-[0.35em] bg-alltak-red" aria-hidden />
-    </span>
+    <img
+      src={logoUrl}
+      alt="Alltak"
+      className={`w-auto select-none ${className}`}
+      style={onDark ? { filter: 'brightness(0) invert(1)' } : undefined}
+      draggable={false}
+    />
   )
 }

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-alltak-black">
       <div className="container-x grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Logo className="text-3xl" />
+          <Logo className="h-9" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
             Materiais para envelopamento, decoração e comunicação visual. Padrão e
             constância do começo ao fim, para quem vive de aplicação.

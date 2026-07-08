@@ -3,6 +3,7 @@ import { UNITS, CATALOGS, HIGHLIGHTS, YOUTUBE_URL } from '../data/site'
 import BusinessUnit from '../components/BusinessUnit'
 import Hero from '../components/Hero'
 import Reveal from '../components/Reveal'
+import CarSVG from '../components/CarSVG'
 
 export default function Home() {
   return (
@@ -48,6 +49,34 @@ export default function Home() {
             <a href={YOUTUBE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-white mt-9">
               <span className="text-alltak-red">▶</span> Assistir no YouTube
             </a>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 3.5 — TEASER DO VISUALIZADOR */}
+      <section className="relative overflow-hidden bg-alltak-black py-20 md:py-28">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.06] bg-cover bg-center"
+          style={{ backgroundImage: "url('./assets/caveiras.avif')" }}
+          aria-hidden
+        />
+        <div className="container-x relative grid items-center gap-10 md:grid-cols-2">
+          <Reveal>
+            <p className="eyebrow text-alltak-red">Novo · Ferramenta Alltak</p>
+            <h2 className="mt-3 text-5xl text-white md:text-6xl">
+              Visualize o<br /><span className="text-alltak-red">envelopamento</span>
+            </h2>
+            <p className="mt-5 max-w-lg text-white/70">
+              Escolha o acabamento e a cor e veja na hora como fica no veículo. Brilho,
+              fosco, acetinado, metálico, carbono, cromado e camaleão — tudo em um só lugar.
+            </p>
+            <Link to="/visualizador" className="btn-trapezoid btn-red mt-8">Abrir o visualizador</Link>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="relative border border-white/10 bg-gradient-to-b from-alltak-ink to-black p-4">
+              <div className="pointer-events-none absolute inset-x-10 bottom-6 h-14 rounded-[50%] bg-alltak-red/20 blur-2xl" aria-hidden />
+              <CarSVG model="coupe" color="#e30613" finish="brilho" />
+            </div>
           </Reveal>
         </div>
       </section>

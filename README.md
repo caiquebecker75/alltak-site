@@ -44,10 +44,18 @@ npm run preview  # pré-visualizar o build
 5. Conteúdos complementares (Store, Onde Comprar, Instaladores, Cursos)
 6. Sobre Nós (âncora `#sobre`)
 
+## Visualizador de Envelopamento
+
+Ferramenta interativa (inspirada no Avery Dennison Car Visualizer, com identidade
+Alltak) em `/visualizador`: o usuário escolhe **modelo** (esportivo/sedan/SUV),
+**acabamento** (brilho, fosco, acetinado, metálico, carbono, cromado, camaleão) e
+**cor**, e vê o carro (SVG recolorível) atualizar na hora. As cores estão
+organizadas pelas linhas Alltak (Ultra, Jateado, Satin, Kroma, Carbon, Klear, FX).
+
 ## Páginas
 
-`/` · `/catalogos` · `/produtos` · `/onde-comprar` · `/instaladores` ·
-`/cursos` · `/contato` · `/politica-de-privacidade`
+`/` · `/visualizador` · `/catalogos` · `/produtos` · `/onde-comprar` ·
+`/instaladores` · `/cursos` · `/contato` · `/politica-de-privacidade`
 
 > As páginas internas seguem a arquitetura do documento **"Alltak _ Organização
 > Site"**. Conteúdos marcados como *exemplo/demonstração* (distribuidores,

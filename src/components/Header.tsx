@@ -24,7 +24,7 @@ export default function Header() {
     >
       <div className="container-x flex h-16 items-center justify-between md:h-20">
         <Link to="/" aria-label="Alltak — início">
-          <Logo className="text-2xl md:text-3xl" />
+          <Logo className="h-6 md:h-7" />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
