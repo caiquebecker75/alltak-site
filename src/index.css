@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Brand font: Big Shoulders Display (self-hosted) ---------- */
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('/fonts/BigShouldersDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('/fonts/BigShouldersDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('/fonts/BigShouldersDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('/fonts/BigShouldersDisplay-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('/fonts/BigShouldersDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('/fonts/BigShouldersDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-alltak-black text-white font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display uppercase tracking-tight leading-[0.95];
+  }
+  ::selection {
+    background: #e30613;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
+
+  /* Signature trapezoid button (slanted parallelogram) */
+  .btn-trapezoid {
+    @apply relative inline-flex items-center gap-2 font-display font-bold uppercase
+      tracking-wide text-sm px-8 py-3 transition-all duration-200;
+    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0% 100%);
+  }
+  .btn-trapezoid:hover {
+    transform: translateY(-2px);
+  }
+  .btn-red {
+    @apply bg-alltak-red text-white hover:brightness-110;
+  }
+  .btn-white {
+    @apply bg-white text-alltak-black hover:bg-alltak-mist;
+  }
+  .btn-outline {
+    @apply border border-white/60 text-white hover:bg-white hover:text-alltak-black;
+  }
+
+  /* Trapezoid image mask — wide bottom, narrow top (as seen on unit photos) */
+  .clip-trapezoid {
+    clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
+  }
+  .clip-trapezoid-alt {
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
+  }
+  /* Slanted parallelogram divider block */
+  .clip-slant {
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+  }
+
+  .eyebrow {
+    @apply font-display font-semibold uppercase tracking-[0.28em] text-xs text-alltak-red;
+  }
+}
