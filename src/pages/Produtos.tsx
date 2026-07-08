@@ -20,7 +20,7 @@ export default function Produtos() {
         Um portfólio completo para diferentes estilos e necessidades, com foco em
         aplicação eficiente e resultado final impecável.
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-red !py-2 !text-xs">
+          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2 !text-xs">
             Comprar na Alltak Store ↗
           </a>
           <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2 !text-xs">
@@ -48,7 +48,7 @@ export default function Produtos() {
                       </span>
                     ))}
                   </div>
-                  <Link to="/catalogos" className="btn-trapezoid btn-red mt-6 !py-2 !text-xs">
+                  <Link to="/catalogos" className="btn-trapezoid btn-blue mt-6 !py-2 !text-xs">
                     Catálogo da linha
                   </Link>
                 </div>

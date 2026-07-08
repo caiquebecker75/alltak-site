@@ -2,44 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------- Brand font: Big Shoulders Display (self-hosted) ---------- */
-@font-face {
-  font-family: 'Big Shoulders Display';
-  src: url('./fonts/BigShouldersDisplay-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Big Shoulders Display';
-  src: url('./fonts/BigShouldersDisplay-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Big Shoulders Display';
-  src: url('./fonts/BigShouldersDisplay-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Big Shoulders Display';
-  src: url('./fonts/BigShouldersDisplay-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Big Shoulders Display';
-  src: url('./fonts/BigShouldersDisplay-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Big Shoulders Display';
-  src: url('./fonts/BigShouldersDisplay-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-display: swap;
-}
-
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -51,11 +13,25 @@
   h2,
   h3,
   h4 {
-    @apply font-display uppercase tracking-tight leading-[0.95];
+    @apply font-display font-extrabold uppercase tracking-tight leading-[0.92];
   }
   ::selection {
-    background: #e30613;
+    background: #0080ff;
     color: #fff;
+  }
+  /* custom scrollbar — brand blue */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0d12;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0055aa;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0080ff;
   }
 }
 
@@ -64,38 +40,106 @@
     @apply mx-auto w-full max-w-content px-5 sm:px-8;
   }
 
-  /* Signature trapezoid button (slanted parallelogram) */
-  .btn-trapezoid {
-    @apply relative inline-flex items-center gap-2 font-display font-bold uppercase
-      tracking-wide text-sm px-8 py-3 transition-all duration-200;
-    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0% 100%);
+  /* ---------- Trapezoid shape system ---------- */
+  /* Escudo — the brand trapezoid (wider top, narrower bottom) */
+  .clip-escudo {
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
   }
-  .btn-trapezoid:hover {
-    transform: translateY(-2px);
-  }
-  .btn-red {
-    @apply bg-alltak-red text-white hover:brightness-110;
-  }
-  .btn-white {
-    @apply bg-white text-alltak-black hover:bg-alltak-mist;
-  }
-  .btn-outline {
-    @apply border border-white/60 text-white hover:bg-white hover:text-alltak-black;
-  }
-
-  /* Trapezoid image mask — wide bottom, narrow top (as seen on unit photos) */
+  /* Keystone — narrower top, wider bottom (the "A" form) */
   .clip-trapezoid {
     clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
   }
   .clip-trapezoid-alt {
     clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
   }
-  /* Slanted parallelogram divider block */
+  /* Slanted parallelogram — for dividers and accents */
   .clip-slant {
     clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
   }
+  .clip-slant-r {
+    clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
+  }
+
+  /* ---------- Buttons (subtle escudo trapezoid) ---------- */
+  .btn-trapezoid {
+    @apply relative inline-flex items-center justify-center gap-2 font-display font-bold uppercase
+      tracking-wide text-sm px-8 py-3 transition-all duration-200 overflow-hidden;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  }
+  .btn-trapezoid:hover {
+    transform: translateY(-2px);
+  }
+  /* shine sweep on hover */
+  .btn-trapezoid::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-[150%] skew-x-[-20deg] bg-white/25;
+    transition: transform 0.6s ease;
+    pointer-events: none;
+  }
+  .btn-trapezoid:hover::after {
+    transform: translateX(320%) skewX(-20deg);
+  }
+  .btn-blue {
+    @apply bg-alltak-blue text-white hover:bg-alltak-blueDark;
+  }
+  .btn-navy {
+    @apply bg-alltak-navy text-white hover:bg-alltak-navy2;
+  }
+  .btn-white {
+    @apply bg-white text-alltak-black hover:bg-alltak-cream;
+  }
+  .btn-outline {
+    @apply border border-white/50 text-white hover:bg-white hover:text-alltak-black;
+  }
+
+  /* Trapezoid tag/eyebrow badge */
+  .tag {
+    @apply inline-block bg-alltak-blue px-3.5 py-1 font-display text-xs font-bold uppercase tracking-[0.2em] text-white;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
+  }
 
   .eyebrow {
-    @apply font-display font-semibold uppercase tracking-[0.28em] text-xs text-alltak-red;
+    @apply font-display font-bold uppercase tracking-[0.28em] text-xs text-alltak-blue;
+  }
+
+  /* ---------- Hover helpers ---------- */
+  .hover-lift {
+    @apply transition-transform duration-300 will-change-transform hover:-translate-y-1.5;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:border-alltak-blue;
+  }
+  .link-underline {
+    @apply relative;
+  }
+  .link-underline::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-alltak-blue transition-all duration-300;
+  }
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Marquee edge fade */
+  .marquee-mask {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.45);
+    color: transparent;
+  }
+  .text-outline-blue {
+    -webkit-text-stroke: 1.5px #0080ff;
+    color: transparent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

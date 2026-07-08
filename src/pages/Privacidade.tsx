@@ -4,7 +4,7 @@ export default function Privacidade() {
   return (
     <>
       <PageHeader eyebrow="Legal" title="Política de Privacidade" />
-      <section className="bg-alltak-mist py-16 text-alltak-black md:py-24">
+      <section className="bg-alltak-cream py-16 text-alltak-black md:py-24">
         <div className="container-x max-w-3xl space-y-6 text-sm leading-relaxed text-alltak-black/75">
           <p>
             Esta página descreve como a Alltak trata os dados coletados neste site.

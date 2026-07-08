@@ -35,7 +35,7 @@ export default function Header() {
                 href={item.to}
                 target="_blank"
                 rel="noreferrer"
-                className="font-display text-sm font-semibold uppercase tracking-wide text-white/85 transition-colors hover:text-alltak-red"
+                className="link-underline font-display text-sm font-semibold uppercase tracking-wide text-white/85 transition-colors hover:text-alltak-blue"
               >
                 {item.label} <span aria-hidden>↗</span>
               </a>
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={item.label}
                 to={item.to}
-                className="font-display text-sm font-semibold uppercase tracking-wide text-white/85 transition-colors hover:text-alltak-red"
+                className="link-underline font-display text-sm font-semibold uppercase tracking-wide text-white/85 transition-colors hover:text-alltak-blue"
               >
                 {item.label}
               </Link>

@@ -30,9 +30,9 @@ export default function Visualizador() {
           aria-hidden
         />
         <div className="container-x relative">
-          <p className="eyebrow text-alltak-red">Ferramenta Alltak</p>
+          <p className="eyebrow text-alltak-blue">Ferramenta Alltak</p>
           <h1 className="mt-3 text-5xl text-white md:text-7xl">
-            Visualizador de <span className="text-alltak-red">Envelopamento</span>
+            Visualizador de <span className="text-alltak-blue">Envelopamento</span>
           </h1>
           <p className="mt-4 max-w-2xl text-white/65">
             Escolha o acabamento e a cor e veja na hora como fica no veículo. Tire a dúvida
@@ -52,7 +52,7 @@ export default function Visualizador() {
                   key={m.key}
                   onClick={() => setModel(m.key)}
                   className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
-                    model === m.key ? 'bg-alltak-red text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
+                    model === m.key ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
                   }`}
                 >
                   {m.label}
@@ -62,13 +62,13 @@ export default function Visualizador() {
 
             <div className="relative py-6">
               {/* soft red floor glow */}
-              <div className="pointer-events-none absolute inset-x-10 bottom-8 h-16 rounded-[50%] bg-alltak-red/20 blur-2xl" aria-hidden />
+              <div className="pointer-events-none absolute inset-x-10 bottom-8 h-16 rounded-[50%] bg-alltak-blue/20 blur-2xl" aria-hidden />
               <CarSVG model={model} color={film.color} shift={film.shift} finish={finish.key} />
             </div>
 
             <div className="flex items-end justify-between border-t border-white/10 pt-4">
               <div>
-                <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-alltak-red">
+                <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-alltak-blue">
                   {finish.line} · {finish.label}
                 </p>
                 <p className="font-display text-3xl uppercase text-white">{film.name}</p>
@@ -113,7 +113,7 @@ export default function Visualizador() {
                     title={f.name}
                     aria-label={f.name}
                     className={`aspect-square w-full border transition clip-slant ${
-                      active ? 'border-alltak-red ring-2 ring-alltak-red' : 'border-white/15 hover:border-white/50'
+                      active ? 'border-alltak-blue ring-2 ring-alltak-blue' : 'border-white/15 hover:border-white/50'
                     }`}
                     style={swatchStyle(f.color, f.shift, finish.key === 'cromado')}
                   />
@@ -124,7 +124,7 @@ export default function Visualizador() {
             <div className="mt-6 border-t border-white/10 pt-5">
               <p className="text-sm text-white/50">Gostou da combinação?</p>
               <div className="mt-3 flex flex-col gap-3">
-                <Link to="/catalogos" className="btn-trapezoid btn-red justify-center">Baixar catálogo</Link>
+                <Link to="/catalogos" className="btn-trapezoid btn-blue justify-center">Baixar catálogo</Link>
                 <Link to="/onde-comprar" className="btn-trapezoid btn-outline justify-center">Onde comprar</Link>
                 <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline justify-center">
                   Alltak Store ↗
@@ -146,7 +146,7 @@ export default function Visualizador() {
             ['Padrão Alltak', 'Aplicação eficiente e resultado final impecável.'],
           ].map(([t, d]) => (
             <div key={t} className="border border-white/10 bg-white/[0.02] p-5">
-              <div className="mb-3 h-1.5 w-12 bg-alltak-red clip-slant" />
+              <div className="mb-3 h-1.5 w-12 bg-alltak-blue clip-slant" />
               <h3 className="text-xl text-white">{t}</h3>
               <p className="mt-1 text-sm text-white/55">{d}</p>
             </div>

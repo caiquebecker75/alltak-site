@@ -13,15 +13,15 @@ export default function Footer() {
             constância do começo ao fim, para quem vive de aplicação.
           </p>
           <div className="mt-5 flex gap-3">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-red">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-blue">
               Instagram
             </a>
             <span className="text-white/20">·</span>
-            <a href={YOUTUBE_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-red">
+            <a href={YOUTUBE_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-blue">
               YouTube
             </a>
             <span className="text-white/20">·</span>
-            <a href={STORE_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-red">
+            <a href={STORE_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-blue">
               Alltak Store ↗
             </a>
           </div>

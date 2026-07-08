@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Routes, Route, useLocation, Link } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ScrollProgress from './components/ScrollProgress'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
@@ -31,9 +32,9 @@ function ScrollManager() {
 function NotFound() {
   return (
     <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black text-center">
-      <p className="eyebrow text-alltak-red">Erro 404</p>
+      <p className="eyebrow text-alltak-blue">Erro 404</p>
       <h1 className="mt-3 text-6xl text-white md:text-8xl">Página não encontrada</h1>
-      <Link to="/" className="btn-trapezoid btn-red mt-8">Voltar para a home</Link>
+      <Link to="/" className="btn-trapezoid btn-blue mt-8">Voltar para a home</Link>
     </section>
   )
 }
@@ -41,6 +42,7 @@ function NotFound() {
 export default function App() {
   return (
     <>
+      <ScrollProgress />
       <ScrollManager />
       <Header />
       <main>

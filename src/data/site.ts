@@ -43,7 +43,7 @@ export const UNITS: Unit[] = [
       'Materiais para envelopamento e customização veicular, feitos para quem exige acabamento e constância no dia a dia. Um portfólio completo para diferentes estilos e necessidades, com foco em aplicação eficiente e resultado final impecável.',
     image: './assets/automotivo_01.avif',
     bg: 'bg-alltak-black',
-    accent: 'text-alltak-red',
+    accent: 'text-alltak-blue',
     skull: true,
   },
   {

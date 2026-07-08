@@ -1,16 +1,26 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 
-// Lightweight scroll-reveal wrapper (fade + rise on first view).
-// Hardened so content is NEVER left invisible: reveals as soon as the element
-// is at/above the viewport bottom, which also covers instant jumps (anchor
-// navigation, fast scroll) that a bare IntersectionObserver can miss.
+type Dir = 'up' | 'left' | 'right' | 'scale'
+
+const HIDDEN: Record<Dir, string> = {
+  up: 'translateY(30px)',
+  left: 'translateX(-40px)',
+  right: 'translateX(40px)',
+  scale: 'scale(0.94)',
+}
+
+// Scroll-reveal wrapper. Hardened so content is NEVER left invisible: reveals as
+// soon as the element is at/above the viewport bottom (covers instant jumps such
+// as anchor navigation and fast scroll that a bare IntersectionObserver can miss).
 export default function Reveal({
   children,
   delay = 0,
+  dir = 'up',
   className = '',
 }: {
   children: ReactNode
   delay?: number
+  dir?: Dir
   className?: string
 }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -26,23 +36,16 @@ export default function Reveal({
       window.removeEventListener('scroll', onScroll)
     }
     const check = () => {
-      const r = el.getBoundingClientRect()
-      if (r.top < window.innerHeight * 0.9) {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
         reveal()
         return true
       }
       return false
     }
-
-    const io = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) reveal()
-    }, { threshold: 0.12 })
+    const io = new IntersectionObserver(([e]) => e.isIntersecting && reveal(), { threshold: 0.12 })
     io.observe(el)
-
     const onScroll = () => check()
     window.addEventListener('scroll', onScroll, { passive: true })
-
-    // Immediate check for content already in/above view on mount.
     const raf = requestAnimationFrame(check)
 
     return () => {
@@ -58,8 +61,8 @@ export default function Reveal({
       className={className}
       style={{
         opacity: shown ? 1 : 0,
-        transform: shown ? 'translateY(0)' : 'translateY(28px)',
-        transition: `opacity .7s ease ${delay}ms, transform .7s ease ${delay}ms`,
+        transform: shown ? 'none' : HIDDEN[dir],
+        transition: `opacity .7s ease ${delay}ms, transform .7s cubic-bezier(.2,.7,.2,1) ${delay}ms`,
       }}
     >
       {children}

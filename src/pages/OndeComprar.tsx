@@ -25,7 +25,7 @@ export default function OndeComprar() {
         a lista.
       </PageHeader>
 
-      <section className="bg-alltak-mist py-16 text-alltak-black md:py-24">
+      <section className="bg-alltak-cream py-16 text-alltak-black md:py-24">
         <div className="container-x">
           <div className="mb-8 flex flex-wrap gap-2">
             {ufs.map((u) => (
@@ -33,7 +33,7 @@ export default function OndeComprar() {
                 key={u}
                 onClick={() => setUf(u)}
                 className={`font-display text-sm font-bold uppercase tracking-wide px-4 py-2 transition ${
-                  uf === u ? 'bg-alltak-red text-white' : 'bg-white text-alltak-black hover:bg-black/5'
+                  uf === u ? 'bg-alltak-blue text-white' : 'bg-white text-alltak-black hover:bg-black/5'
                 }`}
               >
                 {u === 'todos' ? 'Todos' : u}
@@ -45,7 +45,7 @@ export default function OndeComprar() {
             {filtered.map((l, i) => (
               <Reveal key={l.nome + i} delay={i * 50}>
                 <div className="border border-black/10 bg-white p-6">
-                  <div className="mb-3 h-1.5 w-12 bg-alltak-red clip-slant" />
+                  <div className="mb-3 h-1.5 w-12 bg-alltak-blue clip-slant" />
                   <h3 className="text-2xl">{l.nome}</h3>
                   <p className="mt-1 text-sm text-alltak-black/60">
                     {l.cidade} · {l.uf}
@@ -55,7 +55,7 @@ export default function OndeComprar() {
                     href={`https://www.google.com/maps/search/${encodeURIComponent(l.nome + ' ' + l.cidade)}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn-trapezoid btn-red mt-5 !py-2 !text-xs"
+                    className="btn-trapezoid btn-blue mt-5 !py-2 !text-xs"
                   >
                     Ver no mapa
                   </a>

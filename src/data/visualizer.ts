@@ -34,7 +34,7 @@ export const FINISHES: Finish[] = [
     films: [
       { name: 'Preto Ultra', color: '#0c0d10' },
       { name: 'Branco Ártico', color: '#eef1f4' },
-      { name: 'Vermelho Alltak', color: '#e30613' },
+      { name: 'Vermelho Racing', color: '#e30613' },
       { name: 'Azul Cobalto', color: '#0a49c8' },
       { name: 'Azul Alltak', color: '#0080ff' },
       { name: 'Laranja Solar', color: '#f6541f' },

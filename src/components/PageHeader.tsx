@@ -20,7 +20,7 @@ export default function PageHeader({
       />
       <div className="container-x relative">
         <Reveal>
-          <p className="eyebrow text-alltak-red">{eyebrow}</p>
+          <p className="eyebrow text-alltak-blue">{eyebrow}</p>
           <h1 className="mt-3 text-5xl text-white md:text-7xl">{title}</h1>
           {children && <div className="mt-5 max-w-2xl text-white/65">{children}</div>}
         </Reveal>

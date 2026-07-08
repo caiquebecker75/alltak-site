@@ -4,7 +4,7 @@ import PageHeader from '../components/PageHeader'
 const PERFIS = ['Aplicador', 'Distribuidor', 'Arquiteto', 'Gráfica', 'Consumidor final', 'Outro']
 const ASSUNTOS = ['Compra', 'Produto', 'Suporte técnico', 'Revenda', 'Cursos', 'Institucional', 'Outro']
 
-const field = 'w-full border border-black/15 bg-white px-4 py-3 text-sm outline-none focus:border-alltak-red'
+const field = 'w-full border border-black/15 bg-white px-4 py-3 text-sm outline-none focus:border-alltak-blue'
 
 export default function Contato() {
   const [sent, setSent] = useState(false)
@@ -16,12 +16,12 @@ export default function Contato() {
         para dúvidas técnicas, o suporte especializado.
       </PageHeader>
 
-      <section className="bg-alltak-mist py-16 text-alltak-black md:py-24">
+      <section className="bg-alltak-cream py-16 text-alltak-black md:py-24">
         <div className="container-x grid gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
             {sent ? (
-              <div className="border border-alltak-red bg-white p-8">
-                <h3 className="text-3xl text-alltak-red">Mensagem enviada!</h3>
+              <div className="border border-alltak-blue bg-white p-8">
+                <h3 className="text-3xl text-alltak-blue">Mensagem enviada!</h3>
                 <p className="mt-2 text-alltak-black/70">
                   Obrigado pelo contato. Retornaremos em breve. (Formulário de demonstração —
                   integrar ao e-mail/CRM da Alltak.)
@@ -50,7 +50,7 @@ export default function Contato() {
                   {ASSUNTOS.map((a) => <option key={a}>{a}</option>)}
                 </select>
                 <textarea required placeholder="Mensagem" rows={5} className={`${field} sm:col-span-2`} />
-                <button type="submit" className="btn-trapezoid btn-red sm:col-span-2 justify-self-start">
+                <button type="submit" className="btn-trapezoid btn-blue sm:col-span-2 justify-self-start">
                   Enviar mensagem
                 </button>
               </form>
