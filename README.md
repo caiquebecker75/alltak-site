@@ -6,6 +6,12 @@ refino de marca solicitado no briefing **"75 LAB | ALLTAK | AJUSTES SITE"**.
 
 Projeto da **75 LAB**.
 
+## 🔗 Site no ar
+
+**https://caiquebecker75.github.io/alltak-site/**
+
+Deploy automático via GitHub Pages (GitHub Actions) a cada push na branch `main`.
+
 ## Stack
 
 - **React 18 + TypeScript + Vite**
