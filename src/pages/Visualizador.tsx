@@ -1,8 +1,10 @@
-import { useMemo, useState } from 'react'
+import { lazy, Suspense, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import CarSVG from '../components/CarSVG'
-import { FINISHES, CAR_MODELS } from '../data/visualizer'
+import { FINISHES } from '../data/visualizer'
 import { STORE_URL } from '../data/site'
+
+// real-time 3D preview — heavy (three.js), so it streams in as its own chunk
+const Car3D = lazy(() => import('../components/Car3D'))
 
 // swatch background per film
 function swatchStyle(color: string, shift: string | undefined, chrome: boolean): React.CSSProperties {
@@ -15,7 +17,6 @@ function swatchStyle(color: string, shift: string | undefined, chrome: boolean):
 export default function Visualizador() {
   const [finishKey, setFinishKey] = useState(FINISHES[0].key)
   const [filmIndex, setFilmIndex] = useState(2)
-  const [model, setModel] = useState('coupe')
 
   const finish = useMemo(() => FINISHES.find((f) => f.key === finishKey)!, [finishKey])
   const film = finish.films[Math.min(filmIndex, finish.films.length - 1)]
@@ -44,26 +45,29 @@ export default function Visualizador() {
       {/* Visualizer */}
       <section className="bg-alltak-black pb-24">
         <div className="container-x grid gap-6 lg:grid-cols-[1.55fr_1fr]">
-          {/* Stage */}
+          {/* Stage — real-time 3D */}
           <div className="relative flex flex-col justify-between overflow-hidden border border-white/10 bg-gradient-to-b from-alltak-ink to-black p-5 md:p-8">
-            <div className="flex flex-wrap items-center gap-2">
-              {CAR_MODELS.map((m) => (
-                <button
-                  key={m.key}
-                  onClick={() => setModel(m.key)}
-                  className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
-                    model === m.key ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
-                  }`}
-                >
-                  {m.label}
-                </button>
-              ))}
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <span className="tag">Cupê esportivo · 3D</span>
+              <span className="font-display text-xs font-bold uppercase tracking-[0.25em] text-white/45">
+                Arraste para girar · role para zoom
+              </span>
             </div>
 
-            <div className="relative py-6">
-              {/* soft red floor glow */}
+            <div className="relative h-[380px] md:h-[460px]">
+              {/* soft blue floor glow */}
               <div className="pointer-events-none absolute inset-x-10 bottom-8 h-16 rounded-[50%] bg-alltak-blue/20 blur-2xl" aria-hidden />
-              <CarSVG model={model} color={film.color} shift={film.shift} finish={finish.key} />
+              <Suspense
+                fallback={
+                  <div className="flex h-full items-center justify-center">
+                    <span className="font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 animate-pulse">
+                      Carregando modelo 3D…
+                    </span>
+                  </div>
+                }
+              >
+                <Car3D finish={finish.key} color={film.color} shift={film.shift} className="h-full w-full cursor-hot" />
+              </Suspense>
             </div>
 
             <div className="flex items-end justify-between border-t border-white/10 pt-4">
@@ -133,6 +137,9 @@ export default function Visualizador() {
               <p className="mt-4 text-xs text-white/40">
                 Prévia ilustrativa. As cores podem variar conforme tela, iluminação e superfície.
                 Consulte o catálogo oficial e um aplicador Alltak.
+              </p>
+              <p className="mt-2 text-[10px] text-white/25">
+                Modelo 3D: exemplo do projeto three.js — “Ferrari 458” por vicent091036 (CC-BY).
               </p>
             </div>
           </div>
