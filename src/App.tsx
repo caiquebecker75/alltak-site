@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
 import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
+import WhatsApp from './components/WhatsApp'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
@@ -64,6 +65,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <WhatsApp />
     </>
   )
 }
