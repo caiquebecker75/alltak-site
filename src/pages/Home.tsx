@@ -1,10 +1,5 @@
-import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { YOUTUBE_URL, STORE_URL } from '../data/site'
-
-// three.js scenes are heavy — split them out; they stream in behind the preloader.
-const Hero3D = lazy(() => import('../components/Hero3D'))
-const Car3D = lazy(() => import('../components/Car3D'))
 import BannerRoll from '../components/BannerRoll'
 import BrandFamily from '../components/BrandFamily'
 import StickyUnits from '../components/StickyUnits'
@@ -16,11 +11,13 @@ import SplitWords from '../components/SplitWords'
 import Counter from '../components/Counter'
 import Magnetic from '../components/Magnetic'
 import Logo from '../components/Logo'
+import CarSVG from '../components/CarSVG'
+import TrapDivider from '../components/TrapDivider'
 
 export default function Home() {
   return (
     <>
-      {/* ============ 1 — HERO: 3D trapezoids + giant type ============ */}
+      {/* ============ 1 — HERO: slogan + lightweight CSS scene ============ */}
       <section className="relative flex h-[100svh] min-h-[640px] flex-col justify-center overflow-hidden bg-black">
         {/* skull texture floor */}
         <div
@@ -28,24 +25,28 @@ export default function Home() {
           style={{ backgroundImage: "url('./assets/caveiras.avif')" }}
           aria-hidden
         />
-        {/* 3D field (lazy-loaded) */}
-        <Suspense fallback={null}>
-          <Hero3D className="absolute inset-0" />
-        </Suspense>
+        {/* lightweight floating trapezoids (CSS only — no 3D, keeps the home fast) */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+          <div className="absolute left-[6%] top-[18%] h-40 w-64 rotate-6 bg-alltak-blue/10 clip-tz animate-floaty" />
+          <div className="absolute right-[10%] top-[24%] h-28 w-52 -rotate-3 bg-alltak-blue/[0.07] clip-tz-alt animate-floaty" style={{ animationDelay: '1.2s' }} />
+          <div className="absolute bottom-[16%] left-[16%] h-24 w-44 -rotate-6 border border-alltak-blue/20 clip-tz animate-floaty" style={{ animationDelay: '.6s' }} />
+          <div className="absolute bottom-[22%] right-[18%] h-32 w-56 rotate-3 border border-alltak-blue/15 clip-tz-alt animate-floaty" style={{ animationDelay: '1.8s' }} />
+        </div>
         {/* radial vignette */}
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_45%,transparent_30%,rgba(0,0,0,.75)_100%)]" aria-hidden />
 
         <div className="container-x relative">
           <Reveal dir="up">
-            <span className="tag">Alltak® — Nova identidade</span>
+            <span className="tag">Alltak®</span>
           </Reveal>
-          <h1 className="mt-6 font-display font-black uppercase leading-[0.86]">
-            <span className="block overflow-hidden">
-              <span className="block animate-[none] text-[13vw] text-white md:text-[10vw]">Transforme</span>
-            </span>
-            <span className="block text-[13vw] text-outline-blue md:text-[10vw]">qualquer</span>
-            <span className="block text-[13vw] text-alltak-blue md:text-[10vw]">superfície</span>
+          <h1 className="mt-6 font-display font-black uppercase leading-[0.82]">
+            <span className="block text-[15vw] text-white md:text-[12vw]">For</span>
+            <span className="block text-[15vw] text-outline-blue md:text-[12vw]">All</span>
+            <span className="block text-[15vw] text-alltak-blue md:text-[12vw]">Surfaces</span>
           </h1>
+          <p className="mt-6 max-w-xl text-lg text-white/70">
+            Para qualquer superfície — envelopamento, decoração e comunicação visual.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-5">
             <Magnetic>
               <Link to="/visualizador" className="btn-trapezoid btn-blue !px-10 !py-4 !text-base">
@@ -76,6 +77,9 @@ export default function Home() {
 
       {/* banner roll-up — artes da marca deslizando com o scroll */}
       <BannerRoll />
+
+      {/* alternating-trapezoid divider (format 01) */}
+      <TrapDivider />
 
       {/* ============ 2 — MANIFESTO ============ */}
       <section className="bg-black py-24 md:py-36">
@@ -167,12 +171,12 @@ export default function Home() {
             </Magnetic>
           </Reveal>
           <Reveal delay={140} dir="right">
-            <div className="relative h-[340px] md:h-[440px]">
+            <div className="group relative">
               <div className="absolute inset-x-8 bottom-4 h-16 rounded-[50%] bg-alltak-blue/25 blur-2xl" aria-hidden />
-              {/* the SAME 3D car used inside the visualizer, spinning in Azul Alltak */}
-              <Suspense fallback={null}>
-                <Car3D finish="brilho" color="#0080ff" className="h-full w-full cursor-hot" />
-              </Suspense>
+              {/* lightweight 2D car (the live 3D lives inside the visualizer page) */}
+              <div className="transition-transform duration-500 group-hover:-translate-y-2">
+                <CarSVG model="coupe" color="#0080ff" finish="brilho" />
+              </div>
             </div>
           </Reveal>
         </div>
@@ -218,6 +222,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* alternating-trapezoid divider (format 01) */}
+      <TrapDivider />
 
       {/* ============ 8 — CTA FINAL ============ */}
       <section className="relative overflow-hidden bg-black py-28 text-center md:py-40">

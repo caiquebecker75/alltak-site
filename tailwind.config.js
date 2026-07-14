@@ -28,9 +28,9 @@ export default {
         },
       },
       fontFamily: {
-        // Archivo — heavy geometric grotesque, close to the brand's bold titles.
-        display: ['"Archivo Expanded"', 'Archivo', 'Arial', 'sans-serif'],
-        sans: ['Archivo', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        // Per the Alltak brand manual: Big Shoulders for titles, IBM Plex for body.
+        display: ['"Big Shoulders Display"', 'Arial Narrow', 'sans-serif'],
+        sans: ['"IBM Plex Sans"', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       maxWidth: { content: '1240px' },
       keyframes: {

@@ -71,13 +71,20 @@
   .clip-slant-r {
     clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
   }
+  /* Format 01 — alternating trapezoids: keystone (wide bottom) + inverted (wide
+     top). Used side by side they tessellate into the zigzag band from the brief. */
+  .clip-tz {
+    clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
+  }
+  .clip-tz-alt {
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
+  }
 
-  /* Trapezoid image frame with hover life: zoom + shine sweep.
-     Some Drive artworks are pre-masked; .img-zoom pushes their baked edges
-     outside the clip so every image reads as a clean keystone trapezoid. */
+  /* Image frame with hover life: zoom + shine sweep. Per client feedback the
+     product images are NO LONGER clipped into trapezoids — kept clean/rectangular
+     (the trapezoid identity lives in dividers, tags and accents instead). */
   .frame-trap {
     @apply relative overflow-hidden;
-    clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
   }
   .frame-trap::after {
     content: '';
@@ -94,11 +101,12 @@
   .frame-trap:hover > img {
     transform: scale(1.06);
   }
+  /* legacy helper — now a no-op since frames are rectangular */
   .img-zoom {
-    transform: scale(1.5);
+    transform: none;
   }
   .frame-trap:hover > .img-zoom {
-    transform: scale(1.58);
+    transform: scale(1.06);
   }
 
   /* ---------- Buttons (subtle escudo trapezoid) ---------- */
