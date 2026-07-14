@@ -43,7 +43,7 @@ export default function Header() {
         } ${scrolled && !open ? 'bg-black/85 backdrop-blur border-b border-white/10' : ''}`}
       >
         <div className="container-x flex h-20 items-center justify-between md:h-24">
-          <Link to="/" aria-label="Alltak — início" className="relative z-[92]">
+          <Link to="/" aria-label="Alltak início" className="relative z-[92]">
             <Logo className="h-9 md:h-12" />
           </Link>
 

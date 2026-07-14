@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 // the entire width, crossfading with a slow Ken Burns drift. Dots + progress
 // let the user jump; hovering pauses the rotation.
 const SLIDES = [
-  { img: './assets/banner-wraps.jpg', label: 'Alltak Wraps — Linha IWC' },
-  { img: './assets/banner-decor.jpg', label: 'Alltak Decor — Revestimentos' },
-  { img: './assets/banner.avif', label: 'Alltak — Institucional' },
+  { img: './assets/banner-wraps.jpg', label: 'Alltak Wraps · Linha IWC' },
+  { img: './assets/banner-decor.jpg', label: 'Alltak Decor · Revestimentos' },
+  { img: './assets/banner.avif', label: 'Alltak · Institucional' },
 ]
 
 const DURATION = 5000

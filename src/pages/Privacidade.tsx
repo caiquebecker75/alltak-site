@@ -8,7 +8,7 @@ export default function Privacidade() {
         <div className="container-x max-w-3xl space-y-6 text-sm leading-relaxed text-alltak-black/75">
           <p>
             Esta página descreve como a Alltak trata os dados coletados neste site.
-            Conteúdo de demonstração — substituir pelo texto jurídico oficial.
+            Conteúdo de demonstração. Substituir pelo texto jurídico oficial.
           </p>
           <div>
             <h3 className="text-2xl text-alltak-black">Uso de dados</h3>

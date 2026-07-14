@@ -4,8 +4,8 @@ import { STORE_URL } from '../data/site'
 
 // "Banner principal" — carrossel dos banners finalizados fornecidos pela marca.
 const SLIDES = [
-  { img: './assets/banner-wraps.jpg', alt: 'Alltak Wraps — Linha IWC' },
-  { img: './assets/banner-decor.jpg', alt: 'Alltak Decor — Revestimentos' },
+  { img: './assets/banner-wraps.jpg', alt: 'Alltak Wraps · Linha IWC' },
+  { img: './assets/banner-decor.jpg', alt: 'Alltak Decor · Revestimentos' },
 ]
 
 export default function Hero() {

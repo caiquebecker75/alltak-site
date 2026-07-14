@@ -37,7 +37,7 @@ export default function Visualizador() {
           </h1>
           <p className="mt-4 max-w-2xl text-white/65">
             Escolha o acabamento e a cor e veja na hora como fica no veículo. Tire a dúvida
-            antes de aplicar — do jeito Alltak, com padrão do começo ao fim.
+            antes de aplicar, do jeito Alltak, com padrão do começo ao fim.
           </p>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function Visualizador() {
                 Consulte o catálogo oficial e um aplicador Alltak.
               </p>
               <p className="mt-2 text-[10px] text-white/25">
-                Modelo 3D: exemplo do projeto three.js — “Ferrari 458” por vicent091036 (CC-BY).
+                Modelo 3D: exemplo do projeto three.js. “Ferrari 458” por vicent091036 (CC-BY).
               </p>
             </div>
           </div>

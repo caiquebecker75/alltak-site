@@ -76,7 +76,7 @@ function LinePanel({ line }: { line: string }) {
           ))}
         </dl>
         <p className="mt-3 text-[11px] text-white/35">
-          *Especificações de referência — confirme na ficha técnica oficial da linha.
+          *Especificações de referência. Confirme na ficha técnica oficial da linha.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link to="/visualizador" className="btn-trapezoid btn-blue !py-2 !text-xs">Ver no visualizador</Link>

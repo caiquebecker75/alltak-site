@@ -23,7 +23,7 @@ export default function Contato() {
               <div className="border border-alltak-blue bg-white p-8">
                 <h3 className="text-3xl text-alltak-blue">Mensagem enviada!</h3>
                 <p className="mt-2 text-alltak-black/70">
-                  Obrigado pelo contato. Retornaremos em breve. (Formulário de demonstração —
+                  Obrigado pelo contato. Retornaremos em breve. (Formulário de demonstração,
                   integrar ao e-mail/CRM da Alltak.)
                 </p>
               </div>

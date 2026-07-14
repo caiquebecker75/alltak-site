@@ -75,7 +75,7 @@ export const UNITS: Unit[] = [
     name: 'Signs',
     tagline: 'Sinalização & Comunicação Visual',
     description:
-      'Película de PVC monomérico adesiva de altíssima qualidade, produzida com adesivo acrílico permanente, de corte preciso e fácil aplicação. Indicada para sinalização, propaganda, design, decoração e identificação de frotas — onde se exige precisão, durabilidade, estabilidade e resistência.',
+      'Película de PVC monomérico adesiva de altíssima qualidade, produzida com adesivo acrílico permanente, de corte preciso e fácil aplicação. Indicada para sinalização, propaganda, design, decoração e identificação de frotas, onde se exige precisão, durabilidade, estabilidade e resistência.',
     image: './assets/sign_01.avif',
     bg: 'bg-alltak-navy2',
     accent: 'text-alltak-blue',

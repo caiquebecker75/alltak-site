@@ -21,7 +21,7 @@ export default function Cursos() {
           draggable={false}
         />
         Treinamentos para elevar o nível da sua aplicação. Sem turmas com data aberta
-        no momento — deixe seu interesse para as próximas.
+        no momento. Deixe seu interesse para as próximas.
       </PageHeader>
 
       <section className="bg-alltak-cream py-16 text-alltak-black md:py-24">

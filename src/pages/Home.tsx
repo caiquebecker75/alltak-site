@@ -45,7 +45,7 @@ export default function Home() {
             <span className="block text-[15vw] text-alltak-blue md:text-[12vw]">Surfaces</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/70">
-            Para qualquer superfície — envelopamento, decoração e comunicação visual.
+            Para qualquer superfície. Envelopamento, decoração e comunicação visual.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-5">
             <Magnetic>
@@ -162,7 +162,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 max-w-lg text-white/70">
               7 acabamentos, dezenas de cores, 3 silhuetas. Escolha, combine e veja o
-              resultado na hora — antes de aplicar o primeiro metro de vinil.
+              resultado na hora, antes de aplicar o primeiro metro de vinil.
             </p>
             <Magnetic>
               <Link to="/visualizador" className="btn-trapezoid btn-blue mt-8 !px-10 !py-4">
@@ -202,7 +202,7 @@ export default function Home() {
             <p className="mt-5 max-w-xl leading-relaxed text-white/70">
               A Alltak desenvolve e produz materiais adesivos para envelopamento,
               decoração e comunicação visual. Estrutura própria, produção nacional e
-              linhas completas — pensadas para quem vive de aplicação e precisa manter
+              linhas completas, pensadas para quem vive de aplicação e precisa manter
               o padrão do começo ao fim.
             </p>
             <ul className="mt-7 grid gap-3 sm:grid-cols-2">
