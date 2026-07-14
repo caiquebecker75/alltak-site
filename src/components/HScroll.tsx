@@ -56,19 +56,20 @@ export default function HScroll() {
             <Link
               key={c.slug}
               to="/produtos"
-              className="group relative block w-[78vw] shrink-0 sm:w-[46vw] lg:w-[30vw]"
+              className="group block w-[70vw] shrink-0 sm:w-[42vw] lg:w-[26vw]"
             >
-              <div className="frame-trap aspect-[4/5] bg-alltak-navy">
-                <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="img-zoom opacity-90 group-hover:opacity-100" />
+              {/* alternating trapezoids — one inverted from the next (format 01) */}
+              <div className={`frame-trap aspect-[4/5] bg-alltak-navy ${i % 2 === 0 ? 'clip-tz' : 'clip-tz-alt'}`}>
+                <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="opacity-95 group-hover:opacity-100" />
               </div>
-              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+              <div className="mt-3 flex items-end justify-between px-2">
                 <div>
-                  <div className="font-display text-xs font-bold uppercase tracking-[0.25em] text-alltak-blueLight">
+                  <div className="font-display text-xs font-bold uppercase tracking-[0.25em] text-alltak-black/50">
                     0{i + 1} · {c.items.length} produtos
                   </div>
-                  <h3 className="mt-1 text-3xl text-white md:text-4xl">{c.name}</h3>
+                  <h3 className="mt-0.5 text-2xl text-alltak-black md:text-3xl">{c.name}</h3>
                 </div>
-                <span className="mb-1 inline-block bg-alltak-blue px-3 py-2 font-display text-xs font-bold uppercase text-white opacity-0 transition-opacity duration-300 clip-escudo group-hover:opacity-100">
+                <span className="font-display text-sm font-bold uppercase text-alltak-blueDark opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Ver →
                 </span>
               </div>

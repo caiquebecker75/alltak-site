@@ -1,5 +1,8 @@
+import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { YOUTUBE_URL, STORE_URL } from '../data/site'
+// same 3D car as the visualizer (its own chunk, shared/cached with the visualizer)
+const Car3D = lazy(() => import('../components/Car3D'))
 import BannerRoll from '../components/BannerRoll'
 import BrandFamily from '../components/BrandFamily'
 import StickyUnits from '../components/StickyUnits'
@@ -171,11 +174,19 @@ export default function Home() {
             </Magnetic>
           </Reveal>
           <Reveal delay={140} dir="right">
-            <div className="group relative">
+            <div className="relative">
               <div className="absolute inset-x-8 bottom-4 h-16 rounded-[50%] bg-alltak-blue/25 blur-2xl" aria-hidden />
-              {/* lightweight 2D car (the live 3D lives inside the visualizer page) */}
-              <div className="transition-transform duration-500 group-hover:-translate-y-2">
-                <CarSVG model="coupe" color="#0080ff" finish="brilho" />
+              {/* the SAME 3D car as the visualizer (SVG shown only while it loads) */}
+              <div className="relative h-[320px] md:h-[420px]">
+                <Suspense
+                  fallback={
+                    <div className="flex h-full items-center justify-center">
+                      <CarSVG model="coupe" color="#0080ff" finish="brilho" />
+                    </div>
+                  }
+                >
+                  <Car3D finish="brilho" color="#0080ff" className="h-full w-full cursor-hot" />
+                </Suspense>
               </div>
             </div>
           </Reveal>
@@ -215,8 +226,8 @@ export default function Home() {
           </Reveal>
           <Reveal delay={140} dir="right">
             <Parallax speed={-0.06}>
-              <div className="frame-trap aspect-[4/5] w-full cursor-hot">
-                <img src="./assets/sobre_01.avif" alt="Produção nacional Alltak" loading="lazy" className="img-zoom" />
+              <div className="frame-trap clip-tz aspect-[4/3] w-full cursor-hot">
+                <img src="./assets/sobre_01.avif" alt="Produção nacional Alltak" loading="lazy" />
               </div>
             </Parallax>
           </Reveal>
