@@ -34,11 +34,15 @@ export default function Catalogos() {
                 </div>
                 <button
                   onClick={() =>
-                    open({ title: c.name.startsWith('Catálogo') ? c.name : `Catálogo ${c.name}`, url: '#', kind: 'PDF' })
+                    open({
+                      title: c.name.startsWith('Catálogo') ? c.name : `Catálogo ${c.name}`,
+                      url: c.file ?? '#',
+                      kind: 'PDF',
+                    })
                   }
                   className="btn-trapezoid btn-blue mt-6 self-start !py-2 !text-xs"
                 >
-                  Baixar catálogo
+                  {c.file ? 'Baixar catálogo' : 'Em breve'}
                 </button>
               </div>
             </Reveal>

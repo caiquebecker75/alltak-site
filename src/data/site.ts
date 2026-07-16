@@ -84,14 +84,14 @@ export const UNITS: Unit[] = [
   },
 ]
 
-export type Catalog = { name: string; desc: string }
+export type Catalog = { name: string; desc: string; file?: string }
 
 export const CATALOGS: Catalog[] = [
+  { name: 'Automotivo — Alltak Wraps', desc: 'Envelopamento e proteção veicular. Catálogo 2026.', file: './catalogos/catalogo-wraps-2026.pdf' },
+  { name: 'Arquitetura — Alltak Decor', desc: 'Revestimentos para interiores e ambientes. Catálogo 2026.', file: './catalogos/catalogo-decor-2026.pdf' },
+  { name: 'Comunicação Visual — Alltak Signs', desc: 'Sinalização, recortes e design. Catálogo 2026.', file: './catalogos/catalogo-signs-2026.pdf' },
   { name: 'Catálogo Geral', desc: 'Visão completa do portfólio Alltak.' },
-  { name: 'Automotivo', desc: 'Linhas de envelopamento e proteção veicular.' },
-  { name: 'Arquitetura', desc: 'Revestimentos para interiores e ambientes.' },
   { name: 'Impressão', desc: 'Materiais para comunicação visual impressa.' },
-  { name: 'Sign & Design', desc: 'Recortes, sinalização e design.' },
   { name: 'Wrap Care', desc: 'Manutenção e cuidados pós-aplicação.' },
   { name: 'Aplicações Técnicas', desc: 'Máscaras, laminações e soluções técnicas.' },
 ]
