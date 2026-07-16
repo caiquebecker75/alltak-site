@@ -1,0 +1,418 @@
+[
+ {
+  "code": "773314",
+  "name": "Amarelo Canário",
+  "pantone": "7406 C",
+  "serie": "Premium",
+  "hex": "#f0c000",
+  "applied": "773314_ap.jpg"
+ },
+ {
+  "code": "773315",
+  "name": "Amarelo Médio",
+  "pantone": "136 C",
+  "serie": "Premium",
+  "hex": "#fcba36",
+  "applied": "773315_ap.jpg"
+ },
+ {
+  "code": "773311",
+  "name": "Amarelo Ouro",
+  "pantone": "137 C",
+  "serie": "Premium",
+  "hex": "#fca200",
+  "applied": "773311_ap.jpg"
+ },
+ {
+  "code": "773313",
+  "name": "Laranja Intenso",
+  "pantone": "165 C",
+  "serie": "Premium",
+  "hex": "#f66618",
+  "applied": "773313_ap.jpg"
+ },
+ {
+  "code": "773320",
+  "name": "Vermelho Tomate",
+  "pantone": "2035 C",
+  "serie": "Premium",
+  "hex": "#d84242",
+  "applied": "773320_ap.jpg"
+ },
+ {
+  "code": "773321",
+  "name": "Vermelho Vivo",
+  "pantone": "2350 C",
+  "serie": "Premium",
+  "hex": "#b41e1e",
+  "applied": "773321_ap.jpg"
+ },
+ {
+  "code": "773322",
+  "name": "Vermelho Rubi",
+  "pantone": "1795 C",
+  "serie": "Premium",
+  "hex": "#d2242a",
+  "applied": "773322_ap.jpg"
+ },
+ {
+  "code": "773330",
+  "name": "Magenta",
+  "pantone": "214 C",
+  "serie": "Premium",
+  "hex": "#d21266",
+  "applied": "773330_ap.jpg"
+ },
+ {
+  "code": "773231",
+  "name": "Pink",
+  "pantone": "211 C",
+  "serie": "Premium",
+  "hex": "#f07eb4",
+  "applied": "773231_ap.jpg"
+ },
+ {
+  "code": "773333",
+  "name": "Roxo",
+  "pantone": "7672 C",
+  "serie": "Premium",
+  "hex": "#483c84",
+  "applied": "773333_ap.jpg"
+ },
+ {
+  "code": "773350",
+  "name": "Azul Celeste",
+  "pantone": "299 C",
+  "serie": "Premium",
+  "hex": "#129cde",
+  "applied": "773350_ap.jpg"
+ },
+ {
+  "code": "773352",
+  "name": "Azul Médio",
+  "pantone": "285 C",
+  "serie": "Premium",
+  "hex": "#0c6ccc",
+  "applied": "773352_ap.jpg"
+ },
+ {
+  "code": "773353",
+  "name": "Azul Royal",
+  "pantone": "REFLEX BLUE C",
+  "serie": "Premium",
+  "hex": "#061284",
+  "applied": "773353_ap.jpg"
+ },
+ {
+  "code": "773354",
+  "name": "Azul Noturno",
+  "pantone": "295 C",
+  "serie": "Premium",
+  "hex": "#002454",
+  "applied": "773354_ap.jpg"
+ },
+ {
+  "code": "773341",
+  "name": "Verde Agua",
+  "pantone": "7466 C",
+  "serie": "Premium",
+  "hex": "#00a8ba",
+  "applied": "773341_ap.jpg"
+ },
+ {
+  "code": "773340",
+  "name": "Verde Abacate",
+  "pantone": "2287 C",
+  "serie": "Premium",
+  "hex": "#5ac000",
+  "applied": "773340_ap.jpg"
+ },
+ {
+  "code": "773342",
+  "name": "Verde Bandeira",
+  "pantone": "2419 C",
+  "serie": "Premium",
+  "hex": "#007854",
+  "applied": "773342_ap.jpg"
+ },
+ {
+  "code": "773343",
+  "name": "Verde Amazonas",
+  "pantone": "7729 C",
+  "serie": "Premium",
+  "hex": "#005442",
+  "applied": "773343_ap.jpg"
+ },
+ {
+  "code": "773393",
+  "name": "Marrom",
+  "pantone": "7603 C",
+  "serie": "Premium",
+  "hex": "#663c2a",
+  "applied": "773393_ap.jpg"
+ },
+ {
+  "code": "773391",
+  "name": "Ouro",
+  "pantone": "872 C",
+  "serie": "Premium",
+  "hex": "#846c48",
+  "applied": "773391_ap.jpg"
+ },
+ {
+  "code": "773389",
+  "name": "Creme",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#c6baa2",
+  "applied": "773389_ap.jpg"
+ },
+ {
+  "code": "773360",
+  "name": "Cinza Claro",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#bababa",
+  "applied": "773360_ap.jpg"
+ },
+ {
+  "code": "773361",
+  "name": "Cinza Escuro",
+  "pantone": "423 C",
+  "serie": "Premium",
+  "hex": "#848a8a",
+  "applied": "773361_ap.jpg"
+ },
+ {
+  "code": "773392",
+  "name": "Prata",
+  "pantone": "877 C",
+  "serie": "Premium",
+  "hex": "#848a8a",
+  "applied": "773392_ap.jpg"
+ },
+ {
+  "code": "773394",
+  "name": "Aço Escovado Prata",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#b8bcc0",
+  "applied": "773394_ap.jpg"
+ },
+ {
+  "code": "773310",
+  "name": "Branco",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#f2f2f2",
+  "applied": "773310_ap.jpg"
+ },
+ {
+  "code": "773310F",
+  "name": "Branco Fosco",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#f2f2f2",
+  "applied": "773310F_ap.jpg"
+ },
+ {
+  "code": "773370",
+  "name": "Preto",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#111111",
+  "applied": "773370_ap.jpg"
+ },
+ {
+  "code": "773370F",
+  "name": "Preto Fosco",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#111111",
+  "applied": "773370F_ap.jpg"
+ },
+ {
+  "code": "773301",
+  "name": "Transparente",
+  "pantone": null,
+  "serie": "Premium",
+  "hex": "#dea88a",
+  "applied": "773301_ap.jpg"
+ },
+ {
+  "code": "127314",
+  "name": "Amarelo Canário",
+  "pantone": "7406 C",
+  "serie": "Color",
+  "hex": "#f0c000",
+  "applied": "127314_ap.jpg"
+ },
+ {
+  "code": "127311",
+  "name": "Amarelo Ouro",
+  "pantone": "137 C",
+  "serie": "Color",
+  "hex": "#fca200",
+  "applied": "127311_ap.jpg"
+ },
+ {
+  "code": "127312",
+  "name": "Laranja Intenso",
+  "pantone": "165 C",
+  "serie": "Color",
+  "hex": "#f66618",
+  "applied": "127312_ap.jpg"
+ },
+ {
+  "code": "127320",
+  "name": "Vermelho Tomate",
+  "pantone": "2035 C",
+  "serie": "Color",
+  "hex": "#d84242",
+  "applied": "127320_ap.jpg"
+ },
+ {
+  "code": "127321",
+  "name": "Vermelho Vivo",
+  "pantone": "2350 C",
+  "serie": "Color",
+  "hex": "#b41e1e",
+  "applied": "127321_ap.jpg"
+ },
+ {
+  "code": "127350",
+  "name": "Azul Celeste",
+  "pantone": "299 C",
+  "serie": "Color",
+  "hex": "#129cde",
+  "applied": "127350_ap.jpg"
+ },
+ {
+  "code": "127352",
+  "name": "Azul Médio",
+  "pantone": "285 C",
+  "serie": "Color",
+  "hex": "#0c6ccc",
+  "applied": "127352_ap.jpg"
+ },
+ {
+  "code": "127353",
+  "name": "Azul Royal",
+  "pantone": "REFLEX BLUE C",
+  "serie": "Color",
+  "hex": "#061284",
+  "applied": "127353_ap.jpg"
+ },
+ {
+  "code": "127340",
+  "name": "Verde Abacate",
+  "pantone": "2287 C",
+  "serie": "Color",
+  "hex": "#5ac000",
+  "applied": "127340_ap.jpg"
+ },
+ {
+  "code": "127342",
+  "name": "Verde Bandeira",
+  "pantone": "2419 C",
+  "serie": "Color",
+  "hex": "#007854",
+  "applied": "127342_ap.jpg"
+ },
+ {
+  "code": "127361",
+  "name": "Cinza Escuro",
+  "pantone": "423 C",
+  "serie": "Color",
+  "hex": "#848a8a",
+  "applied": "127361_ap.jpg"
+ },
+ {
+  "code": "127392",
+  "name": "Prata",
+  "pantone": "877 C",
+  "serie": "Color",
+  "hex": "#848a8a",
+  "applied": "127392_ap.jpg"
+ },
+ {
+  "code": "21755",
+  "name": "Prata Flex",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#b8bcc0",
+  "applied": "21755_ap.jpg"
+ },
+ {
+  "code": "127394",
+  "name": "Aço Escovado Prata",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#b8bcc0",
+  "applied": "127394_ap.jpg"
+ },
+ {
+  "code": "127370",
+  "name": "Preto",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#111111",
+  "applied": "127370_ap.jpg"
+ },
+ {
+  "code": "127370F",
+  "name": "Preto Fosco",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#111111",
+  "applied": "127370F_ap.jpg"
+ },
+ {
+  "code": "127310",
+  "name": "Branco",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#f2f2f2",
+  "applied": "127310_ap.jpg"
+ },
+ {
+  "code": "127310F",
+  "name": "Branco Fosco",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#f2f2f2",
+  "applied": "127310F_ap.jpg"
+ },
+ {
+  "code": "127301",
+  "name": "Transparente",
+  "pantone": null,
+  "serie": "Color",
+  "hex": "#dea88a",
+  "applied": "127301_ap.jpg"
+ },
+ {
+  "code": "422P01",
+  "name": "Tec Pisotak Laminação",
+  "pantone": null,
+  "serie": "",
+  "hex": "#eaeaea",
+  "applied": "422P01_ap.jpg"
+ },
+ {
+  "code": "422TB01",
+  "name": "Tec Máscara Cristal (Máscara De Tr",
+  "pantone": null,
+  "serie": "",
+  "hex": "#c0c6c6",
+  "applied": "422TB01_ap.jpg"
+ },
+ {
+  "code": "422TM50",
+  "name": "Tec Máscara Azul (Máscara De Trans",
+  "pantone": null,
+  "serie": "",
+  "hex": "#baf0fc",
+  "applied": "422TM50_ap.jpg"
+ }
+]

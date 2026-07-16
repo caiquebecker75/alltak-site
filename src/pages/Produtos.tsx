@@ -115,7 +115,10 @@ export default function Produtos() {
         Um portfólio completo para diferentes estilos e necessidades. Clique em uma
         linha para ver cores, códigos e informações técnicas.
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2 !text-xs">
+          <Link to="/cores" className="btn-trapezoid btn-blue !py-2 !text-xs">
+            Explorar todas as cores →
+          </Link>
+          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2 !text-xs">
             Comprar na Alltak Store ↗
           </a>
           <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2 !text-xs">

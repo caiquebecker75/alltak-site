@@ -37,6 +37,7 @@ function ColorDetail({ color, onClose }: { color: Color; onClose: () => void }) 
           <h3 className="mt-1 font-display text-3xl font-extrabold uppercase text-white">{color.name}</h3>
           <div className="mt-1 font-display text-sm font-bold uppercase tracking-[0.2em] text-white/50">
             Código {color.code}
+            {color.pantone ? ` · Pantone ${color.pantone}` : ''}
           </div>
 
           {/* cor + textura */}
