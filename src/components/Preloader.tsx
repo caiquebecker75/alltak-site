@@ -11,17 +11,27 @@ export default function Preloader() {
   useEffect(() => {
     // ease the counter: fast at first, settling at 100
     let v = 0
+    let finished = false
+    const finish = () => {
+      if (finished) return
+      finished = true
+      clearInterval(id)
+      setN(100)
+      setTimeout(() => setLeaving(true), 200)
+      setTimeout(() => setGone(true), 900)
+    }
     const id = setInterval(() => {
       v += Math.max(1, Math.round((100 - v) / 9))
-      if (v >= 100) {
-        v = 100
-        clearInterval(id)
-        setTimeout(() => setLeaving(true), 250)
-        setTimeout(() => setGone(true), 1150)
-      }
-      setN(v)
-    }, 55)
-    return () => clearInterval(id)
+      if (v >= 100) finish()
+      else setN(v)
+    }, 45)
+    // hard cap — the preloader can NEVER get stuck, even if the main thread is
+    // busy (e.g. compiling a lazy chunk) and starves the interval.
+    const cap = setTimeout(finish, 2200)
+    return () => {
+      clearInterval(id)
+      clearTimeout(cap)
+    }
   }, [])
 
   useEffect(() => {

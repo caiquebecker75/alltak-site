@@ -1,7 +1,9 @@
-import { lazy, Suspense } from 'react'
+import { lazy } from 'react'
 import { Link } from 'react-router-dom'
 import { YOUTUBE_URL, STORE_URL } from '../data/site'
-// same 3D car as the visualizer (its own chunk, shared/cached with the visualizer)
+import LazyInView from '../components/LazyInView'
+// same 3D car as the visualizer — its heavy chunk loads only when scrolled near,
+// so the top of the home paints fast and the preloader never stalls.
 const Car3D = lazy(() => import('../components/Car3D'))
 import BannerRoll from '../components/BannerRoll'
 import BrandFamily from '../components/BrandFamily'
@@ -176,18 +178,17 @@ export default function Home() {
           <Reveal delay={140} dir="right">
             <div className="relative">
               <div className="absolute inset-x-8 bottom-4 h-16 rounded-[50%] bg-alltak-blue/25 blur-2xl" aria-hidden />
-              {/* the SAME 3D car as the visualizer (SVG shown only while it loads) */}
-              <div className="relative h-[320px] md:h-[420px]">
-                <Suspense
-                  fallback={
-                    <div className="flex h-full items-center justify-center">
-                      <CarSVG model="coupe" color="#0080ff" finish="brilho" />
-                    </div>
-                  }
-                >
-                  <Car3D finish="brilho" color="#0080ff" className="h-full w-full cursor-hot" />
-                </Suspense>
-              </div>
+              {/* the SAME 3D car as the visualizer, loaded only when in view */}
+              <LazyInView
+                className="relative h-[320px] md:h-[420px]"
+                fallback={
+                  <div className="flex h-full items-center justify-center">
+                    <CarSVG model="coupe" color="#0080ff" finish="brilho" />
+                  </div>
+                }
+              >
+                <Car3D finish="brilho" color="#0080ff" className="h-full w-full cursor-hot" />
+              </LazyInView>
             </div>
           </Reveal>
         </div>
