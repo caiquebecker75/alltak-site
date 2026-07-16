@@ -6,6 +6,7 @@ import ScrollProgress from './components/ScrollProgress'
 import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
 import WhatsApp from './components/WhatsApp'
+import { LeadGateProvider } from './lead/LeadGate'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
@@ -44,7 +45,7 @@ function NotFound() {
 
 export default function App() {
   return (
-    <>
+    <LeadGateProvider>
       <Preloader />
       <Cursor />
       <ScrollProgress />
@@ -66,6 +67,6 @@ export default function App() {
       </main>
       <Footer />
       <WhatsApp />
-    </>
+    </LeadGateProvider>
   )
 }

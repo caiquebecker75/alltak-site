@@ -4,6 +4,7 @@ import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import { PRODUCT_CATEGORIES, STORE_URL } from '../data/site'
 import { LINE_DETAILS, type LineColor } from '../data/lines'
+import { useLeadGate } from '../lead/LeadGate'
 
 const CATEGORY_IMAGE: Record<string, string> = {
   automotivo: './assets/automotivo_03.avif',
@@ -23,6 +24,7 @@ function swatchBg(c: LineColor): React.CSSProperties {
 function LinePanel({ line }: { line: string }) {
   const d = LINE_DETAILS[line]
   const [sel, setSel] = useState(0)
+  const { open } = useLeadGate()
   if (!d) {
     return (
       <div className="border border-white/10 bg-white/[0.03] p-6 text-sm text-white/60">
@@ -78,11 +80,26 @@ function LinePanel({ line }: { line: string }) {
         <p className="mt-3 text-[11px] text-white/35">
           *Especificações de referência. Confirme na ficha técnica oficial da linha.
         </p>
-        <div className="mt-4 flex flex-wrap gap-3">
+        <div className="mt-4 flex flex-wrap gap-2">
           <Link to="/visualizador" className="btn-trapezoid btn-blue !py-2 !text-xs">Ver no visualizador</Link>
           <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !py-2 !text-xs">
             Comprar ↗
           </a>
+        </div>
+        {/* download do boletim técnico / vídeo (com cadastro) */}
+        <div className="mt-3 flex flex-wrap gap-2">
+          <button
+            onClick={() => open({ title: `Boletim Técnico ${line}`, url: '#', kind: 'PDF' })}
+            className="btn-trapezoid btn-navy !py-2 !text-xs"
+          >
+            Boletim técnico ↓
+          </button>
+          <button
+            onClick={() => open({ title: `Vídeo ${line}`, url: '#', kind: 'Vídeo' })}
+            className="btn-trapezoid btn-outline !py-2 !text-xs"
+          >
+            Vídeo ▶
+          </button>
         </div>
       </div>
     </div>
