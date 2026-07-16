@@ -17,6 +17,7 @@ export type NavItem = {
 
 export const NAV: NavItem[] = [
   { label: 'Visualizador', to: '/visualizador' },
+  { label: 'Decoração', to: '/decoracao' },
   { label: 'Cores', to: '/cores' },
   { label: 'Catálogos', to: '/catalogos' },
   { label: 'Produtos', to: '/produtos' },
