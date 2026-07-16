@@ -1,0 +1,401 @@
+[
+ {
+  "code": "977D125",
+  "name": "Wood Muxarabi Constantinopla",
+  "hex": "#2c2c2c",
+  "swatch": "977D125_sw.jpg",
+  "applied": "977D125_ap.jpg"
+ },
+ {
+  "code": "977D109",
+  "name": "Wood Freijó Astúrias",
+  "hex": "#7c5c4c",
+  "swatch": "977D109_sw.jpg",
+  "applied": "977D109_ap.jpg"
+ },
+ {
+  "code": "977D110",
+  "name": "Wood Freijó Toledo",
+  "hex": "#d4b494",
+  "swatch": "977D110_sw.jpg",
+  "applied": "977D110_ap.jpg"
+ },
+ {
+  "code": "977D108",
+  "name": "Wood Freijó Galícia",
+  "hex": "#0c0c0c",
+  "swatch": "977D108_sw.jpg",
+  "applied": "977D108_ap.jpg"
+ },
+ {
+  "code": "977D85",
+  "name": "Wood Ripado Vigo",
+  "hex": "#242424",
+  "swatch": "977D85_sw.jpg",
+  "applied": "977D85_ap.jpg"
+ },
+ {
+  "code": "977D92",
+  "name": "Wood Ripado Lugo",
+  "hex": "#cccccc",
+  "swatch": "977D92_sw.jpg",
+  "applied": "977D92_ap.jpg"
+ },
+ {
+  "code": "977D93",
+  "name": "Wood Ripado Burgo",
+  "hex": "#0c0c0c",
+  "swatch": "977D93_sw.jpg",
+  "applied": "977D93_ap.jpg"
+ },
+ {
+  "code": "977D98",
+  "name": "Wood Ripado Leon",
+  "hex": "#141414",
+  "swatch": "977D98_sw.jpg",
+  "applied": "977D98_ap.jpg"
+ },
+ {
+  "code": "977D97",
+  "name": "Wood Carvalho Tenerife",
+  "hex": "#bcac8c",
+  "swatch": "977D97_sw.jpg",
+  "applied": "977D97_ap.jpg"
+ },
+ {
+  "code": "977D03",
+  "name": "Wood Carvalho Inovatta",
+  "hex": "#dca474",
+  "swatch": "977D03_sw.jpg",
+  "applied": "977D03_ap.jpg"
+ },
+ {
+  "code": "977D35",
+  "name": "Wood Carvalho Cadiz",
+  "hex": "#c4b4ac",
+  "swatch": "977D35_sw.jpg",
+  "applied": "977D35_ap.jpg"
+ },
+ {
+  "code": "977D37",
+  "name": "Wood Carvalho Verona",
+  "hex": "#e4dcd4",
+  "swatch": "977D37_sw.jpg",
+  "applied": "977D37_ap.jpg"
+ },
+ {
+  "code": "977D94",
+  "name": "Wood Carvalho Pamplona",
+  "hex": "#0c0c0c",
+  "swatch": "977D94_sw.jpg",
+  "applied": "977D94_ap.jpg"
+ },
+ {
+  "code": "977D19",
+  "name": "Wood Carvalho Capuccino",
+  "hex": "#141414",
+  "swatch": "977D19_sw.jpg",
+  "applied": "977D19_ap.jpg"
+ },
+ {
+  "code": "977D37",
+  "name": "Wood Rústica Salamanca",
+  "hex": "#141414",
+  "swatch": "977D37_sw.jpg",
+  "applied": "977D37_ap.jpg"
+ },
+ {
+  "code": "977D54",
+  "name": "Wood Demolição Barcelona",
+  "hex": "#2c2c2c",
+  "swatch": "977D54_sw.jpg",
+  "applied": "977D54_ap.jpg"
+ },
+ {
+  "code": "977D30",
+  "name": "Wood Demolição Sevilha",
+  "hex": "#846c1c",
+  "swatch": "977D30_sw.jpg",
+  "applied": "977D30_ap.jpg"
+ },
+ {
+  "code": "977D122",
+  "name": "Wood Burl",
+  "hex": "#242424",
+  "swatch": "977D122_sw.jpg",
+  "applied": "977D122_ap.jpg"
+ },
+ {
+  "code": "977D102",
+  "name": "Mármore Calacatta Oro",
+  "hex": "#848484",
+  "swatch": "977D102_sw.jpg",
+  "applied": "977D102_ap.jpg"
+ },
+ {
+  "code": "977D96",
+  "name": "Mármore Marquina",
+  "hex": "#5c4c44",
+  "swatch": "977D96_sw.jpg",
+  "applied": "977D96_ap.jpg"
+ },
+ {
+  "code": "977D106",
+  "name": "Mármore Grígio",
+  "hex": "#242424",
+  "swatch": "977D106_sw.jpg",
+  "applied": "977D106_ap.jpg"
+ },
+ {
+  "code": "977D86",
+  "name": "Mármore Lunare",
+  "hex": "#c4ccd4",
+  "swatch": "977D86_sw.jpg",
+  "applied": "977D86_ap.jpg"
+ },
+ {
+  "code": "977D65",
+  "name": "Mármore Bianco",
+  "hex": "#acacac",
+  "swatch": "977D65_sw.jpg",
+  "applied": "977D65_ap.jpg"
+ },
+ {
+  "code": "977D64",
+  "name": "Mármore Nero",
+  "hex": "#242424",
+  "swatch": "977D64_sw.jpg",
+  "applied": "977D64_ap.jpg"
+ },
+ {
+  "code": "977D121",
+  "name": "Mármore Tivoli",
+  "hex": "#dcbc8c",
+  "swatch": "977D121_sw.jpg",
+  "applied": "977D121_ap.jpg"
+ },
+ {
+  "code": "977D117",
+  "name": "Lombarda Sabbia Lombarda",
+  "hex": "#242424",
+  "swatch": "977D117_sw.jpg",
+  "applied": "977D117_ap.jpg"
+ },
+ {
+  "code": "977D116",
+  "name": "Lombarda Cenere",
+  "hex": "#bcc4c4",
+  "swatch": "977D116_sw.jpg",
+  "applied": "977D116_ap.jpg"
+ },
+ {
+  "code": "977D49",
+  "name": "Concreto",
+  "hex": "#242424",
+  "swatch": "977D49_sw.jpg",
+  "applied": "977D49_ap.jpg"
+ },
+ {
+  "code": "977D112",
+  "name": "Concreto Areia",
+  "hex": "#242424",
+  "swatch": "977D112_sw.jpg",
+  "applied": "977D112_ap.jpg"
+ },
+ {
+  "code": "977D55",
+  "name": "Tijolo",
+  "hex": "#ececec",
+  "swatch": "977D55_sw.jpg",
+  "applied": "977D55_ap.jpg"
+ },
+ {
+  "code": "977D113",
+  "name": "Tijolo Inglês London",
+  "hex": "#0c0c0c",
+  "swatch": "977D113_sw.jpg",
+  "applied": "977D113_ap.jpg"
+ },
+ {
+  "code": "977D90",
+  "name": "Metrô Branco",
+  "hex": "#d4d4dc",
+  "swatch": "977D90_sw.jpg",
+  "applied": "977D90_ap.jpg"
+ },
+ {
+  "code": "977D20",
+  "name": "Decor Porto",
+  "hex": "#141414",
+  "swatch": "977D20_sw.jpg",
+  "applied": "977D20_ap.jpg"
+ },
+ {
+  "code": "977D19",
+  "name": "Decor Lisboa",
+  "hex": "#141414",
+  "swatch": "977D19_sw.jpg",
+  "applied": "977D19_ap.jpg"
+ },
+ {
+  "code": "977D873",
+  "name": "Jardim Vertical",
+  "hex": "#242424",
+  "swatch": "977D873_sw.jpg",
+  "applied": "977D873_ap.jpg"
+ },
+ {
+  "code": "977D111",
+  "name": "Jardim Tropical",
+  "hex": "#141414",
+  "swatch": "977D111_sw.jpg",
+  "applied": "977D111_ap.jpg"
+ },
+ {
+  "code": "977KF41",
+  "name": "Kroma Forma Verde Botânico",
+  "hex": "#94a4a4",
+  "swatch": "977KF41_sw.jpg",
+  "applied": "977KF41_ap.jpg"
+ },
+ {
+  "code": "977KF11",
+  "name": "Kroma Forma Azul Petróleo Referência",
+  "hex": "#0c344c",
+  "swatch": "977KF11_sw.jpg",
+  "applied": "977KF11_ap.jpg"
+ },
+ {
+  "code": "977KF12",
+  "name": "Kroma Forma Verde Primavera Referência",
+  "hex": "#84947c",
+  "swatch": "977KF12_sw.jpg",
+  "applied": "977KF12_ap.jpg"
+ },
+ {
+  "code": "977KF10",
+  "name": "Kroma Forma Aveia Referência",
+  "hex": "#bcb4ac",
+  "swatch": "977KF10_sw.jpg",
+  "applied": "977KF10_ap.jpg"
+ },
+ {
+  "code": "977KF07",
+  "name": "Kroma Forma Cinza Neblina",
+  "hex": "#bcbcbc",
+  "swatch": "977KF07_sw.jpg",
+  "applied": "977KF07_ap.jpg"
+ },
+ {
+  "code": "977KF08",
+  "name": "Kroma Forma Argento",
+  "hex": "#949494",
+  "swatch": "977KF08_sw.jpg",
+  "applied": "977KF08_ap.jpg"
+ },
+ {
+  "code": "977KF09",
+  "name": "Kroma Forma Grafite",
+  "hex": "#5c4c4c",
+  "swatch": "977KF09_sw.jpg",
+  "applied": "977KF09_ap.jpg"
+ },
+ {
+  "code": "977KF03",
+  "name": "Kroma Forma Cinza Fóssil",
+  "hex": "#746c64",
+  "swatch": "977KF03_sw.jpg",
+  "applied": "977KF03_ap.jpg"
+ },
+ {
+  "code": "977KF04",
+  "name": "Kroma Forma Preto Absoluto",
+  "hex": "#0c0c0c",
+  "swatch": "977KF04_sw.jpg",
+  "applied": "977KF04_ap.jpg"
+ },
+ {
+  "code": "977KF24",
+  "name": "Kroma Forma Gamboge",
+  "hex": "#fcf4ec",
+  "swatch": "977KF24_sw.jpg",
+  "applied": "977KF24_ap.jpg"
+ },
+ {
+  "code": "977KF35",
+  "name": "Kroma Forma Mandarino Detalhe Da Textura",
+  "hex": "#f45c2c",
+  "swatch": "977KF35_sw.jpg",
+  "applied": "977KF35_ap.jpg"
+ },
+ {
+  "code": "977KF39",
+  "name": "Kroma Forma Palha Essencial",
+  "hex": "#bcbcac",
+  "swatch": "977KF39_sw.jpg",
+  "applied": "977KF39_ap.jpg"
+ },
+ {
+  "code": "977KF34",
+  "name": "Kroma Forma Avorio",
+  "hex": "#d4cccc",
+  "swatch": "977KF34_sw.jpg",
+  "applied": "977KF34_ap.jpg"
+ },
+ {
+  "code": "977D30",
+  "name": "Kroma Wood Teruel",
+  "hex": "#242424",
+  "swatch": "977D30_sw.jpg",
+  "applied": "977D30_ap.jpg"
+ },
+ {
+  "code": "977KW36",
+  "name": "Detalhe Da Textura Kroma Wood Bilbao",
+  "hex": "#242424",
+  "swatch": "977KW36_sw.jpg",
+  "applied": "977KW36_ap.jpg"
+ },
+ {
+  "code": "977KC14",
+  "name": "Kroma Off-White",
+  "hex": "#808080",
+  "swatch": "977KC14_sw.jpg",
+  "applied": "977KC14_ap.jpg"
+ },
+ {
+  "code": "977KL44",
+  "name": "Kroma Linho Raiz Terrosa",
+  "hex": "#2c2c2c",
+  "swatch": "977KL44_sw.jpg",
+  "applied": "977KL44_ap.jpg"
+ },
+ {
+  "code": "977KL42",
+  "name": "Kroma Linho Greige",
+  "hex": "#7c6c64",
+  "swatch": "977KL42_sw.jpg",
+  "applied": "977KL42_ap.jpg"
+ },
+ {
+  "code": "977KL43",
+  "name": "Kroma Linho Moka Intenso",
+  "hex": "#241c1c",
+  "swatch": "977KL43_sw.jpg",
+  "applied": "977KL43_ap.jpg"
+ },
+ {
+  "code": "977KL45",
+  "name": "Kroma Linho Argila Rosada",
+  "hex": "#6c4c44",
+  "swatch": "977KL45_sw.jpg",
+  "applied": "977KL45_ap.jpg"
+ },
+ {
+  "code": "97",
+  "name": "Deck Valência",
+  "hex": "#242424",
+  "swatch": "97_sw.jpg",
+  "applied": "97_ap.jpg"
+ }
+]

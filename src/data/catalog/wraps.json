@@ -1,0 +1,848 @@
+[
+ {
+  "code": "18S192M",
+  "name": "Satin Deep Blue Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#1c2434",
+  "swatch": "18S192M_sw.jpg",
+  "applied": "18S192M_ap.jpg"
+ },
+ {
+  "code": "18S48M",
+  "name": "Satin Blueberry Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#0c6484",
+  "swatch": "18S48M_sw.jpg",
+  "applied": "18S48M_ap.jpg"
+ },
+ {
+  "code": "18S49",
+  "name": "Satin Blue",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#040c8c",
+  "swatch": "18S49_sw.jpg",
+  "applied": "18S49_ap.jpg"
+ },
+ {
+  "code": "18S41M",
+  "name": "Satin Nebula Purple Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#140c2c",
+  "swatch": "18S41M_sw.jpg",
+  "applied": "18S41M_ap.jpg"
+ },
+ {
+  "code": "18S50M",
+  "name": "Satin Gotham Blue Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#1c2424",
+  "swatch": "18S50M_sw.jpg",
+  "applied": "18S50M_ap.jpg"
+ },
+ {
+  "code": "18S84M",
+  "name": "Satin Kiwi Green Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#5c9404",
+  "swatch": "18S84M_sw.jpg",
+  "applied": "18S84M_ap.jpg"
+ },
+ {
+  "code": "18S21",
+  "name": "Satin Yellon",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#a47c04",
+  "swatch": "18S21_sw.jpg",
+  "applied": "18S21_ap.jpg"
+ },
+ {
+  "code": "18S36",
+  "name": "Satin Orange",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#bc2404",
+  "swatch": "18S36_sw.jpg",
+  "applied": "18S36_ap.jpg"
+ },
+ {
+  "code": "18S36",
+  "name": "Satin Red",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#a40404",
+  "swatch": "18S36_sw.jpg",
+  "applied": "18S36_ap.jpg"
+ },
+ {
+  "code": "18S51M",
+  "name": "Satin Quartz Rose Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#c4b4b4",
+  "swatch": "18S51M_sw.jpg",
+  "applied": "18S51M_ap.jpg"
+ },
+ {
+  "code": "18S45",
+  "name": "Satin Pink",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#fcbcd4",
+  "swatch": "18S45_sw.jpg",
+  "applied": "18S45_ap.jpg"
+ },
+ {
+  "code": "18S80M",
+  "name": "Satin Brown Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#2c241c",
+  "swatch": "18S80M_sw.jpg",
+  "applied": "18S80M_ap.jpg"
+ },
+ {
+  "code": "18S946P",
+  "name": "Satin Pearl White",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#acaca4",
+  "swatch": "18S946P_sw.jpg",
+  "applied": "18S946P_ap.jpg"
+ },
+ {
+  "code": "18S10",
+  "name": "Satin White",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#cccccc",
+  "swatch": "18S10_sw.jpg",
+  "applied": "18S10_ap.jpg"
+ },
+ {
+  "code": "18S90M",
+  "name": "Satin Silver Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#ececec",
+  "swatch": "18S90M_sw.jpg",
+  "applied": "18S90M_ap.jpg"
+ },
+ {
+  "code": "18S932M",
+  "name": "Satin Graphite Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#2c2c2c",
+  "swatch": "18S932M_sw.jpg",
+  "applied": "18S932M_ap.jpg"
+ },
+ {
+  "code": "18S74M",
+  "name": "Satin Adamantium Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#5c646c",
+  "swatch": "18S74M_sw.jpg",
+  "applied": "18S74M_ap.jpg"
+ },
+ {
+  "code": "18S70",
+  "name": "Satin Black",
+  "family": "Satin",
+  "acabamento": "Acetinado Fosco",
+  "hex": "#141414",
+  "swatch": "18S70_sw.jpg",
+  "applied": "18S70_ap.jpg"
+ },
+ {
+  "code": "18J56",
+  "name": "Jateado Ice Blue",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#6cc4d4",
+  "swatch": "18J56_sw.jpg",
+  "applied": "18J56_ap.jpg"
+ },
+ {
+  "code": "18J196M",
+  "name": "Jateado Blue Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#74a4dc",
+  "swatch": "18J196M_sw.jpg",
+  "applied": "18J196M_ap.jpg"
+ },
+ {
+  "code": "18J192M",
+  "name": "Jateado Navy Blue Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#142c6c",
+  "swatch": "18J192M_sw.jpg",
+  "applied": "18J192M_ap.jpg"
+ },
+ {
+  "code": "18J55",
+  "name": "Jateado Mint Green",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#8ce4cc",
+  "swatch": "18J55_sw.jpg",
+  "applied": "18J55_ap.jpg"
+ },
+ {
+  "code": "18J62MW",
+  "name": "Jateado Green Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#74d494",
+  "swatch": "18J62MW_sw.jpg",
+  "applied": "18J62MW_ap.jpg"
+ },
+ {
+  "code": "18J383",
+  "name": "Jateado Green Military",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#343c2c",
+  "swatch": "18J383_sw.jpg",
+  "applied": "18J383_ap.jpg"
+ },
+ {
+  "code": "18J82",
+  "name": "Jateado Beige",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#dcd4ac",
+  "swatch": "18J82_sw.jpg",
+  "applied": "18J82_ap.jpg"
+ },
+ {
+  "code": "18J21",
+  "name": "Jateado Yellow",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#cca404",
+  "swatch": "18J21_sw.jpg",
+  "applied": "18J21_ap.jpg"
+ },
+ {
+  "code": "18J32",
+  "name": "Jateado Red",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#940404",
+  "swatch": "18J32_sw.jpg",
+  "applied": "18J32_ap.jpg"
+ },
+ {
+  "code": "18J80M",
+  "name": "Jateado Brown Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#241c14",
+  "swatch": "18J80M_sw.jpg",
+  "applied": "18J80M_ap.jpg"
+ },
+ {
+  "code": "18J80",
+  "name": "Jateado Brown",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#3c241c",
+  "swatch": "18J80_sw.jpg",
+  "applied": "18J80_ap.jpg"
+ },
+ {
+  "code": "18J10",
+  "name": "Jateado White",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#dcdcdc",
+  "swatch": "18J10_sw.jpg",
+  "applied": "18J10_ap.jpg"
+ },
+ {
+  "code": "18J72",
+  "name": "Jateado Nardo Gray",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#cccccc",
+  "swatch": "18J72_sw.jpg",
+  "applied": "18J72_ap.jpg"
+ },
+ {
+  "code": "18J932M",
+  "name": "Jateado Grey Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#34342c",
+  "swatch": "18J932M_sw.jpg",
+  "applied": "18J932M_ap.jpg"
+ },
+ {
+  "code": "18J90M",
+  "name": "Jateado Silver Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#545454",
+  "swatch": "18J90M_sw.jpg",
+  "applied": "18J90M_ap.jpg"
+ },
+ {
+  "code": "18J993M",
+  "name": "Jateado Charcoal Metallic",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#242424",
+  "swatch": "18J993M_sw.jpg",
+  "applied": "18J993M_ap.jpg"
+ },
+ {
+  "code": "18J70",
+  "name": "Jateado Black",
+  "family": "Jateado",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#141414",
+  "swatch": "18J70_sw.jpg",
+  "applied": "18J70_ap.jpg"
+ },
+ {
+  "code": "18U53",
+  "name": "Ultra Baby Blue",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#d4ecfc",
+  "swatch": "18U53_sw.jpg",
+  "applied": "18U53_ap.jpg"
+ },
+ {
+  "code": "18U57",
+  "name": "Ultra Biscayne Blue Alltak",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#1cacd4",
+  "swatch": "18U57_sw.jpg",
+  "applied": "18U57_ap.jpg"
+ },
+ {
+  "code": "18U196M",
+  "name": "Ultra Blue Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#041c5c",
+  "swatch": "18U196M_sw.jpg",
+  "applied": "18U196M_ap.jpg"
+ },
+ {
+  "code": "18U49",
+  "name": "Ultra Mystique Blue",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#041494",
+  "swatch": "18U49_sw.jpg",
+  "applied": "18U49_ap.jpg"
+ },
+ {
+  "code": "18U50",
+  "name": "Ultra Dark Blue",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#0c247c",
+  "swatch": "18U50_sw.jpg",
+  "applied": "18U50_ap.jpg"
+ },
+ {
+  "code": "18U192M",
+  "name": "Ultra Deep Blue Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#0c0c3c",
+  "swatch": "18U192M_sw.jpg",
+  "applied": "18U192M_ap.jpg"
+ },
+ {
+  "code": "18U562",
+  "name": "Ultra Sea Blue",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#0c0c1c",
+  "swatch": "18U562_sw.jpg",
+  "applied": "18U562_ap.jpg"
+ },
+ {
+  "code": "18U67",
+  "name": "Ultra Garapa Green",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#a4ac44",
+  "swatch": "18U67_sw.jpg",
+  "applied": "18U67_ap.jpg"
+ },
+ {
+  "code": "18U66",
+  "name": "Ultra Neo Mint",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#54ccac",
+  "swatch": "18U66_sw.jpg",
+  "applied": "18U66_ap.jpg"
+ },
+ {
+  "code": "18U63",
+  "name": "Ultra Kambo Green",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#6ccc04",
+  "swatch": "18U63_sw.jpg",
+  "applied": "18U63_ap.jpg"
+ },
+ {
+  "code": "18U64",
+  "name": "Ultra Apple Green",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#2ce404",
+  "swatch": "18U64_sw.jpg",
+  "applied": "18U64_ap.jpg"
+ },
+ {
+  "code": "18U62M",
+  "name": "Ultra Green Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#04542c",
+  "swatch": "18U62M_sw.jpg",
+  "applied": "18U62M_ap.jpg"
+ },
+ {
+  "code": "18UD09M",
+  "name": "Ultra Green Bright Jade Metallic",
+  "family": "Ultra",
+  "acabamento": "Flake Brilhante",
+  "hex": "#040c04",
+  "swatch": "18UD09M_sw.jpg",
+  "applied": "18UD09M_ap.jpg"
+ },
+ {
+  "code": "18U54",
+  "name": "Ultra Turquoise Green",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#04bcac",
+  "swatch": "18U54_sw.jpg",
+  "applied": "18U54_ap.jpg"
+ },
+ {
+  "code": "18U22",
+  "name": "Ultra Lime Yellow",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#e4d404",
+  "swatch": "18U22_sw.jpg",
+  "applied": "18U22_ap.jpg"
+ },
+ {
+  "code": "18U21",
+  "name": "Ultra Banana Yellow",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#fcec04",
+  "swatch": "18U21_sw.jpg",
+  "applied": "18U21_ap.jpg"
+ },
+ {
+  "code": "18U20",
+  "name": "Ultra Summer Yellow",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#fccc74",
+  "swatch": "18U20_sw.jpg",
+  "applied": "18U20_ap.jpg"
+ },
+ {
+  "code": "18US02M",
+  "name": "Ultra Star Yellow",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#eca404",
+  "swatch": "18US02M_sw.jpg",
+  "applied": "18US02M_ap.jpg"
+ },
+ {
+  "code": "18UD06M",
+  "name": "Ultra Solar Yellow Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante Flake",
+  "hex": "#9c9c9c",
+  "swatch": "18UD06M_sw.jpg",
+  "applied": "18UD06M_ap.jpg"
+ },
+ {
+  "code": "18UD07M",
+  "name": "Ultra Royal Gold Metallic",
+  "family": "Ultra",
+  "acabamento": "Flake Brilhante",
+  "hex": "#9c9c9c",
+  "swatch": "18UD07M_sw.jpg",
+  "applied": "18UD07M_ap.jpg"
+ },
+ {
+  "code": "18U36",
+  "name": "Ultra Sunrise Tangerine",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#e47c04",
+  "swatch": "18U36_sw.jpg",
+  "applied": "18U36_ap.jpg"
+ },
+ {
+  "code": "18U31",
+  "name": "Ultra Blood Red",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#fc9c94",
+  "swatch": "18U31_sw.jpg",
+  "applied": "18U31_ap.jpg"
+ },
+ {
+  "code": "18U32",
+  "name": "Ultra Spicy Red",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#e42404",
+  "swatch": "18U32_sw.jpg",
+  "applied": "18U32_ap.jpg"
+ },
+ {
+  "code": "18US01M",
+  "name": "Ultra Star Red",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#940404",
+  "swatch": "18US01M_sw.jpg",
+  "applied": "18US01M_ap.jpg"
+ },
+ {
+  "code": "18UD08M",
+  "name": "Ultra Red Radiant Ruby Metallic",
+  "family": "Ultra",
+  "acabamento": "Flake Brilhante",
+  "hex": "#1c0404",
+  "swatch": "18UD08M_sw.jpg",
+  "applied": "18UD08M_ap.jpg"
+ },
+ {
+  "code": "18U88",
+  "name": "Ultra Malbec Red",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#5c0c14",
+  "swatch": "18U88_sw.jpg",
+  "applied": "18U88_ap.jpg"
+ },
+ {
+  "code": "18UK01M",
+  "name": "Ultra Stone Garnet",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#141414",
+  "swatch": "18UK01M_sw.jpg",
+  "applied": "18UK01M_ap.jpg"
+ },
+ {
+  "code": "18U89",
+  "name": "Ultra Vanila Ice Cream",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#dcccac",
+  "swatch": "18U89_sw.jpg",
+  "applied": "18U89_ap.jpg"
+ },
+ {
+  "code": "18U51M",
+  "name": "Ultra Quartz Rose Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#ececec",
+  "swatch": "18U51M_sw.jpg",
+  "applied": "18U51M_ap.jpg"
+ },
+ {
+  "code": "18U46",
+  "name": "Ultra Eldorado Pink",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#f4ece4",
+  "swatch": "18U46_sw.jpg",
+  "applied": "18U46_ap.jpg"
+ },
+ {
+  "code": "18U30",
+  "name": "Ultra Angel Pink",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#fcacc4",
+  "swatch": "18U30_sw.jpg",
+  "applied": "18U30_ap.jpg"
+ },
+ {
+  "code": "18U40",
+  "name": "Ultra Açaí Berry",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#9c9c9c",
+  "swatch": "18U40_sw.jpg",
+  "applied": "18U40_ap.jpg"
+ },
+ {
+  "code": "18UK03M",
+  "name": "Ultra Kosmic Starfire Purple",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#141c24",
+  "swatch": "18UK03M_sw.jpg",
+  "applied": "18UK03M_ap.jpg"
+ },
+ {
+  "code": "18U80",
+  "name": "Ultra Brown Sugar",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#442c1c",
+  "swatch": "18U80_sw.jpg",
+  "applied": "18U80_ap.jpg"
+ },
+ {
+  "code": "18U10",
+  "name": "Ultra Coconut White",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#ececec",
+  "swatch": "18U10_sw.jpg",
+  "applied": "18U10_ap.jpg"
+ },
+ {
+  "code": "18UD10M",
+  "name": "Ultra Illusion White Metallic",
+  "family": "Ultra",
+  "acabamento": "Camaleão Brilhante",
+  "hex": "#9c9c9c",
+  "swatch": "18UD10M_sw.jpg",
+  "applied": "18UD10M_ap.jpg"
+ },
+ {
+  "code": "18U75",
+  "name": "Ultra Argent Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#3c3c3c",
+  "swatch": "18U75_sw.jpg",
+  "applied": "18U75_ap.jpg"
+ },
+ {
+  "code": "18U90M",
+  "name": "Ultra Light Silver Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#3c3c3c",
+  "swatch": "18U90M_sw.jpg",
+  "applied": "18U90M_ap.jpg"
+ },
+ {
+  "code": "18U72",
+  "name": "Ultra Nardo Gray",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#e4e4e4",
+  "swatch": "18U72_sw.jpg",
+  "applied": "18U72_ap.jpg"
+ },
+ {
+  "code": "18U71",
+  "name": "Ultra Storm Gray",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#ececec",
+  "swatch": "18U71_sw.jpg",
+  "applied": "18U71_ap.jpg"
+ },
+ {
+  "code": "18U932M",
+  "name": "Ultra Graphite Metallic",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#2c2c2c",
+  "swatch": "18U932M_sw.jpg",
+  "applied": "18U932M_ap.jpg"
+ },
+ {
+  "code": "18U70",
+  "name": "Ultra Black Piano",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#1c1c1c",
+  "swatch": "18U70_sw.jpg",
+  "applied": "18U70_ap.jpg"
+ },
+ {
+  "code": "18UK02M",
+  "name": "Ultra Kosmic Valerian Gold",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#b4b4b4",
+  "swatch": "18UK02M_sw.jpg",
+  "applied": "18UK02M_ap.jpg"
+ },
+ {
+  "code": "18FXR932M",
+  "name": "Graphite Rave",
+  "family": "Fx",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#bcbcbc",
+  "swatch": "18FXR932M_sw.jpg",
+  "applied": "18FXR932M_ap.jpg"
+ },
+ {
+  "code": "18FXB70",
+  "name": "Fx Brushed Black",
+  "family": "Fx",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#1c1c1c",
+  "swatch": "18FXB70_sw.jpg",
+  "applied": "18FXB70_ap.jpg"
+ },
+ {
+  "code": "18FXB932M",
+  "name": "Fx Brushed Graphite",
+  "family": "Fx",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#2c2c2c",
+  "swatch": "18FXB932M_sw.jpg",
+  "applied": "18FXB932M_ap.jpg"
+ },
+ {
+  "code": "18FXR70",
+  "name": "Black Rave",
+  "family": "Fx",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#2c2c2c",
+  "swatch": "18FXR70_sw.jpg",
+  "applied": "18FXR70_ap.jpg"
+ },
+ {
+  "code": "18G70",
+  "name": "Onix Black",
+  "family": "Grunge",
+  "acabamento": "",
+  "hex": "#141414",
+  "swatch": "18G70_sw.jpg",
+  "applied": "18G70_ap.jpg"
+ },
+ {
+  "code": "18G2311C",
+  "name": "Army Green",
+  "family": "Grunge",
+  "acabamento": "",
+  "hex": "#1c2c1c",
+  "swatch": "18G2311C_sw.jpg",
+  "applied": "18G2311C_ap.jpg"
+ },
+ {
+  "code": "18G6187C",
+  "name": "Dune Beige",
+  "family": "Grunge",
+  "acabamento": "",
+  "hex": "#b49474",
+  "swatch": "18G6187C_sw.jpg",
+  "applied": "18G6187C_ap.jpg"
+ },
+ {
+  "code": "18G501",
+  "name": "Titanium Graphite",
+  "family": "Grunge",
+  "acabamento": "",
+  "hex": "#444444",
+  "swatch": "18G501_sw.jpg",
+  "applied": "18G501_ap.jpg"
+ },
+ {
+  "code": "184D932",
+  "name": "4D Carbon Graphite Metallic",
+  "family": "Carbon",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#44443c",
+  "swatch": "184D932_sw.jpg",
+  "applied": "184D932_ap.jpg"
+ },
+ {
+  "code": "184D70",
+  "name": "4D Carbon Black",
+  "family": "Carbon",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#1c1c1c",
+  "swatch": "184D70_sw.jpg",
+  "applied": "184D70_ap.jpg"
+ },
+ {
+  "code": "18CX70",
+  "name": "Carbon X",
+  "family": "Carbon",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#1c1c1c",
+  "swatch": "18CX70_sw.jpg",
+  "applied": "18CX70_ap.jpg"
+ },
+ {
+  "code": "18E501",
+  "name": "5 Elemento Graphite Metallic",
+  "family": "Carbon",
+  "acabamento": "Brilhante",
+  "hex": "#2c2c2c",
+  "swatch": "18E501_sw.jpg",
+  "applied": "18E501_ap.jpg"
+ },
+ {
+  "code": "18K70",
+  "name": "Krusher Black",
+  "family": "Krusher",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#242424",
+  "swatch": "18K70_sw.jpg",
+  "applied": "18K70_ap.jpg"
+ },
+ {
+  "code": "18K932M",
+  "name": "Krusher Graphite Metallic",
+  "family": "Krusher",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#242424",
+  "swatch": "18K932M_sw.jpg",
+  "applied": "18K932M_ap.jpg"
+ },
+ {
+  "code": "18K90M",
+  "name": "Krusher Silver Metallic",
+  "family": "Krusher",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#d4d4d4",
+  "swatch": "18K90M_sw.jpg",
+  "applied": "18K90M_ap.jpg"
+ },
+ {
+  "code": "18K10",
+  "name": "Krusher White",
+  "family": "Krusher",
+  "acabamento": "Texturizado Fosco",
+  "hex": "#e4e4e4",
+  "swatch": "18K10_sw.jpg",
+  "applied": "18K10_ap.jpg"
+ }
+]
