@@ -11,20 +11,21 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/alltakadesivos'
 
 export type NavItem = {
   label: string
+  tkey: string
   to: string
   external?: boolean
 }
 
 export const NAV: NavItem[] = [
-  { label: 'Visualizador', to: '/visualizador' },
-  { label: 'Decoração', to: '/decoracao' },
-  { label: 'Cores', to: '/cores' },
-  { label: 'Catálogos', to: '/catalogos' },
-  { label: 'Produtos', to: '/produtos' },
-  { label: 'Alltak Store', to: STORE_URL, external: true },
-  { label: 'Onde Comprar', to: '/onde-comprar' },
-  { label: 'Sobre Nós', to: '/#sobre' },
-  { label: 'Contato', to: '/contato' },
+  { label: 'Visualizador', tkey: 'nav.visualizador', to: '/visualizador' },
+  { label: 'Decoração', tkey: 'nav.decoracao', to: '/decoracao' },
+  { label: 'Cores', tkey: 'nav.cores', to: '/cores' },
+  { label: 'Catálogos', tkey: 'nav.catalogos', to: '/catalogos' },
+  { label: 'Produtos', tkey: 'nav.produtos', to: '/produtos' },
+  { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
+  { label: 'Onde Comprar', tkey: 'nav.onde', to: '/onde-comprar' },
+  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/#sobre' },
+  { label: 'Contato', tkey: 'nav.contato', to: '/contato' },
 ]
 
 export type Unit = {

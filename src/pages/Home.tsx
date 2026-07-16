@@ -18,8 +18,10 @@ import Magnetic from '../components/Magnetic'
 import Logo from '../components/Logo'
 import CarSVG from '../components/CarSVG'
 import TrapDivider from '../components/TrapDivider'
+import { useT } from '../i18n'
 
 export default function Home() {
+  const t = useT()
   return (
     <>
       {/* ============ 1 — HERO: slogan + lightweight CSS scene ============ */}
@@ -49,13 +51,11 @@ export default function Home() {
             <span className="block text-[15vw] text-outline-blue md:text-[12vw]">All</span>
             <span className="block text-[15vw] text-alltak-blue md:text-[12vw]">Surfaces</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/70">
-            Para qualquer superfície. Envelopamento, decoração e comunicação visual.
-          </p>
+          <p className="mt-6 max-w-xl text-lg text-white/70">{t('hero.sub')}</p>
           <div className="mt-8 flex flex-wrap items-center gap-5">
             <Magnetic>
               <Link to="/visualizador" className="btn-trapezoid btn-blue !px-10 !py-4 !text-base">
-                Visualizar envelopamento
+                {t('hero.cta')}
               </Link>
             </Magnetic>
             <Magnetic>
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="mx-auto h-10 w-6 rounded-full border border-white/30">
             <div className="mx-auto mt-1.5 h-2.5 w-1 animate-floaty rounded-full bg-alltak-blue" />
           </div>
-          <div className="mt-2 font-display text-[10px] font-bold uppercase tracking-[0.35em] text-white/40">scroll</div>
+          <div className="mt-2 font-display text-[10px] font-bold uppercase tracking-[0.35em] text-white/40">{t('hero.scroll')}</div>
         </div>
       </section>
 
@@ -91,16 +91,16 @@ export default function Home() {
         <div className="container-x">
           <SplitWords
             as="h2"
-            text="Não é só adesivo. É atitude aplicada em cada superfície."
+            text={t('home.manifesto')}
             accent={['atitude', 'superfície']}
             className="max-w-5xl text-5xl text-white sm:text-6xl md:text-8xl"
           />
           <div className="mt-14 grid grid-cols-2 gap-10 border-t border-white/10 pt-10 md:grid-cols-4">
             {[
-              [30, '+', 'anos de estrada'],
-              [120, '+', 'cores e padrões'],
-              [3, '', 'unidades de negócio'],
-              [100, '%', 'produção nacional'],
+              [30, '+', t('home.stat.anos')],
+              [120, '+', t('home.stat.cores')],
+              [3, '', t('home.stat.unidades')],
+              [100, '%', t('home.stat.nacional')],
             ].map(([n, suf, label], i) => (
               <Reveal key={String(label)} delay={i * 90}>
                 <Counter
@@ -137,18 +137,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/65" aria-hidden />
         <div className="container-x relative flex flex-col items-center py-28 text-center md:py-40">
           <Reveal dir="scale">
-            <span className="tag">Veja na prática</span>
+            <span className="tag">{t('home.veja')}</span>
           </Reveal>
           <SplitWords
             as="h2"
-            text="Aplicações reais, resultado impecável"
+            text={t('home.aplicacoes')}
             accent={['impecável']}
             className="mt-6 max-w-4xl text-5xl text-white md:text-8xl"
           />
           <Reveal delay={200}>
             <Magnetic>
               <a href={YOUTUBE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-white mt-10 !px-10 !py-4">
-                <span className="text-alltak-blue">▶</span> Assistir no YouTube
+                <span className="text-alltak-blue">▶</span> {t('cta.assistirYoutube')}
               </a>
             </Magnetic>
           </Reveal>
@@ -161,9 +161,9 @@ export default function Home() {
         <div className="pointer-events-none absolute -right-16 bottom-10 h-36 w-72 -rotate-6 bg-alltak-blue/10 clip-escudo" aria-hidden />
         <div className="container-x relative grid items-center gap-12 md:grid-cols-2">
           <Reveal dir="left">
-            <span className="tag">Ferramenta exclusiva</span>
+            <span className="tag">{t('home.pinteTag')}</span>
             <h2 className="mt-5 text-6xl text-white md:text-7xl">
-              Pinte o carro<br /><span className="text-alltak-blue">sem tinta</span>
+              {t('home.pinte1')}<br /><span className="text-alltak-blue">{t('home.pinte2')}</span>
             </h2>
             <p className="mt-5 max-w-lg text-white/70">
               7 acabamentos, dezenas de cores, 3 silhuetas. Escolha, combine e veja o
@@ -171,7 +171,7 @@ export default function Home() {
             </p>
             <Magnetic>
               <Link to="/visualizador" className="btn-trapezoid btn-blue mt-8 !px-10 !py-4">
-                Abrir o visualizador
+                {t('cta.abrirVisualizador')}
               </Link>
             </Magnetic>
           </Reveal>
@@ -207,9 +207,9 @@ export default function Home() {
         </div>
         <div className="container-x grid items-center gap-12 md:grid-cols-2">
           <Reveal dir="left">
-            <span className="tag">Sobre nós</span>
+            <span className="tag">{t('home.sobreTag')}</span>
             <h2 className="mt-5 text-5xl text-white md:text-7xl">
-              Produção nacional,<br /><span className="text-alltak-blue">padrão de verdade</span>
+              {t('home.sobreTitulo1')}<br /><span className="text-alltak-blue">{t('home.sobreTitulo2')}</span>
             </h2>
             <p className="mt-5 max-w-xl leading-relaxed text-white/70">
               A Alltak desenvolve e produz materiais adesivos para envelopamento,
@@ -253,17 +253,17 @@ export default function Home() {
           </Reveal>
           <SplitWords
             as="h2"
-            text="Pronto para transformar?"
+            text={t('home.pronto')}
             accent={['transformar']}
             className="mt-10 text-6xl text-white md:text-9xl"
           />
           <Reveal delay={220}>
             <div className="mt-10 flex flex-wrap justify-center gap-5">
               <Magnetic>
-                <Link to="/produtos" className="btn-trapezoid btn-blue !px-10 !py-4">Ver produtos</Link>
+                <Link to="/produtos" className="btn-trapezoid btn-blue !px-10 !py-4">{t('cta.verProdutos')}</Link>
               </Magnetic>
               <Magnetic>
-                <Link to="/onde-comprar" className="btn-trapezoid btn-outline !px-10 !py-4">Onde comprar</Link>
+                <Link to="/onde-comprar" className="btn-trapezoid btn-outline !px-10 !py-4">{t('cta.ondeComprar')}</Link>
               </Magnetic>
             </div>
           </Reveal>

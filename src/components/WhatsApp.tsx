@@ -1,10 +1,13 @@
 // Persistent floating WhatsApp button — always on screen, opens a chat with
 // the Alltak sales number in a new tab.
+import { useT } from '../i18n'
+
 const PHONE = '5511968594983'
 const MESSAGE = 'Olá! Vim pelo site da Alltak e gostaria de mais informações.'
 const HREF = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`
 
 export default function WhatsApp() {
+  const t = useT()
   return (
     <a
       href={HREF}
@@ -15,7 +18,7 @@ export default function WhatsApp() {
     >
       {/* tooltip */}
       <span className="pointer-events-none hidden translate-x-2 whitespace-nowrap bg-white px-3 py-2 font-display text-xs font-bold uppercase tracking-wide text-alltak-black opacity-0 shadow-lg transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:block">
-        Fale conosco
+        {t('cta.falarConosco')}
       </span>
 
       <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:scale-110 md:h-16 md:w-16">

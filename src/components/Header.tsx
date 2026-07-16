@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { NAV } from '../data/site'
 import Logo from './Logo'
 import Magnetic from './Magnetic'
+import LangSwitcher from './LangSwitcher'
+import { useT } from '../i18n'
 
 // Header: logo + magnetic menu trigger. Navigation lives in a fullscreen
 // overlay with giant staggered links and a trapezoid wipe entrance.
@@ -13,6 +15,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const lastY = useRef(0)
   const { pathname, hash } = useLocation()
+  const t = useT()
 
   useEffect(() => setOpen(false), [pathname, hash])
 
@@ -47,7 +50,8 @@ export default function Header() {
             <Logo className="h-9 md:h-12" />
           </Link>
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
+            <LangSwitcher className="relative z-[92]" />
             <Magnetic strength={0.3}>
               <button
                 onClick={() => setOpen((v) => !v)}
@@ -98,7 +102,7 @@ export default function Header() {
               <span className="group flex items-baseline gap-5">
                 <span className="font-display text-sm font-bold text-alltak-blue">0{i + 1}</span>
                 <span className="font-display text-5xl font-black uppercase leading-[1.05] text-white transition-all duration-300 group-hover:translate-x-4 group-hover:text-alltak-blue sm:text-6xl md:text-7xl">
-                  {item.label}
+                  {t(item.tkey)}
                 </span>
                 {item.external && <span className="text-2xl text-white/40">↗</span>}
               </span>
