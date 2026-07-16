@@ -49,17 +49,17 @@ export default function HScroll() {
 
         <div
           ref={track}
-          className="flex w-max gap-6 pl-5 will-change-transform sm:pl-8"
+          className="flex w-max gap-3 pl-5 will-change-transform sm:pl-8"
           style={{ transform: `translate3d(${x}px,0,0)` }}
         >
           {PRODUCT_CATEGORIES.map((c, i) => (
             <Link
               key={c.slug}
               to="/produtos"
-              className="group block w-[70vw] shrink-0 sm:w-[42vw] lg:w-[26vw]"
+              className="group block w-[72vw] shrink-0 sm:w-[44vw] lg:w-[30vw]"
             >
-              {/* alternating trapezoids — one inverted from the next (format 01) */}
-              <div className={`frame-trap aspect-[4/5] bg-alltak-navy ${i % 2 === 0 ? 'clip-tz' : 'clip-tz-alt'}`}>
+              {/* alternating trapezoids — flatter and close together (format 01) */}
+              <div className={`frame-trap aspect-[4/3] bg-alltak-navy ${i % 2 === 0 ? 'clip-tz' : 'clip-tz-alt'}`}>
                 <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="opacity-95 group-hover:opacity-100" />
               </div>
               <div className="mt-3 flex items-end justify-between px-2">
