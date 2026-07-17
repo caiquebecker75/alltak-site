@@ -52,7 +52,7 @@ export default function Cursor() {
       {/* soft blue comet glow that lags behind the pointer */}
       <div
         ref={glowRef}
-        className="pointer-events-none fixed left-0 top-0 z-[94] hidden h-24 w-24 rounded-full md:block"
+        className="pointer-events-none fixed left-0 top-0 z-[118] hidden h-24 w-24 rounded-full md:block"
         style={{
           background: 'radial-gradient(circle, rgba(0,128,255,0.28) 0%, rgba(0,128,255,0.08) 45%, transparent 70%)',
           filter: 'blur(2px)',
@@ -61,12 +61,12 @@ export default function Cursor() {
       />
       <div
         ref={dotRef}
-        className="pointer-events-none fixed left-0 top-0 z-[95] hidden h-2.5 w-3.5 bg-alltak-blue clip-escudo md:block"
+        className="pointer-events-none fixed left-0 top-0 z-[120] hidden h-2.5 w-3.5 bg-alltak-blue clip-escudo md:block"
         aria-hidden
       />
       <div
         ref={ringRef}
-        className="pointer-events-none fixed left-0 top-0 z-[95] hidden h-10 w-10 rounded-full border transition-[border-color] duration-200 md:block"
+        className="pointer-events-none fixed left-0 top-0 z-[120] hidden h-10 w-10 rounded-full border transition-[border-color] duration-200 md:block"
         style={{ transitionProperty: 'border-color' }}
         aria-hidden
       />

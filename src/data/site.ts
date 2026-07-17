@@ -24,7 +24,7 @@ export const NAV: NavItem[] = [
   { label: 'Produtos', tkey: 'nav.produtos', to: '/produtos' },
   { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
   { label: 'Onde Comprar', tkey: 'nav.onde', to: '/onde-comprar' },
-  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/#sobre' },
+  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre' },
   { label: 'Contato', tkey: 'nav.contato', to: '/contato' },
 ]
 

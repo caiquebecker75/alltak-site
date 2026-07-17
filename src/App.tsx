@@ -17,6 +17,7 @@ import OndeComprar from './pages/OndeComprar'
 import Instaladores from './pages/Instaladores'
 import Cursos from './pages/Cursos'
 import Contato from './pages/Contato'
+import Sobre from './pages/Sobre'
 import Privacidade from './pages/Privacidade'
 
 // Scroll to top on route change, or to the #anchor when a hash is present.
@@ -65,6 +66,7 @@ export default function App() {
           <Route path="/instaladores" element={<Instaladores />} />
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/sobre" element={<Sobre />} />
           <Route path="/politica-de-privacidade" element={<Privacidade />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
