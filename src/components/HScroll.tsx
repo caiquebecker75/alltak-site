@@ -59,7 +59,7 @@ export default function HScroll() {
               className="group block w-[72vw] shrink-0 sm:w-[44vw] lg:w-[30vw]"
             >
               {/* alternating trapezoids — flatter and close together (format 01) */}
-              <div className={`frame-trap aspect-[4/3] bg-alltak-navy ${i % 2 === 0 ? 'clip-tz' : 'clip-tz-alt'}`}>
+              <div className={`frame-trap aspect-[4/3] ${i % 2 === 0 ? 'clip-tz' : 'clip-tz-alt'}`}>
                 <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="opacity-95 group-hover:opacity-100" />
               </div>
               <div className="mt-3 flex items-end justify-between px-2">

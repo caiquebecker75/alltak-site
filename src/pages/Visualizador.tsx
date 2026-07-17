@@ -2,6 +2,7 @@ import { lazy, Suspense, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FINISHES } from '../data/visualizer'
 import { STORE_URL } from '../data/site'
+import DecorVisualizer from '../components/DecorVisualizer'
 
 // real-time 3D preview — heavy (three.js), so it streams in as its own chunk
 const Car3D = lazy(() => import('../components/Car3D'))
@@ -158,6 +159,23 @@ export default function Visualizador() {
               <p className="mt-1 text-sm text-white/55">{d}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Decor visualizer — same tool for surfaces: kitchen / living / bedroom */}
+      <section className="border-t border-white/10 bg-alltak-black pb-24 pt-16 md:pt-20">
+        <div className="container-x">
+          <p className="eyebrow text-alltak-blue">Alltak Decor · Ambientes 3D</p>
+          <h2 className="mt-3 max-w-3xl text-4xl text-white md:text-6xl">
+            Agora veja em <span className="text-alltak-blue">superfícies</span>
+          </h2>
+          <p className="mt-4 max-w-2xl text-white/65">
+            Além dos veículos, simule os padrões Alltak Decor aplicados em três ambientes:
+            cozinha, sala e quarto. Escolha o padrão e troque de ambiente na hora.
+          </p>
+          <div className="mt-8">
+            <DecorVisualizer />
+          </div>
         </div>
       </section>
     </>
