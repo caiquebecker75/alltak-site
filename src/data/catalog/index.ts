@@ -72,3 +72,16 @@ export function familiesFor(line: string): string[] {
   COLORS.filter((c) => line === 'all' || c.line === line).forEach((c) => set.add(c.family))
   return [...set].sort()
 }
+
+// Stable URL slug + lookup for a color's dedicated page (/cor/:line/:code).
+export const colorSlug = (c: Color) => `/cor/${c.line}/${encodeURIComponent(c.code)}`
+
+export function findColor(line?: string, code?: string): Color | undefined {
+  if (!line || !code) return undefined
+  const dec = decodeURIComponent(code)
+  return COLORS.find((c) => c.line === line && c.code === dec)
+}
+
+export function relatedColors(c: Color, n = 6): Color[] {
+  return COLORS.filter((o) => o.line === c.line && o.family === c.family && o.code !== c.code).slice(0, n)
+}

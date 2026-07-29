@@ -1,15 +1,14 @@
 import { useMemo, useState } from 'react'
-import ColorDetail from './ColorDetail'
-import { COLORS, LINES, familiesFor, type Color } from '../data/catalog'
+import { Link } from 'react-router-dom'
+import { COLORS, LINES, familiesFor, colorSlug } from '../data/catalog'
 
-// Full color explorer: line + family filters, search, complete grid and the
-// applied-photo pop-up. Shared by the Cores page and the Produtos page.
+// Full color explorer: line + family filters, search and a complete grid.
+// Each swatch links to that color's dedicated page (/cor/:line/:code).
 // `initialLine` pre-selects a catalog line (e.g. 'wraps') when embedded.
 export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: string }) {
   const [line, setLine] = useState<string>(initialLine)
   const [family, setFamily] = useState<string>('all')
   const [q, setQ] = useState('')
-  const [active, setActive] = useState<Color | null>(null)
 
   const families = useMemo(() => familiesFor(line), [line])
   const list = useMemo(() => {
@@ -78,9 +77,9 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
       {/* grade de cores */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {list.map((c) => (
-          <button
+          <Link
             key={`${c.line}-${c.code}-${c.name}`}
-            onClick={() => setActive(c)}
+            to={colorSlug(c)}
             className="group text-left"
           >
             <div className="relative aspect-square overflow-hidden bg-alltak-coal">
@@ -102,11 +101,9 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
               </div>
               <div className="text-[11px] uppercase tracking-wide text-white/40">{c.code}</div>
             </div>
-          </button>
+          </Link>
         ))}
       </div>
-
-      {active && <ColorDetail color={active} onClose={() => setActive(null)} />}
     </>
   )
 }
