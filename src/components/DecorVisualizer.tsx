@@ -133,7 +133,7 @@ export default function DecorVisualizer() {
             const t = texFor(s)
             const selected = !s.fixed && sel === s.id
             const bg = t
-              ? { backgroundImage: `${s.shade}, url(${t.swatch})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+              ? { backgroundImage: `${s.shade}, url(${t.texture ?? t.swatch})`, backgroundSize: 'cover', backgroundPosition: 'center' }
               : { backgroundImage: s.shade, backgroundColor: s.base }
             return (
               <button

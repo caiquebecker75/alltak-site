@@ -16,6 +16,7 @@ export type Color = {
   hex: string
   swatch: string
   applied?: string
+  texture?: string // flat material crop (seamless-ish) for 3D re-skinning
 }
 
 const famFrom = (name: string) => name.split(' ')[0]
@@ -43,6 +44,7 @@ const raw: Color[] = [
     hex: c.hex,
     swatch: `./colors/decor/${c.swatch}`,
     applied: c.applied ? `./colors/decor/${c.applied}` : undefined,
+    texture: `./textures/decor/${c.code}.jpg`,
   })),
   ...(signsRaw as any[]).map((c) => ({
     line: 'signs' as const,

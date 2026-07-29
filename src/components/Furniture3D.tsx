@@ -43,11 +43,8 @@ function CabinetModel({ modelUrl, textureUrl }: { modelUrl: string; textureUrl?:
     loader.load(textureUrl, (tex) => {
       tex.colorSpace = THREE.SRGBColorSpace
       tex.wrapS = tex.wrapT = THREE.RepeatWrapping
-      // sample the flat central face of the roll photo (avoids tube/label) and
-      // tile it so it reads as a continuous material, not a printed roll.
-      tex.center.set(0.5, 0.5)
-      tex.repeat.set(2.4, 2.4)
-      tex.offset.set(0.1, 0.15)
+      // textureUrl is already a flat material crop, so just tile it lightly
+      tex.repeat.set(2, 2)
       mats.current.forEach((m) => {
         m.map = tex
         m.color.set(0xffffff)

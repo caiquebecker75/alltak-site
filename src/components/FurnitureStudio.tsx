@@ -57,7 +57,7 @@ export default function FurnitureStudio() {
                 </div>
               }
             >
-              <Furniture3D key={movel.key} modelUrl={movel.url} textureUrl={active.swatch} className="h-full w-full cursor-hot" />
+              <Furniture3D key={movel.key} modelUrl={movel.url} textureUrl={active.texture ?? active.swatch} className="h-full w-full cursor-hot" />
             </Suspense>
           </ErrBoundary>
         </div>
