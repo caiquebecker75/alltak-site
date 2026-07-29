@@ -1,10 +1,18 @@
 import { lazy, Suspense, useMemo, useState } from 'react'
 import { COLORS, type Color } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
+import ErrBoundary from './ErrBoundary'
 
-// Real 3D furniture re-skin studio: pick an Alltak Decor pattern and watch it
-// applied to a downloaded CC0 cabinet model (Poly Haven) in real time.
+// Real 3D furniture re-skin studio: pick a piece of furniture + an Alltak Decor
+// pattern and watch it applied to a downloaded CC0 model (Poly Haven) live.
 const Furniture3D = lazy(() => import('./Furniture3D'))
+
+// Downloaded CC0 furniture (Poly Haven). One piece per ambience.
+const MOVEIS = [
+  { key: 'gaveteiro', label: 'Gaveteiro', ambiente: 'Cozinha', url: './models/drawer_cabinet/drawer_cabinet_1k.gltf' },
+  { key: 'aparador', label: 'Aparador', ambiente: 'Sala', url: './models/ClassicConsole_01/ClassicConsole_01_1k.gltf' },
+  { key: 'estante', label: 'Estante', ambiente: 'Quarto', url: './models/Shelf_01/Shelf_01_1k.gltf' },
+] as const
 
 export default function FurnitureStudio() {
   const { open } = useLeadGate()
@@ -12,6 +20,7 @@ export default function FurnitureStudio() {
   const families = useMemo(() => [...new Set(patterns.map((p) => p.family))].sort(), [patterns])
   const [fam, setFam] = useState('all')
   const [active, setActive] = useState<Color>(patterns[0])
+  const [movel, setMovel] = useState<(typeof MOVEIS)[number]>(MOVEIS[0])
 
   const list = fam === 'all' ? patterns : patterns.filter((p) => p.family === fam)
 
@@ -20,24 +29,37 @@ export default function FurnitureStudio() {
       {/* 3D stage */}
       <div className="flex flex-col gap-4">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="tag">Armário · modelo 3D real</span>
+          {MOVEIS.map((m) => (
+            <button
+              key={m.key}
+              onClick={() => setMovel(m)}
+              title={`${m.label} · ${m.ambiente}`}
+              className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
+                movel.key === m.key ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
+              }`}
+            >
+              {m.label}
+            </button>
+          ))}
           <span className="ml-auto hidden font-display text-xs font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
             Arraste para girar
           </span>
         </div>
-        <div className="relative overflow-hidden border border-white/10 bg-gradient-to-b from-alltak-ink to-black" style={{ aspectRatio: '4 / 3' }}>
+        <div className="relative h-[380px] overflow-hidden border border-white/10 bg-gradient-to-b from-alltak-ink to-black md:h-[460px]">
           <div className="pointer-events-none absolute inset-x-10 bottom-6 h-16 rounded-[50%] bg-alltak-blue/20 blur-2xl" aria-hidden />
-          <Suspense
-            fallback={
-              <div className="flex h-full items-center justify-center">
-                <span className="font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 animate-pulse">
-                  Carregando modelo 3D…
-                </span>
-              </div>
-            }
-          >
-            <Furniture3D textureUrl={active.swatch} className="h-full w-full cursor-hot" />
-          </Suspense>
+          <ErrBoundary>
+            <Suspense
+              fallback={
+                <div className="flex h-full items-center justify-center">
+                  <span className="font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 animate-pulse">
+                    Carregando modelo 3D…
+                  </span>
+                </div>
+              }
+            >
+              <Furniture3D key={movel.key} modelUrl={movel.url} textureUrl={active.swatch} className="h-full w-full cursor-hot" />
+            </Suspense>
+          </ErrBoundary>
         </div>
         <div className="flex items-end justify-between border-t border-white/10 pt-3">
           <div>
@@ -101,7 +123,7 @@ export default function FurnitureStudio() {
           </button>
         </div>
         <p className="mt-3 text-xs text-white/35">
-          Modelo 3D “Drawer Cabinet” (Poly Haven, CC0). Prévia ilustrativa; solicite amostra física.
+          Modelos 3D: Poly Haven (CC0). Prévia ilustrativa; solicite amostra física.
         </p>
       </div>
     </div>

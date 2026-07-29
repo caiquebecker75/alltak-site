@@ -5,14 +5,12 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 
-// Real 3D furniture re-skin: a downloaded CC0 cabinet (Poly Haven) whose
+// Real 3D furniture re-skin: downloaded CC0 furniture (Poly Haven) whose
 // surface is re-covered with an Alltak Decor pattern in real time — exactly
 // what the adhesive does to real furniture. Rotatable, studio-lit.
 
-const MODEL_URL = './models/drawer_cabinet/drawer_cabinet_1k.gltf'
-
-function CabinetModel({ textureUrl }: { textureUrl?: string }) {
-  const gltf = useLoader(GLTFLoader, MODEL_URL)
+function CabinetModel({ modelUrl, textureUrl }: { modelUrl: string; textureUrl?: string }) {
+  const gltf = useLoader(GLTFLoader, modelUrl)
   const mats = useRef<THREE.MeshStandardMaterial[]>([])
 
   const scene = useMemo(() => {
@@ -97,7 +95,15 @@ function StudioEnv() {
   return null
 }
 
-export default function Furniture3D({ textureUrl, className = '' }: { textureUrl?: string; className?: string }) {
+export default function Furniture3D({
+  modelUrl,
+  textureUrl,
+  className = '',
+}: {
+  modelUrl: string
+  textureUrl?: string
+  className?: string
+}) {
   return (
     <div className={className}>
       <Canvas
@@ -109,7 +115,7 @@ export default function Furniture3D({ textureUrl, className = '' }: { textureUrl
         <Rig />
         <ambientLight intensity={0.35} />
         <directionalLight position={[5, 8, 4]} intensity={1.1} />
-        <CabinetModel textureUrl={textureUrl} />
+        <CabinetModel modelUrl={modelUrl} textureUrl={textureUrl} />
       </Canvas>
     </div>
   )
