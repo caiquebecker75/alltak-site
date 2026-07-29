@@ -204,9 +204,9 @@ export default function DecorVisualizer() {
         </div>
 
         <div className="mt-4 grid max-h-[360px] grid-cols-3 gap-2 overflow-auto pr-1 sm:grid-cols-4">
-          {list.map((p) => (
+          {list.map((p, i) => (
             <button
-              key={p.code}
+              key={`${p.code}-${i}`}
               onClick={() => applyToSelected(p)}
               title={`${p.name} · ${p.code}`}
               className={`aspect-square overflow-hidden border transition ${
