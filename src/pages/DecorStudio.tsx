@@ -1,28 +1,29 @@
 import PageHeader from '../components/PageHeader'
-import KitchenSimulator from '../components/KitchenSimulator'
+import KitchenStudio from '../components/KitchenStudio'
 import FurnitureStudio from '../components/FurnitureStudio'
 
-// Decor visualizer page: a photo-based kitchen simulator (click a surface,
-// apply an Alltak Decor pattern) plus a real 3D furniture re-skinner.
+// Decor visualizer page: fully interactive 3D kitchen (orbit/zoom, click a
+// surface, apply a pattern) plus a real 3D furniture re-skinner.
 export default function DecorStudio() {
   return (
     <>
-      <PageHeader eyebrow="Alltak Decor" title="Simulador de Ambientes">
-        Clique numa superfície da cozinha, escolha um padrão Alltak Decor e veja aplicado na
+      <PageHeader eyebrow="Alltak Decor" title="Simulador de Ambientes 3D">
+        Gire a cozinha, dê zoom, clique numa superfície e aplique o padrão Alltak Decor na
         hora. Renove superfícies sem obra, mantendo o padrão do começo ao fim.
       </PageHeader>
 
-      {/* Simulador fotográfico de cozinha */}
+      {/* Cozinha 3D interativa */}
       <section className="bg-alltak-black pb-16 pt-4">
         <div className="container-x">
-          <p className="eyebrow text-alltak-blue">Simulador de cozinha</p>
+          <p className="eyebrow text-alltak-blue">Cozinha 3D interativa</p>
           <h2 className="mt-2 text-4xl text-white md:text-5xl">Monte a sua cozinha</h2>
           <p className="mt-3 max-w-2xl text-white/60">
-            Escolha a superfície (armários de cima, revestimento, armários de baixo) e revista
-            cada uma com um padrão diferente.
+            Uma cozinha 3D completa: arraste para girar, role para dar zoom e clique em
+            armários, bancada, revestimento, parede ou piso para revestir cada um com um
+            padrão diferente.
           </p>
           <div className="mt-8">
-            <KitchenSimulator />
+            <KitchenStudio />
           </div>
         </div>
       </section>
