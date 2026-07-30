@@ -69,7 +69,7 @@ export default function FurnitureStudio() {
             <p className="font-display text-2xl uppercase text-white">{active.name}</p>
             <p className="text-xs uppercase tracking-wide text-white/40">Código {active.code}</p>
           </div>
-          <img src={active.swatch} alt={active.name} className="h-14 w-20 border border-white/20 object-cover" />
+          <img src={active.texture ?? active.swatch} alt={active.name} className="h-14 w-20 border border-white/20 object-cover" />
         </div>
       </div>
 
@@ -109,7 +109,7 @@ export default function FurnitureStudio() {
                 active.code === p.code ? 'border-alltak-blue ring-2 ring-alltak-blue' : 'border-white/15 hover:border-white/50'
               }`}
             >
-              <img src={p.swatch} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
+              <img src={p.texture ?? p.swatch} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
             </button>
           ))}
         </div>
