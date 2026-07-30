@@ -10,12 +10,35 @@ import { useLeadGate } from '../lead/LeadGate'
 
 const BASE = './simulador/cozinha.jpg'
 
-type Surface = { key: string; label: string; clip: string; tile: number }
+type Surface = { key: string; label: string; clips: string[]; tile: string }
 
+// Polygons traced over the photo (percent coords), refined visually so edges
+// follow the real furniture: cabinet seams, tile boundary (with notches that
+// spare the faucet and the tray), counter line and the oven tower.
 const SURFACES: Surface[] = [
-  { key: 'cima', label: 'Armários de cima', clip: 'polygon(7% 0, 68% 0, 68% 43%, 7% 37%)', tile: 300 },
-  { key: 'backsplash', label: 'Revestimento', clip: 'polygon(7% 38%, 55% 41%, 55% 64%, 7% 62%)', tile: 150 },
-  { key: 'baixo', label: 'Armários de baixo', clip: 'polygon(53% 80%, 100% 72%, 100% 100%, 48% 100%)', tile: 320 },
+  {
+    key: 'cima',
+    label: 'Armários de cima',
+    clips: ['polygon(5.8% 0%, 70% 0%, 70.3% 41.8%, 35% 40.4%, 5.8% 39.7%)'],
+    tile: '26%',
+  },
+  {
+    key: 'backsplash',
+    label: 'Revestimento',
+    clips: [
+      'polygon(5.8% 39.7%, 35% 40.4%, 66% 42%, 65.5% 68.8%, 50% 67.6%, 30% 66.4%, 29.5% 64.2%, 16.8% 64%, 16.8% 57.5%, 5.8% 57.2%)',
+    ],
+    tile: '14%',
+  },
+  {
+    key: 'baixo',
+    label: 'Armários de baixo',
+    clips: [
+      'polygon(40% 77.8%, 66.5% 71.6%, 66.5% 100%, 55.2% 100%)',
+      'polygon(66.5% 71.6%, 73.5% 70.6%, 73.8% 74.4%, 98.5% 70.2%, 98.5% 100%, 66.5% 100%)',
+    ],
+    tile: '26%',
+  },
 ]
 
 export default function KitchenSimulator() {
@@ -60,42 +83,43 @@ export default function KitchenSimulator() {
           {SURFACES.map((s) => {
             const c = tex[s.key]
             if (!c) return null
-            return (
+            return s.clips.map((clip, i) => (
               <div
-                key={s.key}
+                key={`${s.key}-${i}`}
                 className="pointer-events-none absolute inset-0"
                 style={{
-                  clipPath: s.clip,
+                  clipPath: clip,
                   backgroundImage: `url(${texUrl(c)})`,
-                  backgroundSize: `${s.tile}px`,
+                  backgroundSize: s.tile,
                   backgroundRepeat: 'repeat',
                   mixBlendMode: 'multiply',
                 }}
               />
-            )
+            ))
           })}
 
-          {/* clickable hit areas + selection highlight */}
-          {SURFACES.map((s) => (
-            <button
-              key={s.key}
-              onClick={() => setSel(s.key)}
-              aria-label={s.label}
-              className="group absolute inset-0 cursor-pointer"
-              style={{ clipPath: s.clip }}
-            >
-              <span
-                className="absolute inset-0 transition"
+          {/* clickable hit areas + selection/hover highlight */}
+          {SURFACES.map((s) =>
+            s.clips.map((clip, i) => (
+              <button
+                key={`hit-${s.key}-${i}`}
+                onClick={() => setSel(s.key)}
+                aria-label={s.label}
+                className="absolute inset-0 cursor-pointer"
                 style={{
-                  clipPath: s.clip,
-                  background:
-                    sel === s.key ? 'rgba(0,128,255,0.16)' : 'transparent',
-                  boxShadow: sel === s.key ? 'inset 0 0 0 2px rgba(0,128,255,0.8)' : undefined,
+                  clipPath: clip,
+                  background: sel === s.key ? 'rgba(0,128,255,0.14)' : 'transparent',
+                }}
+                onMouseEnter={(e) => {
+                  if (sel !== s.key) (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.10)'
+                }}
+                onMouseLeave={(e) => {
+                  ;(e.currentTarget as HTMLButtonElement).style.background =
+                    sel === s.key ? 'rgba(0,128,255,0.14)' : 'transparent'
                 }}
               />
-              <span className="absolute inset-0 bg-white/0 transition group-hover:bg-white/10" style={{ clipPath: s.clip }} />
-            </button>
-          ))}
+            )),
+          )}
 
           {/* selected surface chip */}
           <span className="pointer-events-none absolute left-3 top-3 tag">
