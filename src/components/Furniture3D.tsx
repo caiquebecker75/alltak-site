@@ -24,7 +24,8 @@ function CabinetModel({ modelUrl, textureUrl }: { modelUrl: string; textureUrl?:
     box.getCenter(center)
     const s = 2.2 / Math.max(size.x, size.y, size.z)
     root.scale.setScalar(s)
-    root.position.set(-center.x * s, -center.y * s, -center.z * s)
+    // center X/Z, rest the base on the floor (y = 0)
+    root.position.set(-center.x * s, -box.min.y * s, -center.z * s)
     root.traverse((o) => {
       const mesh = o as THREE.Mesh
       if (!mesh.isMesh) return
@@ -56,6 +57,45 @@ function CabinetModel({ modelUrl, textureUrl }: { modelUrl: string; textureUrl?:
   return <primitive object={scene} />
 }
 
+// soft round contact shadow under the furniture
+function makeShadowTexture() {
+  const c = document.createElement('canvas')
+  c.width = c.height = 128
+  const g = c.getContext('2d')!
+  const grad = g.createRadialGradient(64, 64, 4, 64, 64, 62)
+  grad.addColorStop(0, 'rgba(0,0,0,0.55)')
+  grad.addColorStop(1, 'rgba(0,0,0,0)')
+  g.fillStyle = grad
+  g.fillRect(0, 0, 128, 128)
+  return new THREE.CanvasTexture(c)
+}
+
+// simple room: floor + corner walls so the piece reads as an ambiente
+function Room() {
+  const shadow = useMemo(makeShadowTexture, [])
+  return (
+    <group>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
+        <planeGeometry args={[26, 26]} />
+        <meshStandardMaterial color="#d7d2c8" roughness={0.95} metalness={0} />
+      </mesh>
+      <mesh position={[0, 5, -1.9]}>
+        <planeGeometry args={[26, 12]} />
+        <meshStandardMaterial color="#e7e3da" roughness={1} metalness={0} />
+      </mesh>
+      <mesh rotation={[0, Math.PI / 2, 0]} position={[-1.9, 5, 0]}>
+        <planeGeometry args={[26, 12]} />
+        <meshStandardMaterial color="#ddd8ce" roughness={1} metalness={0} />
+      </mesh>
+      {/* contact shadow */}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, 0]}>
+        <planeGeometry args={[3.4, 3.4]} />
+        <meshBasicMaterial map={shadow} transparent depthWrite={false} toneMapped={false} />
+      </mesh>
+    </group>
+  )
+}
+
 function Rig() {
   const { camera, gl } = useThree()
   const controls = useRef<OrbitControls>()
@@ -66,10 +106,10 @@ function Rig() {
     c.autoRotate = true
     c.autoRotateSpeed = 1.0
     c.enablePan = false
-    c.minDistance = 2.6
-    c.maxDistance = 7
-    c.maxPolarAngle = Math.PI / 1.9
-    c.target.set(0, 0, 0)
+    c.minDistance = 2.8
+    c.maxDistance = 7.5
+    c.maxPolarAngle = Math.PI / 2.05
+    c.target.set(0, 0.9, 0)
     controls.current = c
     return () => c.dispose()
   }, [camera, gl])
@@ -105,13 +145,14 @@ export default function Furniture3D({
     <div className={className}>
       <Canvas
         dpr={[1, 1.8]}
-        camera={{ position: [3, 1.6, 3.4], fov: 40 }}
-        gl={{ antialias: true, alpha: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 0.95 }}
+        camera={{ position: [3.6, 2.1, 3.9], fov: 42 }}
+        gl={{ antialias: true, alpha: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 0.98 }}
       >
         <StudioEnv />
         <Rig />
-        <ambientLight intensity={0.35} />
-        <directionalLight position={[5, 8, 4]} intensity={1.1} />
+        <ambientLight intensity={0.4} />
+        <directionalLight position={[5, 8, 4]} intensity={1.15} />
+        <Room />
         <CabinetModel modelUrl={modelUrl} textureUrl={textureUrl} />
       </Canvas>
     </div>
