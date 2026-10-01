@@ -1,0 +1,358 @@
+{
+ "geral": {
+  "titulo": "Downloads",
+  "itens": [],
+  "links_externos": [],
+  "url_antiga": "/downloads/"
+ },
+ "catalogos": {
+  "titulo": "Catálogo Virtual",
+  "itens": [
+   {
+    "rotulo": "Catalogo-Digital-Alltak-Evolution-Pro-v2.pdf",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/09/Catalogo-Digital-Alltak-Evolution-Pro-v2.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/09/Catalogo-Digital-Alltak-Evolution-Pro-v2.pdf"
+   },
+   {
+    "rotulo": "Alltak_Catalogo_ProjetoGrafico_Novo_V05-G01-2.pdf",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/02/Alltak_Catalogo_ProjetoGrafico_Novo_V05-G01-2.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/02/Alltak_Catalogo_ProjetoGrafico_Novo_V05-G01-2.pdf"
+   },
+   {
+    "rotulo": "Catalogo-Virtual_BannerTak_mar2021.pdf",
+    "arquivo": "./wp-uploads/2021/03/Catalogo-Virtual_BannerTak_mar2021.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "./wp-uploads/2021/03/Catalogo-Virtual_BannerTak_mar2021.pdf"
+   },
+   {
+    "rotulo": "Catalogo-Alltak-Tools_2025.pdf",
+    "arquivo": "./wp-uploads/2025/04/Catalogo-Alltak-Tools_2025.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "./wp-uploads/2025/04/Catalogo-Alltak-Tools_2025.pdf"
+   },
+   {
+    "rotulo": "CATALOGO-ONLINE-ALLTAK-DECOR-Set-2026.pdf",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/09/CATALOGO-ONLINE-ALLTAK-DECOR-Set-2026.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/09/CATALOGO-ONLINE-ALLTAK-DECOR-Set-2026.pdf"
+   },
+   {
+    "rotulo": "Catalogo_Signs_Final_Abril2026.pdf",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/04/Catalogo_Signs_Final_Abril2026.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2026/04/Catalogo_Signs_Final_Abril2026.pdf"
+   },
+   {
+    "rotulo": "IWC-Alltak-Catalogo-Virtual.pdf",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2024/11/IWC-Alltak-Catalogo-Virtual.pdf"
+   },
+   {
+    "rotulo": "Clique para Baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2024/11/IWC-Alltak-Catalogo-Virtual.pdf"
+   }
+  ],
+  "links_externos": [],
+  "url_antiga": "/downloads/catalogos/"
+ },
+ "instalador": {
+  "titulo": "DOWNLOADS DO INSTALADOR",
+  "itens": [
+   {
+    "rotulo": "check-list-para-envelopamento-ALLTAK.pdf",
+    "arquivo": "./wp-uploads/2021/01/check-list-para-envelopamento-ALLTAK.pdf"
+   },
+   {
+    "rotulo": "manual-de-limpeza-e-conservacao-para-envelopamento-ALLTAK.pdf",
+    "arquivo": "./wp-uploads/2021/01/manual-de-limpeza-e-conservacao-para-envelopamento-ALLTAK.pdf"
+   },
+   {
+    "rotulo": "check-list-para-envelopamento-ALLTAK.pdf",
+    "arquivo": "./wp-uploads/2021/01/check-list-para-envelopamento-ALLTAK.pdf"
+   },
+   {
+    "rotulo": "manual-de-limpeza-e-conservacao-para-envelopamento-ALLTAK.pdf",
+    "arquivo": "./wp-uploads/2021/01/manual-de-limpeza-e-conservacao-para-envelopamento-ALLTAK.pdf"
+   }
+  ],
+  "links_externos": [],
+  "url_antiga": "/downloads/downloads-do-instalador/"
+ },
+ "logos": {
+  "titulo": "Logos",
+  "itens": [
+   {
+    "rotulo": "Guide_Alltak-Logo_2025.pdf",
+    "arquivo": "./wp-uploads/2026/02/Guide_Alltak-Logo_2025.pdf"
+   },
+   {
+    "rotulo": "Design-sem-nome-7.pdf",
+    "arquivo": "./wp-uploads/2025/08/Design-sem-nome-7.pdf"
+   },
+   {
+    "rotulo": "Design-sem-nome-24-2.pdf",
+    "arquivo": "./wp-uploads/2026/02/Design-sem-nome-24-2.pdf"
+   },
+   {
+    "rotulo": "Design-sem-nome-11.pdf",
+    "arquivo": "./wp-uploads/2025/08/Design-sem-nome-11.pdf"
+   },
+   {
+    "rotulo": "Alltak-DECOR.pdf",
+    "arquivo": "./wp-uploads/2025/07/Alltak-DECOR.pdf"
+   },
+   {
+    "rotulo": "Alltak-WRAPS.pdf",
+    "arquivo": "./wp-uploads/2025/07/Alltak-WRAPS.pdf"
+   },
+   {
+    "rotulo": "Alltak-SIGNS.pdf",
+    "arquivo": "./wp-uploads/2025/07/Alltak-SIGNS.pdf"
+   }
+  ],
+  "links_externos": [],
+  "url_antiga": "/downloads/logos/"
+ },
+ "patterns": {
+  "titulo": "Pattern",
+  "itens": [
+   {
+    "rotulo": "ferrugem.zip",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/ferrugem.zip"
+   },
+   {
+    "rotulo": "Clique aqui para baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/ferrugem.zip"
+   },
+   {
+    "rotulo": "caveira.pdf",
+    "arquivo": "./wp-uploads/2021/01/caveira.pdf"
+   },
+   {
+    "rotulo": "Clique aqui para baixar",
+    "arquivo": "./wp-uploads/2021/01/caveira.pdf"
+   },
+   {
+    "rotulo": "WRAPTOPUS_35-cm-Cromia.tif",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/WRAPTOPUS_35-cm-Cromia.tif"
+   },
+   {
+    "rotulo": "Clique aqui para baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/WRAPTOPUS_35-cm-Cromia.tif"
+   },
+   {
+    "rotulo": "rose_skull_pattern.tif",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/rose_skull_pattern.tif"
+   },
+   {
+    "rotulo": "Clique aqui para baixar",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/rose_skull_pattern.tif"
+   }
+  ],
+  "links_externos": [],
+  "url_antiga": "/downloads/pattern/"
+ },
+ "perfis-de-cor": {
+  "titulo": "PERFIL DE COR",
+  "itens": [
+   {
+    "rotulo": "GLOSS 720×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/alltakGLOSS720_720_JV150.icc"
+   },
+   {
+    "rotulo": "GLOSS 1440×1440",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/alltakGLOSS1440_1440_JV150.icc"
+   },
+   {
+    "rotulo": "MATT 540×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/alltakMATT540_720_JV150.icc"
+   },
+   {
+    "rotulo": "MATT 540×720-2",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/02/alltakMATT540_720_JV150_02.icc"
+   },
+   {
+    "rotulo": "MATT 720×1440",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/alltakMATT720_1440_JV150.icc"
+   },
+   {
+    "rotulo": "MATT 720×1440-2",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/alltakMATT720_1440_JV150_02.icc"
+   },
+   {
+    "rotulo": "ALLTAK GLOSS 114_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak114_FAST_cjv30.icc"
+   },
+   {
+    "rotulo": "ALLTAK GLOSS 122_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak122_FOTO_cjv30.icc"
+   },
+   {
+    "rotulo": "ALLTAK GLOSS 134_art",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak134_ART_jvc30.icc"
+   },
+   {
+    "rotulo": "ALLTAK MATTE 214_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak214_FAST_jvc30.icc"
+   },
+   {
+    "rotulo": "ALLTAK MATTE 222_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak222_foto_cjv30.icc"
+   },
+   {
+    "rotulo": "ALLTAK MATTE 233_art",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak233_ART_jvc30.icc"
+   },
+   {
+    "rotulo": "ALLTAK JATEADO 317_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak317_FAST_jvc30.icc"
+   },
+   {
+    "rotulo": "ALLTAK JATEADO 322_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak322_FOTO_cjv30.icc"
+   },
+   {
+    "rotulo": "ALLTAK 527_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak527_FAST_cjv30.icc"
+   },
+   {
+    "rotulo": "ALLTAK 533_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak532_FOTO_cjv30.icc"
+   },
+   {
+    "rotulo": "ALKOSIGN GLOSS 914_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak914_FAST_jvc30.icc"
+   },
+   {
+    "rotulo": "ALKOSIGN GLOSS 933_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak933_FOTO_jvc30.icc"
+   },
+   {
+    "rotulo": "ALKOSIGN MATE 817_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak817-FAST_JVC30.icc"
+   },
+   {
+    "rotulo": "ALKOSIGN MATE 832_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak832_FOTO_cjv30.icc"
+   },
+   {
+    "rotulo": "ALKOSIGN TEXTURA 727_fast",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak727_FAST_cjv30.icc"
+   },
+   {
+    "rotulo": "ALKOSIGN TEXTURA 732_foto",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak732_FOTO_cjv30.icc"
+   },
+   {
+    "rotulo": "Alkosign Arezzo D.I BrancoAlko Sign 720×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Alkosign-Arezzo-D.I-Branco.oms"
+   },
+   {
+    "rotulo": "Alkosign Linho",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Alkosign-Linho.oms"
+   },
+   {
+    "rotulo": "Alkosign Sarja",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Alkosign-Sarja.oms"
+   },
+   {
+    "rotulo": "AW Auto Wrap",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-AW-Auto-Warp.oms"
+   },
+   {
+    "rotulo": "Corolan",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Corolan.oms"
+   },
+   {
+    "rotulo": "D.Print Blackout Branco GL",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-D.Print-Blackout-Branco-GL.oms"
+   },
+   {
+    "rotulo": "D.Print Blackout GL",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-D.Print-Blackout-GL.oms"
+   },
+   {
+    "rotulo": "D.Print Matt Branco",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-D.Print-Matt-Branco.oms"
+   },
+   {
+    "rotulo": "Eletrostático Branco",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Eletrostatico-Branco.oms"
+   },
+   {
+    "rotulo": "Eletrostático Transparente",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Eletrostatico-Transparente.oms"
+   },
+   {
+    "rotulo": "Transparente Brilho",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Transparente-Brilho.oms"
+   },
+   {
+    "rotulo": "Transparente Matt",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Transparente-Matt.oms"
+   },
+   {
+    "rotulo": "Tuning Jateado Branco Krusher",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak-Tuning-Jateado-Branco-Krusher.oms"
+   },
+   {
+    "rotulo": "Alko Sign 720×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/AlkoSign_720x720_3P.icm"
+   },
+   {
+    "rotulo": "Alltak Gloss 720×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/ALLTAK_gloss_720X720.icm"
+   },
+   {
+    "rotulo": "Alltak Jateado 720×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Alltak_JATEADO_720X720.icm"
+   },
+   {
+    "rotulo": "Corolan 720×720",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/corolan_720X720.icm"
+   },
+   {
+    "rotulo": "Teste de Perfil",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/02/Teste-de-Perfil.icc"
+   },
+   {
+    "rotulo": "Perfis Alko",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/02/Perfil-Alltak-Maquina-Rolland.zip"
+   }
+  ],
+  "links_externos": [],
+  "url_antiga": "/downloads/perfis-de-cor/"
+ },
+ "wallpapers": {
+  "titulo": "Wallpaper Alltak Tuning",
+  "itens": [
+   {
+    "rotulo": "wallpaper.zip",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/wallpaper.zip"
+   },
+   {
+    "rotulo": "wallpaper-caveira.zip",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/wallpaper-caveira.zip"
+   },
+   {
+    "rotulo": "Skullpoker.zip",
+    "arquivo": "https://alltak.com.br/wp-content/uploads/2021/01/Skullpoker.zip"
+   }
+  ],
+  "links_externos": [],
+  "url_antiga": "/downloads/wallpaper-alltak-tuning/"
+ }
+}

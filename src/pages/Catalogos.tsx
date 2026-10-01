@@ -1,16 +1,19 @@
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import { CATALOGS } from '../data/site'
-import { useLeadGate, type Download } from '../lead/LeadGate'
+import { useLeadGate } from '../lead/LeadGate'
+import downloads from '../data/wp/downloads.json'
 
-// Logos & manuais — download gated by the lead form.
-// ⚠️ URLs de exemplo: apontar para os PDFs/ZIPs oficiais da Alltak.
-const MATERIAIS: Download[] = [
-  { title: 'Manual da Marca Alltak', url: '#', kind: 'PDF' },
-  { title: 'Pacote de Logos (Wraps/Decor/Signs)', url: '#', kind: 'ZIP' },
-  { title: 'Manual de Aplicação', url: '#', kind: 'PDF' },
-  { title: 'Tabela Técnica Geral', url: '#', kind: 'PDF' },
-]
+// Grupos de materiais migrados do site antigo (logos, patterns, perfis de
+// cor, wallpapers, materiais do instalador) — download com cadastro (leads).
+type Grupo = { titulo: string; itens: { rotulo: string; arquivo: string }[]; links_externos: string[] }
+const GRUPOS_ORDEM = ['logos', 'patterns', 'perfis-de-cor', 'wallpapers', 'instalador'] as const
+const GRUPO_NOME: Record<string, string> = {
+  logos: 'Logos da marca', patterns: 'Patterns', 'perfis-de-cor': 'Perfis de cor',
+  wallpapers: 'Wallpapers Alltak Tuning', instalador: 'Materiais do instalador',
+}
+const kindOf = (arq: string) =>
+  arq.toLowerCase().includes('.zip') ? 'ZIP' : arq.toLowerCase().includes('.pdf') ? 'PDF' : 'Arquivo'
 
 export default function Catalogos() {
   const { open } = useLeadGate()
@@ -62,25 +65,40 @@ export default function Catalogos() {
             </p>
           </Reveal>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            {MATERIAIS.map((m, i) => (
-              <Reveal key={m.title} delay={i * 70}>
-                <button
-                  onClick={() => open(m)}
-                  className="group flex w-full items-center justify-between gap-4 border border-white/10 bg-white/[0.03] p-6 text-left transition hover:border-alltak-blue hover:bg-white/[0.06]"
-                >
-                  <div>
-                    <div className="font-display text-xs font-bold uppercase tracking-[0.25em] text-alltak-blue">
-                      {m.kind}
-                    </div>
-                    <h3 className="mt-1 text-2xl text-white">{m.title}</h3>
+          <div className="mt-10 space-y-10">
+            {GRUPOS_ORDEM.map((g) => {
+              const grupo = (downloads as Record<string, Grupo>)[g]
+              if (!grupo || grupo.itens.length === 0) return null
+              return (
+                <div key={g}>
+                  <h3 className="font-display text-2xl font-bold uppercase text-white">
+                    {GRUPO_NOME[g]} <span className="text-white/40">· {grupo.itens.length}</span>
+                  </h3>
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    {grupo.itens.map((m, i) => (
+                      <Reveal key={m.arquivo} delay={(i % 3) * 60}>
+                        <button
+                          onClick={() => open({ title: m.rotulo, url: m.arquivo, kind: kindOf(m.arquivo) })}
+                          className="group flex w-full items-center justify-between gap-3 border border-white/10 bg-white/[0.03] p-4 text-left transition hover:border-alltak-blue hover:bg-white/[0.06]"
+                        >
+                          <div className="min-w-0">
+                            <div className="font-display text-[10px] font-bold uppercase tracking-[0.25em] text-alltak-blue">
+                              {kindOf(m.arquivo)}
+                            </div>
+                            <div className="mt-0.5 truncate font-display text-base font-bold uppercase text-white">
+                              {m.rotulo}
+                            </div>
+                          </div>
+                          <span className="shrink-0 bg-alltak-blue px-3 py-2 font-display text-[10px] font-bold uppercase text-white clip-tz transition-transform group-hover:-translate-y-0.5">
+                            Baixar ↓
+                          </span>
+                        </button>
+                      </Reveal>
+                    ))}
                   </div>
-                  <span className="shrink-0 bg-alltak-blue px-4 py-3 font-display text-xs font-bold uppercase text-white clip-tz transition-transform group-hover:-translate-y-0.5">
-                    Baixar ↓
-                  </span>
-                </button>
-              </Reveal>
-            ))}
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

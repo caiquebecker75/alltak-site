@@ -3,6 +3,9 @@ import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import ColorExplorer from '../components/ColorExplorer'
 import { PRODUCT_CATEGORIES, STORE_URL } from '../data/site'
+import linhas from '../data/wp/linhas.json'
+
+type LinhaT = { categoria: string; slug: string; nome: string }
 
 const CATEGORY_IMAGE: Record<string, string> = {
   automotivo: './assets/automotivo_03.avif',
@@ -48,14 +51,24 @@ export default function Produtos() {
                 <div className="md:col-span-3">
                   <h2 className="text-4xl text-white md:text-5xl">{cat.name}</h2>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {cat.items.map((it) => (
-                      <span
-                        key={it}
-                        className="border border-white/15 px-3 py-1.5 text-sm font-display font-semibold uppercase tracking-wide text-white/70"
+                    {(linhas as LinhaT[]).filter((l) => l.categoria === cat.slug).map((l) => (
+                      <Link
+                        key={l.slug}
+                        to={`/produtos/${l.categoria}/${l.slug}`}
+                        className="border border-white/15 px-3 py-1.5 text-sm font-display font-semibold uppercase tracking-wide text-white/70 transition hover:border-alltak-blue hover:text-white"
                       >
-                        {it}
-                      </span>
+                        {l.nome}
+                      </Link>
                     ))}
+                    {(linhas as LinhaT[]).filter((l) => l.categoria === cat.slug).length === 0 &&
+                      cat.items.map((it) => (
+                        <span
+                          key={it}
+                          className="border border-white/15 px-3 py-1.5 text-sm font-display font-semibold uppercase tracking-wide text-white/70"
+                        >
+                          {it}
+                        </span>
+                      ))}
                   </div>
                 </div>
               </div>

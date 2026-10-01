@@ -8,6 +8,7 @@ export const DICT: Record<string, Record<Lang, string>> = {
   'nav.cores': { pt: 'Cores', en: 'Colors', es: 'Colores' },
   'nav.catalogos': { pt: 'Catálogos', en: 'Catalogs', es: 'Catálogos' },
   'nav.produtos': { pt: 'Produtos', en: 'Products', es: 'Productos' },
+  'nav.blog': { pt: 'Blog', en: 'Blog', es: 'Blog' },
   'nav.store': { pt: 'Alltak Store', en: 'Alltak Store', es: 'Alltak Store' },
   'nav.onde': { pt: 'Onde Comprar', en: 'Where to Buy', es: 'Dónde Comprar' },
   'nav.sobre': { pt: 'Sobre Nós', en: 'About', es: 'Sobre Nosotros' },

@@ -10,6 +10,9 @@ import { LeadGateProvider } from './lead/LeadGate'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
+import Linha from './pages/Linha'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Cores from './pages/Cores'
 import CorDetalhe from './pages/CorDetalhe'
 import DecorStudio from './pages/DecorStudio'
@@ -60,6 +63,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/catalogos" element={<Catalogos />} />
           <Route path="/produtos" element={<Produtos />} />
+          <Route path="/produtos/:categoria/:slug" element={<Linha />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/cores" element={<Cores />} />
           <Route path="/cor/:line/:code" element={<CorDetalhe />} />
           <Route path="/decoracao" element={<DecorStudio />} />
