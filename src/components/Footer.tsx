@@ -62,6 +62,7 @@ export default function Footer() {
             <li><Link to="/cursos" className="text-sm text-white/70 hover:text-white">Cursos</Link></li>
             <li><Link to="/contato" className="text-sm text-white/70 hover:text-white">{t('nav.contato')}</Link></li>
             <li><Link to="/politica-de-privacidade" className="text-sm text-white/70 hover:text-white">Política de Privacidade</Link></li>
+            <li><Link to="/transparencia-salarial" className="text-sm text-white/70 hover:text-white">Transparência Salarial</Link></li>
           </ul>
         </div>
       </div>

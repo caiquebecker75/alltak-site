@@ -662,6 +662,12 @@
    "titulo": "Evolution Pro | Alltak",
    "imgs": 26,
    "pdfs": 1
+  },
+  "https://alltak.com.br/transparencia-salarial/": {
+   "status": "ok",
+   "titulo": "Transparência Salarial | Alltak",
+   "imgs": 5,
+   "pdfs": 1
   }
  },
  "posts": {
@@ -5396,6 +5402,11 @@
    "status": "ok",
    "arquivo": "2026/09/alltak-evolution-pro-banner-1920.jpg",
    "bytes": 140600
+  },
+  "https://alltak.com.br/wp-content/uploads/2026/10/Relatorio-Transparencia-Salarial-2o-Semestre.pdf": {
+   "status": "ok",
+   "arquivo": "2026/10/Relatorio-Transparencia-Salarial-2o-Semestre.pdf",
+   "bytes": 192154
   }
  }
 }

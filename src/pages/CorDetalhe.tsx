@@ -1,15 +1,137 @@
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { findColor, relatedColors, colorSlug } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import { STORE_URL } from '../data/site'
+import escudo from '../brand/escudo-oficial.png'
 
-// Dedicated single page for one catalog color: applied photo, roll (bobina)
-// image, codes, pantone, finish, video and boletim downloads.
+// Página única da cor: foto aplicada em destaque, bobina/textura, ficha
+// completa, carrossel ampliado com download das imagens e gerador de artes
+// (1:1, 4:5 e 9:16) para uso em marketplaces, coerente com a identidade.
+
+type Slide = { src: string; rotulo: string }
+
+const FORMATOS = {
+  '1:1': [1080, 1080],
+  '4:5': [1080, 1350],
+  '9:16': [1080, 1920],
+} as const
+
+function carregarImg(src: string): Promise<HTMLImageElement> {
+  return new Promise((res, rej) => {
+    const i = new Image()
+    i.onload = () => res(i)
+    i.onerror = rej
+    i.src = src
+  })
+}
+
 export default function CorDetalhe() {
   const { line, code } = useParams()
   const navigate = useNavigate()
   const { open } = useLeadGate()
   const color = findColor(line, code)
+  const [slide, setSlide] = useState<number | null>(null)
+  const [gerando, setGerando] = useState(false)
+
+  const slides: Slide[] = useMemo(() => {
+    if (!color) return []
+    const s: Slide[] = []
+    if (color.applied) s.push({ src: color.applied, rotulo: 'Aplicado' })
+    s.push({ src: color.swatch, rotulo: 'Bobina / textura' })
+    return s
+  }, [color])
+
+  const fechar = useCallback(() => setSlide(null), [])
+  const prox = useCallback(() => setSlide((s) => (s === null ? s : (s + 1) % slides.length)), [slides.length])
+  const ant = useCallback(() => setSlide((s) => (s === null ? s : (s - 1 + slides.length) % slides.length)), [slides.length])
+
+  useEffect(() => {
+    const k = (e: KeyboardEvent) => {
+      if (slide === null) return
+      if (e.key === 'Escape') fechar()
+      if (e.key === 'ArrowRight') prox()
+      if (e.key === 'ArrowLeft') ant()
+    }
+    window.addEventListener('keydown', k)
+    return () => window.removeEventListener('keydown', k)
+  }, [slide, fechar, prox, ant])
+
+  const baixar = useCallback(async (src: string, nome: string) => {
+    const blob = await fetch(src).then((r) => r.blob())
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = nome
+    a.click()
+    URL.revokeObjectURL(a.href)
+  }, [])
+
+  // arte para marketplace: imagem + faixa de marca (trapézio, nome, código)
+  const gerarArte = useCallback(
+    async (formato: keyof typeof FORMATOS) => {
+      if (!color || slide === null) return
+      setGerando(true)
+      try {
+        const [W, H] = FORMATOS[formato]
+        await document.fonts.load('900 90px "Big Shoulders Display"').catch(() => null)
+        const img = await carregarImg(slides[slide].src)
+        const cv = document.createElement('canvas')
+        cv.width = W
+        cv.height = H
+        const ctx = cv.getContext('2d')!
+        ctx.fillStyle = '#0b0d10'
+        ctx.fillRect(0, 0, W, H)
+        // imagem em "cover" na área superior
+        const areaH = Math.round(H * 0.8)
+        const esc = Math.max(W / img.width, areaH / img.height)
+        const iw = img.width * esc, ih = img.height * esc
+        ctx.drawImage(img, (W - iw) / 2, (areaH - ih) / 2, iw, ih)
+        // véu inferior p/ legibilidade
+        const g = ctx.createLinearGradient(0, areaH - 200, 0, H)
+        g.addColorStop(0, 'rgba(11,13,16,0)')
+        g.addColorStop(0.45, 'rgba(11,13,16,0.92)')
+        g.addColorStop(1, '#0b0d10')
+        ctx.fillStyle = g
+        ctx.fillRect(0, areaH - 200, W, H - areaH + 200)
+        // trapézio-assinatura (base maior embaixo)
+        const ty = H - Math.round(H * 0.155)
+        ctx.fillStyle = '#0080FF'
+        ctx.beginPath()
+        ctx.moveTo(64 + 10, ty)
+        ctx.lineTo(64 + 150, ty)
+        ctx.lineTo(64 + 160, ty + 14)
+        ctx.lineTo(64, ty + 14)
+        ctx.closePath()
+        ctx.fill()
+        // nome + código + linha
+        ctx.fillStyle = '#ffffff'
+        ctx.font = `900 ${formato === '9:16' ? 84 : 72}px "Big Shoulders Display", sans-serif`
+        ctx.textBaseline = 'top'
+        const nome = color.name.toUpperCase()
+        ctx.fillText(nome, 64, ty + 34, W - 128)
+        ctx.font = '700 34px "IBM Plex Sans", sans-serif'
+        ctx.fillStyle = '#9fb6cf'
+        ctx.fillText(`${color.lineName.toUpperCase()} · CÓD ${color.code}`, 64, ty + (formato === '9:16' ? 136 : 118))
+        // escudo da marca no canto
+        try {
+          const logo = await carregarImg(escudo)
+          const lh = 110, lw = (logo.width / logo.height) * lh
+          ctx.drawImage(logo, W - lw - 56, H - lh - 48, lw, lh)
+        } catch { /* sem logo, segue */ }
+        cv.toBlob((b) => {
+          if (!b) return
+          const a = document.createElement('a')
+          a.href = URL.createObjectURL(b)
+          a.download = `alltak-${color.code}-${formato.replace(':', 'x')}.png`
+          a.click()
+          URL.revokeObjectURL(a.href)
+        }, 'image/png')
+      } finally {
+        setGerando(false)
+      }
+    },
+    [color, slide, slides],
+  )
 
   if (!color) {
     return (
@@ -25,20 +147,25 @@ export default function CorDetalhe() {
 
   return (
     <>
-      {/* Hero: applied photo full-bleed */}
+      {/* Hero: foto aplicada, grande e ampliável */}
       <section className="relative bg-alltak-black pt-20 md:pt-24">
-        <div className="relative h-[42vh] min-h-[300px] w-full overflow-hidden md:h-[56vh]">
+        <button
+          onClick={() => setSlide(0)}
+          className="group relative block h-[52vh] min-h-[340px] w-full cursor-zoom-in overflow-hidden md:h-[66vh]"
+          aria-label="Ampliar imagem"
+        >
           {color.applied ? (
-            <img src={color.applied} alt={`${color.name} aplicado`} className="h-full w-full object-cover" />
+            <img src={color.applied} alt={`${color.name} aplicado`} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" />
           ) : (
             <div className="h-full w-full" style={{ background: color.hex }} />
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-alltak-black via-alltak-black/30 to-transparent" />
-          <div className="container-x absolute inset-x-0 bottom-0 pb-6">
-            <button
-              onClick={() => navigate(-1)}
-              className="mb-4 font-display text-xs font-bold uppercase tracking-[0.2em] text-white/60 hover:text-alltak-blue"
-            >
+          <span className="absolute right-4 top-4 bg-black/60 px-3 py-2 font-display text-xs font-bold uppercase tracking-widest text-white opacity-0 transition group-hover:opacity-100">
+            Ampliar ⤢
+          </span>
+        </button>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-alltak-black via-alltak-black/40 to-transparent pb-6 pt-24">
+          <div className="container-x pointer-events-auto">
+            <button onClick={() => navigate(-1)} className="mb-3 font-display text-xs font-bold uppercase tracking-[0.2em] text-white/70 hover:text-alltak-blue">
               ← Voltar
             </button>
             <span className="tag">{color.lineName}</span>
@@ -52,28 +179,32 @@ export default function CorDetalhe() {
       {/* Ficha + bobina */}
       <section className="bg-alltak-black pb-8 pt-10">
         <div className="container-x grid gap-8 lg:grid-cols-[1.1fr_1fr]">
-          {/* Bobina (roll) + cor */}
           <div>
             <p className="eyebrow text-alltak-blue">Bobina / textura</p>
-            <div className="mt-3 aspect-[16/10] w-full overflow-hidden border border-white/10 bg-alltak-coal">
-              <img src={color.swatch} alt={`${color.name} bobina`} className="h-full w-full object-cover" />
-            </div>
+            <button
+              onClick={() => setSlide(slides.length - 1)}
+              className="group mt-3 block aspect-[16/10] w-full cursor-zoom-in overflow-hidden border border-white/10 bg-alltak-coal"
+              aria-label="Ampliar bobina"
+            >
+              <img src={color.swatch} alt={`${color.name} bobina`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </button>
             <div className="mt-3 grid grid-cols-2 gap-3">
               <div>
-                <div className="mb-1 text-[10px] font-bold uppercase tracking-widest text-white/40">Cor sólida</div>
+                <div className="mb-1 text-xs font-bold uppercase tracking-widest text-white/55">Cor sólida</div>
                 <div className="h-16 w-full border border-white/15" style={{ background: color.hex }} />
-                <div className="mt-1 text-center text-[10px] uppercase text-white/40">{color.hex}</div>
+                <div className="mt-1 text-center text-xs uppercase text-white/55">{color.hex}</div>
               </div>
               {color.applied && (
                 <div>
-                  <div className="mb-1 text-[10px] font-bold uppercase tracking-widest text-white/40">Aplicado</div>
-                  <img src={color.applied} alt="" className="h-16 w-full border border-white/15 object-cover" />
+                  <div className="mb-1 text-xs font-bold uppercase tracking-widest text-white/55">Aplicado</div>
+                  <button onClick={() => setSlide(0)} className="block h-16 w-full cursor-zoom-in overflow-hidden border border-white/15">
+                    <img src={color.applied} alt="" className="h-full w-full object-cover" />
+                  </button>
                 </div>
               )}
             </div>
           </div>
 
-          {/* Informações completas */}
           <div>
             <p className="eyebrow text-alltak-blue">
               {color.family}
@@ -82,37 +213,21 @@ export default function CorDetalhe() {
             <h2 className="mt-2 text-3xl text-white md:text-4xl">Informações da cor</h2>
 
             <dl className="mt-5 divide-y divide-white/10 border-y border-white/10">
-              <div className="flex items-center justify-between py-3 text-sm">
-                <dt className="text-white/55">Nome</dt>
-                <dd className="font-display font-bold uppercase text-white">{color.name}</dd>
-              </div>
-              <div className="flex items-center justify-between py-3 text-sm">
-                <dt className="text-white/55">Código</dt>
-                <dd className="font-display font-bold uppercase text-alltak-blue">{color.code}</dd>
-              </div>
-              <div className="flex items-center justify-between py-3 text-sm">
-                <dt className="text-white/55">Linha</dt>
-                <dd className="font-display font-bold uppercase text-white">{color.lineName}</dd>
-              </div>
-              <div className="flex items-center justify-between py-3 text-sm">
-                <dt className="text-white/55">Família</dt>
-                <dd className="font-display font-bold uppercase text-white">{color.family}</dd>
-              </div>
-              {color.finish && (
-                <div className="flex items-center justify-between py-3 text-sm">
-                  <dt className="text-white/55">Acabamento</dt>
-                  <dd className="font-display font-bold uppercase text-white">{color.finish}</dd>
+              {[
+                ['Nome', color.name],
+                ['Código', color.code],
+                ['Linha', color.lineName],
+                ['Família', color.family],
+                ...(color.finish ? [['Acabamento', color.finish]] : []),
+                ...(color.pantone ? [['Pantone', color.pantone]] : []),
+              ].map(([k, v]) => (
+                <div key={k} className="flex items-center justify-between py-3 text-base">
+                  <dt className="text-white/60">{k}</dt>
+                  <dd className={`font-display font-bold uppercase ${k === 'Código' ? 'text-alltak-blue' : 'text-white'}`}>{v}</dd>
                 </div>
-              )}
-              {color.pantone && (
-                <div className="flex items-center justify-between py-3 text-sm">
-                  <dt className="text-white/55">Pantone</dt>
-                  <dd className="font-display font-bold uppercase text-white">{color.pantone}</dd>
-                </div>
-              )}
+              ))}
             </dl>
 
-            {/* Ações */}
             <div className="mt-6 flex flex-col gap-2.5">
               <button
                 onClick={() => open({ title: `Boletim Técnico ${color.name} (${color.code})`, url: '#', kind: 'PDF' })}
@@ -121,10 +236,10 @@ export default function CorDetalhe() {
                 Baixar boletim técnico ↓
               </button>
               <button
-                onClick={() => open({ title: `Vídeo de aplicação ${color.name} (${color.code})`, url: '#', kind: 'Vídeo' })}
+                onClick={() => baixar(color.applied ?? color.swatch, `alltak-${color.code}.jpg`)}
                 className="btn-trapezoid btn-navy justify-center"
               >
-                Assistir vídeo de aplicação ▶
+                Baixar imagem do produto ↓
               </button>
               {color.line === 'wraps' && (
                 <Link to="/visualizador" className="btn-trapezoid btn-outline justify-center">
@@ -136,7 +251,7 @@ export default function CorDetalhe() {
               </a>
             </div>
 
-            <p className="mt-4 text-xs text-white/35">
+            <p className="mt-4 text-sm text-white/45">
               Imagem meramente ilustrativa. A cor pode variar conforme a tela, iluminação e superfície.
               Solicite uma amostra física e consulte um aplicador Alltak.
             </p>
@@ -154,23 +269,74 @@ export default function CorDetalhe() {
               {related.map((c) => (
                 <Link key={`${c.line}-${c.code}`} to={colorSlug(c)} className="group text-left">
                   <div className="relative aspect-square overflow-hidden bg-alltak-coal">
-                    <img
-                      src={c.swatch}
-                      alt={c.name}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                    <img src={c.swatch} alt={c.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>
-                  <div className="mt-1.5 truncate font-display text-xs font-bold uppercase text-white group-hover:text-alltak-blue">
+                  <div className="mt-1.5 truncate font-display text-sm font-bold uppercase text-white group-hover:text-alltak-blue">
                     {c.name}
                   </div>
-                  <div className="text-[10px] uppercase tracking-wide text-white/40">{c.code}</div>
+                  <div className="text-xs uppercase tracking-wide text-white/55">{c.code}</div>
                 </Link>
               ))}
             </div>
             <Link to="/cores" className="btn-trapezoid btn-outline mt-8">Ver todas as cores</Link>
           </div>
         </section>
+      )}
+
+      {/* Carrossel ampliado */}
+      {slide !== null && slides[slide] && (
+        <div className="fixed inset-0 z-[95] flex flex-col items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" onClick={fechar} />
+          <div className="relative flex max-h-[92vh] w-full max-w-5xl flex-col" onClick={(e) => e.stopPropagation()}>
+            <div className="relative flex items-center justify-center">
+              {slides.length > 1 && (
+                <button onClick={ant} aria-label="Anterior"
+                  className="absolute left-0 z-10 flex h-12 w-12 items-center justify-center bg-black/60 font-display text-2xl text-white hover:bg-alltak-blue md:-left-16">
+                  ‹
+                </button>
+              )}
+              <img src={slides[slide].src} alt={`${color.name} · ${slides[slide].rotulo}`} className="max-h-[72vh] w-auto max-w-full border border-white/10" />
+              {slides.length > 1 && (
+                <button onClick={prox} aria-label="Próxima"
+                  className="absolute right-0 z-10 flex h-12 w-12 items-center justify-center bg-black/60 font-display text-2xl text-white hover:bg-alltak-blue md:-right-16">
+                  ›
+                </button>
+              )}
+            </div>
+
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <div className="font-display text-xl font-bold uppercase text-white">
+                  {color.name} <span className="text-white/50">· {slides[slide].rotulo}</span>
+                </div>
+                <div className="text-xs uppercase tracking-widest text-white/50">
+                  {slide + 1} / {slides.length}
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <button
+                  onClick={() => baixar(slides[slide].src, `alltak-${color.code}-${slides[slide].rotulo.toLowerCase().split(' ')[0]}.jpg`)}
+                  className="btn-trapezoid btn-blue !py-2 !text-xs"
+                >
+                  Baixar imagem ↓
+                </button>
+                <span className="font-display text-[11px] font-bold uppercase tracking-widest text-white/50">
+                  Arte p/ marketplace:
+                </span>
+                {(Object.keys(FORMATOS) as (keyof typeof FORMATOS)[]).map((f) => (
+                  <button key={f} onClick={() => gerarArte(f)} disabled={gerando}
+                    className="btn-trapezoid btn-outline !px-3 !py-2 !text-xs disabled:opacity-40">
+                    {f}
+                  </button>
+                ))}
+                <button onClick={fechar} aria-label="Fechar"
+                  className="ml-2 flex h-10 w-10 items-center justify-center bg-white/10 text-white hover:bg-alltak-blue">
+                  ✕
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </>
   )

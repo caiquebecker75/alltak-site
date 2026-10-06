@@ -6,7 +6,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from crawl import fetch, extract, slug_of, RAW_DIR
 
 MIG = os.path.dirname(os.path.abspath(__file__))
-EXTRAS = ["https://alltak.com.br/produtos/automotivo/evolution-pro/"]
+EXTRAS = ["https://alltak.com.br/produtos/automotivo/evolution-pro/",
+          "https://alltak.com.br/transparencia-salarial/"]
 
 urls = json.load(open(os.path.join(MIG, "urls-sitemap.json")))
 inv = json.load(open(os.path.join(MIG, "inventario.json")))

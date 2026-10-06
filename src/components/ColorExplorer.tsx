@@ -23,9 +23,9 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
 
   return (
     <>
-      {/* filtros */}
-      <div className="flex flex-wrap items-center gap-3">
-        <div className="flex flex-wrap gap-1.5">
+      {/* filtros de linha: grandes e em destaque */}
+      <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap gap-2">
           {LINES.map((l) => (
             <button
               key={l.key}
@@ -33,8 +33,10 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
                 setLine(l.key)
                 setFamily('all')
               }}
-              className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
-                line === l.key ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
+              className={`font-display text-base md:text-lg font-black uppercase tracking-wide px-6 py-3 transition clip-tz ${
+                line === l.key
+                  ? 'bg-alltak-blue text-white shadow-[0_6px_24px_rgba(0,128,255,0.35)]'
+                  : 'bg-white/10 text-white/80 hover:bg-white/20 hover:text-white'
               }`}
             >
               {l.label}
@@ -45,7 +47,7 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Buscar cor ou código…"
-          className="ml-auto w-full max-w-xs border border-white/15 bg-white/5 px-4 py-2 text-sm text-white outline-none placeholder:text-white/35 focus:border-alltak-blue"
+          className="ml-auto w-full max-w-xs border border-white/20 bg-white/5 px-4 py-2.5 text-base text-white outline-none placeholder:text-white/45 focus:border-alltak-blue"
         />
       </div>
 
@@ -53,8 +55,8 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
       <div className="mt-4 flex flex-wrap gap-1.5">
         <button
           onClick={() => setFamily('all')}
-          className={`px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wide transition ${
-            family === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
+          className={`px-3.5 py-1.5 font-display text-xs font-bold uppercase tracking-wide transition ${
+            family === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/75 hover:bg-white/15'
           }`}
         >
           Todas as famílias
@@ -63,8 +65,8 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
           <button
             key={f}
             onClick={() => setFamily(f)}
-            className={`px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wide transition ${
-              family === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
+            className={`px-3.5 py-1.5 font-display text-xs font-bold uppercase tracking-wide transition ${
+              family === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/75 hover:bg-white/15'
             }`}
           >
             {f}
@@ -96,10 +98,10 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
               />
             </div>
             <div className="mt-1.5">
-              <div className="truncate font-display text-sm font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
+              <div className="truncate font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
                 {c.name}
               </div>
-              <div className="text-[11px] uppercase tracking-wide text-white/40">{c.code}</div>
+              <div className="text-xs uppercase tracking-wide text-white/55">{c.code}</div>
             </div>
           </Link>
         ))}

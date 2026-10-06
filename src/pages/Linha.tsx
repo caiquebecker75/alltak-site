@@ -24,7 +24,16 @@ const CAT_NOME: Record<string, string> = {
 export default function Linha() {
   const { categoria, slug } = useParams()
   const linha = (linhas as LinhaT[]).find((l) => l.categoria === categoria && l.slug === slug)
-  const [corAtiva, setCorAtiva] = useState<Cor | null>(null)
+  const [idx, setIdx] = useState<number | null>(null)
+  const corAtiva = idx !== null ? linha?.cores[idx] ?? null : null
+  const baixar = async (src: string, nome: string) => {
+    const blob = await fetch(src).then((r) => r.blob())
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = nome
+    a.click()
+    URL.revokeObjectURL(a.href)
+  }
   const irmas = useMemo(
     () => (linhas as LinhaT[]).filter((l) => l.categoria === categoria && l.slug !== slug),
     [categoria, slug],
@@ -66,8 +75,8 @@ export default function Linha() {
               <h2 className="mt-2 text-4xl text-white md:text-5xl">{linha.cores.length} opções</h2>
             </Reveal>
             <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              {linha.cores.map((c) => (
-                <button key={c.arquivo} onClick={() => setCorAtiva(c)} className="group text-left">
+              {linha.cores.map((c, i) => (
+                <button key={c.arquivo} onClick={() => setIdx(i)} className="group text-left">
                   <div className="aspect-square overflow-hidden bg-alltak-coal">
                     <img src={c.arquivo} alt={c.rotulo} loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -136,17 +145,43 @@ export default function Linha() {
         </section>
       )}
 
-      {/* Lightbox da cor */}
-      {corAtiva && (
-        <div className="fixed inset-0 z-[95] flex items-center justify-center p-4" onClick={() => setCorAtiva(null)}>
+      {/* Lightbox da cor: navegação anterior/próxima e download */}
+      {corAtiva && idx !== null && (
+        <div className="fixed inset-0 z-[95] flex items-center justify-center p-4" onClick={() => setIdx(null)}>
           <div className="absolute inset-0 bg-black/85 backdrop-blur-sm" />
-          <div className="relative max-h-[90vh] max-w-3xl" onClick={(e) => e.stopPropagation()}>
-            <img src={corAtiva.arquivo} alt={corAtiva.rotulo} className="max-h-[82vh] w-auto" />
-            <div className="mt-2 flex items-center justify-between">
-              <span className="font-display text-sm font-bold uppercase text-white">{corAtiva.rotulo}</span>
-              <button onClick={() => setCorAtiva(null)} className="font-display text-xs font-bold uppercase text-white/60 hover:text-alltak-blue">
-                Fechar ✕
+          {linha.cores.length > 1 && (
+            <>
+              <button
+                onClick={(e) => { e.stopPropagation(); setIdx((idx - 1 + linha.cores.length) % linha.cores.length) }}
+                aria-label="Cor anterior"
+                className="absolute left-3 top-1/2 z-10 -translate-y-1/2 bg-white/10 px-4 py-3 font-display text-2xl font-black text-white transition hover:bg-alltak-blue md:left-6">
+                ‹
               </button>
+              <button
+                onClick={(e) => { e.stopPropagation(); setIdx((idx + 1) % linha.cores.length) }}
+                aria-label="Próxima cor"
+                className="absolute right-3 top-1/2 z-10 -translate-y-1/2 bg-white/10 px-4 py-3 font-display text-2xl font-black text-white transition hover:bg-alltak-blue md:right-6">
+                ›
+              </button>
+            </>
+          )}
+          <div className="relative max-h-[90vh] max-w-3xl" onClick={(e) => e.stopPropagation()}>
+            <img src={corAtiva.arquivo} alt={corAtiva.rotulo} className="max-h-[78vh] w-auto" />
+            <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
+              <span className="font-display text-sm font-bold uppercase text-white">
+                {corAtiva.rotulo}
+                <span className="ml-2 text-white/40">{idx + 1}/{linha.cores.length}</span>
+              </span>
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={() => baixar(corAtiva.arquivo, `alltak-${linha.slug}-${corAtiva.codigo ?? idx + 1}.jpg`)}
+                  className="font-display text-xs font-bold uppercase text-alltak-blue hover:text-white">
+                  Baixar imagem ↓
+                </button>
+                <button onClick={() => setIdx(null)} className="font-display text-xs font-bold uppercase text-white/60 hover:text-alltak-blue">
+                  Fechar ✕
+                </button>
+              </div>
             </div>
           </div>
         </div>

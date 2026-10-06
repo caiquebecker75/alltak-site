@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
 import Preloader from './components/Preloader'
-import Cursor from './components/Cursor'
 import WhatsApp from './components/WhatsApp'
 import { LeadGateProvider } from './lead/LeadGate'
 import Home from './pages/Home'
@@ -23,6 +22,7 @@ import Cursos from './pages/Cursos'
 import Contato from './pages/Contato'
 import Sobre from './pages/Sobre'
 import Privacidade from './pages/Privacidade'
+import Transparencia from './pages/Transparencia'
 
 // Scroll to top on route change, or to the #anchor when a hash is present.
 function ScrollManager() {
@@ -54,7 +54,6 @@ export default function App() {
   return (
     <LeadGateProvider>
       <Preloader />
-      <Cursor />
       <ScrollProgress />
       <ScrollManager />
       <Header />
@@ -76,6 +75,7 @@ export default function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/politica-de-privacidade" element={<Privacidade />} />
+          <Route path="/transparencia-salarial" element={<Transparencia />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

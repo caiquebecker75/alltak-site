@@ -1,8 +1,12 @@
+import { useSearchParams } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import ColorExplorer from '../components/ColorExplorer'
 import { COLORS } from '../data/catalog'
 
 export default function Cores() {
+  // navegação direta: /cores?linha=wraps|decor|signs abre já filtrado
+  const [sp] = useSearchParams()
+  const linha = sp.get('linha') ?? 'all'
   return (
     <>
       <PageHeader eyebrow="Gama completa" title="Cores">
@@ -13,7 +17,7 @@ export default function Cores() {
 
       <section className="bg-alltak-black py-12 md:py-16">
         <div className="container-x">
-          <ColorExplorer />
+          <ColorExplorer key={linha} initialLine={linha} />
         </div>
       </section>
     </>

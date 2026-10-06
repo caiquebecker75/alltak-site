@@ -72,8 +72,8 @@ export default function StickyUnits() {
                     {u.tagline}
                   </p>
                   <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70">{u.description}</p>
-                  <Link to="/produtos" className="btn-trapezoid btn-blue mt-8">
-                    Ver mais produtos
+                  <Link to={`/cores?linha=${u.key}`} className="btn-trapezoid btn-blue mt-8">
+                    Ver os produtos
                   </Link>
                 </div>
                 <div className="relative hidden md:block">
