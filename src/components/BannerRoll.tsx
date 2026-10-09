@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
 // Full-bleed auto-rotating banner carousel: the brand's campaign artworks fill
-// the entire width, crossfading with a slow Ken Burns drift. Dots + progress
-// let the user jump; hovering pauses the rotation.
+// the entire width, crossfading with a slow Ken Burns drift. Discreet arrows on
+// each side and the progress dots let the user move; hovering pauses.
 const SLIDES = [
   { img: './assets/banner-wraps.jpg', label: 'Alltak Wraps · Linha IWC' },
   { img: './assets/banner-decor.jpg', label: 'Alltak Decor · Revestimentos' },
@@ -15,11 +15,14 @@ export default function BannerRoll() {
   const [i, setI] = useState(0)
   const [paused, setPaused] = useState(false)
 
+  // um timer por slide: trocar pela seta reinicia a contagem do próximo
   useEffect(() => {
     if (paused) return
-    const id = setInterval(() => setI((v) => (v + 1) % SLIDES.length), DURATION)
-    return () => clearInterval(id)
-  }, [paused])
+    const id = setTimeout(() => setI((v) => (v + 1) % SLIDES.length), DURATION)
+    return () => clearTimeout(id)
+  }, [i, paused])
+
+  const ir = (passo: number) => setI((v) => (v + passo + SLIDES.length) % SLIDES.length)
 
   return (
     <section
@@ -51,14 +54,25 @@ export default function BannerRoll() {
         )
       })}
 
-      {/* legibility gradients */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent" aria-hidden />
+      {/* legibility gradient for the progress dots */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/80 to-transparent" aria-hidden />
 
-      {/* header overlay */}
-      <div className="container-x absolute inset-x-0 top-8">
-        <span className="tag">Campanhas</span>
-      </div>
+      {/* setas discretas, uma de cada lado */}
+      {[
+        { passo: -1, lado: 'left-3 md:left-5', rotulo: 'Banner anterior', d: 'M15 5l-7 7 7 7' },
+        { passo: 1, lado: 'right-3 md:right-5', rotulo: 'Próximo banner', d: 'M9 5l7 7-7 7' },
+      ].map((s) => (
+        <button
+          key={s.passo}
+          onClick={() => ir(s.passo)}
+          aria-label={s.rotulo}
+          className={`absolute top-1/2 ${s.lado} z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/15 text-white/60 backdrop-blur-[2px] transition hover:border-white/50 hover:bg-black/35 hover:text-white md:h-12 md:w-12`}
+        >
+          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d={s.d} />
+          </svg>
+        </button>
+      ))}
 
       {/* controles (sem legenda: a arte do banner fala por si) */}
       <div className="container-x absolute inset-x-0 bottom-8 flex items-end justify-end gap-6">
