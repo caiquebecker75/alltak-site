@@ -6,6 +6,7 @@ import linhas from '../data/wp/linhas.json'
 import linhasI18n from '../data/wp/linhas-i18n.json'
 import { STORE_URL } from '../data/site'
 import { useI18n } from '../i18n'
+import { limparRotulo } from '../lib/rotulos'
 
 // Página de linha de produto migrada do site antigo (WordPress):
 // descrição, galeria de cores com código, especificações técnicas e boletim.
@@ -19,20 +20,6 @@ type LinhaT = {
 }
 type LinhaI18n = Record<string, Record<'en' | 'es', { descricao: string; specs: string[] }>>
 
-// Rótulos da galeria vieram do nome do arquivo no WordPress
-// ("FPP_GLOSS_ALLTAK", "KROMA_GRAFITE_SITE", "BANANA-YELLOW-18U21"):
-// troca _ e - por espaço e tira sufixos de upload (SITE, LOJA VIRTUAL, 1080...)
-function limparRotulo(r: string): string {
-  return r
-    .replace(/\.(JPG|JPEG|PNG|WEBP)(\.WEBP)?/gi, '')
-    .replace(/[_]+/g, ' ')
-    .replace(/-{2,}/g, ' ')
-    .replace(/(?<=[A-ZÀ-Ú])-(?=[A-ZÀ-Ú0-9])/g, ' ')
-    .replace(/\b(SITE|ALLTAK|LOJA VIRTUAL|LOJA ONLINE|BOBINA|1080|ADESIVOS)\b/gi, ' ')
-    .replace(/\s+\d(\s+\d)?$/, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim()
-}
 
 // A meta description do WordPress é cortada em ~160 caracteres, no meio da
 // frase. Quando ela é o único texto, mostra só até a última frase completa.

@@ -2,6 +2,27 @@ import type { Lang } from './index'
 
 // Textos da área "paginas" (PT, EN, ES). Ligado ao dicionário principal em dict.ts.
 export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
+  // ---- página de segmento (Aplicações Técnicas, Wrap Care, Acessórios) ----
+  'seg.eyebrow': { pt: 'Linhas de produto', en: 'Product lines', es: 'Líneas de producto' },
+  'seg.todos': { pt: 'Todos os produtos', en: 'All products', es: 'Todos los productos' },
+  'seg.item': { pt: 'foto', en: 'photo', es: 'foto' },
+  'seg.itens': { pt: 'fotos', en: 'photos', es: 'fotos' },
+  'seg.verProduto': { pt: 'Ver produto', en: 'View product', es: 'Ver producto' },
+  'seg.aplicacoes': {
+    pt: 'Linha Alltak® Tec para aplicações técnicas: dupla face, laminações, máscaras de proteção e de transferência e pisos. Clique em um produto para ver a ficha técnica.',
+    en: 'Alltak® Tec line for technical applications: double-sided tape, laminates, protection and transfer masks, and floors. Click a product to see its technical sheet.',
+    es: 'Línea Alltak® Tec para aplicaciones técnicas: doble faz, laminados, máscaras de protección y de transferencia, y pisos. Haz clic en un producto para ver su ficha técnica.',
+  },
+  'seg.wrapcare': {
+    pt: 'Linha de cuidados para o envelopamento: remoção de cola, preparação da superfície e proteção do vinil. Clique em um produto para ver o modo de uso.',
+    en: 'Care line for vehicle wrapping: glue removal, surface preparation and vinyl protection. Click a product to see how to use it.',
+    es: 'Línea de cuidado para la rotulación: remoción de pegamento, preparación de la superficie y protección del vinilo. Haz clic en un producto para ver el modo de uso.',
+  },
+  'seg.acessorios': {
+    pt: 'Acessórios para o acabamento do envelopamento. Clique no produto para ver os detalhes.',
+    en: 'Accessories for finishing vehicle wraps. Click the product to see the details.',
+    es: 'Accesorios para el acabado de la rotulación. Haz clic en el producto para ver los detalles.',
+  },
   // ---- Sobre ----
   'sobre.eyebrow': { pt: 'Quem somos', en: 'Who we are', es: 'Quiénes somos' },
   'sobre.titulo': { pt: 'Sobre a Alltak', en: 'About Alltak', es: 'Sobre Alltak' },

@@ -18,14 +18,14 @@ const CATEGORY_IMAGE: Record<string, string> = {
   acessorios: './assets/decor_01.avif',
 }
 // destino de cada card: segmentos com cartela vão direto para as cores da
-// linha; os demais, para a própria seção na página de Produtos
+// linha; os demais, para a página do segmento (mesmo formato de Cores)
 const DESTINO: Record<string, string> = {
   automotivo: '/cores?linha=wraps',
   arquitetura: '/cores?linha=decor',
   impressao: '/cores?linha=signs',
   'sign-design': '/cores?linha=signs',
 }
-const destino = (slug: string) => DESTINO[slug] ?? `/produtos#cat-${slug}`
+const destino = (slug: string) => DESTINO[slug] ?? `/linhas/${slug}`
 
 const RECORTE = {
   // mesmo contorno do recorte das fotos; aqui só contém o brilho do hover
