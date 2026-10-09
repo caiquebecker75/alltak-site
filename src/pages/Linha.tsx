@@ -32,6 +32,10 @@ function frasesCompletas(t?: string | null): string {
   return fim > 0 ? t.slice(0, fim + 1) : ''
 }
 
+// prefixos de instrução de uso nas fichas antigas (PT, EN, ES)
+const INSTRUCAO =
+  /^(instru[çc][õo]es( de aplica[çc][ãa]o)?|lavagem|limpeza|instala[çc][ãa]o|manuten[çc][ãa]o|modo de usar|importante|observa[çc][ãa]o|application instructions|instructions|washing|cleaning|installation|maintenance|how to use|important|note|instrucciones( de aplicaci[óo]n)?|lavado|limpieza|instalaci[óo]n|mantenimiento|modo de uso|nota):/i
+
 const CAT_NOME: Record<string, string> = {
   automotivo: 'Automotivo', arquitetura: 'Arquitetura', impressao: 'Impressão',
   'sign-design': 'Sign & Design', 'wrap-care': 'Wrap Care', acessorios: 'Acessórios',
@@ -46,7 +50,10 @@ export default function Linha() {
   // texto e ficha do catálogo digital oficial têm prioridade sobre o WordPress
   const catalogo = slug ? fichaDaLinha(slug, lang) : undefined
   const descricao = catalogo?.descricao || trad?.descricao || linha?.descricao || frasesCompletas(linha?.meta_description)
-  const specs = catalogo?.specs.length ? catalogo.specs : trad && trad.specs.length > 0 ? trad.specs : linha?.specs ?? []
+  const specsSite = trad && trad.specs.length > 0 ? trad.specs : linha?.specs ?? []
+  // com catálogo: a ficha técnica é a do catálogo; do site antigo ficam só as
+  // instruções de uso (instalação, lavagem, manutenção...), que o catálogo não traz
+  const specs = catalogo?.specs.length ? [...catalogo.specs, ...specsSite.filter((s) => INSTRUCAO.test(s))] : specsSite
   const [idx, setIdx] = useState<number | null>(null)
   const corAtiva = idx !== null ? linha?.cores[idx] ?? null : null
   const baixar = async (src: string, nome: string) => {
@@ -129,7 +136,7 @@ export default function Linha() {
                 <p className="eyebrow text-alltak-blue">{t('prod.fichaLinha')}</p>
                 <h2 className="mt-2 text-4xl text-white md:text-5xl">{t('prod.especificacoes')}</h2>
                 <p className="mt-4 text-sm text-white/50">
-                  {catalogo ? `${t('prod.fonte')}: ${catalogo.fonte}. ` : ''}
+                  {catalogo ? `${t('prod.fonte')} ${catalogo.fonte}. ` : ''}
                   {t('prod.refBoletim')}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">

@@ -15,5 +15,8 @@ const escolher = (e: Entrada | undefined, lang: Lang) =>
   e ? { ...(e[lang]?.specs.length || e[lang]?.descricao ? e[lang] : e.pt), fonte: e.fonte } : undefined
 
 export const fichaDaLinha = (slug: string, lang: Lang) => escolher(D.linhas[slug], lang)
-export const fichaDaCor = (linha: string, codigo: string, lang: Lang) => escolher(D.cores[`${linha}:${codigo}`], lang)
+// alguns códigos se repetem no catálogo para padrões diferentes: a chave com
+// o nome vem primeiro
+export const fichaDaCor = (linha: string, codigo: string, lang: Lang, nome = '') =>
+  escolher(D.cores[`${linha}:${codigo}|${nome}`] ?? D.cores[`${linha}:${codigo}`], lang)
 export const avisosDaLinha = (linha: string, lang: Lang): string[] => D.avisos[linha]?.[lang] ?? []

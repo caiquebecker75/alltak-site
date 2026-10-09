@@ -176,7 +176,7 @@
  },
  {
   "code": "977D117",
-  "name": "Lombarda Sabbia Lombarda",
+  "name": "Lombarda Sabbia",
   "hex": "#242424",
   "swatch": "977D117_sw.jpg",
   "applied": "977D117_ap.jpg"
@@ -204,7 +204,7 @@
  },
  {
   "code": "977D55",
-  "name": "Tijolo",
+  "name": "Tijolo Preto",
   "hex": "#ececec",
   "swatch": "977D55_sw.jpg",
   "applied": "977D55_ap.jpg"
@@ -260,21 +260,21 @@
  },
  {
   "code": "977KF11",
-  "name": "Kroma Forma Azul Petróleo Referência",
+  "name": "Kroma Forma Azul Petróleo",
   "hex": "#0c344c",
   "swatch": "977KF11_sw.jpg",
   "applied": "977KF11_ap.jpg"
  },
  {
   "code": "977KF12",
-  "name": "Kroma Forma Verde Primavera Referência",
+  "name": "Kroma Forma Verde Primavera",
   "hex": "#84947c",
   "swatch": "977KF12_sw.jpg",
   "applied": "977KF12_ap.jpg"
  },
  {
   "code": "977KF10",
-  "name": "Kroma Forma Aveia Referência",
+  "name": "Kroma Forma Aveia",
   "hex": "#bcb4ac",
   "swatch": "977KF10_sw.jpg",
   "applied": "977KF10_ap.jpg"
@@ -323,7 +323,7 @@
  },
  {
   "code": "977KF35",
-  "name": "Kroma Forma Mandarino Detalhe Da Textura",
+  "name": "Kroma Forma Mandarino",
   "hex": "#f45c2c",
   "swatch": "977KF35_sw.jpg",
   "applied": "977KF35_ap.jpg"
@@ -351,14 +351,14 @@
  },
  {
   "code": "977KW36",
-  "name": "Detalhe Da Textura Kroma Wood Bilbao",
+  "name": "Kroma Wood Bilbao",
   "hex": "#242424",
   "swatch": "977KW36_sw.jpg",
   "applied": "977KW36_ap.jpg"
  },
  {
   "code": "977KC14",
-  "name": "Kroma Off-White",
+  "name": "Kroma Couro Off-White",
   "hex": "#808080",
   "swatch": "977KC14_sw.jpg",
   "applied": "977KC14_ap.jpg"
@@ -392,7 +392,7 @@
   "applied": "977KL45_ap.jpg"
  },
  {
-  "code": "97",
+  "code": "977TP74",
   "name": "Deck Valência",
   "hex": "#242424",
   "swatch": "97_sw.jpg",

@@ -170,7 +170,7 @@
  {
   "code": "773360",
   "name": "Cinza Claro",
-  "pantone": null,
+  "pantone": "Cool Gray 4",
   "serie": "Premium",
   "hex": "#bababa",
   "applied": "773360_ap.jpg"
@@ -393,25 +393,25 @@
  },
  {
   "code": "422P01",
-  "name": "Tec Pisotak Laminação",
+  "name": "Pisotak Laminação",
   "pantone": null,
-  "serie": "",
+  "serie": "TEC",
   "hex": "#eaeaea",
   "applied": "422P01_ap.jpg"
  },
  {
   "code": "422TB01",
-  "name": "Tec Máscara Cristal (Máscara De Tr",
+  "name": "Máscara Cristal",
   "pantone": null,
-  "serie": "",
+  "serie": "TEC",
   "hex": "#c0c6c6",
   "applied": "422TB01_ap.jpg"
  },
  {
   "code": "422TM50",
-  "name": "Tec Máscara Azul (Máscara De Trans",
+  "name": "Máscara Azul",
   "pantone": null,
-  "serie": "",
+  "serie": "TEC",
   "hex": "#baf0fc",
   "applied": "422TM50_ap.jpg"
  }

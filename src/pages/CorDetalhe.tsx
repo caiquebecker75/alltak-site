@@ -268,7 +268,7 @@ export default function CorDetalhe() {
   // Signs usa a série como família e acabamento; não repete o mesmo valor
   const acabamento = color.finish && color.finish !== color.family ? color.finish : undefined
   // descrição e ficha técnica do catálogo digital oficial
-  const ficha = fichaDaCor(color.line, color.code, lang)
+  const ficha = fichaDaCor(color.line, color.code, lang, color.name)
   const principal = slides[0]
   const secundarias = slides.slice(1)
 
@@ -393,7 +393,7 @@ export default function CorDetalhe() {
                     )
                   })}
                 </ul>
-                <p className="mt-2 text-sm text-white/50">{t('prod.fonte')}: {ficha.fonte}</p>
+                <p className="mt-2 text-sm text-white/50">{t('prod.fonte')} {ficha.fonte}</p>
               </div>
             )}
 

@@ -5,7 +5,7 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
   'prod.sobreLinha': { pt: 'Sobre a linha', en: 'About the line', es: 'Sobre la línea' },
   'prod.fichaCompleta': { pt: 'Ficha técnica completa', en: 'Full technical sheet', es: 'Ficha técnica completa' },
   'prod.menos': { pt: 'Mostrar menos', en: 'Show less', es: 'Mostrar menos' },
-  'prod.fonte': { pt: 'Fonte', en: 'Source', es: 'Fuente' },
+  'prod.fonte': { pt: 'Fonte: catálogo', en: 'Source: catalog', es: 'Fuente: catálogo' },
   'cor.ficha': { pt: 'Ficha técnica', en: 'Technical sheet', es: 'Ficha técnica' },
   'cor.sobre': { pt: 'Sobre o padrão', en: 'About this pattern', es: 'Sobre el diseño' },
   // ---- página de segmento (Aplicações Técnicas, Wrap Care, Acessórios) ----

@@ -58,7 +58,7 @@ export default function SobreLinha({ slug }: { slug: string }) {
           })}
         </ul>
       )}
-      {aberto && catalogo && <p className="mt-3 text-sm text-white/50">{t('prod.fonte')}: {catalogo.fonte}</p>}
+      {aberto && catalogo && <p className="mt-3 text-sm text-white/50">{t('prod.fonte')} {catalogo.fonte}</p>}
 
       {(specs.length > 0 || (descricao?.length ?? 0) > 220) && (
         <button
