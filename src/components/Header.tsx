@@ -46,7 +46,14 @@ export default function Header() {
         } ${scrolled && !open ? 'bg-black/85 backdrop-blur border-b border-white/10' : ''}`}
       >
         <div className="container-x flex h-20 items-center justify-between md:h-24">
-          <Link to="/" aria-label="Alltak início" className="relative z-[92]">
+          {/* com o menu aberto o escudo do menu assume a marca; o logo da barra
+              some para os dois não se sobreporem */}
+          <Link
+            to="/"
+            aria-label="Alltak início"
+            className={`relative z-[92] transition-opacity duration-300 ${open ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
+            tabIndex={open ? -1 : 0}
+          >
             <Logo className="h-9 md:h-12" />
           </Link>
 
@@ -85,23 +92,25 @@ export default function Header() {
         <div className="pointer-events-none absolute right-[-6%] top-[12%] h-40 w-72 rotate-12 bg-alltak-blue/15 clip-escudo" aria-hidden />
         <div className="pointer-events-none absolute bottom-[10%] left-[-4%] h-28 w-56 -rotate-6 bg-alltak-blue/10 clip-escudo" aria-hidden />
 
-        <nav className="container-x flex h-full flex-col justify-center">
+        {/* tudo dimensionado pela altura da tela: o menu cabe inteiro sem
+            vazar para o topo, e rola se a janela for muito baixa */}
+        <nav className="container-x flex h-full flex-col overflow-y-auto pb-6 pt-24 md:pt-28 [&>*:first-child]:mt-auto [&>*:last-child]:mb-auto">
           {/* big escudo logo headlining the menu */}
           <div
-            className="mb-8"
+            className="mb-[3vh]"
             style={{
               opacity: open ? 1 : 0,
               transform: open ? 'translateY(0)' : 'translateY(-24px)',
               transition: 'opacity .5s ease 80ms, transform .6s cubic-bezier(.2,.7,.1,1) 80ms',
             }}
           >
-            <Logo variant="escudo" className="h-16 md:h-24" />
+            <Logo variant="escudo" className="h-[clamp(40px,8vh,80px)]" />
           </div>
           {NAV.map((item, i) => {
             const inner = (
               <span className="group flex items-baseline gap-5">
-                <span className="font-display text-sm font-bold text-alltak-blue">0{i + 1}</span>
-                <span className="font-display text-5xl font-black uppercase leading-[1.05] text-white transition-all duration-300 group-hover:translate-x-4 group-hover:text-alltak-blue sm:text-6xl md:text-7xl">
+                <span className="font-display text-sm font-bold text-alltak-blue">{String(i + 1).padStart(2, '0')}</span>
+                <span className="font-display text-[clamp(1.5rem,4.4vh,3.5rem)] font-black uppercase leading-[1.2] text-white transition-all duration-300 group-hover:translate-x-4 group-hover:text-alltak-blue">
                   {t(item.tkey)}
                 </span>
                 {item.external && <span className="text-2xl text-white/40">↗</span>}
@@ -110,7 +119,7 @@ export default function Header() {
             return (
               <div
                 key={item.label}
-                className="overflow-hidden border-b border-white/10 py-2"
+                className="shrink-0 overflow-hidden border-b border-white/10 py-[0.4vh]"
                 style={{
                   transform: open ? 'translateY(0)' : 'translateY(110%)',
                   opacity: open ? 1 : 0,
@@ -129,7 +138,7 @@ export default function Header() {
           })}
 
           <div
-            className="mt-10 flex flex-wrap items-center gap-6 text-sm text-white/50"
+            className="mt-[3vh] flex shrink-0 flex-wrap items-center gap-6 text-sm text-white/50"
             style={{
               opacity: open ? 1 : 0,
               transition: `opacity .6s ease ${120 + NAV.length * 70}ms`,

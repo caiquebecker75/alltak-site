@@ -11,10 +11,10 @@ type LinhaT = { categoria: string; slug: string; nome: string }
 const CATEGORY_IMAGE: Record<string, string> = {
   automotivo: './assets/automotivo_03.avif',
   arquitetura: './assets/decor_02.avif',
-  impressao: './assets/sign_02.avif',
-  'sign-design': './assets/sign_03.avif',
-  'aplicacoes-tecnicas': './assets/automotivo_02.avif',
-  'wrap-care': './assets/decor_03.avif',
+  impressao: './assets/sign_03.avif',
+  'sign-design': './assets/sign_02.avif',
+  'aplicacoes-tecnicas': './assets/decor_03.avif',
+  'wrap-care': './assets/automotivo_02.avif',
   acessorios: './assets/decor_01.avif',
 }
 

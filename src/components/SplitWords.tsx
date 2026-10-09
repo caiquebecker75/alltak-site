@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 // Headline reveal: each word slides up from a clipped line, staggered,
-// when the element enters the viewport.
+// when the element enters the viewport. The clip box has extra room on top
+// (padding cancelled by a negative margin) so accents like "NÃO" aren't cut.
 export default function SplitWords({
   text,
   className = '',
@@ -44,7 +45,7 @@ export default function SplitWords({
     <div ref={ref}>
       <Tag className={className}>
         {words.map((w, i) => (
-          <span key={i} className="inline-block overflow-hidden pb-[0.08em] align-bottom">
+          <span key={i} className="-mt-[0.2em] inline-block overflow-hidden pb-[0.08em] pt-[0.2em] align-bottom">
             <span
               className={`inline-block will-change-transform ${accent.includes(w.toLowerCase().replace(/[^a-zà-ú]/g, '')) ? 'text-alltak-blue' : ''}`}
               style={{

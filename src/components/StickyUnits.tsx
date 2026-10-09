@@ -3,38 +3,64 @@ import { Link } from 'react-router-dom'
 import { UNITS } from '../data/site'
 import { onScrollChange } from '../lib/onScrollChange'
 
-// Pinned showcase: the section is 3 viewports tall; a sticky stage stays fixed
-// while scroll drives slanted trapezoid wipes revealing each business unit.
+// Pinned showcase: the section is one viewport tall per business unit and a
+// sticky stage stays fixed while the user scrolls through it. The panel shown
+// is always a whole unit (never half of two): crossing the midpoint of a
+// viewport switches unit, and the slanted trapezoid wipe then plays on its own
+// clock. Inside the stage one mouse-wheel notch jumps straight to the
+// next/previous unit; past the first/last unit the page scrolls normally.
+const WIPE_MS = 750
+const TRAVA_MS = 900 // ignores the rest of a wheel/trackpad burst after a jump
+
 export default function StickyUnits() {
   const wrap = useRef<HTMLDivElement>(null)
-  const [p, setP] = useState(0)
+  const [active, setActive] = useState(0)
+  const activeRef = useRef(0)
+  const n = UNITS.length
 
+  // which unit is on stage, from the scroll position
   useEffect(() => {
     return onScrollChange(() => {
       const el = wrap.current
       if (!el) return
-      const r = el.getBoundingClientRect()
-      const total = r.height - innerHeight
-      setP(Math.min(1, Math.max(0, -r.top / total)))
+      const i = Math.min(n - 1, Math.max(0, Math.round(-el.getBoundingClientRect().top / innerHeight)))
+      activeRef.current = i
+      setActive(i)
     })
-  }, [])
+  }, [n])
 
-  const n = UNITS.length
-  // progress per panel: panel i is fully visible on [i/n, (i+1)/n]
-  const wipe = (i: number) => {
-    if (i === 0) return 1
-    const t = Math.min(1, Math.max(0, (p - (i - 0.35) / n) * (n / 0.7)))
-    return t
-  }
-  const active = Math.min(n - 1, Math.floor(p * n + 0.0001))
+  // one wheel notch = one unit while the stage is pinned
+  useEffect(() => {
+    let travadoAte = 0
+    const onWheel = (e: WheelEvent) => {
+      const el = wrap.current
+      if (!el || e.ctrlKey || Math.abs(e.deltaY) < 2) return
+      const r = el.getBoundingClientRect()
+      const fixado = r.top <= 1 && r.bottom >= innerHeight - 1
+      if (!fixado) return
+      const alvo = activeRef.current + (e.deltaY > 0 ? 1 : -1)
+      if (alvo < 0 || alvo > n - 1) return // saindo do bloco: rolagem normal
+      e.preventDefault()
+      const agora = performance.now()
+      if (agora < travadoAte) return
+      travadoAte = agora + TRAVA_MS
+      activeRef.current = alvo
+      setActive(alvo)
+      // salto instantâneo: o palco é sticky, então a página não se move na tela;
+      // quem anima a troca é a cortina em trapézio
+      window.scrollTo({ top: scrollY + r.top + alvo * innerHeight, behavior: 'instant' })
+    }
+    addEventListener('wheel', onWheel, { passive: false })
+    return () => removeEventListener('wheel', onWheel)
+  }, [n])
 
   return (
-    <div ref={wrap} style={{ height: `${(n + 0.6) * 100}vh` }} className="relative">
+    <div ref={wrap} style={{ height: `${n * 100}vh` }} className="relative">
       <div className="sticky top-0 h-screen overflow-hidden">
         {UNITS.map((u, i) => {
-          const t = wipe(i)
-          // slanted trapezoid wipe sweeping left→right
-          const x1 = t * 130
+          const on = i <= active
+          // slanted trapezoid wipe sweeping left→right (panel 0 is the base)
+          const x1 = i === 0 || on ? 130 : 0
           const x2 = x1 - 30
           return (
             <section
@@ -42,8 +68,9 @@ export default function StickyUnits() {
               className={`absolute inset-0 ${u.bg}`}
               style={{
                 clipPath: `polygon(0 0, ${x1}% 0, ${x2}% 100%, 0 100%)`,
-                visibility: t <= 0 ? 'hidden' : 'visible',
+                transition: `clip-path ${WIPE_MS}ms cubic-bezier(.7,0,.25,1)`,
               }}
+              aria-hidden={i !== active}
             >
               {u.skull && (
                 <div
@@ -72,7 +99,7 @@ export default function StickyUnits() {
                     {u.tagline}
                   </p>
                   <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70">{u.description}</p>
-                  <Link to={`/cores?linha=${u.key}`} className="btn-trapezoid btn-blue mt-8">
+                  <Link to={`/cores?linha=${u.key}`} className="btn-trapezoid btn-blue mt-8" tabIndex={i === active ? 0 : -1}>
                     Ver os produtos
                   </Link>
                 </div>
@@ -80,8 +107,8 @@ export default function StickyUnits() {
                   <div
                     className="frame-trap aspect-[4/3] w-full cursor-hot"
                     style={{
-                      transform: `translateY(${(1 - t) * 60}px) scale(${0.92 + t * 0.08})`,
-                      transition: 'transform .1s linear',
+                      transform: on ? 'none' : 'translateY(60px) scale(0.92)',
+                      transition: `transform ${WIPE_MS}ms cubic-bezier(.2,.7,.1,1)`,
                     }}
                   >
                     <img src={u.image} alt={`Alltak ${u.name}`} className="img-zoom" loading="lazy" />

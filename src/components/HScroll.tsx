@@ -3,14 +3,23 @@ import { Link } from 'react-router-dom'
 import { PRODUCT_CATEGORIES } from '../data/site'
 import { onScrollChange } from '../lib/onScrollChange'
 
+// As fotos já vêm recortadas em trapézio (transparência no próprio arquivo),
+// alternando a orientação: base larga embaixo, depois base larga em cima.
+// A ordem abaixo segue essa alternância na sequência de PRODUCT_CATEGORIES,
+// para os cards formarem o zigue-zague do formato 01 sem hexágonos.
 const CATEGORY_IMAGE: Record<string, string> = {
   automotivo: './assets/automotivo_03.avif',
   arquitetura: './assets/decor_02.avif',
-  impressao: './assets/sign_02.avif',
-  'sign-design': './assets/sign_03.avif',
-  'aplicacoes-tecnicas': './assets/automotivo_02.avif',
-  'wrap-care': './assets/decor_03.avif',
+  impressao: './assets/sign_03.avif',
+  'sign-design': './assets/sign_02.avif',
+  'aplicacoes-tecnicas': './assets/decor_03.avif',
+  'wrap-care': './assets/automotivo_02.avif',
   acessorios: './assets/decor_01.avif',
+}
+const RECORTE = {
+  // mesmo contorno do recorte das fotos; aqui só contém o brilho do hover
+  baseLargaEmbaixo: 'polygon(28.5% 0, 71.5% 0, 100% 100%, 0 100%)',
+  baseLargaEmCima: 'polygon(0 0, 100% 0, 71.5% 100%, 28.5% 100%)',
 }
 
 // Horizontal scroll gallery: the page keeps scrolling vertically while the
@@ -58,13 +67,16 @@ export default function HScroll() {
               to="/produtos"
               className="group block w-[72vw] shrink-0 sm:w-[44vw] lg:w-[30vw]"
             >
-              {/* alternating trapezoids — flatter and close together (format 01) */}
-              <div className={`frame-trap aspect-[4/3] ${i % 2 === 0 ? 'clip-tz' : 'clip-tz-alt'}`}>
+              {/* alternating trapezoids (format 01), same proportion as the photos */}
+              <div
+                className="frame-trap aspect-[682/537]"
+                style={{ clipPath: i % 2 === 0 ? RECORTE.baseLargaEmbaixo : RECORTE.baseLargaEmCima }}
+              >
                 <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="opacity-95 group-hover:opacity-100" />
               </div>
               <div className="mt-3 flex items-end justify-between px-2">
                 <div>
-                  <div className="font-display text-xs font-bold uppercase tracking-[0.25em] text-alltak-black/50">
+                  <div className="font-display text-sm font-bold uppercase tracking-[0.22em] text-alltak-black/60">
                     0{i + 1} · {c.items.length} produtos
                   </div>
                   <h3 className="mt-0.5 text-2xl text-alltak-black md:text-3xl">{c.name}</h3>

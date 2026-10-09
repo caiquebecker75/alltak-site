@@ -60,16 +60,8 @@ export default function BannerRoll() {
         <span className="tag">Campanhas</span>
       </div>
 
-      {/* caption + controls */}
-      <div className="container-x absolute inset-x-0 bottom-8 flex items-end justify-between gap-6">
-        <div>
-          <div className="font-display text-xs font-bold uppercase tracking-[0.3em] text-alltak-blueLight">
-            {String(i + 1).padStart(2, '0')} / {String(SLIDES.length).padStart(2, '0')}
-          </div>
-          <h3 className="mt-1 font-display text-2xl font-extrabold uppercase text-white md:text-4xl">
-            {SLIDES[i].label}
-          </h3>
-        </div>
+      {/* controles (sem legenda: a arte do banner fala por si) */}
+      <div className="container-x absolute inset-x-0 bottom-8 flex items-end justify-end gap-6">
         <div className="flex items-center gap-2">
           {SLIDES.map((_, idx) => (
             <button

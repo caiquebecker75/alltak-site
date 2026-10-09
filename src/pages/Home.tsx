@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       {/* ============ 1 — HERO: slogan + lightweight CSS scene ============ */}
-      <section className="relative flex h-[100svh] min-h-[640px] flex-col justify-center overflow-hidden bg-black">
+      <section className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-black pb-20 pt-28 md:pt-32">
         {/* skull texture floor */}
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.08] bg-cover bg-center"
@@ -43,15 +43,16 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_45%,transparent_30%,rgba(0,0,0,.75)_100%)]" aria-hidden />
 
         <div className="container-x relative">
-          <Reveal dir="up">
-            <span className="tag">Alltak®</span>
-          </Reveal>
-          <h1 className="mt-6 font-display font-black uppercase leading-[0.82]">
-            <span className="block text-[15vw] text-white md:text-[12vw]">For</span>
-            <span className="block text-[15vw] text-outline-blue md:text-[12vw]">All</span>
-            <span className="block text-[15vw] text-alltak-blue md:text-[12vw]">Surfaces</span>
+          {/* sem etiqueta de marca aqui: o logo do cabeçalho já fica nesse canto.
+              O título também é limitado pela altura da tela, para o bloco
+              nunca subir para baixo do cabeçalho em telas baixas. */}
+          <h1 className="font-display font-black uppercase leading-[0.86]">
+            <span className="block text-[15vw] text-white md:text-[min(12vw,19vh)]">For</span>
+            <span className="block text-[15vw] text-outline-blue md:text-[min(12vw,19vh)]">All</span>
+            <span className="block text-[15vw] text-alltak-blue md:text-[min(12vw,19vh)]">Surfaces</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/70">{t('hero.sub')}</p>
+          {/* uma linha só no desktop, em qualquer idioma */}
+          <p className="mt-6 max-w-xl text-lg text-white/70 md:max-w-none md:whitespace-nowrap">{t('hero.sub')}</p>
           <div className="mt-8 flex flex-wrap items-center gap-5">
             <Magnetic>
               <Link to="/visualizador" className="btn-trapezoid btn-blue !px-10 !py-4 !text-base">
@@ -108,7 +109,7 @@ export default function Home() {
                   suffix={suf as string}
                   className="font-display text-6xl font-black text-alltak-blue md:text-8xl"
                 />
-                <div className="mt-2 font-display text-xs font-bold uppercase tracking-[0.25em] text-white/50">
+                <div className="mt-2 font-display text-sm font-bold uppercase tracking-[0.22em] text-white/60">
                   {label}
                 </div>
               </Reveal>

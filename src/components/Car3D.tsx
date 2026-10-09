@@ -137,8 +137,9 @@ function Rig() {
     c.autoRotate = true
     c.autoRotateSpeed = 1.1
     c.enablePan = false
-    c.minDistance = 3.2
-    c.maxDistance = 8
+    // sem zoom: a roda do mouse rola a página em vez de aproximar o carro;
+    // o carro fica no tamanho normal e só gira (auto e arrastando)
+    c.enableZoom = false
     c.maxPolarAngle = Math.PI / 2.05
     c.target.set(0, 0.5, 0)
     controls.current = c
