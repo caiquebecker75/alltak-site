@@ -4,7 +4,10 @@ import { useEffect, useState } from 'react'
 // the entire width, crossfading with a slow Ken Burns drift. Discreet arrows on
 // each side and the progress dots let the user move; hovering pauses.
 const SLIDES = [
-  { img: './assets/banner-wraps.jpg', label: 'Alltak Wraps · Linha IWC' },
+  // versão panorâmica (migracao/banner_iwc_panoramico.py): sem o menu do site
+  // antigo embutido e com texto, fotos e leque inteiros no formato do carrossel
+  // no celular o corte foca o texto (à esquerda das fotos) em vez do centro
+  { img: './assets/banner-iwc-panoramico.jpg', label: 'Alltak Wraps · Linha IWC', pos: 'bg-[position:24%_center] md:bg-center' },
   { img: './assets/banner-decor.jpg', label: 'Alltak Decor · Revestimentos' },
   { img: './assets/banner.avif', label: 'Alltak · Institucional' },
 ]
@@ -41,7 +44,7 @@ export default function BannerRoll() {
           >
             {/* Ken Burns: slow zoom while the slide is on stage */}
             <div
-              className="h-full w-full bg-cover bg-center"
+              className={`h-full w-full bg-cover ${'pos' in s ? s.pos : 'bg-center'}`}
               style={{
                 backgroundImage: `url('${s.img}')`,
                 transform: active ? 'scale(1.06)' : 'scale(1)',
@@ -59,14 +62,14 @@ export default function BannerRoll() {
 
       {/* setas discretas, uma de cada lado */}
       {[
-        { passo: -1, lado: 'left-3 md:left-5', rotulo: 'Banner anterior', d: 'M15 5l-7 7 7 7' },
-        { passo: 1, lado: 'right-3 md:right-5', rotulo: 'Próximo banner', d: 'M9 5l7 7-7 7' },
+        { passo: -1, lado: 'left-1.5 md:left-5', rotulo: 'Banner anterior', d: 'M15 5l-7 7 7 7' },
+        { passo: 1, lado: 'right-1.5 md:right-5', rotulo: 'Próximo banner', d: 'M9 5l7 7-7 7' },
       ].map((s) => (
         <button
           key={s.passo}
           onClick={() => ir(s.passo)}
           aria-label={s.rotulo}
-          className={`absolute top-1/2 ${s.lado} z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/15 text-white/60 backdrop-blur-[2px] transition hover:border-white/50 hover:bg-black/35 hover:text-white md:h-12 md:w-12`}
+          className={`absolute top-1/2 ${s.lado} z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/15 text-white/60 backdrop-blur-[2px] transition hover:border-white/50 hover:bg-black/35 hover:text-white md:h-12 md:w-12`}
         >
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <path d={s.d} />

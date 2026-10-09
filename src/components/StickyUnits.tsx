@@ -85,7 +85,10 @@ export default function StickyUnits() {
               </div>
 
               <div className="container-x relative grid h-full items-center gap-10 md:grid-cols-2">
-                <div>
+                {/* bloco de texto com altura fixa e alinhado pelo topo: etiqueta,
+                    logo, chamada, descrição e botão ficam na mesma posição nas
+                    três unidades, mesmo com descrições de tamanhos diferentes */}
+                <div className="md:h-[27rem]">
                   <span className="tag">Unidade de negócio · 0{i + 1}/0{n}</span>
                   {/* official submarca lockup */}
                   <img
@@ -98,7 +101,7 @@ export default function StickyUnits() {
                   <p className="mt-5 font-display text-lg font-bold uppercase tracking-wide" style={{ color: u.color }}>
                     {u.tagline}
                   </p>
-                  <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70">{u.description}</p>
+                  <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70 md:min-h-[6.5em]">{u.description}</p>
                   <Link to={`/cores?linha=${u.key}`} className="btn-trapezoid btn-blue mt-8" tabIndex={i === active ? 0 : -1}>
                     Ver os produtos
                   </Link>
