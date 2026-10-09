@@ -23,7 +23,22 @@ const norm = (s: string) =>
   s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')
 const NOMES = new Set((linhas as LinhaT[]).map((l) => norm(l.nome)))
 
-type Item = { src: string; linha: LinhaT; legenda: string }
+type Item = { src: string; linha: LinhaT; produto: string }
+
+// nomes vindos do arquivo no WordPress chegam sem acento e em caixa alta
+// ("MASCARA AZUL PROTECAO"); volta os acentos e deixa no mesmo padrão
+const ACENTOS: Record<string, string> = {
+  mascara: 'Máscara', protecao: 'Proteção', laminacao: 'Laminação', transferencia: 'Transferência',
+  medio: 'Médio', cod: 'Cód.', moldnhold: 'Mold n’ Hold', 'moldn’hold': 'Mold n’ Hold', tec: 'Tec',
+}
+const MINUSCULAS = new Set(['de', 'da', 'do', 'das', 'dos', 'e'])
+function nomeProduto(r: string): string {
+  return limparRotulo(r)
+    .toLowerCase()
+    .split(/\s+/)
+    .map((w, i) => ACENTOS[w] ?? (i > 0 && MINUSCULAS.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(' ')
+}
 
 // fotos de cada linha, sem as que o WordPress colocava como "veja também"
 // (uma foto rotulada com o nome de OUTRA linha, ex.: as máscaras dentro de
@@ -36,10 +51,9 @@ function itensDo(segmento: string): Item[] {
       const r = norm(c.rotulo)
       if ((NOMES.has(r) && r !== norm(l.nome)) || vistos.has(c.arquivo)) continue
       vistos.add(c.arquivo)
-      const legenda = limparRotulo(c.rotulo)
-      // "PRODUTO 1", "MOLDNHOLD" etc. não acrescentam nada ao nome da linha
-      const util = legenda && !/^produto\s*\d*$/i.test(legenda) && norm(legenda) !== norm(l.nome)
-      out.push({ src: c.arquivo, linha: l, legenda: util ? legenda : '' })
+      // "PRODUTO 1" e afins não dizem nada: fica o nome da linha
+      const generico = !limparRotulo(c.rotulo) || /^produto\s*\d*$/i.test(limparRotulo(c.rotulo))
+      out.push({ src: c.arquivo, linha: l, produto: generico ? nomeProduto(l.nome) : nomeProduto(c.rotulo) })
     }
   }
   return out
@@ -100,24 +114,32 @@ export default function Segmento() {
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {lista.map((i) => (
-              <Link key={i.src} to={`/produtos/${i.linha.categoria}/${i.linha.slug}`} className="group text-left">
-                <div className="relative aspect-square overflow-hidden bg-white">
-                  <img
-                    src={i.src}
-                    alt={`${tv(i.linha.nome)}${i.legenda ? ` · ${i.legenda}` : ''}`}
-                    loading="lazy"
-                    className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="mt-1.5">
-                  <div className="truncate font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
-                    {tv(i.linha.nome)}
+            {lista.map((i) => {
+              // produto + linha; quando o nome do produto já traz o da linha
+              // (Dupla Face, Adesive Killer, Kleaner), mostra o segmento no lugar
+              const linhaNome = tv(i.linha.nome)
+              const sub = norm(i.produto).includes(norm(i.linha.nome)) ? tv(seg.nome) : linhaNome
+              return (
+                <Link key={i.src} to={`/produtos/${i.linha.categoria}/${i.linha.slug}`} className="group text-left">
+                  <div className="relative aspect-square overflow-hidden bg-alltak-coal">
+                    <img
+                      src={i.src}
+                      alt={`${i.produto} · ${linhaNome}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   </div>
-                  <div className="truncate text-sm uppercase tracking-wide text-white/60">{i.legenda || t('seg.verProduto')}</div>
-                </div>
-              </Link>
-            ))}
+                  {/* a linha em cima (mesma altura em todos os cards) e o produto
+                      logo abaixo, em até 2 linhas, sem cortar o nome */}
+                  <div className="mt-2">
+                    <div className="min-h-[2.5em] font-display text-sm font-bold uppercase leading-tight tracking-[0.1em] text-white/55 sm:min-h-0 sm:truncate sm:tracking-[0.14em]">{sub}</div>
+                    <div className="mt-0.5 line-clamp-2 font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
+                      {i.produto}
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
