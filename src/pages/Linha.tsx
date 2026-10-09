@@ -83,7 +83,7 @@ export default function Linha() {
 
   return (
     <>
-      <PageHeader eyebrow={tv(CAT_NOME[linha.categoria] ?? linha.categoria)} title={linha.nome}>
+      <PageHeader eyebrow={tv(CAT_NOME[linha.categoria] ?? linha.categoria)} title={tv(linha.nome)}>
         {descricao}
         <div className="mt-6 flex flex-wrap gap-3">
           {linha.boletins[0] && (
@@ -167,7 +167,7 @@ export default function Linha() {
               {irmas.map((l) => (
                 <Link key={l.slug} to={`/produtos/${l.categoria}/${l.slug}`}
                   className="border border-white/15 px-3 py-1.5 font-display text-sm font-semibold uppercase tracking-wide text-white/70 transition hover:border-alltak-blue hover:text-white">
-                  {l.nome}
+                  {tv(l.nome)}
                 </Link>
               ))}
             </div>
@@ -183,13 +183,13 @@ export default function Linha() {
             <>
               <button
                 onClick={(e) => { e.stopPropagation(); setIdx((idx - 1 + linha.cores.length) % linha.cores.length) }}
-                aria-label="Cor anterior"
+                aria-label={t('prod.corAnterior')}
                 className="absolute left-3 top-1/2 z-10 -translate-y-1/2 bg-white/10 px-4 py-3 font-display text-2xl font-black text-white transition hover:bg-alltak-blue md:left-6">
                 ‹
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); setIdx((idx + 1) % linha.cores.length) }}
-                aria-label="Próxima cor"
+                aria-label={t('prod.proximaCor')}
                 className="absolute right-3 top-1/2 z-10 -translate-y-1/2 bg-white/10 px-4 py-3 font-display text-2xl font-black text-white transition hover:bg-alltak-blue md:right-6">
                 ›
               </button>

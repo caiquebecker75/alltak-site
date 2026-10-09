@@ -2,6 +2,7 @@ import { lazy, Suspense, useMemo, useState } from 'react'
 import { COLORS, type Color } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import ErrBoundary from './ErrBoundary'
+import { useI18n } from '../i18n'
 
 // Real 3D furniture re-skin studio: pick a piece of furniture + an Alltak Decor
 // pattern and watch it applied to a downloaded CC0 model (Poly Haven) live.
@@ -37,6 +38,7 @@ const painel = (c: Color) => /ripado (vigo|burgo|leon)/i.test(c.name)
 
 export default function FurnitureStudio() {
   const { open } = useLeadGate()
+  const { t, tv } = useI18n()
   const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor'), [])
   const families = useMemo(() => [...new Set(patterns.map((p) => p.family))].sort(), [patterns])
   const [fam, setFam] = useState('all')
@@ -54,16 +56,16 @@ export default function FurnitureStudio() {
             <button
               key={m.key}
               onClick={() => setMovel(m)}
-              title={`${m.label} · ${m.ambiente}`}
+              title={`${t(`movel.${m.key}`)} · ${tv(m.ambiente)}`}
               className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
                 movel.key === m.key ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
               }`}
             >
-              {m.label}
+              {t(`movel.${m.key}`)}
             </button>
           ))}
           <span className="ml-auto hidden font-display text-xs font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
-            Arraste para girar
+            {t('movel.arraste')}
           </span>
         </div>
         <div className="relative h-[380px] overflow-hidden border border-white/10 bg-gradient-to-b from-alltak-ink to-black md:h-[460px]">
@@ -73,7 +75,7 @@ export default function FurnitureStudio() {
               fallback={
                 <div className="flex h-full items-center justify-center">
                   <span className="font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 animate-pulse">
-                    Carregando modelo 3D…
+                    {t('viz.carregando')}
                   </span>
                 </div>
               }
@@ -85,10 +87,10 @@ export default function FurnitureStudio() {
         <div className="flex items-end justify-between border-t border-white/10 pt-3">
           <div>
             <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-alltak-blue">
-              {active.family} · Alltak Decor
+              {tv(active.family)} · Alltak Decor
             </p>
             <p className="font-display text-2xl uppercase text-white">{active.name}</p>
-            <p className="text-xs uppercase tracking-wide text-white/40">Código {active.code}</p>
+            <p className="text-xs uppercase tracking-wide text-white/40">{t('movel.codigo')} {active.code}</p>
           </div>
           <img src={active.texture ?? active.swatch} alt={active.name} className="h-14 w-20 border border-white/20 object-cover" />
         </div>
@@ -96,8 +98,8 @@ export default function FurnitureStudio() {
 
       {/* Pattern picker */}
       <div className="border border-white/10 bg-white/[0.02] p-5">
-        <h2 className="text-2xl text-white">Padrões</h2>
-        <p className="mt-1 text-sm text-white/50">Clique num padrão para vestir o móvel.</p>
+        <h2 className="text-2xl text-white">{t('movel.padroes')}</h2>
+        <p className="mt-1 text-sm text-white/50">{t('movel.clique')}</p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           <button
             onClick={() => setFam('all')}
@@ -105,7 +107,7 @@ export default function FurnitureStudio() {
               fam === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
             }`}
           >
-            Todos
+            {t('movel.todos')}
           </button>
           {families.map((f) => (
             <button
@@ -115,7 +117,7 @@ export default function FurnitureStudio() {
                 fam === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
               }`}
             >
-              {f}
+              {tv(f)}
             </button>
           ))}
         </div>
@@ -137,15 +139,13 @@ export default function FurnitureStudio() {
 
         <div className="mt-5 border-t border-white/10 pt-4">
           <button
-            onClick={() => open({ title: `Boletim Técnico ${active.name} (${active.code})`, url: '#', kind: 'PDF' })}
+            onClick={() => open({ title: `${t('movel.boletimTitulo')} ${active.name} (${active.code})`, url: '#', kind: 'PDF' })}
             className="btn-trapezoid btn-blue w-full justify-center"
           >
-            Baixar boletim técnico ↓
+            {t('movel.baixarBoletim')}
           </button>
         </div>
-        <p className="mt-3 text-xs text-white/35">
-          Modelos 3D: Poly Haven (CC0). Prévia ilustrativa; solicite amostra física.
-        </p>
+        <p className="mt-3 text-xs text-white/35">{t('movel.rodape')}</p>
       </div>
     </div>
   )

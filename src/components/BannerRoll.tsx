@@ -133,7 +133,7 @@ function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
           {b.logo ? (
             <img
               src={b.logo}
-              alt="Alltak RevestFácil · Revestimento vinílico adesivo"
+              alt={t('banner.revestfacil.alt')}
               className="mt-[2.2vh] h-[clamp(5.5rem,17vh,10rem)] w-auto self-start"
             />
           ) : (
@@ -172,6 +172,7 @@ function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
 }
 
 export default function BannerRoll() {
+  const t = useT()
   const [i, setI] = useState(0)
   const [paused, setPaused] = useState(false)
 
@@ -199,8 +200,8 @@ export default function BannerRoll() {
 
       {/* setas discretas, uma de cada lado */}
       {[
-        { passo: -1, lado: 'left-1.5 md:left-5', rotulo: 'Banner anterior', d: 'M15 5l-7 7 7 7' },
-        { passo: 1, lado: 'right-1.5 md:right-5', rotulo: 'Próximo banner', d: 'M9 5l7 7-7 7' },
+        { passo: -1, lado: 'left-1.5 md:left-5', rotulo: t('banner.anterior'), d: 'M15 5l-7 7 7 7' },
+        { passo: 1, lado: 'right-1.5 md:right-5', rotulo: t('banner.proximo'), d: 'M9 5l7 7-7 7' },
       ].map((s) => (
         <button
           key={s.passo}

@@ -2,12 +2,23 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import blog from '../data/wp/blog.json'
+import { useI18n, type Lang } from '../i18n'
 
 // Blog migrado do site antigo: 100+ artigos sobre envelopamento e decoração.
+// Os artigos ficam em português; só a interface é traduzida.
 
 type Post = { slug: string; titulo: string; data: string; capa: string | null; resumo: string }
 
+// data AAAA-MM-DD: dd/mm/aaaa em PT/ES, "Mar 5, 2024" em EN
+function formatarData(data: string, lang: Lang): string {
+  if (lang !== 'en') return data.split('-').reverse().join('/')
+  const [a, m, d] = data.split('-').map(Number)
+  if (!a || !m || !d) return data
+  return new Date(a, m - 1, d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+}
+
 export default function Blog() {
+  const { lang, t } = useI18n()
   const [q, setQ] = useState('')
   const [mostrar, setMostrar] = useState(24)
   const lista = useMemo(() => {
@@ -17,9 +28,8 @@ export default function Blog() {
 
   return (
     <>
-      <PageHeader eyebrow="Conteúdo Alltak" title="Blog">
-        {blog.length} artigos sobre envelopamento automotivo, decoração com adesivos,
-        tendências e cuidados com a aplicação.
+      <PageHeader eyebrow={t('blog.eyebrow')} title={t('nav.blog')}>
+        {blog.length} {t('blog.headerSub')}
       </PageHeader>
 
       <section className="bg-alltak-black py-12 md:py-16">
@@ -27,10 +37,10 @@ export default function Blog() {
           <input
             value={q}
             onChange={(e) => { setQ(e.target.value); setMostrar(24) }}
-            placeholder="Buscar artigo…"
+            placeholder={t('blog.buscar')}
             className="w-full max-w-md border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white outline-none placeholder:text-white/35 focus:border-alltak-blue"
           />
-          <div className="mb-4 mt-3 text-sm text-white/40">{lista.length} artigos</div>
+          <div className="mb-4 mt-3 text-sm text-white/40">{lista.length} {t('blog.artigos')}</div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {lista.slice(0, mostrar).map((p) => (
@@ -42,7 +52,7 @@ export default function Blog() {
                   )}
                 </div>
                 <div className="p-5">
-                  {p.data && <div className="text-[11px] uppercase tracking-widest text-white/40">{p.data.split('-').reverse().join('/')}</div>}
+                  {p.data && <div className="text-[11px] uppercase tracking-widest text-white/40">{formatarData(p.data, lang)}</div>}
                   <h3 className="mt-1.5 font-display text-xl font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
                     {p.titulo}
                   </h3>
@@ -55,7 +65,7 @@ export default function Blog() {
           {mostrar < lista.length && (
             <div className="mt-10 text-center">
               <button onClick={() => setMostrar((m) => m + 24)} className="btn-trapezoid btn-outline">
-                Carregar mais ({lista.length - mostrar} restantes)
+                {t('blog.carregarMais')} ({lista.length - mostrar} {t('blog.restantes')})
               </button>
             </div>
           )}

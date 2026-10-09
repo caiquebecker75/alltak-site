@@ -1,17 +1,28 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import blog from '../data/wp/blog.json'
+import { useI18n, type Lang } from '../i18n'
 
 // Artigo do blog: conteúdo completo carregado sob demanda de /wp-blog/<slug>.json
-// (texto extraído do site antigo + imagens migradas).
+// (texto extraído do site antigo + imagens migradas). O artigo fica em
+// português; só a interface é traduzida.
 
 type PostFull = {
   slug: string; titulo: string; data: string; capa: string | null
   resumo: string; texto: string; imagens: string[]
 }
 
+// data AAAA-MM-DD: dd/mm/aaaa em PT/ES, "Mar 5, 2024" em EN (igual ao Blog.tsx)
+function formatarData(data: string, lang: Lang): string {
+  if (lang !== 'en') return data.split('-').reverse().join('/')
+  const [a, m, d] = data.split('-').map(Number)
+  if (!a || !m || !d) return data
+  return new Date(a, m - 1, d).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+}
+
 export default function BlogPost() {
   const { slug } = useParams()
+  const { lang, t } = useI18n()
   const [post, setPost] = useState<PostFull | null>(null)
   const [erro, setErro] = useState(false)
 
@@ -44,8 +55,8 @@ export default function BlogPost() {
   if (erro) {
     return (
       <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black px-6 text-center">
-        <p className="eyebrow text-alltak-blue">Artigo não encontrado</p>
-        <Link to="/blog" className="btn-trapezoid btn-blue mt-8">Voltar ao blog</Link>
+        <p className="eyebrow text-alltak-blue">{t('blog.naoEncontrado')}</p>
+        <Link to="/blog" className="btn-trapezoid btn-blue mt-8">{t('blog.voltar')}</Link>
       </section>
     )
   }
@@ -55,12 +66,12 @@ export default function BlogPost() {
       <section className="relative bg-alltak-black pb-10 pt-28 md:pt-36">
         <div className="container-x max-w-4xl">
           <Link to="/blog" className="font-display text-xs font-bold uppercase tracking-[0.2em] text-white/50 hover:text-alltak-blue">
-            ← Blog
+            ← {t('nav.blog')}
           </Link>
           <h1 className="mt-4 text-4xl text-white md:text-6xl">{post?.titulo ?? '…'}</h1>
           {post?.data && (
             <p className="mt-3 text-sm uppercase tracking-widest text-white/40">
-              {post.data.split('-').reverse().join('/')}
+              {formatarData(post.data, lang)}
             </p>
           )}
         </div>
@@ -85,7 +96,7 @@ export default function BlogPost() {
 
           {relacionados.length > 0 && (
             <div className="mt-14 border-t border-white/10 pt-8">
-              <p className="eyebrow text-alltak-blue">Leia também</p>
+              <p className="eyebrow text-alltak-blue">{t('blog.leiaTambem')}</p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {relacionados.map((r) => (
                   <Link key={r.slug} to={`/blog/${r.slug}`}

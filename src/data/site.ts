@@ -34,6 +34,9 @@ export type Unit = {
   name: string
   tagline: string
   description: string
+  /** chaves de tradução (i18n/dict-home.ts) da chamada e da descrição */
+  taglineKey: string
+  descriptionKey: string
   image: string
   bg: string // tailwind bg class
   accent: string // tailwind text class
@@ -52,6 +55,8 @@ export const UNITS: Unit[] = [
     key: 'wraps',
     name: 'Wraps',
     tagline: 'Envelopamento & Customização Veicular',
+    taglineKey: 'units.wraps.tagline',
+    descriptionKey: 'units.wraps.desc',
     description:
       'Materiais para envelopamento e customização veicular, feitos para quem exige acabamento e constância no dia a dia. Um portfólio completo para diferentes estilos e necessidades, com foco em aplicação eficiente e resultado final impecável.',
     image: './assets/automotivo_01.avif',
@@ -66,6 +71,8 @@ export const UNITS: Unit[] = [
     key: 'decor',
     name: 'Decor',
     tagline: 'Revestimentos & Ambientes',
+    taglineKey: 'units.decor.tagline',
+    descriptionKey: 'units.decor.desc',
     description:
       'Revestimentos vinílicos autoadesivos com diversas famílias, padrões e acabamentos para projetos de interiores. Ideal para renovar superfícies e compor ambientes com praticidade, mantendo um visual realista e um padrão de acabamento consistente do começo ao fim.',
     image: './assets/decor_01.avif',
@@ -78,6 +85,8 @@ export const UNITS: Unit[] = [
     key: 'signs',
     name: 'Signs',
     tagline: 'Sinalização & Comunicação Visual',
+    taglineKey: 'units.signs.tagline',
+    descriptionKey: 'units.signs.desc',
     description:
       'Película de PVC monomérico adesiva de altíssima qualidade, produzida com adesivo acrílico permanente, de corte preciso e fácil aplicação. Indicada para sinalização, propaganda, design, decoração e identificação de frotas, onde se exige precisão, durabilidade, estabilidade e resistência.',
     image: './assets/sign_01.avif',

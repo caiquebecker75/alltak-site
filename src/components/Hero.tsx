@@ -1,20 +1,23 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { STORE_URL } from '../data/site'
+import { useT } from '../i18n'
 
 // "Banner principal" — carrossel dos banners finalizados fornecidos pela marca.
+// alt = chave de tradução (i18n/dict-home.ts)
 const SLIDES = [
-  { img: './assets/banner-wraps.jpg', alt: 'Alltak Wraps · Linha IWC' },
-  { img: './assets/banner-decor.jpg', alt: 'Alltak Decor · Revestimentos' },
+  { img: './assets/banner-wraps.jpg', alt: 'hero.slide.wraps' },
+  { img: './assets/banner-decor.jpg', alt: 'hero.slide.decor' },
 ]
 
 export default function Hero() {
   const [i, setI] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
+  const t = useT()
 
   useEffect(() => {
-    const t = setInterval(() => setI((v) => (v + 1) % SLIDES.length), 6000)
-    return () => clearInterval(t)
+    const id = setInterval(() => setI((v) => (v + 1) % SLIDES.length), 6000)
+    return () => clearInterval(id)
   }, [])
 
   // cursor-follow spotlight
@@ -42,7 +45,7 @@ export default function Hero() {
           className="absolute -top-[9%] left-0 h-[118%] w-full bg-cover bg-center transition-opacity duration-1000"
           style={{ backgroundImage: `url('${s.img}')`, opacity: i === idx ? 1 : 0 }}
           role="img"
-          aria-label={s.alt}
+          aria-label={t(s.alt)}
         />
       ))}
 
@@ -60,11 +63,11 @@ export default function Hero() {
 
       <div className="container-x relative flex h-full flex-col justify-between pb-14 pt-24 md:pb-16">
         <div className="pt-4">
-          <span className="tag">Nova identidade · Alltak</span>
+          <span className="tag">{t('hero.tagIdentidade')}</span>
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
-          <Link to="/visualizador" className="btn-trapezoid btn-blue">Visualizar envelopamento</Link>
+          <Link to="/visualizador" className="btn-trapezoid btn-blue">{t('hero.cta')}</Link>
           <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline">
             Alltak Store ↗
           </a>

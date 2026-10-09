@@ -1,8 +1,9 @@
 import { lazy, Suspense, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FINISHES } from '../data/visualizer'
+import { FINISHES, type Finish } from '../data/visualizer'
 import { STORE_URL } from '../data/site'
 import FurnitureStudio from '../components/FurnitureStudio'
+import { useI18n } from '../i18n'
 
 // real-time 3D preview — heavy (three.js), so it streams in as its own chunk
 const Car3D = lazy(() => import('../components/Car3D'))
@@ -16,6 +17,13 @@ function swatchStyle(color: string, shift: string | undefined, chrome: boolean):
 }
 
 export default function Visualizador() {
+  const { t, tv } = useI18n()
+  // rótulo, linha e dica do acabamento traduzidos (sem chave, mantém o texto do dado)
+  const tf = (f: Finish, campo: 'label' | 'line' | 'hint') => {
+    const k = `viz.acab.${f.key}.${campo}`
+    const s = t(k)
+    return s === k ? f[campo] : s
+  }
   const [finishKey, setFinishKey] = useState(FINISHES[0].key)
   const [filmIndex, setFilmIndex] = useState(2)
 
@@ -32,14 +40,11 @@ export default function Visualizador() {
           aria-hidden
         />
         <div className="container-x relative">
-          <p className="eyebrow text-alltak-blue">Ferramenta Alltak</p>
+          <p className="eyebrow text-alltak-blue">{t('viz.eyebrow')}</p>
           <h1 className="mt-3 text-5xl text-white md:text-7xl">
-            Visualizador de <span className="text-alltak-blue">Envelopamento</span>
+            {t('viz.titulo1')}<span className="text-alltak-blue">{t('viz.titulo2')}</span>{t('viz.titulo3')}
           </h1>
-          <p className="mt-4 max-w-2xl text-white/65">
-            Escolha o acabamento e a cor e veja na hora como fica no veículo. Tire a dúvida
-            antes de aplicar, do jeito Alltak, com padrão do começo ao fim.
-          </p>
+          <p className="mt-4 max-w-2xl text-white/65">{t('viz.intro')}</p>
         </div>
       </section>
 
@@ -49,9 +54,9 @@ export default function Visualizador() {
           {/* Stage — real-time 3D */}
           <div className="relative flex flex-col justify-between overflow-hidden border border-white/10 bg-gradient-to-b from-alltak-ink to-black p-5 md:p-8">
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <span className="tag">Cupê esportivo · 3D</span>
+              <span className="tag">{t('viz.tagModelo')}</span>
               <span className="font-display text-xs font-bold uppercase tracking-[0.25em] text-white/45">
-                Arraste para girar · role para zoom
+                {t('viz.arrasteZoom')}
               </span>
             </div>
 
@@ -62,7 +67,7 @@ export default function Visualizador() {
                 fallback={
                   <div className="flex h-full items-center justify-center">
                     <span className="font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 animate-pulse">
-                      Carregando modelo 3D…
+                      {t('viz.carregando')}
                     </span>
                   </div>
                 }
@@ -74,9 +79,9 @@ export default function Visualizador() {
             <div className="flex items-end justify-between border-t border-white/10 pt-4">
               <div>
                 <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-alltak-blue">
-                  {finish.line} · {finish.label}
+                  {tf(finish, 'line')} · {tf(finish, 'label')}
                 </p>
-                <p className="font-display text-3xl uppercase text-white">{film.name}</p>
+                <p className="font-display text-3xl uppercase text-white">{tv(film.name)}</p>
               </div>
               <div
                 className="h-12 w-20 border border-white/20 clip-slant"
@@ -88,7 +93,7 @@ export default function Visualizador() {
 
           {/* Controls */}
           <div className="border border-white/10 bg-white/[0.02] p-5 md:p-6">
-            <h2 className="text-2xl text-white">Acabamento</h2>
+            <h2 className="text-2xl text-white">{t('viz.acabamento')}</h2>
             <div className="mt-3 flex flex-wrap gap-2">
               {FINISHES.map((f) => (
                 <button
@@ -101,13 +106,13 @@ export default function Visualizador() {
                     f.key === finishKey ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/70 hover:bg-white/10'
                   }`}
                 >
-                  {f.label}
+                  {tf(f, 'label')}
                 </button>
               ))}
             </div>
-            <p className="mt-3 text-sm text-white/50">{finish.hint}</p>
+            <p className="mt-3 text-sm text-white/50">{tf(finish, 'hint')}</p>
 
-            <h2 className="mt-7 text-2xl text-white">Cores <span className="text-white/40 text-base">· {finish.line}</span></h2>
+            <h2 className="mt-7 text-2xl text-white">{t('viz.cores')} <span className="text-white/40 text-base">· {tf(finish, 'line')}</span></h2>
             <div className="mt-3 grid grid-cols-5 gap-2.5 sm:grid-cols-6 lg:grid-cols-5">
               {finish.films.map((f, i) => {
                 const active = i === filmIndex
@@ -115,8 +120,8 @@ export default function Visualizador() {
                   <button
                     key={f.name}
                     onClick={() => setFilmIndex(i)}
-                    title={f.name}
-                    aria-label={f.name}
+                    title={tv(f.name)}
+                    aria-label={tv(f.name)}
                     className={`aspect-square w-full border transition clip-slant ${
                       active ? 'border-alltak-blue ring-2 ring-alltak-blue' : 'border-white/15 hover:border-white/50'
                     }`}
@@ -127,36 +132,27 @@ export default function Visualizador() {
             </div>
 
             <div className="mt-6 border-t border-white/10 pt-5">
-              <p className="text-sm text-white/50">Gostou da combinação?</p>
+              <p className="text-sm text-white/50">{t('viz.gostou')}</p>
               <div className="mt-3 flex flex-col gap-3">
-                <Link to="/catalogos" className="btn-trapezoid btn-blue justify-center">Baixar catálogo</Link>
-                <Link to="/onde-comprar" className="btn-trapezoid btn-outline justify-center">Onde comprar</Link>
+                <Link to="/catalogos" className="btn-trapezoid btn-blue justify-center">{t('cta.baixarCatalogo')}</Link>
+                <Link to="/onde-comprar" className="btn-trapezoid btn-outline justify-center">{t('cta.ondeComprar')}</Link>
                 <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline justify-center">
                   Alltak Store ↗
                 </a>
               </div>
-              <p className="mt-4 text-xs text-white/40">
-                Prévia ilustrativa. As cores podem variar conforme tela, iluminação e superfície.
-                Consulte o catálogo oficial e um aplicador Alltak.
-              </p>
-              <p className="mt-2 text-[10px] text-white/25">
-                Modelo 3D: exemplo do projeto three.js. “Ferrari 458” por vicent091036 (CC-BY).
-              </p>
+              <p className="mt-4 text-xs text-white/40">{t('viz.disclaimer')}</p>
+              <p className="mt-2 text-[10px] text-white/25">{t('viz.credito')}</p>
             </div>
           </div>
         </div>
 
         {/* value strip */}
         <div className="container-x mt-8 grid gap-4 sm:grid-cols-3">
-          {[
-            ['+7 acabamentos', 'Brilho, fosco, acetinado, metálico, carbono, cromado e camaleão.'],
-            ['Dezenas de cores', 'Um portfólio completo para cada estilo e projeto.'],
-            ['Padrão Alltak', 'Aplicação eficiente e resultado final impecável.'],
-          ].map(([t, d]) => (
-            <div key={t} className="border border-white/10 bg-white/[0.02] p-5">
+          {['viz.valor1', 'viz.valor2', 'viz.valor3'].map((k) => (
+            <div key={k} className="border border-white/10 bg-white/[0.02] p-5">
               <div className="mb-3 h-1.5 w-12 bg-alltak-blue clip-slant" />
-              <h3 className="text-xl text-white">{t}</h3>
-              <p className="mt-1 text-sm text-white/55">{d}</p>
+              <h3 className="text-xl text-white">{t(k)}</h3>
+              <p className="mt-1 text-sm text-white/55">{t(`${k}Texto`)}</p>
             </div>
           ))}
         </div>
@@ -165,14 +161,11 @@ export default function Visualizador() {
       {/* Decor visualizer — same tool for surfaces: kitchen / living / bedroom */}
       <section className="border-t border-white/10 bg-alltak-black pb-24 pt-16 md:pt-20">
         <div className="container-x">
-          <p className="eyebrow text-alltak-blue">Alltak Decor · Ambientes 3D</p>
+          <p className="eyebrow text-alltak-blue">{t('viz.decorEyebrow')}</p>
           <h2 className="mt-3 max-w-3xl text-4xl text-white md:text-6xl">
-            Agora veja em <span className="text-alltak-blue">superfícies</span>
+            {t('viz.decorTitulo1')}<span className="text-alltak-blue">{t('viz.decorTitulo2')}</span>
           </h2>
-          <p className="mt-4 max-w-2xl text-white/65">
-            Além dos veículos, revista móveis 3D reais com os padrões Alltak Decor. Troque de
-            móvel (cozinha, sala, quarto) e clique no padrão para aplicar.
-          </p>
+          <p className="mt-4 max-w-2xl text-white/65">{t('viz.decorTexto')}</p>
           <div className="mt-8">
             <FurnitureStudio />
           </div>

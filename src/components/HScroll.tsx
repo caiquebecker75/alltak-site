@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PRODUCT_CATEGORIES } from '../data/site'
 import { onScrollChange } from '../lib/onScrollChange'
+import { useI18n } from '../i18n'
 
 // As fotos já vêm recortadas em trapézio (transparência no próprio arquivo),
 // alternando a orientação: base larga embaixo, depois base larga em cima.
@@ -44,6 +45,7 @@ export default function HScroll() {
   const track = useRef<HTMLDivElement>(null)
   const [x, setX] = useState(0)
   const [pct, setPct] = useState(0)
+  const { t, tv } = useI18n()
 
   useEffect(() => {
     return onScrollChange(() => {
@@ -66,11 +68,11 @@ export default function HScroll() {
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
         <div className="container-x mb-8 flex items-end justify-between">
           <div>
-            <span className="tag">Portfólio</span>
-            <h2 className="mt-4 text-5xl text-alltak-black md:text-7xl">Linhas de produto</h2>
+            <span className="tag">{t('hscroll.tag')}</span>
+            <h2 className="mt-4 text-5xl text-alltak-black md:text-7xl">{t('hscroll.titulo')}</h2>
           </div>
           <div className="hidden font-display text-sm font-bold uppercase tracking-widest text-alltak-black/50 md:block">
-            {String(Math.round(pct * 100)).padStart(3, '0')} / 100 — role para navegar
+            {String(Math.round(pct * 100)).padStart(3, '0')} / 100 — {t('hscroll.role')}
           </div>
         </div>
 
@@ -92,17 +94,17 @@ export default function HScroll() {
                 className="frame-trap aspect-[682/537]"
                 style={{ clipPath: i % 2 === 0 ? RECORTE.baseLargaEmbaixo : RECORTE.baseLargaEmCima }}
               >
-                <img src={CATEGORY_IMAGE[c.slug]} alt={c.name} loading="lazy" className="opacity-95 group-hover:opacity-100" />
+                <img src={CATEGORY_IMAGE[c.slug]} alt={tv(c.name)} loading="lazy" className="opacity-95 group-hover:opacity-100" />
               </div>
               <div className="mt-3 flex items-end justify-between px-2">
                 <div>
                   <div className="font-display text-sm font-bold uppercase tracking-[0.22em] text-alltak-black/60">
-                    0{i + 1} · {c.items.length} produtos
+                    0{i + 1} · {c.items.length} {t(c.items.length === 1 ? 'hscroll.produto' : 'hscroll.produtos')}
                   </div>
-                  <h3 className="mt-0.5 text-2xl text-alltak-black md:text-3xl">{c.name}</h3>
+                  <h3 className="mt-0.5 text-2xl text-alltak-black md:text-3xl">{tv(c.name)}</h3>
                 </div>
                 <span className="font-display text-sm font-bold uppercase text-alltak-blueDark opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  Ver →
+                  {t('hscroll.ver')}
                 </span>
               </div>
             </Link>
@@ -115,9 +117,9 @@ export default function HScroll() {
                 +120
               </div>
               <div className="font-display text-sm font-bold uppercase tracking-[0.3em] text-alltak-black/60">
-                cores e padrões
+                {t('home.stat.cores')}
               </div>
-              <span className="btn-trapezoid btn-navy mt-6">Ver tudo</span>
+              <span className="btn-trapezoid btn-navy mt-6">{t('hscroll.verTudo')}</span>
             </div>
           </Link>
         </div>

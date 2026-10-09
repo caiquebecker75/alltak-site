@@ -58,11 +58,11 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-bold uppercase tracking-widest text-white/50">{t('footer.mais')}</h4>
           <ul className="mt-4 space-y-2">
-            <li><Link to="/instaladores" className="text-sm text-white/70 hover:text-white">Instaladores</Link></li>
-            <li><Link to="/cursos" className="text-sm text-white/70 hover:text-white">Cursos</Link></li>
+            <li><Link to="/instaladores" className="text-sm text-white/70 hover:text-white">{t('footer.instaladores')}</Link></li>
+            <li><Link to="/cursos" className="text-sm text-white/70 hover:text-white">{t('footer.cursos')}</Link></li>
             <li><Link to="/contato" className="text-sm text-white/70 hover:text-white">{t('nav.contato')}</Link></li>
-            <li><Link to="/politica-de-privacidade" className="text-sm text-white/70 hover:text-white">Política de Privacidade</Link></li>
-            <li><Link to="/transparencia-salarial" className="text-sm text-white/70 hover:text-white">Transparência Salarial</Link></li>
+            <li><Link to="/politica-de-privacidade" className="text-sm text-white/70 hover:text-white">{t('footer.privacidade')}</Link></li>
+            <li><Link to="/transparencia-salarial" className="text-sm text-white/70 hover:text-white">{t('footer.transparencia')}</Link></li>
           </ul>
         </div>
       </div>
@@ -70,7 +70,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/40 md:flex-row">
           <span>© {new Date().getFullYear()} Alltak. {t('footer.rights')}</span>
-          <span>Site institucional · reconstrução 75 LAB</span>
+          <span>{t('footer.credito')}</span>
         </div>
       </div>
     </footer>

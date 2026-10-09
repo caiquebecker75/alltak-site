@@ -45,7 +45,7 @@ export default function Produtos() {
               <div id={`cat-${cat.slug}`} className="grid items-start gap-8 md:grid-cols-5">
                 <div className={`md:col-span-2 ${i % 2 ? 'md:order-2' : ''}`}>
                   <div className="frame-trap aspect-[4/3] cursor-hot">
-                    <img src={CATEGORY_IMAGE[cat.slug]} alt={cat.name} loading="lazy" className="img-zoom" />
+                    <img src={CATEGORY_IMAGE[cat.slug]} alt={tv(cat.name)} loading="lazy" className="img-zoom" />
                   </div>
                 </div>
                 <div className="md:col-span-3">
@@ -57,7 +57,7 @@ export default function Produtos() {
                         to={`/produtos/${l.categoria}/${l.slug}`}
                         className="border border-white/15 px-3 py-1.5 text-sm font-display font-semibold uppercase tracking-wide text-white/70 transition hover:border-alltak-blue hover:text-white"
                       >
-                        {l.nome}
+                        {tv(l.nome)}
                       </Link>
                     ))}
                     {(linhas as LinhaT[]).filter((l) => l.categoria === cat.slug).length === 0 &&

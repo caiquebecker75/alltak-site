@@ -1,7 +1,25 @@
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react'
-import { DICT, VALUES } from './dict'
+import { DICT as DICT_BASE, VALUES as VALUES_BASE } from './dict'
+import { DICT_HOME, VALUES_HOME } from './dict-home'
+import { DICT_ESTUDIOS, VALUES_ESTUDIOS } from './dict-estudios'
+import { DICT_PAGINAS, VALUES_PAGINAS } from './dict-paginas'
+
+// dicionário principal + um arquivo por área do site (home, estúdios 3D, páginas)
+const DICT = { ...DICT_BASE, ...DICT_HOME, ...DICT_ESTUDIOS, ...DICT_PAGINAS }
+const VALUES = { ...VALUES_BASE, ...VALUES_HOME, ...VALUES_ESTUDIOS, ...VALUES_PAGINAS }
 
 export type Lang = 'pt' | 'en' | 'es'
+
+// título da aba do navegador em cada idioma (o de PT é o do index.html)
+const TITULO: Record<Lang, string> = {
+  pt: 'Alltak | Envelopamento, Decoração e Comunicação Visual',
+  en: 'Alltak | Vehicle Wrapping, Decor and Visual Communication',
+  es: 'Alltak | Rotulación, Decoración y Comunicación Visual',
+}
+const aplicarIdioma = (l: Lang) => {
+  document.documentElement.lang = l
+  document.title = TITULO[l]
+}
 export const LANGS: { code: Lang; label: string }[] = [
   { code: 'pt', label: 'PT' },
   { code: 'en', label: 'EN' },
@@ -35,13 +53,13 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const l = detect()
     setLangState(l)
-    document.documentElement.lang = l
+    aplicarIdioma(l)
   }, [])
 
   const setLang = useCallback((l: Lang) => {
     setLangState(l)
     localStorage.setItem('alltak_lang', l)
-    document.documentElement.lang = l
+    aplicarIdioma(l)
   }, [])
 
   const t = useCallback(

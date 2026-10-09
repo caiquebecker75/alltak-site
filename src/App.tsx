@@ -6,6 +6,7 @@ import ScrollProgress from './components/ScrollProgress'
 import Preloader from './components/Preloader'
 import WhatsApp from './components/WhatsApp'
 import { LeadGateProvider } from './lead/LeadGate'
+import { useT } from './i18n'
 import Home from './pages/Home'
 import Catalogos from './pages/Catalogos'
 import Produtos from './pages/Produtos'
@@ -75,11 +76,12 @@ function ScrollManager() {
 }
 
 function NotFound() {
+  const t = useT()
   return (
     <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black text-center">
-      <p className="eyebrow text-alltak-blue">Erro 404</p>
-      <h1 className="mt-3 text-6xl text-white md:text-8xl">Página não encontrada</h1>
-      <Link to="/" className="btn-trapezoid btn-blue mt-8">Voltar para a home</Link>
+      <p className="eyebrow text-alltak-blue">{t('notfound.eyebrow')}</p>
+      <h1 className="mt-3 text-6xl text-white md:text-8xl">{t('notfound.titulo')}</h1>
+      <Link to="/" className="btn-trapezoid btn-blue mt-8">{t('notfound.voltar')}</Link>
     </section>
   )
 }

@@ -7,6 +7,7 @@ import subPlay from '../brand/sub-play.png'
 import subTools from '../brand/sub-tools.png'
 import subWrapcare from '../brand/sub-wrapcare.png'
 import caveira from '../brand/caveira-simbolo.png'
+import { useT } from '../i18n'
 
 // The full Alltak sub-brand family (official lockups from AF-ALLTAK-SUBMARCAS)
 // gliding in an infinite band, separated by the official skull symbol.
@@ -22,13 +23,14 @@ const FAMILY = [
 ]
 
 export default function BrandFamily() {
+  const t = useT()
   const row = [...FAMILY, ...FAMILY]
   return (
     <section className="border-y border-white/10 bg-alltak-black py-12">
       <div className="container-x mb-8 flex items-end justify-between">
         <div>
-          <span className="tag">Um só padrão</span>
-          <h2 className="mt-4 text-4xl text-white md:text-5xl">A família Alltak</h2>
+          <span className="tag">{t('brand.tag')}</span>
+          <h2 className="mt-4 text-4xl text-white md:text-5xl">{t('brand.titulo')}</h2>
         </div>
         <img
           src={caveira}

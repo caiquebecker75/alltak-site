@@ -50,7 +50,7 @@ export default function Header() {
               some para os dois não se sobreporem */}
           <Link
             to="/"
-            aria-label="Alltak início"
+            aria-label={t('header.inicio')}
             className={`relative z-[92] transition-opacity duration-300 ${open ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             tabIndex={open ? -1 : 0}
           >
@@ -63,7 +63,7 @@ export default function Header() {
             <Magnetic strength={0.3}>
               <button
                 onClick={() => setOpen((v) => !v)}
-                aria-label="Menu"
+                aria-label={t('header.menu')}
                 aria-expanded={open}
                 className="relative z-[92] flex h-12 w-14 flex-col items-center justify-center gap-[7px] bg-alltak-blue clip-escudo"
               >
@@ -146,7 +146,7 @@ export default function Header() {
             }}
           >
             <span className="font-display font-bold uppercase tracking-[0.3em]">Alltak®</span>
-            <span>Envelopamento · Decoração · Comunicação Visual</span>
+            <span>{t('header.frentes')}</span>
           </div>
         </nav>
       </div>

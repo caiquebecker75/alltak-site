@@ -4,6 +4,7 @@ import { COLORS, type Color } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import ErrBoundary from './ErrBoundary'
 import { ROOMS, type RoomKey } from './Room3D'
+import { useI18n } from '../i18n'
 
 // Interactive 3D ambience studio: kitchen / living room / bedroom tabs.
 // Orbit/zoom the scene, click a surface (or pick it from the chips) and
@@ -14,6 +15,7 @@ const ROOM_KEYS = Object.keys(ROOMS) as RoomKey[]
 
 export default function AmbienteStudio() {
   const { open } = useLeadGate()
+  const { t, tv } = useI18n()
   const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor'), [])
   const families = useMemo(() => [...new Set(patterns.map((p) => p.family))].sort(), [patterns])
   const [fam, setFam] = useState('all')
@@ -66,11 +68,11 @@ export default function AmbienteStudio() {
                 room === k ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
               }`}
             >
-              {ROOMS[k].label} 3D
+              {tv(ROOMS[k].label)} 3D
             </button>
           ))}
           <span className="ml-auto hidden font-display text-[11px] font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
-            Arraste para girar · role para zoom
+            {t('viz.arrasteZoom')}
           </span>
         </div>
 
@@ -84,7 +86,7 @@ export default function AmbienteStudio() {
                 selKey === g.key ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
               }`}
             >
-              {g.label}
+              {tv(g.label)}
             </button>
           ))}
         </div>
@@ -96,7 +98,7 @@ export default function AmbienteStudio() {
               fallback={
                 <div className="flex h-full items-center justify-center">
                   <span className="font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 animate-pulse">
-                    Carregando ambiente 3D…
+                    {t('amb.carregando')}
                   </span>
                 </div>
               }
@@ -112,21 +114,21 @@ export default function AmbienteStudio() {
             </Suspense>
           </ErrBoundary>
           <span className="pointer-events-none absolute left-3 top-3 tag">
-            {groups.find((g) => g.key === selKey)?.label}
+            {tv(groups.find((g) => g.key === selKey)?.label ?? '')}
           </span>
           <span className="pointer-events-none absolute bottom-3 right-3 hidden font-display text-[11px] font-bold uppercase tracking-[0.25em] text-white/45 md:block">
-            Clique numa superfície da cena
+            {t('amb.cliqueSuperficie')}
           </span>
         </div>
       </div>
 
       {/* Pattern picker */}
       <div className="border border-white/10 bg-white/[0.02] p-5">
-        <h2 className="text-2xl text-white">Padrões Alltak Decor</h2>
+        <h2 className="text-2xl text-white">{t('amb.padroes')}</h2>
         <p className="mt-1 text-sm text-white/50">
-          {ROOMS[room].label} · superfície:{' '}
-          <span className="text-alltak-blue">{groups.find((g) => g.key === selKey)?.label}</span>.
-          Clique num padrão para aplicar.
+          {tv(ROOMS[room].label)} · {t('amb.superficie')}{' '}
+          <span className="text-alltak-blue">{tv(groups.find((g) => g.key === selKey)?.label ?? '')}</span>.{' '}
+          {t('amb.cliqueAplicar')}
         </p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           <button
@@ -135,7 +137,7 @@ export default function AmbienteStudio() {
               fam === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
             }`}
           >
-            Todos
+            {t('movel.todos')}
           </button>
           {families.map((f) => (
             <button
@@ -145,7 +147,7 @@ export default function AmbienteStudio() {
                 fam === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
               }`}
             >
-              {f}
+              {tv(f)}
             </button>
           ))}
         </div>
@@ -169,31 +171,29 @@ export default function AmbienteStudio() {
           <div className="mt-4 flex items-center justify-between border-t border-white/10 pt-3">
             <div>
               <p className="font-display text-lg font-bold uppercase text-white">{active.name}</p>
-              <p className="text-xs uppercase tracking-wide text-white/40">Código {active.code}</p>
+              <p className="text-xs uppercase tracking-wide text-white/40">{t('movel.codigo')} {active.code}</p>
             </div>
             <button
               onClick={removePattern}
               className="font-display text-[11px] font-bold uppercase tracking-wide text-white/50 hover:text-alltak-blue"
             >
-              Remover
+              {t('amb.remover')}
             </button>
           </div>
         )}
 
         <div className="mt-5 flex flex-col gap-2.5 border-t border-white/10 pt-4">
           <button
-            onClick={() => open({ title: `Boletim Técnico ${active?.name ?? 'Alltak Decor'}`, url: '#', kind: 'PDF' })}
+            onClick={() => open({ title: `${t('movel.boletimTitulo')} ${active?.name ?? 'Alltak Decor'}`, url: '#', kind: 'PDF' })}
             className="btn-trapezoid btn-blue justify-center"
           >
-            Baixar boletim técnico ↓
+            {t('movel.baixarBoletim')}
           </button>
           <Link to="/cores" className="btn-trapezoid btn-outline justify-center">
-            Ver todas as cores
+            {t('amb.verTodas')}
           </Link>
         </div>
-        <p className="mt-3 text-xs text-white/35">
-          Prévia ilustrativa em 3D. As cores podem variar conforme a tela. Solicite amostra física.
-        </p>
+        <p className="mt-3 text-xs text-white/35">{t('amb.rodape')}</p>
       </div>
     </div>
   )

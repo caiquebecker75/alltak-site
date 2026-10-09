@@ -78,7 +78,9 @@ export default function Home() {
 
       {/* marquee */}
       <div className="border-y border-black bg-alltak-blue py-4 text-black">
-        <Marquee items={['Envelopamento', 'Decoração', 'Comunicação Visual', 'Wraps', 'Decor', 'Signs']} />
+        <Marquee
+          items={[t('home.marquee.envelopamento'), t('home.marquee.decoracao'), t('home.marquee.comunicacao'), 'Wraps', 'Decor', 'Signs']}
+        />
       </div>
 
       {/* banner roll-up — artes da marca deslizando com o scroll */}
@@ -93,7 +95,8 @@ export default function Home() {
           <SplitWords
             as="h2"
             text={t('home.manifesto')}
-            accent={['atitude', 'superfície']}
+            // palavras em destaque nos três idiomas (PT, EN, ES)
+            accent={['atitude', 'superfície', 'attitude', 'surface', 'actitud', 'superficie']}
             className="max-w-5xl text-5xl text-white sm:text-6xl md:text-8xl"
           />
           <div className="mt-14 grid grid-cols-2 gap-10 border-t border-white/10 pt-10 md:grid-cols-4">
@@ -143,7 +146,7 @@ export default function Home() {
           <SplitWords
             as="h2"
             text={t('home.aplicacoes')}
-            accent={['impecável']}
+            accent={['impecável', 'flawless', 'impecable']}
             className="mt-6 max-w-4xl text-5xl text-white md:text-8xl"
           />
           <Reveal delay={200}>
@@ -166,10 +169,7 @@ export default function Home() {
             <h2 className="mt-5 text-6xl text-white md:text-7xl">
               {t('home.pinte1')}<br /><span className="text-alltak-blue">{t('home.pinte2')}</span>
             </h2>
-            <p className="mt-5 max-w-lg text-white/70">
-              7 acabamentos, dezenas de cores, 3 silhuetas. Escolha, combine e veja o
-              resultado na hora, antes de aplicar o primeiro metro de vinil.
-            </p>
+            <p className="mt-5 max-w-lg text-white/70">{t('home.pinteSub')}</p>
             <Magnetic>
               <Link to="/visualizador" className="btn-trapezoid btn-blue mt-8 !px-10 !py-4">
                 {t('cta.abrirVisualizador')}
@@ -212,14 +212,9 @@ export default function Home() {
             <h2 className="mt-5 text-5xl text-white md:text-7xl">
               {t('home.sobreTitulo1')}<br /><span className="text-alltak-blue">{t('home.sobreTitulo2')}</span>
             </h2>
-            <p className="mt-5 max-w-xl leading-relaxed text-white/70">
-              A Alltak desenvolve e produz materiais adesivos para envelopamento,
-              decoração e comunicação visual. Estrutura própria, produção nacional e
-              linhas completas, pensadas para quem vive de aplicação e precisa manter
-              o padrão do começo ao fim.
-            </p>
+            <p className="mt-5 max-w-xl leading-relaxed text-white/70">{t('home.sobreTexto')}</p>
             <ul className="mt-7 grid gap-3 sm:grid-cols-2">
-              {['Produção nacional', 'Linhas completas', 'Acabamento constante', 'Suporte técnico'].map((d) => (
+              {[t('home.sobre.d1'), t('home.sobre.d2'), t('home.sobre.d3'), t('home.sobre.d4')].map((d) => (
                 <li key={d} className="flex items-center gap-3 text-sm text-white/80">
                   <span className="h-3 w-5 bg-alltak-blue clip-escudo" /> {d}
                 </li>
@@ -229,7 +224,7 @@ export default function Home() {
           <Reveal delay={140} dir="right">
             <Parallax speed={-0.06}>
               <div className="frame-trap clip-tz aspect-[4/3] w-full cursor-hot">
-                <img src="./assets/sobre_01.avif" alt="Produção nacional Alltak" loading="lazy" />
+                <img src="./assets/sobre_01.avif" alt={t('home.sobre.imgAlt')} loading="lazy" />
               </div>
             </Parallax>
           </Reveal>
@@ -255,7 +250,7 @@ export default function Home() {
           <SplitWords
             as="h2"
             text={t('home.pronto')}
-            accent={['transformar']}
+            accent={['transformar', 'transform']}
             className="mt-10 text-6xl text-white md:text-9xl"
           />
           <Reveal delay={220}>

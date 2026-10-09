@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
+import { useT } from '../i18n'
 
 // Placeholder distribuidores — substituir pela base real da Alltak.
 type Loja = { nome: string; cidade: string; uf: string; tel: string }
@@ -14,15 +15,15 @@ const LOJAS: Loja[] = [
 ]
 
 export default function OndeComprar() {
+  const t = useT()
   const [uf, setUf] = useState('todos')
   const ufs = ['todos', ...Array.from(new Set(LOJAS.map((l) => l.uf)))]
   const filtered = uf === 'todos' ? LOJAS : LOJAS.filter((l) => l.uf === uf)
 
   return (
     <>
-      <PageHeader eyebrow="Rede de distribuição" title="Onde comprar">
-        Encontre distribuidores Alltak perto de você. Selecione o estado para filtrar
-        a lista.
+      <PageHeader eyebrow={t('onde.eyebrow')} title={t('onde.titulo')}>
+        {t('onde.headerSub')}
       </PageHeader>
 
       <section className="bg-alltak-cream py-16 text-alltak-black md:py-24">
@@ -36,7 +37,7 @@ export default function OndeComprar() {
                   uf === u ? 'bg-alltak-blue text-white' : 'bg-white text-alltak-black hover:bg-black/5'
                 }`}
               >
-                {u === 'todos' ? 'Todos' : u}
+                {u === 'todos' ? t('onde.todos') : u}
               </button>
             ))}
           </div>
@@ -57,7 +58,7 @@ export default function OndeComprar() {
                     rel="noreferrer"
                     className="btn-trapezoid btn-blue mt-5 !py-2 !text-xs"
                   >
-                    Ver no mapa
+                    {t('onde.verMapa')}
                   </a>
                 </div>
               </Reveal>

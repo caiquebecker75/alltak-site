@@ -3,17 +3,17 @@
 import { useT } from '../i18n'
 
 const PHONE = '5511968594983'
-const MESSAGE = 'Olá! Vim pelo site da Alltak e gostaria de mais informações.'
-const HREF = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`
+// mensagem inicial no idioma do site (chave 'wa.mensagem')
+const href = (mensagem: string) => `https://wa.me/${PHONE}?text=${encodeURIComponent(mensagem)}`
 
 export default function WhatsApp() {
   const t = useT()
   return (
     <a
-      href={HREF}
+      href={href(t('wa.mensagem'))}
       target="_blank"
       rel="noreferrer"
-      aria-label="Falar no WhatsApp"
+      aria-label={t('wa.aria')}
       className="group fixed bottom-5 right-5 z-[85] flex items-center gap-3 md:bottom-7 md:right-7"
     >
       {/* tooltip */}

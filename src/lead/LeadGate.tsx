@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useState, type ReactNode } from 'react'
+import { useT } from '../i18n'
 
 // Lead-gated downloads: any download (catalog, logo, manual, technical bulletin)
 // opens a registration form first. On submit the lead is captured and the file
@@ -25,6 +26,7 @@ const field =
 export function LeadGateProvider({ children }: { children: ReactNode }) {
   const [download, setDownload] = useState<Download | null>(null)
   const [done, setDone] = useState(false)
+  const t = useT()
 
   const open = useCallback((d: Download) => {
     setDone(false)
@@ -60,7 +62,7 @@ export function LeadGateProvider({ children }: { children: ReactNode }) {
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={close} />
           <div className="relative w-full max-w-lg overflow-hidden bg-alltak-cream text-alltak-black">
             <div className="bg-alltak-navy px-6 py-4">
-              <span className="tag">Download</span>
+              <span className="tag">{t('lead.tag')}</span>
               <h3 className="mt-2 font-display text-2xl font-extrabold uppercase text-white">
                 {download.title}
               </h3>
@@ -69,9 +71,9 @@ export function LeadGateProvider({ children }: { children: ReactNode }) {
             {done ? (
               <div className="p-6 text-center">
                 <div className="mx-auto mb-4 h-5 w-8 bg-alltak-blue clip-tz" />
-                <h4 className="font-display text-2xl font-extrabold uppercase">Tudo pronto!</h4>
+                <h4 className="font-display text-2xl font-extrabold uppercase">{t('lead.pronto')}</h4>
                 <p className="mt-2 text-sm text-alltak-black/65">
-                  Seu material está liberado. Obrigado pelo cadastro.
+                  {t('lead.liberado')}
                 </p>
                 <a
                   href={download.url}
@@ -81,7 +83,7 @@ export function LeadGateProvider({ children }: { children: ReactNode }) {
                   className="btn-trapezoid btn-blue mt-5"
                   onClick={close}
                 >
-                  Baixar agora
+                  {t('lead.baixar')}
                 </a>
               </div>
             ) : (
@@ -100,22 +102,22 @@ export function LeadGateProvider({ children }: { children: ReactNode }) {
                 }}
               >
                 <p className="sm:col-span-2 text-sm text-alltak-black/65">
-                  Preencha para liberar o download. Entraremos em contato com novidades e suporte.
+                  {t('lead.intro')}
                 </p>
-                <input name="nome" required placeholder="Nome" className={field} />
-                <input name="empresa" placeholder="Empresa" className={field} />
-                <input name="email" required type="email" placeholder="E-mail" className={field} />
-                <input name="whatsapp" required placeholder="WhatsApp" className={field} />
-                <input name="cidade" placeholder="Cidade" className={`${field} sm:col-span-2`} />
+                <input name="nome" required placeholder={t('lead.nome')} className={field} />
+                <input name="empresa" placeholder={t('lead.empresa')} className={field} />
+                <input name="email" required type="email" placeholder={t('lead.email')} className={field} />
+                <input name="whatsapp" required placeholder={t('lead.whatsapp')} className={field} />
+                <input name="cidade" placeholder={t('lead.cidade')} className={`${field} sm:col-span-2`} />
                 <button type="submit" className="btn-trapezoid btn-blue sm:col-span-2 justify-center">
-                  Liberar download
+                  {t('lead.liberar')}
                 </button>
                 <button
                   type="button"
                   onClick={close}
                   className="sm:col-span-2 text-center text-xs uppercase tracking-wide text-alltak-black/40 hover:text-alltak-black/70"
                 >
-                  Cancelar
+                  {t('lead.cancelar')}
                 </button>
               </form>
             )}

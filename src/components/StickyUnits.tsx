@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { UNITS } from '../data/site'
 import { onScrollChange } from '../lib/onScrollChange'
+import { useT } from '../i18n'
 
 // Pinned showcase: the section is one viewport tall per business unit and a
 // sticky stage stays fixed while the user scrolls through it. The panel shown
@@ -16,6 +17,7 @@ export default function StickyUnits() {
   const wrap = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(0)
   const activeRef = useRef(0)
+  const t = useT()
   const n = UNITS.length
 
   // which unit is on stage, from the scroll position
@@ -99,7 +101,7 @@ export default function StickyUnits() {
                     logo, chamada, descrição e botão ficam na mesma posição nas
                     três unidades, mesmo com descrições de tamanhos diferentes */}
                 <div className="md:h-[27rem]">
-                  <span className="tag">Unidade de negócio · 0{i + 1}/0{n}</span>
+                  <span className="tag">{t('units.tag')} · 0{i + 1}/0{n}</span>
                   {/* official submarca lockup */}
                   <img
                     src={u.logo}
@@ -109,11 +111,11 @@ export default function StickyUnits() {
                     draggable={false}
                   />
                   <p className="mt-5 font-display text-lg font-bold uppercase tracking-wide" style={{ color: u.color }}>
-                    {u.tagline}
+                    {t(u.taglineKey)}
                   </p>
-                  <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70 md:min-h-[6.5em]">{u.description}</p>
+                  <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/70 md:min-h-[6.5em]">{t(u.descriptionKey)}</p>
                   <Link to={`/cores?linha=${u.key}`} className="btn-trapezoid btn-blue mt-8" tabIndex={i === active ? 0 : -1}>
-                    Ver os produtos
+                    {t('units.verProdutos')}
                   </Link>
                 </div>
                 <div className="relative hidden md:block">
@@ -135,8 +137,8 @@ export default function StickyUnits() {
 
         {/* setas bem discretas (mais que as do banner): sem fundo, só contorno */}
         {[
-          { passo: -1, lado: 'left-2 md:left-4', rotulo: 'Unidade anterior', d: 'M15 5l-7 7 7 7' },
-          { passo: 1, lado: 'right-2 md:right-4', rotulo: 'Próxima unidade', d: 'M9 5l7 7-7 7' },
+          { passo: -1, lado: 'left-2 md:left-4', rotulo: t('units.anterior'), d: 'M15 5l-7 7 7 7' },
+          { passo: 1, lado: 'right-2 md:right-4', rotulo: t('units.proxima'), d: 'M9 5l7 7-7 7' },
         ].map((s) => {
           const alvo = active + s.passo
           const ok = alvo >= 0 && alvo <= n - 1

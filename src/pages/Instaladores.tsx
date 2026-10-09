@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import instaladores from '../data/wp/instaladores.json'
+import { useT } from '../i18n'
 
 // Instaladores Pro-Expert migrados do site antigo: perfis com foto,
 // Instagram e mini-bio.
@@ -12,14 +13,14 @@ type Perfil = {
 }
 
 export default function Instaladores() {
+  const t = useT()
   const [aberto, setAberto] = useState<Perfil | null>(null)
   const lista = instaladores as Perfil[]
 
   return (
     <>
-      <PageHeader eyebrow="Rede credenciada" title="Instaladores Pro-Expert">
-        {lista.length} aplicadores certificados pela Alltak no Brasil e na América Latina.
-        Qualidade de aplicação com o padrão Alltak, do começo ao fim.
+      <PageHeader eyebrow={t('inst.eyebrow')} title={t('inst.titulo')}>
+        {lista.length} {t('inst.headerSub')}
       </PageHeader>
 
       <section className="bg-alltak-black py-12 md:py-16">
@@ -55,7 +56,7 @@ export default function Instaladores() {
               {aberto.fotos[0] && <img src={aberto.fotos[0]} alt={aberto.nome} className="h-64 w-full object-cover md:h-full" />}
             </div>
             <div className="p-6">
-              <button onClick={() => setAberto(null)} aria-label="Fechar"
+              <button onClick={() => setAberto(null)} aria-label={t('inst.fechar')}
                 className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-black/60 text-white hover:bg-alltak-blue">
                 ✕
               </button>

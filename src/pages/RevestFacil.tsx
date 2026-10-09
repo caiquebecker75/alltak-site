@@ -8,8 +8,8 @@ import { useT } from '../i18n'
 // e a ficha técnica entram aqui quando a Alltak publicar a linha completa.
 
 const FOTOS = [
-  { src: './assets/campanhas/revestfacil-amostras.jpg', alt: 'Amostras de revestimento RevestFácil' },
-  { src: './assets/campanhas/revestfacil-foto.jpg', alt: 'RevestFácil no ponto de venda' },
+  { src: './assets/campanhas/revestfacil-amostras.jpg', alt: 'rf.altAmostras' },
+  { src: './assets/campanhas/revestfacil-foto.jpg', alt: 'rf.altPdv' },
 ]
 
 const ONDE = ['rf.onde.paredes', 'rf.onde.armarios', 'rf.onde.bancadas', 'rf.onde.moveis']
@@ -30,7 +30,7 @@ export default function RevestFacil() {
             <h1 className="sr-only">Alltak RevestFácil</h1>
             <img
               src="./assets/campanhas/revestfacil-logo.png"
-              alt="Alltak RevestFácil · Revestimento vinílico adesivo"
+              alt={t('rf.altLogo')}
               className="mt-5 h-auto w-full max-w-md"
             />
             <p className="mt-8 max-w-xl text-lg text-white/75">{t('rf.intro')}</p>
@@ -53,7 +53,7 @@ export default function RevestFacil() {
                     clipPath: 'polygon(45.7% 0, 100% 0, calc(100% - 45.7%) 100%, 0 100%)',
                   }}
                 >
-                  <img src={f.src} alt={f.alt} className="h-full w-full object-cover" />
+                  <img src={f.src} alt={t(f.alt)} className="h-full w-full object-cover" />
                 </div>
               ))}
             </div>

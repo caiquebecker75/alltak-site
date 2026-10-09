@@ -1,4 +1,5 @@
 import type { FinishKey } from '../data/visualizer'
+import { useT } from '../i18n'
 
 // Realistic premium-GT vector illustration (original artwork, no manufacturer
 // badges). Three silhouettes — GT coupe, sport sedan, coupe-SUV — sharing a
@@ -207,6 +208,7 @@ export default function CarSVG({
   shift?: string
   finish: FinishKey
 }) {
+  const tr = useT()
   const m = MODELS[model] ?? COUPE
   const uid = `${model}-${finish}`
 
@@ -224,7 +226,7 @@ export default function CarSVG({
         : `url(#paint-${uid})`
 
   return (
-    <svg viewBox="0 0 1000 470" className="h-full w-full" role="img" aria-label="Prévia do veículo envelopado">
+    <svg viewBox="0 0 1000 470" className="h-full w-full" role="img" aria-label={tr('car.aria')}>
       <defs>
         <clipPath id={`clip-${uid}`}>
           <path d={m.body} />
