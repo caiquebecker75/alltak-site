@@ -49,15 +49,15 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder={t('exp.buscar')}
-          className="ml-auto w-full max-w-xs border border-white/20 bg-white/5 px-4 py-2.5 text-base text-white outline-none placeholder:text-white/45 focus:border-alltak-blue"
+          className="w-full border sm:ml-auto sm:max-w-xs border-white/20 bg-white/5 px-4 py-2.5 text-base text-white outline-none placeholder:text-white/45 focus:border-alltak-blue"
         />
       </div>
 
       {/* famílias */}
-      <div className="mt-4 flex flex-wrap gap-1.5">
+      <div className="mt-5 flex flex-wrap gap-2">
         <button
           onClick={() => setFamily('all')}
-          className={`px-3.5 py-1.5 font-display text-xs font-bold uppercase tracking-wide transition ${
+          className={`px-4 py-2 font-display text-sm font-bold uppercase tracking-wide transition md:px-5 md:py-2.5 md:text-base ${
             family === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/75 hover:bg-white/15'
           }`}
         >
@@ -67,7 +67,7 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
           <button
             key={f}
             onClick={() => setFamily(f)}
-            className={`px-3.5 py-1.5 font-display text-xs font-bold uppercase tracking-wide transition ${
+            className={`px-4 py-2 font-display text-sm font-bold uppercase tracking-wide transition md:px-5 md:py-2.5 md:text-base ${
               family === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/75 hover:bg-white/15'
             }`}
           >
@@ -76,7 +76,7 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
         ))}
       </div>
 
-      <div className="mb-6 mt-4 text-sm text-white/40">{list.length} {t('exp.cores')}</div>
+      <div className="mb-6 mt-5 text-base text-white/60">{list.length} {t('exp.cores')}</div>
 
       {/* grade de cores */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
@@ -103,7 +103,7 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
               <div className="truncate font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
                 {c.name}
               </div>
-              <div className="text-xs uppercase tracking-wide text-white/55">{c.code}</div>
+              <div className="text-sm uppercase tracking-wide text-white/60">{c.code}</div>
             </div>
           </Link>
         ))}

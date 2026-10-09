@@ -13,21 +13,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/moldnhold.jpg",
     "rotulo": "MOLDNHOLD",
     "codigo": null
@@ -50,16 +35,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/produto04.jpg",
     "rotulo": "PRODUTO4",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    }
   ],
@@ -98,26 +73,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/DUPLA-FACE-1.jpg",
     "rotulo": "DUPLA FACE",
     "codigo": null
@@ -130,26 +85,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/MASCARA-DE-TRANSFERENCIA.jpg",
     "rotulo": "MÁSCARA DE TRANSFERÊNCIA",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-decor.jpg",
-    "rotulo": "CRISTAL JATEADO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Sem-nome-720-x-400-px-720-x-200-px-3-1.png",
-    "rotulo": "TEC",
     "codigo": null
    }
   ],
@@ -170,21 +105,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/CONDESSA-1000-PIXELS-1000x675-1.jpg",
     "rotulo": "CONDESSA",
     "codigo": null
@@ -202,16 +122,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/quadra-1000-PIXELS.jpg",
     "rotulo": "QUADRA",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "ADESIVO JATEADO CRISTAL LUXOR",
     "codigo": null
    }
   ],
@@ -246,28 +156,8 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/MASCARA-DE-TRANSFERENCIA.jpg",
     "rotulo": "MÁSCARA DE TRANSFERÊNCIA",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-decor.jpg",
-    "rotulo": "CRISTAL JATEADO",
     "codigo": null
    },
    {
@@ -278,16 +168,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/alltak-mascara-azul-protecao.jpg",
     "rotulo": "MASCARA AZUL PROTECAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    }
   ],
@@ -324,33 +204,8 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/MASCARA-DE-PROTECAO.jpg",
     "rotulo": "CRISTAL JATEADO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-decor.jpg",
-    "rotulo": "DUPLA FACE",
     "codigo": null
    },
    {
@@ -381,21 +236,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/alltak-mascara-cristal.jpg",
     "rotulo": "MASCARA CRISTAL",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Sem-nome-720-x-400-px-720-x-200-px-3-1.png",
-    "rotulo": "MÁSCARA DE TRANFERÊNCIA",
     "codigo": null
    }
   ],
@@ -434,26 +274,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/JATEADO-1000-PIXELS-1.jpg",
     "rotulo": "JATEADO",
     "codigo": null
@@ -477,16 +297,6 @@
     "arquivo": "./wp-uploads/2021/01/pisotak-laminacao-floor-graphics-alltak-tec.jpg",
     "rotulo": "PISOTAK LAMINACAO FLOOR GRAPHICS TEC",
     "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "ADESIVO JATEADO CRISTAL LUXOR",
-    "codigo": null
    }
   ],
   "og_image": null,
@@ -506,43 +316,13 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/10/alltak-decor-branco-brilho.jpg",
     "rotulo": "BRANCO BRILHO",
     "codigo": null
    },
    {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2024/10/alltak-decor-metro-branco-fosco.jpg.webp.jpg",
     "rotulo": "METRO BRANCO FOSCO.JPG.WEBP",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
     "codigo": null
    },
    {
@@ -571,38 +351,7 @@
    "./wp-uploads/2023/05/64-Especif.-Tecnica-Premium-JATEADO.pdf"
   ],
   "pdfs_apoio": [],
-  "cores": [
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
-    "codigo": null
-   }
-  ],
+  "cores": [],
   "og_image": "https://alltak.com.br/wp-content/uploads/2023/04/Basicas-cores-solidas-alltak.jpg",
   "url_antiga": "/produtos/arquitetura/basicas/"
  },
@@ -619,36 +368,6 @@
   ],
   "pdfs_apoio": [],
   "cores": [
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
-    "codigo": null
-   },
    {
     "arquivo": "./wp-uploads/2026/02/Carrossel_Cristais_Out-2025_Latam_04.jpg-1.jpeg",
     "rotulo": "CARROSSEL_CRISTAIS_OUT 2025_LATAM_04.JPG 1",
@@ -712,21 +431,6 @@
     "codigo": null
    },
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2023/11/DECOR_JARDIM-VERTICAL_SITE-1.jpg",
     "rotulo": "DECOR_JARDIM VERTICAL_SITE 1",
     "codigo": null
@@ -734,21 +438,6 @@
    {
     "arquivo": "./wp-uploads/2024/04/Jardim-Tropical_site.jpg",
     "rotulo": "JARDIM TROPICAL_SITE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
     "codigo": null
    },
    {
@@ -778,21 +467,6 @@
   ],
   "pdfs_apoio": [],
   "cores": [
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
    {
     "arquivo": "./wp-uploads/2023/02/Kroma_Cinza-Fossil_Site.jpg",
     "rotulo": "KROMA_CINZA FOSSIL_SITE",
@@ -909,21 +583,6 @@
     "codigo": null
    },
    {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2025/07/Kroma-Malbec_site.jpg",
     "rotulo": "KROMA MALBEC_SITE",
     "codigo": null
@@ -1026,16 +685,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/10/alltak-decor-marmore-lunare-brilho.jpg",
     "rotulo": "MÁRMORE LUNARE BRILHO",
     "codigo": null
@@ -1058,11 +707,6 @@
    {
     "arquivo": "./wp-uploads/2022/04/alltak-decor-terrazzo-cobalto-977D82.jpg",
     "rotulo": "TERRAZZO COBALTO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
     "codigo": null
    },
    {
@@ -1108,21 +752,6 @@
    {
     "arquivo": "./wp-uploads/2024/07/Concreto-Areia_site.jpg",
     "rotulo": "CONCRETO AREIA_SITE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
     "codigo": null
    },
    {
@@ -1183,21 +812,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2025/01/London_bobina_site.jpg",
     "rotulo": "LONDON_BOBINA_SITE",
     "codigo": null
@@ -1215,21 +829,6 @@
    {
     "arquivo": "./wp-uploads/2025/01/Tijolo-Vermelho_bobina_site.jpg",
     "rotulo": "TIJOLO VERMELHO_BOBINA_SITE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
     "codigo": null
    }
   ],
@@ -1249,21 +848,6 @@
   ],
   "pdfs_apoio": [],
   "cores": [
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2022/05/camadas-alltak-decor.jpg",
-    "rotulo": "CAMADAS",
-    "codigo": null
-   },
    {
     "arquivo": "./wp-uploads/2023/04/Alltak-Decor_Wood-Pamplona.jpg",
     "rotulo": "DECOR_WOOD PAMPLONA",
@@ -1302,21 +886,6 @@
    {
     "arquivo": "./wp-uploads/2024/03/Linha-Wood-Toledo-Alltak-Envelopamento-Automobilistico.jpg",
     "rotulo": "LINHA WOOD-TOLEDO ENVELOPAMENTO AUTOMOBILISTICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T135626.862.png",
-    "rotulo": "LOGO",
     "codigo": null
    },
    {
@@ -1418,36 +987,6 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/12/pelicula-adesiva-auto-wrap-alltak-print-8.jpg",
     "rotulo": "NA IMAGEM, UM CARRO SUV BRANCO, DA MARCA NISSAN, ADESIVADO COM ESTAMPAS DO RIO2016",
     "codigo": null
@@ -1470,16 +1009,6 @@
    {
     "arquivo": "./wp-uploads/2023/10/AW_Jateado_site.jpg",
     "rotulo": "AW_JATEADO_SITE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    },
    {
@@ -1524,43 +1053,8 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
     "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
-    "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
-    "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
     "codigo": null
    },
    {
@@ -1577,21 +1071,6 @@
     "arquivo": "./wp-uploads/2020/12/CARBON-X-18CX70-ALLTAK.jpg",
     "rotulo": "LINHA FX CARBON X",
     "codigo": "18CX70"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/05/Alltak-Airflow-3.0.jpg",
-    "rotulo": "AIRFLOW 3.0",
-    "codigo": null
    },
    {
     "arquivo": "./wp-uploads/2023/07/5-elemento-graphite-metalic.jpeg",
@@ -1616,21 +1095,6 @@
    {
     "arquivo": "./wp-uploads/2024/07/5-elemento_Yellow.jpg",
     "rotulo": "5 ELEMENTO_YELLOW",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T134514.265",
     "codigo": null
    }
   ],
@@ -1672,26 +1136,6 @@
   ],
   "pdfs_apoio": [],
   "cores": [
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
    {
     "arquivo": "./wp-uploads/2026/09/EVOLUTION-PRO-ACID-LEMON-METALLIC-18EVO21M.jpg",
     "rotulo": "EVOLUTION PRO ACID LEMON METALLIC 18EVO21M",
@@ -1831,46 +1275,6 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
-    "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
-    "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
-    "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/12/BRUSHED-BLACK-18FXB70-ALLTAK.jpg",
     "rotulo": "LINHA FX BRUSHED BLACK",
     "codigo": "18FXB70"
@@ -1879,21 +1283,6 @@
     "arquivo": "./wp-uploads/2020/12/BRUSHED-GRAPHITE-18FXB932M-ALLTAK.jpg",
     "rotulo": "LINHA FX BRUSHED GRAPHITE",
     "codigo": "18FXB932M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/05/Alltak-Airflow-3.0.jpg",
-    "rotulo": "AIRFLOW 3.0",
-    "codigo": null
    },
    {
     "arquivo": "./wp-uploads/2024/03/Linha-FX-Black-Rave-Alltak-envelopamento-automobilstico.jpg",
@@ -1923,21 +1312,6 @@
    {
     "arquivo": "./wp-uploads/2025/06/Grunge-Titanium-Graphite_site.jpg",
     "rotulo": "GRUNGE TITANIUM GRAPHITE_SITE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T134514.265",
     "codigo": null
    }
   ],
@@ -1980,44 +1354,9 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
-    "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
     "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
     "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
    },
    {
     "arquivo": "./wp-uploads/2020/12/JATEADO-BEIGE-18J82.jpg",
@@ -2100,44 +1439,9 @@
     "codigo": null
    },
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/05/Alltak-Airflow-3.0.jpg",
-    "rotulo": "AIRFLOW 3.0",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2024/03/JATEADO-BLACK-18J70.jpg",
     "rotulo": "JATEADO-BLACK-18J70",
     "codigo": "18J70"
-   },
-   {
-    "arquivo": "./wp-uploads/2024/03/JATEADO-GRAY-METALLIC-18J932M.jpg",
-    "rotulo": "JATEADO-GRAY-METALLIC-18J932M",
-    "codigo": "18J932M"
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T134514.265",
-    "codigo": null
    }
   ],
   "og_image": null,
@@ -2177,51 +1481,6 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
-    "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SELO-PELÍCULA-DE-PROTEÇÃO_Alltak-menor.jpg",
-    "rotulo": "SELO PELÍCULA DE PROTEÇÃO_ALLTAK MENOR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
-    "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
-    "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/12/KLEAR-GLOSS-SMOKED.jpg",
     "rotulo": "KLEAR GLOSS SMOKED",
     "codigo": null
@@ -2237,33 +1496,8 @@
     "codigo": null
    },
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2022/05/klear-black-fume-black-mask-alltak-adesivos.jpg",
     "rotulo": "KLEAR BLACK FUMÊ BLACK MASK",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T134514.265",
     "codigo": null
    }
   ],
@@ -2301,46 +1535,6 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
-    "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
-    "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
-    "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/12/KRUSHER-02.jpg",
     "rotulo": "A IMAGEM MOSTRA UM CARRO EM VISTA DIANTEIRA ADESIVADO COM O VINIL AUTOMOTIVO KRUSHER",
     "codigo": null
@@ -2374,36 +1568,6 @@
     "arquivo": "./wp-uploads/2020/12/KRUSHER-WHITE-18K10-ALLTAK.jpg",
     "rotulo": "KRUSHER WHITE",
     "codigo": "18K10"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/05/Alltak-Airflow-3.0.jpg",
-    "rotulo": "AIRFLOW 3.0",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "TUNIG LOGO",
-    "codigo": null
    }
   ],
   "og_image": null,
@@ -2423,26 +1587,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2024/09/1-1.png",
-    "rotulo": "1 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2024/09/2-1.png",
-    "rotulo": "BANNER PPF",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2024/09/FPP_Gloss_Alltak.jpg",
     "rotulo": "FPP_GLOSS_ALLTAK",
     "codigo": null
@@ -2450,21 +1594,6 @@
    {
     "arquivo": "./wp-uploads/2024/09/FPP_Matte_Alltak.jpg",
     "rotulo": "FPP_MATTE_ALLTAK",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Sem-nome-720-x-400-px-720-x-200-px-2.png",
-    "rotulo": "PPF LOGO",
     "codigo": null
    }
   ],
@@ -2513,54 +1642,14 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
     "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
-    "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
-    "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
     "codigo": null
    },
    {
     "arquivo": "./wp-uploads/2020/12/SATIN-BLUE-18S49.jpg",
     "rotulo": "LINHA SATIN BLUE",
     "codigo": "18S49"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/SATIN-BROWN-METALLIC_cod.jpg",
-    "rotulo": "LINHA SATIN BROWN METALLIC",
-    "codigo": null
    },
    {
     "arquivo": "./wp-uploads/2020/12/SATIN-DEEP-BLUE-METALLIC_cod.jpg",
@@ -2603,24 +1692,9 @@
     "codigo": "18S21"
    },
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/03/SATIN_ADAMANTIUM_GRAY_METALLIC-18S74-SL-ALLTAK-ADESIVOS.jpg",
     "rotulo": "LINHA SATIN ADAMANTIUM METALLIC",
     "codigo": "18S74"
-   },
-   {
-    "arquivo": "./wp-uploads/2021/05/Alltak-Airflow-3.0.jpg",
-    "rotulo": "AIRFLOW 3.0",
-    "codigo": null
    },
    {
     "arquivo": "./wp-uploads/2021/10/satin-blueberry-metallic-alltak.jpg",
@@ -2661,21 +1735,6 @@
     "arquivo": "./wp-uploads/2024/03/SATIN-GRAPHITE-METALLIC-18S932M-1.jpg",
     "rotulo": "SATIN-GRAPHITE-METALLIC-18S932M-1",
     "codigo": "18S932M"
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T134514.265",
-    "codigo": null
    }
   ],
   "og_image": null,
@@ -2745,33 +1804,8 @@
     "codigo": null
    },
    {
-    "arquivo": "./wp-uploads/2020/11/KLEAR-GLOSS-SMOKED.jpg",
-    "rotulo": "DIMENSION",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/Kamo-Digital-City-Metallic2-1.jpg",
-    "rotulo": "IMPACT",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2020/11/MALBEC-RED-N.jpeg",
     "rotulo": "MALBEC RED",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SATIN-BROWN-METALLIC_cod.jpg",
-    "rotulo": "FIBRA DE CARBONO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/SELO-PELÍCULA-DE-PROTEÇÃO_Alltak-menor.jpg",
-    "rotulo": "SELO PELÍCULA DE PROTEÇÃO_ALLTAK MENOR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
     "codigo": null
    },
    {
@@ -2827,36 +1861,6 @@
    {
     "arquivo": "./wp-uploads/2020/11/VANILLA-ICE-CREAM-N-alltak-ultra.jpeg",
     "rotulo": "VANILLA ICE CREAM",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-check-list-inspecao-pre.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE CHECK LIST INSPECAO PRE",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-adesivos-automotivos-baixe-manual-de-conservacao.png",
-    "rotulo": "ADESIVOS AUTOMOTIVOS BAIXE MANUAL DE CONSERVACAO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/alltak-verde-escuro-jateado.jpg",
-    "rotulo": "JATEADO ARAUCÁRIA GREEN METALLIC | COD. 18J68M",
-    "codigo": "18J68M"
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/05/Alltak-Airflow-3.0.jpg",
-    "rotulo": "AIRFLOW 3.0",
     "codigo": null
    },
    {
@@ -2988,21 +1992,6 @@
     "arquivo": "./wp-uploads/2024/07/Illusion-White_site-1.jpg",
     "rotulo": "ILLUSION WHITE_SITE 1",
     "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T134514.265.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T134514.265",
-    "codigo": null
    }
   ],
   "og_image": null,
@@ -3036,43 +2025,8 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/PRINT_eletrostatico_thumb-300x250-1.jpg",
     "rotulo": "PRINT_ELETROSTATICO_THUMB 300X250 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Sem-nome-720-x-400-px-720-x-200-px-3-1.png",
-    "rotulo": "SEM NOME 720 X 400 PX 720 X 200 PX 3 1",
     "codigo": null
    }
   ],
@@ -3106,36 +2060,6 @@
   ],
   "pdfs_apoio": [],
   "cores": [
-   {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/11/download-do-boletim-tecnico-alltak-1.jpg",
-    "rotulo": "DOWNLOAD DO BOLETIM TECNICO 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
-    "codigo": null
-   },
    {
     "arquivo": "./wp-uploads/2025/07/Sem-nome-720-x-400-px-720-x-200-px-3-1.png",
     "rotulo": "VINIL ADESIVO PARA IMPRESSÃO PRINT FLEX",
@@ -3175,21 +2099,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/11/TOPICO.png",
-    "rotulo": "TOPICO",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/RECORTE-01-1.jpg",
     "rotulo": "RECORTE 01 1",
     "codigo": null
@@ -3197,16 +2106,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/RECORTE-02-1.jpg",
     "rotulo": "RECORTE 02 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    },
    {
@@ -3232,16 +2131,6 @@
   "pdfs_apoio": [],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/RECORTE-01-1.jpg",
     "rotulo": "RECORTE 01 1",
     "codigo": null
@@ -3254,16 +2143,6 @@
    {
     "arquivo": "./wp-uploads/2021/01/RECORTE-03.jpg",
     "rotulo": "RECORTE 03",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    },
    {
@@ -3291,58 +2170,8 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/adesive-alltak-killer.png",
     "rotulo": "ADESIVE KILLER",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-1-2.jpg",
-    "rotulo": "ADESIVE KILLER 1 2",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-2-2.jpg",
-    "rotulo": "ADESIVE KILLER 2 2",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-3-2.jpg",
-    "rotulo": "ADESIVE KILLER 3 2",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-4-2.jpg",
-    "rotulo": "ADESIVE KILLER 4 2",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-5-2.jpg",
-    "rotulo": "ADESIVE KILLER 5 2",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/pdf.png",
-    "rotulo": "PDF",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    }
   ],
@@ -3365,58 +2194,8 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-1-1.jpg",
-    "rotulo": "ADESIVE KILLER 1 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-2-1.jpg",
-    "rotulo": "ADESIVE KILLER 2 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-3-1.jpg",
-    "rotulo": "ADESIVE KILLER 3 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-4-1.jpg",
-    "rotulo": "ADESIVE KILLER 4 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-5-1.jpg",
-    "rotulo": "ADESIVE KILLER 5 1",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/kleaner-alltak.png",
     "rotulo": "KLEANER",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/pdf.png",
-    "rotulo": "PDF",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    }
   ],
@@ -3439,58 +2218,8 @@
   ],
   "cores": [
    {
-    "arquivo": "./wp-uploads/2020/12/bandeira-brasil-alltak.jpg",
-    "rotulo": "PT-BR",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2020/12/bandeira-eua-alltak.jpg",
-    "rotulo": "ENG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-1.jpg",
-    "rotulo": "ADESIVE KILLER 1",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-2.jpg",
-    "rotulo": "ADESIVE KILLER 2",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-3.jpg",
-    "rotulo": "ADESIVE KILLER 3",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-4.jpg",
-    "rotulo": "ADESIVE KILLER 4",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/alltak-adesive-killer-5.jpg",
-    "rotulo": "ADESIVE KILLER 5",
-    "codigo": null
-   },
-   {
     "arquivo": "./wp-uploads/2021/01/alltak-protetik.png",
     "rotulo": "PROTETIK",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2021/01/pdf.png",
-    "rotulo": "PDF",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-11.svg",
-    "rotulo": "DESIGN SEM NOME 11.SVG",
-    "codigo": null
-   },
-   {
-    "arquivo": "./wp-uploads/2025/07/Design-sem-nome-2025-07-17T133206.945.png",
-    "rotulo": "DESIGN SEM NOME 2025 07 17T133206.945",
     "codigo": null
    }
   ],

@@ -63,14 +63,14 @@ export default function Linha() {
         {descricao}
         <div className="mt-6 flex flex-wrap gap-3">
           {linha.boletins[0] && (
-            <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2 !text-xs">
+            <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
               {t('prod.boletim')} ↓
             </a>
           )}
-          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2 !text-xs">
+          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2.5 !text-sm">
             {t('prod.comprarStore')}
           </a>
-          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2 !text-xs">{t('cta.ondeComprar')}</Link>
+          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2.5 !text-sm">{t('cta.ondeComprar')}</Link>
         </div>
       </PageHeader>
 
@@ -89,7 +89,7 @@ export default function Linha() {
                     <img src={c.arquivo} alt={c.rotulo} loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>
-                  <div className="mt-1.5 truncate font-display text-xs font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
+                  <div className="mt-1.5 truncate font-display text-sm font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
                     {c.rotulo}
                   </div>
                 </button>
@@ -110,12 +110,12 @@ export default function Linha() {
                 <p className="mt-4 text-sm text-white/50">{t('prod.refBoletim')}</p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {linha.boletins.map((b, i) => (
-                    <a key={b} href={b} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2 !text-xs">
+                    <a key={b} href={b} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
                       {t('prod.boletim')}{linha.boletins.length > 1 ? ` ${i + 1}` : ''} ↓
                     </a>
                   ))}
                   {linha.pdfs_apoio.map((p) => (
-                    <a key={p} href={p} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !py-2 !text-xs">
+                    <a key={p} href={p} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !py-2.5 !text-sm">
                       {p.includes('check-list') ? t('prod.checklist') : p.includes('limpeza') ? t('prod.manualLimpeza') : t('prod.materialApoio')} ↓
                     </a>
                   ))}
@@ -181,10 +181,10 @@ export default function Linha() {
               <div className="flex items-center gap-4">
                 <button
                   onClick={() => baixar(corAtiva.arquivo, `alltak-${linha.slug}-${corAtiva.codigo ?? idx + 1}.jpg`)}
-                  className="font-display text-xs font-bold uppercase text-alltak-blue hover:text-white">
+                  className="font-display text-sm font-bold uppercase text-alltak-blue hover:text-white">
                   {t('comum.baixarImagem')}
                 </button>
-                <button onClick={() => setIdx(null)} className="font-display text-xs font-bold uppercase text-white/60 hover:text-alltak-blue">
+                <button onClick={() => setIdx(null)} className="font-display text-sm font-bold uppercase text-white/60 hover:text-alltak-blue">
                   {t('comum.fechar')}
                 </button>
               </div>

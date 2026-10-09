@@ -141,6 +141,11 @@ export const DICT: Record<string, Record<Lang, string>> = {
   'cor.relacionadas': { pt: 'Cores relacionadas', en: 'Related colors', es: 'Colores relacionados' },
   'cor.verTodas': { pt: 'Ver todas as cores', en: 'See all colors', es: 'Ver todos los colores' },
   'cor.artes': { pt: 'Arte p/ marketplace:', en: 'Marketplace artwork:', es: 'Arte para marketplace:' },
+  'cor.produto': { pt: 'Produto', en: 'Product', es: 'Producto' },
+  'cor.cod': { pt: 'Cód.', en: 'Code', es: 'Cód.' },
+  'cor.gerando': { pt: 'Gerando arte…', en: 'Creating artwork…', es: 'Generando arte…' },
+  'cor.fotos': { pt: 'Fotos do produto', en: 'Product photos', es: 'Fotos del producto' },
+  'cor.amostra': { pt: 'Amostra da cor', en: 'Color sample', es: 'Muestra del color' },
   'cor.naoEncontrada': { pt: 'Cor não encontrada', en: 'Color not found', es: 'Color no encontrado' },
   'cor.naoCatalogo': { pt: 'Essa cor não está no catálogo', en: 'This color is not in the catalog', es: 'Este color no está en el catálogo' },
 

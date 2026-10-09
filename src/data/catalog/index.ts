@@ -1,6 +1,7 @@
 import wrapsRaw from './wraps.json'
 import decorRaw from './decor.json'
 import signsRaw from './signs.json'
+import imagens from './imagens.json'
 
 // Real color data extracted from the official Alltak 2026 online catalogs
 // (name, code, finish/pantone, sampled hex, swatch + applied photo).
@@ -19,6 +20,14 @@ export type Color = {
   texture?: string // flat material crop (seamless-ish) for 3D re-skinning
 }
 
+// Dimensões reais de cada foto (geradas por migracao/limpar_imagens_cores.py).
+// Recortes quebrados do catálogo (tiras finas, texto) vêm marcados ok=false.
+type InfoImg = { w: number; h: number; ok: boolean }
+const INFO = imagens as Record<string, InfoImg>
+const chaveImg = (src: string) => src.replace(/^\.\/colors\//, '')
+export const infoImagem = (src?: string): InfoImg | undefined => (src ? INFO[chaveImg(src)] : undefined)
+const boa = (src?: string) => (src && infoImagem(src)?.ok !== false ? src : undefined)
+
 const famFrom = (name: string) => name.split(' ')[0]
 const JUNK = /(ILUSTRATIV|REPRESENTAD|VARIAR|DISPOSITIVO|MERAMENTE|ACORDO|PROTE[ÇC][ÃA]O|CAT[ÁA]LOGO|DIMENS|PROPRIEDAD|VERS[ÃA]O)/i
 const isClean = (name: string) => !!name && name.length <= 40 && !JUNK.test(name)
@@ -33,7 +42,7 @@ const raw: Color[] = [
     finish: c.acabamento || undefined,
     hex: c.hex,
     swatch: `./colors/wraps/${c.swatch}`,
-    applied: c.applied ? `./colors/wraps/${c.applied}` : undefined,
+    applied: c.applied ? boa(`./colors/wraps/${c.applied}`) : undefined,
   })),
   ...(decorRaw as any[]).map((c) => ({
     line: 'decor' as const,
@@ -42,8 +51,8 @@ const raw: Color[] = [
     name: c.name,
     family: famFrom(c.name),
     hex: c.hex,
-    swatch: `./colors/decor/${c.swatch}`,
-    applied: c.applied ? `./colors/decor/${c.applied}` : undefined,
+    swatch: boa(`./colors/decor/${c.swatch}`) ?? `./textures/decor/${c.code}.jpg`,
+    applied: c.applied ? boa(`./colors/decor/${c.applied}`) : undefined,
     texture: `./textures/decor/${c.code}.jpg`,
   })),
   ...(signsRaw as any[]).map((c) => ({
