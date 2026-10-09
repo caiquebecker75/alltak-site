@@ -75,6 +75,28 @@ export const DICT: Record<string, Record<Lang, string>> = {
   },
   'home.pronto': { pt: 'Pronto para transformar?', en: 'Ready to transform?', es: '¿Listo para transformar?' },
 
+  // ---- carrossel de campanhas ----
+  'banner.linha': { pt: 'Linha', en: 'Line', es: 'Línea' },
+  'banner.lancamento': { pt: 'Lançamento', en: 'New release', es: 'Lanzamiento' },
+  'banner.confira': { pt: 'Confira', en: 'Check it out', es: 'Descúbrelo' },
+  'banner.iwc.sub': { pt: 'Innovative Wrap Collab', en: 'Innovative Wrap Collab', es: 'Innovative Wrap Collab' },
+  'banner.iwc.texto': {
+    pt: 'O melhor adesivo do mundo em condições imperdíveis!',
+    en: 'The best vinyl in the world on unmissable terms!',
+    es: '¡El mejor vinilo del mundo en condiciones imperdibles!',
+  },
+  'banner.muxarabi.sub': { pt: 'Alltak Decor', en: 'Alltak Decor', es: 'Alltak Decor' },
+  'banner.muxarabi.texto': {
+    pt: 'O desenho do muxarabi em madeira, para paredes e móveis.',
+    en: 'The muxarabi lattice in wood, for walls and furniture.',
+    es: 'El diseño del muxarabi en madera, para paredes y muebles.',
+  },
+  'banner.revestfacil.texto': {
+    pt: 'Renove sem obra. Paredes, armários e bancadas com uma nova cara.',
+    en: 'Renovate with no construction work. Walls, cabinets and countertops with a new look.',
+    es: 'Renueva sin obra. Paredes, armarios y encimeras con una nueva cara.',
+  },
+
   // ---- footer ----
   'footer.tagline': {
     pt: 'Materiais para envelopamento, decoração e comunicação visual. Padrão e constância do começo ao fim, para quem vive de aplicação.',
