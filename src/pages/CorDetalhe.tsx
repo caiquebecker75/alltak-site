@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import { findColor, relatedColors, colorSlug } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import { STORE_URL } from '../data/site'
+import { useI18n } from '../i18n'
 import escudo from '../brand/escudo-oficial.png'
 
 // Página única da cor: foto aplicada em destaque, bobina/textura, ficha
@@ -30,6 +31,7 @@ export default function CorDetalhe() {
   const { line, code } = useParams()
   const navigate = useNavigate()
   const { open } = useLeadGate()
+  const { t, tv } = useI18n()
   const color = findColor(line, code)
   const [slide, setSlide] = useState<number | null>(null)
   const [gerando, setGerando] = useState(false)
@@ -37,10 +39,10 @@ export default function CorDetalhe() {
   const slides: Slide[] = useMemo(() => {
     if (!color) return []
     const s: Slide[] = []
-    if (color.applied) s.push({ src: color.applied, rotulo: 'Aplicado' })
-    s.push({ src: color.swatch, rotulo: 'Bobina / textura' })
+    if (color.applied) s.push({ src: color.applied, rotulo: t('cor.aplicado') })
+    s.push({ src: color.swatch, rotulo: t('cor.bobina') })
     return s
-  }, [color])
+  }, [color, t])
 
   const fechar = useCallback(() => setSlide(null), [])
   const prox = useCallback(() => setSlide((s) => (s === null ? s : (s + 1) % slides.length)), [slides.length])
@@ -136,9 +138,9 @@ export default function CorDetalhe() {
   if (!color) {
     return (
       <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black px-6 text-center">
-        <p className="eyebrow text-alltak-blue">Cor não encontrada</p>
-        <h1 className="mt-3 text-4xl text-white md:text-6xl">Essa cor não está no catálogo</h1>
-        <Link to="/cores" className="btn-trapezoid btn-blue mt-8">Ver todas as cores</Link>
+        <p className="eyebrow text-alltak-blue">{t('cor.naoEncontrada')}</p>
+        <h1 className="mt-3 text-4xl text-white md:text-6xl">{t('cor.naoCatalogo')}</h1>
+        <Link to="/cores" className="btn-trapezoid btn-blue mt-8">{t('cor.verTodas')}</Link>
       </section>
     )
   }
@@ -160,13 +162,13 @@ export default function CorDetalhe() {
             <div className="h-full w-full" style={{ background: color.hex }} />
           )}
           <span className="absolute right-4 top-4 bg-black/60 px-3 py-2 font-display text-xs font-bold uppercase tracking-widest text-white opacity-0 transition group-hover:opacity-100">
-            Ampliar ⤢
+            {t('cor.ampliar')}
           </span>
         </button>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-alltak-black via-alltak-black/40 to-transparent pb-6 pt-24">
           <div className="container-x pointer-events-auto">
             <button onClick={() => navigate(-1)} className="mb-3 font-display text-xs font-bold uppercase tracking-[0.2em] text-white/70 hover:text-alltak-blue">
-              ← Voltar
+              {t('cor.voltar')}
             </button>
             <span className="tag">{color.lineName}</span>
             <h1 className="mt-3 font-display text-5xl font-black uppercase leading-none text-white md:text-8xl">
@@ -180,7 +182,7 @@ export default function CorDetalhe() {
       <section className="bg-alltak-black pb-8 pt-10">
         <div className="container-x grid gap-8 lg:grid-cols-[1.1fr_1fr]">
           <div>
-            <p className="eyebrow text-alltak-blue">Bobina / textura</p>
+            <p className="eyebrow text-alltak-blue">{t('cor.bobina')}</p>
             <button
               onClick={() => setSlide(slides.length - 1)}
               className="group mt-3 block aspect-[16/10] w-full cursor-zoom-in overflow-hidden border border-white/10 bg-alltak-coal"
@@ -190,13 +192,13 @@ export default function CorDetalhe() {
             </button>
             <div className="mt-3 grid grid-cols-2 gap-3">
               <div>
-                <div className="mb-1 text-xs font-bold uppercase tracking-widest text-white/55">Cor sólida</div>
+                <div className="mb-1 text-xs font-bold uppercase tracking-widest text-white/55">{t('cor.corSolida')}</div>
                 <div className="h-16 w-full border border-white/15" style={{ background: color.hex }} />
                 <div className="mt-1 text-center text-xs uppercase text-white/55">{color.hex}</div>
               </div>
               {color.applied && (
                 <div>
-                  <div className="mb-1 text-xs font-bold uppercase tracking-widest text-white/55">Aplicado</div>
+                  <div className="mb-1 text-xs font-bold uppercase tracking-widest text-white/55">{t('cor.aplicado')}</div>
                   <button onClick={() => setSlide(0)} className="block h-16 w-full cursor-zoom-in overflow-hidden border border-white/15">
                     <img src={color.applied} alt="" className="h-full w-full object-cover" />
                   </button>
@@ -207,23 +209,23 @@ export default function CorDetalhe() {
 
           <div>
             <p className="eyebrow text-alltak-blue">
-              {color.family}
-              {color.finish ? ` · ${color.finish}` : ''}
+              {tv(color.family)}
+              {color.finish ? ` · ${tv(color.finish)}` : ''}
             </p>
-            <h2 className="mt-2 text-3xl text-white md:text-4xl">Informações da cor</h2>
+            <h2 className="mt-2 text-3xl text-white md:text-4xl">{t('cor.informacoes')}</h2>
 
             <dl className="mt-5 divide-y divide-white/10 border-y border-white/10">
               {[
-                ['Nome', color.name],
-                ['Código', color.code],
-                ['Linha', color.lineName],
-                ['Família', color.family],
-                ...(color.finish ? [['Acabamento', color.finish]] : []),
-                ...(color.pantone ? [['Pantone', color.pantone]] : []),
-              ].map(([k, v]) => (
-                <div key={k} className="flex items-center justify-between py-3 text-base">
+                [t('cor.nome'), color.name, false],
+                [t('cor.codigo'), color.code, true],
+                [t('cor.linha'), color.lineName, false],
+                [t('cor.familia'), tv(color.family), false],
+                ...(color.finish ? [[t('cor.acabamento'), tv(color.finish), false]] : []),
+                ...(color.pantone ? [['Pantone', color.pantone, false]] : []),
+              ].map(([k, v, azul]) => (
+                <div key={k as string} className="flex items-center justify-between py-3 text-base">
                   <dt className="text-white/60">{k}</dt>
-                  <dd className={`font-display font-bold uppercase ${k === 'Código' ? 'text-alltak-blue' : 'text-white'}`}>{v}</dd>
+                  <dd className={`font-display font-bold uppercase ${azul ? 'text-alltak-blue' : 'text-white'}`}>{v}</dd>
                 </div>
               ))}
             </dl>
@@ -233,28 +235,25 @@ export default function CorDetalhe() {
                 onClick={() => open({ title: `Boletim Técnico ${color.name} (${color.code})`, url: '#', kind: 'PDF' })}
                 className="btn-trapezoid btn-blue justify-center"
               >
-                Baixar boletim técnico ↓
+                {t('cor.baixarBoletim')}
               </button>
               <button
                 onClick={() => baixar(color.applied ?? color.swatch, `alltak-${color.code}.jpg`)}
                 className="btn-trapezoid btn-navy justify-center"
               >
-                Baixar imagem do produto ↓
+                {t('cor.baixarImagemProduto')}
               </button>
               {color.line === 'wraps' && (
                 <Link to="/visualizador" className="btn-trapezoid btn-outline justify-center">
-                  Ver no visualizador 3D
+                  {t('cor.verVisualizador')}
                 </Link>
               )}
               <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline justify-center">
-                Comprar na Alltak Store ↗
+                {t('prod.comprarStore')}
               </a>
             </div>
 
-            <p className="mt-4 text-sm text-white/45">
-              Imagem meramente ilustrativa. A cor pode variar conforme a tela, iluminação e superfície.
-              Solicite uma amostra física e consulte um aplicador Alltak.
-            </p>
+            <p className="mt-4 text-sm text-white/45">{t('cor.disclaimer')}</p>
           </div>
         </div>
       </section>
@@ -263,8 +262,8 @@ export default function CorDetalhe() {
       {related.length > 0 && (
         <section className="bg-alltak-black py-14">
           <div className="container-x">
-            <p className="eyebrow text-alltak-blue">Da mesma família</p>
-            <h2 className="mt-2 text-3xl text-white md:text-4xl">Cores relacionadas</h2>
+            <p className="eyebrow text-alltak-blue">{t('cor.mesmaFamilia')}</p>
+            <h2 className="mt-2 text-3xl text-white md:text-4xl">{t('cor.relacionadas')}</h2>
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
               {related.map((c) => (
                 <Link key={`${c.line}-${c.code}`} to={colorSlug(c)} className="group text-left">
@@ -278,7 +277,7 @@ export default function CorDetalhe() {
                 </Link>
               ))}
             </div>
-            <Link to="/cores" className="btn-trapezoid btn-outline mt-8">Ver todas as cores</Link>
+            <Link to="/cores" className="btn-trapezoid btn-outline mt-8">{t('cor.verTodas')}</Link>
           </div>
         </section>
       )}
@@ -318,10 +317,10 @@ export default function CorDetalhe() {
                   onClick={() => baixar(slides[slide].src, `alltak-${color.code}-${slides[slide].rotulo.toLowerCase().split(' ')[0]}.jpg`)}
                   className="btn-trapezoid btn-blue !py-2 !text-xs"
                 >
-                  Baixar imagem ↓
+                  {t('comum.baixarImagem')}
                 </button>
                 <span className="font-display text-[11px] font-bold uppercase tracking-widest text-white/50">
-                  Arte p/ marketplace:
+                  {t('cor.artes')}
                 </span>
                 {(Object.keys(FORMATOS) as (keyof typeof FORMATOS)[]).map((f) => (
                   <button key={f} onClick={() => gerarArte(f)} disabled={gerando}

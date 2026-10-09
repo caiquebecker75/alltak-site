@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react'
-import { DICT } from './dict'
+import { DICT, VALUES } from './dict'
 
 export type Lang = 'pt' | 'en' | 'es'
 export const LANGS: { code: Lang; label: string }[] = [
@@ -8,8 +8,14 @@ export const LANGS: { code: Lang; label: string }[] = [
   { code: 'es', label: 'ES' },
 ]
 
-type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (key: string) => string }
-const I18nCtx = createContext<Ctx>({ lang: 'pt', setLang: () => {}, t: (k) => k })
+type Ctx = {
+  lang: Lang
+  setLang: (l: Lang) => void
+  t: (key: string) => string
+  // tv traduz VALORES de dados (acabamento, família, categoria); sem tradução, devolve o original
+  tv: (value: string) => string
+}
+const I18nCtx = createContext<Ctx>({ lang: 'pt', setLang: () => {}, t: (k) => k, tv: (v) => v })
 
 export const useI18n = () => useContext(I18nCtx)
 export const useT = () => useContext(I18nCtx).t
@@ -47,5 +53,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     [lang],
   )
 
-  return <I18nCtx.Provider value={{ lang, setLang, t }}>{children}</I18nCtx.Provider>
+  const tv = useCallback(
+    (value: string) => (lang === 'pt' ? value : VALUES[value]?.[lang] ?? value),
+    [lang],
+  )
+
+  return <I18nCtx.Provider value={{ lang, setLang, t, tv }}>{children}</I18nCtx.Provider>
 }

@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal'
 import ColorExplorer from '../components/ColorExplorer'
 import { PRODUCT_CATEGORIES, STORE_URL } from '../data/site'
 import linhas from '../data/wp/linhas.json'
+import { useI18n } from '../i18n'
 
 type LinhaT = { categoria: string; slug: string; nome: string }
 
@@ -18,21 +19,20 @@ const CATEGORY_IMAGE: Record<string, string> = {
 }
 
 export default function Produtos() {
+  const { t, tv } = useI18n()
   return (
     <>
-      <PageHeader eyebrow="Portfólio completo" title="Produtos">
-        Um portfólio completo para diferentes estilos e necessidades. Explore as linhas e
-        clique em uma cor para ver a foto do produto aplicado, o vídeo de aplicação e baixar
-        o boletim técnico.
+      <PageHeader eyebrow={t('prod.eyebrow')} title={t('nav.produtos')}>
+        {t('prod.headerSub')}
         <div className="mt-6 flex flex-wrap gap-3">
           <a href="#cores" className="btn-trapezoid btn-blue !py-2 !text-xs">
-            Explorar cores →
+            {t('prod.explorarCores')}
           </a>
           <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2 !text-xs">
-            Comprar na Alltak Store ↗
+            {t('prod.comprarStore')}
           </a>
           <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2 !text-xs">
-            Onde comprar
+            {t('cta.ondeComprar')}
           </Link>
         </div>
       </PageHeader>
@@ -49,7 +49,7 @@ export default function Produtos() {
                   </div>
                 </div>
                 <div className="md:col-span-3">
-                  <h2 className="text-4xl text-white md:text-5xl">{cat.name}</h2>
+                  <h2 className="text-4xl text-white md:text-5xl">{tv(cat.name)}</h2>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {(linhas as LinhaT[]).filter((l) => l.categoria === cat.slug).map((l) => (
                       <Link
@@ -80,12 +80,9 @@ export default function Produtos() {
       {/* Explorador de cores completo (mesma experiência da aba Cores) */}
       <section id="cores" className="border-t border-white/10 bg-alltak-black pb-24 pt-14 md:pt-16">
         <div className="container-x">
-          <p className="eyebrow text-alltak-blue">Gama completa</p>
-          <h2 className="mt-3 text-4xl text-white md:text-6xl">Todas as cores</h2>
-          <p className="mt-3 max-w-2xl text-white/60">
-            Filtre por linha e família, busque por nome ou código e clique em qualquer cor
-            para ver o produto aplicado, o vídeo e o boletim técnico.
-          </p>
+          <p className="eyebrow text-alltak-blue">{t('cores.eyebrow')}</p>
+          <h2 className="mt-3 text-4xl text-white md:text-6xl">{t('prod.todasCores')}</h2>
+          <p className="mt-3 max-w-2xl text-white/60">{t('prod.todasCoresSub')}</p>
           <div className="mt-8">
             <ColorExplorer />
           </div>

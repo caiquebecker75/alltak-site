@@ -1,11 +1,13 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { COLORS, LINES, familiesFor, colorSlug } from '../data/catalog'
+import { useI18n } from '../i18n'
 
 // Full color explorer: line + family filters, search and a complete grid.
 // Each swatch links to that color's dedicated page (/cor/:line/:code).
 // `initialLine` pre-selects a catalog line (e.g. 'wraps') when embedded.
 export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: string }) {
+  const { t, tv } = useI18n()
   const [line, setLine] = useState<string>(initialLine)
   const [family, setFamily] = useState<string>('all')
   const [q, setQ] = useState('')
@@ -39,14 +41,14 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
                   : 'bg-white/10 text-white/80 hover:bg-white/20 hover:text-white'
               }`}
             >
-              {l.label}
+              {tv(l.label)}
             </button>
           ))}
         </div>
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Buscar cor ou código…"
+          placeholder={t('exp.buscar')}
           className="ml-auto w-full max-w-xs border border-white/20 bg-white/5 px-4 py-2.5 text-base text-white outline-none placeholder:text-white/45 focus:border-alltak-blue"
         />
       </div>
@@ -59,7 +61,7 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
             family === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/75 hover:bg-white/15'
           }`}
         >
-          Todas as famílias
+          {t('exp.todasFamilias')}
         </button>
         {families.map((f) => (
           <button
@@ -69,12 +71,12 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
               family === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/75 hover:bg-white/15'
             }`}
           >
-            {f}
+            {tv(f)}
           </button>
         ))}
       </div>
 
-      <div className="mb-6 mt-4 text-sm text-white/40">{list.length} cores</div>
+      <div className="mb-6 mt-4 text-sm text-white/40">{list.length} {t('exp.cores')}</div>
 
       {/* grade de cores */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">

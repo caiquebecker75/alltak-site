@@ -1,0 +1,868 @@
+{
+ "moldnhold": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "dupla-face": {
+  "en": {
+   "descricao": "",
+   "specs": [
+    "Recommended uses",
+    "Used to attach materials that have no adhesive of their own (photo paper, wallpaper, boards, etc.).",
+    "Physical properties",
+    "Face film:",
+    "Calendered PVC, 80 microns (μm)",
+    "Siliconized paper:",
+    "two-sided paper, 120 g/m²",
+    "Adhesive:",
+    "permanent acrylic, 20 g/m² (+/- 2 g/m²)",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "After application, avoid aggressive products and constant friction; use neutral soap.",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 1.00 m wide",
+    "Expected durability: 3 years. It may also extend or shorten depending on application and care techniques.",
+    "Storage",
+    "2 years at temperatures between 20ºC and 30ºC, with RH between 40% and 50%."
+   ]
+  },
+  "es": {
+   "descricao": "",
+   "specs": [
+    "Indicaciones",
+    "Utilizada para fijar materiales que no tienen adhesivo propio (papel fotográfico, papel tapiz, placas, etc.).",
+    "Propiedades físicas",
+    "Frontal:",
+    "PVC calandrado de 80 micras (μm)",
+    "Papel siliconado:",
+    "papel de dos caras, 120 g/m²",
+    "Adhesivo:",
+    "acrílico permanente, 20 g/m² (+/- 2 g/m²)",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro.",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 1,00 m",
+    "Durabilidad esperada: 3 años. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Almacenamiento",
+    "2 años a temperaturas entre 20ºC y 30ºC, con HR entre 40% y 50%."
+   ]
+  }
+ },
+ "laminacoes": {
+  "en": {
+   "descricao": "Our lamination film was developed for interior decoration. Widely used as an anti-slip layer for floors and to protect printed images.",
+   "specs": []
+  },
+  "es": {
+   "descricao": "Nuestro adhesivo de laminación fue desarrollado para la decoración de ambientes. Muy utilizado como antideslizante para pisos y para la protección de imágenes.",
+   "specs": []
+  }
+ },
+ "mascara-de-protecao": {
+  "en": {
+   "descricao": "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol. After application, avoid aggressive products and constant friction; use neutral soap. Material packed in boxes and cardboard rolls, 0.50 m or 1.00 m wide. Expected durability: 6 months. It may also extend or shorten depending on application and care techniques.",
+   "specs": [
+    "Recommended uses",
+    "Used as masking protection for painting jobs in general.",
+    "Physical properties",
+    "Adhesive: permanent acrylic (low: 5 g/m²; medium: 10 g/m²; high: 15 g/m²)",
+    "Dimensional stability:",
+    "48 h at 70ºC",
+    "Bonded to aluminum (shrinkage): 0.127%",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "After application, avoid aggressive products and constant friction; use neutral soap.",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 0.50 m or 1.00 m wide",
+    "Expected durability: 6 months. It may also extend or shorten depending on application and care techniques.",
+    "Storage",
+    "2 years at temperatures between 20ºC and 30ºC, with RH between 40% and 50%."
+   ]
+  },
+  "es": {
+   "descricao": "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico. Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro. Material embalado en cajas y bobinas de cartón con anchos de 0,50 m o 1,00 m. Durabilidad esperada: 6 meses. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+   "specs": [
+    "Indicaciones",
+    "Utilizada como protección de enmascarado para pinturas en general.",
+    "Propiedades físicas",
+    "Adhesivo: acrílico permanente (baja: 5 g/m²; media: 10 g/m²; alta: 15 g/m²)",
+    "Estabilidad dimensional:",
+    "48 h a 70ºC",
+    "Adherido al aluminio (contracción): 0,127%",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro.",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con anchos de 0,50 m o 1,00 m",
+    "Durabilidad esperada: 6 meses. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Almacenamiento",
+    "2 años a temperaturas entre 20ºC y 30ºC, con HR entre 40% y 50%."
+   ]
+  }
+ },
+ "mascara-de-transferencia": {
+  "en": {
+   "descricao": "",
+   "specs": [
+    "Recommended uses",
+    "Used to transfer printed or cut images.",
+    "Physical properties",
+    "Adhesive: permanent acrylic (low: 5 g/m²; medium: 10 g/m²; high: 15 g/m²)",
+    "Dimensional stability:",
+    "48 h at 70ºC",
+    "Bonded to aluminum (shrinkage): 0.127%",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "After application, avoid aggressive products and constant friction; use neutral soap.",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 0.50 m or 1.00 m wide",
+    "Expected durability: 6 months. It may also extend or shorten depending on application and care techniques.",
+    "Storage",
+    "6 months at temperatures between 20ºC and 30ºC, with RH between 40% and 50%."
+   ]
+  },
+  "es": {
+   "descricao": "",
+   "specs": [
+    "Indicaciones",
+    "Utilizada para transferir imágenes impresas o recortadas.",
+    "Propiedades físicas",
+    "Adhesivo: acrílico permanente (baja: 5 g/m²; media: 10 g/m²; alta: 15 g/m²)",
+    "Estabilidad dimensional:",
+    "48 h a 70ºC",
+    "Adherido al aluminio (contracción): 0,127%",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro.",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con anchos de 0,50 m o 1,00 m",
+    "Durabilidad esperada: 6 meses. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Almacenamiento",
+    "6 meses a temperaturas entre 20ºC y 30ºC, con HR entre 40% y 50%."
+   ]
+  }
+ },
+ "pisos": {
+  "en": {
+   "descricao": "Floor Lamination is part of the Alltak Lamination line. Used as an anti-slip layer while also protecting your floor. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol. Material packed in boxes and cardboard rolls, 1.00 m or 1.22 m wide. Expected durability: 2 years. It may also extend or shorten depending on application and care techniques. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+   "specs": [
+    "Floor Lamination is part of the Alltak Lamination line. Used as an anti-slip layer while also protecting your floor.",
+    "Clear, Textured, Opaque",
+    "Recommended uses",
+    "Self-extinguishing: test mounted on aluminum",
+    "Physical properties",
+    "Adhesive: permanent acrylic, 30 g/m²",
+    "Dimensional stability:",
+    "48 h at 70ºC",
+    "Bonded to aluminum (shrinkage): 0.109%",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 1.00 m or 1.22 m wide",
+    "Expected durability: 2 years. It may also extend or shorten depending on application and care techniques.",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place."
+   ]
+  },
+  "es": {
+   "descricao": "La laminación para pisos forma parte de la línea Alltak Laminación. Se usa como antideslizante, además de proteger el piso. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico. Material embalado en cajas y bobinas de cartón con ancho de 1,00 m o 1,22 m. Durabilidad esperada: 2 años. También puede extenderse o reducirse según las técnicas de aplicación y conservación. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+   "specs": [
+    "La laminación para pisos forma parte de la línea Alltak Laminación. Se usa como antideslizante, además de proteger el piso.",
+    "Transparente, Texturizado, Opaco",
+    "Indicaciones",
+    "Autoextinguible: prueba montada sobre aluminio",
+    "Propiedades físicas",
+    "Adhesivo: acrílico permanente, 30 g/m²",
+    "Estabilidad dimensional:",
+    "48 h a 70ºC",
+    "Adherido al aluminio (contracción): 0,109%",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 1,00 m o 1,22 m",
+    "Durabilidad esperada: 2 años. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado."
+   ]
+  }
+ },
+ "azulejo": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "basicas": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "cristais": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "estampados": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "kroma": {
+  "en": {
+   "descricao": "High-quality calendered film that already comes with adhesive for easy installation: no mess, no smell, anti-mold, anti-fungus and highly resistant. Alltak® Decor has a double layer that protects the print, making the material more resistant and even more beautiful. Thanks to the Fusion System, Alltak® Decor films resist abrasive products and can be easily cleaned. Alltak® Decor adhesive coverings have a high-grip adhesive; even on irregular surfaces* their adhesion is superior. Alltak® Decor withstands heat and can be molded around corners and light recesses, leaving a flawless finish.",
+   "specs": []
+  },
+  "es": {
+   "descricao": "Película calandrada de alta calidad que ya viene con adhesivo para facilitar la instalación: sin suciedad, sin olor, antimoho, antihongos y de alta resistencia. Alltak® Decor tiene doble capa, protegiendo la imagen y dejando el material más resistente y aún más bonito. Gracias al Sistema Fusion, las películas Alltak® Decor resisten productos abrasivos y pueden limpiarse fácilmente. Los revestimientos adhesivos Alltak® Decor tienen un adhesivo de alta fijación; incluso en superficies irregulares* su adherencia es superior. Alltak® Decor soporta la temperatura y puede moldearse en esquinas y cavidades leves, dejando un acabado impecable.",
+   "specs": []
+  }
+ },
+ "pedras": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "tijolo": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "wood": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "auto-wrap": {
+  "en": {
+   "descricao": "",
+   "specs": [
+    "Recommended uses",
+    "Physical properties",
+    "Face film:",
+    "Polymeric super-calendered PVC, 100 μm (microns).",
+    "Liner:",
+    "Siliconized coated paper, 140 g/m².",
+    "Adhesive:",
+    "Permanent HIGH TACK acrylic, 20 g/m² (+ 2 g/m²).",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life:",
+    "2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+    "Supply and durability",
+    "Material packed in cardboard boxes, 1.38 m wide.",
+    "Expected durability: 5 years for outdoor use. Alltak is not responsible for the durability of the print.",
+    "Recommendations",
+    "Not recommended for rough and/or porous surfaces.",
+    "For cut jobs, install immediately after cutting/removing the liner. Squeegeeing and pressure after application ensure better adhesive performance.",
+    "Wrapped vehicles must be washed with water and neutral soap (pH-neutral automotive shampoo).",
+    "For textured materials, use a soft sponge on areas in direct contact with dust, mud, etc.",
+    "Rinse with plenty of water and dry the vehicle.",
+    "The grid printed on the liner has no measurements, so it is not a cutting reference."
+   ]
+  },
+  "es": {
+   "descricao": "",
+   "specs": [
+    "Indicaciones",
+    "Propiedades físicas",
+    "Frontal:",
+    "PVC polimérico supercalandrado de 100 μm (micras).",
+    "Liner:",
+    "Papel couché siliconado de 140 g/m².",
+    "Adhesivo:",
+    "Acrílico HIGH TACK permanente, 20 g/m² (+ 2 g/m²).",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia:",
+    "2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+    "Suministro y durabilidad",
+    "Material embalado en caja de cartón con ancho de 1,38 m.",
+    "Durabilidad esperada: 5 años para uso en exteriores. Alltak no se responsabiliza por la durabilidad de la impresión.",
+    "Recomendaciones",
+    "No se recomienda la aplicación sobre superficies rugosas y/o porosas.",
+    "En trabajos con corte, instalar inmediatamente después del corte/retiro del liner. El espatulado y la presión después de la aplicación garantizan un mejor desempeño del adhesivo.",
+    "El lavado del vehículo rotulado debe realizarse con agua y jabón neutro (champú automotriz de pH neutro).",
+    "Para materiales texturizados, usar una esponja suave en las zonas de contacto directo con polvo, barro, etc.",
+    "Enjuagar con abundante agua y secar el vehículo.",
+    "La cuadrícula impresa en el liner no tiene métrica, por lo tanto no sirve de referencia para el corte."
+   ]
+  }
+ },
+ "carbon": {
+  "en": {
+   "descricao": "Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Developed for vehicle protection and customization; accepts digital printing and can be used for cutting. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with dust, impurities, grease or any other chemical product that could affect the material's adhesion. The material should only be applied to painted or freshly painted surfaces after at least three weeks and full curing; the compatibility of lacquers and paints must be tested by the user before application.",
+   "specs": [
+    "Recommended uses",
+    "Developed for vehicle protection and customization; accepts digital printing and can be used for cutting.",
+    "Good stability on smooth and curved surfaces, resistant to light impacts.",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+    "Physical properties:",
+    "Face film: polymeric super-calendered PVC, 100 μm (microns).",
+    "Liner: siliconized coated paper, 170 g/m².",
+    "Adhesive: repositionable acrylic, 20 g/m² (+ 2 g/m²).",
+    "Recommendations",
+    "Not recommended for rough and/or porous surfaces.",
+    "Excessive use of solvent reduces the product's durability.",
+    "For cut jobs, install immediately after cutting.",
+    "After application, avoid aggressive products and constant friction."
+   ]
+  },
+  "es": {
+   "descricao": "Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Desarrollado para la protección y personalización de vehículos; acepta impresión digital y puede usarse para corte. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con polvo, impurezas, grasa o cualquier otro producto químico que pueda afectar la adherencia del material. El material solo debe aplicarse sobre superficies pintadas o recién pintadas respetando un plazo mínimo de tres semanas y el curado completo; la compatibilidad de lacas y pinturas debe ser probada por el usuario antes de la aplicación.",
+   "specs": [
+    "Indicaciones",
+    "Desarrollado para la protección y personalización de vehículos; acepta impresión digital y puede usarse para corte.",
+    "Buena estabilidad en superficies lisas y curvas, resistente a impactos leves.",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+    "Propiedades físicas:",
+    "Frontal: PVC polimérico supercalandrado de 100 μm (micras).",
+    "Liner: papel couché siliconado de 170 g/m².",
+    "Adhesivo: acrílico reposicionable, 20 g/m² (+ 2 g/m²).",
+    "Recomendaciones",
+    "No se recomienda la aplicación sobre superficies rugosas y/o porosas.",
+    "El uso excesivo de solvente reduce la durabilidad del producto.",
+    "En trabajos con corte, instalar inmediatamente después del corte.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes."
+   ]
+  }
+ },
+ "evolution-pro": {
+  "en": {
+   "descricao": "Images are for illustration only. For a more accurate perception, request our color catalog from your nearest distributor. 100-micron thickness (120 microns on Ruby Glaze, Sakura Pink, Silver Sky Blue and Thunderstorm Gray). MATTE products have a translucent white protective film, which can give a false impression of the color when opening the box; once the film is removed, color and finish match the standards. Expected durability of 5 years outdoors. Metallic colors in general: 3 years. On horizontal applications (hood and roof) this durability is reduced by up to 30%; it may also extend or shorten depending on application techniques, care and weather exposure.",
+   "specs": [
+    "Features",
+    "Rolls of 1.52 x 18 m (152 cm wide, 18 m rolls)",
+    "Face film in polymeric super-calendered PVC",
+    "100-micron thickness (120 microns on Ruby Glaze, Sakura Pink, Silver Sky Blue and Thunderstorm Gray)",
+    "Solvent-based adhesive, 40 g/m²",
+    "PET liner, 140 microns",
+    "AIRFLOW bubble-free system: cuts application time by up to 50%",
+    "Metallic effect and intense gloss",
+    "Protective film",
+    "Directional material",
+    "Special finishes",
+    "Sahara Matte Cooper Metallic (18EVO19M)",
+    "metallic matte finish",
+    "Sunset Pearl Matte Orange (18EVO20M)",
+    "matte finish",
+    "Shadow Matte Black (18EVO02)",
+    "matte finish",
+    "Important:",
+    "Durability",
+    "Storage",
+    "Recommended uses"
+   ]
+  },
+  "es": {
+   "descricao": "Imágenes meramente ilustrativas. Para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Espesor de 100 micras (120 micras en Ruby Glaze, Sakura Pink, Silver Sky Blue y Thunderstorm Gray). Los productos MATTE (mate) tienen una película de protección blanca translúcida, lo que puede causar una falsa evaluación del color al abrir la caja; al retirar la película, el color y el acabado quedan conforme a los estándares. Durabilidad esperada de 5 años en exteriores. Colores metálicos en general: 3 años. En aplicaciones horizontales (capó y techo) esta durabilidad se reduce hasta un 30%; también puede extenderse o reducirse según las técnicas de aplicación, la conservación y la exposición a la intemperie.",
+   "specs": [
+    "Características",
+    "Rollos de 1,52 x 18 m (ancho de 152 cm, bobinas de 18 m)",
+    "Frontal de PVC polimérico supercalandrado",
+    "Espesor de 100 micras (120 micras en Ruby Glaze, Sakura Pink, Silver Sky Blue y Thunderstorm Gray)",
+    "Adhesivo base solvente, 40 g/m²",
+    "Liner PET de 140 micras",
+    "Sistema AIRFLOW antiburbujas: optimiza hasta 50% el tiempo de aplicación",
+    "Efecto metalizado y brillo intenso",
+    "Película de protección",
+    "Material direccional",
+    "Acabados especiales",
+    "Sahara Matte Cooper Metallic (18EVO19M)",
+    "acabado mate metalizado",
+    "Sunset Pearl Matte Orange (18EVO20M)",
+    "acabado mate",
+    "Shadow Matte Black (18EVO02)",
+    "acabado mate",
+    "Importante:",
+    "Durabilidad",
+    "Almacenamiento",
+    "Indicaciones"
+   ]
+  }
+ },
+ "fx": {
+  "en": {
+   "descricao": "Exclusive bubble-free micro-channel system that cuts film application time by up to 50%. Siliconized coated-paper liner and repositionable acrylic adhesive. Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Developed for vehicle protection and customization; it can also be used for cutting. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol. After application, avoid aggressive products and constant friction; use neutral soap.",
+   "specs": [
+    "Recommended uses",
+    "Developed for vehicle protection and customization; it can also be used for cutting.",
+    "Good stability on smooth and curved surfaces, resistant to light impacts.",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "Not recommended for corrugated, rough and/or porous surfaces.",
+    "Excessive use of solvent reduces the product's durability.",
+    "Install immediately after cutting.",
+    "After application, avoid aggressive products and constant friction; use neutral soap."
+   ]
+  },
+  "es": {
+   "descricao": "Exclusivo sistema de microcanales antiburbujas que optimiza hasta 50% el tiempo de aplicación de la película. Liner de papel couché siliconado y adhesivo acrílico reposicionable. Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Desarrollado para la protección y personalización de vehículos; también puede usarse para corte. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico. Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro.",
+   "specs": [
+    "Indicaciones",
+    "Desarrollado para la protección y personalización de vehículos; también puede usarse para corte.",
+    "Buena estabilidad en superficies lisas y curvas, resistente a impactos leves.",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "No se recomienda la aplicación sobre superficies corrugadas, rugosas y/o porosas.",
+    "El uso excesivo de solvente reduce la durabilidad del producto.",
+    "Instalar inmediatamente después del corte.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro."
+   ]
+  }
+ },
+ "jateado": {
+  "en": {
+   "descricao": "Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Developed for vehicle protection and customization; it can also be used for cutting. Material packed in boxes and cardboard rolls, 1.38 m wide, with a 170 g/m² liner. Expected durability: 5 years (except metallic colors: 1 year); on horizontal surfaces this durability is reduced by 30%. It may also extend or shorten depending on application and care techniques. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+   "specs": [
+    "Recommended uses",
+    "Developed for vehicle protection and customization; it can also be used for cutting.",
+    "Good stability on smooth and curved surfaces, resistant to light impacts.",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 1.38 m wide, with a 170 g/m² liner.",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+    "Physical properties",
+    "Face film: polymeric super-calendered PVC, 80 μm (microns) for solid colors and 100 μm (microns) for metallic colors.",
+    "Liner: siliconized coated paper, 170 g/m².",
+    "Adhesive: repositionable acrylic, 20 g/m² (+/- 2 g/m²).",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "Not recommended for corrugated, rough and/or porous surfaces.",
+    "Excessive use of solvent reduces the product's durability.",
+    "Install immediately after cutting.",
+    "After application, avoid aggressive products and constant friction; use neutral soap."
+   ]
+  },
+  "es": {
+   "descricao": "Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Desarrollado para la protección y personalización de vehículos; también puede usarse para corte. Material embalado en cajas y bobinas de cartón con ancho de 1,38 m y liner de 170 g/m². Durabilidad esperada: 5 años (excepto colores metálicos: 1 año); en superficies horizontales esta durabilidad se reduce un 30%. También puede extenderse o reducirse según las técnicas de aplicación y conservación. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+   "specs": [
+    "Indicaciones",
+    "Desarrollado para la protección y personalización de vehículos; también puede usarse para corte.",
+    "Buena estabilidad en superficies lisas y curvas, resistente a impactos leves.",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 1,38 m y liner de 170 g/m².",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+    "Propiedades físicas",
+    "Frontal: PVC polimérico supercalandrado de 80 μm (micras) para colores sólidos y 100 μm (micras) para colores metálicos.",
+    "Liner: papel couché siliconado de 170 g/m².",
+    "Adhesivo: acrílico reposicionable, 20 g/m² (+/- 2 g/m²).",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "No se recomienda la aplicación sobre superficies corrugadas, rugosas y/o porosas.",
+    "El uso excesivo de solvente reduce la durabilidad del producto.",
+    "Instalar inmediatamente después del corte.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro."
+   ]
+  }
+ },
+ "klear": {
+  "en": {
+   "descricao": "Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Developed for the protection and customization of vehicles and headlights; it can also be used for cutting. Good stability on smooth and curved surfaces, resistant to light impacts. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place. Expected durability: 5 years, reduced by 30% on horizontal surfaces. It may also extend or shorten depending on application and care techniques. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol.",
+   "specs": [
+    "Recommended uses",
+    "Physical properties",
+    "Face film: polymeric super-calendered PVC, 80 μm and 100 μm (microns).",
+    "Liner: siliconized coated paper, 170 g/m².",
+    "Adhesive: repositionable acrylic, 20 g/m² (+/- 2 g/m²).",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 0.46 m wide.",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "Not recommended for corrugated, rough and/or porous surfaces.",
+    "Excessive use of solvent reduces the product's durability.",
+    "Install immediately after cutting.",
+    "After application, avoid aggressive products and constant friction; use neutral soap."
+   ]
+  },
+  "es": {
+   "descricao": "Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Desarrollado para la protección y personalización de vehículos y faros; también puede usarse para corte. Buena estabilidad en superficies lisas y curvas, resistente a impactos leves. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado. Durabilidad esperada: 5 años, reducida un 30% en superficies horizontales. También puede extenderse o reducirse según las técnicas de aplicación y conservación. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico.",
+   "specs": [
+    "Indicaciones",
+    "Propiedades físicas",
+    "Frontal: PVC polimérico supercalandrado de 80 μm y 100 μm (micras).",
+    "Liner: papel couché siliconado de 170 g/m².",
+    "Adhesivo: acrílico reposicionable, 20 g/m² (+/- 2 g/m²).",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 0,46 m.",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "No se recomienda la aplicación sobre superficies corrugadas, rugosas y/o porosas.",
+    "El uso excesivo de solvente reduce la durabilidad del producto.",
+    "Instalar inmediatamente después del corte.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro."
+   ]
+  }
+ },
+ "krusher": {
+  "en": {
+   "descricao": "Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Developed for vehicle protection and customization; it can also be used for cutting. Good stability on smooth and curved surfaces, resistant to light impacts. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place. Expected durability: 5 years (except metallic colors: 1 year); on horizontal surfaces this durability is reduced by 30%. It may also extend or shorten depending on application and care techniques. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with dust, impurities, grease or any other chemical product that could affect the material's adhesion.",
+   "specs": [
+    "Recommended uses",
+    "Physical properties",
+    "Face film: polymeric super-calendered PVC, 100 μm (microns).",
+    "Liner: siliconized coated paper, 170 g/m².",
+    "Adhesive: repositionable acrylic, 20 g/m² (+ 2 g/m²).",
+    "Storage",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 1.38 m wide.",
+    "Recommendations",
+    "Not recommended for rough and/or porous surfaces.",
+    "Excessive use of solvent reduces the product's durability.",
+    "For cut jobs, install immediately after cutting.",
+    "After application, avoid aggressive products and constant friction."
+   ]
+  },
+  "es": {
+   "descricao": "Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Desarrollado para la protección y personalización de vehículos; también puede usarse para corte. Buena estabilidad en superficies lisas y curvas, resistente a impactos leves. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado. Durabilidad esperada: 5 años (excepto colores metálicos: 1 año); en superficies horizontales esta durabilidad se reduce un 30%. También puede extenderse o reducirse según las técnicas de aplicación y conservación. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con polvo, impurezas, grasa o cualquier otro producto químico que pueda afectar la adherencia del material.",
+   "specs": [
+    "Indicaciones",
+    "Propiedades físicas",
+    "Frontal: PVC polimérico supercalandrado de 100 μm (micras).",
+    "Liner: papel couché siliconado de 170 g/m².",
+    "Adhesivo: acrílico reposicionable, 20 g/m² (+ 2 g/m²).",
+    "Almacenamiento",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 1,38 m.",
+    "Recomendaciones",
+    "No se recomienda la aplicación sobre superficies rugosas y/o porosas.",
+    "El uso excesivo de solvente reduce la durabilidad del producto.",
+    "En trabajos con corte, instalar inmediatamente después del corte.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes."
+   ]
+  }
+ },
+ "protecao-de-pintura-ppf": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "satin": {
+  "en": {
+   "descricao": "Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%. Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place. Packed in boxes and cardboard rolls, 1.38 m wide; white and black are also available in 1.22 m width. On horizontal surfaces these durabilities are reduced by 30%. They may also extend or shorten depending on application and care techniques. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol. After application, avoid aggressive products and constant friction; use neutral soap.",
+   "specs": [
+    "Recommended uses",
+    "Physical properties",
+    "Face film:",
+    "SATIN: polymeric super-calendered PVC, 80 μm (microns) for solid colors and 100 μm (microns) for metallic colors.",
+    "SATIN PEARL WHITE: polymeric super-calendered PVC, 160 μm (microns);",
+    "Liner:",
+    "SATIN: siliconized coated paper, 170 g/m²;",
+    "SATIN PEARL WHITE: siliconized coated paper, 170 g/m².",
+    "Adhesive:",
+    "Adhesive: repositionable acrylic, 20 g/m² (+/- 2 g/m²).",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 1.38 m wide. White and black are also available in 1.22 m width.",
+    "Expected durability: for SATIN: 5 years for outdoor use;",
+    "For SATIN PEARL WHITE and SATIN metallic colors: 1 year for outdoor use;",
+    "On horizontal surfaces these durabilities are reduced by 30%. They may also extend or shorten depending on application and care techniques.",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product;",
+    "Not recommended for corrugated, rough and/or porous surfaces;",
+    "Excessive use of solvent reduces the product's durability;",
+    "Install immediately after cutting;",
+    "After application, avoid aggressive products and constant friction; use neutral soap."
+   ]
+  },
+  "es": {
+   "descricao": "Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%. Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado. Embalado en cajas y bobinas de cartón con ancho de 1,38 m; los colores blanco y negro también están disponibles en ancho de 1,22 m. En superficies horizontales estas durabilidades se reducen un 30%. También pueden extenderse o reducirse según las técnicas de aplicación y conservación. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico. Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro.",
+   "specs": [
+    "Indicaciones",
+    "Propiedades físicas",
+    "Frontal:",
+    "SATIN: PVC polimérico supercalandrado de 80 μm (micras) para color sólido y 100 μm (micras) para color metálico.",
+    "SATIN PEARL WHITE: PVC polimérico supercalandrado de 160 μm (micras);",
+    "Liner:",
+    "SATIN: papel couché siliconado de 170 g/m²;",
+    "SATIN PEARL WHITE: papel couché siliconado de 170 g/m².",
+    "Adhesivo:",
+    "Adhesivo: acrílico reposicionable, 20 g/m² (+/- 2 g/m²).",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 1,38 m. Los colores blanco y negro también están disponibles en ancho de 1,22 m.",
+    "Durabilidad esperada: para SATIN: 5 años para uso en exteriores;",
+    "Para SATIN PEARL WHITE y los colores metálicos de SATIN: 1 año para uso en exteriores;",
+    "En superficies horizontales estas durabilidades se reducen un 30%. También pueden extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico;",
+    "No se recomienda la aplicación sobre superficies corrugadas, rugosas y/o porosas;",
+    "El uso excesivo de solvente reduce la durabilidad del producto;",
+    "Instalar inmediatamente después del corte;",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro."
+   ]
+  }
+ },
+ "ultra": {
+  "en": {
+   "descricao": "A high-gloss polymeric super-calendered PVC film, available in solid and metallic colors. Siliconized coated-paper liner with AIRFLOW 3.0 technology, repositionable acrylic adhesive and protective film. Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Developed for full wraps, protection and customization of vehicles; it can also be used for electronic cutting. Good stability on smooth and curved surfaces, resistant to light impacts. Face film: polymeric super-calendered PVC, 100 μm (microns), 120 μm for Black Piano and 170 μm (microns) for Argent Metallic. Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+   "specs": [
+    "Recommended uses",
+    "Physical properties",
+    "Face film: polymeric super-calendered PVC, 100 μm (microns), 120 μm for Black Piano and 170 μm (microns) for Argent Metallic.",
+    "Adhesive: repositionable acrylic, 20 g/m² (+ 2 g/m²).",
+    "Storage",
+    "Store at temperatures between 20ºC and 30ºC, with relative humidity between 40% and 50%.",
+    "Shelf life: 2 years from the manufacturing date, kept in the original packaging in a suitable place.",
+    "Supply and durability",
+    "Material packed in cardboard boxes, 1.38 m wide. Ask about ULTRA BLACK PIANO availability in 1.22 m width with a 140 g/m² liner.",
+    "Expected durability: 5 years for outdoor use (Ultra Cristal: 2 years).",
+    "Important: clear or translucent materials such as ULTRA CRISTAL do not have the AIRFLOW system.",
+    "Technical features:",
+    "Recommendations",
+    "Not recommended for rough and/or porous surfaces.",
+    "For cut jobs, install immediately after cutting/removing the liner. Squeegeeing and pressure after application ensure better adhesive performance.",
+    "Our products are not part of the auto-parts or construction-materials supply chain."
+   ]
+  },
+  "es": {
+   "descricao": "Película de PVC polimérico supercalandrado de alto brillo, disponible en colores sólidos y metálicos. Liner de papel couché siliconado con tecnología AIRFLOW 3.0, adhesivo acrílico reposicionable y película de protección. Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Desarrollado para la rotulación total, protección y personalización de vehículos; también puede usarse para corte electrónico. Buena estabilidad en superficies lisas y curvas, resistente a impactos leves. Frontal: PVC polimérico supercalandrado de 100 μm (micras), 120 μm para Black Piano y 170 μm (micras) para el color Argent Metallic. Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+   "specs": [
+    "Indicaciones",
+    "Propiedades físicas",
+    "Frontal: PVC polimérico supercalandrado de 100 μm (micras), 120 μm para Black Piano y 170 μm (micras) para el color Argent Metallic.",
+    "Adhesivo: acrílico reposicionable, 20 g/m² (+ 2 g/m²).",
+    "Almacenamiento",
+    "Almacenar a temperaturas entre 20ºC y 30ºC, con humedad relativa entre 40% y 50%.",
+    "Vigencia: 2 años a partir de la fecha de fabricación, conservado en el embalaje original y en un lugar adecuado.",
+    "Suministro y durabilidad",
+    "Material embalado en caja de cartón con ancho de 1,38 m. Consulte la disponibilidad de ULTRA BLACK PIANO en ancho de 1,22 m con liner de 140 g/m².",
+    "Durabilidad esperada: 5 años para uso en exteriores (Ultra Cristal: 2 años).",
+    "Importante: los materiales transparentes o translúcidos como ULTRA CRISTAL no tienen sistema AIRFLOW.",
+    "Características técnicas:",
+    "Recomendaciones",
+    "No se recomienda la aplicación sobre superficies rugosas y/o porosas.",
+    "En trabajos con corte, instalar inmediatamente después del corte/retiro del liner. El espatulado y la presión después de la aplicación garantizan un mejor desempeño del adhesivo.",
+    "Nuestros productos no forman parte de la cadena productiva de autopartes ni de materiales de construcción."
+   ]
+  }
+ },
+ "eletrostatico": {
+  "en": {
+   "descricao": "A product with excellent printability and ink anchoring, approved by the main machine and ink manufacturers. Alltak® Print is a line of PVC films produced with permanent, removable and repositionable acrylic adhesive, specially developed for flexography, offset, screen and digital printing. PVC film without adhesive that clings by static. Widely used for oil-change labels and cold or damp areas (glass coolers, shower enclosures and shop windows). Expected durability: 2 years. It may also extend or shorten depending on application and care techniques.",
+   "specs": [
+    "Recommended uses",
+    "Used for oil-change labels and cold or damp areas (glass coolers, shower enclosures and shop windows).",
+    "Physical properties",
+    "Electrostatically laminated.",
+    "Dimensional stability:",
+    "48 h at 70ºC",
+    "Bonded to aluminum (shrinkage): 0.127%",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls, 1.00 m wide.",
+    "Expected durability: 2 years. It may also extend or shorten depending on application and care techniques.",
+    "Storage",
+    "1 year at temperatures between 20ºC and 30ºC, with RH between 40% and 50%.",
+    "AW: Auto Wrap"
+   ]
+  },
+  "es": {
+   "descricao": "Producto con excelente imprimibilidad y anclaje de la tinta, homologado por los principales fabricantes de máquinas y tintas. Alltak® Print es una línea de películas de PVC producida con adhesivo acrílico permanente, removible y reposicionable, especialmente desarrollada para impresión en flexografía, offset, serigrafía y digital. Película de PVC sin adhesivo, con adherencia por estática. Muy utilizada para etiquetas de cambio de aceite y zonas frías o húmedas (refrigeradores de vidrio, mamparas de baño y vitrinas). Durabilidad esperada: 2 años. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+   "specs": [
+    "Indicaciones",
+    "Utilizadas para etiquetas de cambio de aceite y zonas frías o húmedas (refrigeradores de vidrio, mamparas de baño y vitrinas).",
+    "Propiedades físicas",
+    "Laminado por electrostática.",
+    "Estabilidad dimensional:",
+    "48 h a 70ºC",
+    "Adherido al aluminio (contracción): 0,127%",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón con ancho de 1,00 m.",
+    "Durabilidad esperada: 2 años. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Almacenamiento",
+    "1 año a temperaturas entre 20ºC y 30ºC, con HR entre 40% y 50%.",
+    "AW: Auto Wrap"
+   ]
+  }
+ },
+ "print-flex": {
+  "en": {
+   "descricao": "",
+   "specs": [
+    "White Glossy (gloss), White Matte (matte), Clear Glossy (gloss) and Clear Matte (matte).",
+    "Recommended uses",
+    "Physical properties",
+    "Adhesive: permanent acrylic, 21 g/m²",
+    "Dimensional stability:",
+    "48 h at 70ºC",
+    "Bonded to aluminum (shrinkage): 0.109%",
+    "Supply and durability",
+    "Material packed in boxes and cardboard rolls in various widths.",
+    "Expected durability: 1 year. It may also extend or shorten depending on application and care techniques.",
+    "Storage",
+    "2 years at temperatures between 20ºC and 30ºC, with RH between 40% and 50%.",
+    "AW: Auto Wrap"
+   ]
+  },
+  "es": {
+   "descricao": "",
+   "specs": [
+    "Blanco Glossy (brillo), Blanco Matte (mate), Transparente Glossy (brillo) y Transparente Matte (mate).",
+    "Indicaciones",
+    "Propiedades físicas",
+    "Adhesivo: acrílico permanente, 21 g/m²",
+    "Estabilidad dimensional:",
+    "48 h a 70ºC",
+    "Adherido al aluminio (contracción): 0,109%",
+    "Suministro y durabilidad",
+    "Material embalado en cajas y bobinas de cartón de varios anchos.",
+    "Durabilidad esperada: 1 año. También puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+    "Almacenamiento",
+    "2 años a temperaturas entre 20ºC y 30ºC, con HR entre 40% y 50%.",
+    "AW: Auto Wrap"
+   ]
+  }
+ },
+ "color": {
+  "en": {
+   "descricao": "Recommended for applications such as signage, advertising, design, decoration and fleet identification. Images are for illustration only; for a more accurate perception, request our color catalog from your nearest distributor. Apply on a smooth, flat surface previously cleaned with isopropyl alcohol. After application, avoid aggressive products and constant friction; use neutral soap. Material packed in boxes and cardboard rolls, 0.50 and 1.00 m wide. Expected durability: 5 years (except Silver, 2 years, and Flex Silver, 6 months). Important: durability may extend or shorten depending on application and care techniques.",
+   "specs": [
+    "Recommended uses",
+    "Self-extinguishing: test mounted on aluminum",
+    "Minimum application temperature (+10º to 40ºC)",
+    "End use (-20º to +90ºC)",
+    "Physical properties",
+    "Adhesive: permanent acrylic, 20 g/m²",
+    "Dimensional stability: 48 h at 70ºC",
+    "Bonded to aluminum (shrinkage): 0.127%",
+    "Recommendations",
+    "Apply on a smooth, flat surface previously cleaned with isopropyl alcohol, avoiding contact with impurities, grease or any other chemical product.",
+    "After application, avoid aggressive products and constant friction; use neutral soap.",
+    "Supply and durability",
+    "• Material packed in boxes and cardboard rolls, 0.50 and 1.00 m wide.",
+    "Storage",
+    "2 years at temperatures between 20ºC and 30ºC, keeping relative humidity between 40% and 50%."
+   ]
+  },
+  "es": {
+   "descricao": "Indicada para aplicaciones como señalización, publicidad, diseño, decoración e identificación de flotas. Imágenes meramente ilustrativas; para una percepción más real, solicite nuestro catálogo de colores a su distribuidor más cercano. Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico. Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro. Material embalado en cajas y bobinas de cartón con anchos de 0,50 y 1,00 m. Durabilidad esperada: 5 años (excepto el color Plata, 2 años, y Flex Plata, 6 meses). Importante: la durabilidad puede extenderse o reducirse según las técnicas de aplicación y conservación.",
+   "specs": [
+    "Indicaciones",
+    "Autoextinguible: prueba montada sobre aluminio",
+    "Aplicación mínima (+10º a 40ºC)",
+    "Uso final (-20º a +90ºC)",
+    "Propiedades físicas",
+    "Adhesivo: acrílico permanente, 20 g/m²",
+    "Estabilidad dimensional: 48 h a 70ºC",
+    "Adherido al aluminio (contracción): 0,127%",
+    "Recomendaciones",
+    "Aplicar sobre una superficie lisa y plana previamente limpiada con alcohol isopropílico, evitando el contacto con impurezas, grasa o cualquier otro producto químico.",
+    "Después de la aplicación, evitar productos agresivos y fricciones constantes; usar jabón neutro.",
+    "Suministro y durabilidad",
+    "• Material embalado en cajas y bobinas de cartón con anchos de 0,50 y 1,00 m.",
+    "Almacenamiento",
+    "2 años a temperaturas entre 20ºC y 30ºC, manteniendo la humedad relativa entre 40% y 50%."
+   ]
+  }
+ },
+ "premium": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "killer": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "kleaner": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ },
+ "protetik": {
+  "en": {
+   "descricao": "",
+   "specs": []
+  },
+  "es": {
+   "descricao": "",
+   "specs": []
+  }
+ }
+}

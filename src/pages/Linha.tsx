@@ -3,10 +3,13 @@ import { Link, useParams } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import linhas from '../data/wp/linhas.json'
+import linhasI18n from '../data/wp/linhas-i18n.json'
 import { STORE_URL } from '../data/site'
+import { useI18n } from '../i18n'
 
 // Página de linha de produto migrada do site antigo (WordPress):
 // descrição, galeria de cores com código, especificações técnicas e boletim.
+// Em EN/ES a descrição e as specs vêm de linhas-i18n.json (gerado em migracao/).
 
 type Cor = { arquivo: string; rotulo: string; codigo: string | null }
 type LinhaT = {
@@ -14,6 +17,7 @@ type LinhaT = {
   descricao: string; specs: string[]; boletins: string[]; pdfs_apoio: string[]
   cores: Cor[]; og_image?: string | null; url_antiga: string
 }
+type LinhaI18n = Record<string, Record<'en' | 'es', { descricao: string; specs: string[] }>>
 
 const CAT_NOME: Record<string, string> = {
   automotivo: 'Automotivo', arquitetura: 'Arquitetura', impressao: 'Impressão',
@@ -23,7 +27,11 @@ const CAT_NOME: Record<string, string> = {
 
 export default function Linha() {
   const { categoria, slug } = useParams()
+  const { lang, t, tv } = useI18n()
   const linha = (linhas as LinhaT[]).find((l) => l.categoria === categoria && l.slug === slug)
+  const trad = lang !== 'pt' && slug ? (linhasI18n as LinhaI18n)[slug]?.[lang] : undefined
+  const descricao = trad?.descricao || linha?.descricao || linha?.meta_description
+  const specs = trad && trad.specs.length > 0 ? trad.specs : linha?.specs ?? []
   const [idx, setIdx] = useState<number | null>(null)
   const corAtiva = idx !== null ? linha?.cores[idx] ?? null : null
   const baixar = async (src: string, nome: string) => {
@@ -42,27 +50,27 @@ export default function Linha() {
   if (!linha) {
     return (
       <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black px-6 text-center">
-        <p className="eyebrow text-alltak-blue">Linha não encontrada</p>
-        <h1 className="mt-3 text-4xl text-white md:text-6xl">Essa linha não existe</h1>
-        <Link to="/produtos" className="btn-trapezoid btn-blue mt-8">Ver produtos</Link>
+        <p className="eyebrow text-alltak-blue">{t('prod.naoEncontrada')}</p>
+        <h1 className="mt-3 text-4xl text-white md:text-6xl">{t('prod.naoExiste')}</h1>
+        <Link to="/produtos" className="btn-trapezoid btn-blue mt-8">{t('cta.verProdutos')}</Link>
       </section>
     )
   }
 
   return (
     <>
-      <PageHeader eyebrow={CAT_NOME[linha.categoria] ?? linha.categoria} title={linha.nome}>
-        {linha.descricao || linha.meta_description}
+      <PageHeader eyebrow={tv(CAT_NOME[linha.categoria] ?? linha.categoria)} title={linha.nome}>
+        {descricao}
         <div className="mt-6 flex flex-wrap gap-3">
           {linha.boletins[0] && (
             <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2 !text-xs">
-              Boletim técnico ↓
+              {t('prod.boletim')} ↓
             </a>
           )}
           <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2 !text-xs">
-            Comprar na Alltak Store ↗
+            {t('prod.comprarStore')}
           </a>
-          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2 !text-xs">Onde comprar</Link>
+          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2 !text-xs">{t('cta.ondeComprar')}</Link>
         </div>
       </PageHeader>
 
@@ -71,8 +79,8 @@ export default function Linha() {
         <section className="bg-alltak-black py-14">
           <div className="container-x">
             <Reveal>
-              <p className="eyebrow text-alltak-blue">Cores disponíveis</p>
-              <h2 className="mt-2 text-4xl text-white md:text-5xl">{linha.cores.length} opções</h2>
+              <p className="eyebrow text-alltak-blue">{t('prod.coresDisponiveis')}</p>
+              <h2 className="mt-2 text-4xl text-white md:text-5xl">{linha.cores.length} {t('prod.opcoes')}</h2>
             </Reveal>
             <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {linha.cores.map((c, i) => (
@@ -92,25 +100,23 @@ export default function Linha() {
       )}
 
       {/* Especificações técnicas */}
-      {linha.specs.length > 0 && (
+      {specs.length > 0 && (
         <section className="border-t border-white/10 bg-alltak-black py-14">
           <div className="container-x grid gap-10 md:grid-cols-2">
             <Reveal>
               <div>
-                <p className="eyebrow text-alltak-blue">Ficha da linha</p>
-                <h2 className="mt-2 text-4xl text-white md:text-5xl">Especificações técnicas</h2>
-                <p className="mt-4 text-sm text-white/50">
-                  Dados de referência. Confirme sempre no boletim técnico oficial da linha.
-                </p>
+                <p className="eyebrow text-alltak-blue">{t('prod.fichaLinha')}</p>
+                <h2 className="mt-2 text-4xl text-white md:text-5xl">{t('prod.especificacoes')}</h2>
+                <p className="mt-4 text-sm text-white/50">{t('prod.refBoletim')}</p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {linha.boletins.map((b, i) => (
                     <a key={b} href={b} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2 !text-xs">
-                      Boletim técnico{linha.boletins.length > 1 ? ` ${i + 1}` : ''} ↓
+                      {t('prod.boletim')}{linha.boletins.length > 1 ? ` ${i + 1}` : ''} ↓
                     </a>
                   ))}
                   {linha.pdfs_apoio.map((p) => (
                     <a key={p} href={p} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !py-2 !text-xs">
-                      {p.includes('check-list') ? 'Check-list de envelopamento' : p.includes('limpeza') ? 'Manual de limpeza' : 'Material de apoio'} ↓
+                      {p.includes('check-list') ? t('prod.checklist') : p.includes('limpeza') ? t('prod.manualLimpeza') : t('prod.materialApoio')} ↓
                     </a>
                   ))}
                 </div>
@@ -118,7 +124,7 @@ export default function Linha() {
             </Reveal>
             <Reveal delay={120}>
               <ul className="divide-y divide-white/10 border-y border-white/10">
-                {linha.specs.map((s, i) => (
+                {specs.map((s, i) => (
                   <li key={i} className="py-2.5 text-sm text-white/75">{s}</li>
                 ))}
               </ul>
@@ -131,8 +137,8 @@ export default function Linha() {
       {irmas.length > 0 && (
         <section className="border-t border-white/10 bg-alltak-black py-14">
           <div className="container-x">
-            <p className="eyebrow text-alltak-blue">{CAT_NOME[linha.categoria]}</p>
-            <h2 className="mt-2 text-3xl text-white md:text-4xl">Outras linhas</h2>
+            <p className="eyebrow text-alltak-blue">{tv(CAT_NOME[linha.categoria])}</p>
+            <h2 className="mt-2 text-3xl text-white md:text-4xl">{t('prod.outrasLinhas')}</h2>
             <div className="mt-6 flex flex-wrap gap-2">
               {irmas.map((l) => (
                 <Link key={l.slug} to={`/produtos/${l.categoria}/${l.slug}`}
@@ -176,10 +182,10 @@ export default function Linha() {
                 <button
                   onClick={() => baixar(corAtiva.arquivo, `alltak-${linha.slug}-${corAtiva.codigo ?? idx + 1}.jpg`)}
                   className="font-display text-xs font-bold uppercase text-alltak-blue hover:text-white">
-                  Baixar imagem ↓
+                  {t('comum.baixarImagem')}
                 </button>
                 <button onClick={() => setIdx(null)} className="font-display text-xs font-bold uppercase text-white/60 hover:text-alltak-blue">
-                  Fechar ✕
+                  {t('comum.fechar')}
                 </button>
               </div>
             </div>
