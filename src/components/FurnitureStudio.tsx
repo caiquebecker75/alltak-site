@@ -14,6 +14,24 @@ const MOVEIS = [
   { key: 'estante', label: 'Estante', ambiente: 'Quarto', url: './models/Shelf_01/Shelf_01_1k.gltf' },
 ] as const
 
+// Tamanho de uma repetição da textura no móvel (unidades da cena, ~0,8 m),
+// pelo tamanho real do desenho: ripas e veios mais longos, tijolo e metrô
+// com peças pequenas, mármore com veios grandes.
+function escalaDoPadrao(c: Color): number {
+  const n = c.name.toLowerCase()
+  if (n.includes('ripado')) return 0.9
+  if (n.includes('muxarabi')) return 1.0
+  if (n.startsWith('tijolo')) return 0.42
+  if (n.startsWith('metrô') || n.startsWith('metro')) return 0.45
+  if (n.startsWith('mármore') || n.startsWith('marmore') || n.startsWith('concreto')) return 1.4
+  if (n.startsWith('wood')) return 0.9
+  if (n.startsWith('lombarda')) return 1.0
+  return 0.7
+}
+
+// desenhos geométricos repetem direto; veios (madeira, mármore...) espelham
+const geometrico = (c: Color) => /ripado|muxarabi|tijolo|metr[oô]|listras|azulejo|forma|london/i.test(c.name)
+
 export default function FurnitureStudio() {
   const { open } = useLeadGate()
   const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor'), [])
@@ -57,7 +75,7 @@ export default function FurnitureStudio() {
                 </div>
               }
             >
-              <Furniture3D key={movel.key} modelUrl={movel.url} textureUrl={active.texture ?? active.swatch} className="h-full w-full cursor-hot" />
+              <Furniture3D key={movel.key} modelUrl={movel.url} textureUrl={active.texture ?? active.swatch} escala={escalaDoPadrao(active)} espelhar={!geometrico(active)} className="h-full w-full cursor-hot" />
             </Suspense>
           </ErrBoundary>
         </div>

@@ -6,16 +6,57 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 
 // Real 3D furniture re-skin: downloaded CC0 furniture (Poly Haven) whose
-// surface is re-covered with an Alltak Decor pattern in real time — exactly
-// what the adhesive does to real furniture. Rotatable, studio-lit.
+// surface is re-covered with an Alltak Decor pattern in real time, like the
+// film applied over real furniture. Rotatable, studio-lit.
 
-function CabinetModel({ modelUrl, textureUrl }: { modelUrl: string; textureUrl?: string }) {
+// Box-projected UVs: the downloaded models use an atlas UV layout (each part
+// mapped to its own patch of the texture, at its own scale and rotation),
+// which made the Alltak pattern come out at a different size and angle on
+// every drawer. Instead, each triangle gets UVs from its world position,
+// projected on the axis its face points to: fronts/sides use (horizontal, up)
+// so wood grain and slats run vertically, tops use (x, z). Same scale on every
+// face, continuous across edges, like a real film applied over the piece.
+function projetarUVs(mesh: THREE.Mesh, tamanho: number) {
+  const g = (mesh.geometry.index ? mesh.geometry.toNonIndexed() : mesh.geometry.clone()) as THREE.BufferGeometry
+  const pos = g.getAttribute('position')
+  const uv = new Float32Array(pos.count * 2)
+  const m = mesh.matrixWorld
+  const a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3()
+  const n = new THREE.Vector3(), e1 = new THREE.Vector3(), e2 = new THREE.Vector3()
+  for (let i = 0; i < pos.count; i += 3) {
+    a.fromBufferAttribute(pos, i).applyMatrix4(m)
+    b.fromBufferAttribute(pos, i + 1).applyMatrix4(m)
+    c.fromBufferAttribute(pos, i + 2).applyMatrix4(m)
+    n.crossVectors(e1.subVectors(b, a), e2.subVectors(c, a))
+    const ax = Math.abs(n.x), ay = Math.abs(n.y), az = Math.abs(n.z)
+    ;[a, b, c].forEach((v, k) => {
+      let u: number, w: number
+      if (ay >= ax && ay >= az) [u, w] = [v.x, v.z] // tampo / base
+      else if (ax >= az) [u, w] = [n.x > 0 ? -v.z : v.z, v.y] // laterais
+      else [u, w] = [n.z > 0 ? v.x : -v.x, v.y] // frente / fundo
+      uv[(i + k) * 2] = u / tamanho
+      uv[(i + k) * 2 + 1] = w / tamanho
+    })
+  }
+  g.setAttribute('uv', new THREE.BufferAttribute(uv, 2))
+  g.deleteAttribute('uv1')
+  g.deleteAttribute('uv2')
+  g.computeVertexNormals()
+  mesh.geometry = g
+}
+
+function CabinetModel({ modelUrl, textureUrl, escala, espelhar }: { modelUrl: string; textureUrl?: string; escala: number; espelhar: boolean }) {
   const gltf = useLoader(GLTFLoader, modelUrl)
-  const mats = useRef<THREE.MeshStandardMaterial[]>([])
+  const { gl } = useThree()
+  const mat = useMemo(
+    // filme vinílico: acabamento acetinado uniforme. Os mapas do modelo
+    // (relevo/aspereza da madeira original) saem, pois estavam no atlas antigo
+    () => new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.42, metalness: 0, envMapIntensity: 0.9 }),
+    [],
+  )
 
   const scene = useMemo(() => {
     const root = gltf.scene.clone(true)
-    const found: THREE.MeshStandardMaterial[] = []
     // center + scale to a consistent frame
     const box = new THREE.Box3().setFromObject(root)
     const size = new THREE.Vector3()
@@ -26,33 +67,37 @@ function CabinetModel({ modelUrl, textureUrl }: { modelUrl: string; textureUrl?:
     root.scale.setScalar(s)
     // center X/Z, rest the base on the floor (y = 0)
     root.position.set(-center.x * s, -box.min.y * s, -center.z * s)
+    root.updateMatrixWorld(true)
     root.traverse((o) => {
       const mesh = o as THREE.Mesh
       if (!mesh.isMesh) return
-      const m = mesh.material as THREE.MeshStandardMaterial
-      if (m && !found.includes(m)) found.push(m)
+      projetarUVs(mesh, escala)
+      mesh.material = mat
     })
-    mats.current = found
     return root
-  }, [gltf])
+  }, [gltf, mat, escala])
 
-  // re-skin: swap the base color map for the Alltak pattern, keep the model's
-  // normal / roughness maps so the surface still reads as real material.
   useEffect(() => {
     if (!textureUrl) return
-    const loader = new THREE.TextureLoader()
-    loader.load(textureUrl, (tex) => {
+    let vivo = true
+    new THREE.TextureLoader().load(textureUrl, (tex) => {
+      if (!vivo) return tex.dispose()
       tex.colorSpace = THREE.SRGBColorSpace
-      tex.wrapS = tex.wrapT = THREE.RepeatWrapping
-      // textureUrl is already a flat material crop, so just tile it lightly
-      tex.repeat.set(2, 2)
-      mats.current.forEach((m) => {
-        m.map = tex
-        m.color.set(0xffffff)
-        m.needsUpdate = true
-      })
+      // as texturas são recortes de foto (não repetem sem emenda): em veios
+      // (madeira, mármore) espelhar a cada repetição esconde as emendas; em
+      // desenhos geométricos (muxarabi, ripas, tijolo) espelhar vira
+      // caleidoscópio, então ali a repetição é direta
+      tex.wrapS = tex.wrapT = espelhar ? THREE.MirroredRepeatWrapping : THREE.RepeatWrapping
+      tex.anisotropy = gl.capabilities.getMaxAnisotropy()
+      const antigo = mat.map
+      mat.map = tex
+      mat.needsUpdate = true
+      antigo?.dispose()
     })
-  }, [textureUrl])
+    return () => {
+      vivo = false
+    }
+  }, [textureUrl, espelhar, mat, gl])
 
   return <primitive object={scene} />
 }
@@ -70,23 +115,22 @@ function makeShadowTexture() {
   return new THREE.CanvasTexture(c)
 }
 
-// simple room: floor + corner walls so the piece reads as an ambiente
+// room: a closed box around the piece (floor + 4 walls), so orbiting all the
+// way around never looks past the walls into empty background
 function Room() {
   const shadow = useMemo(makeShadowTexture, [])
   return (
     <group>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
-        <planeGeometry args={[26, 26]} />
+        <planeGeometry args={[16, 16]} />
         <meshStandardMaterial color="#d7d2c8" roughness={0.95} metalness={0} />
       </mesh>
-      <mesh position={[0, 5, -1.9]}>
-        <planeGeometry args={[26, 12]} />
-        <meshStandardMaterial color="#e7e3da" roughness={1} metalness={0} />
-      </mesh>
-      <mesh rotation={[0, Math.PI / 2, 0]} position={[-1.9, 5, 0]}>
-        <planeGeometry args={[26, 12]} />
-        <meshStandardMaterial color="#ddd8ce" roughness={1} metalness={0} />
-      </mesh>
+      {[0, 1, 2, 3].map((k) => (
+        <mesh key={k} rotation={[0, (k * Math.PI) / 2, 0]} position={[Math.sin((k * Math.PI) / 2) * -8, 4, Math.cos((k * Math.PI) / 2) * -8]}>
+          <planeGeometry args={[16, 8]} />
+          <meshStandardMaterial color={k % 2 ? '#ddd8ce' : '#e7e3da'} roughness={1} metalness={0} />
+        </mesh>
+      ))}
       {/* contact shadow */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.012, 0]}>
         <planeGeometry args={[3.4, 3.4]} />
@@ -107,7 +151,7 @@ function Rig() {
     c.autoRotateSpeed = 1.0
     c.enablePan = false
     c.minDistance = 2.8
-    c.maxDistance = 7.5
+    c.maxDistance = 6.5
     c.maxPolarAngle = Math.PI / 2.05
     c.target.set(0, 0.9, 0)
     controls.current = c
@@ -135,10 +179,16 @@ function StudioEnv() {
 export default function Furniture3D({
   modelUrl,
   textureUrl,
+  escala = 0.6,
+  espelhar = true,
   className = '',
 }: {
   modelUrl: string
   textureUrl?: string
+  /** tamanho de uma repetição da textura, em unidades da cena (~0,8 m cada) */
+  escala?: number
+  /** espelhar a repetição (veios) ou repetir direto (desenhos geométricos) */
+  espelhar?: boolean
   className?: string
 }) {
   return (
@@ -153,7 +203,7 @@ export default function Furniture3D({
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 8, 4]} intensity={1.15} />
         <Room />
-        <CabinetModel modelUrl={modelUrl} textureUrl={textureUrl} />
+        <CabinetModel modelUrl={modelUrl} textureUrl={textureUrl} escala={escala} espelhar={espelhar} />
       </Canvas>
     </div>
   )

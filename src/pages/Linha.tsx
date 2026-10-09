@@ -19,6 +19,30 @@ type LinhaT = {
 }
 type LinhaI18n = Record<string, Record<'en' | 'es', { descricao: string; specs: string[] }>>
 
+// Rótulos da galeria vieram do nome do arquivo no WordPress
+// ("FPP_GLOSS_ALLTAK", "KROMA_GRAFITE_SITE", "BANANA-YELLOW-18U21"):
+// troca _ e - por espaço e tira sufixos de upload (SITE, LOJA VIRTUAL, 1080...)
+function limparRotulo(r: string): string {
+  return r
+    .replace(/\.(JPG|JPEG|PNG|WEBP)(\.WEBP)?/gi, '')
+    .replace(/[_]+/g, ' ')
+    .replace(/-{2,}/g, ' ')
+    .replace(/(?<=[A-ZÀ-Ú])-(?=[A-ZÀ-Ú0-9])/g, ' ')
+    .replace(/\b(SITE|ALLTAK|LOJA VIRTUAL|LOJA ONLINE|BOBINA|1080|ADESIVOS)\b/gi, ' ')
+    .replace(/\s+\d(\s+\d)?$/, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
+// A meta description do WordPress é cortada em ~160 caracteres, no meio da
+// frase. Quando ela é o único texto, mostra só até a última frase completa.
+function frasesCompletas(t?: string | null): string {
+  if (!t) return ''
+  const fim = Math.max(t.lastIndexOf('. '), t.lastIndexOf('! '), t.lastIndexOf('? '))
+  if (/[.!?]\s*$/.test(t)) return t
+  return fim > 0 ? t.slice(0, fim + 1) : ''
+}
+
 const CAT_NOME: Record<string, string> = {
   automotivo: 'Automotivo', arquitetura: 'Arquitetura', impressao: 'Impressão',
   'sign-design': 'Sign & Design', 'wrap-care': 'Wrap Care', acessorios: 'Acessórios',
@@ -30,7 +54,7 @@ export default function Linha() {
   const { lang, t, tv } = useI18n()
   const linha = (linhas as LinhaT[]).find((l) => l.categoria === categoria && l.slug === slug)
   const trad = lang !== 'pt' && slug ? (linhasI18n as LinhaI18n)[slug]?.[lang] : undefined
-  const descricao = trad?.descricao || linha?.descricao || linha?.meta_description
+  const descricao = trad?.descricao || linha?.descricao || frasesCompletas(linha?.meta_description)
   const specs = trad && trad.specs.length > 0 ? trad.specs : linha?.specs ?? []
   const [idx, setIdx] = useState<number | null>(null)
   const corAtiva = idx !== null ? linha?.cores[idx] ?? null : null
@@ -86,11 +110,11 @@ export default function Linha() {
               {linha.cores.map((c, i) => (
                 <button key={c.arquivo} onClick={() => setIdx(i)} className="group text-left">
                   <div className="aspect-square overflow-hidden bg-alltak-coal">
-                    <img src={c.arquivo} alt={c.rotulo} loading="lazy"
+                    <img src={c.arquivo} alt={limparRotulo(c.rotulo)} loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>
                   <div className="mt-1.5 truncate font-display text-sm font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
-                    {c.rotulo}
+                    {limparRotulo(c.rotulo)}
                   </div>
                 </button>
               ))}
@@ -172,10 +196,10 @@ export default function Linha() {
             </>
           )}
           <div className="relative max-h-[90vh] max-w-3xl" onClick={(e) => e.stopPropagation()}>
-            <img src={corAtiva.arquivo} alt={corAtiva.rotulo} className="max-h-[78vh] w-auto" />
+            <img src={corAtiva.arquivo} alt={limparRotulo(corAtiva.rotulo)} className="max-h-[78vh] w-auto" />
             <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
               <span className="font-display text-sm font-bold uppercase text-white">
-                {corAtiva.rotulo}
+                {limparRotulo(corAtiva.rotulo)}
                 <span className="ml-2 text-white/40">{idx + 1}/{linha.cores.length}</span>
               </span>
               <div className="flex items-center gap-4">

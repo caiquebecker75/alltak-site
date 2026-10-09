@@ -42,7 +42,7 @@ export default function Produtos() {
         <div className="container-x space-y-16">
           {PRODUCT_CATEGORIES.map((cat, i) => (
             <Reveal key={cat.slug}>
-              <div className="grid items-start gap-8 md:grid-cols-5">
+              <div id={`cat-${cat.slug}`} className="grid scroll-mt-28 items-start gap-8 md:grid-cols-5">
                 <div className={`md:col-span-2 ${i % 2 ? 'md:order-2' : ''}`}>
                   <div className="frame-trap aspect-[4/3] cursor-hot">
                     <img src={CATEGORY_IMAGE[cat.slug]} alt={cat.name} loading="lazy" className="img-zoom" />

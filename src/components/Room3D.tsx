@@ -507,19 +507,28 @@ export default function Room3D({
     })
   }, [textures, mats, conf])
 
-  // selection highlight
+  // selection highlight: a short blue flash that fades out. A permanent tint
+  // changed the color of the applied pattern (warm woods turned purple), so the
+  // surface goes back to its true color; the side panel shows the selection.
   useEffect(() => {
     conf.groups.forEach((g) => {
-      const mat = mats[g.key]
-      if (g.key === selected) {
-        mat.emissive = new THREE.Color('#0080ff')
-        mat.emissiveIntensity = 0.16
-      } else {
-        mat.emissive = new THREE.Color('#000000')
-        mat.emissiveIntensity = 0
-      }
-      mat.needsUpdate = true
+      mats[g.key].emissive.set('#0080ff')
+      mats[g.key].emissiveIntensity = 0
     })
+    const mat = selected ? mats[selected] : undefined
+    if (!mat) return
+    const t0 = performance.now()
+    let id = 0
+    const passo = () => {
+      const k = Math.min(1, (performance.now() - t0) / 700)
+      mat.emissiveIntensity = 0.22 * (1 - k) * (1 - k)
+      if (k < 1) id = requestAnimationFrame(passo)
+    }
+    id = requestAnimationFrame(passo)
+    return () => {
+      cancelAnimationFrame(id)
+      mat.emissiveIntensity = 0
+    }
   }, [selected, mats, conf])
 
   return (

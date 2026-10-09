@@ -29,6 +29,16 @@ export default function StickyUnits() {
     })
   }, [n])
 
+  // vai direto para uma unidade (setas e indicadores: quem não usa roda do
+  // mouse, como no touch ou trackpad sem rolagem, também troca de linha)
+  const irPara = (alvo: number) => {
+    const el = wrap.current
+    if (!el || alvo < 0 || alvo > n - 1) return
+    activeRef.current = alvo
+    setActive(alvo)
+    window.scrollTo({ top: scrollY + el.getBoundingClientRect().top + alvo * innerHeight, behavior: 'instant' })
+  }
+
   // one wheel notch = one unit while the stage is pinned
   useEffect(() => {
     let travadoAte = 0
@@ -123,10 +133,34 @@ export default function StickyUnits() {
           )
         })}
 
-        {/* progress rail */}
-        <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 gap-2">
-          {UNITS.map((_, i) => (
-            <div key={i} className={`h-1.5 transition-all duration-300 ${i === active ? 'w-10 bg-alltak-blue' : 'w-4 bg-white/30'}`} />
+        {/* setas bem discretas (mais que as do banner): sem fundo, só contorno */}
+        {[
+          { passo: -1, lado: 'left-2 md:left-4', rotulo: 'Unidade anterior', d: 'M15 5l-7 7 7 7' },
+          { passo: 1, lado: 'right-2 md:right-4', rotulo: 'Próxima unidade', d: 'M9 5l7 7-7 7' },
+        ].map((s) => {
+          const alvo = active + s.passo
+          const ok = alvo >= 0 && alvo <= n - 1
+          return (
+            <button
+              key={s.passo}
+              onClick={() => irPara(alvo)}
+              aria-label={s.rotulo}
+              tabIndex={ok ? 0 : -1}
+              className={`absolute top-1/2 ${s.lado} z-10 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 text-white/35 transition hover:border-white/40 hover:text-white md:h-10 md:w-10 ${ok ? '' : 'pointer-events-none opacity-0'}`}
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d={s.d} />
+              </svg>
+            </button>
+          )
+        })}
+
+        {/* progress rail: também clicável */}
+        <div className="absolute bottom-6 left-1/2 flex -translate-x-1/2 gap-1">
+          {UNITS.map((u, i) => (
+            <button key={i} onClick={() => irPara(i)} aria-label={`Alltak ${u.name}`} className="px-1 py-2.5">
+              <span className={`block h-1.5 transition-all duration-300 ${i === active ? 'w-10 bg-alltak-blue' : 'w-4 bg-white/30 hover:bg-white/60'}`} />
+            </button>
           ))}
         </div>
       </div>

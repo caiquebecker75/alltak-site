@@ -75,6 +75,30 @@ export const DICT: Record<string, Record<Lang, string>> = {
   },
   'home.pronto': { pt: 'Pronto para transformar?', en: 'Ready to transform?', es: '¿Listo para transformar?' },
 
+  // ---- página RevestFácil ----
+  'rf.intro': {
+    pt: 'RevestFácil é o revestimento vinílico adesivo da Alltak para renovar ambientes sem obra: você aplica direto sobre a superfície, sem quebrar nada.',
+    en: 'RevestFácil is Alltak’s self-adhesive vinyl covering for renovating spaces with no construction work: you apply it straight onto the surface, without breaking anything.',
+    es: 'RevestFácil es el revestimiento vinílico adhesivo de Alltak para renovar ambientes sin obra: se aplica directo sobre la superficie, sin romper nada.',
+  },
+  'rf.ondeTag': { pt: 'Onde aplicar', en: 'Where to apply', es: 'Dónde aplicar' },
+  'rf.ondeTitulo': { pt: 'Uma nova cara para cada superfície', en: 'A new look for every surface', es: 'Una nueva cara para cada superficie' },
+  'rf.ondeTexto': {
+    pt: 'Superfícies planas, cantos e curvas: o RevestFácil renova o que já existe na casa, sem pó e sem espera.',
+    en: 'Flat surfaces, corners and curves: RevestFácil renews what is already in the home, with no dust and no waiting.',
+    es: 'Superficies planas, esquinas y curvas: RevestFácil renueva lo que ya existe en la casa, sin polvo y sin espera.',
+  },
+  'rf.onde.paredes': { pt: 'Paredes', en: 'Walls', es: 'Paredes' },
+  'rf.onde.armarios': { pt: 'Armários', en: 'Cabinets', es: 'Armarios' },
+  'rf.onde.bancadas': { pt: 'Bancadas', en: 'Countertops', es: 'Encimeras' },
+  'rf.onde.moveis': { pt: 'Móveis e eletrodomésticos', en: 'Furniture and appliances', es: 'Muebles y electrodomésticos' },
+  'rf.duvidas': { pt: 'Quer levar RevestFácil para a sua loja?', en: 'Want RevestFácil in your store?', es: '¿Quieres RevestFácil en tu tienda?' },
+  'rf.duvidasTexto': {
+    pt: 'Fale com a Alltak para saber sobre distribuição, amostras e lançamento.',
+    en: 'Talk to Alltak about distribution, samples and the launch.',
+    es: 'Habla con Alltak sobre distribución, muestras y lanzamiento.',
+  },
+
   // ---- carrossel de campanhas ----
   'banner.linha': { pt: 'Linha', en: 'Line', es: 'Línea' },
   'banner.lancamento': { pt: 'Lançamento', en: 'New release', es: 'Lanzamiento' },

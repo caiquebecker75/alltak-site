@@ -21,7 +21,7 @@ type Banner = {
   logo?: string
   sub?: string
   texto: string
-  link: string
+  link: string // rota interna, ou URL externa (abre em nova aba)
   visual?: { src: string; className: string }
   paineis?: Painel[]
 }
@@ -46,7 +46,8 @@ const BANNERS: Banner[] = [
     titulo: ['IWC'],
     sub: 'banner.iwc.sub',
     texto: 'banner.iwc.texto',
-    link: '/cores?linha=wraps',
+    // a linha IWC não tem página no site: vai direto ao catálogo virtual oficial
+    link: 'https://alltak.com.br/wp-content/uploads/2024/11/IWC-Alltak-Catalogo-Virtual.pdf',
     visual: { src: './assets/campanhas/iwc-visual.webp', className: 'h-full' },
   },
   {
@@ -69,7 +70,7 @@ const BANNERS: Banner[] = [
     kicker: 'banner.lancamento',
     logo: './assets/campanhas/revestfacil-logo.png',
     texto: 'banner.revestfacil.texto',
-    link: '/onde-comprar',
+    link: '/produtos/revestfacil',
     // duas fotos encaixadas como na colagem do IWC: amostras no stand e o
     // RevestFácil no ponto de venda
     paineis: [
@@ -90,7 +91,9 @@ function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
   return (
     <div
       className={`absolute inset-0 ${b.fundo} transition-opacity duration-1000`}
-      style={{ ...b.fundoStyle, opacity: ativo ? 1 : 0 }}
+      // os três ficam empilhados: só o visível recebe clique (senão o de cima,
+      // transparente, engolia o clique no botão do banner ativo)
+      style={{ ...b.fundoStyle, opacity: ativo ? 1 : 0, pointerEvents: ativo ? 'auto' : 'none', zIndex: ativo ? 1 : 0 }}
       aria-hidden={!ativo}
     >
       <div className="absolute inset-y-0 left-1/2 w-full max-w-[1760px] -translate-x-1/2">
@@ -148,14 +151,20 @@ function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
           <p className="mt-[2.2vh] max-w-[30rem] font-display text-[clamp(1.15rem,3.4vh,2rem)] font-light uppercase leading-[1.1] tracking-[0.04em] text-white/90">
             {t(b.texto)}
           </p>
-          <Link
-            to={b.link}
-            tabIndex={ativo ? 0 : -1}
-            className="btn-trapezoid mt-[3.5vh] self-start !px-7 !py-2.5"
-            style={{ background: b.acento, color: b.acentoTexto ?? '#fff' }}
-          >
-            {t('banner.confira')} →
-          </Link>
+          {(() => {
+            const cls = 'btn-trapezoid mt-[3.5vh] self-start !px-7 !py-2.5'
+            const st = { background: b.acento, color: b.acentoTexto ?? '#fff' }
+            const rotulo = `${t('banner.confira')} →`
+            return b.link.startsWith('http') ? (
+              <a href={b.link} target="_blank" rel="noreferrer" tabIndex={ativo ? 0 : -1} className={cls} style={st}>
+                {rotulo}
+              </a>
+            ) : (
+              <Link to={b.link} tabIndex={ativo ? 0 : -1} className={cls} style={st}>
+                {rotulo}
+              </Link>
+            )
+          })()}
         </div>
       </div>
     </div>

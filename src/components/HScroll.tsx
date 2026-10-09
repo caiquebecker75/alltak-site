@@ -16,11 +16,26 @@ const CATEGORY_IMAGE: Record<string, string> = {
   'wrap-care': './assets/automotivo_02.avif',
   acessorios: './assets/decor_01.avif',
 }
+// destino de cada card: segmentos com cartela vão direto para as cores da
+// linha; os demais, para a própria seção na página de Produtos
+const DESTINO: Record<string, string> = {
+  automotivo: '/cores?linha=wraps',
+  arquitetura: '/cores?linha=decor',
+  impressao: '/cores?linha=signs',
+  'sign-design': '/cores?linha=signs',
+}
+const destino = (slug: string) => DESTINO[slug] ?? `/produtos#cat-${slug}`
+
 const RECORTE = {
   // mesmo contorno do recorte das fotos; aqui só contém o brilho do hover
   baseLargaEmbaixo: 'polygon(28.5% 0, 71.5% 0, 100% 100%, 0 100%)',
   baseLargaEmCima: 'polygon(0 0, 100% 0, 71.5% 100%, 28.5% 100%)',
 }
+
+// fração do trecho fixado em que a faixa fica parada no início e no fim
+const PAUSA = 0.12
+// margem do container-x (max-w 1240px centralizado, px-5 / sm:px-8)
+const MARGEM = 'max(1.25rem, calc((100vw - 1240px) / 2 + 2rem))'
 
 // Horizontal scroll gallery: the page keeps scrolling vertically while the
 // track slides sideways through the product categories.
@@ -37,7 +52,10 @@ export default function HScroll() {
       if (!el || !tr) return
       const r = el.getBoundingClientRect()
       const total = r.height - innerHeight
-      const p = Math.min(1, Math.max(0, -r.top / total))
+      const bruto = Math.min(1, Math.max(0, -r.top / total))
+      // "travinha": ao fixar, a faixa fica parada um pouco antes de começar a
+      // andar para o lado (e de novo no fim), para o 1º card entrar inteiro
+      const p = Math.min(1, Math.max(0, (bruto - PAUSA) / (1 - 2 * PAUSA)))
       setX(-p * Math.max(0, tr.scrollWidth - innerWidth))
       setPct(p)
     })
@@ -58,13 +76,15 @@ export default function HScroll() {
 
         <div
           ref={track}
-          className="flex w-max gap-3 pl-5 will-change-transform sm:pl-8"
-          style={{ transform: `translate3d(${x}px,0,0)` }}
+          className="flex w-max gap-3 will-change-transform"
+          // começa alinhada ao título (mesma margem do container) e termina
+          // com a mesma folga à direita
+          style={{ paddingLeft: MARGEM, paddingRight: MARGEM, transform: `translate3d(${x}px,0,0)` }}
         >
           {PRODUCT_CATEGORIES.map((c, i) => (
             <Link
               key={c.slug}
-              to="/produtos"
+              to={destino(c.slug)}
               className="group block w-[72vw] shrink-0 sm:w-[44vw] lg:w-[30vw]"
             >
               {/* alternating trapezoids (format 01), same proportion as the photos */}
@@ -89,7 +109,7 @@ export default function HScroll() {
           ))}
 
           {/* end card */}
-          <Link to="/produtos" className="group flex w-[60vw] shrink-0 items-center justify-center sm:w-[34vw]">
+          <Link to="/cores" className="group flex w-[60vw] shrink-0 items-center justify-center sm:w-[34vw]">
             <div className="text-center">
               <div className="font-display text-6xl font-black text-alltak-black md:text-8xl">
                 +120

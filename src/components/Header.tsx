@@ -54,7 +54,8 @@ export default function Header() {
             className={`relative z-[92] transition-opacity duration-300 ${open ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             tabIndex={open ? -1 : 0}
           >
-            <Logo className="h-9 md:h-12" />
+            {/* escudo oficial (trapézio azul), o mesmo do menu */}
+            <Logo variant="escudo" className="h-9 md:h-11" />
           </Link>
 
           <div className="flex items-center gap-3 md:gap-5">

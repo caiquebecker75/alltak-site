@@ -1,0 +1,96 @@
+{
+ "_sobre": "Texto revisado à mão para linhas cujo conteúdo no WordPress vinha duplicado, com trechos de layout ou frases quebradas. Só texto do site antigo: frases emendadas, repetições e chamadas de layout removidas, erros de digitação corrigidos. Aplicado por migracao/completar_descricoes.py.",
+ "moldnhold": {
+  "descricao": "Lançado com sucesso no mercado internacional, Mold n’ Hold funciona como uma fita de segurança e acabamento em bordas de veículos envelopados.\n\nAlém de selar as bordas, funciona como uma máscara para esconder a cor do carro, criando um acabamento perfeito e seguro. É um material texturizado preto que simula o acabamento plástico de fábrica dos veículos.\n\nMold n’ Hold é uma solução rápida e fácil de prevenir o levantamento da película em partes extremas do envelopamento, mantendo a estética e a durabilidade do trabalho.",
+  "specs": [
+   "Acabamento preto texturizado, que simula o plástico de fábrica dos veículos",
+   "Medida: 23 m x 1 cm (0,39 inches x 23 yards)",
+   "Uso: selagem e acabamento de bordas em veículos envelopados"
+  ]
+ },
+ "premium": {
+  "descricao": "O novo Premium é uma película de PVC supercalandrado polimérico para o conceito Sign & Design, ideal para aplicações que requerem mais fechamento de cor, moldabilidade e tonalidades vibrantes. Proporciona corte macio, aumentando a durabilidade da lâmina de recorte.\n\nDevido à sua alta performance, é cada vez mais procurado por profissionais da personalização para renovar ambientes residenciais e corporativos. Indicado para envelopamento de móveis, eletrodomésticos, objetos, sinalização e propaganda.",
+  "specs": [
+   "Frontal: PVC supercalandrado polimérico",
+   "Liner: papel couché siliconizado 130 g/m²",
+   "Adesivo: acrílico permanente",
+   "Indicações: envelopamento de móveis, eletrodomésticos, objetos, sinalização e propaganda",
+   "Corte macio, que aumenta a durabilidade da lâmina de recorte"
+  ]
+ },
+ "killer": {
+  "descricao": "Adesive Killer é um poderoso aliado na remoção de resíduos de cola deixados na superfície. Sua fórmula exclusiva remove com facilidade e não agride a pintura do automóvel.\n\nPossui pH neutro e pode ser utilizado em diversas superfícies, desde que antes seja feito um teste numa pequena parte da superfície. Um produto que não pode faltar no dia a dia de qualquer instalador. Seu rendimento é excelente: uma pequena quantidade remove com eficiência uma grande parte da cola.\n\nFaz parte da linha Wrap Care, desenvolvida pela Alltak® exclusivamente para o segmento do envelopamento: pré-instalação, conservação e remoção do vinil adesivo.",
+  "specs": [
+   "Modo de usar: pulverize uma pequena quantidade do produto na área a ser limpa.",
+   "Modo de usar: aguarde alguns segundos e esfregue com a ajuda de um pincel ou de uma espátula plástica macia até sentir o desprendimento da contaminação.",
+   "Modo de usar: pulverize água em abundância e continue esfregando para a remoção total do resíduo; a água também aumenta o rendimento.",
+   "Modo de usar: seque a peça em seguida com um pano de microfibra limpo e seco. Se necessário, repita a operação.",
+   "Observação: o produto tem afinidade com a maioria dos tipos de cola de adesivos, mas é necessário um pequeno teste para confirmar a compatibilidade com a contaminação.",
+   "Instruções: use sempre EPIs, como luvas e máscara.",
+   "Instruções: mantenha longe do alcance das crianças.",
+   "Instruções: aplique o produto em ambientes ventilados e leia as instruções antes de usar."
+  ]
+ },
+ "kleaner": {
+  "descricao": "Kleaner é um produto desenvolvido para a preparação da superfície. Remove resíduos de ceras e abrasivos e promove maior aderência do vinil adesivo. Sua fórmula limpa completamente a superfície, aumentando a durabilidade e preservando as propriedades do material.\n\nPode ser utilizado em qualquer superfície, como acrílico, vidro, chapas metálicas, placas de PVC ou PS, além da lataria e das peças plásticas dos veículos. Utilize momentos antes da aplicação, logo após a lavagem: assim você garante uma instalação limpa e pronta para receber o vinil adesivo.\n\nFaz parte da linha Wrap Care, desenvolvida pela Alltak® exclusivamente para o segmento do envelopamento: pré-instalação, conservação e remoção do vinil adesivo.",
+  "specs": [
+   "Modo de usar: lave o carro.",
+   "Modo de usar: descontamine a pintura com uma barra descontaminante e enxágue o veículo.",
+   "Modo de usar: com a pintura seca, pulverize uma pequena quantidade do produto em área não superior a 50 cm x 50 cm.",
+   "Modo de usar: faça a remoção com um pano de microfibra limpo e seco.",
+   "Instruções: use sempre EPIs, como luvas e máscara.",
+   "Instruções: aplique o produto em ambientes ventilados.",
+   "Instruções: use pano de microfibra limpo e seco, ou um pano que não solte fiapos.",
+   "Instruções: produto inflamável. Mantenha fora do alcance das crianças e animais domésticos."
+  ]
+ },
+ "protetik": {
+  "descricao": "Protetik é um produto único e exclusivo para ser aplicado depois que o envelopamento estiver concluído, garantindo maior proteção contra os raios UV e dando mais intensidade à cor do vinil adesivo. Excelente custo-benefício e fácil aplicação.\n\nPode ser utilizado regularmente como um grande aliado na proteção e conservação do vinil adesivo, evitando o desbotamento e estendendo a durabilidade por muito mais tempo. Possui hidrorrepelência, como uma “vitrificação”, facilitando a manutenção e a lavagem. Um frasco de 500 ml rende a proteção de até 10 veículos de passeio.\n\nFaz parte da linha Wrap Care, desenvolvida pela Alltak® exclusivamente para o segmento do envelopamento: pré-instalação, conservação e remoção do vinil adesivo.",
+  "specs": [
+   "Modo de usar: certifique-se de que a superfície esteja limpa e seca.",
+   "Modo de usar: agite bem o produto antes de usar.",
+   "Modo de usar: pulverize uma pequena névoa do produto na superfície do veículo, em área máxima de 60 cm x 60 cm.",
+   "Modo de usar: faça o acabamento com um pano de microfibra limpo e seco, virando-o com frequência até obter o resultado desejado.",
+   "Modo de usar: repita o processo até concluir o veículo. Se surgirem manchas, repita a aplicação.",
+   "Rendimento: um frasco de 500 ml protege até 10 veículos de passeio.",
+   "Instruções: use sempre EPIs, como luvas e máscara.",
+   "Instruções: mantenha longe do alcance das crianças e aplique em ambientes ventilados.",
+   "Instruções: use pano de microfibra limpo e seco, ou um pano que não solte fiapos."
+  ]
+ },
+ "protecao-de-pintura-ppf": {
+  "descricao": "A película de proteção FPP Alltak foi desenvolvida em PVC Calandrado de alta tecnologia e possui um nível de proteção superior contra pequenos impactos, arranhões do dia a dia, detritos de estradas, chuva ácida, intempéries e resistência a produtos químicos*.\n\nEssa película também pode ser utilizada na arquitetura, protegendo móveis, bancadas, eletrodomésticos e muito mais!",
+  "specs": [
+   "Acabamento Transparente Brilhante ou fosco",
+   "Adesivo Acrílico reposicionável, mais facilidade na aplicação",
+   "PVC Calandrado 150 μm (micra).",
+   "Película de Proteção Moldável (Versão Brilhante)",
+   "2 Anos de durabilidade contra amarelamento",
+   "Proteção U.V.",
+   "Largura 1,38 m – bobinas com 25 m",
+   "Alta flexibilidade e moldabilidade em superfícies curvas",
+   "Pode ser aquecido com soprador térmico",
+   "Durabilidade esperada* de 2 anos",
+   "Importante: Durabilidade podendo variar de acordo com as condições climáticas e cuidados na manutenção do veículo.",
+   "Importante: Partes horizontais como Teto e Capô, possuem durabilidade reduzida, pois sofrem maior ação climática por conta da exposição excessiva aos raios solares e intempéries.",
+   "Importante: Não possui característica “Auto-regenerativa” quando exposto ao calor",
+   "Instruções de aplicação: Recomendamos sempre a instalação em ambientes fechados, com temperatura controlada, entre 18ºC a 25ºC, livre de poeira e com as portas fechadas. A temperatura da lataria também deve ser ambiente, “não instale o material se a lataria estiver quente”! Podem ficar algumas marcas no material ao final da instalação. Não se preocupe, essas marcas irão sumir ao longo dos dias quando o veículo sair ao sol e calor.",
+   "Lavagem: O veículo deve ser limpo usando somente água e shampoo neutro, sem produtos abrasivos, ceras ou derivados.",
+   "Limpeza: Recomendamos o uso de uma CLAY BAR para descontaminação e remoção de imperfeições na lataria.",
+   "Limpeza: Momentos antes da aplicação use o “Kleaner da linha WRAP CARE Alltak. Esse produto possui na sua composição o Isopropanol (Álcool isopropílico) que proporciona uma descontaminação completa e melhora o desempenho e aderência do material",
+   "Instalação: Use uma quantidade pequena de shampoo neutro (johnson’s) 2ml/litro de água para promover a maleabilidade do material na superfície.",
+   "Instalação: Inicie a o processo de aplicação do meio para as extremidades, assim você vai removendo o excesso de shampoo acumulado.",
+   "Instalação: Não utilize espátulas de feltro, elas não possuem a pressão suficiente para ativar o tack do adesivo.",
+   "Instalação: Use o soprador térmico para moldar peças curvas.",
+   "Instalação: Após finalizado, remova a película de proteção transparente.",
+   "Instalação: Reaqueça usando o soprador térmico para garantir a conformidade a aderência total do material, principalmente nos cantos e nas curvas.",
+   "Instalação: Após a instalação podem ficar algumas manchas (veículos de cor escura), isso é uma reação química do contato da água com o adesivo. Devemos respeitar o tempo de cura do adesivo de 48h.",
+   "Manutenção: Lembrando que o objetivo da película é proteger a pintura. Caso tenha algum dano, troque a película e mantenha seu veículo protegido.",
+   "Manutenção: Não utilize produtos abrasivos, lave somente com água e shampoo neutro. Não recomendamos lavar em equipamentos de “LAVA JATO”; suas cerdas podem riscar e soltar o material da lataria.",
+   "Manutenção: Se for estacionar por um longo período, procure locais cobertos ou com sombra.",
+   "Manutenção: Não recomendamos estacionar em baixo de árvores, pois detritos são inevitáveis.",
+   "Manutenção: Procure limpar as sujeiras imediatamente, afim de evitar manchas irreversíveis na película.",
+   "Manutenção: Para maior durabilidade e proteção do material, recomendamos o uso regular do Protetik, selante cerâmico da linha Wrap Care Alltak. Esse produto possui proteção contra os raios UV, preservando a cor e evitando o desbotamento. Além disso, possui hidrorrepelência, como uma vitrificação, facilitando a manutenção e a lavagem."
+  ]
+ }
+}
