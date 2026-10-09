@@ -2,14 +2,19 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { COLORS, LINES, familiesFor, colorSlug } from '../data/catalog'
 import { useI18n } from '../i18n'
+import { linhaDaFamilia } from '../data/familias'
+import SobreLinha from './SobreLinha'
 
 // Full color explorer: line + family filters, search and a complete grid.
 // Each swatch links to that color's dedicated page (/cor/:line/:code).
-// `initialLine` pre-selects a catalog line (e.g. 'wraps') when embedded.
-export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: string }) {
+// `initialLine` pre-selects a catalog line (e.g. 'wraps') and `initialFamily`
+// a family inside it (e.g. 'Kroma'), when embedded or linked.
+export default function ColorExplorer({ initialLine = 'all', initialFamily = 'all' }: { initialLine?: string; initialFamily?: string }) {
   const { t, tv } = useI18n()
   const [line, setLine] = useState<string>(initialLine)
-  const [family, setFamily] = useState<string>('all')
+  // família vinda do link (ex.: /cores?linha=decor&familia=Kroma); se não
+  // existir na linha, mostra todas
+  const [family, setFamily] = useState<string>(() => (familiesFor(initialLine).includes(initialFamily) ? initialFamily : 'all'))
   const [q, setQ] = useState('')
 
   const families = useMemo(() => familiesFor(line), [line])
@@ -75,6 +80,12 @@ export default function ColorExplorer({ initialLine = 'all' }: { initialLine?: s
           </button>
         ))}
       </div>
+
+      {/* família que é uma linha de produto: descrição, ficha e boletim */}
+      {(() => {
+        const slug = family !== 'all' ? linhaDaFamilia(line, family) : undefined
+        return slug ? <SobreLinha key={slug} slug={slug} /> : null
+      })()}
 
       <div className="mb-6 mt-5 text-base text-white/60">{list.length} {t('exp.cores')}</div>
 

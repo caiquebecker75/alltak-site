@@ -4,6 +4,7 @@ import { findColor, relatedColors, colorSlug, type Color } from '../data/catalog
 import { useLeadGate } from '../lead/LeadGate'
 import { STORE_URL } from '../data/site'
 import { useI18n } from '../i18n'
+import { fichaDaCor } from '../data/catalog/fichas'
 import escudo from '../brand/escudo-oficial.png'
 
 // Página única da cor: foto aplicada em destaque, bobina/textura, ficha
@@ -203,7 +204,7 @@ export default function CorDetalhe() {
   const { line, code } = useParams()
   const navigate = useNavigate()
   const { open } = useLeadGate()
-  const { t, tv } = useI18n()
+  const { lang, t, tv } = useI18n()
   const color = findColor(line, code)
   const [slide, setSlide] = useState<number | null>(null)
   const [gerando, setGerando] = useState(false)
@@ -266,6 +267,8 @@ export default function CorDetalhe() {
   const related = relatedColors(color)
   // Signs usa a série como família e acabamento; não repete o mesmo valor
   const acabamento = color.finish && color.finish !== color.family ? color.finish : undefined
+  // descrição e ficha técnica do catálogo digital oficial
+  const ficha = fichaDaCor(color.line, color.code, lang)
   const principal = slides[0]
   const secundarias = slides.slice(1)
 
@@ -363,6 +366,36 @@ export default function CorDetalhe() {
                 </div>
               ))}
             </dl>
+
+            {ficha?.descricao && (
+              <div className="mt-6">
+                <p className="eyebrow">{t('cor.sobre')}</p>
+                <p className="mt-2 whitespace-pre-line text-base leading-relaxed text-white/75">{ficha.descricao}</p>
+              </div>
+            )}
+            {ficha && ficha.specs.length > 0 && (
+              <div className="mt-6">
+                <p className="eyebrow">{t('cor.ficha')}</p>
+                <ul className="mt-2 divide-y divide-white/10 border-y border-white/10">
+                  {ficha.specs.map((sp) => {
+                    const k = sp.indexOf(': ')
+                    return (
+                      <li key={sp} className="flex justify-between gap-4 py-2.5 text-sm">
+                        {k > 0 && k < 40 ? (
+                          <>
+                            <span className="text-white/60">{sp.slice(0, k)}</span>
+                            <span className="text-right text-white">{sp.slice(k + 2)}</span>
+                          </>
+                        ) : (
+                          <span className="text-white/80">{sp}</span>
+                        )}
+                      </li>
+                    )
+                  })}
+                </ul>
+                <p className="mt-2 text-sm text-white/50">{t('prod.fonte')}: {ficha.fonte}</p>
+              </div>
+            )}
 
             <div className="mt-6 flex flex-col gap-2.5">
               <button

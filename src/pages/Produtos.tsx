@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal'
 import ColorExplorer from '../components/ColorExplorer'
 import { PRODUCT_CATEGORIES, STORE_URL } from '../data/site'
 import linhas from '../data/wp/linhas.json'
+import { destinoDaLinha } from '../data/familias'
 import { useI18n } from '../i18n'
 
 type LinhaT = { categoria: string; slug: string; nome: string }
@@ -54,7 +55,7 @@ export default function Produtos() {
                     {(linhas as LinhaT[]).filter((l) => l.categoria === cat.slug).map((l) => (
                       <Link
                         key={l.slug}
-                        to={`/produtos/${l.categoria}/${l.slug}`}
+                        to={destinoDaLinha(l)}
                         className="border border-white/15 px-3 py-1.5 text-sm font-display font-semibold uppercase tracking-wide text-white/70 transition hover:border-alltak-blue hover:text-white"
                       >
                         {tv(l.nome)}

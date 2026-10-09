@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import linhas from '../data/wp/linhas.json'
 import linhasI18n from '../data/wp/linhas-i18n.json'
+import { fichaDaLinha } from '../data/catalog/fichas'
+import { destinoDaLinha } from '../data/familias'
 import { STORE_URL } from '../data/site'
 import { useI18n } from '../i18n'
 import { limparRotulo } from '../lib/rotulos'
@@ -41,8 +43,10 @@ export default function Linha() {
   const { lang, t, tv } = useI18n()
   const linha = (linhas as LinhaT[]).find((l) => l.categoria === categoria && l.slug === slug)
   const trad = lang !== 'pt' && slug ? (linhasI18n as LinhaI18n)[slug]?.[lang] : undefined
-  const descricao = trad?.descricao || linha?.descricao || frasesCompletas(linha?.meta_description)
-  const specs = trad && trad.specs.length > 0 ? trad.specs : linha?.specs ?? []
+  // texto e ficha do catálogo digital oficial têm prioridade sobre o WordPress
+  const catalogo = slug ? fichaDaLinha(slug, lang) : undefined
+  const descricao = catalogo?.descricao || trad?.descricao || linha?.descricao || frasesCompletas(linha?.meta_description)
+  const specs = catalogo?.specs.length ? catalogo.specs : trad && trad.specs.length > 0 ? trad.specs : linha?.specs ?? []
   const [idx, setIdx] = useState<number | null>(null)
   const corAtiva = idx !== null ? linha?.cores[idx] ?? null : null
   const baixar = async (src: string, nome: string) => {
@@ -58,6 +62,12 @@ export default function Linha() {
     [categoria, slug],
   )
 
+  // linhas com cartela de cores não têm mais a página migrada do WordPress:
+  // o endereço antigo leva à página de Cores filtrada na família
+  if (linha && destinoDaLinha(linha).startsWith('/cores')) {
+    return <Navigate to={destinoDaLinha(linha)} replace />
+  }
+
   if (!linha) {
     return (
       <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black px-6 text-center">
@@ -71,7 +81,7 @@ export default function Linha() {
   return (
     <>
       <PageHeader eyebrow={tv(CAT_NOME[linha.categoria] ?? linha.categoria)} title={tv(linha.nome)}>
-        {descricao}
+        <span className="whitespace-pre-line">{descricao}</span>
         <div className="mt-6 flex flex-wrap gap-3">
           {linha.boletins[0] && (
             <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
@@ -118,7 +128,10 @@ export default function Linha() {
               <div>
                 <p className="eyebrow text-alltak-blue">{t('prod.fichaLinha')}</p>
                 <h2 className="mt-2 text-4xl text-white md:text-5xl">{t('prod.especificacoes')}</h2>
-                <p className="mt-4 text-sm text-white/50">{t('prod.refBoletim')}</p>
+                <p className="mt-4 text-sm text-white/50">
+                  {catalogo ? `${t('prod.fonte')}: ${catalogo.fonte}. ` : ''}
+                  {t('prod.refBoletim')}
+                </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {linha.boletins.map((b, i) => (
                     <a key={b} href={b} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
@@ -135,9 +148,21 @@ export default function Linha() {
             </Reveal>
             <Reveal delay={120}>
               <ul className="divide-y divide-white/10 border-y border-white/10">
-                {specs.map((s, i) => (
-                  <li key={i} className="py-2.5 text-sm text-white/75">{s}</li>
-                ))}
+                {specs.map((s, i) => {
+                  // "Rótulo: valor" → rótulo em destaque
+                  const k = s.indexOf(': ')
+                  return (
+                    <li key={i} className="py-2.5 text-sm text-white/75">
+                      {k > 0 && k < 40 ? (
+                        <>
+                          <span className="font-semibold text-white">{s.slice(0, k)}:</span> {s.slice(k + 2)}
+                        </>
+                      ) : (
+                        s
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </Reveal>
           </div>
@@ -152,7 +177,7 @@ export default function Linha() {
             <h2 className="mt-2 text-3xl text-white md:text-4xl">{t('prod.outrasLinhas')}</h2>
             <div className="mt-6 flex flex-wrap gap-2">
               {irmas.map((l) => (
-                <Link key={l.slug} to={`/produtos/${l.categoria}/${l.slug}`}
+                <Link key={l.slug} to={destinoDaLinha(l)}
                   className="border border-white/15 px-3 py-1.5 font-display text-sm font-semibold uppercase tracking-wide text-white/70 transition hover:border-alltak-blue hover:text-white">
                   {tv(l.nome)}
                 </Link>
