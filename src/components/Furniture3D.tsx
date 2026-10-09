@@ -34,8 +34,10 @@ function projetarUVs(mesh: THREE.Mesh, tamanho: number) {
       if (ay >= ax && ay >= az) [u, w] = [v.x, v.z] // tampo / base
       else if (ax >= az) [u, w] = [n.x > 0 ? -v.z : v.z, v.y] // laterais
       else [u, w] = [n.z > 0 ? v.x : -v.x, v.y] // frente / fundo
-      uv[(i + k) * 2] = u / tamanho
-      uv[(i + k) * 2 + 1] = w / tamanho
+      // +0,5: o centro do móvel cai no meio da textura (painéis inteiros
+      // ficam centrados, sem emenda no meio da frente)
+      uv[(i + k) * 2] = u / tamanho + 0.5
+      uv[(i + k) * 2 + 1] = w / tamanho + 0.5
     })
   }
   g.setAttribute('uv', new THREE.BufferAttribute(uv, 2))
@@ -45,7 +47,7 @@ function projetarUVs(mesh: THREE.Mesh, tamanho: number) {
   mesh.geometry = g
 }
 
-function CabinetModel({ modelUrl, textureUrl, escala, espelhar }: { modelUrl: string; textureUrl?: string; escala: number; espelhar: boolean }) {
+function CabinetModel({ modelUrl, textureUrl, escala }: { modelUrl: string; textureUrl?: string; escala: number }) {
   const gltf = useLoader(GLTFLoader, modelUrl)
   const { gl } = useThree()
   const mat = useMemo(
@@ -83,11 +85,9 @@ function CabinetModel({ modelUrl, textureUrl, escala, espelhar }: { modelUrl: st
     new THREE.TextureLoader().load(textureUrl, (tex) => {
       if (!vivo) return tex.dispose()
       tex.colorSpace = THREE.SRGBColorSpace
-      // as texturas são recortes de foto (não repetem sem emenda): em veios
-      // (madeira, mármore) espelhar a cada repetição esconde as emendas; em
-      // desenhos geométricos (muxarabi, ripas, tijolo) espelhar vira
-      // caleidoscópio, então ali a repetição é direta
-      tex.wrapS = tex.wrapT = espelhar ? THREE.MirroredRepeatWrapping : THREE.RepeatWrapping
+      // texturas de public/textures/decor-3d já repetem sem emenda; espelhar
+      // criava losangos e chevrons que não existem no padrão
+      tex.wrapS = tex.wrapT = THREE.RepeatWrapping
       tex.anisotropy = gl.capabilities.getMaxAnisotropy()
       const antigo = mat.map
       mat.map = tex
@@ -97,7 +97,7 @@ function CabinetModel({ modelUrl, textureUrl, escala, espelhar }: { modelUrl: st
     return () => {
       vivo = false
     }
-  }, [textureUrl, espelhar, mat, gl])
+  }, [textureUrl, mat, gl])
 
   return <primitive object={scene} />
 }
@@ -180,15 +180,12 @@ export default function Furniture3D({
   modelUrl,
   textureUrl,
   escala = 0.6,
-  espelhar = true,
   className = '',
 }: {
   modelUrl: string
   textureUrl?: string
   /** tamanho de uma repetição da textura, em unidades da cena (~0,8 m cada) */
   escala?: number
-  /** espelhar a repetição (veios) ou repetir direto (desenhos geométricos) */
-  espelhar?: boolean
   className?: string
 }) {
   return (
@@ -203,7 +200,7 @@ export default function Furniture3D({
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 8, 4]} intensity={1.15} />
         <Room />
-        <CabinetModel modelUrl={modelUrl} textureUrl={textureUrl} escala={escala} espelhar={espelhar} />
+        <CabinetModel modelUrl={modelUrl} textureUrl={textureUrl} escala={escala} />
       </Canvas>
     </div>
   )

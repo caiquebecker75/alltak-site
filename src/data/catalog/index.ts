@@ -18,6 +18,7 @@ export type Color = {
   swatch: string
   applied?: string
   texture?: string // flat material crop (seamless-ish) for 3D re-skinning
+  texture3d?: string // versão que repete sem emenda (migracao/texturas_sem_emenda.py)
 }
 
 // Dimensões reais de cada foto (geradas por migracao/limpar_imagens_cores.py).
@@ -54,6 +55,7 @@ const raw: Color[] = [
     swatch: boa(`./colors/decor/${c.swatch}`) ?? `./textures/decor/${c.code}.jpg`,
     applied: c.applied ? boa(`./colors/decor/${c.applied}`) : undefined,
     texture: `./textures/decor/${c.code}.jpg`,
+    texture3d: `./textures/decor-3d/${c.code}.jpg`,
   })),
   ...(signsRaw as any[]).map((c) => ({
     line: 'signs' as const,

@@ -37,7 +37,7 @@ export default function AmbienteStudio() {
   const textures = useMemo(() => {
     const t: Partial<Record<string, string>> = {}
     Object.entries(tex[room]).forEach(([k, c]) => {
-      t[k] = c.texture ?? c.swatch
+      t[k] = c.texture3d ?? c.texture ?? c.swatch // versão sem emenda para repetir
     })
     return t
   }, [tex, room])

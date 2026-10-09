@@ -25,15 +25,48 @@ import Sobre from './pages/Sobre'
 import Privacidade from './pages/Privacidade'
 import Transparencia from './pages/Transparencia'
 
+// Posição da âncora centralizada no espaço abaixo do cabeçalho fixo. Mede pelo
+// offsetTop (sem as transformações da animação de entrada, que deslocam o
+// bloco enquanto ele aparece). Se o bloco não cabe, alinha o topo logo abaixo
+// do cabeçalho, para o título nunca ficar escondido.
+function alvoDaAncora(el: HTMLElement): number {
+  let top = 0
+  for (let n: HTMLElement | null = el; n; n = n.offsetParent as HTMLElement | null) top += n.offsetTop
+  const cabecalho = document.querySelector('header')?.getBoundingClientRect().height ?? 96
+  const livre = innerHeight - cabecalho
+  const folga = el.offsetHeight + 32 <= livre ? (livre - el.offsetHeight) / 2 : 16
+  return Math.max(0, top - cabecalho - folga)
+}
+
 // Scroll to top on route change, or to the #anchor when a hash is present.
 function ScrollManager() {
   const { pathname, hash } = useLocation()
   useEffect(() => {
     if (hash) {
-      const el = document.querySelector(hash)
+      const el = document.querySelector<HTMLElement>(hash)
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
-        return
+        const ir = () => {
+          window.scrollTo({ top: alvoDaAncora(el), behavior: 'instant' })
+          // avisa as animações de entrada (Reveal) que a página rolou
+          window.dispatchEvent(new Event('scroll'))
+        }
+        ir()
+        // imagens que terminam de carregar mudam a altura da página acima da
+        // âncora: corrige a posição mais duas vezes
+        // (canceladas se a pessoa já começou a rolar)
+        const t1 = setTimeout(ir, 350)
+        const t2 = setTimeout(ir, 1000)
+        const parar = () => {
+          clearTimeout(t1)
+          clearTimeout(t2)
+        }
+        addEventListener('wheel', parar, { once: true, passive: true })
+        addEventListener('touchstart', parar, { once: true, passive: true })
+        return () => {
+          parar()
+          removeEventListener('wheel', parar)
+          removeEventListener('touchstart', parar)
+        }
       }
     }
     window.scrollTo({ top: 0 })
