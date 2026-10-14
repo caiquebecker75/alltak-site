@@ -17,15 +17,14 @@ export type NavItem = {
 }
 
 export const NAV: NavItem[] = [
-  { label: 'Visualizador', tkey: 'nav.visualizador', to: '/visualizador' },
-  { label: 'Decoração', tkey: 'nav.decoracao', to: '/decoracao' },
-  { label: 'Cores', tkey: 'nav.cores', to: '/cores' },
+  { label: 'Simule agora', tkey: 'nav.simule', to: '/simulador' },
   { label: 'Downloads', tkey: 'nav.downloads', to: '/downloads' },
   { label: 'Produtos', tkey: 'nav.produtos', to: '/produtos' },
   { label: 'Blog', tkey: 'nav.blog', to: '/blog' },
   { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
   { label: 'Onde Comprar', tkey: 'nav.onde', to: '/onde-comprar' },
   { label: 'Encontre um Instalador', tkey: 'nav.instalador', to: '/instaladores' },
+  { label: 'Cursos', tkey: 'nav.cursos', to: '/cursos' },
   { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre' },
   { label: 'Contato', tkey: 'nav.contato', to: '/contato' },
 ]

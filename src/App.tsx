@@ -13,6 +13,7 @@ import Produtos from './pages/Produtos'
 import Linha from './pages/Linha'
 import RevestFacil from './pages/RevestFacil'
 import Segmento from './pages/Segmento'
+import Simulador from './pages/Simulador'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Cores from './pages/Cores'
@@ -21,7 +22,7 @@ import DecorStudio from './pages/DecorStudio'
 import Visualizador from './pages/Visualizador'
 import OndeComprar from './pages/OndeComprar'
 import Instaladores from './pages/Instaladores'
-import Cursos from './pages/Cursos'
+import Cursos, { CursoDetalhe } from './pages/Cursos'
 import Contato from './pages/Contato'
 import Sobre from './pages/Sobre'
 import Privacidade from './pages/Privacidade'
@@ -109,10 +110,12 @@ export default function App() {
           <Route path="/cores" element={<Cores />} />
           <Route path="/cor/:line/:code" element={<CorDetalhe />} />
           <Route path="/decoracao" element={<DecorStudio />} />
+          <Route path="/simulador" element={<Simulador />} />
           <Route path="/visualizador" element={<Visualizador />} />
           <Route path="/onde-comprar" element={<OndeComprar />} />
           <Route path="/instaladores" element={<Instaladores />} />
           <Route path="/cursos" element={<Cursos />} />
+          <Route path="/cursos/:slug" element={<CursoDetalhe />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/politica-de-privacidade" element={<Privacidade />} />
