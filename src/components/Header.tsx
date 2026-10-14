@@ -107,7 +107,13 @@ export default function Header() {
               transition: 'opacity .5s ease 80ms, transform .6s cubic-bezier(.2,.7,.1,1) 80ms',
             }}
           >
-            <Logo variant="escudo" className="h-[clamp(40px,8vh,80px)]" />
+            {/* o escudo do menu leva à home e fecha o menu (também quando já
+                se está na home, onde a rota não muda) */}
+            <Link to="/" aria-label={t('header.inicio')} tabIndex={open ? 0 : -1}
+              onClick={() => { setOpen(false); if (pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+              className="inline-block">
+              <Logo variant="escudo" className="h-[clamp(40px,8vh,80px)]" />
+            </Link>
           </div>
           {NAV.map((item, i) => {
             const inner = (
