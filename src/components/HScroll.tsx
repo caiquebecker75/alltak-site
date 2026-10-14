@@ -96,7 +96,9 @@ export default function HScroll() {
               >
                 <img src={CATEGORY_IMAGE[c.slug]} alt={tv(c.name)} loading="lazy" className="opacity-95 group-hover:opacity-100" />
               </div>
-              <div className="mt-3 flex items-end justify-between px-2">
+              {/* texto alinhado ao canto de baixo da foto: no trapézio invertido a
+                  base estreita começa em 28,5% da largura */}
+              <div className={`mt-3 flex flex-wrap items-end justify-between gap-x-3 ${i % 2 === 0 ? 'px-2' : 'px-[calc(28.5%+0.5rem)]'}`}>
                 <div>
                   <div className="font-display text-sm font-bold uppercase tracking-[0.22em] text-alltak-black/60">
                     0{i + 1} · {c.items.length} {t(c.items.length === 1 ? 'hscroll.produto' : 'hscroll.produtos')}

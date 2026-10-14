@@ -4,55 +4,66 @@ import Reveal from '../components/Reveal'
 import instaladores from '../data/instaladores.json'
 import { useT } from '../i18n'
 
-// Encontre um Instalador: primeiro os Pro Experts (só os aprovados na
-// certificação), depois os demais instaladores da rede. Dados gerados por
-// migracao/instaladores.py. O segmento (Automotivo / Decor) aparece num selo
-// pequeno sobre a foto; os selos da legenda filtram a lista.
+// Instaladores Pro Expert: a listagem oficial do site antigo + os certificados
+// de out/2026 (gerado por migracao/instaladores.py). Como no site antigo: aviso
+// de responsabilidade no topo e abas Todos / Automotivo / Decorativo /
+// Instrutores. A categoria aparece também num selo pequeno sobre a foto.
 
-type Segmento = 'automotivo' | 'decor'
+type Categoria = 'automotivo' | 'decor' | 'instrutor'
 type Perfil = {
-  slug: string; nome: string; segmentos: Segmento[]; cidade: string
+  slug: string; nome: string; categorias: Categoria[]; cidade: string
   telefone: string; instagram: string | null; bio: string; foto: string | null
-  proExpert?: boolean; homenagem?: boolean
+  homenagem?: boolean
 }
 
 const lista = instaladores as Perfil[]
-const SEGMENTOS: Segmento[] = ['automotivo', 'decor']
-// cores diferentes além do ícone, para os dois selos não se confundirem
-const COR_SELO: Record<Segmento, string> = {
+const CATEGORIAS: Categoria[] = ['automotivo', 'decor', 'instrutor']
+// cores diferentes além do ícone, para os selos não se confundirem
+const COR_SELO: Record<Categoria, string> = {
   automotivo: 'bg-alltak-blue text-white',
   decor: 'bg-white text-alltak-navyDeep',
+  instrutor: 'bg-alltak-navyDeep text-white ring-1 ring-white/50',
 }
+const SAC_WHATSAPP = 'https://wa.me/5511997753029'
+const SAC_EMAIL = 'sac@alltak.com.br'
 
 const iniciais = (nome: string) =>
   nome.split(' ').filter((p) => p.length > 2).slice(0, 2).map((p) => p[0]).join('')
 
-function Icone({ s, className = 'h-4 w-4' }: { s: Segmento; className?: string }) {
+function Icone({ c, className = 'h-[18px] w-[18px]' }: { c: Categoria; className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"
       className={className} aria-hidden="true">
-      {s === 'automotivo' ? (
+      {c === 'automotivo' && (
         // carro de perfil
         <>
           <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
           <circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" />
         </>
-      ) : (
+      )}
+      {c === 'decor' && (
         // casa
         <>
           <path d="M3 10a2 2 0 0 1 .7-1.5l7-6a2 2 0 0 1 2.6 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
           <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
         </>
       )}
+      {c === 'instrutor' && (
+        // capelo de formatura
+        <>
+          <path d="M22 10 12 5 2 10l10 5 10-5Z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" /><path d="M22 10v6" />
+        </>
+      )}
     </svg>
   )
 }
 
-function Selo({ s, titulo, compacto = false }: { s: Segmento; titulo: string; compacto?: boolean }) {
+function Selo({ c, titulo, compacto = false }: { c: Categoria; titulo: string; compacto?: boolean }) {
   return (
     <span title={titulo} aria-label={titulo}
-      className={`flex shrink-0 items-center justify-center rounded-full shadow-[0_2px_8px_rgba(0,0,0,0.35)] ${COR_SELO[s]} ${compacto ? 'h-7 w-7' : 'h-8 w-8 md:h-9 md:w-9'}`}>
-      <Icone s={s} className="h-[18px] w-[18px]" />
+      className={`flex shrink-0 items-center justify-center rounded-full shadow-[0_2px_8px_rgba(0,0,0,0.35)] ${COR_SELO[c]} ${compacto ? 'h-7 w-7' : 'h-8 w-8 md:h-9 md:w-9'}`}>
+      <Icone c={c} />
     </span>
   )
 }
@@ -70,51 +81,17 @@ export default function Instaladores() {
   const t = useT()
   const [aberto, setAberto] = useState<Perfil | null>(null)
   const [busca, setBusca] = useState('')
-  const [filtro, setFiltro] = useState<Segmento | null>(null)
+  const [aba, setAba] = useState<Categoria | 'todos'>('todos')
 
   const visiveis = useMemo(() => {
     const q = busca.trim().toLowerCase()
     return lista.filter(
       (p) =>
-        (!filtro || p.segmentos.includes(filtro)) &&
+        (aba === 'todos' || p.categorias.includes(aba)) &&
         (!q || p.nome.toLowerCase().includes(q) || p.cidade.toLowerCase().includes(q)),
     )
-  }, [busca, filtro])
-  const pros = visiveis.filter((p) => p.proExpert)
-  const rede = visiveis.filter((p) => !p.proExpert)
-
-  const grade = (itens: Perfil[]) => (
-    <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 lg:grid-cols-4">
-      {itens.map((p, i) => (
-        <Reveal key={p.slug} delay={(i % 4) * 60}>
-          <button onClick={() => setAberto(p)} className="group w-full text-left">
-            <div className="relative aspect-square overflow-hidden bg-alltak-coal">
-              <Foto p={p} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
-              {p.segmentos.length > 0 && (
-                <div className="absolute bottom-2.5 right-2.5 flex gap-1.5">
-                  {p.segmentos.map((s) => <Selo key={s} s={s} titulo={t(`inst.${s}`)} />)}
-                </div>
-              )}
-            </div>
-            <div className="mt-2.5 font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue md:text-lg">
-              {p.nome}
-            </div>
-            <div className="mt-0.5 text-sm text-white/50">{p.homenagem ? t('inst.homenagem') : p.cidade}</div>
-          </button>
-        </Reveal>
-      ))}
-    </div>
-  )
-
-  const cabecalho = (tag: string, titulo: string, sub: string, n: number) => (
-    <Reveal>
-      <p className="eyebrow text-alltak-blue">{tag}</p>
-      <h2 className="mt-2 text-4xl text-white md:text-5xl">
-        {titulo} <span className="text-white/35">· {n}</span>
-      </h2>
-      <p className="mt-3 max-w-2xl text-white/60">{sub}</p>
-    </Reveal>
-  )
+  }, [busca, aba])
+  const rotulo = (c: Categoria) => t(c === 'instrutor' ? 'inst.instrutorUm' : `inst.${c}`)
 
   return (
     <>
@@ -122,57 +99,70 @@ export default function Instaladores() {
         {t('inst.headerSub')}
       </PageHeader>
 
-      {/* busca + filtro por segmento (os selos da legenda são os filtros) */}
-      <section className="bg-alltak-black pt-10 md:pt-12">
-        <div className="container-x flex flex-wrap items-center gap-x-6 gap-y-4">
-          <input value={busca} onChange={(e) => setBusca(e.target.value)} placeholder={t('inst.buscar')}
-            className="w-full border border-white/20 bg-white/5 px-4 py-2.5 text-base text-white outline-none placeholder:text-white/45 focus:border-alltak-blue sm:max-w-sm" />
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 text-sm text-white/50">{t('inst.filtrar')}</span>
-            {SEGMENTOS.map((s) => {
-              const ativo = filtro === s
-              return (
-                <button key={s} onClick={() => setFiltro(ativo ? null : s)} aria-pressed={ativo}
-                  className={`flex items-center gap-2 rounded-full border py-1 pl-1 pr-4 text-base transition ${
-                    ativo ? 'border-alltak-blue bg-alltak-blue/15 text-white' : 'border-white/15 text-white/70 hover:border-white/40 hover:text-white'
-                  }`}>
-                  <Selo s={s} titulo={t(`inst.${s}`)} compacto />
-                  {t(`inst.${s}`)}
-                  {ativo && <span aria-hidden className="ml-1 text-white/60">✕</span>}
-                </button>
-              )
-            })}
+      <section className="bg-alltak-black pb-16 pt-8 md:pb-20 md:pt-10">
+        <div className="container-x">
+          {/* aviso de responsabilidade (o mesmo do site antigo), discreto */}
+          <div className="border-l-2 border-white/25 py-1 pl-4 text-sm leading-relaxed text-white/50 md:max-w-4xl">
+            <p className="font-semibold uppercase tracking-wide text-white/70">{t('inst.avisoTitulo')}</p>
+            <p className="mt-1">{t('inst.avisoTexto')}</p>
+            <p className="mt-1">
+              {t('inst.avisoSac')}{' '}
+              <a href={SAC_WHATSAPP} target="_blank" rel="noreferrer" className="text-white/75 underline-offset-2 hover:text-alltak-blue hover:underline">
+                WhatsApp (11) 99775-3029
+              </a>
+              {' · '}
+              <a href={`mailto:${SAC_EMAIL}`} className="text-white/75 underline-offset-2 hover:text-alltak-blue hover:underline">{SAC_EMAIL}</a>
+            </p>
           </div>
+
+          {/* abas por categoria + busca */}
+          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+            <div className="flex flex-wrap gap-2">
+              {(['todos', ...CATEGORIAS] as const).map((c) => {
+                const ativo = aba === c
+                const n = c === 'todos' ? lista.length : lista.filter((p) => p.categorias.includes(c)).length
+                return (
+                  <button key={c} onClick={() => setAba(c)} aria-pressed={ativo}
+                    className={`flex items-center gap-2 px-4 py-2 font-display text-base font-bold uppercase tracking-wide transition md:px-5 md:py-2.5 ${
+                      ativo ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/75 hover:bg-white/15 hover:text-white'
+                    }`}>
+                    {c !== 'todos' && <Icone c={c} />}
+                    {t(`inst.${c}`)}
+                    <span className={ativo ? 'text-white/70' : 'text-white/40'}>{n}</span>
+                  </button>
+                )
+              })}
+            </div>
+            <input value={busca} onChange={(e) => setBusca(e.target.value)} placeholder={t('inst.buscar')}
+              className="w-full border border-white/20 bg-white/5 px-4 py-2.5 text-base text-white outline-none placeholder:text-white/45 focus:border-alltak-blue sm:ml-auto sm:max-w-xs" />
+          </div>
+
+          {visiveis.length === 0 ? (
+            <p className="mt-10 text-white/60">{t('inst.nenhum')}</p>
+          ) : (
+            <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 lg:grid-cols-4">
+              {visiveis.map((p, i) => (
+                <Reveal key={p.slug} delay={(i % 4) * 60}>
+                  <button onClick={() => setAberto(p)} className="group w-full text-left">
+                    <div className="relative aspect-square overflow-hidden bg-alltak-coal">
+                      <Foto p={p} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
+                      {p.categorias.length > 0 && (
+                        <div className="absolute bottom-2.5 right-2.5 flex gap-1.5">
+                          {p.categorias.map((c) => <Selo key={c} c={c} titulo={rotulo(c)} />)}
+                        </div>
+                      )}
+                    </div>
+                    <div className="mt-2.5 font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue md:text-lg">
+                      {p.nome}
+                    </div>
+                    <div className="mt-0.5 text-sm text-white/50">{p.homenagem ? t('inst.homenagem') : p.cidade}</div>
+                  </button>
+                </Reveal>
+              ))}
+            </div>
+          )}
         </div>
       </section>
-
-      {/* Pro Experts em destaque */}
-      {pros.length > 0 && (
-        <section className="bg-alltak-black pb-14 pt-10 md:pb-16">
-          <div className="container-x">
-            <div className="border-t-4 border-alltak-blue bg-alltak-navyDeep/60 p-5 md:p-8">
-              {cabecalho(t('inst.proTag'), t('inst.proTitulo'), t('inst.proSub'), pros.length)}
-              {grade(pros)}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* demais instaladores da rede */}
-      {rede.length > 0 && (
-        <section className={`bg-alltak-black pb-16 md:pb-20 ${pros.length ? '' : 'pt-10'}`}>
-          <div className="container-x">
-            {cabecalho(t('inst.redeTag'), t('inst.redeTitulo'), t('inst.redeSub'), rede.length)}
-            {grade(rede)}
-          </div>
-        </section>
-      )}
-
-      {visiveis.length === 0 && (
-        <section className="bg-alltak-black py-16">
-          <p className="container-x text-white/60">{t('inst.nenhum')}</p>
-        </section>
-      )}
 
       {aberto && (
         <div className="fixed inset-0 z-[95] flex items-center justify-center p-4">
@@ -187,16 +177,15 @@ export default function Instaladores() {
                 ✕
               </button>
               <p className="eyebrow text-alltak-blue">
-                {aberto.proExpert ? 'Pro Expert' : t('inst.instalador')}
-                {aberto.homenagem ? ` · ${t('inst.homenagem')}` : ''}
+                Pro Expert{aberto.homenagem ? ` · ${t('inst.homenagem')}` : ''}
               </p>
               <h3 className="mt-1 pr-8 font-display text-3xl font-extrabold uppercase leading-none text-white">{aberto.nome}</h3>
-              {aberto.segmentos.length > 0 && (
+              {aberto.categorias.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {aberto.segmentos.map((s) => (
-                    <span key={s} className="flex items-center gap-2 bg-white/10 py-1 pl-1 pr-3 font-display text-base font-bold uppercase tracking-wide text-white/85">
-                      <Selo s={s} titulo={t(`inst.${s}`)} compacto />
-                      {t(`inst.${s}`)}
+                  {aberto.categorias.map((c) => (
+                    <span key={c} className="flex items-center gap-2 bg-white/10 py-1 pl-1 pr-3 font-display text-base font-bold uppercase tracking-wide text-white/85">
+                      <Selo c={c} titulo={rotulo(c)} compacto />
+                      {rotulo(c)}
                     </span>
                   ))}
                 </div>
@@ -218,7 +207,7 @@ export default function Instaladores() {
                 </div>
               )}
               <div className="mt-5 max-h-72 space-y-3 overflow-auto pr-2 text-sm leading-relaxed text-white/75">
-                {(aberto.bio || t(aberto.proExpert ? 'inst.semBio' : 'inst.semBioRede')).split('\n').map((par, i) => <p key={i}>{par}</p>)}
+                {(aberto.bio || t('inst.semBio')).split('\n').map((par, i) => <p key={i}>{par}</p>)}
               </div>
               {aberto.instagram && (
                 <a href={aberto.instagram} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue mt-6 !py-2.5 !text-base">

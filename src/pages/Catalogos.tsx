@@ -70,7 +70,7 @@ export default function Catalogos() {
       </section>
 
       {/* Logos e Manuais — download com cadastro (leads) */}
-      <section className="bg-alltak-black py-16 md:py-24">
+      <section id="downloads" className="bg-alltak-black py-16 md:py-24">
         <div className="container-x">
           <Reveal>
             <span className="tag">{t('cat.marcaTag')}</span>

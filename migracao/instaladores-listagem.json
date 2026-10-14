@@ -1,0 +1,765 @@
+{
+ "_sobre": "Listagem oficial de Instaladores Pro Expert do site antigo (alltak.com.br/instaladores-pro-expert/, lida em out/2026): ordem, categorias do filtro (automotivo, decorativo, instrutores), foto, telefone, cidade e Instagram de cada card. \"texto\" é a página individual, só para quem não veio na migração do WordPress (src/data/wp/instaladores.json). Usado por migracao/instaladores.py.",
+ "instaladores": [
+  {
+   "pagina": "diego-ferraz-lopes",
+   "nome": "DIEGO FERRAZ LOPES",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-experts-Diego-Ferraz-Lopes.jpg",
+   "telefones": [
+    "(51) 98658-9516"
+   ],
+   "cidade": "Porto Alegre/RS/Brasil",
+   "instagram": "https://www.instagram.com/diegolopesenvelopamentos"
+  },
+  {
+   "pagina": "erci-junior",
+   "nome": "ERCI JUNIOR",
+   "categorias": [
+    "decor",
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/12/Pro-Expert-Alltak_Ercy_DecorAuto.jpg",
+   "telefones": [
+    "(35) 3443-6579",
+    "(35) 99953-0299"
+   ],
+   "cidade": "Jacutinga – MG",
+   "instagram": "https://www.instagram.com/ercyjunior"
+  },
+  {
+   "pagina": "valmir-rodrigues",
+   "nome": "VALMIR RODRIGUES",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-experts-Valmir-Rodrigues.jpg",
+   "telefones": [
+    "(11) 96312-2364"
+   ],
+   "cidade": "São Paulo / SP / Brasil",
+   "instagram": "https://www.instagram.com/val_wrapcustom"
+  },
+  {
+   "pagina": "calebe-san-martins",
+   "nome": "CALEBE SAN MARTINS",
+   "categorias": [
+    "automotivo",
+    "instrutor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/12/Pro-Expert-Alltak_Calebe-InstrutorAuto.jpg",
+   "telefones": [
+    "(53) 98141-1098"
+   ],
+   "cidade": "Rio Grande – RS",
+   "instagram": "https://www.instagram.com/calebegenesis"
+  },
+  {
+   "pagina": "james-garcia",
+   "nome": "JAMES GARCIA",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2021/11/james-garcia-alltak-adesivos.jpg",
+   "telefones": [
+    "(41) 3537-4990"
+   ],
+   "cidade": "Colombo – PR",
+   "instagram": "https://www.instagram.com/dcore.adesivos"
+  },
+  {
+   "pagina": "silvanio-pereira-de-almeida",
+   "nome": "SILVANIO PEREIRA DE ALMEIDA",
+   "categorias": [
+    "automotivo",
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/10/Silvanio-Pereira.jpeg",
+   "telefones": [
+    "(75)99103-0250"
+   ],
+   "cidade": "Paulo Afonso – BA",
+   "instagram": "https://www.instagram.com/silvanoplotter"
+  },
+  {
+   "pagina": "tiago-securella",
+   "nome": "TIAGO SECURELLA",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2022/08/tiago-securella-alltak-pro-expert.jpeg",
+   "telefones": [
+    "(13)99167-1129"
+   ],
+   "cidade": "Guarujá – SP",
+   "instagram": "https://www.instagram.com/royal_envelopamentos"
+  },
+  {
+   "pagina": "marcio-arts",
+   "nome": "MARCIO ARTS",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/04/Marcio-Arts_Pro-Expert.jpg",
+   "telefones": [
+    "75 99946-5345"
+   ],
+   "cidade": "Santa Brígida / Bahia",
+   "instagram": "https://www.instagram.com/marcio.arts"
+  },
+  {
+   "pagina": "gustavo-rojas",
+   "nome": "GUSTAVO ROJAS",
+   "categorias": [
+    "automotivo",
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Photo-Rojas-Pro-Expert.jpeg",
+   "telefones": [
+    "+54 9 11 6048-4507"
+   ],
+   "cidade": "Buenos Aires – Argentina",
+   "instagram": "https://www.instagram.com/servicewraps"
+  },
+  {
+   "pagina": "damian-cordero",
+   "nome": "DAMIÁN CORDERO",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/06/Damian.jpeg",
+   "telefones": [
+    "+54 9 11 6735-4896"
+   ],
+   "cidade": "Buenos Aires – Argentina",
+   "instagram": "https://www.instagram.com/corderoplotter"
+  },
+  {
+   "pagina": "martin-ulivi",
+   "nome": "MARTIN ULIVI",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-experts-Martin-Ulivi.jpg",
+   "telefones": [
+    "+54 9 11 3523-9014"
+   ],
+   "cidade": "Buenos Aires – Argentina",
+   "instagram": "https://www.instagram.com/goodshinegarage"
+  },
+  {
+   "pagina": "leandro-costa-ribeiro-spectrum",
+   "nome": "LEANDRO COSTA RIBEIRO (SPECTRUM)",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Leandro-Pro-Expert.jpg",
+   "telefones": [
+    "(41) 99633-0459"
+   ],
+   "cidade": "Curitiba / PR / Brasil",
+   "instagram": "https://www.instagram.com/spectrumcuritiba"
+  },
+  {
+   "pagina": "marcelo-menon-fernandes",
+   "nome": "MARCELO MENON FERNANDES (TK)",
+   "categorias": [
+    "instrutor",
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/10/Marcelo-Menon-Fernandes-TK.jpeg",
+   "telefones": [
+    "(19) 97146-4637"
+   ],
+   "cidade": "Valinhos / SP / Brasil",
+   "instagram": "https://www.instagram.com/tkenvelopamentos"
+  },
+  {
+   "pagina": "eduardo-chardosim-stabel",
+   "nome": "EDUARDO CHARDOSIM STABEL",
+   "categorias": [
+    "decor",
+    "instrutor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/11/Pro-Expert-Alltak_Eduardo-Chardosim-Instrutor.jpg",
+   "telefones": [
+    "(51) 98134-2200"
+   ],
+   "cidade": "Porto Alegre/RS/Brasil",
+   "instagram": "https://www.instagram.com/edu.divulg"
+  },
+  {
+   "pagina": "thiago-sossai",
+   "nome": "Thiago Sossai",
+   "categorias": [
+    "automotivo",
+    "instrutor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2023/12/Pro-Expert-Alltak_Thiago-Sossai-Instrutor.jpg",
+   "telefones": [
+    "(11) 96168-7739"
+   ],
+   "cidade": "São Paulo/SP/Brasil",
+   "instagram": "https://www.instagram.com/thiago_sossai"
+  },
+  {
+   "pagina": "bruno-lima",
+   "nome": "Bruno Lima",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-experts-Bruno-Lima.jpg",
+   "telefones": [
+    "(85) 99199-3361"
+   ],
+   "cidade": "Fortaleza/CE/Brasil",
+   "instagram": "https://www.instagram.com/brunowrap"
+  },
+  {
+   "pagina": "rodrigo-de-paula-san-marins",
+   "nome": "Rodrigo de Paula San Martins",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-experts-Rodrigo-de-Paula-San-Marins.jpg",
+   "telefones": [
+    "(53)99948-7780"
+   ],
+   "cidade": "Rio Grande/RS/Brasil",
+   "instagram": "https://www.instagram.com/black.star.envelopamento"
+  },
+  {
+   "pagina": "gustavo-cardoso",
+   "nome": "Gustavo Cardoso",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-Expert-Decor-Gustavo-Cardoso.jpeg",
+   "telefones": [
+    "(34) 99682-1937"
+   ],
+   "cidade": "Uberlândia - MG",
+   "instagram": "https://www.instagram.com/adesivosg"
+  },
+  {
+   "pagina": "esdras-farias",
+   "nome": "Esdras Farias",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Photo-Esdras-Pro-Expert.jpeg",
+   "telefones": [
+    "(11) 96449-8065"
+   ],
+   "cidade": "São Paulo / SP / Brasil",
+   "instagram": "https://www.instagram.com/esdrasfariasenvelopamento"
+  },
+  {
+   "pagina": "alexander-rivera",
+   "nome": "Alexander Rivera",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Pro-Expert-Alexander-Rivera.jpeg",
+   "telefones": [
+    "+56 93260-5368"
+   ],
+   "cidade": "Santiago / Chile",
+   "instagram": "https://www.instagram.com/rivera.wrap"
+  },
+  {
+   "pagina": "gaston-garcete",
+   "nome": "Gastón Garcete",
+   "categorias": [
+    "decor",
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Photo-Gaston-Pro-Expert.jpeg",
+   "telefones": [
+    "+54 9 11 6593-9366"
+   ],
+   "cidade": "Buenos Aires / Argentina",
+   "instagram": "https://www.instagram.com/garcete.design"
+  },
+  {
+   "pagina": "fabio-braga",
+   "nome": "Fábio Braga",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/01/Fabio-Braga-ProExpert.jpeg",
+   "telefones": [
+    "(51) 99925-5600"
+   ],
+   "cidade": "Alvorada/Rio Grande do Sul /Brasil",
+   "instagram": "https://www.instagram.com/wrapmonkeyrs"
+  },
+  {
+   "pagina": "bruno-rodrigues",
+   "nome": "Bruno Rodrigues",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/04/Bruno-Rodrigues-Alltak-Adesivos.jpeg",
+   "telefones": [
+    "(47) 99264-8273"
+   ],
+   "cidade": "Penha/Santa Catarina/Brasil",
+   "instagram": "https://www.instagram.com/bruno.modifique"
+  },
+  {
+   "pagina": "rodrigo-nogueira",
+   "nome": "Rodrigo Nogueira",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/04/Rodrigo-Nogueira-Alltak-Adesivos.jpg",
+   "telefones": [
+    "(41) 99192-1635"
+   ],
+   "cidade": "Curitiba / PR / Brasil",
+   "instagram": "https://www.instagram.com/rnogueiraplotagens"
+  },
+  {
+   "pagina": "camila-scotti",
+   "nome": "Camila Scotti",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/05/IMG_20240525_091237_911-scaled.jpg",
+   "telefones": [
+    "(12) 98802-4663"
+   ],
+   "cidade": "São José dos Campos / SP / Brasil",
+   "instagram": "https://www.instagram.com/donaajuda"
+  },
+  {
+   "pagina": "rafael-silva",
+   "nome": "Raphael Silva",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/04/Design-sem-nome-100.png",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null
+  },
+  {
+   "pagina": "rubens-falchetto",
+   "nome": "Rubens Falchetto",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/06/RUBENS.jpeg",
+   "telefones": [
+    "(27) 99941-2366"
+   ],
+   "cidade": "Cariacica / ES - Brasil",
+   "instagram": "https://www.instagram.com/futura_custom_wrap"
+  },
+  {
+   "pagina": "adilson-lopes",
+   "nome": "Adilson Lopes",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/06/image_123650291.jpg",
+   "telefones": [
+    "(11) 984231617"
+   ],
+   "cidade": "São Bernardo do Campo / ABC - SP",
+   "instagram": "https://www.instagram.com/va_envelopamentos"
+  },
+  {
+   "pagina": "gerval-farias",
+   "nome": "Gerval Farias",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Gerval.jpeg",
+   "telefones": [
+    "(11) 99547-7819"
+   ],
+   "cidade": "Guarulhos / SP",
+   "instagram": "https://www.instagram.com/farias.revestimentos",
+   "texto": "INSTALADORES PRO EXPERT\nGerval Farias\nINSTALADOR\n\n(11) 99547-7819\n\nGuarulhos / SP\n\n/ @farias.revestimentos\nDepois de passar pela comunicação visual, vi no segmento decorativo algo que me deixa muito entusiasmado.\nO brilho nos olhos dos clientes após um serviço bem executado me deixa com sentimento de realização.\nPor isso decidi me especializar e focar no segmento. Todo esforço valeu a pena, me tornando um Instalador\nCertificado Pro Expert Alltak® Decor"
+  },
+  {
+   "pagina": "caio-vieira",
+   "nome": "Caio Vieira",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Caio.jpeg",
+   "telefones": [
+    "(11) 94165-8564"
+   ],
+   "cidade": "São Paulo / SP",
+   "instagram": "https://www.instagram.com/caioenvelopamento",
+   "texto": "INSTALADORES PRO EXPERT\nCaio Vieira\nINSTALADOR\n\n(11) 94165-8564\n\nSão Paulo / SP\n\n/@caioenvelopamento\nComecei minha trajetória aos 14 anos em uma empresa de estampas de camisetas, onde também trabalhava com vinil e envelopamento de motos. Logo pedi para mudar de área, pois meu interesse era o envelopamento. Busquei conhecimento por meio de cursos na Alltak e conheci pessoas inspiradoras no ramo, que me ajudaram a crescer. O envelopamento tem mudado minha vida dia após dia!"
+  },
+  {
+   "pagina": "simone-nunes",
+   "nome": "Simone Nunes",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Simone.jpeg",
+   "telefones": [
+    "(41) 99821-7073"
+   ],
+   "cidade": "Curitiba / PR",
+   "instagram": "https://www.instagram.com/rnogueiraplotagens",
+   "texto": "INSTALADORES PRO EXPERT\nSimone Nunes\nINSTALADOR\n\n(41) 99776-1530\n\nCuritiba/PR\n\n/@rnogueiraplotagens\nTrabalhei 16 anos em uma empresa de comunicação visual, onde comecei como recepcionista e terminei como responsável pelo setor de projetos e produção. Há quatro anos, entrei no mundo do envelopamento com meu irmão, fundando a Rnogueira Plotagens. Comecei aplicando adesivos decorativos e, percebendo a demanda crescente no mercado, me especializei em envelopamento automotivo. Com o apoio da minha família, consegui conquistar a certificação e oferecer um atendimento de qualidade."
+  },
+  {
+   "pagina": "eduardo-borges",
+   "nome": "Eduardo Borges",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Eduardo.jpeg",
+   "telefones": [
+    "(27) 99279-8121"
+   ],
+   "cidade": "Vila Velha / ES",
+   "instagram": "https://www.instagram.com/jr.colacomigo",
+   "texto": "INSTALADORES PRO EXPERT\nEduardo Borges\nINSTALADOR\n\n(27) 99279-8121\n\nVila Velha / ES\n\n/@jr.colacomigo\nVim da indústria gráfica, onde passei quase três décadas da minha vida. Após a pandemia, o envelopamento decorativo surgiu como uma oportunidade que percebi ser extremamente promissora, especialmente em um nicho que muitos colegas de profissão hesitavam em explorar. Depois de dois anos envelopando à minha maneira, percebi que era hora de buscar uma especialização. Foi então que conheci o curso da Alltak, que fez toda a diferença na minha abordagem profissional e na minha mentalidade. Hoje, estamos em plena ascensão, pois, no mundo do vinil, o céu é o limite!"
+  },
+  {
+   "pagina": "samuel-vieira",
+   "nome": "Samuel Vieira",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Samuel.jpeg",
+   "telefones": [
+    "(19) 97166-0351"
+   ],
+   "cidade": "Campinas / SP",
+   "instagram": "https://www.instagram.com/eliteewrap",
+   "texto": "INSTALADORES PRO EXPERT\nSamuel Vieira\nINSTALADOR\n\n(19) 97166-0351\n\nCampinas / SP\n\n/@elitewrap\nSou envelopador há mais de 13 anos, tendo iniciado minha trajetória no ramo automotivo, especificamente na comunicação visual. Desde então, venho constantemente aperfeiçoando minhas habilidades e me profissionalizando, buscando sempre as melhores técnicas e inovações do mercado.\nNos últimos 4 anos, ampliei meu trabalho para o segmento de Décor, onde encontrei uma nova paixão. Através dessa experiência, consegui unir criatividade e técnica, criando projetos que transformam espaços de maneira única.\nRecentemente, alcancei a certificação Proexpert, o que reforça meu compromisso com a excelência e a qualidade em todos os serviços que ofereço. Estou sempre em busca de novas tendências e desafios, pronto para atender às necessidades dos meus clientes com dedicação e profissionalismo."
+  },
+  {
+   "pagina": "lucio-gomes",
+   "nome": "Lucio Gomes",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Lucio.jpeg",
+   "telefones": [
+    "(79) 99819-3280"
+   ],
+   "cidade": "Aracajú / SE",
+   "instagram": "https://www.instagram.com/alfaplotagensdecor",
+   "texto": "INSTALADORES PRO EXPERT\nLucio Gomes\nINSTALADOR\n\n(79) 99819-3280\n\nAracajú/SE\n\n/@alfaplotagensdecor\nMeu contato com o envelopamento começou em 2012, quando trabalhava em uma papelaria e plastificava documentos. Com a chegada de materiais estampados, comecei a aplicar em móveis e eletrodomésticos, o que se tornou uma paixão e uma fonte de renda extra. Em 2019, reconhecendo o potencial desse mercado, fiz meu primeiro curso automotivo e participei de workshops. O setor decorativo sempre me encantou, e comecei a me destacar, sendo premiado por votação popular por dois anos consecutivos.\nEm 2023, fiz meu primeiro curso decor na Alltak, ganhando experiência técnica e de negócios. Participei de feiras e, ao estabelecer a meta de obter a certificação Pro Expert Alltak Decor, consegui passar nas provas seletivas em 2024, tornando-me parte da “Família Alltak”. Hoje, trabalho com o que amo, sou grato pelas lições aprendidas e continuo buscando transformar ambientes com qualidade. Minha trajetória teve desafios, mas cada um deles me preparou para superar obstáculos. Com determinação e fé, acredito que é possível alcançar qualquer sonho."
+  },
+  {
+   "pagina": "marcelo-ramos",
+   "nome": "Marcelo Ramos",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Marcelo.jpeg",
+   "telefones": [
+    "(11) 97364-3060"
+   ],
+   "cidade": "Mairiporã/SP",
+   "instagram": "https://www.instagram.com/marceloenvelopamentos",
+   "texto": "INSTALADORES PRO EXPERT\nMarcelo Ramos\nINSTALADOR\n\n(11) 97364-3060\n\nMairiporã/SP\n\n/@marceloenvelopamentos\nEstou no ramo de envelopamento há seis anos, e atualmente me dedico exclusivamente à área decorativa. Ao longo desse tempo, encontrei uma verdadeira afinidade com esse segmento, o que me motivou a buscar constantemente o aprimoramento profissional. Participei de diversos workshops, feiras e cursos, incluindo o curso avançado de decoração da Alltak, onde pude aprofundar meus conhecimentos e habilidades. Essa dedicação me permitiu não apenas me especializar, mas também oferecer um trabalho de qualidade e inovador aos meus clientes."
+  },
+  {
+   "pagina": "bismarkis-santos",
+   "nome": "Bismarkis Santos",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/11/Bismarkis.png",
+   "telefones": [
+    "(13) 97410-0189"
+   ],
+   "cidade": "São Vicente / SP",
+   "instagram": "https://www.instagram.com/magnata_comunicacao_visual",
+   "texto": "INSTALADORES PRO EXPERT\nBismarkis Santos\nINSTALADOR\n\n(13) 97410-0189\n\nSão Vicente / SP\n\n/@magnata_comunicacao_visual\nEm 2011, comecei como operador na Usiminas e, buscando aprimorar meus conhecimentos, fiz um curso técnico de metalurgia. Inspirado por um amigo que envelopou seu carro, comprei um adesivo preto fosco e me aventurei na técnica. Sem muita informação, utilizei água e detergente para envelopar meu carro, o que chamou a atenção de um cliente que me indicou para outros.z\nCom o tempo, fui aprimorando minhas habilidades através de vídeos na internet e, em 2014, decidi deixar a Usiminas para me dedicar exclusivamente ao envelopamento. Desde então, trabalhei na área decorativa e automotiva, participando de diversos campeonatos, alcançando sucesso em várias delas, foram 4 títulos e 2 vice-campeonatos!\nEm 2023, recebi um convite da Alltak para a certificação PRO EXPERT ALLTAK DECOR e atualmente sou parte do time de instaladores certificados pela Alltak, resultado de mais de 10 anos de dedicação e crescimento no mercado de envelopamento."
+  },
+  {
+   "pagina": "renan-tirelli",
+   "nome": "Renan Tirelli",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Pro-Expert_Renan.jpeg",
+   "telefones": [
+    "(12) 98886-5719"
+   ],
+   "cidade": "Taubaté / SP",
+   "instagram": "https://www.instagram.com/theranchbr",
+   "texto": "INSTALADORES PRO EXPERT\nRenan Tirelli\nINSTALADOR\n\n+5512988865719\n\nTaubaté / SP\n\n@theranchbr\nSempre tive uma paixão por carros e motos, buscando sempre a customização. Após uma carreira sólida no mundo corporativo, realizei o sonho de morar na Austrália, onde me dediquei a customizar carros esportivos como Porsche, Ferrari e Lamborghini. Depois de um tempo, retornei ao Brasil e fundei a The Ranch, iniciando projetos com um público diferente. A vontade de customizar carros insanos me levou ao envelopamento, e foi assim que conheci a Alltak, que oferece formação em envelopamento. Dediquei-me a essa nova formação e hoje gerencio a The Ranch Custom Car Wrapping, realizando projetos incríveis e transformando sonhos em realidade. Sou grato à família Alltak!"
+  },
+  {
+   "pagina": "iago-batista",
+   "nome": "Iago Batista",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/10/Pro-Expert_Iago.jpeg",
+   "telefones": [
+    "(22) 99926-9786"
+   ],
+   "cidade": "Campos dos Goytacazes / RJ",
+   "instagram": "https://www.instagram.com/losbravus_centroautomotivo",
+   "texto": "INSTALADORES PRO EXPERT\nIago Batista\nINSTALADOR\n\n(22) 99926-9786\n\nCampos dos Goytacazes / RJ\n\n/@losbravus_centroautomotivo\n\nMapa\nMeu primeiro contato com envelopamento foi em 2010, quando envelopei meu primeiro carro, um Monza 86, sem experiência profissional. Após ver que o resultado foi positivo, comecei a ajudar amigos, proporcionando uma nova aparência a seus veículos sem altos investimentos.\n“Após alguns anos sem praticar, em 2019, envelopei mais dois carros de amigos, apenas para testar minhas habilidades. Isso marcou uma virada no meu centro automotivo, especialmente durante a pandemia. Com o apoio dos amigos, fui a São Paulo me capacitar no curso da ALLTAK, onde descobri todo o potencial que o envelopamento poderia oferecer. Desde então, já envelopei mais de 40 carros, variando de modelos raros de 1937 a veículos modernos e acessíveis, sempre com a mesma paixão e dedicação.\nEm 2024, alcançamos nossa meta: a tão desejada avaliação PRO EXPERT. Agora, estamos prontos para continuar realizando projetos incríveis com o padrão ALLTAK!”"
+  },
+  {
+   "pagina": "savio-2",
+   "nome": "Sávio Figueiredo dos Santos",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/savio.jpeg",
+   "telefones": [
+    "(19) 99355-0858"
+   ],
+   "cidade": "Campinas / SP",
+   "instagram": "https://www.instagram.com/figueiredoenvelopamento",
+   "texto": "INSTALADORES PRO EXPERT\nSávio Figueiredo dos Santos\nINSTALADOR\n\n(19) 99355-0858\n\nCampinas / São Paulo / Brasil\n\n/@figueiredoenvelopamento\nMeu primeiro contato com adesivos foi em 2013. Nessa época, eu trabalhava aplicando adesivos nas vitrines de lojas de shopping, fachadas de empresas e frotas de carros.\nMinha paixão pelo Envelopamento Decorativo começou quando ajudei um amigo a envelopar minha moto. Com o material que sobrou, aproveitei para revestir minha mesa e o frigobar. Depois, veio a geladeira da minha mãe, a geladeira de um parente, de um amigo… E, a partir daí, não parei mais.\nCriei a Figueiredo Envelopamento e também uma página nas redes sociais para divulgar meu trabalho.\nEm 2023, fiz o curso da Alltak. Naquela época, eu ainda trabalhava com comunicação visual, mas, depois do curso, minha visão mudou. Percebi que era possível focar e investir somente na área de Envelopamento Decorativo, um mercado que já estava — e ainda está — em constante crescimento."
+  },
+  {
+   "pagina": "antonio",
+   "nome": "Antonio",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/betinho.jpeg",
+   "telefones": [
+    "(11) 99115-2721"
+   ],
+   "cidade": "Engenheiro Goulart / SP",
+   "instagram": "https://www.instagram.com/betinhoenvelopamento",
+   "texto": "INSTALADORES PRO EXPERT\nAntonio\nINSTALADOR\n\n(11) 99115-2721\n\nEngenheiro Goulart / São Paulo / Brasil\n\n/@betinhoenvelopamento\nIniciei minha trajetória na comunicação visual em 2005 aos 17 anos de idade , desde então me qualifiquei e busquei sempre estar em constante aprendizado.\nEm 2020 comecei a migrar para o Envelopamento Decorativo, fiz cursos na própria Alltak e hoje tenho um orgulho tremendo em fazer parte e poder dizer que sou um Instalador Pro Expert Decor"
+  },
+  {
+   "pagina": "leandro-tindaro",
+   "nome": "Leandro Tindaro",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/tindaro.jpeg",
+   "telefones": [
+    "(21)98194-8543"
+   ],
+   "cidade": "Nilopolis/RJ",
+   "instagram": "https://www.instagram.com/tindarowrap_decor",
+   "texto": "INSTALADORES PRO EXPERT\nLeandro Tindaro\nINSTALADOR\n\n(21) 98194-8543\n\nNilopolis /RJ / Brasil\n\n/@tindarowrap_decor\nIniciei no envelopamento em 2020, após dedicar 11 anos da minha vida à carreira como atleta de alta performance. Sempre fui apaixonado por carros, e foi essa paixão que me trouxe para o mundo do envelopamento.\nMeu primeiro serviço foi feito no meu próprio carro e posso dizer que foi uma experiência surreal. A partir desse momento, decidi conhecer mais sobre o mercado e fazer parte dele.\nHoje, vejo que há uma grande carência de profissionais qualificados no setor — seja na área automotiva, decorativa ou na comunicação visual. Desde então, essa se tornou a minha maior luta: buscar constante evolução e qualificação para oferecer um trabalho de alto padrão.\nTenho me dedicado a aprimorar minhas habilidades, viajando por todo o Brasil em busca de conhecimento, sempre com o objetivo de entregar o melhor resultado aos meus clientes."
+  },
+  {
+   "pagina": "marcel-2",
+   "nome": "Marcel",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/MARCEL.jpg",
+   "telefones": [
+    "(21) 96021-6602"
+   ],
+   "cidade": "Gardênia Azul / RJ",
+   "instagram": "https://www.instagram.com/dekoartenvelopamento",
+   "texto": "INSTALADORES PRO EXPERT\nMarcel\nINSTALADOR\n\n(21) 96021-6602\n\nGardênia Azul / RJ / Brasil\n\n/@dekoartenvelopamento\nEm pleno 2018, eu estava em busca de uma profissão e encontrei algo que, naquele momento, eu não imaginava que mudaria a minha vida. Saí do CLT para me tornar empreendedor e foi na área de Envelopamento Decorativo que tive a certeza de ter encontrado o que realmente fazia sentido para mim.\nEssa área me conquistou não só financeiramente, mas também pela arte de impressionar o cliente final, que recebia o excelente resultado de cada trabalho realizado.\nMesmo com toda a experiência que adquiri na área Decor, não me canso de buscar novos treinamentos e atualizações. Faço isso para entregar sempre o meu melhor em cada serviço oferecido."
+  },
+  {
+   "pagina": "alex-hander-2",
+   "nome": "Alex Hander",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/ALEX-HANDER.jpg",
+   "telefones": [
+    "(44) 98803-5182"
+   ],
+   "cidade": "MARINGÁ / PR",
+   "instagram": "https://www.instagram.com/visualitdecorenvelopamento",
+   "texto": "INSTALADORES PRO EXPERT\nAlex Hander\nINSTALADOR\n\n(44) 98803-5182\n\nJMARINGÁ / PR / Brasil\n\n/@visualitdecorenvelopamento\nComecei minha jornada na Comunicação Visual em novembro de 2006, quando fundamos a VISUALIT, atuando na confecção de fachadas e no envelopamento de painéis, vitrines, veículos e geladeiras.\nCom o surgimento do vinil decorativo, passamos a oferecer essa novidade aos nossos clientes da comunicação visual, agregando mais um produto ao nosso portfólio.\nPorém, foi durante a pandemia que tudo mudou. Como não podíamos realizar trabalhos externos, muitos clientes começaram a nos procurar para enveloparmos os móveis de suas residências — o que nos surpreendeu. A partir daí, investimos em aprimoramento e desenvolvemos novas técnicas para oferecer sempre o melhor resultado no envelopamento.\nHoje, atuamos exclusivamente na área de Envelopamento Decorativo e, junto com a Alltak, temos o compromisso de difundir o envelopamento de qualidade em todo o país.\nALLTAK NA VEIA!"
+  },
+  {
+   "pagina": "raphael-2",
+   "nome": "Raphael",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/raphael.png",
+   "telefones": [
+    "(21) 96566-9825"
+   ],
+   "cidade": "Gardênia azul / RJ",
+   "instagram": "https://www.instagram.com/aplikdecor",
+   "texto": "INSTALADORES PRO EXPERT\nRaphael\nINSTALADOR\n\n(21) 96566-9825\n\nGardênia azul / RJ Brasil\n\n/@Aplikdecor\nTenho formação em Desenho Técnico Mecânico e Desenho Gráfico. Atuei nessa área por 5 anos em São Paulo. Sempre gostei de trabalhos que envolvem desenho e artesanato.\nEm 2017, me mudei para o Rio de Janeiro e conheci o mundo do envelopamento. Comecei adesivando e cuidando da comunicação visual de uma empresa de ônibus, onde permaneci por mais 5 anos — e me apaixonei logo de cara pela profissão.\nNas horas vagas, passei a realizar pequenos trabalhos por conta própria e logo percebi a grande carência de bons profissionais na minha região. Foi então que decidi montar minha própria empresa.\nEm 2020, me desliguei da empresa onde trabalhava para me dedicar exclusivamente ao meu negócio e aperfeiçoar minhas técnicas. Desde então, estamos crescendo a cada ano. Hoje, contamos com 8 colaboradores e seguimos sempre em busca de evolução, aprendendo com quem é referência no mercado.\nEm 2025, buscando elevar ainda mais o meu nível de qualificação profissional, vim atrás do treinamento e certificação Pro Expert, com o objetivo de entregar projetos cada vez melhores aos nossos clientes."
+  },
+  {
+   "pagina": "fernando-2",
+   "nome": "Fernando de Mello Cordeiro",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/03/Fernando-scaled.jpg",
+   "telefones": [
+    "(18) 99721-6670"
+   ],
+   "cidade": "Dracena / SP",
+   "instagram": "https://www.instagram.com/fernandinho.adesivos",
+   "texto": "INSTALADORES PRO EXPERT\nFERNANDO DE MELLO\nINSTALADOR\n\n(18) 99721-6670\n\nDracena / SP/ Brasil\n\n/@fernandinho.adesivos\nAtuo na aplicação de adesivos desde 2008, vindo do mercado de Comunicação Visual.\nHá 6 anos, conheci o Envelopamento Decorativo e me apaixonei pela área. Desde então, venho me dedicando e aprimorando cada vez mais para garantir a satisfação dos clientes e entregar sempre um trabalho de qualidade."
+  },
+  {
+   "pagina": "sergio-raimundo",
+   "nome": "Sergio Raimundo",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2024/06/Sergio-Argentina.jpeg",
+   "telefones": [
+    "+54 9 11 3826-6964"
+   ],
+   "cidade": "Buenos Aires - Argentina",
+   "instagram": "https://www.instagram.com/goodshinegarage"
+  },
+  {
+   "pagina": "thiagodaprint",
+   "nome": "Thiago da Print",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/11/27-1.jpg",
+   "telefones": [
+    "</span> Ribeirão Preto / SP </div> <div> <span class=\"et-pb-icon icon-i\"></span> <a href=\"https://www.instagram.com/printthiago/\" target=\"_blank\" rel=\"noopener\"> @printthiago"
+   ],
+   "cidade": "Ribeirão Preto / SP",
+   "instagram": "https://www.instagram.com/printthiago",
+   "texto": "INSTALADORES PRO EXPERT\nThiago da Print\nINSTALADOR\n\n+55 16 99272 5002\n\nRibeirão Preto / SP\n\n@printthiago\nHá 20 anos entrei no ramo da Comunicação Visual. Comecei a desenvolver trabalhos de envelopamento automotivo e decorativo. Aprendi muito, a cada dia, com meus acertos e erros, com minhas observações e percepções. Certa vez, fui à feira “Future Print”, com o intuito de comprar uma máquina de impressão digital. Caminhei por toda a feira, para ficar a par das novidades, momento em que vi o estande da Alltak, onde o Thiago Sossai fazia demonstrações dos adesivos em um Porsche. Me aproximei e conversamos. Fui muito bem atendido por ele e pelos demais componentes da equipe. Durante a conversa, descobri que ofereciam cursos. Imediatamente agendamos uma data para a capacitação. Com esse curso inicial minha visão sobre o envelopamento automotivo se ampliou e eu percebi que me dedicaria ainda mais a esse segmento. Desde então fiz vários cursos oferecidos pelo Thiago Sossai, pela Alltak, e pela Arlon.\nComo fruto de todo esse trabalho e dedicação, recebi a certificação de instalador profissional “PRO EXPERT ALLTAK”.\nAlém de instalador, também ministro cursos. Sigo com a filosofia de que todo o conhecimento adquirido deve ser compartilhado. Quanto mais pessoas capacitadas houver, melhores serão os serviços executados, o que resultará em uma maior satisfação para toda a comunidade."
+  },
+  {
+   "pagina": "jefferson-rafael",
+   "nome": "Jefferson Rafael",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-07-at-11.59.32.jpeg",
+   "telefones": [
+    "(19) 98973-4716"
+   ],
+   "cidade": "Campinas / SP",
+   "instagram": "https://www.instagram.com/artetak_envelopamento",
+   "texto": "INSTALADORES PRO EXPERT\nJEFFERSON RAFAEL\nINSTALADOR\n\n(19) 98973-4716\n\nCampinas / SP/ Brasil\n\n/@artetak_envelopamento\nMinha jornada no envelopamento começou em 2013…\nNa época, eu trabalhava como Barman em um hotel, mas não me sentia reconhecido profissionalmente. Foi aí que decidi buscar algo que me desse novos desafios e a oportunidade de empreender.\nDescobri o mundo do envelopamento e comecei vendendo adesivos recortados e fazendo pequenos trabalhos de envelopamento — tudo isso conciliando com o hotel.\nEm novembro daquele ano, dei um passo importante: fui até Santo André fazer meu primeiro curso presencial na área, com o apoio da Alko na época.\nDesde então, nunca mais saí desse mercado. Me especializei e hoje atuo em todos os segmentos do envelopamento Automotivo, Decorativo e PPF (Paint Protection Film)\nSempre buscando me aprimorar para oferecer um serviço completo, de qualidade e confiança aos meus clientes!"
+  },
+  {
+   "pagina": "rafael-xavier",
+   "nome": "RAFAEL XAVIER",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-01-22-at-10.14.47.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nRAFAEL XAVIER\nINSTALADOR\n\n(85) 98651-1993\n\nFortaleza / CE\n\n/@\nrx_envelopamento\nComecei no envelopamento em 2010. O envelopamento me chamou muito a atenção pelo simples fato de eu me deparar com a mudança de cor de um veículo. Isso, para mim, foi algo fora do normal. Então, comecei como serviços gerais em uma empresa, onde fui buscando conhecimentos. Aprendi a trabalhar com envelopamento, adesivos em PVC, esticar lona, fazer banner e cortar cartão de visita. Lá, saí como chefe de setor de acabamento.\nQuando fui para outra empresa, já cheguei como envelopador e lá trabalhei com diversos tipos de envelopamento, tanto de comunicação visual quanto de frotas de veículos. Lá, me tornei Adesivador nível 4, quando o envelopador já conseguia fazer o envelopamento de um carro todo sozinho, sem o auxílio de ajudante. Posso dizer que o envelopamento mudou minha vida; tudo que tenho hoje foi graças ao envelopamento em geral.\nAtualmente sou um PRO EXPERT da Alltak Adesivos e Bi campeão do CAMBEA (Campeonato Brasileiro de Envelopamento Automotivo)"
+  },
+  {
+   "pagina": "jairson-de-azevedo",
+   "nome": "JAIRSON DE AZEVEDO",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-01-21-at-11.51.39.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nJAIRSON DE AZEVEDO\nINSTALADOR\n\n(51) 9562-9916\n\nIgrejinha/RS\n\nenvelopafilm_oficial\nMinha Jornada no Envelopamento – De um Sonho a um Propósito\nTudo começou em 2010, com uma vontade simples, mas poderosa: transformar. Naquela época, comprei adesivos pela internet para personalizar pequenas peças do meu carro. Sempre fui movido por curiosidade e paixão pelo detalhe. Cheguei a contratar um profissional para envelopar minha geladeira — mas o resultado não me agradou. Foi ali que decidi: eu mesmo faria. Mesmo sem tecnologia anti-bolhas e com poucos recursos, comecei a me aventurar no envelopamento de geladeiras.\nTive uma primeira empresa, com um sócio… mas infelizmente fui traído. Fui obrigado a voltar ao comércio tradicional. Mas dentro de mim, o desejo de empreender nunca morreu.\nEm outubro de 2019, eu e minha esposa Ana participamos de uma conferência em São Paulo. Lá, uma jovem nos disse algo que mudou tudo: que teríamos uma empresa muito grande, mas que estávamos com medo. Aquela palavra nos impulsionou. Em 01/11/2019, nasceu a Eletrifilm.\nLogo em março de 2020, veio a pandemia. Os comércios fecharam, o home office cresceu, e com ele também cresceu a procura por soluções práticas e transformadoras como o envelopamento. Nosso negócio começou a se destacar.\nA ideia original era trabalhar com películas automotivas, arquitetônicas e elétrica veicular. Mas o mercado e os clientes nos mostraram outro caminho. Em 2022, recebemos uma notificação: não poderíamos mais usar o nome Eletrifilm. No início, foi um baque. Mas descobrimos que o nome EnvelopaFilm estava muito mais alinhado com o nosso propósito. E assim, renascemos mais fortes.\nA empresa cresceu, nos especializamos, investimos em cursos e hoje temos orgulho de dizer que 70% do nosso trabalho é com envelopamento decorativo, e 30% com películas de controle solar.\nUm sonho antigo nosso era fazer o curso na fábrica da Alltak, mas passamos por duas enchentes e também ouvimos muita gente dizendo que “não valia a pena”. Ainda assim, não desistimos. E agora, em junho de 2025, com apoio do Nélio (representante da Alltak no RS), conseguimos ir a São Paulo. Enfrentei uma prova teórica e prática desafiadora… e passei. Hoje, me tornei oficialmente um Pro Expert Alltak.\nEssa jornada é sobre resiliência, transformação e fé. Cada obstáculo foi um passo a mais em direção ao que construímos. E seguimos firmes: com amor pelo que fazemos, com compromisso pela excelência e com um propósito claro — transformar ambientes, veículos e vidas através do envelopamento"
+  },
+  {
+   "pagina": "rodrigo-paulo",
+   "nome": "RODRIGO PAULO",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/Rodrigo.jpg.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nRODRIGO PAULO\nINSTALADOR\n\n(11) 98917-1750\n\nItapecerica / SP\n\nrp_envelopamento_decor\nTrabalhei durante um tempo na área de manutenção de um hotel, sempre lidando com reparos e cuidados no ambiente. Um dia, conheci o envelopamento decorativo da Alltak. E aquilo me chamou atenção de um jeito diferente. Fiquei encantado com a possibilidade de transformar ambientes com criatividade, praticidade e acabamento profissional. Foi aí que decidi mergulhar de cabeça nesse universo.\nHoje, atuo com envelopamento decorativo, e posso dizer que encontrei algo que realmente me inspira. Cada projeto é uma oportunidade de renovar, personalizar e surpreender."
+  },
+  {
+   "pagina": "lucas-lopes",
+   "nome": "LUCAS LOPES",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/Lucas.jpg.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nLUCAS LOPES\nINSTALADOR\n\n(11) 95915-0283\n\nGUARULHOS – SÃO PAULO/SP\n\nlcwrap_custom\nDesde muito jovem, tive interesse por carros, principalmente os antigos. Em uma visita a feiras em São Paulo, tive a oportunidade de conhecer pessoas que me apresentaram e me deram a chance de fazer o primeiro curso de envelopamento. Logo após, me inscrevi para o curso básico da Alltak, ainda focado no envelopamento automotivo, mas sempre tratando como um trabalho alternativo.\nNo ano de 2024, notando a grande crescente no ramo ‘decorativo’, decidi tornar esta a minha principal atividade. Me inscrevi no curso decor básico/intermediário na Alltak e, a partir desse momento, estive sempre focado em aprimorar e elevar meus conhecimentos."
+  },
+  {
+   "pagina": "willian-henrique",
+   "nome": "WILLIAN HENRIQUE",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/Willian.jpg.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nWILLIAN HENRIQUE\nINSTALADOR\n\n(11) 97954-1933\n\nITAPEVI/SP\n\nwill.envelopamentos_\nMinha trajetória começou aos 14 anos no ramo gráfico, onde desenvolvi olhar atento aos detalhes e à qualidade. Durante anos, conciliei essa paixão com a área logística, o que me trouxe organização, responsabilidade e visão de gestão.\nHá dois anos, decidi me dedicar totalmente ao envelopamento decorativo, um mercado que me abriu portas e me trouxe a oportunidade de transformar ambientes. Com o apoio de parceiros, amigos e muita dedicação, busquei constante aperfeiçoamento, e a certificação PRO EXPERT veio para somar ainda mais na busca por qualidade, embora o que realmente me move seja o compromisso diário com a excelência e a satisfação dos clientes.\nAtuo levando soluções criativas e de alto padrão para quem deseja renovar e transformar espaços, unindo estética, funcionalidade e durabilidade."
+  },
+  {
+   "pagina": "demurie-silva",
+   "nome": "DEMURIE SILVA",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-01-23-at-15.08.12.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nDEMURIE SILVA\nINSTALADOR\n\n(82) 8737-3422\n\nSão Miguel Dos campos/AL\n\natitude_envelopamento\nMinha jornada começou em 2010, justamente no auge do adesivo preto fosco, quando o destino me conduziu a esta profissão.\nAinda sem experiência, iniciei personalizando as motos de amigos. Foi ali que percebi uma oportunidade de mudança de vida, abandonando a antiga rotina como pedreiro.\nDesde então, meu foco é a evolução constante. Busco aprimorar-me por meio de cursos e desenvolvimento de novas técnicas, visando a excelência profissional.\nAo longo da carreira, descobri uma paixão genuína por compartilhar o conhecimento que adquiri. Hoje, sou instrutor e tenho um curso com um número significativo de alunos inscritos."
+  },
+  {
+   "pagina": "bruno-andrey",
+   "nome": "BRUNO ANDREY",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-01-23-at-16.38.25.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nBruno Andrey\nINSTALADOR\n\n(19) 97410-9135\n\nCampinas/SP\n\nbex.decor\nIniciei na área gráfica fazendo criação de arte para cartão de visita e panfletos… Sempre em busca de conhecimento me formei em design gráfico e dei start no meu pequeno negócio, assim como tudo cambia em nossas vidas, aumentei o portifólio fazendo envelopamento automotivo e náutico… Resolvi ingressar também com o envelopamento Decorativo pois a demanda surgiu no decorrer de conversas com os clientes que estavam em busca de praticidade e custo benefício nesse meio.\nHá mais de 10 anos já atuando no mercado e lavando o envelopamento como carro chefe da minha empresa atualmente."
+  },
+  {
+   "pagina": "leandro-simoes",
+   "nome": "LEANDRO SIMÕES",
+   "categorias": [
+    "automotivo"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-03-at-09.59.26.jpeg",
+   "telefones": [],
+   "cidade": "",
+   "instagram": null,
+   "texto": "INSTALADORES PRO EXPERT\nLEANDRO SIMÕES\nINSTALADOR\n\n(31) 9368-9193\n\nBetim / MG\n\nindustria.adesivos\nO que parecia um hobby\nvirou uma profissão cheia de desafios e obstáculos. Progressivamente, degrau a degrau, fui construindo e escrevendo meu nome no cenário do envelopamento brasileiro. Hoje, sinto-me orgulhoso e disposto a encarar desafios maiores. Persistência e muito esforço foram o caminho para obtenção desta certificação. Deus, família e “olha o brilho”!"
+  },
+  {
+   "pagina": "glauco-martins",
+   "nome": "Glauco Martins",
+   "categorias": [
+    "decor"
+   ],
+   "foto": "https://alltak.com.br/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-16-at-14.02.39.jpeg",
+   "telefones": [
+    "(21) 96417-7011"
+   ],
+   "cidade": "Vila Valqueire/RJ",
+   "instagram": "https://www.instagram.com/mvlopdecor",
+   "texto": "INSTALADORES PRO EXPERT\nGLAUCO MARTINS\nINSTALADOR\n\n(21) 96417-7011\n\nVila Valqueire/RJ\n\nmvlopdecor\nSou especialista em envelopamento decorativo e atuo exclusivamente nesta área há 10 anos, acumulando cerca de 20mil horas de experiência. Minhas especialidades são mobiliários domésticos, marcenaria náutica e de hotelaria. Minha trajetória neste segmento é irretocável, conquistada através de um trabalho impecável, atenção minuciosa aos detalhes e compromisso com a excelência.\nMinha metodologia de trabalho é baseada na filosofia Kaizen, que tem como princípio a melhoria contínua. Inspirada na cultura japonesa, essa filosofia propõe a busca constante por aperfeiçoamento, eficiência e qualidade, garantindo que cada projeto seja executado com o mais alto nível de precisão e cuidado.\nCada detalhe do meu trabalho reflete esse compromisso, assegurando que o resultado final sempre supere as expectativas dos meus clientes."
+  }
+ ]
+}

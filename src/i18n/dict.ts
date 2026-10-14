@@ -12,6 +12,7 @@ export const DICT: Record<string, Record<Lang, string>> = {
   'nav.store': { pt: 'Alltak Store', en: 'Alltak Store', es: 'Alltak Store' },
   'nav.onde': { pt: 'Onde Comprar', en: 'Where to Buy', es: 'Dónde Comprar' },
   'nav.instalador': { pt: 'Encontre um Instalador', en: 'Find an Installer', es: 'Encuentra un Instalador' },
+  'nav.downloads': { pt: 'Downloads', en: 'Downloads', es: 'Descargas' },
   'nav.sobre': { pt: 'Sobre Nós', en: 'About', es: 'Sobre Nosotros' },
   'nav.contato': { pt: 'Contato', en: 'Contact', es: 'Contacto' },
 

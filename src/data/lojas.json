@@ -1,0 +1,2702 @@
+[
+ {
+  "uf": "AC",
+  "estado": "Acre",
+  "cidade": "Epitaciolandia",
+  "empresa": "T A DOS SANTOS",
+  "endereco": "Av. Amazonas, 1320",
+  "bairro": "Liberdade",
+  "telefone": "68 3026-5010"
+ },
+ {
+  "uf": "AC",
+  "estado": "Acre",
+  "cidade": "Rio Branco",
+  "empresa": "O SERIGRAFICO COMUNICAÇÃO VISUAL",
+  "endereco": "Av. Antonio da Rocha Viana, 1167",
+  "bairro": "Bosque",
+  "telefone": "68 2102-0853"
+ },
+ {
+  "uf": "AC",
+  "estado": "Acre",
+  "cidade": "Rio Branco",
+  "empresa": "PLASTICOS AMAZONAS",
+  "endereco": "Av Getulio Vargas, 1110",
+  "bairro": "Bosque",
+  "telefone": "68 3244-1521"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Arapiraca",
+  "empresa": "CASA DOS ADESIVOS",
+  "endereco": "R. Manoel Abreu, 115",
+  "bairro": "Centro",
+  "telefone": "82 2022-8208"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Arapiraca",
+  "empresa": "SHOPVINIL",
+  "endereco": "Rua Padre Anchieta, 134",
+  "bairro": "Centro",
+  "telefone": "82 3521-1516"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Maceio",
+  "empresa": "NEW CONTROL",
+  "endereco": "Rua do Sol, 567",
+  "bairro": "Centro",
+  "telefone": "82 3027-8755"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Maceio",
+  "empresa": "SHOPVINIL",
+  "endereco": "Av. Moreira e Silva, 818",
+  "bairro": "Centro",
+  "telefone": "82 3316-1411"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Maceio",
+  "empresa": "STAR FILMS",
+  "endereco": "Av. Governador Afrânio Lages, 296",
+  "bairro": "Centro",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Maceió",
+  "empresa": "CASA DOS ADESIVOS",
+  "endereco": "R. Santa Luzia, 10",
+  "bairro": "Tabuleiro do Martins",
+  "telefone": "82 3320-4516"
+ },
+ {
+  "uf": "AL",
+  "estado": "Alagoas",
+  "cidade": "Maceió",
+  "empresa": "MENDONÇA PLÁSTICO",
+  "endereco": "Av. Moreira Lima, 448",
+  "bairro": "Centro",
+  "telefone": "82 3223-4171"
+ },
+ {
+  "uf": "AP",
+  "estado": "Amapá",
+  "cidade": "Macapá",
+  "empresa": "CAMALEÃO TINTAS",
+  "endereco": "R. SANTOS DUMONT,2330",
+  "bairro": "BURITIZAL",
+  "telefone": "(96) 3223-7839 (96) 99 202-3851"
+ },
+ {
+  "uf": "AP",
+  "estado": "Amapá",
+  "cidade": "Macapá",
+  "empresa": "PLASTICOS AMAZONAS",
+  "endereco": "Rua Mendonça Junior, 409",
+  "bairro": "Central",
+  "telefone": "(96) 3222-3406"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "3S Serigrafia Sublimação Sign",
+  "endereco": "Av. Parintins 369 Altos",
+  "bairro": "Cachoeirinha",
+  "telefone": "92 992321218 e 92 991609348"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "DM ADESIVOS",
+  "endereco": "Av. Constantino Nery, 2533",
+  "bairro": "São Geraldo",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "GM MATERIAIS SERIGRAFICOS",
+  "endereco": "Av. 7 de Setembro, 1405",
+  "bairro": "Centro",
+  "telefone": "92 3233-0170"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "LP ADESIVOS & SUPRIMENTOS",
+  "endereco": "Av. Nepal, 73 CEP 69097-315",
+  "bairro": "Nova Cidade",
+  "telefone": "92 99514 2904"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "MASTERSILK",
+  "endereco": "Rua Autaz Mirim, 5077",
+  "bairro": "São José Operario",
+  "telefone": "92 3648-6187"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "PRADO SOM CAR",
+  "endereco": "Av. Visc. de Porto Alegre, 1572",
+  "bairro": "Praça 14 de Janeiro",
+  "telefone": "(92) 3633-3004"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "RYMO DA AMAZONIA",
+  "endereco": "Av. Ajuricaba, 1005",
+  "bairro": "Cachoeirinha",
+  "telefone": "92 2101-9292"
+ },
+ {
+  "uf": "AM",
+  "estado": "Amazonas",
+  "cidade": "Manaus",
+  "empresa": "SUPRIMENTOS CVS",
+  "endereco": "Rua Loris Cordovil, 15",
+  "bairro": "Alvorada 1",
+  "telefone": "92 99492-8950, 92 98449-6336 e 92 98446-8228"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Alagoinhas",
+  "empresa": "FÊNIX COMUNICAÇÃO",
+  "endereco": "Rua João Dantas, 276",
+  "bairro": "Santa Terezinha",
+  "telefone": "75 3181-1340"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Camaçari",
+  "empresa": "LOJA PIRAJA",
+  "endereco": "Rua Eixo Urbano Central, 17",
+  "bairro": "Centro",
+  "telefone": "71 3621-1160"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Conceição do Coité",
+  "empresa": "COMERCIAL SANTA BARBARA",
+  "endereco": "R. Prof. Antônio Bahia, 144",
+  "bairro": "Centro",
+  "telefone": "75 3262-2217"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Feira de Santana",
+  "empresa": "BETO BOLSAS",
+  "endereco": "Rua Visconde do Rio Branco, 445",
+  "bairro": "Centro",
+  "telefone": "75 3322-3550"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Feira de Santana",
+  "empresa": "CIA DO SILK",
+  "endereco": "Rua Barão de Cotegipe 1350",
+  "bairro": "Centro",
+  "telefone": "75 3024-1593"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Feira de Santana",
+  "empresa": "POTISIGNS",
+  "endereco": "Rua Artur de Assis, 367",
+  "bairro": "Queimadinha",
+  "telefone": "75 3199-9431"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Feira de Santana",
+  "empresa": "STAR FILMS",
+  "endereco": "Av. Maria Quitéria, 957",
+  "bairro": "Brasília",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Ilhéus",
+  "empresa": "FILMAR PELÍCULAS",
+  "endereco": "Av Itabuna",
+  "bairro": "Basílio",
+  "telefone": "73 98861-6606"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Itabuna",
+  "empresa": "CRIE E BORDE",
+  "endereco": "Rua Ruffo Galvão, 26",
+  "bairro": "Centro",
+  "telefone": "73 3211-8520"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Itabuna",
+  "empresa": "SHEKINAH TINTAS",
+  "endereco": "Av. Ilheus, 149",
+  "bairro": "Centro",
+  "telefone": "73 3612-4461"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Itapetinga",
+  "empresa": "Papel & Cia",
+  "endereco": "Rua Montes Claros, 26",
+  "bairro": "Camacã",
+  "telefone": "77 3261-1837"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Jacobina",
+  "empresa": "JACOBINA SILK",
+  "endereco": "Rua Afonso Costa, 116",
+  "bairro": "Centro",
+  "telefone": "74 3621-2471"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Paulo Afonso",
+  "empresa": "COMERCIAL MOURA",
+  "endereco": "Rua São Francisco, 295",
+  "bairro": "Centro",
+  "telefone": "75 3281-1889"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Salvador",
+  "empresa": "BETO BOLSAS",
+  "endereco": "Av. José Joaquim Seabra,105",
+  "bairro": "Baixa dos Sapateiros",
+  "telefone": "71 4103-0529"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Salvador",
+  "empresa": "CASA DOS ADESIVOS",
+  "endereco": "Rua das Rosas, 292",
+  "bairro": "Pituba",
+  "telefone": "71 3353-8000"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Salvador",
+  "empresa": "CIA DO SILK",
+  "endereco": "Ladeira de Santana, 91",
+  "bairro": "Nazaré",
+  "telefone": "71 3422-5599"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Salvador",
+  "empresa": "NEW CONTROL",
+  "endereco": "AV. VASCO DA GAMA, 3743 LJ 2G",
+  "bairro": "AÇUDE DE BROTAS",
+  "telefone": "71 99163-0326"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Salvador",
+  "empresa": "POTISIGNS",
+  "endereco": "Rua Rodolfo Pimentel, S/N",
+  "bairro": "Daniel Lisboa",
+  "telefone": "71 3233-2662 / 71 99951-5228"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Salvador",
+  "empresa": "STAR FILMS",
+  "endereco": "Av. Barros Reis, 396",
+  "bairro": "Pau Miúdo",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Santo Antonio de Jesus",
+  "empresa": "CRIE E BORDE",
+  "endereco": "Rua Manoel Jose da Paixão Araujo, 88",
+  "bairro": "Centro",
+  "telefone": "75 3631-5559"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Teixeira De Freitas",
+  "empresa": "ARIZONA PLÁSTICOS DECOR",
+  "endereco": "Av Mal Castelo Branco, 290",
+  "bairro": "Centro",
+  "telefone": "73 3291-2739"
+ },
+ {
+  "uf": "BA",
+  "estado": "Bahia",
+  "cidade": "Vitória Da Conquista",
+  "empresa": "CIA DIGITAL",
+  "endereco": "Av Brumado, 377",
+  "bairro": "Brasil",
+  "telefone": "77 3426-1115"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "ABUDE",
+  "endereco": "Rua José Avelino, 800",
+  "bairro": "Centro",
+  "telefone": "85 3231-7476"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "AMAZONAS DECORAÇÕES",
+  "endereco": "Rua Professor Gomes de Matos, 1702",
+  "bairro": "Montese",
+  "telefone": "83 3491-4305"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "COLORSIGN",
+  "endereco": "Av. Carneiro de Mendonça, 426",
+  "bairro": "Democrito Rocha",
+  "telefone": "85 3290-2501"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "ELISABETH PRODUTOS SERIGRAFICOS",
+  "endereco": "Rua Vitoria, 911",
+  "bairro": "Henrique Jorge",
+  "telefone": "85 3290-6360"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "MR SOLUTION",
+  "endereco": "R. Monsenhor Vicente Martins, 990",
+  "bairro": "Henrique Jorge",
+  "telefone": "85 3085-5955"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "POTISIGN",
+  "endereco": "Av. dos Expedicionários, 4788",
+  "bairro": "Montese",
+  "telefone": "85 3051 6490"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "QUANTUM",
+  "endereco": "Rua Felino Barroso, 237",
+  "bairro": "Fatima",
+  "telefone": "85 3272-2150"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "STAR FILMS",
+  "endereco": "Av. Heráclito Graça, 720 A",
+  "bairro": "Aldeota",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Fortaleza",
+  "empresa": "VISAO BRINDES",
+  "endereco": "Rua Jose Avelino, 775",
+  "bairro": "Centro",
+  "telefone": "85 3219-7272"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Juazeiro do Norte",
+  "empresa": "MARCONDES COMUNICAÇÃO VISUAL",
+  "endereco": "Rua Jose Marrocos, 442",
+  "bairro": "Salesianos",
+  "telefone": "88 3512-7394"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Juazeiro do Norte",
+  "empresa": "POTISIGNS",
+  "endereco": "R. Leão XIII, 292",
+  "bairro": "Salesianos",
+  "telefone": "88 3512-9639"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Juazeiro do Norte",
+  "empresa": "RICARDO SUPRIMENTOS",
+  "endereco": "Rua São Pedro, 1874",
+  "bairro": "Salesianos",
+  "telefone": "85 99929-6810"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Juazeiro do Norte",
+  "empresa": "VIA SILK",
+  "endereco": "Rua José Marrocos, 598",
+  "bairro": "Salesianos",
+  "telefone": "85 3512-9186"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Juazeiro do Norte",
+  "empresa": "VIA SILK",
+  "endereco": "Rua Leão XIII, 292",
+  "bairro": "Salesianos",
+  "telefone": "88 3512-9639"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Sobral",
+  "empresa": "ARTE PLAST",
+  "endereco": "Rua Dom José Tupinanba da Frota, 11613",
+  "bairro": "Centro",
+  "telefone": "88 3611-2240"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Sobral",
+  "empresa": "RICARDO SUPRIMENTOS",
+  "endereco": "Rua Conselheiro Rodrigues Junior, 257",
+  "bairro": "Centro",
+  "telefone": "88 3613-2092"
+ },
+ {
+  "uf": "CE",
+  "estado": "Ceará",
+  "cidade": "Sobral",
+  "empresa": "TAVARES SILK",
+  "endereco": "Rua Menino Deus, 742",
+  "bairro": "Centro",
+  "telefone": "88 3111-3808"
+ },
+ {
+  "uf": "DF",
+  "estado": "Distrito Federal",
+  "cidade": "Brasília",
+  "empresa": "ALIDAY",
+  "endereco": "Rua ADE Q 4",
+  "bairro": "Ceilândia",
+  "telefone": "61 3376-6613"
+ },
+ {
+  "uf": "DF",
+  "estado": "Distrito Federal",
+  "cidade": "Brasília",
+  "empresa": "BURITY SUPRIMENTOS",
+  "endereco": "CND 01 Lote 07 Loja 01",
+  "bairro": "Taguatinga-Norte",
+  "telefone": "61 3026-4466"
+ },
+ {
+  "uf": "DF",
+  "estado": "Distrito Federal",
+  "cidade": "Brasília",
+  "empresa": "PLASTCOM DECORAÇÕES E COMUNICAÇÃO VISUAL",
+  "endereco": "Rua CNG 6",
+  "bairro": "Taguatinga Norte",
+  "telefone": "61 3354-7600"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Cariacica",
+  "empresa": "AQUARELA SILK & SIGN",
+  "endereco": "Rua America, 18",
+  "bairro": "Jardim America",
+  "telefone": "27 3226-4133"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Cariacica",
+  "empresa": "Pingos Silk & Sign LTDA",
+  "endereco": "R. Engenheiro José Serta, 8 – 1 Pavimento.",
+  "bairro": "Jardim America",
+  "telefone": "(27) 3226-2011"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Colatina",
+  "empresa": "Plástico e Cia",
+  "endereco": "Rua Expedicionário Abílio dos Santos, nº43",
+  "bairro": "Centro",
+  "telefone": "27 3722-0339"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Linhares",
+  "empresa": "KAZACHIC PLASTICOS",
+  "endereco": "Rua Capitão Jose Maria, 1100",
+  "bairro": "Centro",
+  "telefone": "27 3264-4588"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Serra",
+  "empresa": "JC SINALIZACAO",
+  "endereco": "Rua São Jose, 199",
+  "bairro": "Jardim Limoeiro",
+  "telefone": "27 3058-1522"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "São Mateus",
+  "empresa": "GIL PLASTICOS",
+  "endereco": "Rua Doutor Arlindo Sodré, 822",
+  "bairro": "Centro",
+  "telefone": "27 3763-2911"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Vila Velha",
+  "empresa": "ART TOLDOS SUPRIMENTOS DE COMUNICAÇÃO VISUAL",
+  "endereco": "Av. Nossa Senhora da Penha, 70",
+  "bairro": "Ibes",
+  "telefone": "27 3061-6823"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Vila Velha",
+  "empresa": "HD PLÁSTICOS",
+  "endereco": "Av Rui Braga Ribeiro, 96",
+  "bairro": "Santa Inês",
+  "telefone": "27 3219-7369"
+ },
+ {
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "cidade": "Vitoria",
+  "empresa": "HIPER FILMS",
+  "endereco": "Av. Vitória, 2945",
+  "bairro": "Gurigica",
+  "telefone": "27 3325-4250"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Anapolis",
+  "empresa": "ATACADÃO DO ADESIVO",
+  "endereco": "Av. Sebastião Pedro Junqueira, quadra 13 lote 8",
+  "bairro": "Setor JK",
+  "telefone": "62 3314-2660"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Anapolis",
+  "empresa": "CASA DE COUROS PROCOPIO",
+  "endereco": "Rua General Joaquim Inacio, 306",
+  "bairro": "Setor Central",
+  "telefone": "62 3324-5363"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Anapolis",
+  "empresa": "MALHARIA SEA TEXTIL",
+  "endereco": "Av. Central, 130",
+  "bairro": "Setor Maracana",
+  "telefone": "62 3315-3400"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "ALTERNATIVA SERIGRAFIA E SIGNS",
+  "endereco": "Rua T2, 2512",
+  "bairro": "Setor Bueno",
+  "telefone": "62 3251-5787"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "GOIANIA ADESIVOS LTDA",
+  "endereco": "Av. Rio Verde, 1170",
+  "bairro": "Setor dos Afonsos",
+  "telefone": "62 99536-1565"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "IMPACTO VISUAL",
+  "endereco": "Rua Senador Miguel Rocha Lima, 224",
+  "bairro": "Setor Crimeia Leste",
+  "telefone": "62 3203-5450"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "LEED ADESIVOS",
+  "endereco": "Av. Transbrasiliana, quadra 13 lote 9",
+  "bairro": "Setor Serrinha",
+  "telefone": "62 3088-6678"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "MASTER VINIL",
+  "endereco": "Av. C, 856",
+  "bairro": "Jd. America",
+  "telefone": "62 3286-4774"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "POLO VISUAL COM. DE MAT. P/SERIG. E COM. VISUAL",
+  "endereco": "Rua 72, 27",
+  "bairro": "Setor Central",
+  "telefone": "62 3223-4378"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "TECHFAST",
+  "endereco": "Rua Januário da Cunha Barbosa, QD. 31 LT. 07 Nº 144",
+  "bairro": "Capuava",
+  "telefone": "62 3294-0329"
+ },
+ {
+  "uf": "GO",
+  "estado": "Goiás",
+  "cidade": "Goiania",
+  "empresa": "TOTAL VINIL",
+  "endereco": "Rua C, 115",
+  "bairro": "Jd. America",
+  "telefone": "62 3932-0100"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "Imperatriz",
+  "empresa": "CARÚ MAT SERIGRÁFICOS E SINALIZAÇÃO",
+  "endereco": "Rua Monte Castelo, 296",
+  "bairro": "Imperatriz",
+  "telefone": "99 3523-2681"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "Imperatriz",
+  "empresa": "CASA DAS NAPAS",
+  "endereco": "Rua Piaui, 710",
+  "bairro": "Centro",
+  "telefone": "99 3525-5981"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "Imperatriz",
+  "empresa": "OCRAM ADESIVOS & LONAS",
+  "endereco": "Av. Babaçulândia, 863",
+  "bairro": "Vila Lobão",
+  "telefone": "(99) 9 9220-5006"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "Imperatriz",
+  "empresa": "SILK",
+  "endereco": "Av. Bernardo Sayão, 1272",
+  "bairro": "Nova Imperatriz",
+  "telefone": "99 3525-9828"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "São Luiz",
+  "empresa": "HP FILMS",
+  "endereco": "Av. Jerônimo de Albuquerque, 10",
+  "bairro": "Recanto Vinhais",
+  "telefone": "98 3304-0241"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "São Luiz",
+  "empresa": "OCRAM ADESIVOS & LONAS",
+  "endereco": "Rua Dois Mil e Quatrocentos, 01",
+  "bairro": "Parque Aurora",
+  "telefone": "98 3303-7973"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "São Luiz",
+  "empresa": "PLASTICOURO",
+  "endereco": "Rua João Pessoa, 335",
+  "bairro": "João Paulo",
+  "telefone": "98 3303-8255"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "São Luiz",
+  "empresa": "PLASTICOURO COHAB",
+  "endereco": "Av. Principal, 22",
+  "bairro": "Cohab Anil III",
+  "telefone": "98 3302-7225"
+ },
+ {
+  "uf": "MA",
+  "estado": "Maranhão",
+  "cidade": "São Luiz",
+  "empresa": "QUANTUM PRODUTOS DE COMUNICACAO VISUAL",
+  "endereco": "Rua Tres, 103",
+  "bairro": "Forquilha",
+  "telefone": "98 3259-5282"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Cuiaba",
+  "empresa": "BRASLUM COMUNICAÇÃO VISUAL",
+  "endereco": "Rua Miguel Sutil, 14428",
+  "bairro": "Areão",
+  "telefone": "65 3322-9839"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Cuiaba",
+  "empresa": "Potisigns",
+  "endereco": "R.15 de novembro, 389",
+  "bairro": "Centro",
+  "telefone": "65 981297221"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Cuiaba",
+  "empresa": "UNIFILM",
+  "endereco": "Rua Jornalista Roberto Jacques Brunini, 9",
+  "bairro": "Jd. Europa",
+  "telefone": "65 3634-0110"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Cuiaba",
+  "empresa": "WIMAK INDUSTRIA E COMERCIO",
+  "endereco": "Av Quinze de Novembro, 451",
+  "bairro": "Centro Sul",
+  "telefone": "65 3624-5658"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Cuiabá",
+  "empresa": "TEKSIGN Soluções para Comunicação Visual",
+  "endereco": "Travessa Celso Luis Moraes de Almeida, 42",
+  "bairro": "Porção",
+  "telefone": "65 3364-4801"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Mirassol D'oeste",
+  "empresa": "REI DO PANO",
+  "endereco": "Rua Mariano Rodrigues Paiva, 3341",
+  "bairro": "Centro",
+  "telefone": "65 3241-1344"
+ },
+ {
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "cidade": "Sinop",
+  "empresa": "DELTA SCREEN COM. DE MAT. P/ PINTURA",
+  "endereco": "Rua das Palmeiras, 2128",
+  "bairro": "Jardim das Palmeiras",
+  "telefone": "66 3532-1755"
+ },
+ {
+  "uf": "MS",
+  "estado": "Mato Grosso do Sul",
+  "cidade": "Campo Grande",
+  "empresa": "BK FILMES E ACESSÓRIOS",
+  "endereco": "Av. Calógeras, 675",
+  "bairro": "Centro",
+  "telefone": "67 3380-9814 | 67 99601-9814"
+ },
+ {
+  "uf": "MS",
+  "estado": "Mato Grosso do Sul",
+  "cidade": "Campo Grande",
+  "empresa": "MASTER ADESIVOS E SUPRIMENTOS",
+  "endereco": "Av. Bandeirantes, 2961",
+  "bairro": "Vila Bandeirante",
+  "telefone": "67 3386-7600 | 67 99646-1473"
+ },
+ {
+  "uf": "MS",
+  "estado": "Mato Grosso do Sul",
+  "cidade": "Campo Grande",
+  "empresa": "UNIFILM MS",
+  "endereco": "Rua Juvenal Alves Correa, 900",
+  "bairro": "Jardim Monte Líbano",
+  "telefone": "67 3383-8687"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "ALTEROSA LONAS",
+  "endereco": "Avenida Presidente Antônio Carlos, 7710",
+  "bairro": "São Luiz",
+  "telefone": "31 3443-6522"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "BARREIRÃO COUROS",
+  "endereco": "Av Sinfronio Brochado, 1577",
+  "bairro": "Barreiro",
+  "telefone": "31 2551-1010"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "DECOPLAST",
+  "endereco": "Av. Olegário Maciel, 405",
+  "bairro": "Centro",
+  "telefone": "31 3201-2773"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "FERREIRA PIRES SUPRIMENTOS",
+  "endereco": "Av Dom Pedro II, 2698",
+  "bairro": "Carlos Prates",
+  "telefone": "31 2555-0100"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "GUAJAJARAS SUPRIMENTOS PARA COMUNICAÇÃO VISUAL",
+  "endereco": "Rua Amazons, 1500",
+  "bairro": "Barro Preto",
+  "telefone": "31 3291-4646"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "JC DECOR",
+  "endereco": "Av. Dom Pedro II, 1479",
+  "bairro": "Carlos Prates",
+  "telefone": "31 3201-3187"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Belo Horizonte",
+  "empresa": "PONTO DO VINIL",
+  "endereco": "Av Arquiteto Morandi, 92",
+  "bairro": "Barreiro",
+  "telefone": "31 3361-7908"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Betim",
+  "empresa": "VINIL MIX",
+  "endereco": "Rua Cônego Domingos Martins, 237 B",
+  "bairro": "Centro",
+  "telefone": "31 3511-6031"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Conselheiro Lafaiete",
+  "empresa": "DECALKE ADESIVOS",
+  "endereco": "Rua Padre Lobo, 170",
+  "bairro": "Chapada",
+  "telefone": "31 3721-6441"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Contagem",
+  "empresa": "DUPLA FACE SIGN SERIGRÁFIA",
+  "endereco": "R. Camilo Schiara, 90",
+  "bairro": "Flamengo",
+  "telefone": "31 3911-4929"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Divinópolis",
+  "empresa": "MIXSUPRI VISUAL",
+  "endereco": "R. Bahia, 368",
+  "bairro": "Centro",
+  "telefone": "37 3071-6322"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Governador Valadares",
+  "empresa": "HM Películas",
+  "endereco": "Rua Marechal Deodoro, 919",
+  "bairro": "Centro",
+  "telefone": "33 99147-8178"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Ipatinga",
+  "empresa": "CASA GLOBO",
+  "endereco": "Rua Selim José de Sales, 1452",
+  "bairro": "Canaa",
+  "telefone": "31 3826-8148"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Juiz de Fora",
+  "empresa": "FRISILK",
+  "endereco": "Rua Marechal Deodoro, 108",
+  "bairro": "Centro",
+  "telefone": "32 3017-9991"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Montes Claros",
+  "empresa": "PAPELARIA REIS",
+  "endereco": "Rua Governador Valadares, 291",
+  "bairro": "Centro",
+  "telefone": "38 3221-8912"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Passos",
+  "empresa": "ARTE CORES INDUSTRIA E COMERCIO",
+  "endereco": "Rua Farid Esper Kallas, 409",
+  "bairro": "Vila Romana",
+  "telefone": "35 3526-7010"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Pouso Alegre",
+  "empresa": "BW ADESIVOS",
+  "endereco": "Avenida Pinto Cobra (Perimetral), 1839",
+  "bairro": "Centro",
+  "telefone": "35 3022-4480"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Poços de Caldas",
+  "empresa": "NOVAPLAST",
+  "endereco": "Avenida José Remígio Prézia, 1543",
+  "bairro": "Jardim dos Estados",
+  "telefone": "35 3722-2760"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Uberaba",
+  "empresa": "ARTE SCREEN",
+  "endereco": "Rua Barão do Rio Branco, 1033",
+  "bairro": "São Benedito",
+  "telefone": "34 3336-5453"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Uberlandia",
+  "empresa": "ARTE SCREEN",
+  "endereco": "Rua Cesario Alvim, 2020",
+  "bairro": "N. Sra. Aparecida",
+  "telefone": "34 3212-0421"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Uberlandia",
+  "empresa": "TINTAS E ADESIVOS UNIÃO UBERLANDIA",
+  "endereco": "Av Araguai, 262",
+  "bairro": "Martins",
+  "telefone": "34 3257-5653"
+ },
+ {
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "cidade": "Ubá",
+  "empresa": "GRAMDECOR",
+  "endereco": "Rua Olegario Maciel, 333",
+  "bairro": "Industrial",
+  "telefone": "32 3532-7541"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Cascavel",
+  "empresa": "FIXCOM PRODUTOS PARA COMUNICAÇAO VISUAL",
+  "endereco": "RUA CARLOS GOMES 3404",
+  "bairro": "Centro",
+  "telefone": "45 3306 0318"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Cascavel",
+  "empresa": "TUPI SCREEN DISTRIBUIDOR",
+  "endereco": "Rua Barão do Cerro Azul, 688",
+  "bairro": "Centro",
+  "telefone": "45 3224-5976"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Curitiba",
+  "empresa": "CH SUPRIMENTOS PARA COMUNICACAO VISUAL",
+  "endereco": "Rua Desembargador Westphalen, 1732",
+  "bairro": "Rebouças",
+  "telefone": "41 3010-9701"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Curitiba",
+  "empresa": "TECNOMOLD ART.P/ LETRISTAS E SERIGRAFOS",
+  "endereco": "Avenida Presidente Kennedy, 4054/ Compl: Loja 02,0708/01",
+  "bairro": "Portão",
+  "telefone": "41 3345-6717"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Guarapuava",
+  "empresa": "VINIL COMPANY",
+  "endereco": "R. Brigadeiro Rocha, 1701",
+  "bairro": "Centro",
+  "telefone": "42 3304-5044"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Londrina",
+  "empresa": "ARTAGEL",
+  "endereco": "R. Maranhão, 3552",
+  "bairro": "CENTRO",
+  "telefone": "(43) 99955-6410"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Londrina",
+  "empresa": "GLOBAL ADESIVOS",
+  "endereco": "Avenida Jorge Casoni, 1343",
+  "bairro": "Vl. Casoni",
+  "telefone": "43 3356-6924"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Maringa",
+  "empresa": "CRESCER SIGN",
+  "endereco": "Av Mandacaru, 3758",
+  "bairro": "Jd Império do Sol",
+  "telefone": "44 3029-3207"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Maringa",
+  "empresa": "SERITELAS DECOR (YASSO)",
+  "endereco": "Av. Morangueira, 230",
+  "bairro": "Zona 07",
+  "telefone": "44 3366-0011"
+ },
+ {
+  "uf": "PR",
+  "estado": "Paraná",
+  "cidade": "Ponta Grossa",
+  "empresa": "VINIL COMPANY",
+  "endereco": "Rua Ernesto Vilela, 651",
+  "bairro": "Nova Russia",
+  "telefone": "42 3025-7701"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "Cajazeiras",
+  "empresa": "YANNE MAGAZINE",
+  "endereco": "AV PRES. JOAO PESSOA, 1108",
+  "bairro": "Centro",
+  "telefone": "83 3531-4475"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "Campina Grande",
+  "empresa": "CASAS LEO",
+  "endereco": "Av Presidente João Pessoa, 210",
+  "bairro": "Centro",
+  "telefone": "83 3322-7367"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "Campina Grande",
+  "empresa": "J.L BRAGA",
+  "endereco": "Av. Presidente Joao Pessoa, 96",
+  "bairro": "Centro",
+  "telefone": "83-3321-2519"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "Campina Grande",
+  "empresa": "JBS PLASTICOS",
+  "endereco": "Rua Raimundo alves da Silva, 266",
+  "bairro": "Centro",
+  "telefone": "83 - 99647-6916"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "Campina Grande",
+  "empresa": "POTISIGNS",
+  "endereco": "Travessa Elpídio de Almeida, 1098",
+  "bairro": "Catolé",
+  "telefone": "83 3099-4502"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "João Pessoa",
+  "empresa": "COLOR SIGN",
+  "endereco": "Rua Professor Oswaldo Miranda Pereira, 600",
+  "bairro": "Jardim Luna",
+  "telefone": "83 3225-1779"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "João Pessoa",
+  "empresa": "COLOR SIGN BEIRA RIO",
+  "endereco": "Av. Min. José Américo de Almeida, 64",
+  "bairro": "Torre",
+  "telefone": "(83) 3023-7004"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "João Pessoa",
+  "empresa": "POTISIGNS",
+  "endereco": "R. Mal. Almeida Barreto, 278",
+  "bairro": "Centro",
+  "telefone": "83 3031-4240"
+ },
+ {
+  "uf": "PB",
+  "estado": "Paraíba",
+  "cidade": "Patos",
+  "empresa": "POTISIGNS",
+  "endereco": "R. Felizardo Leite, 135",
+  "bairro": "Centro",
+  "telefone": "83 3422-1608"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Altamira",
+  "empresa": "EMPORIO MARTINS",
+  "endereco": "Rua Manoel Umbuzeiro, 2069",
+  "bairro": "Centro",
+  "telefone": "93 3515-0356"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Belém",
+  "empresa": "ACHÉ",
+  "endereco": "Rua Marques de Pombal, 128",
+  "bairro": "Cidade Velha",
+  "telefone": "91 3299-3350"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Belém",
+  "empresa": "ARTSIGNS",
+  "endereco": "Av. Alm. Barroso, 5498",
+  "bairro": "Castanheira",
+  "telefone": "91 3231-2636"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Belém",
+  "empresa": "DECOPLAST",
+  "endereco": "Rua Senador Manoel Barata, 31",
+  "bairro": "Campina",
+  "telefone": "91 3225-3939"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Belém",
+  "empresa": "SOFTCAR & LAR",
+  "endereco": "Rua Antonio Barreto, 773",
+  "bairro": "Fatima",
+  "telefone": "91 3246-7358"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Castanhal",
+  "empresa": "PLASTICOS AMAZONAS",
+  "endereco": "Rua Barão do Rio Branco, 2306",
+  "bairro": "Centro",
+  "telefone": "91 3721-3114"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Maraba",
+  "empresa": "PLASTICOS AMAZONAS",
+  "endereco": "Rua Antonio Maia, 1700",
+  "bairro": "Velha Maraba",
+  "telefone": "94 3321-1945"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Marabá",
+  "empresa": "PLÁSTICOS BRASIL",
+  "endereco": "Rua Afro Sampaio, 2152",
+  "bairro": "Cidade Nova",
+  "telefone": "94 99225-4779 / 3356-0802"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Paraupebas",
+  "empresa": "TUNING BRASIL",
+  "endereco": "Rua Sol Poente, 13",
+  "bairro": "Rio Verde",
+  "telefone": "94 3356-0802"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Santarem",
+  "empresa": "PADRAO MAGAZINE",
+  "endereco": "Rua Rui Barbosa, 2225",
+  "bairro": "Aldeia",
+  "telefone": "93 3522-5296"
+ },
+ {
+  "uf": "PA",
+  "estado": "Pará",
+  "cidade": "Tucurui",
+  "empresa": "CASA TOCANTINS TECIDOS",
+  "endereco": "Av. Lauro Sodré, 579",
+  "bairro": "São José",
+  "telefone": "94 3787-1477"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Caruaru",
+  "empresa": "CASAS LEO",
+  "endereco": "Rua Tobias Barreto, 42 / Complemeto: 50",
+  "bairro": "Centro",
+  "telefone": "81 3721-7518"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Caruaru",
+  "empresa": "PLASSTIC",
+  "endereco": "Rua Presidente Getulio Vargas, 27",
+  "bairro": "N. Sra. das Dores",
+  "telefone": "(81) 9 9808-3466"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Caruaru",
+  "empresa": "POTISIGNS",
+  "endereco": "R. Coronel Porto, 129",
+  "bairro": "Nossa Senhora das Dores",
+  "telefone": "81 3721-1909"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Caruaru",
+  "empresa": "WM SILK & SIGN",
+  "endereco": "Pca Coronel Porto, 105 / Complemento: Anexo 111",
+  "bairro": "São Francisco",
+  "telefone": "81 3095-0738"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Palmares",
+  "empresa": "APREDILETA",
+  "endereco": "Rua Doutor Paulo Paranhos, 1130",
+  "bairro": "Centro",
+  "telefone": "81 3661-0173"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Paulista",
+  "empresa": "JB SILK & SIGN",
+  "endereco": "Av. Rodolfo Aureliano, PE-015, Nº 678",
+  "bairro": "Vila Torres Galvão",
+  "telefone": "(81) 99599-8355"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Petrolina",
+  "empresa": "POTISIGNS",
+  "endereco": "Av. Da Integração N° 56",
+  "bairro": "Km 2",
+  "telefone": "87 3024-4186"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "CASAS LEO",
+  "endereco": "Rua da Palma, 463",
+  "bairro": "Sto. Antonio",
+  "telefone": "81 3366-6300"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "NEW CONTROL",
+  "endereco": "Rua Conselheiro Teodoro, 228",
+  "bairro": "Zumbi",
+  "telefone": "81 3228-3124"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "NEW CONTROL",
+  "endereco": "Rua Da Palma, 460",
+  "bairro": "Sto. Antonio",
+  "telefone": "81 3132-3662"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "PLASSTIC",
+  "endereco": "R. Floriano Peixoto, 195",
+  "bairro": "Santo Antônio",
+  "telefone": "81 99282-8230"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "POTISIGNS",
+  "endereco": "Rua Lambari, 84",
+  "bairro": "São José",
+  "telefone": "81 - 9 9450-1120"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "QUANTUM",
+  "endereco": "Rua Padre Lima e Sá, 732",
+  "bairro": "Ipsep",
+  "telefone": "81 3097-0882"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
+  "empresa": "WM SILK & SIGN",
+  "endereco": "Rua da Palma, 518",
+  "bairro": "Sto. Antonio",
+  "telefone": "81 3097-0042"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Santa Cruz do Capibaribe",
+  "empresa": "WM SILK SIGN",
+  "endereco": "Av. 29 de Dezembro, 603",
+  "bairro": "São Cristóvão",
+  "telefone": "81 97903-6880"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Serra Talhada",
+  "empresa": "INNOVAR VARIEDADES",
+  "endereco": "R. Deputado Afranio Ribeiro de Godoy, 620",
+  "bairro": "Nossa Sra. da Penha",
+  "telefone": "87 99811-0250"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Serra Talhada",
+  "empresa": "RICARDO JUDSON",
+  "endereco": "R. Enock Ignácio de Oliveira, 718",
+  "bairro": "Nossa Sra. da Penha",
+  "telefone": "87 99820-2020"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Parnaíba",
+  "empresa": "CASA DO ADESIVO",
+  "endereco": "Rua Itaúna, n° 134B",
+  "bairro": "São Francisco",
+  "telefone": "86 3323- 1769"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Piracuruca",
+  "empresa": "VISUAL ART",
+  "endereco": "Rua Coronel Pedro de Brito, 1449",
+  "bairro": "Centro",
+  "telefone": "86 3343-2604"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Teresina",
+  "empresa": "AMAZONAS",
+  "endereco": "Av. Miguel Rosa, 6506",
+  "bairro": "N. Sra. das Graças",
+  "telefone": "86 3305-6439"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Teresina",
+  "empresa": "AQUARELA",
+  "endereco": "Av. José dos Santos e Silva, 1481/ Complemento: Loja 02",
+  "bairro": "Centro",
+  "telefone": "86 3226-4980"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Teresina",
+  "empresa": "ART TINTAS",
+  "endereco": "Rua Desembargador Freitas, 1029/ Complemento: SL.101",
+  "bairro": "Centro",
+  "telefone": "86 3222-4549"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Teresina",
+  "empresa": "M 4 LTDA",
+  "endereco": "Av. Joaquim Ribeiro, 930",
+  "bairro": "Centro",
+  "telefone": "86 3221-2227"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Teresina",
+  "empresa": "MUNDIAL",
+  "endereco": "Av. Joaquim Ribeiro, 1445",
+  "bairro": "Vermelha",
+  "telefone": "86 3221-2598"
+ },
+ {
+  "uf": "PI",
+  "estado": "Piauí",
+  "cidade": "Teresina",
+  "empresa": "STAR FILMS",
+  "endereco": "Av. Miguel Rosa, 4732",
+  "bairro": "Nossa Sra. das Gracas, Teresina",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Caicó",
+  "empresa": "Potisigns",
+  "endereco": "R. Dr. José Medeiros, 09",
+  "bairro": "Centro",
+  "telefone": "84 9888-01394"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Mossoró",
+  "empresa": "POTISIGNS",
+  "endereco": "Rua Felipe Camarão, 247",
+  "bairro": "Alto Da Conceição",
+  "telefone": "84 3314-1394"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Mossoró",
+  "empresa": "STAR FILMS",
+  "endereco": "R. Felipe camarão, 818",
+  "bairro": "Alto Da Conceição",
+  "telefone": "WHATSAPP"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Natal",
+  "empresa": "AMAZONAS DECORAÇÕES",
+  "endereco": "Rua Cel. Estevam, 916",
+  "bairro": "Alecrim",
+  "telefone": "84 3223-5609"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Natal",
+  "empresa": "COLORSIGN",
+  "endereco": "Av. Almirante Alexandrino de Alencar, 657",
+  "bairro": "Alecrim",
+  "telefone": "84 3027-0559"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Natal",
+  "empresa": "POTISIGNS",
+  "endereco": "Av. Altamirante Alexandrino de Alencar, 563",
+  "bairro": "Alecrim",
+  "telefone": "84 3611-2556"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Natal",
+  "empresa": "POTISIGNS",
+  "endereco": "Av. Doutor João Medeiros Filho, 3885",
+  "bairro": "Pajucara",
+  "telefone": "84 2136-4865"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Caxias do Sul",
+  "empresa": "ALTERNATIVA",
+  "endereco": "Av Rio Branco, 1040",
+  "bairro": "Rio Branco",
+  "telefone": "54 3226-3555"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Esteio",
+  "empresa": "TAMSIGN/FERROS TAMANDARÉ",
+  "endereco": "Rua Manoel Machado, 44",
+  "bairro": "Tamandaré",
+  "telefone": "51 99698-2462"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Novo Hamburgo",
+  "empresa": "GEMIR",
+  "endereco": "Rua Flores da Cunha, 28",
+  "bairro": "Patria Nova",
+  "telefone": "51 3593-3153"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Passo Fundo",
+  "empresa": "SERIKRAFT",
+  "endereco": "Rua Belém, 96",
+  "bairro": "SAO CRISTOVÃO",
+  "telefone": "54 3622-5600"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Pelotas",
+  "empresa": "GEMIR",
+  "endereco": "Av. Senador Salgado Filho, 1597",
+  "bairro": "Tres Vendas",
+  "telefone": "53 3283-6363"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Porto Alegre",
+  "empresa": "FILM IN",
+  "endereco": "Rua Augusto Severo, 335",
+  "bairro": "Navegantes",
+  "telefone": "51 3778-0404"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Porto Alegre",
+  "empresa": "GEMIR COMERCIO",
+  "endereco": "Rua Garibaldi, 489",
+  "bairro": "Bom Fim",
+  "telefone": "51 3226-1834"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Porto Alegre",
+  "empresa": "Way Sign",
+  "endereco": "Rua São Carlos, 809",
+  "bairro": "Floresta",
+  "telefone": "51 3029-7820"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Santa Cruz do Sul",
+  "empresa": "SERIKRAFT",
+  "endereco": "Rua São José, 3116",
+  "bairro": "Senai",
+  "telefone": "55 3902-0161 55 98462-7064"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Santa Maria",
+  "empresa": "SERIKRAFT",
+  "endereco": "Av. Borges de Medeiros, 775",
+  "bairro": "Nossa Senhora do Rosário",
+  "telefone": "55 3026-1776"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Santa Maria",
+  "empresa": "VIA SUL SUPRIMENTOS",
+  "endereco": "Av Governador Walter Jobim, 978",
+  "bairro": "Patronato",
+  "telefone": "55 3026-1880"
+ },
+ {
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "cidade": "Santo Ângelo",
+  "empresa": "SERIKRAFT",
+  "endereco": "Marechal Floriano, 1033",
+  "bairro": "Centro",
+  "telefone": "55 3312-1964"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Cabo Frio",
+  "empresa": "ANDER FILM",
+  "endereco": "Av. Independencia, 153",
+  "bairro": "Unamar",
+  "telefone": "22 2646 1459"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Campos dos Goytacazes",
+  "empresa": "FENIX FILMS",
+  "endereco": "Rua Gil de Gois, 28",
+  "bairro": "Centro",
+  "telefone": "22 99996-2280"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Duque de Caxias",
+  "empresa": "ROSA BRANCA",
+  "endereco": "Av. Nilo Peçanha, 510",
+  "bairro": "Centro",
+  "telefone": "21 2671-6577"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Niterói",
+  "empresa": "AnderFilm",
+  "endereco": "Rua Dr. Mario Viana, 487",
+  "bairro": "Santa Rosa",
+  "telefone": "21 3587-9004/3587-9005"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Niterói",
+  "empresa": "NIT SIGN SUPRIMENTOS",
+  "endereco": "Rua Andrade Neves, 25 / Compl. LOJA 101",
+  "bairro": "Centro",
+  "telefone": "21 2613-4034"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Nova Friburgo",
+  "empresa": "FRISILK",
+  "endereco": "Rodovia Presidente João Gulart, 70",
+  "bairro": "Centro",
+  "telefone": "22 2523-1917"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Nova Iguaçu",
+  "empresa": "ANDER FILM",
+  "endereco": "Travessa António, 25",
+  "bairro": "São Benedito",
+  "telefone": "21 3102 9478"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "CAVEIRINHA PLASTICOS",
+  "endereco": "Av Engenheiro Gastao Rangel, 1226",
+  "bairro": "Santa Cruz",
+  "telefone": "21 3158-1228"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "DANI FILM",
+  "endereco": "Estr. da Água Branca, 4020",
+  "bairro": "Padre Miguel",
+  "telefone": "21 96472-2377"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "GRUPO DE IDEIAS COMERCIO LTDA",
+  "endereco": "Rua Bela, 624",
+  "bairro": "São Critovão",
+  "telefone": "21 2580-6464"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "PROTON SILK",
+  "endereco": "Rua Professor Clemente Ferreira, 1829",
+  "bairro": "Bangu",
+  "telefone": "21 3421-2099"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "REI DO SILK",
+  "endereco": "Rua Carolina Machado 542 loja d",
+  "bairro": "Madureira",
+  "telefone": "21 3399 5540 / 21 96404-7811"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "RIVIERA PLÁSTICOS",
+  "endereco": "Rua Buenos Aires, 295",
+  "bairro": "Centro/Saara",
+  "telefone": "21 3228-1016"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "RIVIERA PLÁSTICOS",
+  "endereco": "Av. Ayrton Senna, 5500, Bloco 07 (Unidade 143,144,145)",
+  "bairro": "Barra da Tijuca (Shopping Uptown)",
+  "telefone": "21 3400-7627"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "RIVIERA PLÁSTICOS",
+  "endereco": "Rua Doutor Barros Junior, 344",
+  "bairro": "Nova Iguaçu",
+  "telefone": "21 2768-8923 / 21 2669-0775"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "SUPRICOLOR SILK E SIGN",
+  "endereco": "Av. Cesario de Melo, 2463 / Compl. LOJA A",
+  "bairro": "Campo Grande",
+  "telefone": "21 2412-1745"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "Rio de Janeiro",
+  "empresa": "VISUAL MANIA SUPRIM. REVESTIMENTOS E COMUNICACAO",
+  "endereco": "Rua Morivas, 38",
+  "bairro": "Taquara",
+  "telefone": "21 3734-9030 / 21 3586-7086"
+ },
+ {
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "cidade": "São Gonçalo",
+  "empresa": "ALCANTARA SIGN",
+  "endereco": "R. Jovelino de Oliveira Viana, 150 - loja 8-9",
+  "bairro": "Alcantara",
+  "telefone": "21 3147-8000"
+ },
+ {
+  "uf": "RO",
+  "estado": "Rondônia",
+  "cidade": "Ji-Paraná",
+  "empresa": "PAPELARIA ARTE E COR",
+  "endereco": "Avenida Transcontinental, 830",
+  "bairro": "Jotão",
+  "telefone": "69 3421-0481"
+ },
+ {
+  "uf": "RO",
+  "estado": "Rondônia",
+  "cidade": "Porto Velho",
+  "empresa": "CENTERGRAPH COMERCIO",
+  "endereco": "R. Panamá, 2224",
+  "bairro": "Embratel",
+  "telefone": "69 3224 1940"
+ },
+ {
+  "uf": "RR",
+  "estado": "Roraima",
+  "cidade": "Boa Vista",
+  "empresa": "CIA DA ART",
+  "endereco": "Av. Nossa Senhora da Consolata, 1665",
+  "bairro": "Centro",
+  "telefone": "95 3624-4791"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Ararangua",
+  "empresa": "M.P.K DO BRASIL",
+  "endereco": "Rua Antônio Bertoncini, 115",
+  "bairro": "Cidade Alta",
+  "telefone": "48 3522-2403"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Balneario Camboriu",
+  "empresa": "RENO TOLDOS E ESTOFAMENTOS NAUTICOS",
+  "endereco": "Rua Brusque, 151",
+  "bairro": "Dos Municipios",
+  "telefone": "47 3363-7991"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Blumenau",
+  "empresa": "DRUCKEN SUPRIMENTOS",
+  "endereco": "RUA LUIZ ELEODORO DA SILVA, 403",
+  "bairro": "PONTA AGUDA",
+  "telefone": "47-3209-3036"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Blumenau",
+  "empresa": "ULTRA SUPRIMENTOS",
+  "endereco": "Rua Gutemberg, 45",
+  "bairro": "Bairro Fortaleza",
+  "telefone": "47 3041-0302"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Criciuma",
+  "empresa": "M.P.K.DO BRASIL",
+  "endereco": "Rua Conego Anibal Maria di França, 123",
+  "bairro": "Pinheirinho",
+  "telefone": "48 3437-0822"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Criciuma",
+  "empresa": "PREMIUM SIGN",
+  "endereco": "Rua Santa Bárbara,120 Sala 02",
+  "bairro": "Santa Barbara",
+  "telefone": "48 3438-0150"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Joinville",
+  "empresa": "COLORTOP",
+  "endereco": "Rua Papa João XXIII, 1185",
+  "bairro": "Iririu",
+  "telefone": "47 3043-2554"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Joinville",
+  "empresa": "NEXINK",
+  "endereco": "Rua Abelardo Lopes da Silva, 236",
+  "bairro": "",
+  "telefone": "47 3043-0890"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Palhoça",
+  "empresa": "FILM IN COMÉRCIO DE PELICULAS",
+  "endereco": "Rua Cecilia do Rego Almeida, Sem número",
+  "bairro": "Jardim Eldorado",
+  "telefone": "48 3344-4982"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "São José",
+  "empresa": "HSP ARTE SIGN SERIGRAFIA",
+  "endereco": "Av Osni João Vieira, 190",
+  "bairro": "Campinas",
+  "telefone": "48 3035-1917"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "São José",
+  "empresa": "M.P.K. DO BRASIL",
+  "endereco": "Av. Jamily Elias, 20",
+  "bairro": "Rocado",
+  "telefone": "48 3437-0822"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Tubarão",
+  "empresa": "M.P.K. DO BRASIL",
+  "endereco": "Av. Expedicionário José Pedro Coelho, 2252",
+  "bairro": "Revoredo",
+  "telefone": "48 3628-4867"
+ },
+ {
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "cidade": "Tubarão",
+  "empresa": "PREMIER SIGN",
+  "endereco": "Rua Altamiro Guimarães, 726",
+  "bairro": "Centro",
+  "telefone": "48 3626-3506"
+ },
+ {
+  "uf": "SE",
+  "estado": "Sergipe",
+  "cidade": "Aracaju",
+  "empresa": "7 SIGN EQUIPAMENTOS E SUPRIMENTOS",
+  "endereco": "Rua Itabaiana, 287",
+  "bairro": "Centro",
+  "telefone": "79 99931-0737"
+ },
+ {
+  "uf": "SE",
+  "estado": "Sergipe",
+  "cidade": "Aracaju",
+  "empresa": "BETO BOLSAS",
+  "endereco": "Ladeira da praça, 36",
+  "bairro": "Centro",
+  "telefone": "71 3322-8527"
+ },
+ {
+  "uf": "SE",
+  "estado": "Sergipe",
+  "cidade": "Aracaju",
+  "empresa": "SHOPVINIL",
+  "endereco": "Rua Acre, 542",
+  "bairro": "Siqueira Campos",
+  "telefone": "82 3521-1516"
+ },
+ {
+  "uf": "SE",
+  "estado": "Sergipe",
+  "cidade": "Lagarto",
+  "empresa": "CENTERPLASTICO",
+  "endereco": "Av. Leandro Maciel, 186 / 176",
+  "bairro": "Centro",
+  "telefone": "79 3631-2115"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Americana",
+  "empresa": "TOP LONAS AMERICANA",
+  "endereco": "R. Itapemirim, 272",
+  "bairro": "Jardim Ipiranga",
+  "telefone": "19 3648-3083 / 19 99489-2386"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Araçatuba",
+  "empresa": "VITÓRIA DISTRIBUIDORA",
+  "endereco": "Av. José Ferreira Batista, 1714",
+  "bairro": "Santana",
+  "telefone": "18 3304-4440"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Bauru",
+  "empresa": "EMPÓRIO DO ADESIVO",
+  "endereco": "Avenida Nuno de Assis, 14-09",
+  "bairro": "Centro",
+  "telefone": "14 3206-2090"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Campinas",
+  "empresa": "CASA DIAMANTE",
+  "endereco": "Av. Benjamin Constant, 485",
+  "bairro": "Centro",
+  "telefone": "19 2102-1211"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Campinas",
+  "empresa": "Casa Nissi Decor",
+  "endereco": "R. Alexander Von Humboldt, 94",
+  "bairro": "Jardim Bela Vista",
+  "telefone": "(19) 99864-8989"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Campinas",
+  "empresa": "KOLADO",
+  "endereco": "VER LOCAL",
+  "bairro": "JARDIM DO TREVO",
+  "telefone": "WHATSAPP SITE"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Diadema",
+  "empresa": "PALOMBO & FILHOS",
+  "endereco": "R. Corunha, 17",
+  "bairro": "Centro",
+  "telefone": "11 4044-4226"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Dracena",
+  "empresa": "ARTAGEL",
+  "endereco": "928",
+  "bairro": "Centro",
+  "telefone": "18 3822-3040"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Francisco Morato",
+  "empresa": "PONTUAL SUPRIMENTOS",
+  "endereco": "Av. São Paulo, 1672",
+  "bairro": "Pq. Paulista",
+  "telefone": "11 4608-4345"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Guaratingueta",
+  "empresa": "SUPERFILME",
+  "endereco": "Rua Sylvio Gonçalves Dias, 82",
+  "bairro": "Res. Esplanada",
+  "telefone": "12 3133-1253"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Guarulhos",
+  "empresa": "PONTUAL SUPRIMENTOS",
+  "endereco": "Av. Brigadeiro Faria Lima, 371",
+  "bairro": "Jardim Cocaia",
+  "telefone": "(11) 2447-2158"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Guarulhos",
+  "empresa": "Tecno Sign Adesivos",
+  "endereco": "Avenida Sete de Setembro, nº1374",
+  "bairro": "Vila Galvão",
+  "telefone": "11 98496-0117 / 11 4803-9452"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Itaquaquecetuba",
+  "empresa": "SENNA SUPRIMENTOS",
+  "endereco": "Av. Itaquaquecetuba, 282",
+  "bairro": "Vila Monte Belo",
+  "telefone": "11 97031-7750"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Jundiaí",
+  "empresa": "CASA DIAMANTE",
+  "endereco": "AV. Dr. Odil Campos de Saes, 570",
+  "bairro": "Vianelo",
+  "telefone": "11 4583-7100"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Marilia",
+  "empresa": "EMPÓRIO DO ADESIVO",
+  "endereco": "Av. República, 1255",
+  "bairro": "Palmital",
+  "telefone": "14 3413-4535"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Maua",
+  "empresa": "MANOLUMI",
+  "endereco": "Avenida Itapark, 4965",
+  "bairro": "Jd. Itapark",
+  "telefone": "11 4547-2399"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Mogi Guaçu",
+  "empresa": "NENO PLÁSTICOS",
+  "endereco": "Av. Júlio Xavier da Silva, 122",
+  "bairro": "Parque Cidade Nova",
+  "telefone": "(19) 3891-7030"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Mogi Guaçu",
+  "empresa": "TOP LONAS MOGI GUAÇU",
+  "endereco": "Av. dos Trabalhadores, 2268",
+  "bairro": "Jardim Camargo",
+  "telefone": "19 3362-1130 / 19 98826-0779"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Mogi das Cruzes",
+  "empresa": "IMPRESSION ADESIVOS PARA COMUNICAÇÃO VISUAL",
+  "endereco": "R. JOSÉ PEDRO NAURE, 69",
+  "bairro": "ALTO IPIRANGA",
+  "telefone": "11 3374-1200"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Osasco",
+  "empresa": "JAPA ADESIVOS FILIAL",
+  "endereco": "Av. Diogo Antônio Feijó, 727",
+  "bairro": "Km 18",
+  "telefone": "(11) 92001-7145"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Osasco",
+  "empresa": "JAPA ADESIVOS MATRIZ",
+  "endereco": "Av. Gen. Pedro Pinho, 1273",
+  "bairro": "Pestana",
+  "telefone": "(11) 99850-8011"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Osasco",
+  "empresa": "TECNOSIGN",
+  "endereco": "R. Maria Quintina dos Santos, 690",
+  "bairro": "Pestana",
+  "telefone": "11 3605-6348"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Presidente Prudente",
+  "empresa": "ARTAGEL",
+  "endereco": "Av. Brasil, 1222",
+  "bairro": "Vila São Jorge",
+  "telefone": "(18) 99807-8213"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Ribeirão Preto",
+  "empresa": "CASA DIAMANTE",
+  "endereco": "Av. Francisco Junqueira, 891",
+  "bairro": "Campos Elíseos, 891",
+  "telefone": "16 3604-4110"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Ribeirão Preto",
+  "empresa": "VITÓRIA DISTRIBUIDORA",
+  "endereco": "R. Dom Pedro II, 1586",
+  "bairro": "Campos Elísios",
+  "telefone": "16 3966-5506"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Santo Andre",
+  "empresa": "SILK SIGN ABC",
+  "endereco": "Trav. Vereador Lourenço Rondinelli, 141",
+  "bairro": "Centro",
+  "telefone": "11 4438-1975"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Santo André",
+  "empresa": "ALVO REVENDA",
+  "endereco": "Av. Pres. Costa e Silva, 887",
+  "bairro": "Parque Capuava",
+  "telefone": "11 4549-2990"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Santos",
+  "empresa": "VINIL & CIA",
+  "endereco": "Av Senador Feijo, 617",
+  "bairro": "Vila Matias",
+  "telefone": "13 3223-3019"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Sorocaba",
+  "empresa": "MEGAETROS",
+  "endereco": "Avenida São Paulo, 463",
+  "bairro": "Alem Ponte",
+  "telefone": "15 3232-4195"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Sorocaba",
+  "empresa": "NS3 FULL MARKETPLACE LTDA",
+  "endereco": "RUA RIO GRANDE DO SUL, 446",
+  "bairro": "Centro",
+  "telefone": "15 99106-5348"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Sorocaba",
+  "empresa": "RA REVESTIMENTOS",
+  "endereco": "R. Coronel Nogueira Padilha, 244",
+  "bairro": "Vila Hortência",
+  "telefone": "(15) 3142-2386"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Suzano",
+  "empresa": "MARIMARI PAPELARIA E COMUNICAÇÃO VISUAL",
+  "endereco": "Av Armando de Sales Oliveira, 950",
+  "bairro": "Parque Suzano",
+  "telefone": "11 4744-6558"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Bernardo",
+  "empresa": "MANOLUMI",
+  "endereco": "Av. Senador Vergueiro, 4719",
+  "bairro": "Rudge Ramos",
+  "telefone": "11 4368-4965"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Bernardo do Campo",
+  "empresa": "ABC SIGN",
+  "endereco": "Av. Senador Vergueiro, 4013",
+  "bairro": "Rude Ramos",
+  "telefone": "(11) 96472-8602"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Caetano",
+  "empresa": "MANOLUMI",
+  "endereco": "Rua Alegre, 686",
+  "bairro": "Santa Paula",
+  "telefone": "11 4226-2531"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São José do Rio Preto",
+  "empresa": "EMPÓRIO DO ADESIVO",
+  "endereco": "Rua Saldanha Marinho, 2302",
+  "bairro": "Boa Vista",
+  "telefone": "17 3234-8668"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São José do Rio Preto",
+  "empresa": "TELASILK",
+  "endereco": "Rua Prof. Álvaro Duarte de Almeida, 965",
+  "bairro": "Parque Industrial",
+  "telefone": "17 3353-3659"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São José dos Campos",
+  "empresa": "PLASTISIGN SUPRIMENTOS",
+  "endereco": "Av. Cassiopeia, 931",
+  "bairro": "Jd. Satelite",
+  "telefone": "12 3933-0127"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São José dos Campos",
+  "empresa": "Shop Vinil",
+  "endereco": "R. Januária, 931",
+  "bairro": "Chácaras Reunidas",
+  "telefone": "(12)3937-6702"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "ADIE ADESIVOS E SUPRIMENTOS",
+  "endereco": "Rua Guaranésia, 582",
+  "bairro": "Vila Maria",
+  "telefone": "11 95777-9898"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "Alia Decor",
+  "endereco": "Rua Monsenhor Anacleto, 65",
+  "bairro": "Brás",
+  "telefone": "11 3313-3221"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "ANARIE BRASIL",
+  "endereco": "Rua das Imbiras, 117",
+  "bairro": "Tucuruvi",
+  "telefone": "11 3804-1004"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "ANARIE BRÁS",
+  "endereco": "Avenida Rangel Pestana, 1356",
+  "bairro": "Brás",
+  "telefone": "(11) 94534-7801"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "CASA DIAMANTE",
+  "endereco": "Av. Cruzeiro do Sul, 2357",
+  "bairro": "Santana",
+  "telefone": "11 2104-2228"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "COMERCIAL HEAVEN ADESIVOS E LONAS",
+  "endereco": "Avenida João Marcelino Branco, 136",
+  "bairro": "Vila dos Andrades",
+  "telefone": "11 3851-9282"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "LESTEPLASTIC",
+  "endereco": "Avenida Marechal Tito, 4131",
+  "bairro": "Itaim Paulista",
+  "telefone": "11 2561-5154"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PEKSCREEN",
+  "endereco": "Av. Eng. Caetano Álvares, 5671",
+  "bairro": "Mandaqui",
+  "telefone": "11 2258-8289"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PLACART PRODUTOS SERIGRAFICOS",
+  "endereco": "Rua Candido Vale, 304",
+  "bairro": "Tatuapé",
+  "telefone": "11 2293-3366"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PONTO SIGNS",
+  "endereco": "R. Guilherme Valente, 54 A",
+  "bairro": "Jardim Vergueiro",
+  "telefone": "11 94025-9095"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PONTUAL DECOR",
+  "endereco": "R. Diamante Preto, 649",
+  "bairro": "Chácara Califórnia",
+  "telefone": "11 96602-9720"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PONTUAL SUPRIMENTOS",
+  "endereco": "Av. Elisio Teixeira Leite, 1331",
+  "bairro": "Vl. Brasilandia",
+  "telefone": "11 3975-9212"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PONTUAL SUPRIMENTOS",
+  "endereco": "Rua Dr Paulo Ribeiro Coelho, 280",
+  "bairro": "Jardim Ester Yolanda",
+  "telefone": "11 4301-2015"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "PONTUAL SUPRIMENTOS",
+  "endereco": "Av. Yervant Kissajikian, 101",
+  "bairro": "Vila Constancia",
+  "telefone": "(11) 97641-6880"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "REDE SIGN",
+  "endereco": "Rua Eulália, 115",
+  "bairro": "Santana",
+  "telefone": "11 94769-6964"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "RGR SUPRIMENTOS",
+  "endereco": "Av. Nordestina, 318",
+  "bairro": "Vila Americana",
+  "telefone": "(11) 2033-0093"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "ROMA SIGN FILIAL",
+  "endereco": "Rua. Acrúas, 44",
+  "bairro": "Vila Congonhas",
+  "telefone": "11 5096-2122"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "ROMA SIGNS SUPRIMENTOS",
+  "endereco": "R. Joaquin Nabuco, 2002",
+  "bairro": "Brooklin",
+  "telefone": "11 5044-0610"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "SECALL COMUNICACAO VISUAL",
+  "endereco": "Rua Fiorelli Peccicacco, 1054",
+  "bairro": "Perus",
+  "telefone": "11 3917-5600"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Vicente",
+  "empresa": "MANOLUMI",
+  "endereco": "Av. Antonio Emerich, 853",
+  "bairro": "Vila Melo",
+  "telefone": "13 3469-3700"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Taboão da Serra",
+  "empresa": "COMERCIAL BRIGIDO",
+  "endereco": "Estrada Kizaemon Takeuti, 315",
+  "bairro": "Jardim Clementino",
+  "telefone": "11 4139-6414"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "Taubaté",
+  "empresa": "Lojas Ítalo/ Sofitec",
+  "endereco": "Av. Granadeiro Guimaraes, 506",
+  "bairro": "Centro",
+  "telefone": "12 3621-2002"
+ },
+ {
+  "uf": "TO",
+  "estado": "Tocantins",
+  "cidade": "Araguaína",
+  "empresa": "SUPRIMAS",
+  "endereco": "RUA QUATORZE DE DEZEMBRO, 239",
+  "bairro": "Dom Orione",
+  "telefone": "(63) 3415-1729"
+ },
+ {
+  "uf": "TO",
+  "estado": "Tocantins",
+  "cidade": "Gurupi",
+  "empresa": "MR DECOR",
+  "endereco": "R. Manoel Rocha, 1374",
+  "bairro": "Centro",
+  "telefone": "(63)3312-2739"
+ },
+ {
+  "uf": "TO",
+  "estado": "Tocantins",
+  "cidade": "Palmas",
+  "empresa": "POTISIGNS - ACNO 11",
+  "endereco": "Q. 103 Norte Avenida LO 2, NO 07 - Lt 15",
+  "bairro": "Plano Diretor Norte",
+  "telefone": "(63) 3215-2604"
+ },
+ {
+  "uf": "TO",
+  "estado": "Tocantins",
+  "cidade": "Palmas",
+  "empresa": "VINILLON",
+  "endereco": "103 Sul Rua So 11, nº27",
+  "bairro": "Plano Diretor Sul",
+  "telefone": "63 3215-7091"
+ }
+]
