@@ -283,6 +283,8 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
   'dl.arquivo': { pt: 'arquivo', en: 'file', es: 'archivo' },
   'dl.arquivos': { pt: 'arquivos', en: 'files', es: 'archivos' },
   'dl.acessar': { pt: 'Acessar', en: 'Open', es: 'Acceder' },
+  'dl.acessarArquivos': { pt: 'Acessar os arquivos', en: 'Open the files', es: 'Acceder a los archivos' },
+  'dl.artes': { pt: 'artes', en: 'artworks', es: 'artes' },
   'dl.todos': { pt: 'Todos os downloads', en: 'All downloads', es: 'Todas las descargas' },
   'cat.catalogo': { pt: 'Catálogo', en: 'Catalog', es: 'Catálogo' },
   'cat.baixar': { pt: 'Baixar ↓', en: 'Download ↓', es: 'Descargar ↓' },

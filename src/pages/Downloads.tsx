@@ -43,7 +43,7 @@ export function DownloadsInicio() {
                 <p className="mt-2 text-base text-alltak-black/65">{texto(g.desc, lang)}</p>
                 <div className="mt-auto flex items-center justify-between pt-6">
                   <span className="text-sm text-alltak-black/50">
-                    {g.itens.length} {t(g.itens.length === 1 ? 'dl.arquivo' : 'dl.arquivos')}
+                    {g.pasta ? `${g.itens.length} ${t('dl.artes')} · Google Drive` : `${g.itens.length} ${t(g.itens.length === 1 ? 'dl.arquivo' : 'dl.arquivos')}`}
                   </span>
                   <span className="font-display text-base font-bold uppercase tracking-wide text-alltak-blueDark transition-transform group-hover:translate-x-1">
                     {t('dl.acessar')} →
@@ -82,6 +82,31 @@ function Grupo({ g }: { g: GrupoDownload }) {
           </Link>
           <div className="mt-4"><Abas ativo={g.slug} /></div>
 
+          {g.pasta ? (
+            // arquivos numa pasta externa: prévia das artes + um botão para a pasta
+            <>
+              {g.intro && <p className="mt-10 max-w-3xl text-lg text-alltak-black/75">{texto(g.intro, lang)}</p>}
+              <button onClick={() => open({ title: texto(g.titulo, lang), url: g.pasta!, kind: 'Google Drive' })}
+                className="btn-trapezoid btn-blue mt-6">
+                {t('dl.acessarArquivos')} ↗
+              </button>
+              <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {g.itens.map((a, i) => (
+                  <Reveal key={a.arquivo} delay={i * 60}>
+                    <figure className="h-full border border-black/10 bg-white">
+                      <div className="flex aspect-[4/3] items-center justify-center bg-alltak-black/5 p-3">
+                        <img src={a.arquivo} alt={texto(a.nome, lang)} loading="lazy" className="max-h-full max-w-full object-contain" />
+                      </div>
+                      <figcaption className="p-4">
+                        <div className="font-display text-lg font-bold uppercase leading-tight">{texto(a.nome, lang)}</div>
+                        {a.desc && <div className="text-sm text-alltak-black/55">{texto(a.desc, lang)}</div>}
+                      </figcaption>
+                    </figure>
+                  </Reveal>
+                ))}
+              </div>
+            </>
+          ) : (
           <div className={`mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 ${catalogos ? '' : 'xl:grid-cols-4'}`}>
             {g.itens.map((a, i) => {
               const nome = texto(a.nome, lang)
@@ -116,6 +141,7 @@ function Grupo({ g }: { g: GrupoDownload }) {
               )
             })}
           </div>
+          )}
         </div>
       </section>
     </>

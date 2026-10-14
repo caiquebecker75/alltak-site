@@ -8,7 +8,9 @@ import type { Lang } from '../i18n'
 
 type Texto = string | Record<Lang, string>
 export type Arquivo = { nome: Texto; arquivo: string; desc?: Texto }
-export type GrupoDownload = { slug: string; titulo: Texto; desc: Texto; itens: Arquivo[] }
+// pasta: grupo cujos arquivos ficam numa pasta externa (Google Drive); os
+// itens são só as prévias das artes, e o download é um botão para a pasta
+export type GrupoDownload = { slug: string; titulo: Texto; desc: Texto; itens: Arquivo[]; intro?: Texto; pasta?: string }
 
 const WP = 'https://alltak.com.br/wp-content/uploads'
 
@@ -128,6 +130,29 @@ export const DOWNLOADS: GrupoDownload[] = [
     itens: [
       { nome: { pt: 'Check-list para envelopamento', en: 'Wrapping checklist', es: 'Checklist de ploteo' }, arquivo: './wp-uploads/2021/01/check-list-para-envelopamento-ALLTAK.pdf' },
       { nome: { pt: 'Manual de limpeza e conservação', en: 'Cleaning and care manual', es: 'Manual de limpieza y conservación' }, arquivo: './wp-uploads/2021/01/manual-de-limpeza-e-conservacao-para-envelopamento-ALLTAK.pdf' },
+    ],
+  },
+  {
+    slug: 'area-do-instalador',
+    titulo: { pt: 'Área do instalador', en: 'Installer area', es: 'Área del instalador' },
+    desc: {
+      pt: 'Artes para download para a sua área de envelopamento.',
+      en: 'Artwork to download for your wrapping space.',
+      es: 'Artes para descargar para tu área de ploteo.',
+    },
+    intro: {
+      pt: 'Artes personalizadas Alltak para decorar e customizar o seu local de trabalho: baixe os arquivos e imprima de acordo com o seu espaço. Assim o seu cliente saberá que você tem Alltak na veia.',
+      en: 'Custom Alltak artwork to decorate and personalize your workplace: download the files and print them to fit your space. That way your customers will know you have Alltak in your veins.',
+      es: 'Artes personalizadas Alltak para decorar y personalizar tu lugar de trabajo: descarga los archivos e imprímelos según tu espacio. Así tu cliente sabrá que llevas Alltak en la sangre.',
+    },
+    pasta: 'https://drive.google.com/drive/folders/1oz5R78bf64OcSl4X6AJbmaXwXAbQNJH6',
+    itens: [
+      { nome: { pt: 'Painel institucional PDV', en: 'Point-of-sale institutional panel', es: 'Panel institucional PDV' }, desc: '300 × 130 cm',
+        arquivo: './wp-uploads/2021/01/Alltak_PDV_painel_Institucional_300x130cm-scaled-1.jpg' },
+      { nome: { pt: 'Painel linha automotiva', en: 'Automotive line panel', es: 'Panel línea automotriz' }, desc: '205 × 120 cm',
+        arquivo: './wp-uploads/2021/01/Alltak_Painel-Linha-Automotiva_205x120cm-scaled-1.jpg' },
+      { nome: { pt: 'Painel de cores automotiva', en: 'Automotive color panel', es: 'Panel de colores automotriz' }, desc: '120 × 100 cm',
+        arquivo: './wp-uploads/2021/01/Alltak_Painel-de-cores_automotiva_120x100cm-scaled-1.jpg' },
     ],
   },
 ]
