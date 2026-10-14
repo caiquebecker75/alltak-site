@@ -74,6 +74,14 @@ export const DICT: Record<string, Record<Lang, string>> = {
     es: 'Alltak desarrolla y produce materiales adhesivos para rotulación, decoración y comunicación visual. Estructura propia, producción nacional y líneas completas, pensadas para quien vive de la aplicación y necesita mantener el estándar de principio a fin.',
   },
   'home.pronto': { pt: 'Pronto para transformar?', en: 'Ready to transform?', es: '¿Listo para transformar?' },
+  'home.blogTitulo': { pt: 'Do blog Alltak', en: 'From the Alltak blog', es: 'Del blog Alltak' },
+  'home.blogSub': {
+    pt: 'Dicas, tendências e tutoriais de envelopamento, decoração e comunicação visual.',
+    en: 'Tips, trends and tutorials on wrapping, decor and visual communication.',
+    es: 'Consejos, tendencias y tutoriales de ploteo, decoración y comunicación visual.',
+  },
+  'home.blogVerTodos': { pt: 'Ver todos os artigos', en: 'See all articles', es: 'Ver todos los artículos' },
+  'home.blogLer': { pt: 'Ler artigo', en: 'Read article', es: 'Leer artículo' },
 
   // ---- página RevestFácil ----
   'rf.intro': {

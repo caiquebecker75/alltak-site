@@ -34,7 +34,7 @@ export default function SobreLinha({ slug }: { slug: string }) {
           )}
         </div>
         {linha.boletins[0] && (
-          <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
+          <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-base">
             {t('prod.boletim')} ↓
           </a>
         )}

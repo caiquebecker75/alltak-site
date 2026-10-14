@@ -26,11 +26,11 @@ export default function Cursos() {
             <Reveal key={c} delay={i * 60}>
               <div className="flex h-full flex-col justify-between border border-black/10 bg-white p-7">
                 <div>
-                  <span className="font-display text-xs font-bold uppercase tracking-widest text-alltak-blue">{t(`cursos.${c}.nivel`)}</span>
+                  <span className="font-display text-sm font-bold uppercase tracking-widest text-alltak-blue">{t(`cursos.${c}.nivel`)}</span>
                   <h3 className="mt-2 text-2xl">{t(`cursos.${c}.nome`)}</h3>
                   <p className="mt-2 text-sm text-alltak-black/60">{t(`cursos.${c}.desc`)}</p>
                 </div>
-                <button className="btn-trapezoid btn-blue mt-6 self-start !py-2 !text-xs">{t('cursos.interesse')}</button>
+                <button className="btn-trapezoid btn-blue mt-6 self-start !py-2 !text-base">{t('cursos.interesse')}</button>
               </div>
             </Reveal>
           ))}

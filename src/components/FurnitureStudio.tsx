@@ -57,14 +57,14 @@ export default function FurnitureStudio() {
               key={m.key}
               onClick={() => setMovel(m)}
               title={`${t(`movel.${m.key}`)} · ${tv(m.ambiente)}`}
-              className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
+              className={`font-display text-sm font-bold uppercase tracking-wide px-4 py-2 transition ${
                 movel.key === m.key ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
               }`}
             >
               {t(`movel.${m.key}`)}
             </button>
           ))}
-          <span className="ml-auto hidden font-display text-xs font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
+          <span className="ml-auto hidden font-display text-sm font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
             {t('movel.arraste')}
           </span>
         </div>
@@ -86,11 +86,11 @@ export default function FurnitureStudio() {
         </div>
         <div className="flex items-end justify-between border-t border-white/10 pt-3">
           <div>
-            <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-alltak-blue">
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-alltak-blue">
               {tv(active.family)} · Alltak Decor
             </p>
             <p className="font-display text-2xl uppercase text-white">{active.name}</p>
-            <p className="text-xs uppercase tracking-wide text-white/40">{t('movel.codigo')} {active.code}</p>
+            <p className="text-sm uppercase tracking-wide text-white/40">{t('movel.codigo')} {active.code}</p>
           </div>
           <img src={active.texture ?? active.swatch} alt={active.name} className="h-14 w-20 border border-white/20 object-cover" />
         </div>
@@ -103,7 +103,7 @@ export default function FurnitureStudio() {
         <div className="mt-3 flex flex-wrap gap-1.5">
           <button
             onClick={() => setFam('all')}
-            className={`px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wide transition ${
+            className={`px-3 py-1 font-display text-sm font-bold uppercase tracking-wide transition ${
               fam === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
             }`}
           >
@@ -113,7 +113,7 @@ export default function FurnitureStudio() {
             <button
               key={f}
               onClick={() => setFam(f)}
-              className={`px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wide transition ${
+              className={`px-3 py-1 font-display text-sm font-bold uppercase tracking-wide transition ${
                 fam === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
               }`}
             >
@@ -145,7 +145,7 @@ export default function FurnitureStudio() {
             {t('movel.baixarBoletim')}
           </button>
         </div>
-        <p className="mt-3 text-xs text-white/35">{t('movel.rodape')}</p>
+        <p className="mt-3 text-sm text-white/35">{t('movel.rodape')}</p>
       </div>
     </div>
   )

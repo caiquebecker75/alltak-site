@@ -56,7 +56,7 @@ export default function OndeComprar() {
                     href={`https://www.google.com/maps/search/${encodeURIComponent(l.nome + ' ' + l.cidade)}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn-trapezoid btn-blue mt-5 !py-2 !text-xs"
+                    className="btn-trapezoid btn-blue mt-5 !py-2 !text-base"
                   >
                     {t('onde.verMapa')}
                   </a>

@@ -55,7 +55,7 @@ export default function Visualizador() {
           <div className="relative flex flex-col justify-between overflow-hidden border border-white/10 bg-gradient-to-b from-alltak-ink to-black p-5 md:p-8">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <span className="tag">{t('viz.tagModelo')}</span>
-              <span className="font-display text-xs font-bold uppercase tracking-[0.25em] text-white/45">
+              <span className="font-display text-sm font-bold uppercase tracking-[0.25em] text-white/45">
                 {t('viz.arrasteZoom')}
               </span>
             </div>
@@ -78,7 +78,7 @@ export default function Visualizador() {
 
             <div className="flex items-end justify-between border-t border-white/10 pt-4">
               <div>
-                <p className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-alltak-blue">
+                <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-alltak-blue">
                   {tf(finish, 'line')} · {tf(finish, 'label')}
                 </p>
                 <p className="font-display text-3xl uppercase text-white">{tv(film.name)}</p>
@@ -102,7 +102,7 @@ export default function Visualizador() {
                     setFinishKey(f.key)
                     setFilmIndex(0)
                   }}
-                  className={`font-display text-xs font-bold uppercase tracking-wide px-3.5 py-2 transition ${
+                  className={`font-display text-sm font-bold uppercase tracking-wide px-3.5 py-2 transition ${
                     f.key === finishKey ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/70 hover:bg-white/10'
                   }`}
                 >
@@ -140,8 +140,8 @@ export default function Visualizador() {
                   Alltak Store ↗
                 </a>
               </div>
-              <p className="mt-4 text-xs text-white/40">{t('viz.disclaimer')}</p>
-              <p className="mt-2 text-[10px] text-white/25">{t('viz.credito')}</p>
+              <p className="mt-4 text-sm text-white/40">{t('viz.disclaimer')}</p>
+              <p className="mt-2 text-sm text-white/25">{t('viz.credito')}</p>
             </div>
           </div>
         </div>

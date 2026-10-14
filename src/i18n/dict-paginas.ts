@@ -184,12 +184,10 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
     es: 'instaladores certificados por Alltak en Brasil y América Latina. Calidad de aplicación con el estándar Alltak, de principio a fin.',
   },
   'inst.fechar': { pt: 'Fechar', en: 'Close', es: 'Cerrar' },
-  'inst.todos': { pt: 'Todos', en: 'All', es: 'Todos' },
   'inst.buscar': { pt: 'Buscar por nome ou cidade...', en: 'Search by name or city...', es: 'Buscar por nombre o ciudad...' },
   'inst.automotivo': { pt: 'Automotivo', en: 'Automotive', es: 'Automotriz' },
   'inst.decor': { pt: 'Decor', en: 'Decor', es: 'Decor' },
   'inst.homenagem': { pt: 'Homenagem', en: 'Tribute', es: 'Homenaje' },
-  'inst.novo': { pt: 'Novo', en: 'New', es: 'Nuevo' },
   'inst.telefone': { pt: 'Telefone', en: 'Phone', es: 'Teléfono' },
   'inst.semBio': {
     pt: 'Instalador certificado Pro Expert Alltak.',

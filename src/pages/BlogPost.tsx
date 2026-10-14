@@ -65,7 +65,7 @@ export default function BlogPost() {
     <>
       <section className="relative bg-alltak-black pb-10 pt-28 md:pt-36">
         <div className="container-x max-w-4xl">
-          <Link to="/blog" className="font-display text-xs font-bold uppercase tracking-[0.2em] text-white/50 hover:text-alltak-blue">
+          <Link to="/blog" className="font-display text-sm font-bold uppercase tracking-[0.2em] text-white/50 hover:text-alltak-blue">
             ← {t('nav.blog')}
           </Link>
           <h1 className="mt-4 text-4xl text-white md:text-6xl">{post?.titulo ?? '…'}</h1>

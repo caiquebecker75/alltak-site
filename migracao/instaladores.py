@@ -4,12 +4,15 @@ Junta duas fontes:
   - src/data/wp/instaladores.json  (31 perfis migrados do WordPress, com o
     texto bruto da página: telefone, cidade, Instagram e bio misturados)
   - migracao/instaladores-novos.json (16 aprovados em out/2026, já separados)
+  - migracao/instaladores-segmentos.json (Automotivo/Decor dos perfis antigos,
+    deduzido da história de cada um; quem não deixa claro fica sem)
 
 Do texto antigo saem cidade, telefone e bio limpos (sem entidades HTML, ícones
 nem quebras de linha no meio da frase). A foto é a primeira imagem real do
 perfil: no WordPress a lista começa pelas bandeiras do seletor de idioma e
 termina em dois ícones comuns a todas as páginas. O perfil duplicado (Bruno
-Rodrigues, em dois endereços) fica uma vez só, com foto.
+Rodrigues, em dois endereços) fica uma vez só, com foto. O texto do Diego
+Ferraz Lopes trazia colada no fim uma citação do Calebe San Martins; sai.
 
 Uso:  python -X utf8 -I migracao/instaladores.py
 """
@@ -22,6 +25,9 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 ANTIGOS = RAIZ / 'src' / 'data' / 'wp' / 'instaladores.json'
 NOVOS = RAIZ / 'migracao' / 'instaladores-novos.json'
+SEGMENTOS = RAIZ / 'migracao' / 'instaladores-segmentos.json'
+# trechos de outro perfil colados por engano no texto do WordPress
+TRECHO_ALHEIO = {'diego-ferraz-lopes': '“Me apaixonei pela área'}
 SAIDA = RAIZ / 'src' / 'data' / 'instaladores.json'
 
 NAO_FOTO = re.compile(r'bandeira|\.svg$|Design-sem-nome-2025-07-17', re.I)
@@ -104,6 +110,7 @@ def local(s: str) -> str:
 
 def main() -> None:
     antigos = json.loads(ANTIGOS.read_text('utf8'))
+    segmentos = json.loads(SEGMENTOS.read_text('utf8'))['segmentos']
     perfis: dict[str, dict] = {}
     for p in antigos:
         fotos = [f for f in p['fotos'] if not NAO_FOTO.search(f)]
@@ -111,13 +118,15 @@ def main() -> None:
         perfil = {
             'slug': p['slug'],
             'nome': nome_proprio(p['nome']),
-            'segmento': None,
+            'segmentos': segmentos.get(p['slug'], {}).get('segmentos', []),
             'cidade': partes['cidade'],
             'telefone': partes['telefone'],
             'instagram': p['instagram'],
             'bio': partes['bio'],
             'foto': fotos[0] if fotos else None,
         }
+        if p['slug'] in TRECHO_ALHEIO:
+            perfil['bio'] = perfil['bio'].split(TRECHO_ALHEIO[p['slug']])[0].rstrip()
         if partes['homenagem']:
             perfil['homenagem'] = True
         atual = perfis.get(p['slug'])
@@ -130,7 +139,7 @@ def main() -> None:
         perfis[slug] = {
             'slug': slug,
             'nome': n['nome'],
-            'segmento': n['segmento'],
+            'segmentos': [n['segmento']],
             'cidade': n['cidade'],
             'telefone': n['telefone'],
             'instagram': f"https://www.instagram.com/{n['instagram']}" if n['instagram'] else None,
@@ -141,7 +150,8 @@ def main() -> None:
     lista = sorted(perfis.values(), key=lambda p: slugify(p['nome']))
     SAIDA.write_text(json.dumps(lista, ensure_ascii=False, indent=1) + '\n', 'utf8')
     print(f'{len(lista)} perfis ({sum(1 for p in lista if p.get("novo"))} novos), '
-          f'sem foto: {[p["nome"] for p in lista if not p["foto"]]}')
+          f'sem foto: {[p["nome"] for p in lista if not p["foto"]]}, '
+          f'sem segmento: {[p["nome"] for p in lista if not p["segmentos"]]}')
     print('gravado', SAIDA.relative_to(RAIZ))
 
 

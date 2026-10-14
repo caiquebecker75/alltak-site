@@ -15,7 +15,7 @@ export default class ErrBoundary extends Component<
       return (
         this.props.fallback ?? (
           <div className="flex h-full items-center justify-center p-4 text-center">
-            <span className="font-display text-xs font-bold uppercase tracking-wide text-red-400">
+            <span className="font-display text-sm font-bold uppercase tracking-wide text-red-400">
               3D: {this.state.msg}
             </span>
           </div>

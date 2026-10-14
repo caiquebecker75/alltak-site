@@ -42,7 +42,7 @@ export default function Sobre() {
             <div>
               <p className="eyebrow text-alltak-blueDark">{t('sobre.historiaTag')}</p>
               <h2 className="mt-3 text-4xl md:text-5xl">{t('sobre.historiaTitulo')}</h2>
-              <div className="mt-5 space-y-4 text-alltak-black/75">
+              <div className="mt-5 space-y-4 text-alltak-black/75 md:text-lg">
                 <p>{t('sobre.historia1')}</p>
                 <p>{t('sobre.historia2')}</p>
                 <p>{t('sobre.historia3')}</p>
@@ -52,14 +52,14 @@ export default function Sobre() {
 
           <Reveal delay={120}>
             <div className="grid grid-cols-2 gap-4">
-              {STATS.map(([n, d], i) => (
+              {STATS.map(([n, d]) => (
                 <div
                   key={n}
-                  className={`border border-black/10 bg-white p-6 ${i % 2 ? 'mt-6' : ''}`}
+                  className="flex flex-col border border-black/10 bg-white p-6"
                 >
                   <div className="mb-3 h-1.5 w-12 bg-alltak-blue clip-slant" />
                   <div className="font-display text-4xl font-black text-alltak-blueDark md:text-5xl">{n}</div>
-                  <p className="mt-1 text-sm text-alltak-black/60">{t(d)}</p>
+                  <p className="mt-1 text-base text-alltak-black/65">{t(d)}</p>
                 </div>
               ))}
             </div>
@@ -126,7 +126,7 @@ export default function Sobre() {
           <div className="mt-8 flex flex-wrap gap-3">
             {LINHAS.map((l, i) => (
               <Reveal key={l} delay={i * 50}>
-                <span className="btn-trapezoid btn-outline pointer-events-none !py-2 !text-xs">{t(l)}</span>
+                <span className="btn-trapezoid btn-outline pointer-events-none !py-2 !text-base">{t(l)}</span>
               </Reveal>
             ))}
           </div>
@@ -140,7 +140,7 @@ export default function Sobre() {
             <div>
               <p className="eyebrow text-alltak-blueDark">{t('sobre.sustTag')}</p>
               <h2 className="mt-3 text-4xl md:text-5xl">{t('sobre.sustTitulo')}</h2>
-              <div className="mt-5 space-y-4 text-alltak-black/75">
+              <div className="mt-5 space-y-4 text-alltak-black/75 md:text-lg">
                 <p>{t('sobre.sust1')}</p>
                 <p>{t('sobre.sust2')}</p>
               </div>
@@ -152,7 +152,7 @@ export default function Sobre() {
               <p className="mt-4 font-display text-2xl font-bold uppercase leading-tight">
                 {t('sobre.sustCard')}
               </p>
-              <p className="mt-2 text-sm text-alltak-black/60">
+              <p className="mt-2 text-base text-alltak-black/65">
                 {t('sobre.sustCardTexto')}
               </p>
             </div>

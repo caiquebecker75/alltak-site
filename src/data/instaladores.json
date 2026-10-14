@@ -2,7 +2,9 @@
  {
   "slug": "adilson-lopes",
   "nome": "Adilson Lopes",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "São Bernardo do Campo / ABC / SP",
   "telefone": "(11) 98423-1617",
   "instagram": "https://www.instagram.com/va_envelopamentos",
@@ -12,7 +14,9 @@
  {
   "slug": "albert-de-souza-lousada",
   "nome": "Albert de Souza Lousada",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Várzea Grande / MT",
   "telefone": "+55 (65) 98123-0540",
   "instagram": "https://www.instagram.com/argentino_envelopamento",
@@ -23,7 +27,7 @@
  {
   "slug": "alexander-rivera",
   "nome": "Alexander Rivera",
-  "segmento": null,
+  "segmentos": [],
   "cidade": "Santiago / Chile",
   "telefone": "+56 93260-5368",
   "instagram": "https://www.instagram.com/rivera.wrap",
@@ -33,7 +37,9 @@
  {
   "slug": "bruno-lima",
   "nome": "Bruno Lima",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Fortaleza / CE",
   "telefone": "(85) 99199-3361 / (85) 99633-2731",
   "instagram": "https://www.instagram.com/wrappedfiesta",
@@ -43,7 +49,9 @@
  {
   "slug": "bruno-oliveira-lopes-da-silva",
   "nome": "Bruno Oliveira Lopes da Silva",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Porto Velho / RO",
   "telefone": "+55 (69) 99240-4345",
   "instagram": "https://www.instagram.com/brunaoartsdecor",
@@ -54,7 +62,9 @@
  {
   "slug": "bruno-rodrigues",
   "nome": "Bruno Rodrigues",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Penha / SC",
   "telefone": "(47) 99264-8273",
   "instagram": "https://www.instagram.com/bruno.modifique",
@@ -64,7 +74,9 @@
  {
   "slug": "calebe-san-martins",
   "nome": "Calebe San Martins",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Rio Grande / RS",
   "telefone": "(53) 98141-1098",
   "instagram": "https://www.instagram.com/calebegenesis",
@@ -74,7 +86,7 @@
  {
   "slug": "camila-scotti",
   "nome": "Camila Scotti",
-  "segmento": null,
+  "segmentos": [],
   "cidade": "São José dos Campos / SP",
   "telefone": "(12) 98802-4663",
   "instagram": "https://www.instagram.com/donaajuda",
@@ -84,7 +96,9 @@
  {
   "slug": "damian-cordero",
   "nome": "Damián Cordero",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Buenos Aires / Argentina",
   "telefone": "+54 9 11 6735-4896",
   "instagram": "https://www.instagram.com/corderoplotter",
@@ -94,17 +108,21 @@
  {
   "slug": "diego-ferraz-lopes",
   "nome": "Diego Ferraz Lopes",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Porto Alegre / RS",
   "telefone": "(51) 98658-9516",
   "instagram": "https://www.instagram.com/diegolopesenvelopamentos",
-  "bio": "Há mais de 19 anos no mercado de adesivos, encontrei no envelopamento Decorativo o trabalho que me satisfaz pessoal e profissionalmente. Já passei por diversas áreas, Comunicação visual, Personalização de frotas, Envelopamento Automotivo entre outros e já atuei no atendimento, produção, comercial, impressão, instalação, aplicação de adesivos, arte final, compras etc.\nSempre comento que parte do meu desenvolvimento se deu em minha experiencia com a empresa familiar fundada por meus pais. Elza Ferraz Lopes e Luiz Antônio do canto Lopes, minha mãe, iniciou em 1994 a empresa chamada L&D publicidade, ela era responsável por vendas, atendimento, compras, resumindo pelo setor comercial, e meu pai Luiz Lopes, responsável por execução, dos trabalhos, produção, instalação etc.\nHá pelo menos 8 anos venho me especializando e focando no segmento Decorativo, chegando em meu maior objetivo, trabalhar 100% com envelopamento decorativo, o que me trouxe excelência em meus resultados.\nHá 3 anos tive a minha pior falência em um investimento errado em outro ramo, porém foi uma aprendizado enorme, após isso desenhei meu novo formato de trabalho, colocado em execução há 2 anos e em evolução constante.\nNeste reinicio meu foco era aprender cada vez mais para ajudar o máximo de pessoas possíveis, tinha certeza que ali estava se iniciando um novo formato no Decor e essa sempre foi minha luta, porém não conseguiria chegar ao topo sozinho, e fui fazendo amigos parceiros neste caminho.\nMas no meio de tudo isso eu tinha um sonho, um desejo pessoal, que existisse um Pro Expert Alltak Decor, me lembro de vezes que isso parecia distante demais ou até mesmo impossível, e então veio a notícia que sim, teria!\nFico grato por estar na primeira turma, me preparei muito para esse dia, e hoje posso dizer que sou um Pro Expert Alltak Decor!\n“Me apaixonei pela área, quando tive o contato com os materiais, decidi mergulhar de cabeça, e investi em tudo que estava relacionado ao assunto, numa troca de ideia com um amigo, ouvi falar sobre a ALLTAK e o CAMBEA, nisso já se foram várias participações no campeonato e me tornei, Tri campeão brasileiro do Cambea Fast, sendo o recordista da categoria com 3:38min, 5 vezes finalista do Cambea Pró, sendo campeão em 2018 do CAMBEA Etapa Sul , e 2 participações no World Wrap Masters.”",
+  "bio": "Há mais de 19 anos no mercado de adesivos, encontrei no envelopamento Decorativo o trabalho que me satisfaz pessoal e profissionalmente. Já passei por diversas áreas, Comunicação visual, Personalização de frotas, Envelopamento Automotivo entre outros e já atuei no atendimento, produção, comercial, impressão, instalação, aplicação de adesivos, arte final, compras etc.\nSempre comento que parte do meu desenvolvimento se deu em minha experiencia com a empresa familiar fundada por meus pais. Elza Ferraz Lopes e Luiz Antônio do canto Lopes, minha mãe, iniciou em 1994 a empresa chamada L&D publicidade, ela era responsável por vendas, atendimento, compras, resumindo pelo setor comercial, e meu pai Luiz Lopes, responsável por execução, dos trabalhos, produção, instalação etc.\nHá pelo menos 8 anos venho me especializando e focando no segmento Decorativo, chegando em meu maior objetivo, trabalhar 100% com envelopamento decorativo, o que me trouxe excelência em meus resultados.\nHá 3 anos tive a minha pior falência em um investimento errado em outro ramo, porém foi uma aprendizado enorme, após isso desenhei meu novo formato de trabalho, colocado em execução há 2 anos e em evolução constante.\nNeste reinicio meu foco era aprender cada vez mais para ajudar o máximo de pessoas possíveis, tinha certeza que ali estava se iniciando um novo formato no Decor e essa sempre foi minha luta, porém não conseguiria chegar ao topo sozinho, e fui fazendo amigos parceiros neste caminho.\nMas no meio de tudo isso eu tinha um sonho, um desejo pessoal, que existisse um Pro Expert Alltak Decor, me lembro de vezes que isso parecia distante demais ou até mesmo impossível, e então veio a notícia que sim, teria!\nFico grato por estar na primeira turma, me preparei muito para esse dia, e hoje posso dizer que sou um Pro Expert Alltak Decor!",
   "foto": "./wp-uploads/2024/01/Pro-experts-Diego-Ferraz-Lopes.jpg"
  },
  {
   "slug": "edson-correia",
   "nome": "Edson Correia",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Brasília / DF",
   "telefone": "(61) 98477-2512",
   "instagram": "https://www.instagram.com/edsonartwrap",
@@ -114,7 +132,9 @@
  {
   "slug": "eduardo-chardosim-stabel",
   "nome": "Eduardo Chardosim Stabel",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Porto Alegre / RS",
   "telefone": "51 98134-2200",
   "instagram": "https://www.instagram.com/edu.divulg",
@@ -124,7 +144,9 @@
  {
   "slug": "erci-junior",
   "nome": "Erci Junior",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Jacutinga / MG",
   "telefone": "(35) 3443-6579 / (35) 99953-0299",
   "instagram": "https://www.instagram.com/ercyjunior",
@@ -134,7 +156,9 @@
  {
   "slug": "esau-de-jesus-farias",
   "nome": "Esaú de Jesus Farias",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Guarulhos / SP",
   "telefone": "+55 (11) 99009-1930",
   "instagram": "https://www.instagram.com/esau_decor_revestimentos",
@@ -145,7 +169,9 @@
  {
   "slug": "esdras-farias",
   "nome": "Esdras Farias",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "São Paulo / SP",
   "telefone": "(11) 96449-8065",
   "instagram": "https://www.instagram.com/esdrasfariasenvelopamento",
@@ -155,7 +181,9 @@
  {
   "slug": "fabio-braga",
   "nome": "Fábio Braga",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Alvorada / RS",
   "telefone": "(51) 9925-5600",
   "instagram": "https://www.instagram.com/wrapmonkeyrs",
@@ -165,7 +193,9 @@
  {
   "slug": "francisco-wellington-da-silva",
   "nome": "Francisco Wellington da Silva",
-  "segmento": "automotivo",
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Fortaleza / CE",
   "telefone": "+55 (85) 9289-9289",
   "instagram": "https://www.instagram.com/wsenvelopamento",
@@ -176,7 +206,10 @@
  {
   "slug": "gaston-garcete",
   "nome": "Gastón Garcete",
-  "segmento": null,
+  "segmentos": [
+   "automotivo",
+   "decor"
+  ],
   "cidade": "Buenos Aires / Argentina",
   "telefone": "+54 9 11 6593-9366",
   "instagram": "https://www.instagram.com/garcete.design",
@@ -186,7 +219,9 @@
  {
   "slug": "gustavo-cardoso",
   "nome": "Gustavo Cardoso",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Uberlândia / MG",
   "telefone": "(34) 99682-1937",
   "instagram": "https://www.instagram.com/adesivosg",
@@ -196,7 +231,9 @@
  {
   "slug": "gustavo-rojas",
   "nome": "Gustavo Rojas",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Buenos Aires / Argentina",
   "telefone": "+54 9 11 6048-4507",
   "instagram": "https://www.instagram.com/servicewraps",
@@ -206,7 +243,9 @@
  {
   "slug": "james-garcia",
   "nome": "James Garcia",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Colombo / PR",
   "telefone": "(41) 3537-4990 / (41) 99534-6465",
   "instagram": "https://www.instagram.com/dcore.adesivos",
@@ -216,7 +255,9 @@
  {
   "slug": "joao-vitor-leite-bitencort-tristao",
   "nome": "João Vitor Leite Bitencort Tristão",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Rio de Janeiro / RJ",
   "telefone": "+55 (21) 96991-2555",
   "instagram": "https://www.instagram.com/faccinienvelop",
@@ -227,7 +268,9 @@
  {
   "slug": "kayron-silva-da-silva",
   "nome": "Kayron Silva da Silva",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "São Luís / MA",
   "telefone": "+55 (98) 97029-2218",
   "instagram": "https://www.instagram.com/plotexdecor",
@@ -238,7 +281,9 @@
  {
   "slug": "leandro-costa-ribeiro-spectrum",
   "nome": "Leandro Costa Ribeiro (Spectrum)",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Curitiba / PR",
   "telefone": "(41) 99633-0459",
   "instagram": "https://www.instagram.com/leandro.spectrum",
@@ -248,7 +293,9 @@
  {
   "slug": "leonardo-cardoso-felix",
   "nome": "Leonardo Cardoso Felix",
-  "segmento": "automotivo",
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Fortaleza / CE",
   "telefone": "+55 (85) 8788-1398",
   "instagram": "https://www.instagram.com/envelorblackoficial",
@@ -259,7 +306,9 @@
  {
   "slug": "luciano-nunes-barbosa",
   "nome": "Luciano Nunes Barbosa",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "São José / SC",
   "telefone": "+55 (48) 99198-6838",
   "instagram": "https://www.instagram.com/transformedecor_",
@@ -270,7 +319,9 @@
  {
   "slug": "marcelo-menon-fernandes",
   "nome": "Marcelo Menon Fernandes",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Valinhos / SP",
   "telefone": "(19) 97146-4637",
   "instagram": "https://www.instagram.com/tkenvelopamentos",
@@ -280,7 +331,9 @@
  {
   "slug": "marcio-arts",
   "nome": "Marcio Arts",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Santa Brígida / BA",
   "telefone": "(75) 99946-5345",
   "instagram": "https://www.instagram.com/marcio.arts",
@@ -290,7 +343,9 @@
  {
   "slug": "martin-ulivi",
   "nome": "Martin Ulivi",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Buenos Aires / Argentina",
   "telefone": "+54 9 11 3523-9014",
   "instagram": "https://www.instagram.com/goodshinegarage",
@@ -300,7 +355,9 @@
  {
   "slug": "mathias-gian-lucca-berea-maciel",
   "nome": "Mathias Gian Lucca Berea Maciel",
-  "segmento": "automotivo",
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Asunción / Paraguai",
   "telefone": "+595 982 573 730",
   "instagram": "https://www.instagram.com/mvploteados",
@@ -311,7 +368,9 @@
  {
   "slug": "muryllo-vellasques",
   "nome": "Muryllo Vellasques",
-  "segmento": "automotivo",
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Curitiba / PR",
   "telefone": "+55 (41) 99926-4556",
   "instagram": "https://www.instagram.com/vellasques_wrap",
@@ -322,7 +381,9 @@
  {
   "slug": "rafael-silva",
   "nome": "Raphael Silva",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "",
   "telefone": "",
   "instagram": null,
@@ -333,7 +394,9 @@
  {
   "slug": "ricardo-santos-telles-de-mattos",
   "nome": "Ricardo Santos Telles de Mattos",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Salvador / BA",
   "telefone": "+55 (71) 8834-4222",
   "instagram": "https://www.instagram.com/Tellesadesivos",
@@ -344,7 +407,9 @@
  {
   "slug": "rodrigo-barbosa-abreu-bueno-cardoso",
   "nome": "Rodrigo Barbosa Abreu Bueno Cardoso",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Mogi Guaçu / SP",
   "telefone": "+55 (19) 99944-3799",
   "instagram": "https://www.instagram.com/colaaqui_adesivos",
@@ -355,7 +420,9 @@
  {
   "slug": "rodrigo-de-paula-san-marins",
   "nome": "Rodrigo de Paula San Martins",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Rio Grande / RS",
   "telefone": "(53) 99948-7780",
   "instagram": "https://www.instagram.com/black.star.envelopamento",
@@ -365,7 +432,9 @@
  {
   "slug": "rodrigo-nogueira",
   "nome": "Rodrigo Nogueira",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Curitiba / PR",
   "telefone": "",
   "instagram": "https://www.instagram.com/rnogueiraplotagens",
@@ -375,7 +444,7 @@
  {
   "slug": "rubens-falchetto",
   "nome": "Rubens Falchetto",
-  "segmento": null,
+  "segmentos": [],
   "cidade": "Cariacica / ES",
   "telefone": "+55 27 99941-2366",
   "instagram": "https://www.instagram.com/futura_custom_wrap",
@@ -385,7 +454,9 @@
  {
   "slug": "samuel-cruz-hernandez",
   "nome": "Samuel Cruz Hernández",
-  "segmento": "automotivo",
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "México",
   "telefone": "+52 1 55 3435-6227",
   "instagram": null,
@@ -396,7 +467,9 @@
  {
   "slug": "samuel-washington-ferreira-da-frota",
   "nome": "Samuel Washington Ferreira da Frota",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Fortaleza / CE",
   "telefone": "+55 (85) 98854-7609",
   "instagram": "https://www.instagram.com/spoweradesivamento",
@@ -407,7 +480,9 @@
  {
   "slug": "sergio-raimundo",
   "nome": "Sergio Raimundo",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Buenos Aires / Argentina",
   "telefone": "+54 9 11 3826 6964",
   "instagram": "https://www.instagram.com/goodshinegarage",
@@ -417,7 +492,9 @@
  {
   "slug": "silvanio-pereira-de-almeida",
   "nome": "Silvanio Pereira de Almeida",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Paulo Afonso / BA",
   "telefone": "(75) 99954-9587",
   "instagram": "https://www.instagram.com/silvanoplotter",
@@ -427,7 +504,9 @@
  {
   "slug": "thiago-sossai",
   "nome": "Thiago Sossai",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "São Paulo / SP",
   "telefone": "(11) 96168-7739",
   "instagram": "https://www.instagram.com/thiago_sossai",
@@ -437,7 +516,9 @@
  {
   "slug": "tiago-securella",
   "nome": "Tiago Securella",
-  "segmento": null,
+  "segmentos": [
+   "automotivo"
+  ],
   "cidade": "Guarujá / SP",
   "telefone": "(13) 99167-1129",
   "instagram": "https://www.instagram.com/royal_envelopamentos",
@@ -447,7 +528,9 @@
  {
   "slug": "valmir-rodrigues",
   "nome": "Valmir Rodrigues",
-  "segmento": null,
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "São Paulo / SP",
   "telefone": "(11) 96312-2364",
   "instagram": "https://www.instagram.com/val_wrapcustom",
@@ -457,7 +540,9 @@
  {
   "slug": "willert-swann-nepomuceno-raiol",
   "nome": "Willert Swann Nepomuceno Raiol",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Belém / PA",
   "telefone": "+55 (91) 9626-3648",
   "instagram": "https://www.instagram.com/wsartemaniaenvelopamento",
@@ -468,7 +553,9 @@
  {
   "slug": "yan-cutrim-costa-facini",
   "nome": "Yan Cutrim Costa Facini",
-  "segmento": "decor",
+  "segmentos": [
+   "decor"
+  ],
   "cidade": "Rio de Janeiro / RJ",
   "telefone": "+55 (21) 98136-3994",
   "instagram": "https://www.instagram.com/faccinienvelopamento",

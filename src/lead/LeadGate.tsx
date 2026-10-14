@@ -115,7 +115,7 @@ export function LeadGateProvider({ children }: { children: ReactNode }) {
                 <button
                   type="button"
                   onClick={close}
-                  className="sm:col-span-2 text-center text-xs uppercase tracking-wide text-alltak-black/40 hover:text-alltak-black/70"
+                  className="sm:col-span-2 text-center text-sm uppercase tracking-wide text-alltak-black/40 hover:text-alltak-black/70"
                 >
                   {t('lead.cancelar')}
                 </button>

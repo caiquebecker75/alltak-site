@@ -64,14 +64,14 @@ export default function AmbienteStudio() {
             <button
               key={k}
               onClick={() => setRoom(k)}
-              className={`font-display text-xs font-bold uppercase tracking-wide px-4 py-2 transition ${
+              className={`font-display text-sm font-bold uppercase tracking-wide px-4 py-2 transition ${
                 room === k ? 'bg-alltak-blue text-white' : 'bg-white/5 text-white/70 hover:bg-white/10'
               }`}
             >
               {tv(ROOMS[k].label)} 3D
             </button>
           ))}
-          <span className="ml-auto hidden font-display text-[11px] font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
+          <span className="ml-auto hidden font-display text-sm font-bold uppercase tracking-[0.25em] text-white/40 md:inline">
             {t('viz.arrasteZoom')}
           </span>
         </div>
@@ -82,7 +82,7 @@ export default function AmbienteStudio() {
             <button
               key={g.key}
               onClick={() => setSel((s) => ({ ...s, [room]: g.key }))}
-              className={`px-3 py-1.5 font-display text-[11px] font-bold uppercase tracking-wide transition ${
+              className={`px-3 py-1.5 font-display text-sm font-bold uppercase tracking-wide transition ${
                 selKey === g.key ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
               }`}
             >
@@ -116,7 +116,7 @@ export default function AmbienteStudio() {
           <span className="pointer-events-none absolute left-3 top-3 tag">
             {tv(groups.find((g) => g.key === selKey)?.label ?? '')}
           </span>
-          <span className="pointer-events-none absolute bottom-3 right-3 hidden font-display text-[11px] font-bold uppercase tracking-[0.25em] text-white/45 md:block">
+          <span className="pointer-events-none absolute bottom-3 right-3 hidden font-display text-sm font-bold uppercase tracking-[0.25em] text-white/45 md:block">
             {t('amb.cliqueSuperficie')}
           </span>
         </div>
@@ -133,7 +133,7 @@ export default function AmbienteStudio() {
         <div className="mt-3 flex flex-wrap gap-1.5">
           <button
             onClick={() => setFam('all')}
-            className={`px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wide transition ${
+            className={`px-3 py-1 font-display text-sm font-bold uppercase tracking-wide transition ${
               fam === 'all' ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
             }`}
           >
@@ -143,7 +143,7 @@ export default function AmbienteStudio() {
             <button
               key={f}
               onClick={() => setFam(f)}
-              className={`px-3 py-1 font-display text-[11px] font-bold uppercase tracking-wide transition ${
+              className={`px-3 py-1 font-display text-sm font-bold uppercase tracking-wide transition ${
                 fam === f ? 'bg-white text-alltak-black' : 'bg-white/5 text-white/60 hover:bg-white/10'
               }`}
             >
@@ -171,11 +171,11 @@ export default function AmbienteStudio() {
           <div className="mt-4 flex items-center justify-between border-t border-white/10 pt-3">
             <div>
               <p className="font-display text-lg font-bold uppercase text-white">{active.name}</p>
-              <p className="text-xs uppercase tracking-wide text-white/40">{t('movel.codigo')} {active.code}</p>
+              <p className="text-sm uppercase tracking-wide text-white/40">{t('movel.codigo')} {active.code}</p>
             </div>
             <button
               onClick={removePattern}
-              className="font-display text-[11px] font-bold uppercase tracking-wide text-white/50 hover:text-alltak-blue"
+              className="font-display text-sm font-bold uppercase tracking-wide text-white/50 hover:text-alltak-blue"
             >
               {t('amb.remover')}
             </button>
@@ -193,7 +193,7 @@ export default function AmbienteStudio() {
             {t('amb.verTodas')}
           </Link>
         </div>
-        <p className="mt-3 text-xs text-white/35">{t('amb.rodape')}</p>
+        <p className="mt-3 text-sm text-white/35">{t('amb.rodape')}</p>
       </div>
     </div>
   )

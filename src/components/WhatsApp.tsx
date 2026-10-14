@@ -17,7 +17,7 @@ export default function WhatsApp() {
       className="group fixed bottom-5 right-5 z-[85] flex items-center gap-3 md:bottom-7 md:right-7"
     >
       {/* tooltip */}
-      <span className="pointer-events-none hidden translate-x-2 whitespace-nowrap bg-white px-3 py-2 font-display text-xs font-bold uppercase tracking-wide text-alltak-black opacity-0 shadow-lg transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:block">
+      <span className="pointer-events-none hidden translate-x-2 whitespace-nowrap bg-white px-3 py-2 font-display text-sm font-bold uppercase tracking-wide text-alltak-black opacity-0 shadow-lg transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:block">
         {t('cta.falarConosco')}
       </span>
 

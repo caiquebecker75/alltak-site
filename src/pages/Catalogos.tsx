@@ -59,7 +59,7 @@ export default function Catalogos() {
                       kind: 'PDF',
                     })
                   }
-                  className="btn-trapezoid btn-blue mt-6 self-start !py-2 !text-xs"
+                  className="btn-trapezoid btn-blue mt-6 self-start !py-2.5 !text-base"
                 >
                   {c.file ? t('cta.baixarCatalogo') : t('cat.emBreve')}
                 </button>
@@ -95,14 +95,14 @@ export default function Catalogos() {
                           className="group flex w-full items-center justify-between gap-3 border border-white/10 bg-white/[0.03] p-4 text-left transition hover:border-alltak-blue hover:bg-white/[0.06]"
                         >
                           <div className="min-w-0">
-                            <div className="font-display text-[10px] font-bold uppercase tracking-[0.25em] text-alltak-blue">
+                            <div className="font-display text-sm font-bold uppercase tracking-[0.2em] text-alltak-blue">
                               {tipo(m.arquivo)}
                             </div>
-                            <div className="mt-0.5 truncate font-display text-base font-bold uppercase text-white">
+                            <div className="mt-0.5 truncate font-display text-lg font-bold uppercase text-white">
                               {rotuloDownload(m.rotulo, tv)}
                             </div>
                           </div>
-                          <span className="shrink-0 bg-alltak-blue px-3 py-2 font-display text-[10px] font-bold uppercase text-white clip-tz transition-transform group-hover:-translate-y-0.5">
+                          <span className="shrink-0 bg-alltak-blue px-4 py-2 font-display text-base font-bold uppercase tracking-wide text-white clip-tz transition-transform group-hover:-translate-y-0.5">
                             {t('cat.baixar')}
                           </span>
                         </button>

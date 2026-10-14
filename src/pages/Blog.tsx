@@ -52,7 +52,7 @@ export default function Blog() {
                   )}
                 </div>
                 <div className="p-5">
-                  {p.data && <div className="text-[11px] uppercase tracking-widest text-white/40">{formatarData(p.data, lang)}</div>}
+                  {p.data && <div className="text-sm uppercase tracking-widest text-white/40">{formatarData(p.data, lang)}</div>}
                   <h3 className="mt-1.5 font-display text-xl font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
                     {p.titulo}
                   </h3>

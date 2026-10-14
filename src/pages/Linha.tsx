@@ -91,14 +91,14 @@ export default function Linha() {
         <span className="whitespace-pre-line">{descricao}</span>
         <div className="mt-6 flex flex-wrap gap-3">
           {linha.boletins[0] && (
-            <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
+            <a href={linha.boletins[0]} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-base">
               {t('prod.boletim')} ↓
             </a>
           )}
-          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2.5 !text-sm">
+          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2.5 !text-base">
             {t('prod.comprarStore')}
           </a>
-          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2.5 !text-sm">{t('cta.ondeComprar')}</Link>
+          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2.5 !text-base">{t('cta.ondeComprar')}</Link>
         </div>
       </PageHeader>
 
@@ -141,12 +141,12 @@ export default function Linha() {
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {linha.boletins.map((b, i) => (
-                    <a key={b} href={b} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
+                    <a key={b} href={b} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !py-2.5 !text-base">
                       {t('prod.boletim')}{linha.boletins.length > 1 ? ` ${i + 1}` : ''} ↓
                     </a>
                   ))}
                   {linha.pdfs_apoio.map((p) => (
-                    <a key={p} href={p} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !py-2.5 !text-sm">
+                    <a key={p} href={p} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !py-2.5 !text-base">
                       {p.includes('check-list') ? t('prod.checklist') : p.includes('limpeza') ? t('prod.manualLimpeza') : t('prod.materialApoio')} ↓
                     </a>
                   ))}

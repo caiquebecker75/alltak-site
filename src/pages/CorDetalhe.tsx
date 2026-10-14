@@ -497,7 +497,7 @@ export default function CorDetalhe() {
               <div className="flex flex-wrap items-center gap-2">
                 <button
                   onClick={() => baixar(slides[slide].src, `alltak-${color.code}-${slide + 1}.jpg`)}
-                  className="btn-trapezoid btn-blue !px-5 !py-2.5 !text-sm"
+                  className="btn-trapezoid btn-blue !px-5 !py-2.5 !text-base"
                 >
                   {t('comum.baixarImagem')}
                 </button>
@@ -506,7 +506,7 @@ export default function CorDetalhe() {
                 </span>
                 {(Object.keys(FORMATOS) as Formato[]).map((f) => (
                   <button key={f} onClick={() => gerarArte(f)} disabled={gerando}
-                    className="btn-trapezoid btn-outline !px-4 !py-2.5 !text-sm disabled:opacity-40">
+                    className="btn-trapezoid btn-outline !px-4 !py-2.5 !text-base disabled:opacity-40">
                     {f}
                   </button>
                 ))}

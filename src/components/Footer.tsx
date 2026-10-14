@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/40 md:flex-row">
+        <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-sm text-white/40 md:flex-row">
           <span>© {new Date().getFullYear()} Alltak. {t('footer.rights')}</span>
           <span>{t('footer.credito')}</span>
         </div>

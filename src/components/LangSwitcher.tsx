@@ -9,7 +9,7 @@ export default function LangSwitcher({ className = '' }: { className?: string })
         <button
           key={l.code}
           onClick={() => setLang(l.code)}
-          className={`font-display text-xs font-bold uppercase tracking-wide px-2 py-1 transition ${
+          className={`font-display text-sm font-bold uppercase tracking-wide px-2 py-1 transition ${
             lang === l.code ? 'text-alltak-blue' : 'text-white/50 hover:text-white'
           }`}
           aria-pressed={lang === l.code}

@@ -59,7 +59,7 @@ export default function Preloader() {
         {n}
         <span className="text-alltak-blue">%</span>
       </div>
-      <div className="absolute bottom-10 left-8 hidden font-display text-xs font-bold uppercase tracking-[0.3em] text-white/40 md:block">
+      <div className="absolute bottom-10 left-8 hidden font-display text-sm font-bold uppercase tracking-[0.3em] text-white/40 md:block">
         Transformando superfícies
       </div>
       {/* progress underline */}

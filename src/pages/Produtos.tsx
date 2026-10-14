@@ -26,13 +26,13 @@ export default function Produtos() {
       <PageHeader eyebrow={t('prod.eyebrow')} title={t('nav.produtos')}>
         {t('prod.headerSub')}
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href="#cores" className="btn-trapezoid btn-blue !py-2.5 !text-sm">
+          <a href="#cores" className="btn-trapezoid btn-blue !py-2.5 !text-base">
             {t('prod.explorarCores')}
           </a>
-          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2.5 !text-sm">
+          <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2.5 !text-base">
             {t('prod.comprarStore')}
           </a>
-          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2.5 !text-sm">
+          <Link to="/onde-comprar" className="btn-trapezoid btn-outline !py-2.5 !text-base">
             {t('cta.ondeComprar')}
           </Link>
         </div>
