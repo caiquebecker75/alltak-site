@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation, Link } from 'react-router-dom'
+import { Routes, Route, useLocation, Link, Navigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
@@ -8,7 +8,7 @@ import WhatsApp from './components/WhatsApp'
 import { LeadGateProvider } from './lead/LeadGate'
 import { useT } from './i18n'
 import Home from './pages/Home'
-import Catalogos from './pages/Catalogos'
+import { DownloadsInicio, DownloadsGrupo } from './pages/Downloads'
 import Produtos from './pages/Produtos'
 import Linha from './pages/Linha'
 import RevestFacil from './pages/RevestFacil'
@@ -97,7 +97,9 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/catalogos" element={<Catalogos />} />
+          <Route path="/downloads" element={<DownloadsInicio />} />
+          <Route path="/downloads/:grupo" element={<DownloadsGrupo />} />
+          <Route path="/catalogos" element={<Navigate to="/downloads/catalogos" replace />} />
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/produtos/revestfacil" element={<RevestFacil />} />
           <Route path="/linhas/:categoria" element={<Segmento />} />

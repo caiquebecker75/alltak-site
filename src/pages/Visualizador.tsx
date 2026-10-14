@@ -134,7 +134,7 @@ export default function Visualizador() {
             <div className="mt-6 border-t border-white/10 pt-5">
               <p className="text-sm text-white/50">{t('viz.gostou')}</p>
               <div className="mt-3 flex flex-col gap-3">
-                <Link to="/catalogos" className="btn-trapezoid btn-blue justify-center">{t('cta.baixarCatalogo')}</Link>
+                <Link to="/downloads/catalogos" className="btn-trapezoid btn-blue justify-center">{t('cta.baixarCatalogo')}</Link>
                 <Link to="/onde-comprar" className="btn-trapezoid btn-outline justify-center">{t('cta.ondeComprar')}</Link>
                 <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline justify-center">
                   Alltak Store ↗

@@ -268,28 +268,23 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
     es: 'Experiencia completa con la marca y los productos.',
   },
 
-  // ---- Catálogos ----
-  'cat.eyebrow': { pt: 'Materiais de apoio', en: 'Support materials', es: 'Materiales de apoyo' },
-  'cat.headerSub': {
-    pt: 'Organizados por linha para facilitar a escolha do produto certo. Baixe, consulte e resolva rápido no atendimento, na especificação e na aplicação.',
-    en: 'Organized by line to make choosing the right product easier. Download, look things up and get answers fast for customer service, specification and application.',
-    es: 'Organizados por línea para facilitar la elección del producto correcto. Descarga, consulta y resuelve rápido en la atención, la especificación y la aplicación.',
+  // ---- Downloads ----
+  'dl.eyebrow': { pt: 'Materiais oficiais', en: 'Official materials', es: 'Materiales oficiales' },
+  'dl.headerSub': {
+    pt: 'Catálogos, logotipos, perfis de cor e materiais oficiais da Alltak. Escolha a categoria; o download é liberado após um cadastro rápido.',
+    en: 'Alltak catalogs, logos, color profiles and official materials. Pick a category; downloads unlock after a quick sign-up.',
+    es: 'Catálogos, logotipos, perfiles de color y materiales oficiales de Alltak. Elige la categoría; la descarga se habilita tras un registro rápido.',
   },
+  'dl.cadastro': {
+    pt: 'O download é liberado após um cadastro rápido.',
+    en: 'Downloads unlock after a quick sign-up.',
+    es: 'La descarga se habilita tras un registro rápido.',
+  },
+  'dl.arquivo': { pt: 'arquivo', en: 'file', es: 'archivo' },
+  'dl.arquivos': { pt: 'arquivos', en: 'files', es: 'archivos' },
+  'dl.acessar': { pt: 'Acessar', en: 'Open', es: 'Acceder' },
+  'dl.todos': { pt: 'Todos os downloads', en: 'All downloads', es: 'Todas las descargas' },
   'cat.catalogo': { pt: 'Catálogo', en: 'Catalog', es: 'Catálogo' },
-  'cat.emBreve': { pt: 'Em breve', en: 'Coming soon', es: 'Próximamente' },
-  'cat.marcaTag': { pt: 'Materiais da marca', en: 'Brand materials', es: 'Materiales de la marca' },
-  'cat.marcaTitulo': { pt: 'Logos e manuais', en: 'Logos and manuals', es: 'Logos y manuales' },
-  'cat.marcaTexto': {
-    pt: 'Baixe os materiais oficiais da Alltak. O download é liberado após um cadastro rápido, para mantermos você por dentro das novidades e do suporte.',
-    en: 'Download Alltak’s official materials. The download is unlocked after a quick sign-up, so we can keep you up to date on news and support.',
-    es: 'Descarga los materiales oficiales de Alltak. La descarga se habilita tras un registro rápido, para mantenerte al tanto de las novedades y del soporte.',
-  },
-  'cat.grupo.logos': { pt: 'Logos da marca', en: 'Brand logos', es: 'Logos de la marca' },
-  'cat.grupo.patterns': { pt: 'Patterns', en: 'Patterns', es: 'Patterns' },
-  'cat.grupo.perfis': { pt: 'Perfis de cor', en: 'Color profiles', es: 'Perfiles de color' },
-  'cat.grupo.wallpapers': { pt: 'Wallpapers Alltak Tuning', en: 'Alltak Tuning Wallpapers', es: 'Wallpapers Alltak Tuning' },
-  'cat.grupo.instalador': { pt: 'Materiais do instalador', en: 'Installer materials', es: 'Materiales del instalador' },
-  'cat.arquivo': { pt: 'Arquivo', en: 'File', es: 'Archivo' },
   'cat.baixar': { pt: 'Baixar ↓', en: 'Download ↓', es: 'Descargar ↓' },
 
   // ---- Blog ----

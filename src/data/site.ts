@@ -20,8 +20,7 @@ export const NAV: NavItem[] = [
   { label: 'Visualizador', tkey: 'nav.visualizador', to: '/visualizador' },
   { label: 'Decoração', tkey: 'nav.decoracao', to: '/decoracao' },
   { label: 'Cores', tkey: 'nav.cores', to: '/cores' },
-  { label: 'Catálogos', tkey: 'nav.catalogos', to: '/catalogos' },
-  { label: 'Downloads', tkey: 'nav.downloads', to: '/catalogos#downloads' },
+  { label: 'Downloads', tkey: 'nav.downloads', to: '/downloads' },
   { label: 'Produtos', tkey: 'nav.produtos', to: '/produtos' },
   { label: 'Blog', tkey: 'nav.blog', to: '/blog' },
   { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
@@ -99,18 +98,6 @@ export const UNITS: Unit[] = [
   },
 ]
 
-export type Catalog = { name: string; desc: string; file?: string }
-
-export const CATALOGS: Catalog[] = [
-  { name: 'Automotivo — Alltak Wraps', desc: 'Envelopamento e proteção veicular. Catálogo 2026.', file: './catalogos/catalogo-wraps-2026.pdf' },
-  { name: 'Arquitetura — Alltak Decor', desc: 'Revestimentos para interiores e ambientes. Catálogo 2026.', file: './catalogos/catalogo-decor-2026.pdf' },
-  { name: 'Comunicação Visual — Alltak Signs', desc: 'Sinalização, recortes e design. Catálogo 2026.', file: './catalogos/catalogo-signs-2026.pdf' },
-  { name: 'Catálogo Geral', desc: 'Visão completa do portfólio Alltak.' },
-  { name: 'Impressão', desc: 'Materiais para comunicação visual impressa.' },
-  { name: 'Wrap Care', desc: 'Manutenção e cuidados pós-aplicação.' },
-  { name: 'Aplicações Técnicas', desc: 'Máscaras, laminações e soluções técnicas.' },
-]
-
 export type ProductCategory = { name: string; slug: string; items: string[] }
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
@@ -132,7 +119,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
 ]
 
 export const HIGHLIGHTS = [
-  { title: 'Catálogos', desc: 'Materiais de apoio organizados por linha.', to: '/catalogos' },
+  { title: 'Downloads', desc: 'Catálogos, logotipos e materiais oficiais.', to: '/downloads' },
   { title: 'Alltak Store', desc: 'Loja online oficial para aplicadores.', to: STORE_URL, external: true },
   { title: 'Onde Comprar', desc: 'Encontre distribuidores perto de você.', to: '/onde-comprar' },
   { title: 'Instaladores', desc: 'Aplicadores parceiros por região.', to: '/instaladores' },
