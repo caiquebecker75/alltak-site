@@ -16,15 +16,18 @@ export type NavItem = {
   external?: boolean
 }
 
+// ordem do menu = caminho do cliente: conhecer (produtos, simular),
+// comprar (onde comprar, loja online), aplicar (instalador, cursos),
+// apoio (downloads, blog) e institucional (sobre, contato)
 export const NAV: NavItem[] = [
-  { label: 'Simule agora', tkey: 'nav.simule', to: '/simulador' },
-  { label: 'Downloads', tkey: 'nav.downloads', to: '/downloads' },
   { label: 'Produtos', tkey: 'nav.produtos', to: '/produtos' },
-  { label: 'Blog', tkey: 'nav.blog', to: '/blog' },
-  { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
+  { label: 'Simule agora', tkey: 'nav.simule', to: '/simulador' },
   { label: 'Onde Comprar', tkey: 'nav.onde', to: '/onde-comprar' },
+  { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
   { label: 'Encontre um Instalador', tkey: 'nav.instalador', to: '/instaladores' },
   { label: 'Cursos', tkey: 'nav.cursos', to: '/cursos' },
+  { label: 'Downloads', tkey: 'nav.downloads', to: '/downloads' },
+  { label: 'Blog', tkey: 'nav.blog', to: '/blog' },
   { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre' },
   { label: 'Contato', tkey: 'nav.contato', to: '/contato' },
 ]
