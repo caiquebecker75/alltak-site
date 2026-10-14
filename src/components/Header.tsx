@@ -110,8 +110,8 @@ export default function Header() {
           {NAV.map((item, i) => {
             const inner = (
               <span className="group flex items-baseline gap-5">
-                <span className="font-display text-sm font-bold text-alltak-blue">{String(i + 1).padStart(2, '0')}</span>
-                <span className="font-display text-[clamp(1.5rem,4.4vh,3.5rem)] font-black uppercase leading-[1.2] text-white transition-all duration-300 group-hover:translate-x-4 group-hover:text-alltak-blue">
+                <span className="w-7 shrink-0 font-display text-sm font-bold tabular-nums text-alltak-blue">{String(i + 1).padStart(2, '0')}</span>
+                <span className="font-display text-[clamp(1.5rem,4vh,3.25rem)] font-black uppercase leading-[1.2] text-white transition-all duration-300 group-hover:translate-x-4 group-hover:text-alltak-blue">
                   {t(item.tkey)}
                 </span>
                 {item.external && <span className="text-2xl text-white/40">↗</span>}
