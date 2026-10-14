@@ -85,6 +85,21 @@ export const DICT_HOME: Record<string, Record<Lang, string>> = {
   // ---- cabeçalho ----
   'header.inicio': { pt: 'Alltak início', en: 'Alltak home', es: 'Alltak inicio' },
   'header.menu': { pt: 'Menu', en: 'Menu', es: 'Menú' },
+  'busca.abrir': { pt: 'Buscar no site', en: 'Search the site', es: 'Buscar en el sitio' },
+  'busca.placeholder': { pt: 'Buscar produtos, cores, instaladores, lojas...', en: 'Search products, colors, installers, stores...', es: 'Buscar productos, colores, instaladores, tiendas...' },
+  'busca.nenhum': { pt: 'Nada encontrado. Tente outra palavra.', en: 'Nothing found. Try another word.', es: 'No se encontró nada. Prueba otra palabra.' },
+  'busca.dica': {
+    pt: 'Digite o nome de um produto, cor, código, instalador, cidade ou artigo do blog.',
+    en: 'Type the name of a product, color, code, installer, city or blog article.',
+    es: 'Escribe el nombre de un producto, color, código, instalador, ciudad o artículo del blog.',
+  },
+  'busca.g.paginas': { pt: 'Páginas', en: 'Pages', es: 'Páginas' },
+  'busca.g.linhas': { pt: 'Linhas de produto', en: 'Product lines', es: 'Líneas de producto' },
+  'busca.g.cores': { pt: 'Cores', en: 'Colors', es: 'Colores' },
+  'busca.g.downloads': { pt: 'Downloads', en: 'Downloads', es: 'Descargas' },
+  'busca.g.instaladores': { pt: 'Instaladores', en: 'Installers', es: 'Instaladores' },
+  'busca.g.lojas': { pt: 'Onde comprar', en: 'Where to buy', es: 'Dónde comprar' },
+  'busca.g.blog': { pt: 'Blog', en: 'Blog', es: 'Blog' },
   'header.frentes': {
     pt: 'Envelopamento · Decoração · Comunicação Visual',
     en: 'Vehicle Wrapping · Decor · Visual Communication',

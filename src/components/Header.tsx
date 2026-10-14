@@ -4,6 +4,7 @@ import { NAV } from '../data/site'
 import Logo from './Logo'
 import Magnetic from './Magnetic'
 import LangSwitcher from './LangSwitcher'
+import Busca from './Busca'
 import { useT } from '../i18n'
 
 // Header: logo + magnetic menu trigger. Navigation lives in a fullscreen
@@ -59,6 +60,7 @@ export default function Header() {
           </Link>
 
           <div className="flex items-center gap-3 md:gap-5">
+            <Busca className={`relative z-[92] ${open ? 'pointer-events-none opacity-0' : ''}`} />
             <LangSwitcher className="relative z-[92]" />
             <Magnetic strength={0.3}>
               <button
