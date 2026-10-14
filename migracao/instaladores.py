@@ -3,7 +3,9 @@
 Junta duas fontes:
   - src/data/wp/instaladores.json  (31 perfis migrados do WordPress, com o
     texto bruto da página: telefone, cidade, Instagram e bio misturados)
-  - migracao/instaladores-novos.json (16 aprovados em out/2026, já separados)
+  - migracao/instaladores-novos.json (16 aprovados em out/2026, já separados;
+    são os únicos Pro Expert, marcados com proExpert; os antigos são
+    instaladores da rede, conforme a Alltak)
   - migracao/instaladores-segmentos.json (Automotivo/Decor dos perfis antigos,
     deduzido da história de cada um; quem não deixa claro fica sem)
 
@@ -145,11 +147,11 @@ def main() -> None:
             'instagram': f"https://www.instagram.com/{n['instagram']}" if n['instagram'] else None,
             'bio': n['bio'],
             'foto': f'./instaladores/{slug}.jpg' if foto.exists() else None,
-            'novo': True,
+            'proExpert': True,
         }
     lista = sorted(perfis.values(), key=lambda p: slugify(p['nome']))
     SAIDA.write_text(json.dumps(lista, ensure_ascii=False, indent=1) + '\n', 'utf8')
-    print(f'{len(lista)} perfis ({sum(1 for p in lista if p.get("novo"))} novos), '
+    print(f'{len(lista)} perfis ({sum(1 for p in lista if p.get("proExpert"))} Pro Expert), '
           f'sem foto: {[p["nome"] for p in lista if not p["foto"]]}, '
           f'sem segmento: {[p["nome"] for p in lista if not p["segmentos"]]}')
     print('gravado', SAIDA.relative_to(RAIZ))

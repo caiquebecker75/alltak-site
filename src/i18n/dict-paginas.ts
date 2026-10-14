@@ -177,12 +177,29 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
 
   // ---- Instaladores ----
   'inst.eyebrow': { pt: 'Rede credenciada', en: 'Accredited network', es: 'Red acreditada' },
-  'inst.titulo': { pt: 'Instaladores Pro-Expert', en: 'Pro-Expert Installers', es: 'Instaladores Pro-Expert' },
+  'inst.titulo': { pt: 'Encontre um Instalador', en: 'Find an Installer', es: 'Encuentra un Instalador' },
   'inst.headerSub': {
-    pt: 'aplicadores certificados pela Alltak no Brasil e na América Latina. Qualidade de aplicação com o padrão Alltak, do começo ao fim.',
-    en: 'Alltak-certified installers in Brazil and Latin America. Application quality to the Alltak standard, from start to finish.',
-    es: 'instaladores certificados por Alltak en Brasil y América Latina. Calidad de aplicación con el estándar Alltak, de principio a fin.',
+    pt: 'Pro Experts certificados pela Alltak e instaladores da rede Alltak no Brasil e na América Latina.',
+    en: 'Alltak-certified Pro Experts and Alltak network installers in Brazil and Latin America.',
+    es: 'Pro Experts certificados por Alltak e instaladores de la red Alltak en Brasil y América Latina.',
   },
+  'inst.proTag': { pt: 'Certificação Alltak', en: 'Alltak certification', es: 'Certificación Alltak' },
+  'inst.proTitulo': { pt: 'Pro Experts', en: 'Pro Experts', es: 'Pro Experts' },
+  'inst.proSub': {
+    pt: 'Aprovados na certificação Pro Expert Alltak, com exame prático e teórico de técnica, acabamento e conhecimento dos produtos.',
+    en: 'Approved in the Alltak Pro Expert certification, with practical and theory exams on technique, finishing and product knowledge.',
+    es: 'Aprobados en la certificación Pro Expert Alltak, con examen práctico y teórico de técnica, acabado y conocimiento de los productos.',
+  },
+  'inst.redeTag': { pt: 'Rede Alltak', en: 'Alltak network', es: 'Red Alltak' },
+  'inst.redeTitulo': { pt: 'Instaladores', en: 'Installers', es: 'Instaladores' },
+  'inst.redeSub': {
+    pt: 'Profissionais que aplicam os materiais Alltak em todo o Brasil e na América Latina.',
+    en: 'Professionals who install Alltak materials across Brazil and Latin America.',
+    es: 'Profesionales que aplican los materiales Alltak en todo Brasil y América Latina.',
+  },
+  'inst.instalador': { pt: 'Instalador', en: 'Installer', es: 'Instalador' },
+  'inst.filtrar': { pt: 'Filtrar:', en: 'Filter:', es: 'Filtrar:' },
+  'inst.nenhum': { pt: 'Nenhum instalador encontrado.', en: 'No installers found.', es: 'Ningún instalador encontrado.' },
   'inst.fechar': { pt: 'Fechar', en: 'Close', es: 'Cerrar' },
   'inst.buscar': { pt: 'Buscar por nome ou cidade...', en: 'Search by name or city...', es: 'Buscar por nombre o ciudad...' },
   'inst.automotivo': { pt: 'Automotivo', en: 'Automotive', es: 'Automotriz' },
@@ -194,6 +211,7 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
     en: 'Alltak Pro Expert certified installer.',
     es: 'Instalador certificado Pro Expert Alltak.',
   },
+  'inst.semBioRede': { pt: 'Instalador da rede Alltak.', en: 'Alltak network installer.', es: 'Instalador de la red Alltak.' },
 
   // ---- Cursos ----
   'cursos.eyebrow': { pt: 'Academia Alltak', en: 'Alltak Academy', es: 'Academia Alltak' },
