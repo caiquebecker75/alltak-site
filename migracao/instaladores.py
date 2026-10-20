@@ -9,6 +9,8 @@ Todos são Instaladores Pro Expert. Fontes:
     migrado do WordPress (história); quem não veio na migração tem o texto
     da própria página na listagem.
   - migracao/instaladores-novos.json: os 16 certificados em out/2026.
+  - migracao/instaladores-ajustes.json: correções da Alltak (quem sai, nomes
+    completos, categorias). O slug (e a foto) continuam os da listagem.
 
 Do texto das páginas saem cidade, telefone e história limpos (sem entidades
 HTML, ícones nem quebras de linha no meio da frase); telefone, cidade e
@@ -28,6 +30,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 ANTIGOS = RAIZ / 'src' / 'data' / 'wp' / 'instaladores.json'
 NOVOS = RAIZ / 'migracao' / 'instaladores-novos.json'
 LISTAGEM = RAIZ / 'migracao' / 'instaladores-listagem.json'
+AJUSTES = RAIZ / 'migracao' / 'instaladores-ajustes.json'
 FOTOS = RAIZ / 'public' / 'instaladores'
 # trechos de outro perfil colados por engano no texto do WordPress
 TRECHO_ALHEIO = {'diego-ferraz-lopes': '“Me apaixonei pela área'}
@@ -179,6 +182,12 @@ def main() -> None:
             'bio': n['bio'],
             'foto': f'./instaladores/{slug}.jpg' if (FOTOS / f'{slug}.jpg').exists() else None,
         })
+    ajustes = json.loads(AJUSTES.read_text('utf8'))
+    perfis = [p for p in perfis if p['slug'] not in ajustes['remover']]
+    for p in perfis:
+        p.update(ajustes['ajustes'].get(p['slug'], {}))
+    faltam = (set(ajustes['remover']) | set(ajustes['ajustes'])) - {p['slug'] for p in perfis} - set(ajustes['remover'])
+    assert not faltam, f'ajuste para perfil inexistente: {faltam}'
     assert len({p['slug'] for p in perfis}) == len(perfis), 'slug repetido'
     lista = sorted(perfis, key=lambda p: slugify(p['nome']))
     SAIDA.write_text(json.dumps(lista, ensure_ascii=False, indent=1) + '\n', 'utf8')

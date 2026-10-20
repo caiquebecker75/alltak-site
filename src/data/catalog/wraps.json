@@ -99,15 +99,6 @@
   "applied": "18S45_ap.jpg"
  },
  {
-  "code": "18S80M",
-  "name": "Satin Brown Metallic",
-  "family": "Satin",
-  "acabamento": "Acetinado Metálico",
-  "hex": "#2c241c",
-  "swatch": "18S80M_sw.jpg",
-  "applied": "18S80M_ap.jpg"
- },
- {
   "code": "18S946P",
   "name": "Satin Pearl White",
   "family": "Satin",
@@ -423,15 +414,6 @@
   "applied": "18U62M_ap.jpg"
  },
  {
-  "code": "18UD09M",
-  "name": "Ultra Green Bright Jade Metallic",
-  "family": "Ultra",
-  "acabamento": "Flake Brilhante",
-  "hex": "#040c04",
-  "swatch": "18UD09M_sw.jpg",
-  "applied": "18UD09M_ap.jpg"
- },
- {
   "code": "18U54",
   "name": "Ultra Turquoise Green",
   "family": "Ultra",
@@ -603,15 +585,6 @@
   "applied": "18U40_ap.jpg"
  },
  {
-  "code": "18UK03M",
-  "name": "Ultra Kosmic Starfire Purple",
-  "family": "Ultra",
-  "acabamento": "Brilhante",
-  "hex": "#141c24",
-  "swatch": "18UK03M_sw.jpg",
-  "applied": "18UK03M_ap.jpg"
- },
- {
   "code": "18U80",
   "name": "Ultra Brown Sugar",
   "family": "Ultra",
@@ -693,24 +666,6 @@
   "applied": "18U70_ap.jpg"
  },
  {
-  "code": "18UK02M",
-  "name": "Ultra Kosmic Valerian Gold",
-  "family": "Ultra",
-  "acabamento": "Brilhante",
-  "hex": "#b4b4b4",
-  "swatch": "18UK02M_sw.jpg",
-  "applied": "18UK02M_ap.jpg"
- },
- {
-  "code": "18FXR932M",
-  "name": "Graphite Rave",
-  "family": "Fx",
-  "acabamento": "Texturizado Fosco",
-  "hex": "#bcbcbc",
-  "swatch": "18FXR932M_sw.jpg",
-  "applied": "18FXR932M_ap.jpg"
- },
- {
   "code": "18FXB70",
   "name": "Fx Brushed Black",
   "family": "Fx",
@@ -729,13 +684,14 @@
   "applied": "18FXB932M_ap.jpg"
  },
  {
-  "code": "18FXR70",
-  "name": "Black Rave",
+  "code": "18FXIMPACT70",
+  "name": "Impact Black",
   "family": "Fx",
   "acabamento": "Texturizado Fosco",
-  "hex": "#2c2c2c",
-  "swatch": "18FXR70_sw.jpg",
-  "applied": "18FXR70_ap.jpg"
+  "hex": "#141414",
+  "swatch": "18J70_sw.jpg",
+  "applied": "18J70_ap.jpg",
+  "semCodigo": true
  },
  {
   "code": "18G70",
@@ -844,5 +800,194 @@
   "hex": "#e4e4e4",
   "swatch": "18K10_sw.jpg",
   "applied": "18K10_ap.jpg"
+ },
+ {
+  "code": "18EVO21M",
+  "name": "Evolution Pro Acid Lemon Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#98bb1d",
+  "swatch": "18EVO21M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO15M",
+  "name": "Evolution Pro Amethyst Silk Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#bc74a5",
+  "swatch": "18EVO15M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO08M",
+  "name": "Evolution Pro Aquamarine Green Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#189895",
+  "swatch": "18EVO08M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO06",
+  "name": "Evolution Pro Artic Gray",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#818c9c",
+  "swatch": "18EVO06_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO04M",
+  "name": "Evolution Pro Ash Gray Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#767071",
+  "swatch": "18EVO04M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO09M",
+  "name": "Evolution Pro Cobalt Blue Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#1f38a4",
+  "swatch": "18EVO09M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO01",
+  "name": "Evolution Pro Diamond Black",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#202124",
+  "swatch": "18EVO01_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO17M",
+  "name": "Evolution Pro Dragon Blood Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#872731",
+  "swatch": "18EVO17M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO05M",
+  "name": "Evolution Pro Galactic Silver Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#adadaf",
+  "swatch": "18EVO05M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO03M",
+  "name": "Evolution Pro Gunmetal Gray Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#60666a",
+  "swatch": "18EVO03M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO07",
+  "name": "Evolution Pro Military Khaki",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#86a087",
+  "swatch": "18EVO07_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO14M",
+  "name": "Evolution Pro Mystic Violet Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#8048b3",
+  "swatch": "18EVO14M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO11",
+  "name": "Evolution Pro Nordic Blue",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#5b8aa7",
+  "swatch": "18EVO11_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO18M",
+  "name": "Evolution Pro Ruby Glaze Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#c41e2a",
+  "swatch": "18EVO18M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO19M",
+  "name": "Evolution Pro Sahara Matte Cooper Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Fosco metalizado",
+  "hex": "#e1592f",
+  "swatch": "18EVO19M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO16M",
+  "name": "Evolution Pro Sakura Pink Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#f19bbe",
+  "swatch": "18EVO16M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO02",
+  "name": "Evolution Pro Shadow Matte Black",
+  "family": "Evolution Pro",
+  "acabamento": "Super fosco",
+  "hex": "#2b2c2d",
+  "swatch": "18EVO02_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO13M",
+  "name": "Evolution Pro Silver Sky Blue Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#144fae",
+  "swatch": "18EVO13M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO10M",
+  "name": "Evolution Pro Sonic Blue Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#1a79cd",
+  "swatch": "18EVO10M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO20M",
+  "name": "Evolution Pro Sunset Pearl Matte Orange",
+  "family": "Evolution Pro",
+  "acabamento": "Fosco",
+  "hex": "#f03d1e",
+  "swatch": "18EVO20M_sw.jpg",
+  "applied": null
+ },
+ {
+  "code": "18EVO12M",
+  "name": "Evolution Pro Thunderstorm Gray Metallic",
+  "family": "Evolution Pro",
+  "acabamento": "Brilho intenso",
+  "hex": "#314f86",
+  "swatch": "18EVO12M_sw.jpg",
+  "applied": null
  }
 ]

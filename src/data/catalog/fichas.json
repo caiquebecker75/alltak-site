@@ -4236,6 +4236,888 @@
     ]
    }
   },
+  "wraps:18EVO01": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: 100% moldable",
+     "Expected durability: up to 5 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: 100% moldeable",
+     "Durabilidad estimada: hasta 5 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: 100% moldável",
+     "Durabilidade esperada: até 5 anos"
+    ]
+   }
+  },
+  "wraps:18EVO02": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: super matte",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 5 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: súper mate",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 5 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: super fosco",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 5 anos"
+    ]
+   }
+  },
+  "wraps:18EVO03M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO04M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO05M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO06": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 5 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 5 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 5 anos"
+    ]
+   }
+  },
+  "wraps:18EVO07": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 5 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 5 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 5 anos"
+    ]
+   }
+  },
+  "wraps:18EVO08M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO09M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO10M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO11": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 5 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 5 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 5 anos"
+    ]
+   }
+  },
+  "wraps:18EVO12M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO13M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO14M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO15M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO16M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO17M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO18M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO19M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: metallic matte",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: mate metalizado",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: fosco metalizado",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO20M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: matte",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: mate",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: fosco",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
+  "wraps:18EVO21M": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: intense gloss",
+     "Dimensions: 1.52 × 18 m rolls",
+     "Film: super-calendered polymeric PVC",
+     "Adhesive: repositionable solvent-based",
+     "Technology: Airflow bubble-free system",
+     "Liner: PET 140 g/m²",
+     "Protective film: yes",
+     "Expected durability: up to 3 years"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: brillo intenso",
+     "Dimensiones: rollos de 1,52 × 18 m",
+     "Película: PVC polimérico supercalandrado",
+     "Adhesivo: solvente reposicionable",
+     "Tecnología: sistema Airflow antiburbujas",
+     "Liner: PET 140 g/m²",
+     "Película protectora: sí",
+     "Durabilidad estimada: hasta 3 años"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: brilho intenso",
+     "Dimensões: rolos de 1,52 × 18 m",
+     "Filme: PVC polimérico super calandrado",
+     "Adesivo: solvente reposicionável",
+     "Tecnologia: sistema Airflow antibolhas",
+     "Liner: PET 140 g/m²",
+     "Película de proteção: sim",
+     "Durabilidade esperada: até 3 anos"
+    ]
+   }
+  },
   "wraps:18FXB70": {
    "en": {
     "descricao": "",
@@ -4270,72 +5152,6 @@
    }
   },
   "wraps:18FXB932M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: textured matte",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: texturizado",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: texturizado fosco",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18FXR70": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: textured matte",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: texturizado",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: texturizado fosco",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18FXR932M": {
    "en": {
     "descricao": "",
     "specs": [
@@ -5572,39 +6388,6 @@
    }
   },
   "wraps:18S74M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: satin metallic",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: metálico satinado",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: acetinado metálico",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18S80M": {
    "en": {
     "descricao": "",
     "specs": [
@@ -7086,42 +7869,6 @@
     ]
    }
   },
-  "wraps:18UD09M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy flake",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 120 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: flake brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 120 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: flake brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 120 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
   "wraps:18UD10M": {
    "en": {
     "descricao": "",
@@ -7159,78 +7906,6 @@
    }
   },
   "wraps:18UK01M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18UK02M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18UK03M": {
    "en": {
     "descricao": "",
     "specs": [

@@ -1,0 +1,13 @@
+{
+ "_sobre": "Correções pedidas pela Alltak (out/2026) sobre a listagem oficial: perfis que saem, nomes completos e categorias. Chave = slug gerado do nome da listagem. Aplicado por migracao/instaladores.py depois de juntar as fontes.",
+ "remover": ["diego-ferraz-lopes", "eduardo-borges"],
+ "ajustes": {
+  "erci-junior": { "nome": "Ercy Silvino Martins Junior", "categorias": ["automotivo", "decor", "instrutor"] },
+  "gustavo-rojas": { "nome": "Gustavo Garcias Rojas", "categorias": ["automotivo", "decor", "instrutor"] },
+  "eduardo-chardosim-stabel": { "categorias": ["automotivo", "decor", "instrutor"] },
+  "thiago-sossai": { "nome": "Thiago Emmanuel Sossai", "categorias": ["automotivo", "decor", "instrutor"] },
+  "thiago-da-print": { "nome": "Thiago Print", "categorias": ["automotivo", "decor"] },
+  "alexander-rivera": { "categorias": ["automotivo"] },
+  "antonio": { "nome": "Antonio Clauberto (Betinho)" }
+ }
+}

@@ -76,7 +76,9 @@ def main() -> None:
             fonte = 'Alltak Evolution Pro' if 'evo' in origem else 'Alltak IWC' if 'iwc' in origem else NOMES_FONTE[linha]
             fichas['linhas'][slug] = {**b, 'fonte': fonte}
         sem_par = []
-        for chave, v in (dados.get('cores') or {}).items():
+        # o catálogo Evolution Pro vem num bloco à parte na transcrição do Wraps
+        cores = {**(dados.get('cores') or {}), **(dados.get('cores_evolution_pro') or {})}
+        for chave, v in cores.items():
             cod, _, nome = chave.partition('|')
             cod = renomeado.get(cod, cod)
             if cod not in codigos:

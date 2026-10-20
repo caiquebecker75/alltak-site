@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { findColor, relatedColors, colorSlug, type Color } from '../data/catalog'
+import { findColor, relatedColors, colorSlug, codigoVisivel, type Color } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import { STORE_URL } from '../data/site'
 import { useI18n } from '../i18n'
@@ -177,7 +177,7 @@ async function desenharArte(
   y += (linhas.length - 1) * corpo * 0.95 + 22 + 34 + 8 // baseline da linha de detalhes
 
   // código + família/acabamento (+ Pantone)
-  const detalhes = [`${rotulos.cod} ${color.code}`, rotulos.familia, color.pantone ? `Pantone ${color.pantone}` : '']
+  const detalhes = [color.semCodigo ? '' : `${rotulos.cod} ${color.code}`, rotulos.familia, color.pantone ? `Pantone ${color.pantone}` : '']
     .filter(Boolean)
     .join('  ·  ')
     .toUpperCase()
@@ -354,7 +354,7 @@ export default function CorDetalhe() {
             <dl className="mt-5 divide-y divide-white/10 border-y border-white/10">
               {[
                 [t('cor.nome'), color.name, false],
-                [t('cor.codigo'), color.code, true],
+                ...(color.semCodigo ? [] : [[t('cor.codigo'), color.code, true]]),
                 [t('cor.linha'), color.lineName, false],
                 [t('cor.familia'), tv(color.family), false],
                 ...(acabamento ? [[t('cor.acabamento'), tv(acabamento), false]] : []),
@@ -440,7 +440,7 @@ export default function CorDetalhe() {
                   <div className="mt-1.5 truncate font-display text-base font-bold uppercase text-white group-hover:text-alltak-blue">
                     {c.name}
                   </div>
-                  <div className="text-sm uppercase tracking-wide text-white/60">{c.code}</div>
+                  <div className="text-sm uppercase tracking-wide text-white/60">{codigoVisivel(c)}</div>
                 </Link>
               ))}
             </div>

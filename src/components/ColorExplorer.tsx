@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { COLORS, LINES, familiesFor, colorSlug } from '../data/catalog'
+import { COLORS, LINES, familiesFor, colorSlug, codigoVisivel } from '../data/catalog'
 import { useI18n } from '../i18n'
 import { linhaDaFamilia } from '../data/familias'
 import SobreLinha from './SobreLinha'
@@ -114,7 +114,7 @@ export default function ColorExplorer({ initialLine = 'all', initialFamily = 'al
               <div className="truncate font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
                 {c.name}
               </div>
-              <div className="text-sm uppercase tracking-wide text-white/60">{c.code}</div>
+              <div className="text-sm uppercase tracking-wide text-white/60">{codigoVisivel(c)}</div>
             </div>
           </Link>
         ))}

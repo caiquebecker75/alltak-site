@@ -39,7 +39,7 @@ const painel = (c: Color) => /ripado (vigo|burgo|leon)/i.test(c.name)
 export default function FurnitureStudio() {
   const { open } = useLeadGate()
   const { t, tv } = useI18n()
-  const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor'), [])
+  const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor' && c.texture), [])
   const families = useMemo(() => [...new Set(patterns.map((p) => p.family))].sort(), [patterns])
   const [fam, setFam] = useState('all')
   const [active, setActive] = useState<Color>(patterns[0])

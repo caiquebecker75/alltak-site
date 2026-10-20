@@ -5,7 +5,7 @@ import subWraps from '../brand/sub-wraps.png'
 import subDecor from '../brand/sub-decor.png'
 import subSigns from '../brand/sub-signs.png'
 
-export const STORE_URL = 'https://loja.alltak.com.br'
+export const STORE_URL = 'https://www.alltakstore.com.br'
 export const YOUTUBE_URL = 'https://www.youtube.com/user/alltakAdesivos'
 export const INSTAGRAM_URL = 'https://www.instagram.com/alltakadesivos'
 
@@ -16,12 +16,11 @@ export type NavItem = {
   external?: boolean
 }
 
-// ordem do menu = caminho do cliente: conhecer (produtos, simular),
+// ordem do menu = caminho do cliente: conhecer (produtos),
 // comprar (onde comprar, loja online), aplicar (instalador, cursos),
 // apoio (downloads, blog) e institucional (sobre, contato)
 export const NAV: NavItem[] = [
   { label: 'Produtos', tkey: 'nav.produtos', to: '/produtos' },
-  { label: 'Simule agora', tkey: 'nav.simule', to: '/simulador' },
   { label: 'Onde Comprar', tkey: 'nav.onde', to: '/onde-comprar' },
   { label: 'Alltak Store', tkey: 'nav.store', to: STORE_URL, external: true },
   { label: 'Encontre um Instalador', tkey: 'nav.instalador', to: '/instaladores' },

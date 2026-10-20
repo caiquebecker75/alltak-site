@@ -16,7 +16,7 @@ const ROOM_KEYS = Object.keys(ROOMS) as RoomKey[]
 export default function AmbienteStudio() {
   const { open } = useLeadGate()
   const { t, tv } = useI18n()
-  const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor'), [])
+  const patterns = useMemo(() => COLORS.filter((c) => c.line === 'decor' && c.texture), [])
   const families = useMemo(() => [...new Set(patterns.map((p) => p.family))].sort(), [patterns])
   const [fam, setFam] = useState('all')
   const [room, setRoom] = useState<RoomKey>('cozinha')

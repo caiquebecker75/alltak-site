@@ -81,7 +81,7 @@ export function CursoDetalhe() {
             className="font-display text-base font-bold uppercase tracking-wide text-alltak-blueDark hover:text-alltak-blue">
             ← {pai ? pai.nome : t('curso.todos')}
           </Link>
-          {c.banner && <img src={c.banner} alt={c.nome} className="mt-6 w-full border border-black/10" />}
+          <BannerCurso c={c} pai={pai?.nome} />
 
           <div className="mt-10 grid gap-12 lg:grid-cols-[1.6fr_1fr]">
             {/* conteúdo */}
@@ -206,6 +206,27 @@ export function CursoDetalhe() {
         </div>
       </section>
     </>
+  )
+}
+
+// arte do curso no padrão do site: faixa escura com título e foto recortada
+// em trapézio (substitui as artes de 2021, que tinham o texto na imagem)
+function BannerCurso({ c, pai }: { c: Curso; pai?: string }) {
+  return (
+    <div className="relative mt-6 overflow-hidden bg-alltak-navyDeep">
+      <div className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-[0.07]" style={{ backgroundImage: "url('./assets/caveiras.avif')" }} aria-hidden />
+      <div className="relative grid min-h-[15rem] items-center md:grid-cols-[1.1fr_1fr]">
+        <div className="relative z-10 p-7 md:p-10">
+          <img src={subAcademy} alt="Alltak Academy" className="h-8 w-auto select-none md:h-10" draggable={false} />
+          {pai && <p className="mt-5 font-display text-base font-bold uppercase tracking-[0.2em] text-alltak-blue">{pai}</p>}
+          <p className={`${pai ? 'mt-1' : 'mt-5'} font-display text-5xl font-black uppercase leading-[0.9] text-white md:text-6xl`}>{c.nome}</p>
+          <p className="mt-3 font-display text-lg font-bold uppercase tracking-wide text-white/70">{c.chamada}</p>
+        </div>
+        <div className="h-56 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[55%]">
+          <img src={c.imagem} alt="" className="h-full w-full object-cover md:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]" />
+        </div>
+      </div>
+    </div>
   )
 }
 

@@ -30,6 +30,7 @@ export function montarIndice(lang: Lang, t: (k: string) => string, tv: (v: strin
 
   for (const n of NAV) add('paginas', t(n.tkey), '', n.to, n.label, n.external)
   // páginas que saíram do menu, mas continuam no site
+  add('paginas', t('nav.simule'), '', '/simulador', 'simulador visualizador')
   add('paginas', t('nav.visualizador'), t('nav.simule'), '/visualizador', 'carro 3d automotivo')
   add('paginas', t('nav.decoracao'), t('nav.simule'), '/decoracao', 'ambientes moveis')
   add('paginas', t('nav.cores'), t('nav.produtos'), '/cores', 'cartela')

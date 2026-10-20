@@ -5,11 +5,14 @@ const FAMILIA_DA_LINHA: Record<string, [linha: string, familia: string]> = {
   // Decor
   kroma: ['decor', 'Kroma'],
   wood: ['decor', 'Wood'],
-  tijolo: ['decor', 'Tijolo'],
-  azulejo: ['decor', 'Decor'], // azulejos Porto e Lisboa
-  pedras: ['decor', 'Mármore'],
+  tijolo: ['decor', 'Pedras'],
+  azulejo: ['decor', 'Azulejos'],
+  pedras: ['decor', 'Pedras'],
+  cristais: ['decor', 'Cristais'],
+  estampados: ['decor', 'Estampa'],
   // Wraps
   carbon: ['wraps', 'Carbon'],
+  'evolution-pro': ['wraps', 'Evolution Pro'],
   fx: ['wraps', 'Fx'],
   jateado: ['wraps', 'Jateado'],
   krusher: ['wraps', 'Krusher'],

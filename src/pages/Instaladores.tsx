@@ -17,6 +17,7 @@ type Perfil = {
 }
 
 const lista = instaladores as Perfil[]
+const ATIVOS = lista.filter((p) => !p.homenagem)
 const CATEGORIAS: Categoria[] = ['automotivo', 'decor', 'instrutor']
 // cores diferentes além do ícone, para os selos não se confundirem
 const COR_SELO: Record<Categoria, string> = {
@@ -120,7 +121,8 @@ export default function Instaladores() {
             <div className="flex flex-wrap gap-2">
               {(['todos', ...CATEGORIAS] as const).map((c) => {
                 const ativo = aba === c
-                const n = c === 'todos' ? lista.length : lista.filter((p) => p.categorias.includes(c)).length
+                // a contagem não inclui o perfil em memória (homenagem)
+                const n = ATIVOS.filter((p) => c === 'todos' || p.categorias.includes(c)).length
                 return (
                   <button key={c} onClick={() => setAba(c)} aria-pressed={ativo}
                     className={`flex items-center gap-2 px-4 py-2 font-display text-base font-bold uppercase tracking-wide transition md:px-5 md:py-2.5 ${

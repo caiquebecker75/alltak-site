@@ -56,12 +56,7 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg text-white/70 md:max-w-none md:whitespace-nowrap">{t('hero.sub')}</p>
           <div className="mt-8 flex flex-wrap items-center gap-5">
             <Magnetic>
-              <Link to="/visualizador" className="btn-trapezoid btn-blue !px-10 !py-4 !text-base">
-                {t('hero.cta')}
-              </Link>
-            </Magnetic>
-            <Magnetic>
-              <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline !px-10 !py-4 !text-base">
+              <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-blue !px-10 !py-4 !text-base">
                 Alltak Store ↗
               </a>
             </Magnetic>

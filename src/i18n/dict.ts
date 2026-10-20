@@ -45,7 +45,6 @@ export const DICT: Record<string, Record<Lang, string>> = {
     en: 'For every surface. Vehicle wrapping, decor and visual communication.',
     es: 'Para cualquier superficie. Rotulación, decoración y comunicación visual.',
   },
-  'hero.cta': { pt: 'Visualizar envelopamento', en: 'Open the visualizer', es: 'Ver rotulación' },
   'hero.scroll': { pt: 'role', en: 'scroll', es: 'desliza' },
 
   // ---- common CTAs / words ----
@@ -270,6 +269,15 @@ export const VALUES: Record<string, Record<Exclude<Lang, 'pt'>, string>> = {
   Tijolo: { en: 'Brick', es: 'Ladrillo' },
   Metrô: { en: 'Subway', es: 'Metro' },
   Jardim: { en: 'Garden', es: 'Jardín' },
+  Estampa: { en: 'Prints', es: 'Estampas' },
+  Azulejos: { en: 'Tiles', es: 'Azulejos' },
+  Cristais: { en: 'Crystals', es: 'Cristales' },
+  Pedras: { en: 'Stones', es: 'Piedras' },
+  'Piso Decor': { en: 'Decor Floor', es: 'Piso Decor' },
+  'Brilho intenso': { en: 'Intense gloss', es: 'Brillo intenso' },
+  'Fosco': { en: 'Matte', es: 'Mate' },
+  'Fosco metalizado': { en: 'Metallic matte', es: 'Mate metalizado' },
+  'Super fosco': { en: 'Super matte', es: 'Súper mate' },
   Detalhe: { en: 'Detail', es: 'Detalle' },
   Madeira: { en: 'Wood', es: 'Madera' },
 }

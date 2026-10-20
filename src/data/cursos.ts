@@ -10,8 +10,7 @@ export type Curso = {
   nome: string
   chamada: string
   resumo: string
-  imagem: string
-  banner?: string
+  imagem: string // foto do card e do banner (as artes antigas, de 2021, tinham texto embutido)
   modulos?: string[] // slugs dos módulos (Academia)
   pai?: string
   blocos: Bloco[]
@@ -67,8 +66,7 @@ export const CURSOS: Curso[] = [
     nome: 'Academia de Envelopamento',
     chamada: 'Envelopamento automotivo sem mistérios',
     resumo: 'O método Alltak de envelopamento automotivo, criado por Thiago Sossai, em dois módulos: Intermediário e Avançado.',
-    imagem: `${UP}/2021/01/banner-alltak-academia-de-envelopamento.jpg`,
-    banner: `${UP}/2021/01/banner-alltak-academia-de-envelopamento.jpg`,
+    imagem: './colors/wraps/18S192M_ap.jpg',
     modulos: ['modulo-intermediario', 'modulo-avancado'],
     blocos: [{ titulo: 'Sobre a Academia', texto: INTRO_ACADEMIA }],
   },
@@ -78,8 +76,7 @@ export const CURSOS: Curso[] = [
     nome: 'Módulo Intermediário',
     chamada: 'Envelopamento automotivo sem mistérios',
     resumo: 'Para quem já atua no mercado e para quem busca iniciar no ramo: um fluxo de trabalho limpo e organizado, que diminui o tempo de aplicação e evita erros, perdas e retrabalho.',
-    imagem: `${UP}/2021/01/banner-alltak-academia-de-envelopamento.jpg`,
-    banner: `${UP}/2021/01/banner-alltak-academia-de-envelopamento.jpg`,
+    imagem: './colors/wraps/18S84M_ap.jpg',
     blocos: [
       { titulo: 'O curso', texto: INTRO_ACADEMIA },
       ...MERCADO_E_METODO,
@@ -117,8 +114,7 @@ export const CURSOS: Curso[] = [
     nome: 'Módulo Avançado',
     chamada: 'Envelopamento automotivo para profissionais do mercado',
     resumo: 'Para quem já participou do Intermediário e atua no envelopamento: técnicas para veículos mais complexos. É a preparação para a certificação Pro Expert.',
-    imagem: `${UP}/2021/01/banner-alltak-academia-de-envelopamento.jpg`,
-    banner: `${UP}/2021/01/banner-alltak-academia-de-envelopamento.jpg`,
+    imagem: './colors/wraps/18S41M_ap.jpg',
     blocos: [
       {
         titulo: 'O curso',
@@ -152,7 +148,6 @@ export const CURSOS: Curso[] = [
     chamada: 'Aprenda envelopamento decorativo com a Alltak',
     resumo: 'Revestimento de paredes, móveis, geladeiras e vidros num ambiente que simula situações reais, para você oferecer tudo o que o revestimento vinílico pode trazer ao design de interiores.',
     imagem: `${UP}/2021/06/envelopamento-decorativo-alltak-decor-aplicacao1.jpg`,
-    banner: `${UP}/2021/06/envelopamento-decorativo-alltak-decor-desktop.jpg`,
     blocos: [
       {
         titulo: 'Obra limpa',

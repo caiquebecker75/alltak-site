@@ -18,6 +18,7 @@ export type Color = {
   swatch: string
   applied?: string
   texture?: string // flat material crop (seamless-ish) for 3D re-skinning
+  semCodigo?: boolean // código oficial ainda não informado: o site não mostra o código
   texture3d?: string // versão que repete sem emenda (migracao/texturas_sem_emenda.py)
 }
 
@@ -31,7 +32,7 @@ const boa = (src?: string) => (src && infoImagem(src)?.ok !== false ? src : unde
 
 const famFrom = (name: string) => name.split(' ')[0]
 const JUNK = /(ILUSTRATIV|REPRESENTAD|VARIAR|DISPOSITIVO|MERAMENTE|ACORDO|PROTE[ÇC][ÃA]O|CAT[ÁA]LOGO|DIMENS|PROPRIEDAD|VERS[ÃA]O)/i
-const isClean = (name: string) => !!name && name.length <= 40 && !JUNK.test(name)
+const isClean = (name: string) => !!name && name.length <= 48 && !JUNK.test(name)
 
 const raw: Color[] = [
   ...(wrapsRaw as any[]).map((c) => ({
@@ -44,18 +45,20 @@ const raw: Color[] = [
     hex: c.hex,
     swatch: `./colors/wraps/${c.swatch}`,
     applied: c.applied ? boa(`./colors/wraps/${c.applied}`) : undefined,
+    semCodigo: c.semCodigo || undefined,
   })),
   ...(decorRaw as any[]).map((c) => ({
     line: 'decor' as const,
     lineName: 'Alltak Decor',
     code: c.code,
     name: c.name,
-    family: famFrom(c.name),
+    family: c.family || famFrom(c.name),
     hex: c.hex,
     swatch: boa(`./colors/decor/${c.swatch}`) ?? `./textures/decor/${c.code}.jpg`,
     applied: c.applied ? boa(`./colors/decor/${c.applied}`) : undefined,
-    texture: `./textures/decor/${c.code}.jpg`,
-    texture3d: `./textures/decor-3d/${c.code}.jpg`,
+    // cristais e pisos não têm textura plana: ficam fora dos simuladores 3D
+    texture: c.semTextura ? undefined : `./textures/decor/${c.code}.jpg`,
+    texture3d: c.semTextura ? undefined : `./textures/decor-3d/${c.code}.jpg`,
   })),
   ...(signsRaw as any[]).map((c) => ({
     line: 'signs' as const,
@@ -80,10 +83,14 @@ export const LINES = [
   { key: 'signs', label: 'Signs' },
 ] as const
 
+// ordem das abas de família da Decor pedida pela Alltak; as demais, alfabética
+const ORDEM_DECOR = ['Kroma', 'Wood', 'Estampa', 'Azulejos', 'Cristais', 'Pedras', 'Piso Decor']
+const posicao = (f: string) => (ORDEM_DECOR.includes(f) ? ORDEM_DECOR.indexOf(f) : ORDEM_DECOR.length)
+
 export function familiesFor(line: string): string[] {
   const set = new Set<string>()
   COLORS.filter((c) => line === 'all' || c.line === line).forEach((c) => set.add(c.family))
-  return [...set].sort()
+  return [...set].sort((a, b) => posicao(a) - posicao(b) || a.localeCompare(b))
 }
 
 // Stable URL slug + lookup for a color's dedicated page (/cor/:line/:code).
@@ -93,6 +100,9 @@ export function familiesFor(line: string): string[] {
 const slugNome = (n: string) =>
   n.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const repetido = (c: Color) => COLORS.filter((o) => o.line === c.line && o.code === c.code).length > 1
+
+// código para exibir (vazio quando a cor ainda não tem código oficial)
+export const codigoVisivel = (c: Color) => (c.semCodigo ? '' : c.code)
 
 export const colorSlug = (c: Color) =>
   `/cor/${c.line}/${encodeURIComponent(c.code)}${repetido(c) ? `~${slugNome(c.name)}` : ''}`
