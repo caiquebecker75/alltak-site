@@ -4,6 +4,7 @@ import PageHeader from '../components/PageHeader'
 import linhas from '../data/wp/linhas.json'
 import { useI18n } from '../i18n'
 import { limparRotulo } from '../lib/rotulos'
+import AvisoIlustrativo from '../components/AvisoIlustrativo'
 
 // Página de segmento sem cartela de cores (Aplicações Técnicas, Wrap Care,
 // Acessórios), no mesmo formato da página de Cores: abas dos segmentos,
@@ -141,6 +142,7 @@ export default function Segmento() {
               )
             })}
           </div>
+          <AvisoIlustrativo className="mt-6" />
         </div>
       </section>
     </>

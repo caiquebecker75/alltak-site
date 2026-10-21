@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { PRODUCT_CATEGORIES } from '../data/site'
 import { onScrollChange } from '../lib/onScrollChange'
 import { useI18n } from '../i18n'
+import AvisoIlustrativo from './AvisoIlustrativo'
 
 // As fotos já vêm recortadas em trapézio (transparência no próprio arquivo),
 // alternando a orientação: base larga embaixo, depois base larga em cima.
@@ -131,6 +132,7 @@ export default function HScroll() {
           <div className="h-1 w-full bg-alltak-black/10">
             <div className="h-full bg-alltak-blue transition-[width] duration-100" style={{ width: `${pct * 100}%` }} />
           </div>
+          <AvisoIlustrativo claro className="mt-3" />
         </div>
       </div>
     </div>

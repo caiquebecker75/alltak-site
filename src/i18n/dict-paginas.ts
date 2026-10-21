@@ -207,6 +207,11 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
     en: 'For matters related to Alltak products, contact our customer service:',
     es: 'Para asuntos relacionados con los productos Alltak, contacte a nuestro SAC:',
   },
+  'inst.ressalva': {
+    pt: 'A Alltak não se responsabiliza por negociações entre clientes finais e instaladores credenciados.',
+    en: 'Alltak is not responsible for negotiations between end customers and accredited installers.',
+    es: 'Alltak no se responsabiliza por negociaciones entre clientes finales e instaladores acreditados.',
+  },
   'inst.todos': { pt: 'Todos', en: 'All', es: 'Todos' },
   'inst.instrutor': { pt: 'Instrutores', en: 'Instructors', es: 'Instructores' },
   'inst.instrutorUm': { pt: 'Instrutor', en: 'Instructor', es: 'Instructor' },

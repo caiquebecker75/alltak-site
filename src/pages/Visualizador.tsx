@@ -140,7 +140,7 @@ export default function Visualizador() {
                   Alltak Store ↗
                 </a>
               </div>
-              <p className="mt-4 text-sm text-white/40">{t('viz.disclaimer')}</p>
+              <p className="mt-4 text-sm text-white/40">{t('viz.disclaimer')} {t('inst.ressalva')}</p>
               <p className="mt-2 text-sm text-white/25">{t('viz.credito')}</p>
             </div>
           </div>

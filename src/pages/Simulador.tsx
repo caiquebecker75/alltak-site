@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import { useT } from '../i18n'
+import AvisoIlustrativo from '../components/AvisoIlustrativo'
 
 // "Simule agora": porta de entrada dos dois simuladores — o carro 3D
 // (Visualizador, linha automotiva) e os ambientes e móveis (Decoração).
@@ -40,6 +41,7 @@ export default function Simulador() {
             </Reveal>
           ))}
         </div>
+        <AvisoIlustrativo className="container-x mt-5" />
       </section>
     </>
   )

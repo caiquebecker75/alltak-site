@@ -4,6 +4,7 @@ import { COLORS, LINES, familiesFor, colorSlug, codigoVisivel } from '../data/ca
 import { useI18n } from '../i18n'
 import { linhaDaFamilia } from '../data/familias'
 import SobreLinha from './SobreLinha'
+import AvisoIlustrativo from './AvisoIlustrativo'
 
 // Full color explorer: line + family filters, search and a complete grid.
 // Each swatch links to that color's dedicated page (/cor/:line/:code).
@@ -119,6 +120,7 @@ export default function ColorExplorer({ initialLine = 'all', initialFamily = 'al
           </Link>
         ))}
       </div>
+      <AvisoIlustrativo className="mt-6" />
     </>
   )
 }

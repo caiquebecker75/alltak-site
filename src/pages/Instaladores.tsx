@@ -216,6 +216,10 @@ export default function Instaladores() {
                   Instagram @{aberto.instagram.split('/').filter(Boolean).pop()} ↗
                 </a>
               )}
+              {/* contato direto com o instalador: a ressalva fica junto */}
+              {(aberto.telefone || aberto.instagram) && (
+                <p className="mt-5 border-t border-white/10 pt-3 text-sm text-white/45">{t('inst.ressalva')}</p>
+              )}
             </div>
           </div>
         </div>

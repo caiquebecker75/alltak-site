@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import { STORE_URL } from '../data/site'
 import { useT } from '../i18n'
+import AvisoIlustrativo from '../components/AvisoIlustrativo'
 
 // Página da linha RevestFácil (lançamento). Só o que é fato do produto:
 // revestimento vinílico adesivo para renovar superfícies sem obra. Os padrões
@@ -57,6 +58,7 @@ export default function RevestFacil() {
                 </div>
               ))}
             </div>
+            <AvisoIlustrativo className="mt-4 text-right" />
           </Reveal>
         </div>
       </section>

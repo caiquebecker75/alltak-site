@@ -420,7 +420,7 @@ export default function CorDetalhe() {
               </a>
             </div>
 
-            <p className="mt-4 text-sm text-white/55">{t('cor.disclaimer')}</p>
+            <p className="mt-4 text-sm text-white/55">{t('cor.disclaimer')} {t('inst.ressalva')}</p>
           </div>
         </div>
       </section>

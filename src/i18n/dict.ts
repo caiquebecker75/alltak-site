@@ -241,6 +241,7 @@ export const DICT: Record<string, Record<Lang, string>> = {
   // ---- comum ----
   'comum.baixarImagem': { pt: 'Baixar imagem ↓', en: 'Download image ↓', es: 'Descargar imagen ↓' },
   'comum.fechar': { pt: 'Fechar ✕', en: 'Close ✕', es: 'Cerrar ✕' },
+  'comum.ilustrativas': { pt: 'Imagens meramente ilustrativas.', en: 'Images for illustration purposes only.', es: 'Imágenes meramente ilustrativas.' },
 }
 
 // Valores de dados (acabamentos, famílias, categorias, rótulos) traduzidos.

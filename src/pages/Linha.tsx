@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
+import AvisoIlustrativo from '../components/AvisoIlustrativo'
 import linhas from '../data/wp/linhas.json'
 import linhasI18n from '../data/wp/linhas-i18n.json'
 import { fichaDaLinha } from '../data/catalog/fichas'
@@ -123,6 +124,7 @@ export default function Linha() {
                 </button>
               ))}
             </div>
+            <AvisoIlustrativo className="mt-6" />
           </div>
         </section>
       )}
