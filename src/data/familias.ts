@@ -5,14 +5,16 @@ const FAMILIA_DA_LINHA: Record<string, [linha: string, familia: string]> = {
   // Decor
   kroma: ['decor', 'Kroma'],
   wood: ['decor', 'Wood'],
+  // a primeira linha de cada família é a que aparece em "Sobre a linha"
+  pedras: ['decor', 'Pedras'],
   tijolo: ['decor', 'Pedras'],
   azulejo: ['decor', 'Azulejos'],
-  pedras: ['decor', 'Pedras'],
   cristais: ['decor', 'Cristais'],
   estampados: ['decor', 'Estampa'],
   // Wraps
   carbon: ['wraps', 'Carbon'],
   'evolution-pro': ['wraps', 'Evolution Pro'],
+  'protecao-de-pintura-ppf': ['wraps', 'FPP'],
   fx: ['wraps', 'Fx'],
   jateado: ['wraps', 'Jateado'],
   krusher: ['wraps', 'Krusher'],

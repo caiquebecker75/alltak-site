@@ -43,7 +43,8 @@ const raw: Color[] = [
     family: c.family || famFrom(c.name),
     finish: c.acabamento || undefined,
     hex: c.hex,
-    swatch: `./colors/wraps/${c.swatch}`,
+    // bobina: foto oficial de out/2026 (migracao/imagens_drive_out2026.py)
+    swatch: c.bobina ? `./colors/wraps/${c.bobina}` : `./colors/wraps/${c.swatch}`,
     applied: c.applied ? boa(`./colors/wraps/${c.applied}`) : undefined,
     semCodigo: c.semCodigo || undefined,
   })),
@@ -54,7 +55,7 @@ const raw: Color[] = [
     name: c.name,
     family: c.family || famFrom(c.name),
     hex: c.hex,
-    swatch: boa(`./colors/decor/${c.swatch}`) ?? `./textures/decor/${c.code}.jpg`,
+    swatch: c.bobina ? `./colors/decor/${c.bobina}` : boa(`./colors/decor/${c.swatch}`) ?? `./textures/decor/${c.code}.jpg`,
     applied: c.applied ? boa(`./colors/decor/${c.applied}`) : undefined,
     // cristais e pisos não têm textura plana: ficam fora dos simuladores 3D
     texture: c.semTextura ? undefined : `./textures/decor/${c.code}.jpg`,

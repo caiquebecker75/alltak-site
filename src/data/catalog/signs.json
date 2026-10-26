@@ -5,7 +5,8 @@
   "pantone": "7406 C",
   "serie": "Premium",
   "hex": "#f0c000",
-  "applied": "773314_ap.jpg"
+  "applied": "bobina/773314-amarelo-canario.jpg",
+  "bobina": "bobina/773314-amarelo-canario.jpg"
  },
  {
   "code": "773315",
@@ -13,7 +14,8 @@
   "pantone": "136 C",
   "serie": "Premium",
   "hex": "#fcba36",
-  "applied": "773315_ap.jpg"
+  "applied": "bobina/773315-amarelo-medio.jpg",
+  "bobina": "bobina/773315-amarelo-medio.jpg"
  },
  {
   "code": "773311",
@@ -21,7 +23,8 @@
   "pantone": "137 C",
   "serie": "Premium",
   "hex": "#fca200",
-  "applied": "773311_ap.jpg"
+  "applied": "bobina/773311-amarelo-ouro.jpg",
+  "bobina": "bobina/773311-amarelo-ouro.jpg"
  },
  {
   "code": "773313",
@@ -29,7 +32,8 @@
   "pantone": "165 C",
   "serie": "Premium",
   "hex": "#f66618",
-  "applied": "773313_ap.jpg"
+  "applied": "bobina/773313-laranja-intenso.jpg",
+  "bobina": "bobina/773313-laranja-intenso.jpg"
  },
  {
   "code": "773320",
@@ -37,7 +41,8 @@
   "pantone": "2035 C",
   "serie": "Premium",
   "hex": "#d84242",
-  "applied": "773320_ap.jpg"
+  "applied": "bobina/773320-vermelho-tomate.jpg",
+  "bobina": "bobina/773320-vermelho-tomate.jpg"
  },
  {
   "code": "773321",
@@ -45,7 +50,8 @@
   "pantone": "2350 C",
   "serie": "Premium",
   "hex": "#b41e1e",
-  "applied": "773321_ap.jpg"
+  "applied": "bobina/773321-vermelho-vivo.jpg",
+  "bobina": "bobina/773321-vermelho-vivo.jpg"
  },
  {
   "code": "773322",
@@ -53,7 +59,8 @@
   "pantone": "1795 C",
   "serie": "Premium",
   "hex": "#d2242a",
-  "applied": "773322_ap.jpg"
+  "applied": "bobina/773322-vermelho-rubi.jpg",
+  "bobina": "bobina/773322-vermelho-rubi.jpg"
  },
  {
   "code": "773330",
@@ -61,7 +68,8 @@
   "pantone": "214 C",
   "serie": "Premium",
   "hex": "#d21266",
-  "applied": "773330_ap.jpg"
+  "applied": "bobina/773330-magenta.jpg",
+  "bobina": "bobina/773330-magenta.jpg"
  },
  {
   "code": "773231",
@@ -69,7 +77,8 @@
   "pantone": "211 C",
   "serie": "Premium",
   "hex": "#f07eb4",
-  "applied": "773231_ap.jpg"
+  "applied": "bobina/773231-pink.jpg",
+  "bobina": "bobina/773231-pink.jpg"
  },
  {
   "code": "773333",
@@ -77,7 +86,8 @@
   "pantone": "7672 C",
   "serie": "Premium",
   "hex": "#483c84",
-  "applied": "773333_ap.jpg"
+  "applied": "bobina/773333-roxo.jpg",
+  "bobina": "bobina/773333-roxo.jpg"
  },
  {
   "code": "773350",
@@ -85,7 +95,8 @@
   "pantone": "299 C",
   "serie": "Premium",
   "hex": "#129cde",
-  "applied": "773350_ap.jpg"
+  "applied": "bobina/773350-azul-celeste.jpg",
+  "bobina": "bobina/773350-azul-celeste.jpg"
  },
  {
   "code": "773352",
@@ -93,7 +104,8 @@
   "pantone": "285 C",
   "serie": "Premium",
   "hex": "#0c6ccc",
-  "applied": "773352_ap.jpg"
+  "applied": "bobina/773352-azul-medio.jpg",
+  "bobina": "bobina/773352-azul-medio.jpg"
  },
  {
   "code": "773353",
@@ -101,7 +113,8 @@
   "pantone": "REFLEX BLUE C",
   "serie": "Premium",
   "hex": "#061284",
-  "applied": "773353_ap.jpg"
+  "applied": "bobina/773353-azul-royal.jpg",
+  "bobina": "bobina/773353-azul-royal.jpg"
  },
  {
   "code": "773354",
@@ -109,7 +122,8 @@
   "pantone": "295 C",
   "serie": "Premium",
   "hex": "#002454",
-  "applied": "773354_ap.jpg"
+  "applied": "bobina/773354-azul-noturno.jpg",
+  "bobina": "bobina/773354-azul-noturno.jpg"
  },
  {
   "code": "773341",
@@ -117,7 +131,8 @@
   "pantone": "7466 C",
   "serie": "Premium",
   "hex": "#00a8ba",
-  "applied": "773341_ap.jpg"
+  "applied": "bobina/773341-verde-agua.jpg",
+  "bobina": "bobina/773341-verde-agua.jpg"
  },
  {
   "code": "773340",
@@ -125,7 +140,8 @@
   "pantone": "2287 C",
   "serie": "Premium",
   "hex": "#5ac000",
-  "applied": "773340_ap.jpg"
+  "applied": "bobina/773340-verde-abacate.jpg",
+  "bobina": "bobina/773340-verde-abacate.jpg"
  },
  {
   "code": "773342",
@@ -133,7 +149,8 @@
   "pantone": "2419 C",
   "serie": "Premium",
   "hex": "#007854",
-  "applied": "773342_ap.jpg"
+  "applied": "bobina/773342-verde-bandeira.jpg",
+  "bobina": "bobina/773342-verde-bandeira.jpg"
  },
  {
   "code": "773343",
@@ -141,7 +158,8 @@
   "pantone": "7729 C",
   "serie": "Premium",
   "hex": "#005442",
-  "applied": "773343_ap.jpg"
+  "applied": "bobina/773343-verde-amazonas.jpg",
+  "bobina": "bobina/773343-verde-amazonas.jpg"
  },
  {
   "code": "773393",
@@ -149,7 +167,8 @@
   "pantone": "7603 C",
   "serie": "Premium",
   "hex": "#663c2a",
-  "applied": "773393_ap.jpg"
+  "applied": "bobina/773393-marrom.jpg",
+  "bobina": "bobina/773393-marrom.jpg"
  },
  {
   "code": "773391",
@@ -157,7 +176,8 @@
   "pantone": "872 C",
   "serie": "Premium",
   "hex": "#846c48",
-  "applied": "773391_ap.jpg"
+  "applied": "bobina/773391-ouro.jpg",
+  "bobina": "bobina/773391-ouro.jpg"
  },
  {
   "code": "773389",
@@ -165,7 +185,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#c6baa2",
-  "applied": "773389_ap.jpg"
+  "applied": "bobina/773389-creme.jpg",
+  "bobina": "bobina/773389-creme.jpg"
  },
  {
   "code": "773360",
@@ -173,7 +194,8 @@
   "pantone": "Cool Gray 4",
   "serie": "Premium",
   "hex": "#bababa",
-  "applied": "773360_ap.jpg"
+  "applied": "bobina/773360-cinza-claro.jpg",
+  "bobina": "bobina/773360-cinza-claro.jpg"
  },
  {
   "code": "773361",
@@ -181,7 +203,8 @@
   "pantone": "423 C",
   "serie": "Premium",
   "hex": "#848a8a",
-  "applied": "773361_ap.jpg"
+  "applied": "bobina/773361-cinza-escuro.jpg",
+  "bobina": "bobina/773361-cinza-escuro.jpg"
  },
  {
   "code": "773392",
@@ -189,7 +212,8 @@
   "pantone": "877 C",
   "serie": "Premium",
   "hex": "#848a8a",
-  "applied": "773392_ap.jpg"
+  "applied": "bobina/773392-prata.jpg",
+  "bobina": "bobina/773392-prata.jpg"
  },
  {
   "code": "773394",
@@ -197,7 +221,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#b8bcc0",
-  "applied": "773394_ap.jpg"
+  "applied": "bobina/773394-aco-escovado-prata.jpg",
+  "bobina": "bobina/773394-aco-escovado-prata.jpg"
  },
  {
   "code": "773310",
@@ -205,7 +230,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#f2f2f2",
-  "applied": "773310_ap.jpg"
+  "applied": "bobina/773310-branco.jpg",
+  "bobina": "bobina/773310-branco.jpg"
  },
  {
   "code": "773310F",
@@ -213,7 +239,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#f2f2f2",
-  "applied": "773310F_ap.jpg"
+  "applied": "bobina/773310f-branco-fosco.jpg",
+  "bobina": "bobina/773310f-branco-fosco.jpg"
  },
  {
   "code": "773370",
@@ -221,7 +248,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#111111",
-  "applied": "773370_ap.jpg"
+  "applied": "bobina/773370-preto.jpg",
+  "bobina": "bobina/773370-preto.jpg"
  },
  {
   "code": "773370F",
@@ -229,7 +257,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#111111",
-  "applied": "773370F_ap.jpg"
+  "applied": "bobina/773370f-preto-fosco.jpg",
+  "bobina": "bobina/773370f-preto-fosco.jpg"
  },
  {
   "code": "773301",
@@ -237,7 +266,8 @@
   "pantone": null,
   "serie": "Premium",
   "hex": "#dea88a",
-  "applied": "773301_ap.jpg"
+  "applied": "bobina/773301-transparente.jpg",
+  "bobina": "bobina/773301-transparente.jpg"
  },
  {
   "code": "127314",
@@ -245,7 +275,8 @@
   "pantone": "7406 C",
   "serie": "Color",
   "hex": "#f0c000",
-  "applied": "127314_ap.jpg"
+  "applied": "bobina/127314-amarelo-canario.jpg",
+  "bobina": "bobina/127314-amarelo-canario.jpg"
  },
  {
   "code": "127311",
@@ -253,7 +284,8 @@
   "pantone": "137 C",
   "serie": "Color",
   "hex": "#fca200",
-  "applied": "127311_ap.jpg"
+  "applied": "bobina/127311-amarelo-ouro.jpg",
+  "bobina": "bobina/127311-amarelo-ouro.jpg"
  },
  {
   "code": "127312",
@@ -261,7 +293,8 @@
   "pantone": "165 C",
   "serie": "Color",
   "hex": "#f66618",
-  "applied": "127312_ap.jpg"
+  "applied": "bobina/127312-laranja-intenso.jpg",
+  "bobina": "bobina/127312-laranja-intenso.jpg"
  },
  {
   "code": "127320",
@@ -269,7 +302,8 @@
   "pantone": "2035 C",
   "serie": "Color",
   "hex": "#d84242",
-  "applied": "127320_ap.jpg"
+  "applied": "bobina/127320-vermelho-tomate.jpg",
+  "bobina": "bobina/127320-vermelho-tomate.jpg"
  },
  {
   "code": "127321",
@@ -277,7 +311,8 @@
   "pantone": "2350 C",
   "serie": "Color",
   "hex": "#b41e1e",
-  "applied": "127321_ap.jpg"
+  "applied": "bobina/127321-vermelho-vivo.jpg",
+  "bobina": "bobina/127321-vermelho-vivo.jpg"
  },
  {
   "code": "127350",
@@ -285,7 +320,8 @@
   "pantone": "299 C",
   "serie": "Color",
   "hex": "#129cde",
-  "applied": "127350_ap.jpg"
+  "applied": "bobina/127350-azul-celeste.jpg",
+  "bobina": "bobina/127350-azul-celeste.jpg"
  },
  {
   "code": "127352",
@@ -293,7 +329,8 @@
   "pantone": "285 C",
   "serie": "Color",
   "hex": "#0c6ccc",
-  "applied": "127352_ap.jpg"
+  "applied": "bobina/127352-azul-medio.jpg",
+  "bobina": "bobina/127352-azul-medio.jpg"
  },
  {
   "code": "127353",
@@ -301,7 +338,8 @@
   "pantone": "REFLEX BLUE C",
   "serie": "Color",
   "hex": "#061284",
-  "applied": "127353_ap.jpg"
+  "applied": "bobina/127353-azul-royal.jpg",
+  "bobina": "bobina/127353-azul-royal.jpg"
  },
  {
   "code": "127340",
@@ -309,7 +347,8 @@
   "pantone": "2287 C",
   "serie": "Color",
   "hex": "#5ac000",
-  "applied": "127340_ap.jpg"
+  "applied": "bobina/127340-verde-abacate.jpg",
+  "bobina": "bobina/127340-verde-abacate.jpg"
  },
  {
   "code": "127342",
@@ -317,7 +356,8 @@
   "pantone": "2419 C",
   "serie": "Color",
   "hex": "#007854",
-  "applied": "127342_ap.jpg"
+  "applied": "bobina/127342-verde-bandeira.jpg",
+  "bobina": "bobina/127342-verde-bandeira.jpg"
  },
  {
   "code": "127361",
@@ -325,7 +365,8 @@
   "pantone": "423 C",
   "serie": "Color",
   "hex": "#848a8a",
-  "applied": "127361_ap.jpg"
+  "applied": "bobina/127361-cinza-escuro.jpg",
+  "bobina": "bobina/127361-cinza-escuro.jpg"
  },
  {
   "code": "127392",
@@ -333,7 +374,8 @@
   "pantone": "877 C",
   "serie": "Color",
   "hex": "#848a8a",
-  "applied": "127392_ap.jpg"
+  "applied": "bobina/127392-prata.jpg",
+  "bobina": "bobina/127392-prata.jpg"
  },
  {
   "code": "21755",
@@ -341,7 +383,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#b8bcc0",
-  "applied": "21755_ap.jpg"
+  "applied": "bobina/21755-prata-flex.jpg",
+  "bobina": "bobina/21755-prata-flex.jpg"
  },
  {
   "code": "127394",
@@ -349,7 +392,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#b8bcc0",
-  "applied": "127394_ap.jpg"
+  "applied": "bobina/127394-aco-escovado-prata.jpg",
+  "bobina": "bobina/127394-aco-escovado-prata.jpg"
  },
  {
   "code": "127370",
@@ -357,7 +401,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#111111",
-  "applied": "127370_ap.jpg"
+  "applied": "bobina/127370-preto.jpg",
+  "bobina": "bobina/127370-preto.jpg"
  },
  {
   "code": "127370F",
@@ -365,7 +410,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#111111",
-  "applied": "127370F_ap.jpg"
+  "applied": "bobina/127370f-preto-fosco.jpg",
+  "bobina": "bobina/127370f-preto-fosco.jpg"
  },
  {
   "code": "127310",
@@ -373,7 +419,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#f2f2f2",
-  "applied": "127310_ap.jpg"
+  "applied": "bobina/127310-branco.jpg",
+  "bobina": "bobina/127310-branco.jpg"
  },
  {
   "code": "127310F",
@@ -381,7 +428,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#f2f2f2",
-  "applied": "127310F_ap.jpg"
+  "applied": "bobina/127310f-branco-fosco.jpg",
+  "bobina": "bobina/127310f-branco-fosco.jpg"
  },
  {
   "code": "127301",
@@ -389,7 +437,8 @@
   "pantone": null,
   "serie": "Color",
   "hex": "#dea88a",
-  "applied": "127301_ap.jpg"
+  "applied": "bobina/127301-transparente.jpg",
+  "bobina": "bobina/127301-transparente.jpg"
  },
  {
   "code": "422P01",
@@ -397,7 +446,8 @@
   "pantone": null,
   "serie": "TEC",
   "hex": "#eaeaea",
-  "applied": "422P01_ap.jpg"
+  "applied": "bobina/422p01-pisotak-laminacao.jpg",
+  "bobina": "bobina/422p01-pisotak-laminacao.jpg"
  },
  {
   "code": "422TB01",
@@ -405,7 +455,8 @@
   "pantone": null,
   "serie": "TEC",
   "hex": "#c0c6c6",
-  "applied": "422TB01_ap.jpg"
+  "applied": "bobina/422tb01-mascara-cristal.jpg",
+  "bobina": "bobina/422tb01-mascara-cristal.jpg"
  },
  {
   "code": "422TM50",
@@ -413,6 +464,7 @@
   "pantone": null,
   "serie": "TEC",
   "hex": "#baf0fc",
-  "applied": "422TM50_ap.jpg"
+  "applied": "bobina/422tm50-mascara-azul.jpg",
+  "bobina": "bobina/422tm50-mascara-azul.jpg"
  }
 ]
