@@ -6,7 +6,7 @@ import { useT } from '../i18n'
 
 // número + chave do texto (dict-paginas.ts)
 const STATS = [
-  ['2017', 'sobre.stat.fundacao'],
+  ['2001', 'sobre.stat.fundacao'],
   ['7.500 m²', 'sobre.stat.producao'],
   ['100%', 'sobre.stat.nacional'],
   ['3', 'sobre.stat.continentes'],

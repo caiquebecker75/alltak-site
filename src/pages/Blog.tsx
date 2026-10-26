@@ -44,7 +44,7 @@ export default function Blog() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {lista.slice(0, mostrar).map((p) => (
-              <Link key={p.slug} to={`/blog/${p.slug}`} className="group border border-white/10 bg-white/[0.02] transition hover:border-alltak-blue/60">
+              <Link key={p.slug} to={`/noticias/${p.slug}`} className="group border border-white/10 bg-white/[0.02] transition hover:border-alltak-blue/60">
                 <div className="aspect-[16/9] overflow-hidden bg-alltak-coal">
                   {p.capa && (
                     <img src={p.capa} alt={p.titulo} loading="lazy"

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PageHeader from '../components/PageHeader'
 import { useT } from '../i18n'
+import { EMAIL_ALLTAK, enviarPorEmail } from '../lib/contato'
 
 // valor enviado (sempre em PT, para o e-mail/CRM) + chave do rótulo exibido
 const PERFIS = [
@@ -45,25 +46,33 @@ export default function Contato() {
               <form
                 onSubmit={(e) => {
                   e.preventDefault()
+                  // sem servidor: abre o e-mail do visitante com a mensagem pronta
+                  const f = new FormData(e.currentTarget)
+                  const v = (k: string) => String(f.get(k) ?? '')
+                  enviarPorEmail(`Contato pelo site: ${v('assunto') || 'Mensagem'}`, [
+                    ['Nome', v('nome')], ['Empresa', v('empresa')], ['E-mail', v('email')], ['WhatsApp', v('whatsapp')],
+                    ['Cidade', v('cidade')], ['Estado', v('estado')], ['Perfil', v('perfil')], ['Assunto', v('assunto')],
+                    ['Mensagem', v('mensagem')],
+                  ])
                   setSent(true)
                 }}
                 className="grid gap-4 sm:grid-cols-2"
               >
-                <input required placeholder={t('contato.nome')} className={field} />
-                <input placeholder={t('contato.empresa')} className={field} />
-                <input required type="email" placeholder={t('contato.email')} className={field} />
-                <input placeholder={t('contato.whatsapp')} className={field} />
-                <input placeholder={t('contato.cidade')} className={field} />
-                <input placeholder={t('contato.estado')} className={field} />
-                <select className={field} defaultValue="">
+                <input required name="nome" placeholder={t('contato.nome')} className={field} />
+                <input name="empresa" placeholder={t('contato.empresa')} className={field} />
+                <input required name="email" type="email" placeholder={t('contato.email')} className={field} />
+                <input name="whatsapp" placeholder={t('contato.whatsapp')} className={field} />
+                <input name="cidade" placeholder={t('contato.cidade')} className={field} />
+                <input name="estado" placeholder={t('contato.estado')} className={field} />
+                <select name="perfil" className={field} defaultValue="">
                   <option value="" disabled>{t('contato.perfil')}</option>
                   {PERFIS.map(([v, k]) => <option key={v} value={v}>{t(k)}</option>)}
                 </select>
-                <select className={field} defaultValue="">
+                <select name="assunto" className={field} defaultValue="">
                   <option value="" disabled>{t('contato.assunto')}</option>
                   {ASSUNTOS.map(([v, k]) => <option key={v} value={v}>{t(k)}</option>)}
                 </select>
-                <textarea required placeholder={t('contato.mensagem')} rows={5} className={`${field} sm:col-span-2`} />
+                <textarea required name="mensagem" placeholder={t('contato.mensagem')} rows={5} className={`${field} sm:col-span-2`} />
                 <button type="submit" className="btn-trapezoid btn-blue sm:col-span-2 justify-self-start">
                   {t('contato.enviar')}
                 </button>
@@ -78,7 +87,7 @@ export default function Contato() {
             </div>
             <div>
               <h4 className="font-display text-xl font-bold uppercase">{t('contato.email')}</h4>
-              <p className="mt-2 text-sm text-alltak-black/70">contato@alltak.com.br</p>
+              <a href={`mailto:${EMAIL_ALLTAK}`} className="mt-2 block text-sm text-alltak-black/70 hover:text-alltak-blueDark">{EMAIL_ALLTAK}</a>
             </div>
             <div>
               <h4 className="font-display text-xl font-bold uppercase">{t('contato.endereco')}</h4>

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation, Link, Navigate } from 'react-router-dom'
+import { previaAtiva } from './lib/previa'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
@@ -77,6 +78,18 @@ function ScrollManager() {
   return null
 }
 
+// endereços antigos do blog levam à mesma notícia em /noticias
+function BlogParaNoticia() {
+  const { pathname } = useLocation()
+  return <Navigate to={pathname.replace(/^\/blog/, '/noticias')} replace />
+}
+
+// página que só abre no modo prévia (lib/previa.ts); confere a chave a cada visita
+function Privado({ children }: { children: React.ReactNode }) {
+  useLocation()
+  return previaAtiva() ? <>{children}</> : <NotFound />
+}
+
 function NotFound() {
   const t = useT()
   return (
@@ -105,13 +118,16 @@ export default function App() {
           <Route path="/produtos/revestfacil" element={<RevestFacil />} />
           <Route path="/linhas/:categoria" element={<Segmento />} />
           <Route path="/produtos/:categoria/:slug" element={<Linha />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/noticias" element={<Blog />} />
+          <Route path="/noticias/:slug" element={<BlogPost />} />
+          <Route path="/blog" element={<Navigate to="/noticias" replace />} />
+          <Route path="/blog/:slug" element={<BlogParaNoticia />} />
           <Route path="/cores" element={<Cores />} />
           <Route path="/cor/:line/:code" element={<CorDetalhe />} />
           <Route path="/decoracao" element={<DecorStudio />} />
-          <Route path="/simulador" element={<Simulador />} />
-          <Route path="/visualizador" element={<Visualizador />} />
+          {/* privados até a Alltak revisar as informações: só com o link de prévia */}
+          <Route path="/simulador" element={<Privado><Simulador /></Privado>} />
+          <Route path="/visualizador" element={<Privado><Visualizador /></Privado>} />
           <Route path="/onde-comprar" element={<OndeComprar />} />
           <Route path="/instaladores" element={<Instaladores />} />
           <Route path="/cursos" element={<Cursos />} />

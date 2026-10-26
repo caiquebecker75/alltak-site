@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
+import { previaAtiva } from '../lib/previa'
 import { findColor, relatedColors, colorSlug, codigoVisivel, type Color } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import { STORE_URL } from '../data/site'
@@ -410,7 +411,7 @@ export default function CorDetalhe() {
               >
                 {t('cor.baixarImagemProduto')}
               </button>
-              {color.line === 'wraps' && (
+              {color.line === 'wraps' && previaAtiva() && (
                 <Link to="/visualizador" className="btn-trapezoid btn-outline justify-center !text-base">
                   {t('cor.verVisualizador')}
                 </Link>

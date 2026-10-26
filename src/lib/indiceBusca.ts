@@ -11,6 +11,7 @@ import { destinoDaLinha } from '../data/familias'
 import { DOWNLOADS, texto } from '../data/downloads'
 import { CURSOS } from '../data/cursos'
 import type { Lang } from '../i18n'
+import { previaAtiva } from './previa'
 
 export type Grupo = 'paginas' | 'linhas' | 'cores' | 'downloads' | 'instaladores' | 'lojas' | 'blog'
 export type Entrada = { titulo: string; sub: string; to: string; externo?: boolean; grupo: Grupo; chave: string }
@@ -30,8 +31,10 @@ export function montarIndice(lang: Lang, t: (k: string) => string, tv: (v: strin
 
   for (const n of NAV) add('paginas', t(n.tkey), '', n.to, n.label, n.external)
   // páginas que saíram do menu, mas continuam no site
-  add('paginas', t('nav.simule'), '', '/simulador', 'simulador visualizador')
-  add('paginas', t('nav.visualizador'), t('nav.simule'), '/visualizador', 'carro 3d automotivo')
+  if (previaAtiva()) {
+    add('paginas', t('nav.simule'), '', '/simulador', 'simulador visualizador')
+    add('paginas', t('nav.visualizador'), t('nav.simule'), '/visualizador', 'carro 3d automotivo')
+  }
   add('paginas', t('nav.decoracao'), t('nav.simule'), '/decoracao', 'ambientes moveis')
   add('paginas', t('nav.cores'), t('nav.produtos'), '/cores', 'cartela')
   for (const l of linhas as { categoria: string; slug: string; nome: string }[]) {
@@ -47,6 +50,6 @@ export function montarIndice(lang: Lang, t: (k: string) => string, tv: (v: strin
   for (const l of lojas as { empresa: string; cidade: string; uf: string; bairro: string }[]) {
     add('lojas', l.empresa, `${l.cidade} · ${l.uf}`, '/onde-comprar', l.bairro)
   }
-  for (const b of blog as { slug: string; titulo: string }[]) add('blog', b.titulo, 'Blog', `/blog/${b.slug}`)
+  for (const b of blog as { slug: string; titulo: string }[]) add('blog', b.titulo, t('nav.blog'), `/noticias/${b.slug}`)
   return e
 }

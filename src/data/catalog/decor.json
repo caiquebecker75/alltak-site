@@ -13,7 +13,7 @@
   "name": "Wood Freijó Astúrias",
   "hex": "#7c5c4c",
   "swatch": "977D109_sw.jpg",
-  "applied": "977D109_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d109-wood-freijo-asturias.jpg"
  },
@@ -22,7 +22,7 @@
   "name": "Wood Freijó Toledo",
   "hex": "#d4b494",
   "swatch": "977D110_sw.jpg",
-  "applied": "977D110_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d110-wood-freijo-toledo.jpg"
  },
@@ -31,7 +31,7 @@
   "name": "Wood Freijó Galícia",
   "hex": "#0c0c0c",
   "swatch": "977D108_sw.jpg",
-  "applied": "977D108_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d108-wood-freijo-galicia.jpg"
  },
@@ -40,7 +40,7 @@
   "name": "Wood Ripado Vigo",
   "hex": "#242424",
   "swatch": "977D85_sw.jpg",
-  "applied": "977D85_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d85-wood-ripado-vigo.jpg"
  },
@@ -49,7 +49,7 @@
   "name": "Wood Ripado Lugo",
   "hex": "#cccccc",
   "swatch": "977D92_sw.jpg",
-  "applied": "977D92_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d92-wood-ripado-lugo.jpg"
  },
@@ -58,24 +58,16 @@
   "name": "Wood Ripado Burgo",
   "hex": "#0c0c0c",
   "swatch": "977D93_sw.jpg",
-  "applied": "977D93_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d93-wood-ripado-burgo.jpg"
- },
- {
-  "code": "977D98",
-  "name": "Wood Ripado Leon",
-  "hex": "#141414",
-  "swatch": "977D98_sw.jpg",
-  "applied": "977D98_ap.jpg",
-  "family": "Wood"
  },
  {
   "code": "977D97",
   "name": "Wood Carvalho Tenerife",
   "hex": "#bcac8c",
   "swatch": "977D97_sw.jpg",
-  "applied": "977D97_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d97-wood-carvalho-tenerife.jpg"
  },
@@ -84,7 +76,7 @@
   "name": "Wood Carvalho Inovatta",
   "hex": "#dca474",
   "swatch": "977D03_sw.jpg",
-  "applied": "977D03_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d03-wood-carvalho-inovatta.jpg"
  },
@@ -93,7 +85,7 @@
   "name": "Wood Carvalho Cadiz",
   "hex": "#c4b4ac",
   "swatch": "977D35_sw.jpg",
-  "applied": "977D35_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d35-wood-carvalho-cadiz.jpg"
  },
@@ -102,7 +94,7 @@
   "name": "Wood Carvalho Verona",
   "hex": "#e4dcd4",
   "swatch": "977D37_sw.jpg",
-  "applied": "977D37_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d37-wood-carvalho-verona.jpg"
  },
@@ -111,7 +103,7 @@
   "name": "Wood Carvalho Pamplona",
   "hex": "#0c0c0c",
   "swatch": "977D94_sw.jpg",
-  "applied": "977D94_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d94-wood-carvalho-pamplona.jpg"
  },
@@ -120,7 +112,7 @@
   "name": "Wood Carvalho Capuccino",
   "hex": "#141414",
   "swatch": "977D19_sw.jpg",
-  "applied": "977D19_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d19-wood-carvalho-capuccino.jpg"
  },
@@ -129,7 +121,7 @@
   "name": "Wood Rústica Salamanca",
   "hex": "#141414",
   "swatch": "977D37_sw.jpg",
-  "applied": "977D37_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d37-wood-rustica-salamanca.jpg"
  },
@@ -138,7 +130,7 @@
   "name": "Wood Demolição Barcelona",
   "hex": "#2c2c2c",
   "swatch": "977D54_sw.jpg",
-  "applied": "977D54_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d54-wood-demolicao-barcelona.jpg"
  },
@@ -174,7 +166,7 @@
   "name": "Mármore Marquina Fosco",
   "hex": "#5c4c44",
   "swatch": "977D96_sw.jpg",
-  "applied": "977D96_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d96-marmore-marquina.jpg"
  },
@@ -183,7 +175,7 @@
   "name": "Mármore Grígio Fosco",
   "hex": "#242424",
   "swatch": "977D106_sw.jpg",
-  "applied": "977D106_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d106-marmore-grigio.jpg"
  },
@@ -192,7 +184,7 @@
   "name": "Mármore Lunare Fosco",
   "hex": "#c4ccd4",
   "swatch": "977D86_sw.jpg",
-  "applied": "977D86_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d86-marmore-lunare.jpg"
  },
@@ -210,7 +202,7 @@
   "name": "Mármore Nero",
   "hex": "#242424",
   "swatch": "977D64_sw.jpg",
-  "applied": "977D64_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d64-marmore-nero.jpg"
  },
@@ -219,7 +211,7 @@
   "name": "Mármore Tivoli Fosco",
   "hex": "#dcbc8c",
   "swatch": "977D121_sw.jpg",
-  "applied": "977D121_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d121-marmore-tivoli.jpg"
  },
@@ -246,7 +238,7 @@
   "name": "Concreto",
   "hex": "#242424",
   "swatch": "977D49_sw.jpg",
-  "applied": "977D49_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d49-concreto.jpg"
  },
@@ -264,7 +256,7 @@
   "name": "Tijolo Preto",
   "hex": "#ececec",
   "swatch": "977D55_sw.jpg",
-  "applied": "977D55_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d55-tijolo-preto.jpg"
  },
@@ -273,7 +265,7 @@
   "name": "Tijolo Inglês London",
   "hex": "#0c0c0c",
   "swatch": "977D113_sw.jpg",
-  "applied": "977D113_ap.jpg",
+  "applied": null,
   "family": "Pedras",
   "bobina": "bobina/977d113-tijolo-ingles-london.jpg"
  },
@@ -282,7 +274,7 @@
   "name": "Metrô Branco Fosco",
   "hex": "#d4d4dc",
   "swatch": "977D90_sw.jpg",
-  "applied": "977D90_ap.jpg",
+  "applied": null,
   "family": "Azulejos",
   "bobina": "bobina/977d90-metro-branco.jpg"
  },
@@ -291,7 +283,7 @@
   "name": "Decor Porto",
   "hex": "#141414",
   "swatch": "977D20_sw.jpg",
-  "applied": "977D20_ap.jpg",
+  "applied": null,
   "family": "Azulejos",
   "bobina": "bobina/977d20-decor-porto.jpg"
  },
@@ -300,7 +292,7 @@
   "name": "Decor Lisboa",
   "hex": "#141414",
   "swatch": "977D19_sw.jpg",
-  "applied": "977D19_ap.jpg",
+  "applied": null,
   "family": "Azulejos",
   "bobina": "bobina/977d19-decor-lisboa.jpg"
  },
@@ -309,7 +301,7 @@
   "name": "Jardim Vertical",
   "hex": "#242424",
   "swatch": "977D873_sw.jpg",
-  "applied": "977D873_ap.jpg",
+  "applied": null,
   "family": "Estampa",
   "bobina": "bobina/977d873-jardim-vertical.jpg"
  },
@@ -318,7 +310,7 @@
   "name": "Jardim Tropical",
   "hex": "#141414",
   "swatch": "977D111_sw.jpg",
-  "applied": "977D111_ap.jpg",
+  "applied": null,
   "family": "Estampa",
   "bobina": "bobina/977d111-jardim-tropical.jpg"
  },
@@ -336,7 +328,7 @@
   "name": "Kroma Forma Azul Petróleo",
   "hex": "#0c344c",
   "swatch": "977KF11_sw.jpg",
-  "applied": "977KF11_ap.jpg",
+  "applied": null,
   "family": "Kroma",
   "bobina": "bobina/977kf11-kroma-forma-azul-petroleo.jpg"
  },
@@ -345,7 +337,7 @@
   "name": "Kroma Forma Verde Primavera",
   "hex": "#84947c",
   "swatch": "977KF12_sw.jpg",
-  "applied": "977KF12_ap.jpg",
+  "applied": null,
   "family": "Kroma",
   "bobina": "bobina/977kf12-kroma-forma-verde-primavera.jpg"
  },
@@ -354,7 +346,7 @@
   "name": "Kroma Forma Aveia",
   "hex": "#bcb4ac",
   "swatch": "977KF10_sw.jpg",
-  "applied": "977KF10_ap.jpg",
+  "applied": null,
   "family": "Kroma",
   "bobina": "bobina/977kf10-kroma-forma-aveia.jpg"
  },
@@ -363,7 +355,7 @@
   "name": "Kroma Forma Cinza Neblina",
   "hex": "#bcbcbc",
   "swatch": "977KF07_sw.jpg",
-  "applied": "977KF07_ap.jpg",
+  "applied": null,
   "family": "Kroma",
   "bobina": "bobina/977kf07-kroma-forma-cinza-neblina.jpg"
  },
@@ -372,16 +364,18 @@
   "name": "Kroma Forma Argento",
   "hex": "#949494",
   "swatch": "977KF08_sw.jpg",
-  "applied": "977KF08_ap.jpg",
-  "family": "Kroma"
+  "applied": null,
+  "family": "Kroma",
+  "bobina": "bobina/977kf08-antiga.jpg"
  },
  {
   "code": "977KF09",
   "name": "Kroma Forma Grafite",
   "hex": "#5c4c4c",
   "swatch": "977KF09_sw.jpg",
-  "applied": "977KF09_ap.jpg",
-  "family": "Kroma"
+  "applied": null,
+  "family": "Kroma",
+  "bobina": "bobina/977kf09-antiga.jpg"
  },
  {
   "code": "977KF03",
@@ -389,14 +383,15 @@
   "hex": "#746c64",
   "swatch": "977KF03_sw.jpg",
   "applied": "977KF03_ap.jpg",
-  "family": "Kroma"
+  "family": "Kroma",
+  "bobina": "bobina/977kf03-antiga.jpg"
  },
  {
   "code": "977KF04",
   "name": "Kroma Forma Preto Absoluto",
   "hex": "#0c0c0c",
   "swatch": "977KF04_sw.jpg",
-  "applied": "977KF04_ap.jpg",
+  "applied": null,
   "family": "Kroma",
   "bobina": "bobina/977kf04-kroma-forma-preto-absoluto.jpg"
  },
@@ -406,7 +401,8 @@
   "hex": "#fcf4ec",
   "swatch": "977KF24_sw.jpg",
   "applied": "977KF24_ap.jpg",
-  "family": "Kroma"
+  "family": "Kroma",
+  "bobina": "bobina/977kf24-antiga.jpg"
  },
  {
   "code": "977KF35",
@@ -458,7 +454,7 @@
   "name": "Kroma Couro Off-White",
   "hex": "#808080",
   "swatch": "977KC14_sw.jpg",
-  "applied": "977KC14_ap.jpg",
+  "applied": null,
   "family": "Kroma",
   "bobina": "bobina/977kc14-kroma-couro-off-white.jpg"
  },

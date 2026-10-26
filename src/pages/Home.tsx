@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import { Link } from 'react-router-dom'
+import { previaAtiva } from '../lib/previa'
 import { YOUTUBE_URL, STORE_URL } from '../data/site'
 import LazyInView from '../components/LazyInView'
 // same 3D car as the visualizer — its heavy chunk loads only when scrolled near,
@@ -155,7 +156,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ 5 — VISUALIZADOR teaser ============ */}
+      {/* ============ 5 — VISUALIZADOR teaser (privado até a revisão das informações) ============ */}
+      {previaAtiva() && (
       <section className="relative overflow-hidden bg-alltak-navyDeep py-24 md:py-32">
         <div className="pointer-events-none absolute -left-24 top-10 h-48 w-96 rotate-6 bg-alltak-blue/10 clip-escudo" aria-hidden />
         <div className="pointer-events-none absolute -right-16 bottom-10 h-36 w-72 -rotate-6 bg-alltak-blue/10 clip-escudo" aria-hidden />
@@ -190,6 +192,7 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+      )}
 
       {/* ============ 6 — LINHAS (horizontal scroll) ============ */}
       <HScroll />
@@ -267,18 +270,18 @@ export default function Home() {
         <div className="container-x">
           <Reveal>
             <div className="flex flex-wrap items-end justify-between gap-6">
-              <Link to="/blog" className="group max-w-2xl">
-                <span className="tag">Blog</span>
+              <Link to="/noticias" className="group max-w-2xl">
+                <span className="tag">{t('nav.blog')}</span>
                 <h2 className="mt-4 text-5xl text-white transition group-hover:text-alltak-blue md:text-7xl">{t('home.blogTitulo')}</h2>
                 <p className="mt-3 text-white/60">{t('home.blogSub')}</p>
               </Link>
-              <Link to="/blog" className="btn-trapezoid btn-outline">{t('home.blogVerTodos')} →</Link>
+              <Link to="/noticias" className="btn-trapezoid btn-outline">{t('home.blogVerTodos')} →</Link>
             </div>
           </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {(blog as { slug: string; titulo: string; capa: string | null; resumo: string }[]).slice(0, 3).map((p, i) => (
               <Reveal key={p.slug} delay={i * 90}>
-                <Link to={`/blog/${p.slug}`} className="group flex h-full flex-col border border-white/10 bg-white/[0.02] transition hover:border-alltak-blue/60">
+                <Link to={`/noticias/${p.slug}`} className="group flex h-full flex-col border border-white/10 bg-white/[0.02] transition hover:border-alltak-blue/60">
                   <div className="aspect-[16/9] overflow-hidden bg-alltak-coal">
                     {p.capa && (
                       <img src={p.capa} alt={p.titulo} loading="lazy"

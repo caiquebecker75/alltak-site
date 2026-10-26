@@ -99,7 +99,7 @@ export const DICT_HOME: Record<string, Record<Lang, string>> = {
   'busca.g.downloads': { pt: 'Downloads', en: 'Downloads', es: 'Descargas' },
   'busca.g.instaladores': { pt: 'Instaladores', en: 'Installers', es: 'Instaladores' },
   'busca.g.lojas': { pt: 'Onde comprar', en: 'Where to buy', es: 'Dónde comprar' },
-  'busca.g.blog': { pt: 'Blog', en: 'Blog', es: 'Blog' },
+  'busca.g.blog': { pt: 'Notícias', en: 'News', es: 'Noticias' },
   'header.frentes': {
     pt: 'Envelopamento · Decoração · Comunicação Visual',
     en: 'Vehicle Wrapping · Decor · Visual Communication',
