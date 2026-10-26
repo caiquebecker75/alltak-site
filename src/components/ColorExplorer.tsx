@@ -105,11 +105,6 @@ export default function ColorExplorer({ initialLine = 'all', initialFamily = 'al
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <span
-                className="absolute bottom-2 right-2 h-4 w-6 border border-white/40 clip-tz"
-                style={{ background: c.hex }}
-                aria-hidden
-              />
             </div>
             <div className="mt-1.5">
               <div className="truncate font-display text-base font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">
