@@ -14,6 +14,7 @@ type Perfil = {
   slug: string; nome: string; categorias: Categoria[]; cidade: string
   telefone: string; instagram: string | null; bio: string; foto: string | null
   homenagem?: boolean
+  fotoCard?: string // foto padronizada (uniforme Pro Expert) só na grade da página
 }
 
 const lista = instaladores as Perfil[]
@@ -69,8 +70,9 @@ function Selo({ c, titulo, compacto = false }: { c: Categoria; titulo: string; c
   )
 }
 
-function Foto({ p, className }: { p: Perfil; className: string }) {
-  if (p.foto) return <img src={p.foto} alt={p.nome} loading="lazy" className={`${className} object-cover object-[center_15%]`} />
+function Foto({ p, className, card = false }: { p: Perfil; className: string; card?: boolean }) {
+  const src = card ? p.fotoCard ?? p.foto : p.foto
+  if (src) return <img src={src} alt={p.nome} loading="lazy" className={`${className} object-cover object-[center_15%]`} />
   return (
     <div className={`${className} flex items-center justify-center bg-gradient-to-br from-alltak-navy to-alltak-coal`}>
       <span className="font-display text-6xl font-black uppercase text-white/25">{iniciais(p.nome)}</span>
@@ -147,7 +149,7 @@ export default function Instaladores() {
                 <Reveal key={p.slug} delay={(i % 4) * 60}>
                   <button onClick={() => setAberto(p)} className="group w-full text-left">
                     <div className="relative aspect-square overflow-hidden bg-alltak-coal">
-                      <Foto p={p} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
+                      <Foto p={p} card className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
                       {p.categorias.length > 0 && (
                         <div className="absolute bottom-2.5 right-2.5 flex gap-1.5">
                           {p.categorias.map((c) => <Selo key={c} c={c} titulo={rotulo(c)} />)}

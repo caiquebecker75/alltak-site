@@ -188,6 +188,10 @@ def main() -> None:
         p.update(ajustes['ajustes'].get(p['slug'], {}))
     faltam = (set(ajustes['remover']) | set(ajustes['ajustes'])) - {p['slug'] for p in perfis} - set(ajustes['remover'])
     assert not faltam, f'ajuste para perfil inexistente: {faltam}'
+    # foto padronizada só para o card da página (migracao/fotos_cards_instaladores.py)
+    for p in perfis:
+        if (FOTOS / 'cards' / f"{p['slug']}.jpg").exists():
+            p['fotoCard'] = f"./instaladores/cards/{p['slug']}.jpg"
     assert len({p['slug'] for p in perfis}) == len(perfis), 'slug repetido'
     lista = sorted(perfis, key=lambda p: slugify(p['nome']))
     SAIDA.write_text(json.dumps(lista, ensure_ascii=False, indent=1) + '\n', 'utf8')
