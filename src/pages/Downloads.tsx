@@ -34,22 +34,6 @@ function Miniatura({ arquivo, nome, tipo, claro = true }: { arquivo: string; nom
 // (catálogos, logotipos, perfis de cor, pattern, wallpaper, instalador) e
 // cada grupo tem a sua página com os arquivos. Download com cadastro (leads).
 
-function Abas({ ativo }: { ativo: string }) {
-  const { lang } = useI18n()
-  return (
-    <div className="flex flex-wrap gap-2">
-      {DOWNLOADS.map((g) => (
-        <Link key={g.slug} to={`/downloads/${g.slug}`} aria-current={g.slug === ativo ? 'page' : undefined}
-          className={`px-4 py-2 font-display text-base font-bold uppercase tracking-wide transition ${
-            g.slug === ativo ? 'bg-alltak-blue text-white' : 'bg-white text-alltak-black hover:bg-black/5'
-          }`}>
-          {texto(g.titulo, lang)}
-        </Link>
-      ))}
-    </div>
-  )
-}
-
 export function DownloadsInicio() {
   const { lang, t } = useI18n()
   return (
@@ -114,7 +98,6 @@ function Grupo({ g }: { g: GrupoDownload }) {
           <Link to="/downloads" className="font-display text-base font-bold uppercase tracking-wide text-alltak-blueDark hover:text-alltak-blue">
             ← {t('dl.todos')}
           </Link>
-          <div className="mt-4"><Abas ativo={g.slug} /></div>
 
           {g.pasta ? (
             // arquivos numa pasta externa: prévia das artes + um botão para a pasta
