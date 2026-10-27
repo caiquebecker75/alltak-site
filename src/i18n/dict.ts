@@ -106,6 +106,13 @@ export const DICT: Record<string, Record<Lang, string>> = {
   },
   'home.blogVerTodos': { pt: 'Ver todas as notícias', en: 'See all news', es: 'Ver todas las noticias' },
   'home.blogLer': { pt: 'Ler notícia', en: 'Read more', es: 'Leer noticia' },
+  'home.instaSub': {
+    pt: 'Lançamentos, aplicações e bastidores da Alltak, direto do nosso Instagram.',
+    en: 'Alltak launches, applications and behind the scenes, straight from our Instagram.',
+    es: 'Lanzamientos, aplicaciones y bastidores de Alltak, directo de nuestro Instagram.',
+  },
+  'home.instaSeguir': { pt: 'Seguir no Instagram', en: 'Follow on Instagram', es: 'Seguir en Instagram' },
+  'home.instaVer': { pt: 'Ver no Instagram', en: 'View on Instagram', es: 'Ver en Instagram' },
 
   // ---- página RevestFácil ----
   'rf.intro': {

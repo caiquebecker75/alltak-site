@@ -19,7 +19,7 @@ import Magnetic from '../components/Magnetic'
 import Logo from '../components/Logo'
 import CarSVG from '../components/CarSVG'
 import TrapDivider from '../components/TrapDivider'
-import blog from '../data/wp/blog.json'
+import InstagramFeed from '../components/InstagramFeed'
 import { useT } from '../i18n'
 
 export default function Home() {
@@ -265,40 +265,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ 9 — BLOG: últimos artigos, levam ao blog ============ */}
-      <section className="border-t border-white/10 bg-alltak-black py-20 md:py-28">
-        <div className="container-x">
-          <Reveal>
-            <div className="flex flex-wrap items-end justify-between gap-6">
-              <Link to="/noticias" className="group max-w-2xl">
-                <span className="tag">{t('nav.blog')}</span>
-                <h2 className="mt-4 text-5xl text-white transition group-hover:text-alltak-blue md:text-7xl">{t('home.blogTitulo')}</h2>
-                <p className="mt-3 text-white/60">{t('home.blogSub')}</p>
-              </Link>
-              <Link to="/noticias" className="btn-trapezoid btn-outline">{t('home.blogVerTodos')} →</Link>
-            </div>
-          </Reveal>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {(blog as { slug: string; titulo: string; capa: string | null; resumo: string }[]).slice(0, 3).map((p, i) => (
-              <Reveal key={p.slug} delay={i * 90}>
-                <Link to={`/noticias/${p.slug}`} className="group flex h-full flex-col border border-white/10 bg-white/[0.02] transition hover:border-alltak-blue/60">
-                  <div className="aspect-[16/9] overflow-hidden bg-alltak-coal">
-                    {p.capa && (
-                      <img src={p.capa} alt={p.titulo} loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                    )}
-                  </div>
-                  <div className="flex flex-1 flex-col p-5">
-                    <h3 className="font-display text-2xl font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">{p.titulo}</h3>
-                    <p className="mt-2 line-clamp-3 text-sm text-white/55">{p.resumo}</p>
-                    <span className="mt-auto pt-4 font-display text-base font-bold uppercase tracking-wide text-alltak-blue">{t('home.blogLer')} →</span>
-                  </div>
-                </Link>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ============ 9 — INSTAGRAM: últimas fotos de @alltakadesivos ============ */}
+      <InstagramFeed />
     </>
   )
 }

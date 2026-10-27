@@ -8,6 +8,8 @@ import subSigns from '../brand/sub-signs.png'
 export const STORE_URL = 'https://www.alltakstore.com.br'
 export const YOUTUBE_URL = 'https://www.youtube.com/user/alltakAdesivos'
 export const INSTAGRAM_URL = 'https://www.instagram.com/alltakadesivos'
+// feed JSON das últimas fotos (Behold.so, conectado pela conta da Alltak). Vazio = só o convite para seguir
+export const INSTAGRAM_FEED_URL = ''
 
 export type NavItem = {
   label: string
