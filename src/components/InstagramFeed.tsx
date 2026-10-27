@@ -3,15 +3,22 @@ import Reveal from './Reveal'
 import { INSTAGRAM_FEED_URL, INSTAGRAM_URL } from '../data/site'
 import { useI18n } from '../i18n'
 
-// Últimas fotos do Instagram @alltakadesivos na Home, no visual dos cards do
-// site. O Instagram só libera as fotos com autorização da conta: a Alltak
-// conecta o perfil num serviço de feed (Behold.so) e o link do feed JSON vai em
+// Últimas 3 postagens do Instagram @alltakadesivos na Home, no visual dos cards
+// que eram das Notícias (título = 1ª linha da legenda, resumo = o resto). O
+// Instagram só libera as fotos com autorização da conta: a Alltak conecta o
+// perfil num serviço de feed (Behold.so) e o link do feed JSON vai em
 // INSTAGRAM_FEED_URL (src/data/site.ts). Sem o link, ou se o feed falhar, a
 // seção mostra o convite para seguir o perfil.
 
 type Post = { id: string; permalink: string; mediaType?: string; mediaUrl?: string; thumbnailUrl?: string; caption?: string; prunedCaption?: string; timestamp?: string; sizes?: Record<string, { mediaUrl: string }> }
 
-const QUANTOS = 6
+const QUANTOS = 3
+
+// 1ª linha da legenda vira o título do card; o resto, o resumo
+function partesDa(legenda: string): [string, string] {
+  const [titulo = '', ...resto] = legenda.split('\n').map((l) => l.trim()).filter(Boolean)
+  return [titulo, resto.join(' ')]
+}
 
 // aceita o formato atual do Behold ({ posts: [...] }) e o antigo (lista direta)
 function lerPosts(json: unknown): Post[] {
@@ -52,11 +59,12 @@ export default function InstagramFeed() {
         </Reveal>
 
         {posts && posts.length > 0 && (
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             {posts.map((p, i) => {
               const legenda = (p.prunedCaption ?? p.caption ?? '').trim()
+              const [titulo, resumo] = partesDa(legenda)
               return (
-                <Reveal key={p.id} delay={(i % 3) * 90}>
+                <Reveal key={p.id} delay={i * 90}>
                   <a href={p.permalink} target="_blank" rel="noreferrer"
                     className="group flex h-full flex-col border border-white/10 bg-white/[0.02] transition hover:border-alltak-blue/60">
                     <div className="aspect-square overflow-hidden bg-alltak-coal">
@@ -64,8 +72,9 @@ export default function InstagramFeed() {
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </div>
                     <div className="flex flex-1 flex-col p-5">
-                      {p.timestamp && <p className="font-display text-sm font-bold uppercase tracking-[0.18em] text-alltak-blue">{data(p.timestamp)}</p>}
-                      {legenda && <p className="mt-2 line-clamp-3 text-sm text-white/65">{legenda}</p>}
+                      {p.timestamp && <p className="mb-2 font-display text-sm font-bold uppercase tracking-[0.18em] text-white/45">{data(p.timestamp)}</p>}
+                      {titulo && <h3 className="line-clamp-2 font-display text-2xl font-bold uppercase leading-tight text-white group-hover:text-alltak-blue">{titulo}</h3>}
+                      {resumo && <p className="mt-2 line-clamp-3 text-sm text-white/55">{resumo}</p>}
                       <span className="mt-auto pt-4 font-display text-base font-bold uppercase tracking-wide text-alltak-blue">{t('home.instaVer')} ↗</span>
                     </div>
                   </a>
