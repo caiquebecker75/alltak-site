@@ -117,7 +117,7 @@ export default function HScroll() {
           <Link to="/cores" className="group flex w-[60vw] shrink-0 items-center justify-center sm:w-[34vw]">
             <div className="text-center">
               <div className="font-display text-6xl font-black text-alltak-black md:text-8xl">
-                +120
+                +300
               </div>
               <div className="font-display text-sm font-bold uppercase tracking-[0.3em] text-alltak-black/60">
                 {t('home.stat.cores')}

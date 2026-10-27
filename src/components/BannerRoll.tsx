@@ -1,6 +1,7 @@
 import { useEffect, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { useT } from '../i18n'
+import { COLORS } from '../data/catalog'
 
 // Full-bleed auto-rotating campaign carousel. The three banners share one
 // layout so they read as a set: the text is real text on the left (same
@@ -24,6 +25,7 @@ type Banner = {
   link: string // rota interna, ou URL externa (abre em nova aba)
   visual?: { src: string; className: string }
   paineis?: Painel[]
+  leque?: boolean // visual conceitual: as cores da linha em faixas (Evolution Pro)
 }
 // painel de foto em paralelogramo, em % da caixa do visual (ver PAINEIS_CAIXA)
 type Painel = { src: string; left: number; top: number; width: number; height: number }
@@ -37,18 +39,17 @@ const RECUO = '45.7%'
 
 const BANNERS: Banner[] = [
   {
-    key: 'iwc',
+    key: 'evolution',
     fundo: 'bg-black',
-    // o fundo de caveiras da arte IWC, repetido na mesma escala da arte
-    fundoStyle: { backgroundImage: "url('./assets/campanhas/iwc-padrao.png')", backgroundSize: 'auto 41%' },
-    acento: '#0080ff',
-    kicker: 'banner.linha',
-    titulo: ['IWC'],
-    sub: 'banner.iwc.sub',
-    texto: 'banner.iwc.texto',
-    // a linha IWC não tem página no site: vai direto ao catálogo virtual oficial
-    link: 'https://alltak.com.br/wp-content/uploads/2024/11/IWC-Alltak-Catalogo-Virtual.pdf',
-    visual: { src: './assets/campanhas/iwc-visual.webp', className: 'h-full' },
+    fundoStyle: { backgroundImage: 'radial-gradient(60% 80% at 78% 45%, rgba(152,187,29,0.18), transparent 70%), radial-gradient(50% 70% at 95% 90%, rgba(26,121,205,0.25), transparent 70%)' },
+    acento: '#b8dc2a',
+    acentoTexto: '#0b0b0b',
+    kicker: 'banner.lancamento',
+    titulo: ['Evolution', 'Pro'],
+    sub: 'banner.evolution.sub',
+    texto: 'banner.evolution.texto',
+    link: '/cores?linha=wraps&familia=Evolution%20Pro',
+    leque: true,
   },
   {
     key: 'muxarabi',
@@ -82,6 +83,46 @@ const BANNERS: Banner[] = [
 
 const DURATION = 6000
 
+// cores da Evolution Pro em ordem de matiz (cinzas e pretos no fim), para o
+// leque do banner
+function matiz(hex: string): [number, number] {
+  const n = parseInt(hex.slice(1), 16)
+  const r = (n >> 16) / 255, g = ((n >> 8) & 255) / 255, bl = (n & 255) / 255
+  const max = Math.max(r, g, bl), min = Math.min(r, g, bl), d = max - min
+  if (d < 0.08) return [999, max] // neutros por último, do claro ao escuro
+  const h = max === r ? ((g - bl) / d) % 6 : max === g ? (bl - r) / d + 2 : (r - g) / d + 4
+  return [(h * 60 + 360) % 360, max]
+}
+const EVOLUTION = COLORS.filter((c) => c.family === 'Evolution Pro')
+  .map((c) => c.hex)
+  .sort((a, b) => matiz(a)[0] - matiz(b)[0] || matiz(b)[1] - matiz(a)[1])
+
+// visual conceitual: as 21 cores em faixas inclinadas (o trapézio da marca),
+// com brilho metálico; sobem em onda enquanto o banner está no ar
+function LequeEvolution({ ativo }: { ativo: boolean }) {
+  return (
+    <div className="relative mr-[3%] flex h-[86%] w-[min(58vw,980px)] items-end gap-[0.45%] pb-[4%]" aria-hidden>
+      {EVOLUTION.map((hex, k) => {
+        const onda = 62 + 30 * Math.sin((k / (EVOLUTION.length - 1)) * Math.PI)
+        return (
+          <div key={hex + k} className="relative flex-1 -skew-x-[16deg] overflow-hidden"
+            style={{
+              height: `${onda}%`,
+              background: `linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 22%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.45) 100%), ${hex}`,
+              transform: ativo ? 'translateY(0)' : 'translateY(14%)',
+              opacity: ativo ? 1 : 0.4,
+              transition: `transform 1.2s cubic-bezier(.2,.7,.1,1) ${k * 45}ms, opacity 1s ease ${k * 45}ms`,
+            }}>
+            {/* reflexo metálico que corre pela faixa */}
+            <span className="absolute inset-y-0 -left-1/2 w-1/2 bg-gradient-to-r from-transparent via-white/25 to-transparent"
+              style={{ animation: ativo ? `brilhoEvo 3.2s ease-in-out ${k * 90}ms infinite` : 'none' }} />
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
 function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
   const t = useT()
   const zoom = (escala: number): CSSProperties => ({
@@ -99,7 +140,9 @@ function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
       <div className="absolute inset-y-0 left-1/2 w-full max-w-[1760px] -translate-x-1/2">
         {/* visual à direita, com um leve zoom enquanto o banner está no ar */}
         <div className="absolute bottom-0 right-0 flex h-full items-end justify-end opacity-60 md:opacity-100">
-          {b.paineis ? (
+          {b.leque ? (
+            <LequeEvolution ativo={ativo} />
+          ) : b.paineis ? (
             <div className={`relative mr-[4%] h-full ${PAINEIS_CAIXA}`}>
               {b.paineis.map((pn) => (
                 <div

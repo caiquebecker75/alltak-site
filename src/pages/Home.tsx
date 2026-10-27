@@ -98,15 +98,15 @@ export default function Home() {
           />
           <div className="mt-14 grid grid-cols-2 gap-10 border-t border-white/10 pt-10 md:grid-cols-4">
             {[
-              [30, '+', t('home.stat.anos')],
-              [120, '+', t('home.stat.cores')],
+              [25, '+', t('home.stat.anos')],
+              [300, '+', t('home.stat.cores')],
               [3, '', t('home.stat.unidades')],
-              [100, '%', t('home.stat.nacional')],
-            ].map(([n, suf, label], i) => (
+              [6, '+', t('home.stat.paises')],
+            ].map(([n, pre, label], i) => (
               <Reveal key={String(label)} delay={i * 90}>
                 <Counter
                   to={n as number}
-                  suffix={suf as string}
+                  prefix={pre as string}
                   className="font-display text-6xl font-black text-alltak-blue md:text-8xl"
                 />
                 <div className="mt-2 font-display text-sm font-bold uppercase tracking-[0.22em] text-white/60">

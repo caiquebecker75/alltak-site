@@ -73,7 +73,7 @@ export const DICT: Record<string, Record<Lang, string>> = {
   'home.stat.anos': { pt: 'anos de estrada', en: 'years on the road', es: 'años de trayectoria' },
   'home.stat.cores': { pt: 'cores e padrões', en: 'colors and patterns', es: 'colores y patrones' },
   'home.stat.unidades': { pt: 'unidades de negócio', en: 'business units', es: 'unidades de negocio' },
-  'home.stat.nacional': { pt: 'produção nacional', en: 'made in Brazil', es: 'producción nacional' },
+  'home.stat.paises': { pt: 'países com presença', en: 'countries with presence', es: 'países con presencia' },
   'home.veja': { pt: 'Veja na prática', en: 'See it in action', es: 'Míralo en acción' },
   'home.aplicacoes': { pt: 'Aplicações reais, resultado impecável', en: 'Real applications, flawless results', es: 'Aplicaciones reales, resultado impecable' },
   'home.aplicacoesSub': {
@@ -142,11 +142,15 @@ export const DICT: Record<string, Record<Lang, string>> = {
   'banner.linha': { pt: 'Linha', en: 'Line', es: 'Línea' },
   'banner.lancamento': { pt: 'Lançamento', en: 'New release', es: 'Lanzamiento' },
   'banner.confira': { pt: 'Confira', en: 'Check it out', es: 'Descúbrelo' },
-  'banner.iwc.sub': { pt: 'Innovative Wrap Collab', en: 'Innovative Wrap Collab', es: 'Innovative Wrap Collab' },
-  'banner.iwc.texto': {
-    pt: 'O melhor adesivo do mundo em condições imperdíveis!',
-    en: 'The best vinyl in the world on unmissable terms!',
-    es: '¡El mejor vinilo del mundo en condiciones imperdibles!',
+  'banner.evolution.sub': {
+    pt: 'A evolução da personalização automotiva',
+    en: 'The evolution of car customization',
+    es: 'La evolución de la personalización automotriz',
+  },
+  'banner.evolution.texto': {
+    pt: '21 cores metálicas e foscas com efeitos visuais, para projetos únicos em qualquer veículo.',
+    en: '21 metallic and matte colors with visual effects, for unique projects on any vehicle.',
+    es: '21 colores metálicos y mate con efectos visuales, para proyectos únicos en cualquier vehículo.',
   },
   'banner.muxarabi.sub': { pt: 'Alltak Decor', en: 'Alltak Decor', es: 'Alltak Decor' },
   'banner.muxarabi.texto': {

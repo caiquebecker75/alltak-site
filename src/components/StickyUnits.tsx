@@ -97,16 +97,14 @@ export default function StickyUnits() {
               </div>
 
               <div className="container-x relative grid h-full items-center gap-10 md:grid-cols-2">
-                {/* bloco de texto com altura fixa e alinhado pelo topo: etiqueta,
-                    logo, chamada, descrição e botão ficam na mesma posição nas
+                {/* bloco de texto com altura fixa e alinhado pelo topo: logo, chamada, descrição e botão ficam na mesma posição nas
                     três unidades, mesmo com descrições de tamanhos diferentes */}
-                <div className="md:h-[27rem]">
-                  <span className="tag">{t('units.tag')} · 0{i + 1}/0{n}</span>
+                <div className="md:h-[24rem]">
                   {/* official submarca lockup */}
                   <img
                     src={u.logo}
                     alt={`Alltak ${u.name}`}
-                    className="mt-8 h-14 w-auto select-none md:h-20"
+                    className="h-14 w-auto select-none md:h-20"
                     style={u.logoInvert ? { filter: 'brightness(0) invert(1)' } : undefined}
                     draggable={false}
                   />

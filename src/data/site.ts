@@ -63,7 +63,7 @@ export const UNITS: Unit[] = [
     descriptionKey: 'units.wraps.desc',
     description:
       'Materiais para envelopamento e customização veicular, feitos para quem exige acabamento e constância no dia a dia. Um portfólio completo para diferentes estilos e necessidades, com foco em aplicação eficiente e resultado final impecável.',
-    image: './assets/automotivo_01.avif',
+    image: './assets/unidades/wraps.jpg',
     bg: 'bg-alltak-black',
     accent: 'text-alltak-blue',
     skull: true,
@@ -79,7 +79,7 @@ export const UNITS: Unit[] = [
     descriptionKey: 'units.decor.desc',
     description:
       'Revestimentos vinílicos autoadesivos com diversas famílias, padrões e acabamentos para projetos de interiores. Ideal para renovar superfícies e compor ambientes com praticidade, mantendo um visual realista e um padrão de acabamento consistente do começo ao fim.',
-    image: './assets/decor_01.avif',
+    image: './assets/unidades/decor.jpg',
     bg: 'bg-alltak-navy',
     accent: 'text-alltak-blue',
     logo: subDecor,
@@ -93,7 +93,7 @@ export const UNITS: Unit[] = [
     descriptionKey: 'units.signs.desc',
     description:
       'Película de PVC monomérico adesiva de altíssima qualidade, produzida com adesivo acrílico permanente, de corte preciso e fácil aplicação. Indicada para sinalização, propaganda, design, decoração e identificação de frotas, onde se exige precisão, durabilidade, estabilidade e resistência.',
-    image: './assets/sign_01.avif',
+    image: './assets/unidades/signs.jpg',
     bg: 'bg-alltak-navy2',
     accent: 'text-alltak-blue',
     logo: subSigns,
