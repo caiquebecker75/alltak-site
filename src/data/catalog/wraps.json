@@ -76,17 +76,17 @@
   "acabamento": "Acetinado Fosco",
   "hex": "#bc2404",
   "swatch": "18S36_sw.jpg",
-  "applied": "18S36_ap.jpg",
+  "applied": null,
   "bobina": "bobina/18s36-satin-orange.jpg"
  },
  {
-  "code": "18S36",
+  "code": "18S32",
   "name": "Satin Red",
   "family": "Satin",
   "acabamento": "Acetinado Fosco",
   "hex": "#a40404",
-  "swatch": "18S36_sw.jpg",
-  "applied": "18S36_ap.jpg",
+  "swatch": "18S32_sw.jpg",
+  "applied": "18S32_ap.jpg",
   "bobina": "bobina/18s36-satin-red.jpg"
  },
  {

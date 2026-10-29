@@ -25,7 +25,7 @@ def abrir(rel: str) -> Image.Image:
 
 
 def wraps() -> Image.Image:
-    fotos = ['wraps/18S84M_ap.jpg', 'wraps/18S41M_ap.jpg', 'wraps/18S36_ap.jpg', 'wraps/18S192M_ap.jpg', 'wraps/18S21_ap.jpg']
+    fotos = ['wraps/18S84M_ap.jpg', 'wraps/18S41M_ap.jpg', 'wraps/18S32_ap.jpg', 'wraps/18S192M_ap.jpg', 'wraps/18S21_ap.jpg']
     out = Image.new('RGB', (W, H), (8, 8, 10))
     n = len(fotos)
     incl = int(H * 0.38)  # deslocamento horizontal do topo (inclinação da marca)

@@ -90,10 +90,10 @@
   "bobina": "bobina/977d35-wood-carvalho-cadiz.jpg"
  },
  {
-  "code": "977D37",
+  "code": "977D04",
   "name": "Wood Carvalho Verona",
   "hex": "#e4dcd4",
-  "swatch": "977D37_sw.jpg",
+  "swatch": "977D04_sw.jpg",
   "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d37-wood-carvalho-verona.jpg"
@@ -108,10 +108,10 @@
   "bobina": "bobina/977d94-wood-carvalho-pamplona.jpg"
  },
  {
-  "code": "977D19",
+  "code": "977D01",
   "name": "Wood Carvalho Capuccino",
   "hex": "#141414",
-  "swatch": "977D19_sw.jpg",
+  "swatch": "977D01_sw.jpg",
   "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d19-wood-carvalho-capuccino.jpg"
@@ -139,7 +139,7 @@
   "name": "Wood Demolição Sevilha",
   "hex": "#846c1c",
   "swatch": "977D30_sw.jpg",
-  "applied": "977D30_ap.jpg",
+  "applied": null,
   "family": "Wood",
   "bobina": "bobina/977d30-wood-demolicao-sevilha.jpg"
  },
@@ -432,11 +432,11 @@
   "bobina": "bobina/977kf34-kroma-forma-avorio.jpg"
  },
  {
-  "code": "977D30",
+  "code": "977KW38",
   "name": "Kroma Wood Teruel",
   "hex": "#242424",
-  "swatch": "977D30_sw.jpg",
-  "applied": "977D30_ap.jpg",
+  "swatch": "977KW38_sw.jpg",
+  "applied": "977KW38_ap.jpg",
   "family": "Kroma",
   "bobina": "bobina/977d30-kroma-wood-teruel.jpg"
  },
@@ -636,7 +636,7 @@
   "semTextura": true
  },
  {
-  "code": "977KF27",
+  "code": "977KF32",
   "name": "Kroma Forma Avelã Cremoso",
   "family": "Kroma",
   "hex": "#817872",

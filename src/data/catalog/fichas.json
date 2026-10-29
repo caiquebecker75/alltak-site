@@ -75,7 +75,79 @@
   }
  },
  "cores": {
+  "decor:977D01": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Dimensions: 1.22 × 25 m",
+     "Face film: calendered PVC 160 µm",
+     "Technology: Fusion System (double layer)",
+     "Liner: coated (couché) paper 130 g/m²",
+     "Adhesive: super-permanent acrylic",
+     "Finish: textured matte"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Dimensiones: 1,22 × 25 m",
+     "Frontal: PVC calandrado 160 µm",
+     "Tecnología: Sistema Fusion (doble capa)",
+     "Liner: papel couché 130 g/m²",
+     "Adhesivo: acrílico superpermanente",
+     "Acabado: mate texturizado"
+    ]
+   },
+   "fonte": "Alltak Decor 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Dimensões: 1,22 × 25 m",
+     "Frontal: PVC calandrado 160 µm",
+     "Tecnologia: Sistema Fusion (dupla camada)",
+     "Liner: papel couché 130 g/m²",
+     "Adesivo: acrílico superpermanente",
+     "Acabamento: fosco texturizado"
+    ]
+   }
+  },
   "decor:977D03": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Dimensions: 1.22 × 25 m",
+     "Face film: calendered PVC 160 µm",
+     "Technology: Fusion System (double layer)",
+     "Liner: coated (couché) paper 130 g/m²",
+     "Adhesive: super-permanent acrylic",
+     "Finish: textured matte"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Dimensiones: 1,22 × 25 m",
+     "Frontal: PVC calandrado 160 µm",
+     "Tecnología: Sistema Fusion (doble capa)",
+     "Liner: papel couché 130 g/m²",
+     "Adhesivo: acrílico superpermanente",
+     "Acabado: mate texturizado"
+    ]
+   },
+   "fonte": "Alltak Decor 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Dimensões: 1,22 × 25 m",
+     "Frontal: PVC calandrado 160 µm",
+     "Tecnologia: Sistema Fusion (dupla camada)",
+     "Liner: papel couché 130 g/m²",
+     "Adesivo: acrílico superpermanente",
+     "Acabamento: fosco texturizado"
+    ]
+   }
+  },
+  "decor:977D04": {
    "en": {
     "descricao": "",
     "specs": [
@@ -606,7 +678,7 @@
     ]
    }
   },
-  "decor:977D19|Decor Lisboa": {
+  "decor:977D19": {
    "en": {
     "descricao": "",
     "specs": [
@@ -636,42 +708,6 @@
      "Tecnologia: Sistema Fusion (dupla camada)",
      "Liner: papel couché 130 g/m²",
      "Adesivo: acrílico superpermanente"
-    ]
-   }
-  },
-  "decor:977D19|Wood Carvalho Capuccino": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Dimensions: 1.22 × 25 m",
-     "Face film: calendered PVC 160 µm",
-     "Technology: Fusion System (double layer)",
-     "Liner: coated (couché) paper 130 g/m²",
-     "Adhesive: super-permanent acrylic",
-     "Finish: textured matte"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Dimensiones: 1,22 × 25 m",
-     "Frontal: PVC calandrado 160 µm",
-     "Tecnología: Sistema Fusion (doble capa)",
-     "Liner: papel couché 130 g/m²",
-     "Adhesivo: acrílico superpermanente",
-     "Acabado: mate texturizado"
-    ]
-   },
-   "fonte": "Alltak Decor 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Dimensões: 1,22 × 25 m",
-     "Frontal: PVC calandrado 160 µm",
-     "Tecnologia: Sistema Fusion (dupla camada)",
-     "Liner: papel couché 130 g/m²",
-     "Adesivo: acrílico superpermanente",
-     "Acabamento: fosco texturizado"
     ]
    }
   },
@@ -708,43 +744,7 @@
     ]
    }
   },
-  "decor:977D30|Kroma Wood Teruel": {
-   "en": {
-    "descricao": "The Kroma Wood line combines the elegance of wood texture with solid colors. These are new colors for you to create spaces that balance sophistication, warmth and personality. A versatile solution for those seeking contemporary design without giving up the touch only wood can convey.",
-    "specs": [
-     "Color reference: Pantone® 7529 C (approximate)",
-     "Dimensions: 1.22 × 25 m",
-     "Face film: calendered PVC 140 µm",
-     "Liner: coated (couché) paper 130 g/m²",
-     "Adhesive: super-permanent acrylic",
-     "Finish: textured matte"
-    ]
-   },
-   "es": {
-    "descricao": "La línea Kroma Wood une la elegancia de la textura de madera con los colores sólidos. Son nuevos tonos para que crees espacios que equilibren sofisticación, calidez y personalidad. Una solución versátil para quienes buscan un diseño contemporáneo sin renunciar al toque que solo la madera transmite.",
-    "specs": [
-     "Referencia de color: Pantone® 7529 C (aproximado)",
-     "Dimensiones: 1,22 × 25 m",
-     "Frontal: PVC calandrado 140 µm",
-     "Liner: papel couché 130 g/m²",
-     "Adhesivo: acrílico superpermanente",
-     "Acabado: mate texturizado"
-    ]
-   },
-   "fonte": "Alltak Decor 2026",
-   "pt": {
-    "descricao": "A linha Kroma Wood une a elegância da textura amadeirada com as cores sólidas. São novas cores para você criar espaços que equilibram sofisticação, aconchego e personalidade. Uma solução versátil para quem busca design contemporâneo sem abrir mão do toque que só a madeira transmite.",
-    "specs": [
-     "Referência de cor: Pantone® 7529 C (aproximado)",
-     "Dimensões: 1,22 × 25 m",
-     "Frontal: PVC calandrado 140 µm",
-     "Liner: papel couché 130 g/m²",
-     "Adesivo: acrílico superpermanente",
-     "Acabamento: fosco texturizado"
-    ]
-   }
-  },
-  "decor:977D30|Wood Demolição Sevilha": {
+  "decor:977D30": {
    "en": {
     "descricao": "",
     "specs": [
@@ -816,43 +816,7 @@
     ]
    }
   },
-  "decor:977D37|Wood Carvalho Verona": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Dimensions: 1.22 × 25 m",
-     "Face film: calendered PVC 160 µm",
-     "Technology: Fusion System (double layer)",
-     "Liner: coated (couché) paper 130 g/m²",
-     "Adhesive: super-permanent acrylic",
-     "Finish: textured matte"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Dimensiones: 1,22 × 25 m",
-     "Frontal: PVC calandrado 160 µm",
-     "Tecnología: Sistema Fusion (doble capa)",
-     "Liner: papel couché 130 g/m²",
-     "Adhesivo: acrílico superpermanente",
-     "Acabado: mate texturizado"
-    ]
-   },
-   "fonte": "Alltak Decor 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Dimensões: 1,22 × 25 m",
-     "Frontal: PVC calandrado 160 µm",
-     "Tecnologia: Sistema Fusion (dupla camada)",
-     "Liner: papel couché 130 g/m²",
-     "Adesivo: acrílico superpermanente",
-     "Acabamento: fosco texturizado"
-    ]
-   }
-  },
-  "decor:977D37|Wood Rústica Salamanca": {
+  "decor:977D37": {
    "en": {
     "descricao": "",
     "specs": [
@@ -2074,6 +2038,42 @@
    "pt": {
     "descricao": "A linha Kroma Wood une a elegância da textura amadeirada com as cores sólidas. São novas cores para você criar espaços que equilibram sofisticação, aconchego e personalidade. Uma solução versátil para quem busca design contemporâneo sem abrir mão do toque que só a madeira transmite.",
     "specs": [
+     "Dimensões: 1,22 × 25 m",
+     "Frontal: PVC calandrado 140 µm",
+     "Liner: papel couché 130 g/m²",
+     "Adesivo: acrílico superpermanente",
+     "Acabamento: fosco texturizado"
+    ]
+   }
+  },
+  "decor:977KW38": {
+   "en": {
+    "descricao": "The Kroma Wood line combines the elegance of wood texture with solid colors. These are new colors for you to create spaces that balance sophistication, warmth and personality. A versatile solution for those seeking contemporary design without giving up the touch only wood can convey.",
+    "specs": [
+     "Color reference: Pantone® 7529 C (approximate)",
+     "Dimensions: 1.22 × 25 m",
+     "Face film: calendered PVC 140 µm",
+     "Liner: coated (couché) paper 130 g/m²",
+     "Adhesive: super-permanent acrylic",
+     "Finish: textured matte"
+    ]
+   },
+   "es": {
+    "descricao": "La línea Kroma Wood une la elegancia de la textura de madera con los colores sólidos. Son nuevos tonos para que crees espacios que equilibren sofisticación, calidez y personalidad. Una solución versátil para quienes buscan un diseño contemporáneo sin renunciar al toque que solo la madera transmite.",
+    "specs": [
+     "Referencia de color: Pantone® 7529 C (aproximado)",
+     "Dimensiones: 1,22 × 25 m",
+     "Frontal: PVC calandrado 140 µm",
+     "Liner: papel couché 130 g/m²",
+     "Adhesivo: acrílico superpermanente",
+     "Acabado: mate texturizado"
+    ]
+   },
+   "fonte": "Alltak Decor 2026",
+   "pt": {
+    "descricao": "A linha Kroma Wood une a elegância da textura amadeirada com as cores sólidas. São novas cores para você criar espaços que equilibram sofisticação, aconchego e personalidade. Uma solução versátil para quem busca design contemporâneo sem abrir mão do toque que só a madeira transmite.",
+    "specs": [
+     "Referência de cor: Pantone® 7529 C (aproximado)",
      "Dimensões: 1,22 × 25 m",
      "Frontal: PVC calandrado 140 µm",
      "Liner: papel couché 130 g/m²",
@@ -6090,7 +6090,7 @@
     ]
    }
   },
-  "wraps:18S36": {
+  "wraps:18S32": {
    "en": {
     "descricao": "",
     "specs": [
@@ -6123,7 +6123,7 @@
     ]
    }
   },
-  "wraps:18S36|Satin Red": {
+  "wraps:18S36": {
    "en": {
     "descricao": "",
     "specs": [

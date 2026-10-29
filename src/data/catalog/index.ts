@@ -95,9 +95,10 @@ export function familiesFor(line: string): string[] {
 }
 
 // Stable URL slug + lookup for a color's dedicated page (/cor/:line/:code).
-// O catálogo repete alguns códigos para padrões diferentes (977D37 Verona e
-// Salamanca, 18S36 Satin Orange e Red...). Nesses casos o endereço leva também
-// o nome (/cor/decor/977D37~wood-rustica-salamanca); nos demais, só o código.
+// Se um código se repetir para padrões diferentes, o endereço leva também o
+// nome (/cor/decor/<código>~<nome>); nos demais, só o código. Links antigos
+// com nome continuam abrindo a cor certa mesmo depois de o código mudar
+// (ex.: /cor/decor/977D37~wood-carvalho-verona, hoje 977D04).
 const slugNome = (n: string) =>
   n.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const repetido = (c: Color) => COLORS.filter((o) => o.line === c.line && o.code === c.code).length > 1
@@ -112,7 +113,8 @@ export function findColor(line?: string, code?: string): Color | undefined {
   if (!line || !code) return undefined
   const [cod, nome] = decodeURIComponent(code).split('~')
   const doCodigo = COLORS.filter((c) => c.line === line && c.code === cod)
-  return (nome && doCodigo.find((c) => slugNome(c.name) === nome)) || doCodigo[0]
+  const doNome = (lista: Color[]) => (nome ? lista.find((c) => slugNome(c.name) === nome) : undefined)
+  return doNome(doCodigo) ?? doNome(COLORS.filter((c) => c.line === line)) ?? doCodigo[0]
 }
 
 export function relatedColors(c: Color, n = 6): Color[] {

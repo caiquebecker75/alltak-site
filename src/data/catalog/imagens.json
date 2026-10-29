@@ -199,11 +199,6 @@
   "ok": true,
   "w": 520
  },
- "decor/977D30_ap.jpg": {
-  "h": 694,
-  "ok": true,
-  "w": 596
- },
  "decor/977D30_sw.jpg": {
   "h": 397,
   "ok": true,
@@ -718,6 +713,16 @@
   "h": 255,
   "ok": true,
   "w": 313
+ },
+ "decor/977KW38_ap.jpg": {
+  "h": 694,
+  "ok": true,
+  "w": 596
+ },
+ "decor/977KW38_sw.jpg": {
+  "h": 397,
+  "ok": true,
+  "w": 485
  },
  "decor/97_ap.jpg": {
   "h": 846,
@@ -1629,12 +1634,12 @@
   "ok": true,
   "w": 279
  },
- "wraps/18S36_ap.jpg": {
+ "wraps/18S32_ap.jpg": {
   "h": 714,
   "ok": true,
   "w": 854
  },
- "wraps/18S36_sw.jpg": {
+ "wraps/18S32_sw.jpg": {
   "h": 627,
   "ok": true,
   "w": 279
