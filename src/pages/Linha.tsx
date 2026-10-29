@@ -76,6 +76,11 @@ export default function Linha() {
     return <Navigate to={destinoDaLinha(linha)} replace />
   }
 
+  // linha que mudou de categoria (AW – Auto Wrap: Automotivo → Impressão):
+  // o endereço antigo leva ao novo
+  const mudou = !linha && (linhas as LinhaT[]).find((l) => l.slug === slug)
+  if (mudou) return <Navigate to={`/produtos/${mudou.categoria}/${mudou.slug}`} replace />
+
   if (!linha) {
     return (
       <section className="flex min-h-[70vh] flex-col items-center justify-center bg-alltak-black px-6 text-center">
