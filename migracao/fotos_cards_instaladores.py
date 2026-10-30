@@ -7,7 +7,8 @@ instalador enviou. Vieram da pasta "Novo Logo" do Drive da Alltak:
   - PNG 2160×3840 (artes de stories com nome e cidade escritos): recorta-se o
     quadrado da foto, no mesmo enquadramento dos JPGs, e apaga-se o logo de cima
 Os nomes dos arquivos são apelidos ("Bruno", "Rodrigo"...): a tabela abaixo diz
-de quem é cada um (os ambíguos foram conferidos comparando com a foto atual).
+de quem é cada um (os ambíguos foram conferidos comparando com a foto atual;
+"Bruno (1)" é o Bruno Lima, "Bruno 2" o Bruno Oliveira, "Samuel" o Samuel Vieira).
 "Eduardo - ColaComigo" é o Eduardo Borges, que saiu da página.
 
 Saída: public/instaladores/cards/<slug>.jpg. O instaladores.py lê essa pasta.
@@ -38,6 +39,15 @@ ARQUIVO_PARA_SLUG = {
     'Samuel Ferreira': 'samuel-washington-ferreira-da-frota', 'Sávio': 'savio-figueiredo-dos-santos',
     'Sergio': 'sergio-raimundo', 'Silvano': 'silvanio-pereira-de-almeida', 'Thiago Sossai': 'thiago-sossai',
     'Thiago': 'thiago-da-print', 'Willian': 'willian-henrique', 'Yan Facini 2': 'yan-cutrim-costa-facini',
+    # 2ª leva (out/2026)
+    'Albert': 'albert-de-souza-lousada', 'Alexander': 'alexander-rivera', 'Bruno (1)': 'bruno-lima',
+    'Bruno 2': 'bruno-oliveira-lopes-da-silva', 'Caio': 'caio-vieira', 'Camila': 'camila-scotti',
+    'Cordero': 'damian-cordero', 'Esdras': 'esdras-farias', 'Glauco': 'glauco-martins', 'James': 'james-garcia',
+    'Jefferson': 'jefferson-rafael', 'Kayron': 'kayron-silva-da-silva', 'Leonardo': 'leonardo-cardoso-felix',
+    'Martin': 'martin-ulivi', 'Mathias': 'mathias-gian-lucca-berea-maciel', 'Muryllo': 'muryllo-vellasques',
+    'Rafael': 'rafael-xavier', 'Rodrigo Nogueira': 'rodrigo-nogueira', 'Rodrigo San Martin': 'rodrigo-de-paula-san-martins',
+    'Samuel': 'samuel-vieira', 'Simone': 'simone-nunes', 'Tiago': 'tiago-securella', 'Valmir': 'valmir-rodrigues',
+    'Wellington': 'francisco-wellington-da-silva', 'Willert': 'willert-swann-nepomuceno-raiol',
 }
 IGNORAR = {'Eduardo - ColaComigo'}  # Eduardo Borges saiu da página
 

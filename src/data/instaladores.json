@@ -22,7 +22,8 @@
   "telefone": "+55 (65) 98123-0540",
   "instagram": "https://www.instagram.com/argentino_envelopamento",
   "bio": "Minha história com o envelopamento começou há 14 anos, quando eu ainda trabalhava com Insulfilm. Há 8 anos, decidi seguir meu próprio caminho e empreender na área.\nSem grandes recursos no início, comecei a aprender envelopamento assistindo aos vídeos e às lives do Thiago Sossai no YouTube qual ele foi e é uma referência pra mim. Foi ali que comecei a entender que, além de aplicar o material, era preciso conhecer profundamente suas características, técnicas e principalmente buscar o melhor acabamento.\nFiz meu primeiro carro, errei, aprendi, aperfeiçoei e continuei estudando. Minha dedicação em conhecer os materiais e entender a maneira correta de trabalhar fez com que minha técnica evoluísse cada vez mais.\nCom o tempo, as revendas parceiras começaram a me procurar para ajudar a solucionar problemas e buscar melhores resultados nas aplicações. Aquilo mostrou que eu estava construindo algo sólido.\nEu tinha um sonho: fazer parte da equipe Alltak Pro Expert. Esse sonho foi reacendido pela equipe alltak quando Estevam em Cuiabá, Thiago Print ,Caíque e Cris fizeram queimar novamente esse sonho e com muito trabalho, dedicação e persistência, consegui realizar esse objetivo.\nTendo um mentor como Marcelo da TK envelopamentos O qual vem me mostrando tudo que eu achava que não seria possível no envelopamento Realmente o último curso virada de chave\nHoje, atuamos com envelopamento automotivo e decorativo, com o segmento decorativo ganhando cada vez mais espaço através das parcerias com arquitetas e profissionais da área.\nE essa história ganhou ainda mais significado quando minha esposa passou a trabalhar comigo. Hoje, além de minha parceira na vida, ela se tornou uma excelente profissional no envelopamento.\nTambém temos o Janse que um excelente profissional que trabalha com a gente aonde nos destacamos em grande projetos arquitetônicos\nForam 14 anos de aprendizado, desafios, erros, evolução e muitas conquistas.\nE eu acredito que isso é só o começo.",
-  "foto": "./instaladores/albert-de-souza-lousada.jpg"
+  "foto": "./instaladores/albert-de-souza-lousada.jpg",
+  "fotoCard": "./instaladores/cards/albert-de-souza-lousada.jpg"
  },
  {
   "slug": "alex-hander",
@@ -47,7 +48,8 @@
   "telefone": "+56 93260-5368",
   "instagram": "https://www.instagram.com/rivera.wrap",
   "bio": "",
-  "foto": "./instaladores/alexander-rivera.jpg"
+  "foto": "./instaladores/alexander-rivera.jpg",
+  "fotoCard": "./instaladores/cards/alexander-rivera.jpg"
  },
  {
   "slug": "antonio",
@@ -98,7 +100,8 @@
   "telefone": "(85) 99199-3361 / (85) 99633-2731",
   "instagram": "https://www.instagram.com/brunowrap",
   "bio": "Um gaúcho que mora no Ceará! Iniciou sua trajetória no envelopamento através da comunicação visual, saindo de alvorada uma cidade pequena no RS chegando 2013 na Capital cearense em crescimento e com muitas oportunidades! Inicialmente começou adesivando geladeiras, paredes e frotas de empresas, porém, o amor pelos carros e a customização sempre estavam presentes desde pequeno… então em 2017 pela primeira vez participou de um treinamento com a Alltak junto com WrapInstitute com o Justin Pate em SP e desde então o foco total foi envelopamento automotivo, cada vez mais buscando aprender e se especializar. Durante esses anos foram vários cursos no segmento da estética automotiva e principalmente os cursos de Envelopamentos e PPF para sempre entregar o máximo de qualidade nos serviços!\nSempre curti a customização dos carros, deixar tudo com meu estilo e não ser igual a todo mundo! Quando cheguei no Ceará percebi que tinha muito carro da hora, pouco carro envelopado… mas depois que fiz o primeiro curso e tive conhecimento dos materiais Alltak e o mundo de possibilidades que o adesivo pode proporcionar, eu virei uma chave importante na minha vida! De lá pra cá foram anos de muita luta e graças ao CAMBEA, que me fez entrar de cabeça nesse mundo pelo network, amizades e principalmente minha busca por conhecimento sem fim! Com tudo isso consegui um bom resultados nas provas do PRO EXPERT e hoje tenho a honra de participar desse time de profissionais de excelência e Referências no envelopamento.",
-  "foto": "./instaladores/bruno-lima.jpg"
+  "foto": "./instaladores/bruno-lima.jpg",
+  "fotoCard": "./instaladores/cards/bruno-lima.jpg"
  },
  {
   "slug": "bruno-oliveira-lopes-da-silva",
@@ -110,7 +113,8 @@
   "telefone": "+55 (69) 99240-4345",
   "instagram": "https://www.instagram.com/brunaoartsdecor",
   "bio": "Como tudo começou ? Eu te conto. Em 2019, ganhei uma geladeira velha do meu pai, que estava bem feia. E eu, que sempre fui daqueles que pensam “eu consigo”, decidi que daria um jeito nela. Mas, antes de colocar a mão na massa, procurei aprender: uma professora minha conhecia um profissional do envelopamento, e fui trabalhar com ele por um valor bem abaixo do mercado, porque meu objetivo era aprender.\nDepois de envelopar minha própria geladeira, o resultado chamou a atenção de amigos e familiares, que começaram a me procurar. Foi assim, de forma simples e movido pela curiosidade e vontade de fazer acontecer, que nasceu a Brunão Arts Decor\nHoje, sigo evoluindo, estudando Design de Interiores e buscando cada vez mais conhecimento para transformar ambientes com técnica, criatividade e autoridade. Afinal, tudo começou com uma geladeira velha, mas o sonho sempre foi muito maior!",
-  "foto": "./instaladores/bruno-oliveira-lopes-da-silva.jpg"
+  "foto": "./instaladores/bruno-oliveira-lopes-da-silva.jpg",
+  "fotoCard": "./instaladores/cards/bruno-oliveira-lopes-da-silva.jpg"
  },
  {
   "slug": "bruno-rodrigues",
@@ -135,7 +139,8 @@
   "telefone": "(11) 94165-8564",
   "instagram": "https://www.instagram.com/caioenvelopamento",
   "bio": "Comecei minha trajetória aos 14 anos em uma empresa de estampas de camisetas, onde também trabalhava com vinil e envelopamento de motos. Logo pedi para mudar de área, pois meu interesse era o envelopamento. Busquei conhecimento por meio de cursos na Alltak e conheci pessoas inspiradoras no ramo, que me ajudaram a crescer. O envelopamento tem mudado minha vida dia após dia!",
-  "foto": "./instaladores/caio-vieira.jpg"
+  "foto": "./instaladores/caio-vieira.jpg",
+  "fotoCard": "./instaladores/cards/caio-vieira.jpg"
  },
  {
   "slug": "calebe-san-martins",
@@ -161,7 +166,8 @@
   "telefone": "(12) 98802-4663",
   "instagram": "https://www.instagram.com/donaajuda",
   "bio": "Comecei a DONA AJUDA há 9 anos, oferecendo os serviços de Personal Organizer e reparos gerais.\nMe interessei pelo setor de envelopamento há 8 anos, ao descobrir o curso da Factory X, que mistura automotivo e decorativo.\nDepois disso, entrei de cabeça no mundo do envelopamento. Fiz cursos automotivos e decorativos na Alltak e com diversos profissionais renomados. Já participei de 2 feiras do setor, como convidada para fazer demonstrações durante a feira.\nGerencio uma equipe de 8 mulheres, sendo que 2 delas também atuam na área de revestimento.\nAtendemos a todos os nossos clientes com muito profissionalismo, cuidando de seus projetos e sonhos como se fossem nossos.",
-  "foto": "./instaladores/camila-scotti.jpg"
+  "foto": "./instaladores/camila-scotti.jpg",
+  "fotoCard": "./instaladores/cards/camila-scotti.jpg"
  },
  {
   "slug": "damian-cordero",
@@ -173,7 +179,8 @@
   "telefone": "+54 9 11 6735-4896",
   "instagram": "https://www.instagram.com/corderoplotter",
   "bio": "Em 2001, quando comecei a lecionar Educação Física, comecei a trabalhar em uma gráfica para ganhar uma renda que me permitisse pagar meus estudos.\nRecebido de um professor, alternei meu horário entre aulas de ginástica e instalações para diferentes impressoras. Com o passar do tempo os clientes foram aumentando e como as horas do dia já não me bastavam, deixei de dar aulas para me dedicar ao Envelopamento!\nTrabalhei muito tempo sem um espaço próprio, mas em 2017, consegui montar minha primeira oficina, voltada para veículos particulares e frotas.\nLogo depois com o aumento da demanda, mudamos para um novo e maior espaço!\nHoje o Envelopamento Automotivo, além de ser o meu trabalho é também a minha paixão.\nTenho uma relação comercial com a Alltak Argentina há 8 anos, e fiquei sabendo da existência do CAMBEA (Campeonato Sul-Americano de Envelopamento Automotivo). Em 2022 criamos coragem e fomos para o Brasil.\nO resultado, por ser a primeira vez, foi incrível, conquistamos o 3o lugar dentre 24 equipes!\nEm seguida fomos para Madrid e conquistamos a Certificação internacional de uma grande marca. Nesse mesmo ano participei no World Wrap Master em Berlin, Alemanha.\nEm junho de 2023, foi realizado o primeiro CAMBEA Etapa Argentina na feira ExpoGrafika em Buenos Aires onde conquistamos o título!\nEm paralelo fizemos a prova da certificação Pro Expert Alltak e com muito esforço, conseguimos mais essa conquista!\nEnfim, sou um apaixonado pelo que faço e especializado em veículos de frota, simuladores de F1, veículos comerciais, motocicletas, troca de cor e todo o tipo de Envelopamento Automotivo!\nEn el 2001 cuando comencé el profesorado de Educacion Fisica, empecé a trabajar en una gráfica para poder obtener un ingreso que me permitiera costear mis estudios. Recibido de profesor, alternaba mis horarios entre clases de gimnasia e instalaciones para distintas gráficas. Con el tiempo los clientes fueron aumentando y como ya no me alcanzaban las horas del día,dejé la docencia para dedicarme de lleno al wrap.\nTrabajé mucho tiempo sin espacio propio, pero en 2017 conseguí montar mi primer taller, dirigido a vehículos particulares y flotas.\nPoco después, con el aumento de la demanda, ¡nos mudamos a un espacio nuevo y más grande!\nHoy el Wrap, además de ser mi trabajo, también es mi pasión.\nTengo una relación comercial con Alltak Argentina desde hace 8 años, y me enteré de la existencia del CAMBEA (Campeonato Sudamericano de Ploteo Vehicular). En 2022 creamos coraje y nos fuimos a Brasil. El resultado, como era la primera vez, fue increíble, ¡ganamos el 3er lugar de 24 equipos!\nLuego nos fuimos a Madrid y ganamos la Certificación Internacional de una gran marca. Ese mismo año participé en el World Wrap Master en Berlín, Alemania.\nEn junio de 2023 se realizó el primer CAMBEA Stage Argentina en la feria ExpoGrafika de Buenos Aires donde ganamos el título",
-  "foto": "./instaladores/damian-cordero.jpg"
+  "foto": "./instaladores/damian-cordero.jpg",
+  "fotoCard": "./instaladores/cards/damian-cordero.jpg"
  },
  {
   "slug": "demurie-silva",
@@ -241,7 +248,8 @@
   "telefone": "(11) 96449-8065",
   "instagram": "https://www.instagram.com/esdrasfariasenvelopamento",
   "bio": "Minha história começa na comunicação visual, trabalhando como técnico de impressão digital, operando equipamentos de grandes formatos e conhecendo todo o processo de acabamento.\nEm 2020 fui contratado pela Alltak para exercer a mesma função, daí começa a virada de chave!\nCom todo o envolvimento com envelopamento, participando dos cursos, respirando o mercado e o processo, comecei a colocar a mão na massa, e a paixão foi imediata!\nCom o incentivo de toda a equipe, fui crescendo e me aperfeiçoando, enfim, chegou o dia de realmente criar coragem e me aventurar nos primeiros trabalhos. Como já entendo bem todo o processo de produção e confecção dos materiais, tudo ficou mais fácil. Participei de alguns projetos automotivos, aprendi com Thiago Sossai diversas técnicas, depois fui migrando para o mercado de Arquitetura e Decoração!\nDepois de muita luta, dedicação e disciplina, consegui me tornar um Instalador Certificado pela Alltak, Pro Expert Decor! Uma grande conquista, que vem de encontro aos meus objetivos!",
-  "foto": "./instaladores/esdras-farias.jpg"
+  "foto": "./instaladores/esdras-farias.jpg",
+  "fotoCard": "./instaladores/cards/esdras-farias.jpg"
  },
  {
   "slug": "fabio-braga",
@@ -279,7 +287,8 @@
   "telefone": "+55 (85) 9289-9289",
   "instagram": "https://www.instagram.com/wsenvelopamento",
   "bio": "",
-  "foto": "./instaladores/francisco-wellington-da-silva.jpg"
+  "foto": "./instaladores/francisco-wellington-da-silva.jpg",
+  "fotoCard": "./instaladores/cards/francisco-wellington-da-silva.jpg"
  },
  {
   "slug": "gaston-garcete",
@@ -318,7 +327,8 @@
   "telefone": "(21) 96417-7011",
   "instagram": "https://www.instagram.com/mvlopdecor",
   "bio": "Sou especialista em envelopamento decorativo e atuo exclusivamente nesta área há 10 anos, acumulando cerca de 20mil horas de experiência. Minhas especialidades são mobiliários domésticos, marcenaria náutica e de hotelaria. Minha trajetória neste segmento é irretocável, conquistada através de um trabalho impecável, atenção minuciosa aos detalhes e compromisso com a excelência.\nMinha metodologia de trabalho é baseada na filosofia Kaizen, que tem como princípio a melhoria contínua. Inspirada na cultura japonesa, essa filosofia propõe a busca constante por aperfeiçoamento, eficiência e qualidade, garantindo que cada projeto seja executado com o mais alto nível de precisão e cuidado.\nCada detalhe do meu trabalho reflete esse compromisso, assegurando que o resultado final sempre supere as expectativas dos meus clientes.",
-  "foto": "./instaladores/glauco-martins.jpg"
+  "foto": "./instaladores/glauco-martins.jpg",
+  "fotoCard": "./instaladores/cards/glauco-martins.jpg"
  },
  {
   "slug": "gustavo-cardoso",
@@ -384,7 +394,8 @@
   "telefone": "(41) 3537-4990 / (41) 99534-6465",
   "instagram": "https://www.instagram.com/dcore.adesivos",
   "bio": "Iniciou a sua carreira no ano 2000, passando por diversos bureaus de comunicação visual, para adquirir experiência e aprimorar seu conhecimento na área. O seu primeiro contato com envelopamento, surgiu com a demanda de envelopamento de frotas, se especializando em 2012 no ramo. James conta em seu currículo mais de 100 ônibus, carretas de bandas, e centenas de veículos já produzidos, atualmente está estabilizado em uma estrutura ampla chamada de D’core Adesivos, focado na realização de projetos e serviços de envelopamento veicular em parceria com sua esposa Jhenifer.\n“Quando conheci a ALLTAK e o CAMBEA entrei de cabeça no ramo juntamente com meu parceiro, minha primeira participação foi em 2017 na etapa nordeste recebendo o quarto lugar, mas com a emoção de como estivesse no podium em primeiro, e a partir daí não parei mais, continuei participando das edições do CAMBEA, até que na etapa Sul do campeonato fiquei em segundo lugar, em 2019 na edição #9 em São Paulo fiquei em terceiro lugar, na segunda edição do Cambea Nordeste, no mesmo ano, cheguei ao podium em primeiro lugar, sendo que na edição especial do CAMBEA #10anos me tornei campeão, com o ingresso para disputar o campeonato World Wrap Masters.”",
-  "foto": "./instaladores/james-garcia.jpg"
+  "foto": "./instaladores/james-garcia.jpg",
+  "fotoCard": "./instaladores/cards/james-garcia.jpg"
  },
  {
   "slug": "jefferson-rafael",
@@ -396,7 +407,8 @@
   "telefone": "(19) 98973-4716",
   "instagram": "https://www.instagram.com/artetak_envelopamento",
   "bio": "Minha jornada no envelopamento começou em 2013…\nNa época, eu trabalhava como Barman em um hotel, mas não me sentia reconhecido profissionalmente. Foi aí que decidi buscar algo que me desse novos desafios e a oportunidade de empreender.\nDescobri o mundo do envelopamento e comecei vendendo adesivos recortados e fazendo pequenos trabalhos de envelopamento — tudo isso conciliando com o hotel.\nEm novembro daquele ano, dei um passo importante: fui até Santo André fazer meu primeiro curso presencial na área, com o apoio da Alko na época.\nDesde então, nunca mais saí desse mercado. Me especializei e hoje atuo em todos os segmentos do envelopamento Automotivo, Decorativo e PPF (Paint Protection Film)\nSempre buscando me aprimorar para oferecer um serviço completo, de qualidade e confiança aos meus clientes!",
-  "foto": "./instaladores/jefferson-rafael.jpg"
+  "foto": "./instaladores/jefferson-rafael.jpg",
+  "fotoCard": "./instaladores/cards/jefferson-rafael.jpg"
  },
  {
   "slug": "joao-vitor-leite-bitencort-tristao",
@@ -420,7 +432,8 @@
   "telefone": "+55 (98) 97029-2218",
   "instagram": "https://www.instagram.com/plotexdecor",
   "bio": "Minha história no envelopamento começou em junho de 2022, quando passei a trabalhar em uma empresa do segmento. Meus primeiros serviços foram realizados com base nos conhecimentos que adquiri assistindo aos tutoriais da Alltak no YouTube. Após seis meses, decidi seguir minha própria trajetória e, em 1º de janeiro de 2023, nasceu a Plotex Decor. Comecei sozinho e acreditando que daria certo. Uma semana depois, minha esposa deixou o antigo emprego e se tornou minha sócia.\nEntre erros e acertos, entendemos que a capacitação e a busca constante por conhecimento são essenciais para o crescimento e a prosperidade de uma empresa.\nTer me tornado PRO EXPERT ALLTAK DECOR representa o ápice dessa trajetória. É uma honra carregar a responsabilidade de representar a marca diante de clientes, arquitetos, designers e engenheiros. Hoje, sinto-me realizado profissionalmente e sigo buscando conhecimento para entregar cada vez mais qualidade aos nossos clientes.",
-  "foto": "./instaladores/kayron-silva-da-silva.jpg"
+  "foto": "./instaladores/kayron-silva-da-silva.jpg",
+  "fotoCard": "./instaladores/cards/kayron-silva-da-silva.jpg"
  },
  {
   "slug": "leandro-costa-ribeiro-spectrum",
@@ -471,7 +484,8 @@
   "telefone": "+55 (85) 8788-1398",
   "instagram": "https://www.instagram.com/envelorblackoficial",
   "bio": "Tive meu contato com vinil aos 16 anos, mas foi em 2017 que abri minha primeira loja de Envelopamento.\nFiquei encantado pela inúmeras possibilidades e transformações que se podia fazer no mundo do Envelopamento.\nEm 2019 tive o primeiro treinamento e de lá para cá não parei de obter conhecimentos e em 2025 resolvi testar meus conhecimentos e me tornei um Pro Expert\n“É uma honra poder fazer parte da família ao ataque e poder somar com esse time de excelentes profissionais”",
-  "foto": "./instaladores/leonardo-cardoso-felix.jpg"
+  "foto": "./instaladores/leonardo-cardoso-felix.jpg",
+  "fotoCard": "./instaladores/cards/leonardo-cardoso-felix.jpg"
  },
  {
   "slug": "lucas-lopes",
@@ -575,7 +589,8 @@
   "telefone": "+54 9 11 3523-9014",
   "instagram": "https://www.instagram.com/goodshinegarage",
   "bio": "Minha carreira começou no Ano 2004, onde ingressei numa empresa de comunicação visual, sem nenhuma experiência!\nCom o tempo fui me aperfeiçoando até conseguir fazer eu mesmo um veículo, desde colocar um pequeno texto no vinil até conseguir fazer um envelopamento completo do veículo.\nLá conheci Sergio, atualmente meu sócio/meu amigo, desde então trilhamos esse caminho juntos, até chegarmos a nossa própria empresa chamada Goodshinegarage.\nObrigado a você Alltak, empresa que nos forneceu treinamento e ferramentas para sermos cada vez mais profissionais. Disputei a modalidade Fast capô do CAMBEA da Argentina, conquistando a primeira colocação com o tempo de 6min.32seg.\nQuando achei que ele estava pronto para competir, viajei para São Paulo para disputar o Cambea 11, e ficamos em 13º lugar geral.\nIsso me deu mais força para continuar e competir novamente no Cambea Argentina, obtendo o vice-campeonato!\nAtualmente atuamos em todos os tipos de veículos, como: viaturas, caminhões, motos, jetskys, etc.\nMi carrera comenzó en el Año 2004, comenzando en una empresa de Comunicación visual, sin tener experiencia previa, era ayudante.\nCon el tiempo fui perfeccionándome hasta poder realizar yo mismo un vehículo, desde colocar un pequeño texto en vinilo hasta llegar a realizar un wrap completo del vehículo.\nAhí mismo conocí a Sergio, actualmente mi socio/mi amigo, desde esa época recorrimos juntos este camino, hasta llegar a nuestra propia empresa que se llama Goodshinegarage.\nGracias a él conozco Alltak, una empresa que nos brindó capacitaciones y herramientas para poder ser más profesionales. Competí en el cambea fast de argentina ganando el primer puesto y rompiendo el récord, dejándolo en 6.32min.\nLuego cuando creí que estába preparado para competir, me anoté en Cambea 11 San Pablo, donde quedo en el puesto 13.\nEso me dio aún más fuerzas para seguir adelante y así competir nuevamente en el Cambea Argentina, obteniendo el 2do puesto.\nActualmente realizamos todo tipo de trabajos en vehículos, camiones, motos, motos de agua, etc. Realmente ploteamos todo!!!\nLos esperamos a todos en nuestro taller para poder brindarle el mejor servicio.",
-  "foto": "./instaladores/martin-ulivi.jpg"
+  "foto": "./instaladores/martin-ulivi.jpg",
+  "fotoCard": "./instaladores/cards/martin-ulivi.jpg"
  },
  {
   "slug": "mathias-gian-lucca-berea-maciel",
@@ -587,7 +602,8 @@
   "telefone": "+595 982 573 730",
   "instagram": "https://www.instagram.com/mvploteados",
   "bio": "Mi historia en el mundo del car wrapping comenzó en 2016, cuando ingresé a una pequeña empresa del rubro sin tener experiencia previa. Allí realizábamos principalmente calcomanías, franjas y gráficos para vehículos.\nCon el tiempo empecé a interesarme cada vez más por la instalación y, buscando aprender, pasaba horas viendo videos de instaladores de diferentes partes del mundo. Observaba sus técnicas, intentaba comprender sus procesos y, sobre todo, llevaba todo ese conocimiento a la práctica.\nA mediados de 2017 decidí comenzar mi propio camino y nació MV Ploteados. En ese momento trabajaba en el garage de la casa de mis padres, donde vivía, con herramientas muy básicas: una espátula, un cutter, una pistola de calor y algunos metros de material.\nA medida que aumentaban los proyectos y llegábamos a más clientes, fui reinvirtiendo en herramientas, máquinas, materiales y, principalmente, en capacitación.\nEn 2021 tuve la oportunidad de realizar mi primera capacitación de Wrap en Alltak. Esa experiencia marcó un antes y un después en mi carrera como instalador. Más allá de las técnicas que aprendí, me permitió entender la importancia de trabajar con procesos, precisión y estándares profesionales.\nDesde entonces continué buscando constantemente nuevas oportunidades de formación. En 2022 regresé a Alltak para realizar el siguiente módulo de capacitación y, ese mismo año, viajé a São Paulo para realizar una capacitación especializada en PPF.\nEn los últimos años también tuve la oportunidad de llevar mi trabajo a un escenario competitivo. Desde 2024 participo en CAMBEA representando a Paraguay, una experiencia que me permitió poner a prueba mis conocimientos, aprender de grandes instaladores y seguir elevando mi nivel profesional.\nActualmente, desde MV Ploteados, me enfoco principalmente en la personalización y protección de vehículos mediante Wrap y PPF.\nMe considero un apasionado de esta profesión. Disfruto el proceso de instalación, los desafíos que presenta cada vehículo y, sobre todo, la posibilidad de seguir aprendiendo constantemente.\nHoy, formar parte de los Instaladores Pro Expert de Alltak representa para mí un reconocimiento a todo ese camino recorrido desde aquel primer garage, pero también un compromiso para continuar creciendo, aprendiendo y elevando cada vez más el nivel de mi trabajo.",
-  "foto": "./instaladores/mathias-gian-lucca-berea-maciel.jpg"
+  "foto": "./instaladores/mathias-gian-lucca-berea-maciel.jpg",
+  "fotoCard": "./instaladores/cards/mathias-gian-lucca-berea-maciel.jpg"
  },
  {
   "slug": "muryllo-vellasques",
@@ -599,7 +615,8 @@
   "telefone": "+55 (41) 99926-4556",
   "instagram": "https://www.instagram.com/vellasques_wrap",
   "bio": "",
-  "foto": "./instaladores/muryllo-vellasques.jpg"
+  "foto": "./instaladores/muryllo-vellasques.jpg",
+  "fotoCard": "./instaladores/cards/muryllo-vellasques.jpg"
  },
  {
   "slug": "rafael-xavier",
@@ -611,7 +628,8 @@
   "telefone": "(85) 98651-1993",
   "instagram": "https://www.instagram.com/rx_envelopamento",
   "bio": "Comecei no envelopamento em 2010. O envelopamento me chamou muito a atenção pelo simples fato de eu me deparar com a mudança de cor de um veículo. Isso, para mim, foi algo fora do normal. Então, comecei como serviços gerais em uma empresa, onde fui buscando conhecimentos. Aprendi a trabalhar com envelopamento, adesivos em PVC, esticar lona, fazer banner e cortar cartão de visita. Lá, saí como chefe de setor de acabamento.\nQuando fui para outra empresa, já cheguei como envelopador e lá trabalhei com diversos tipos de envelopamento, tanto de comunicação visual quanto de frotas de veículos. Lá, me tornei Adesivador nível 4, quando o envelopador já conseguia fazer o envelopamento de um carro todo sozinho, sem o auxílio de ajudante. Posso dizer que o envelopamento mudou minha vida; tudo que tenho hoje foi graças ao envelopamento em geral.\nAtualmente sou um PRO EXPERT da Alltak Adesivos e Bi campeão do CAMBEA (Campeonato Brasileiro de Envelopamento Automotivo)",
-  "foto": "./instaladores/rafael-xavier.jpg"
+  "foto": "./instaladores/rafael-xavier.jpg",
+  "fotoCard": "./instaladores/cards/rafael-xavier.jpg"
  },
  {
   "slug": "raphael",
@@ -688,7 +706,8 @@
   "telefone": "(53) 99948-7780",
   "instagram": "https://www.instagram.com/black.star.envelopamento",
   "bio": "Trabalhei por anos em um banco multinacional onde tive uma ascensão na minha carreira até chegar a gerencia, em 2012 a empresa foi extinta. Então conheci o que seria minha profissão e minha paixão o envelopamento. Em 2012 comecei uma nova jornada em uma pequena empresa de comunicação visual com a qual tive a oportunidade de participar de vários campeonatos “CAMBEA” 2014 Tive a primeira participação no CAMBEA PRO e conquistei o 3º lugar. Neste mesmo ano participei junto de uma equipe de 10 instaladores do desafio de envelopar um carro total em menos de 20 MIN. No qual realizamos em um tempo recorde de 16:34:MIN. Após 2014 foram mais 6 participações no CAMBEA PRO e 5 vezes finalista sendo campeão na etapa sul em 2018. Em 2020 um novo ciclo iniciou-se, criei minha própria empresa a BLACK STAR ENVELOAMENTO dando assim início a realização de um sonho. Hoje com apenas 3 anos é uma empresa consolidada e de destaque na cidade. Através da certificação PRO EXPERT consegui alcançar mais um dos meus objetivos da minha jornada como instalador profissional fazer parte da família Alltak.",
-  "foto": "./instaladores/rodrigo-de-paula-san-martins.jpg"
+  "foto": "./instaladores/rodrigo-de-paula-san-martins.jpg",
+  "fotoCard": "./instaladores/cards/rodrigo-de-paula-san-martins.jpg"
  },
  {
   "slug": "rodrigo-nogueira",
@@ -700,7 +719,8 @@
   "telefone": "(41) 99192-1635",
   "instagram": "https://www.instagram.com/rnogueiraplotagens",
   "bio": "Iniciei minha trajetória em 2010 quando entrei em uma empresa de comunicação visual, trabalhei como instalador, já no ramo de aplicação de adesivos e sempre acompanhei de perto o trabalho de envelopamento automotivo dentro da empresa.\nNuma oportunidade fui convocado para fazer envelopamento de um caminhão e dai pra frente não parei mais, fui em busca cada vez mais de conhecimento, me atualizando sempre sobre os materiais e técnicas.\nHá 2 anos consegui realizar o sonho de ter meu próprio espaço, a RNOGUEIRA se tornou uma loja física.\nNesse mundo de envelopamento tive a oportunidade de participar do CAMBEA (Campeonato Sul-Americano de Envelopamento Automotivo). Foram ao todo 9 participações, ficando no pódio em 8 delas – em 2020 e 2022 conquistamos o primeiro lugar do Campeonato Sul – Americano, nos tornando BI Campeões.\nCom o título, a Alltak nos deu a premiação e a vaga participar do World Wrap Masters, onde estivemos em 2022 na cidade de Berlin/Alemanha, uma experiência incrível e inesquecível.\nDepois de muita luta, hoje posso sentir orgulho de me tornar um instalador “PRO EXPERT Alltak”",
-  "foto": "./instaladores/rodrigo-nogueira.jpg"
+  "foto": "./instaladores/rodrigo-nogueira.jpg",
+  "fotoCard": "./instaladores/cards/rodrigo-nogueira.jpg"
  },
  {
   "slug": "rodrigo-paulo",
@@ -750,7 +770,8 @@
   "telefone": "(19) 97166-0351",
   "instagram": "https://www.instagram.com/eliteewrap",
   "bio": "Sou envelopador há mais de 13 anos, tendo iniciado minha trajetória no ramo automotivo, especificamente na comunicação visual. Desde então, venho constantemente aperfeiçoando minhas habilidades e me profissionalizando, buscando sempre as melhores técnicas e inovações do mercado.\nNos últimos 4 anos, ampliei meu trabalho para o segmento de Décor, onde encontrei uma nova paixão. Através dessa experiência, consegui unir criatividade e técnica, criando projetos que transformam espaços de maneira única.\nRecentemente, alcancei a certificação Proexpert, o que reforça meu compromisso com a excelência e a qualidade em todos os serviços que ofereço. Estou sempre em busca de novas tendências e desafios, pronto para atender às necessidades dos meus clientes com dedicação e profissionalismo.",
-  "foto": "./instaladores/samuel-vieira.jpg"
+  "foto": "./instaladores/samuel-vieira.jpg",
+  "fotoCard": "./instaladores/cards/samuel-vieira.jpg"
  },
  {
   "slug": "samuel-washington-ferreira-da-frota",
@@ -815,7 +836,8 @@
   "telefone": "(41) 99821-7073",
   "instagram": "https://www.instagram.com/rnogueiraplotagens",
   "bio": "Trabalhei 16 anos em uma empresa de comunicação visual, onde comecei como recepcionista e terminei como responsável pelo setor de projetos e produção. Há quatro anos, entrei no mundo do envelopamento com meu irmão, fundando a Rnogueira Plotagens. Comecei aplicando adesivos decorativos e, percebendo a demanda crescente no mercado, me especializei em envelopamento automotivo. Com o apoio da minha família, consegui conquistar a certificação e oferecer um atendimento de qualidade.",
-  "foto": "./instaladores/simone-nunes.jpg"
+  "foto": "./instaladores/simone-nunes.jpg",
+  "fotoCard": "./instaladores/cards/simone-nunes.jpg"
  },
  {
   "slug": "thiago-sossai",
@@ -856,7 +878,8 @@
   "telefone": "(13) 99167-1129",
   "instagram": "https://www.instagram.com/royal_envelopamentos",
   "bio": "Iniciou sua carreira em meados de 2017, quando aprendeu a envelopar móveis e geladeiras. O interesse pelo mundo automotivo foi automático, pois já era apaixonado por carros. Mesmo com pouca experiência, trabalhou com envelopamento automotivo quando se mudou para a Irlanda.\nEm 2020 retornou ao Brasil, montando seu próprio negócio, a “Royal Envelopamentos” no litoral paulista.\nCom o crescimento do cenário, se deparou com o alto nível dos instaladores e instrutores da Alltak® e batalhou para conquistar a Certificação Pro Expert Alltak.\n“Desde o primeiro contato que tive, me apaixonei por envelopamento. Minha ida para a Irlanda também contribuiu para que eu tivesse uma experiência e pudesse retornar ao Brasil com uma bagagem maior e principalmente para que eu pudesse montar o meu próprio negócio. Hoje digo que valeu a pena e continuará valendo todos os esforços para fazer parte desse time de peso e dizer que sou um Instalador Pro Expert da Alltak.”",
-  "foto": "./instaladores/tiago-securella.jpg"
+  "foto": "./instaladores/tiago-securella.jpg",
+  "fotoCard": "./instaladores/cards/tiago-securella.jpg"
  },
  {
   "slug": "valmir-rodrigues",
@@ -868,7 +891,8 @@
   "telefone": "(11) 96312-2364",
   "instagram": "https://www.instagram.com/val_wrapcustom",
   "bio": "O ano era 2006, onde ingressei no ramo da comunicação visual como auxiliar de acabamento. Na época ajudava a soldar lonas e em pouco tempo aprendi a envelopar frotas de uma marca de bebidas. Logo então entrei para a equipe de instalação e aprendi a solucionar problemas adversos que ocorriam com bastante frequência. Após 4 anos, entrei em outra empresa com mais experiência onde permaneci por 11 anos, onde fui instalador, e promovido a encarregado da equipe de instalação. Com responsabilidade maior l, aprendi a delegar minha equipe, e ter uma nova visão de fazer trabalhos decorativos residenciais. E isso foi aumentando minha vontade de seguir uma carreira solo, visando ser meu próprio patrão. E hoje sigo no ramo mais promissor do mercado decorativo e versátil, que a cada ano se destaca cada vez mais e conquista muitas vidas, e empresas corporativas.",
-  "foto": "./instaladores/valmir-rodrigues.jpg"
+  "foto": "./instaladores/valmir-rodrigues.jpg",
+  "fotoCard": "./instaladores/cards/valmir-rodrigues.jpg"
  },
  {
   "slug": "willert-swann-nepomuceno-raiol",
@@ -880,7 +904,8 @@
   "telefone": "+55 (91) 9626-3648",
   "instagram": "https://www.instagram.com/wsartemaniaenvelopamento",
   "bio": "Há 11 anos, meu primeiro contato com o envelopamento aconteceu em uma distribuidora. Por curiosidade, eu pegava as fichas técnicas das bobinas e estudava nos intervalos. Aquela curiosidade abriu um mundo novo. Comecei a comprar materiais, aprender e praticar. Depois, deixei a distribuidora e me tornei instalador autônomo, enxergando uma necessidade de profissionais especializados em decoração. Me especializei, cresci e hoje carrego com orgulho o nome da Alltak na camisa.",
-  "foto": "./instaladores/willert-swann-nepomuceno-raiol.jpg"
+  "foto": "./instaladores/willert-swann-nepomuceno-raiol.jpg",
+  "fotoCard": "./instaladores/cards/willert-swann-nepomuceno-raiol.jpg"
  },
  {
   "slug": "willian-henrique",
