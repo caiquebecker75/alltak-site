@@ -42,7 +42,12 @@ LEGENDA = re.compile(r'cr[ée]ditos?\b|divulga[çc][ãa]o', re.I)
 # public/noticias, que é refeita a cada importação)
 ILUSTRACAO = {'alltak-consolida-praticas-sustentaveis-com-usina-propria-de-reciclagem-e-processos-que': './assets/noticias/reciclagem.jpg'}
 # fotos maiores enviadas depois pela Alltak, no lugar da que veio no .docx
-FOTO_NOVA = {('alltak-destaca-sua-forca-no-mercado-automotivo-com-envelopamento-exclusivo-do-denza-b5-e', 3): './assets/noticias/salao-honda-wrv.jpg'}
+SALAO = 'alltak-destaca-sua-forca-no-mercado-automotivo-com-envelopamento-exclusivo-do-denza-b5-e'
+FOTO_NOVA = {
+    (SALAO, 1): ['./assets/noticias/salao-denza-1.jpg'],
+    (SALAO, 2): [f'./assets/noticias/salao-denza-{i}.jpg' for i in (2, 3, 4, 5)],
+    (SALAO, 3): ['./assets/noticias/salao-honda-wrv.jpg'],
+}
 
 
 def nfc(t: str) -> str:
@@ -132,7 +137,7 @@ def importar(arq: Path):
             for alvo in it['imgs']:
                 n += 1
                 if (slug, n) in FOTO_NOVA:
-                    srcs.append(FOTO_NOVA[(slug, n)])
+                    srcs.extend(FOTO_NOVA[(slug, n)])
                     continue
                 salvar_foto(z, alvo, FOTOS / f'{slug}-{n}.jpg')
                 srcs.append(f'./noticias/{slug}-{n}.jpg')
