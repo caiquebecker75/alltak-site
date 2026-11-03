@@ -314,7 +314,8 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
 
   // ---- Transparência salarial ----
   'transp.eyebrow': { pt: 'Institucional', en: 'Corporate', es: 'Institucional' },
-  'transp.titulo': { pt: 'Transparência Salarial', en: 'Pay Transparency', es: 'Transparencia Salarial' },
+  'transp.titulo': { pt: 'Relatório de Transparência Salarial', en: 'Pay Transparency Report', es: 'Informe de Transparencia Salarial' },
+  'sobre.transpVer': { pt: 'Ver relatório', en: 'View report', es: 'Ver informe' },
   'transp.headerSub': {
     pt: 'Relatório de Transparência Salarial (RTS), em conformidade com a Lei 14.611/2023.',
     en: 'Pay Transparency Report (RTS), in compliance with Brazilian Law 14,611/2023.',
@@ -327,7 +328,7 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
     es: 'Este informe es una exigencia legal brasileña. El informe oficial y el texto a continuación están disponibles solo en portugués.',
   },
   'transp.vigente': { pt: 'Relatório vigente', en: 'Current report', es: 'Informe vigente' },
-  'transp.semestre': { pt: '2º Semestre', en: '2nd Half', es: '2.º Semestre' },
+  'transp.semestre': { pt: '2º Semestre de 2026', en: '2nd Half of 2026', es: '2.º Semestre de 2026' },
   'transp.docOficial': {
     pt: 'Documento oficial publicado conforme a periodicidade semestral prevista na Lei 14.611/2023 e no Decreto 11.795/2023.',
     en: 'Official document published every six months, as required by Law 14,611/2023 and Decree 11,795/2023 (in Portuguese).',

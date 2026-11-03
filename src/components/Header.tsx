@@ -142,6 +142,11 @@ export default function Header() {
                 ) : (
                   <Link to={item.to}>{inner}</Link>
                 )}
+                {item.sub && (
+                  <Link to={item.sub.to} className="mb-1 ml-12 block font-display text-[clamp(0.95rem,2.2vh,1.5rem)] font-bold uppercase leading-tight text-white/60 transition hover:text-alltak-blue">
+                    {t(item.sub.tkey)}
+                  </Link>
+                )}
               </div>
             )
           })}

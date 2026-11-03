@@ -6,8 +6,7 @@ import { useI18n } from '../i18n'
 // Transparência Salarial exigido pela Lei 14.611/2023, atualizado por semestre.
 // Documento legal brasileiro: em EN/ES traduz títulos e rótulos, mantém o texto
 // do relatório em português e mostra um aviso.
-const PDF_ATUAL =
-  'https://alltak.com.br/wp-content/uploads/2026/10/Relatorio-Transparencia-Salarial-2o-Semestre.pdf'
+const PDF_ATUAL = './transparencia/relatorio-transparencia-salarial-2o-semestre-2026.pdf'
 
 export default function Transparencia() {
   const { lang, t } = useI18n()
@@ -34,7 +33,7 @@ export default function Transparencia() {
               <p>
                 Aqui, reconhecemos e incentivamos o brilho de cada colaborador. Acreditamos na
                 força da nossa cultura, onde a transparência e o respeito são pilares
-                fundamentais. Nosso valor Caveira simboliza igualdade e diversidade: aqui,
+                fundamentais. Nosso valor Caveira simboliza igualdade e diversidade – aqui,
                 somos todos iguais! Por isso, promovemos um espaço onde a dedicação e o talento
                 são sempre valorizados, garantindo oportunidades justas para todos.
               </p>

@@ -18,6 +18,8 @@ export type NavItem = {
   tkey: string
   to: string
   external?: boolean
+  /** link menor logo abaixo do item, no menu principal */
+  sub?: { tkey: string; to: string }
 }
 
 // ordem do menu = caminho do cliente: conhecer (produtos),
@@ -31,7 +33,7 @@ export const NAV: NavItem[] = [
   { label: 'Cursos', tkey: 'nav.cursos', to: '/cursos' },
   { label: 'Downloads', tkey: 'nav.downloads', to: '/downloads' },
   { label: 'Blog', tkey: 'nav.blog', to: '/noticias' },
-  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre' },
+  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre', sub: { tkey: 'transp.titulo', to: '/transparencia-salarial' } },
   { label: 'Contato', tkey: 'nav.contato', to: '/contato' },
 ]
 
