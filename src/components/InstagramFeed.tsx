@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Reveal from './Reveal'
-import { INSTAGRAM_FEED_URL, INSTAGRAM_URL } from '../data/site'
+import { INSTAGRAM_FEED_URL, INSTAGRAMS } from '../data/site'
 import { useI18n } from '../i18n'
 
 // Últimas 3 postagens do Instagram @alltakadesivos na Home, no visual dos cards
@@ -48,13 +48,16 @@ export default function InstagramFeed() {
     <section className="border-t border-white/10 bg-alltak-black py-20 md:py-28">
       <div className="container-x">
         <Reveal>
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="group max-w-2xl">
-              <span className="tag">Instagram</span>
-              <h2 className="mt-4 text-5xl text-white transition group-hover:text-alltak-blue md:text-7xl">@alltakadesivos</h2>
-              <p className="mt-3 text-white/60">{t('home.instaSub')}</p>
-            </a>
-            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-outline">{t('home.instaSeguir')} ↗</a>
+          <span className="tag">Instagram</span>
+          <p className="mt-4 max-w-2xl text-white/60">{t('home.instaSub')}</p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {INSTAGRAMS.map((perfil) => (
+              <a key={perfil} href={`https://www.instagram.com/${perfil}`} target="_blank" rel="noreferrer"
+                className="group flex items-center justify-between gap-3 border border-white/15 p-5 transition hover:border-alltak-blue">
+                <span className="break-all font-display text-2xl font-bold text-white transition group-hover:text-alltak-blue">@{perfil}</span>
+                <span className="text-white/50 transition group-hover:text-alltak-blue">↗</span>
+              </a>
+            ))}
           </div>
         </Reveal>
 
