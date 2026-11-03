@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import PageHeader from '../components/PageHeader'
 import { useT } from '../i18n'
-import { EMAIL_ALLTAK, enviarPorEmail } from '../lib/contato'
+import { EMAILS, enviarPorEmail } from '../lib/contato'
+import { CONTATO_CURSOS } from '../data/cursos'
 
 // valor enviado (sempre em PT, para o e-mail/CRM) + chave do rótulo exibido
 const PERFIS = [
@@ -12,14 +13,24 @@ const PERFIS = [
   ['Consumidor final', 'contato.perfil.consumidor'],
   ['Outro', 'contato.outro'],
 ]
+// valor enviado + chave do rótulo + setor que recebe a mensagem
 const ASSUNTOS = [
-  ['Compra', 'contato.assunto.compra'],
-  ['Produto', 'contato.assunto.produto'],
-  ['Suporte técnico', 'contato.assunto.suporte'],
-  ['Revenda', 'contato.assunto.revenda'],
-  ['Cursos', 'contato.assunto.cursos'],
-  ['Institucional', 'contato.assunto.institucional'],
-  ['Outro', 'contato.outro'],
+  ['Compra', 'contato.assunto.compra', EMAILS.comercial],
+  ['Produto', 'contato.assunto.produto', EMAILS.sac],
+  ['Suporte técnico', 'contato.assunto.suporte', EMAILS.sac],
+  ['Revenda', 'contato.assunto.revenda', EMAILS.comercial],
+  ['Cursos', 'contato.assunto.cursos', CONTATO_CURSOS.email],
+  ['Institucional', 'contato.assunto.institucional', EMAILS.marketing],
+  ['Fornecedores', 'contato.assunto.fornecedores', EMAILS.compras],
+  ['Trabalhe conosco', 'contato.assunto.rh', EMAILS.rh],
+  ['Outro', 'contato.outro', EMAILS.sac],
+]
+const SETORES = [
+  ['contato.setor.sac', EMAILS.sac],
+  ['contato.setor.marketing', EMAILS.marketing],
+  ['contato.setor.comercial', EMAILS.comercial],
+  ['contato.setor.compras', EMAILS.compras],
+  ['contato.setor.rh', EMAILS.rh],
 ]
 
 const field = 'w-full border border-black/15 bg-white px-4 py-3 text-sm outline-none focus:border-alltak-blue'
@@ -53,7 +64,7 @@ export default function Contato() {
                     ['Nome', v('nome')], ['Empresa', v('empresa')], ['E-mail', v('email')], ['WhatsApp', v('whatsapp')],
                     ['Cidade', v('cidade')], ['Estado', v('estado')], ['Perfil', v('perfil')], ['Assunto', v('assunto')],
                     ['Mensagem', v('mensagem')],
-                  ])
+                  ], ASSUNTOS.find(([a]) => a === v('assunto'))?.[2])
                   setSent(true)
                 }}
                 className="grid gap-4 sm:grid-cols-2"
@@ -87,7 +98,14 @@ export default function Contato() {
             </div>
             <div>
               <h4 className="font-display text-xl font-bold uppercase">{t('contato.email')}</h4>
-              <a href={`mailto:${EMAIL_ALLTAK}`} className="mt-2 block text-sm text-alltak-black/70 hover:text-alltak-blueDark">{EMAIL_ALLTAK}</a>
+              <dl className="mt-2 space-y-2 text-sm">
+                {SETORES.map(([k, email]) => (
+                  <div key={k}>
+                    <dt className="font-semibold text-alltak-black">{t(k)}</dt>
+                    <dd><a href={`mailto:${email}`} className="break-all text-alltak-black/70 hover:text-alltak-blueDark">{email}</a></dd>
+                  </div>
+                ))}
+              </dl>
             </div>
             <div>
               <h4 className="font-display text-xl font-bold uppercase">{t('contato.endereco')}</h4>
