@@ -636,6 +636,46 @@
   "semTextura": true
  },
  {
+  "code": "977KF25",
+  "name": "Kroma Forma Olaria",
+  "hex": "#9c5c44",
+  "swatch": null,
+  "applied": "977KF25_ap.jpg",
+  "family": "Kroma",
+  "bobina": "bobina/977kf25-kroma-forma-olaria.jpg",
+  "semTextura": true
+ },
+ {
+  "code": "977KF26",
+  "name": "Kroma Forma Merlot",
+  "hex": "#a23d37",
+  "swatch": null,
+  "applied": "977KF26_ap.jpg",
+  "family": "Kroma",
+  "bobina": "bobina/977kf26-kroma-forma-merlot.jpg",
+  "semTextura": true
+ },
+ {
+  "code": "977KF28",
+  "name": "Kroma Forma Falésia",
+  "hex": "#a9957e",
+  "swatch": null,
+  "applied": "977KF28_ap.jpg",
+  "family": "Kroma",
+  "bobina": "bobina/977kf28-kroma-forma-falesia.jpg",
+  "semTextura": true
+ },
+ {
+  "code": "977KF23",
+  "name": "Kroma Forma Fendi",
+  "hex": "#73776c",
+  "swatch": null,
+  "applied": "977KF23_ap.jpg",
+  "family": "Kroma",
+  "bobina": "bobina/977kf23-kroma-forma-fendi.jpg",
+  "semTextura": true
+ },
+ {
   "code": "977KF32",
   "name": "Kroma Forma Avelã Cremoso",
   "family": "Kroma",

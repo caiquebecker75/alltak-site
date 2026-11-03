@@ -351,29 +351,6 @@
  },
  {
   "categoria": "arquitetura",
-  "slug": "basicas",
-  "nome": "Básicas",
-  "titulo_seo": "Básicas | Alltak",
-  "meta_description": "Características Técnicas ROLOS DE 1,22 m x 25 m PVC CALANDRADO POLIMÉRICO ESPESSURA 100 μm (micra) ADESIVO ACRÍLICO SUPER PERMANENTE ACABAMENTO TEXTURIZADO",
-  "descricao": "",
-  "specs": [
-   "Rolos de 1,22 m x 25 m",
-   "PVC calandrado polimérico",
-   "Espessura 100 μm (micra)",
-   "Adesivo acrílico super permanente",
-   "Acabamento texturizado opaco",
-   "Acabamento brilhante (mármores)"
-  ],
-  "boletins": [
-   "./wp-uploads/2023/05/64-Especif.-Tecnica-Premium-JATEADO.pdf"
-  ],
-  "pdfs_apoio": [],
-  "cores": [],
-  "og_image": "https://alltak.com.br/wp-content/uploads/2023/04/Basicas-cores-solidas-alltak.jpg",
-  "url_antiga": "/produtos/arquitetura/basicas/"
- },
- {
-  "categoria": "arquitetura",
   "slug": "cristais",
   "nome": "Cristais",
   "titulo_seo": "Cristais | Alltak",

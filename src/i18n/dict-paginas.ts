@@ -374,9 +374,9 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
   },
   'priv.contatoTitulo': { pt: 'Contato', en: 'Contact', es: 'Contacto' },
   'priv.contatoTexto': {
-    pt: 'Dúvidas sobre privacidade: contato@alltak.com.br.',
-    en: 'Privacy questions: contato@alltak.com.br.',
-    es: 'Dudas sobre privacidad: contato@alltak.com.br.',
+    pt: 'Dúvidas sobre privacidade: sac@alltak.com.br.',
+    en: 'Privacy questions: sac@alltak.com.br.',
+    es: 'Dudas sobre privacidad: sac@alltak.com.br.',
   },
 
   // ---- produtos / linha (restantes) ----

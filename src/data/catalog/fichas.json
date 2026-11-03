@@ -53,22 +53,19 @@
   "signs": {
    "en": [
     "*Expected durability, which may vary according to weather conditions and improper use of the product.",
-    "Silver (Prata) and gold (Ouro) colors: 6-month durability.",
-    "Fluor Squad line for indoor use only, with an expected durability of 3 months.",
+    "Silver and Gold colors: 12-month durability. Silver Flex: 6 months.",
     "Read the technical data sheet before using the product.",
     "The color shown is for illustration only and may vary from screen to screen. We recommend requesting a physical sample."
    ],
    "es": [
     "*Durabilidad esperada, que puede variar según las condiciones climáticas y el uso indebido del producto.",
-    "Colores plata (Prata) y oro (Ouro): durabilidad de 6 meses.",
-    "Línea Fluor Squad solo para uso en interiores (indoor), con durabilidad esperada de 3 meses.",
+    "Colores Plata y Oro: durabilidad de 12 meses. Plata Flex: 6 meses.",
     "Lea el boletín técnico antes de utilizar el producto.",
     "El color representado es ilustrativo y puede variar según cada pantalla. Recomendamos solicitar una muestra física."
    ],
    "pt": [
     "*Durabilidade esperada, podendo variar de acordo com as condições climáticas e o uso indevido do produto.",
-    "Cores Prata e Ouro: durabilidade de 6 meses.",
-    "Linha Fluor Squad somente para uso indoor (ambiente interno), com durabilidade esperada de 3 meses.",
+    "Cores Prata e Ouro: durabilidade de 12 meses. Prata Flex: 6 meses.",
     "Leia o boletim técnico antes de utilizar o produto.",
     "A cor representada é ilustrativa e pode variar de acordo com cada dispositivo de tela. Recomendamos que solicite amostra física."
    ]
@@ -8482,12 +8479,12 @@
      "Type: polymeric electronic cutting vinyl",
      "Film: 80 micron calendered PVC (polymeric material)",
      "Adhesive: permanent acrylic",
-     "Colors: available in 33 colors",
+     "Colors: available in 30 colors",
      "Widths: 0.61 / 1.22 m x 50 m",
      "Expected durability: up to 8 years* (Ouro, Prata and Aço Escovado Prata: up to 12 months)",
      "Finishes: high gloss; smooth matte (Branco Fosco and Preto Fosco); textured (Aço Escovado Prata, 150 µm)",
      "Highlights: smooth cut, better color opacity, vibrant colors, versatile applications and wide color range",
-     "Use: except for the Fluor Squad line, recommended for indoor use only. Read the technical data sheet before using the product."
+     "Use: read the technical data sheet before using the product."
     ]
    },
    "es": {
@@ -8497,12 +8494,12 @@
      "Tipo: corte electrónico polimérico",
      "Película: PVC calandrado de 80 micras (material polimérico)",
      "Adhesivo: acrílico permanente",
-     "Colores: disponible en 33 colores",
+     "Colores: disponible en 30 colores",
      "Anchos: 0,61 / 1,22 m x 50 m",
      "Durabilidad esperada: hasta 8 años* (Ouro, Prata y Aço Escovado Prata: hasta 12 meses)",
      "Acabados: brillo intenso; liso mate (Branco Fosco y Preto Fosco); texturizado (Aço Escovado Prata, 150 µm)",
      "Diferenciales: corte suave, mejor cierre de color, colores vibrantes, versatilidad de aplicaciones y variedad de colores",
-     "Uso: excepto la línea Fluor Squad, indicada solo para uso en interiores (indoor). Lea el boletín técnico antes de utilizar el producto."
+     "Uso: lea el boletín técnico antes de utilizar el producto."
     ]
    },
    "fonte": "Alltak Signs 2026",
@@ -8513,12 +8510,12 @@
      "Tipo: recorte eletrônico polimérico",
      "Filme: PVC calandrado 80 micra (material polimérico)",
      "Adesivo: acrílico permanente",
-     "Cores: disponível em 33 cores",
+     "Cores: disponível em 30 cores",
      "Larguras: 0,61 / 1,22 m x 50 m",
      "Durabilidade esperada: até 8 anos* (Ouro, Prata e Aço Escovado Prata: até 12 meses)",
      "Acabamentos: brilho intenso; liso fosco (Branco Fosco e Preto Fosco); texturizado (Aço Escovado Prata, 150 µm)",
      "Diferenciais: corte macio, melhor fechamento de cor, cores vibrantes, versatilidade de aplicações e variedade de cores",
-     "Uso: exceto linha Fluor Squad, indicada somente para uso indoor. Leia o boletim técnico antes de utilizar o produto."
+     "Uso: leia o boletim técnico antes de utilizar o produto."
     ]
    }
   },

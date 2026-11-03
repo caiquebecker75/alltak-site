@@ -225,30 +225,6 @@
    ]
   }
  },
- "basicas": {
-  "en": {
-   "descricao": "",
-   "specs": [
-    "Rolls of 1.22 m x 25 m",
-    "Polymeric calendered PVC",
-    "Thickness: 100 μm (microns)",
-    "Super-permanent acrylic adhesive",
-    "Opaque textured finish",
-    "Glossy finish (marbles)"
-   ]
-  },
-  "es": {
-   "descricao": "",
-   "specs": [
-    "Rollos de 1,22 m x 25 m",
-    "PVC calandrado polimérico",
-    "Espesor: 100 μm (micras)",
-    "Adhesivo acrílico superpermanente",
-    "Acabado texturizado opaco",
-    "Acabado brillante (mármoles)"
-   ]
-  }
- },
  "cristais": {
   "en": {
    "descricao": "",
