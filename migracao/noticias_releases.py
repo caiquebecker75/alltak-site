@@ -38,6 +38,11 @@ IGNORAR = {'08242026_alltak_pós_festival_interlagos - revisado(1)', '08052025_a
 CORTE = re.compile(r'^(sobre a alltak|(contatos?|informa[çc][õo]es) para a imprensa)', re.I)
 FOTOS_IMPRENSA = re.compile(r'drive\.google\.com|^mais fotos no|^confira as imagens da', re.I)
 LEGENDA = re.compile(r'cr[ée]ditos?\b|divulga[çc][ãa]o', re.I)
+# releases que vieram sem imagem: ilustração pedida pela Alltak (fica fora de
+# public/noticias, que é refeita a cada importação)
+ILUSTRACAO = {'alltak-consolida-praticas-sustentaveis-com-usina-propria-de-reciclagem-e-processos-que': './assets/noticias/reciclagem.jpg'}
+# fotos maiores enviadas depois pela Alltak, no lugar da que veio no .docx
+FOTO_NOVA = {('alltak-destaca-sua-forca-no-mercado-automotivo-com-envelopamento-exclusivo-do-denza-b5-e', 3): './assets/noticias/salao-honda-wrv.jpg'}
 
 
 def nfc(t: str) -> str:
@@ -126,6 +131,9 @@ def importar(arq: Path):
             srcs = []
             for alvo in it['imgs']:
                 n += 1
+                if (slug, n) in FOTO_NOVA:
+                    srcs.append(FOTO_NOVA[(slug, n)])
+                    continue
                 salvar_foto(z, alvo, FOTOS / f'{slug}-{n}.jpg')
                 srcs.append(f'./noticias/{slug}-{n}.jpg')
             bloco = {'tipo': 'imagens', 'srcs': srcs}
@@ -142,6 +150,8 @@ def importar(arq: Path):
             blocos.append({'tipo': 'titulo', 'texto': t})
         else:
             blocos.append({'tipo': 'texto', 'texto': t})
+    if slug in ILUSTRACAO:
+        blocos.insert(0, {'tipo': 'imagens', 'srcs': [ILUSTRACAO[slug]]})
     capa = next((b['srcs'][0] for b in blocos if b['tipo'] == 'imagens'), None)
     primeiro = next(b['texto'] for b in blocos if b['tipo'] == 'texto')
     resumo = linha_fina or (primeiro if len(primeiro) <= 200 else primeiro[:200].rsplit(' ', 1)[0] + '…')
