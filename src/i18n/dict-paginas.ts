@@ -161,9 +161,9 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
   'contato.horario': { pt: 'Seg. a Sex., 8h às 18h', en: 'Mon. to Fri., 8 a.m. to 6 p.m.', es: 'Lun. a vie., de 8 a 18 h' },
   'contato.endereco': { pt: 'Endereço', en: 'Address', es: 'Dirección' },
   'contato.enderecoTexto': {
-    pt: 'Preencher com o endereço oficial da Alltak.',
-    en: 'To be filled in with Alltak’s official address.',
-    es: 'Completar con la dirección oficial de Alltak.',
+    pt: 'Rua Tamotsu Iwasse, 1273, Vila Nova Bonsucesso, Guarulhos - SP, CEP 07176-000',
+    en: 'Rua Tamotsu Iwasse, 1273, Vila Nova Bonsucesso, Guarulhos - SP, CEP 07176-000, Brazil',
+    es: 'Rua Tamotsu Iwasse, 1273, Vila Nova Bonsucesso, Guarulhos - SP, CEP 07176-000, Brasil',
   },
 
   // ---- Onde comprar ----
