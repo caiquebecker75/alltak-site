@@ -271,9 +271,9 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
   // ---- Downloads ----
   'dl.eyebrow': { pt: 'Materiais oficiais', en: 'Official materials', es: 'Materiales oficiales' },
   'dl.headerSub': {
-    pt: 'Catálogos, logotipos, perfis de cor e materiais oficiais da Alltak. Escolha a categoria; o download é liberado após um cadastro rápido.',
-    en: 'Alltak catalogs, logos, color profiles and official materials. Pick a category; downloads unlock after a quick sign-up.',
-    es: 'Catálogos, logotipos, perfiles de color y materiales oficiales de Alltak. Elige la categoría; la descarga se habilita tras un registro rápido.',
+    pt: 'Catálogos e logotipos oficiais da Alltak. Escolha a categoria; o download é liberado após um cadastro rápido.',
+    en: 'Official Alltak catalogs and logos. Pick a category; downloads unlock after a quick sign-up.',
+    es: 'Catálogos y logotipos oficiales de Alltak. Elige la categoría; la descarga se habilita tras un registro rápido.',
   },
   'dl.cadastro': {
     pt: 'O download é liberado após um cadastro rápido.',

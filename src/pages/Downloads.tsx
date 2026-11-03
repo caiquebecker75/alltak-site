@@ -30,8 +30,7 @@ function Miniatura({ arquivo, nome, tipo, claro = true }: { arquivo: string; nom
   )
 }
 
-// Downloads como no site antigo: a página principal lista os seis grupos
-// (catálogos, logotipos, perfis de cor, pattern, wallpaper, instalador) e
+// Downloads: a página principal lista os grupos (catálogos e logotipos) e
 // cada grupo tem a sua página com os arquivos. Download com cadastro (leads).
 
 export function DownloadsInicio() {
