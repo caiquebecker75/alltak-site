@@ -135,7 +135,7 @@ def importar(arq: Path):
                 i += 1
             blocos.append(bloco)
             continue
-        t = it['txt']
+        t = it['txt'].replace('Voce pode', 'Você pode')  # correção aprovada pela Alltak
         if it['lista'] or t.startswith('•'):
             blocos.append({'tipo': 'item', 'texto': t.lstrip('• ').strip()})
         elif it['neg'] and len(t) < 110 and not t.endswith((':', '.', ';', ',')):

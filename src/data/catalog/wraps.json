@@ -50,16 +50,6 @@
   "bobina": "bobina/18s50m-satin-gotham-blue-metallic.jpg"
  },
  {
-  "code": "18S84M",
-  "name": "Satin Kiwi Green Metallic",
-  "family": "Satin",
-  "acabamento": "Acetinado Metálico",
-  "hex": "#5c9404",
-  "swatch": "18S84M_sw.jpg",
-  "applied": "18S84M_ap.jpg",
-  "bobina": "bobina/18s84m-satin-kiwi-green-metallic.jpg"
- },
- {
   "code": "18S21",
   "name": "Satin Yellow",
   "family": "Satin",
@@ -110,6 +100,15 @@
   "bobina": "bobina/18s45-satin-pink.jpg"
  },
  {
+  "code": "18S80M",
+  "name": "Satin Brown Metallic",
+  "family": "Satin",
+  "acabamento": "Acetinado Metálico",
+  "hex": "#6b5a3e",
+  "swatch": "18S80M_sw.jpg",
+  "applied": "18S80M_ap.jpg"
+ },
+ {
   "code": "18S946P",
   "name": "Satin Pearl White",
   "family": "Satin",
@@ -151,7 +150,7 @@
  },
  {
   "code": "18S74M",
-  "name": "Satin Adamantium Gray Metallic",
+  "name": "Satin Adamantium Metallic",
   "family": "Satin",
   "acabamento": "Acetinado Metálico",
   "hex": "#5c646c",
@@ -301,7 +300,7 @@
  },
  {
   "code": "18J932M",
-  "name": "Jateado Gray Metallic",
+  "name": "Jateado Grey Metallic",
   "family": "Jateado",
   "acabamento": "Texturizado Fosco",
   "hex": "#34342c",
@@ -348,16 +347,6 @@
   "swatch": "18U53_sw.jpg",
   "applied": "18U53_ap.jpg",
   "bobina": "bobina/18u53-ultra-baby-blue.jpg"
- },
- {
-  "code": "18U57",
-  "name": "Ultra Biscayne Blue",
-  "family": "Ultra",
-  "acabamento": "Brilhante",
-  "hex": "#1cacd4",
-  "swatch": "18U57_sw.jpg",
-  "applied": "18U57_ap.jpg",
-  "bobina": "bobina/18u57-ultra-biscayne-blue-alltak.jpg"
  },
  {
   "code": "18U196M",
@@ -408,16 +397,6 @@
   "swatch": "18U562_sw.jpg",
   "applied": "18U562_ap.jpg",
   "bobina": "bobina/18u562-ultra-sea-blue.jpg"
- },
- {
-  "code": "18U67",
-  "name": "Ultra Garapa Green",
-  "family": "Ultra",
-  "acabamento": "Brilhante",
-  "hex": "#a4ac44",
-  "swatch": "18U67_sw.jpg",
-  "applied": "18U67_ap.jpg",
-  "bobina": "bobina/18u67-ultra-garapa-green.jpg"
  },
  {
   "code": "18U66",
@@ -501,23 +480,13 @@
  },
  {
   "code": "18US02M",
-  "name": "Ultra Star Yellow Metallic",
+  "name": "Ultra Star Yellow",
   "family": "Ultra",
   "acabamento": "Brilhante",
   "hex": "#eca404",
   "swatch": "18US02M_sw.jpg",
   "applied": "18US02M_ap.jpg",
   "bobina": "bobina/18us02m-ultra-star-yellow.jpg"
- },
- {
-  "code": "18UD06M",
-  "name": "Ultra Solar Yellow Metallic",
-  "family": "Ultra",
-  "acabamento": "Brilhante Flake",
-  "hex": "#9c9c9c",
-  "swatch": "18UD06M_sw.jpg",
-  "applied": "18UD06M_ap.jpg",
-  "bobina": "bobina/18ud06m-ultra-solar-yellow-metallic.jpg"
  },
  {
   "code": "18UD07M",
@@ -560,26 +529,6 @@
   "bobina": "bobina/18u32-ultra-spicy-red.jpg"
  },
  {
-  "code": "18US01M",
-  "name": "Ultra Star Red Metallic",
-  "family": "Ultra",
-  "acabamento": "Brilhante",
-  "hex": "#940404",
-  "swatch": "18US01M_sw.jpg",
-  "applied": "18US01M_ap.jpg",
-  "bobina": "bobina/18us01m-ultra-star-red.jpg"
- },
- {
-  "code": "18UD08M",
-  "name": "Ultra Red Radiant Ruby Metallic",
-  "family": "Ultra",
-  "acabamento": "Flake Brilhante",
-  "hex": "#1c0404",
-  "swatch": "18UD08M_sw.jpg",
-  "applied": "18UD08M_ap.jpg",
-  "bobina": "bobina/18ud08m-ultra-red-radiant-ruby-metallic.jpg"
- },
- {
   "code": "18U88",
   "name": "Ultra Malbec Red",
   "family": "Ultra",
@@ -608,16 +557,6 @@
   "swatch": "18U89_sw.jpg",
   "applied": "18U89_ap.jpg",
   "bobina": "bobina/18u89-ultra-vanila-ice-cream.jpg"
- },
- {
-  "code": "18U51M",
-  "name": "Ultra Quartz Rose Metallic",
-  "family": "Ultra",
-  "acabamento": "Brilhante",
-  "hex": "#ececec",
-  "swatch": "18U51M_sw.jpg",
-  "applied": "18U51M_ap.jpg",
-  "bobina": "bobina/18u51m-ultra-quartz-rose-metallic.jpg"
  },
  {
   "code": "18U46",
@@ -740,6 +679,16 @@
   "bobina": "bobina/18u70-ultra-black-piano.jpg"
  },
  {
+  "code": "18U01",
+  "name": "Ultra Cristal",
+  "family": "Ultra",
+  "acabamento": "Brilhante",
+  "hex": "#e8e8e8",
+  "swatch": null,
+  "applied": null,
+  "bobina": "bobina/18u01-ultra-cristal.jpg"
+ },
+ {
   "code": "18FXB70",
   "name": "Fx Brushed Black",
   "family": "Fx",
@@ -760,14 +709,13 @@
   "bobina": "bobina/18fxb932m-fx-brushed-graphite.jpg"
  },
  {
-  "code": "18FXIMPACT70",
+  "code": "18FX180",
   "name": "Impact Black",
   "family": "Fx",
   "acabamento": "Texturizado Fosco",
   "hex": "#141414",
   "swatch": "18J70_sw.jpg",
-  "applied": "18J70_ap.jpg",
-  "semCodigo": true
+  "applied": "18J70_ap.jpg"
  },
  {
   "code": "18G70",
@@ -821,7 +769,7 @@
  },
  {
   "code": "184D70",
-  "name": "4D Carbon Black Metallic",
+  "name": "4D Carbon Black",
   "family": "Carbon",
   "acabamento": "Texturizado Fosco",
   "hex": "#1c1c1c",
@@ -841,7 +789,7 @@
  },
  {
   "code": "18E501",
-  "name": "5 Elemento Graphite",
+  "name": "5 Elemento Graphite Metallic",
   "family": "Carbon",
   "acabamento": "Brilhante",
   "hex": "#2c2c2c",
@@ -888,6 +836,46 @@
   "swatch": "18K10_sw.jpg",
   "applied": "18K10_ap.jpg",
   "bobina": "bobina/18k10-krusher-white.jpg"
+ },
+ {
+  "code": "18KLG02",
+  "name": "Klear Gloss Yellow",
+  "family": "Klear",
+  "acabamento": "Brilhante",
+  "hex": "#f5d400",
+  "swatch": null,
+  "applied": null,
+  "bobina": "bobina/18klg02-klear-gloss-yellow.jpg"
+ },
+ {
+  "code": "18KLG03",
+  "name": "Klear Gloss Red",
+  "family": "Klear",
+  "acabamento": "Brilhante",
+  "hex": "#e0444a",
+  "swatch": null,
+  "applied": null,
+  "bobina": "bobina/18klg03-klear-gloss-red.jpg"
+ },
+ {
+  "code": "18KLG07",
+  "name": "Klear Gloss Smoked",
+  "family": "Klear",
+  "acabamento": "Brilhante",
+  "hex": "#6f6a5f",
+  "swatch": null,
+  "applied": null,
+  "bobina": "bobina/18klg07-klear-gloss-smoked.jpg"
+ },
+ {
+  "code": "18KLG08",
+  "name": "Klear Gloss Smoked Black Mask",
+  "family": "Klear",
+  "acabamento": "Brilhante",
+  "hex": "#2a2620",
+  "swatch": null,
+  "applied": null,
+  "bobina": "bobina/18klg08-klear-gloss-smoked-black-mask.jpg"
  },
  {
   "code": "18EVO21M",
@@ -1100,50 +1088,6 @@
   "bobina": "bobina/18evo12m-evolution-pro-thunderstorm-gray-metallic.jpg"
  },
  {
-  "code": "18E505",
-  "name": "5 Elemento Blue",
-  "family": "Carbon",
-  "hex": "#383f64",
-  "swatch": null,
-  "applied": null,
-  "bobina": "bobina/18e505-5-elemento-blue.jpg",
-  "doDrive": true,
-  "acabamento": "Brilhante"
- },
- {
-  "code": "18E503",
-  "name": "5 Elemento Pink",
-  "family": "Carbon",
-  "hex": "#7a5b68",
-  "swatch": null,
-  "applied": null,
-  "bobina": "bobina/18e503-5-elemento-pink.jpg",
-  "doDrive": true,
-  "acabamento": "Brilhante"
- },
- {
-  "code": "18E504",
-  "name": "5 Elemento Red",
-  "family": "Carbon",
-  "hex": "#713b3e",
-  "swatch": null,
-  "applied": null,
-  "bobina": "bobina/18e504-5-elemento-red.jpg",
-  "doDrive": true,
-  "acabamento": "Brilhante"
- },
- {
-  "code": "18E502",
-  "name": "5 Elemento Yellow",
-  "family": "Carbon",
-  "hex": "#75663b",
-  "swatch": null,
-  "applied": null,
-  "bobina": "bobina/18e502-5-elemento-yellow.jpg",
-  "doDrive": true,
-  "acabamento": "Brilhante"
- },
- {
   "code": "18FPP01",
   "name": "FPP Gloss Cristal X-Protection",
   "family": "FPP",
@@ -1152,7 +1096,7 @@
   "applied": null,
   "bobina": "bobina/18fpp01-fpp-gloss-cristal-x-protection.jpg",
   "doDrive": true,
-  "acabamento": "Brilhante"
+  "acabamento": "Brilhante Cristal"
  },
  {
   "code": "18FPP02",
@@ -1163,7 +1107,7 @@
   "applied": null,
   "bobina": "bobina/18fpp02-fpp-matte-cristal-x-protection.jpg",
   "doDrive": true,
-  "acabamento": "Fosco"
+  "acabamento": "Fosco Cristal"
  },
  {
   "code": "18UCF01",
@@ -1174,7 +1118,8 @@
   "applied": null,
   "bobina": "bobina/18ucf01-ultra-free-yellow.jpg",
   "doDrive": true,
-  "acabamento": "Brilhante"
+  "acabamento": "Brilhante",
+  "semCodigo": true
  },
  {
   "code": "IWC-GLOSS-ASHE-GREY",

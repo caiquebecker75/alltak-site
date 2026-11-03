@@ -5118,6 +5118,39 @@
     ]
    }
   },
+  "wraps:18FX180": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Finish: textured matte",
+     "Dimensions: 1.22 × 25 m rolls",
+     "Thickness: 140 microns",
+     "Adhesive: repositionable acrylic",
+     "Technology: Airflow bubble-free system"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Acabado: texturizado mate",
+     "Dimensiones: bobinas de 1,22 × 25 m",
+     "Espesor: 140 micras",
+     "Adhesivo: acrílico reposicionable",
+     "Tecnología: Airflow sistema antiburbujas"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Acabamento: texturizado fosco",
+     "Dimensões: bobinas de 1,22 × 25 m",
+     "Espessura: 140 micras",
+     "Adesivo: acrílico reposicionável",
+     "Tecnologia: sistema Airflow antibolhas"
+    ]
+   }
+  },
   "wraps:18FXB70": {
    "en": {
     "descricao": "",
@@ -6420,7 +6453,7 @@
     ]
    }
   },
-  "wraps:18S84M": {
+  "wraps:18S80M": {
    "en": {
     "descricao": "",
     "specs": [
@@ -6552,6 +6585,42 @@
      "Filme: PVC calandrado 100 micra",
      "Adesivo: acrílico reposicionável",
      "Tecnologia: sistema Airflow antibolhas"
+    ]
+   }
+  },
+  "wraps:18U01": {
+   "en": {
+    "descricao": "",
+    "specs": [
+     "Use: vehicle paint protection, image lamination and digital printing",
+     "Face film: transparent calendered",
+     "Thickness: 100 microns",
+     "Width: 1.38 × 25 m",
+     "Protective film: moldable",
+     "Finish: glossy"
+    ]
+   },
+   "es": {
+    "descricao": "",
+    "specs": [
+     "Uso: protección de la pintura de vehículos, laminación de imágenes e impresión digital",
+     "Frontal: calandrado transparente",
+     "Espesor: 100 micras",
+     "Ancho: 1,38 × 25 m",
+     "Película protectora: moldeable",
+     "Acabado: brillante"
+    ]
+   },
+   "fonte": "Alltak Wraps 2026",
+   "pt": {
+    "descricao": "",
+    "specs": [
+     "Uso: proteção da pintura de veículos, laminação de imagens e impressão digital",
+     "Frontal: calandrado transparente",
+     "Espessura: 100 micras",
+     "Largura: 1,38 × 25 m",
+     "Película de proteção: moldável",
+     "Acabamento: brilhante"
     ]
    }
   },
@@ -7068,42 +7137,6 @@
     ]
    }
   },
-  "wraps:18U51M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
   "wraps:18U53": {
    "en": {
     "descricao": "",
@@ -7177,42 +7210,6 @@
    }
   },
   "wraps:18U562": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18U57": {
    "en": {
     "descricao": "",
     "specs": [
@@ -7357,42 +7354,6 @@
    }
   },
   "wraps:18U66": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18U67": {
    "en": {
     "descricao": "",
     "specs": [
@@ -7761,79 +7722,7 @@
     ]
    }
   },
-  "wraps:18UD06M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy flake",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 120 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: flake brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 120 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: flake brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 120 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
   "wraps:18UD07M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy flake",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 120 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: flake brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 120 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: flake brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 120 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18UD08M": {
    "en": {
     "descricao": "",
     "specs": [
@@ -7906,42 +7795,6 @@
    }
   },
   "wraps:18UK01M": {
-   "en": {
-    "descricao": "",
-    "specs": [
-     "Finish: glossy",
-     "Dimensions: 1.38 × 25 m rolls",
-     "Film: calendered PVC, 100 microns",
-     "Protective film: moldable",
-     "Adhesive: repositionable acrylic",
-     "Technology: Airflow bubble-free system"
-    ]
-   },
-   "es": {
-    "descricao": "",
-    "specs": [
-     "Acabado: brillante",
-     "Dimensiones: rollos de 1,38 × 25 m",
-     "Película: PVC calandrado 100 micras",
-     "Película protectora: moldeable",
-     "Adhesivo: acrílico reposicionable",
-     "Tecnología: Airflow sistema antiburbujas"
-    ]
-   },
-   "fonte": "Alltak Wraps 2026",
-   "pt": {
-    "descricao": "",
-    "specs": [
-     "Acabamento: brilhante",
-     "Dimensões: rolos de 1,38 × 25 m",
-     "Filme: PVC calandrado 100 micra",
-     "Película de proteção: moldável",
-     "Adesivo: acrílico reposicionável",
-     "Tecnologia: sistema Airflow antibolhas"
-    ]
-   }
-  },
-  "wraps:18US01M": {
    "en": {
     "descricao": "",
     "specs": [
@@ -8064,7 +7917,7 @@
      "Protective film: moldable (5 Elemento)",
      "Adhesive: repositionable acrylic",
      "Technology: Airflow bubble-free system (Airflow 3.0)",
-     "5 Elemento colors: Red (18E504), Yellow (18E502), Pink (18E503), Blue (18E505) and Graphite Metallic (18E501)",
+     "5 Elemento color: Graphite Metallic (18E501)",
      "Series: 1800 Automotive Series",
      "Origin: Made in Brazil"
     ]
@@ -8078,7 +7931,7 @@
      "Película protectora: moldeable (5 Elemento)",
      "Adhesivo: acrílico reposicionable",
      "Tecnología: Airflow sistema antiburbujas (Airflow 3.0)",
-     "Colores 5 Elemento: Red (18E504), Yellow (18E502), Pink (18E503), Blue (18E505) y Graphite Metallic (18E501)",
+     "Color 5 Elemento: Graphite Metallic (18E501)",
      "Serie: 1800 Automotive Series",
      "Origen: Made in Brazil"
     ]
@@ -8093,7 +7946,7 @@
      "Película de proteção: moldável (5 Elemento)",
      "Adesivo: acrílico reposicionável",
      "Tecnologia: sistema Airflow antibolhas (Airflow 3.0)",
-     "Cores 5 Elemento: Red (18E504), Yellow (18E502), Pink (18E503), Blue (18E505) e Graphite Metallic (18E501)",
+     "Cor 5 Elemento: Graphite Metallic (18E501)",
      "Série: 1800 Automotive Series",
      "Origem: Made in Brazil"
     ]
@@ -8798,7 +8651,7 @@
     "specs": [
      "Dimensions: 1.38 × 25 m rolls",
      "Finishes: glossy, glossy flake and glossy chameleon",
-     "Film: calendered PVC, 100 microns (120 microns in the flake and chameleon versions: 18UD06M, 18UD07M, 18UD08M, 18UD09M and 18UD10M)",
+     "Film: calendered PVC, 100 microns (120 microns in the flake and chameleon versions: 18UD07M and 18UD10M)",
      "Protective film: moldable",
      "Adhesive: repositionable acrylic",
      "Technology: Airflow bubble-free system (Airflow 3.0)",
@@ -8813,7 +8666,7 @@
     "specs": [
      "Dimensiones: rollos de 1,38 × 25 m",
      "Acabados: brillante, flake brillante y camaleón brillante",
-     "Película: PVC calandrado 100 micras (120 micras en las versiones flake y camaleón: 18UD06M, 18UD07M, 18UD08M, 18UD09M y 18UD10M)",
+     "Película: PVC calandrado 100 micras (120 micras en las versiones flake y camaleón: 18UD07M y 18UD10M)",
      "Película protectora: moldeable",
      "Adhesivo: acrílico reposicionable",
      "Tecnología: Airflow sistema antiburbujas (Airflow 3.0)",
@@ -8829,7 +8682,7 @@
     "specs": [
      "Dimensões: rolos de 1,38 × 25 m",
      "Acabamentos: brilhante, flake brilhante e camaleão brilhante",
-     "Filme: PVC calandrado 100 micra (120 micra nas versões flake e camaleão: 18UD06M, 18UD07M, 18UD08M, 18UD09M e 18UD10M)",
+     "Filme: PVC calandrado 100 micra (120 micra nas versões flake e camaleão: 18UD07M e 18UD10M)",
      "Película de proteção: moldável",
      "Adesivo: acrílico reposicionável",
      "Tecnologia: sistema Airflow antibolhas (Airflow 3.0)",

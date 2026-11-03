@@ -17,6 +17,7 @@ const FAMILIA_DA_LINHA: Record<string, [linha: string, familia: string]> = {
   'protecao-de-pintura-ppf': ['wraps', 'FPP'],
   fx: ['wraps', 'Fx'],
   jateado: ['wraps', 'Jateado'],
+  klear: ['wraps', 'Klear'],
   krusher: ['wraps', 'Krusher'],
   satin: ['wraps', 'Satin'],
   ultra: ['wraps', 'Ultra'],

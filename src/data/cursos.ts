@@ -76,7 +76,7 @@ export const CURSOS: Curso[] = [
     nome: 'Módulo Intermediário',
     chamada: 'Envelopamento automotivo sem mistérios',
     resumo: 'Para quem já atua no mercado e para quem busca iniciar no ramo: um fluxo de trabalho limpo e organizado, que diminui o tempo de aplicação e evita erros, perdas e retrabalho.',
-    imagem: './colors/wraps/18S84M_ap.jpg',
+    imagem: './colors/wraps/18J62MW_ap.jpg',
     blocos: [
       { titulo: 'O curso', texto: INTRO_ACADEMIA },
       ...MERCADO_E_METODO,
