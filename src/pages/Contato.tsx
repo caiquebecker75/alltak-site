@@ -25,13 +25,6 @@ const ASSUNTOS = [
   ['Trabalhe conosco', 'contato.assunto.rh', EMAILS.rh],
   ['Outro', 'contato.outro', EMAILS.sac],
 ]
-const SETORES = [
-  ['contato.setor.sac', EMAILS.sac],
-  ['contato.setor.marketing', EMAILS.marketing],
-  ['contato.setor.comercial', EMAILS.comercial],
-  ['contato.setor.compras', EMAILS.compras],
-  ['contato.setor.rh', EMAILS.rh],
-]
 
 const field = 'w-full border border-black/15 bg-white px-4 py-3 text-sm outline-none focus:border-alltak-blue'
 
@@ -98,14 +91,7 @@ export default function Contato() {
             </div>
             <div>
               <h4 className="font-display text-xl font-bold uppercase">{t('contato.email')}</h4>
-              <dl className="mt-2 space-y-2 text-sm">
-                {SETORES.map(([k, email]) => (
-                  <div key={k}>
-                    <dt className="font-semibold text-alltak-black">{t(k)}</dt>
-                    <dd><a href={`mailto:${email}`} className="break-all text-alltak-black/70 hover:text-alltak-blueDark">{email}</a></dd>
-                  </div>
-                ))}
-              </dl>
+              <a href={`mailto:${EMAILS.sac}`} className="mt-2 block text-sm text-alltak-black/70 hover:text-alltak-blueDark">{EMAILS.sac}</a>
             </div>
             <div>
               <h4 className="font-display text-xl font-bold uppercase">{t('contato.endereco')}</h4>
