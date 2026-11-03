@@ -4,7 +4,7 @@ import PageHeader from '../components/PageHeader'
 import blog from '../data/wp/blog.json'
 import { useI18n, type Lang } from '../i18n'
 
-// Blog migrado do site antigo: 100+ artigos sobre envelopamento e decoração.
+// Notícias: releases da Alltak (2024 a 2026) e os artigos migrados do site antigo.
 // Os artigos ficam em português; só a interface é traduzida.
 
 type Post = { slug: string; titulo: string; data: string; capa: string | null; resumo: string }

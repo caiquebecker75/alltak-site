@@ -1,16 +1,22 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import blog from '../data/wp/blog.json'
 import { useI18n, useT, type Lang } from '../i18n'
 import { enviarPorEmail } from '../lib/contato'
 
 // Artigo do blog: conteúdo completo carregado sob demanda de /wp-blog/<slug>.json
-// (texto extraído do site antigo + imagens migradas). O artigo fica em
+// (texto extraído do site antigo + imagens migradas; os releases de 2024 a 2026
+// já vêm em blocos, ver migracao/noticias_releases.py). O artigo fica em
 // português; só a interface é traduzida.
+
+type Bloco =
+  | { tipo: 'titulo' | 'texto' | 'item'; texto: string }
+  | { tipo: 'imagens'; srcs: string[]; legenda?: string }
 
 type PostFull = {
   slug: string; titulo: string; data: string; capa: string | null
   resumo: string; texto: string; imagens: string[]
+  linhaFina?: string; blocos?: Bloco[]
 }
 
 // data AAAA-MM-DD: dd/mm/aaaa em PT/ES, "Mar 5, 2024" em EN (igual ao Blog.tsx)
@@ -78,6 +84,7 @@ export default function BlogPost() {
             ← {t('nav.blog')}
           </Link>
           <h1 className="mt-4 text-4xl text-white md:text-6xl">{post?.titulo ?? '…'}</h1>
+          {post?.linhaFina && <p className="mt-4 text-lg text-white/65 md:text-xl">{post.linhaFina}</p>}
           {post?.data && (
             <p className="mt-3 text-sm uppercase tracking-widest text-white/40">
               {formatarData(post.data, lang)}
@@ -88,10 +95,10 @@ export default function BlogPost() {
 
       <section className="bg-alltak-black pb-20">
         <div className="container-x max-w-4xl">
-          {post?.capa && (
+          {post?.capa && !post.blocos && (
             <img src={post.capa} alt={post.titulo} className="mb-8 w-full border border-white/10 object-cover" />
           )}
-          <article className="space-y-4">
+          {post?.blocos ? <Release blocos={post.blocos} titulo={post.titulo} /> : <article className="space-y-4">
             {blocos.map((b, i) =>
               b.length < 70 && b === b.toUpperCase() ? (
                 <h2 key={i} className="pt-3 font-display text-2xl font-bold uppercase text-white">{b}</h2>
@@ -101,7 +108,7 @@ export default function BlogPost() {
                 <p key={i} className="leading-relaxed text-white/75">{b}</p>
               ),
             )}
-          </article>
+          </article>}
 
           {post && <Compartilhar titulo={post.titulo} />}
           {post && <Duvidas titulo={post.titulo} />}
@@ -123,6 +130,55 @@ export default function BlogPost() {
       </section>
     </>
   )
+}
+
+// endereços citados no texto viram links
+function ComLinks({ texto }: { texto: string }) {
+  return (
+    <>
+      {texto.split(/(https?:\/\/[^\s]+[^\s.,;)])/).map((parte, i) =>
+        i % 2 ? <a key={i} href={parte} target="_blank" rel="noreferrer" className="text-alltak-blue underline">{parte}</a> : parte,
+      )}
+    </>
+  )
+}
+
+// release: blocos na ordem do documento, com as imagens e legendas no lugar
+function Release({ blocos, titulo }: { blocos: Bloco[]; titulo: string }) {
+  const partes: ReactNode[] = []
+  let itens: string[] = []
+  const fechaLista = () => {
+    if (itens.length) {
+      partes.push(
+        <ul key={partes.length} className="list-disc space-y-2 pl-5 leading-relaxed text-white/75 marker:text-alltak-blue">
+          {itens.map((t, i) => <li key={i}><ComLinks texto={t} /></li>)}
+        </ul>,
+      )
+    }
+    itens = []
+  }
+  for (const b of blocos) {
+    if (b.tipo === 'item') { itens.push(b.texto); continue }
+    fechaLista()
+    if (b.tipo === 'titulo') {
+      partes.push(<h2 key={partes.length} className="pt-3 font-display text-2xl font-bold uppercase text-white">{b.texto}</h2>)
+    } else if (b.tipo === 'texto') {
+      partes.push(<p key={partes.length} className="leading-relaxed text-white/75"><ComLinks texto={b.texto} /></p>)
+    } else if (b.tipo === 'imagens') {
+      partes.push(
+        <figure key={partes.length} className="py-2">
+          <div className={b.srcs.length > 1 ? 'grid gap-3 sm:grid-cols-2' : ''}>
+            {b.srcs.map((src) => (
+              <img key={src} src={src} alt={b.legenda ?? titulo} loading="lazy" className="w-full border border-white/10" />
+            ))}
+          </div>
+          {b.legenda && <figcaption className="mt-2 text-sm text-white/50">{b.legenda}</figcaption>}
+        </figure>,
+      )
+    }
+  }
+  fechaLista()
+  return <article className="space-y-4">{partes}</article>
 }
 
 // compartilhar a notícia: e-mail, WhatsApp, LinkedIn e Facebook por link; o
