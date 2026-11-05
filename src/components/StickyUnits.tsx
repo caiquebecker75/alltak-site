@@ -118,13 +118,15 @@ export default function StickyUnits() {
                 </div>
                 <div className="relative hidden md:block">
                   <div
-                    className="frame-trap aspect-[4/3] w-full cursor-hot"
+                    className="group aspect-[4/3] w-full cursor-hot"
                     style={{
                       transform: on ? 'none' : 'translateY(60px) scale(0.92)',
                       transition: `transform ${WIPE_MS}ms cubic-bezier(.2,.7,.1,1)`,
                     }}
                   >
-                    <img src={u.image} alt={`Alltak ${u.name}`} className="img-zoom" loading="lazy" />
+                    {/* arte já recortada em paralelogramo (transparência no arquivo) */}
+                    <img src={u.image} alt={`Alltak ${u.name}`} loading="lazy"
+                      className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.03]" />
                   </div>
                   <div className="absolute -bottom-3 left-8 h-6 w-28 clip-escudo" style={{ background: u.color }} aria-hidden />
                 </div>

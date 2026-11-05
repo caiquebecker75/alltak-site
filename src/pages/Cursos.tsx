@@ -17,7 +17,7 @@ function CardCurso({ c, i }: { c: Curso; i: number }) {
     <Reveal delay={i * 80}>
       <Link to={`/cursos/${c.slug}`} className="group flex h-full flex-col border border-black/10 bg-white transition hover:border-alltak-blue hover:shadow-lg">
         <div className="aspect-[16/9] overflow-hidden bg-alltak-black">
-          <img src={c.imagem} alt={c.nome} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+          <img src={c.card ?? c.imagem} alt={c.nome} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
         </div>
         <div className="flex flex-1 flex-col p-6">
           <p className="font-display text-sm font-bold uppercase tracking-[0.18em] text-alltak-blueDark">{c.chamada}</p>
@@ -222,9 +222,14 @@ function BannerCurso({ c, pai }: { c: Curso; pai?: string }) {
           <p className={`${pai ? 'mt-1' : 'mt-5'} font-display text-5xl font-black uppercase leading-[0.9] text-white md:text-6xl`}>{c.nome}</p>
           <p className="mt-3 font-display text-lg font-bold uppercase tracking-wide text-white/70">{c.chamada}</p>
         </div>
-        <div className="h-56 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[55%]">
-          <img src={c.imagem} alt="" className="h-full w-full object-cover md:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]" />
-        </div>
+        {c.banner ? (
+          // faixa da 75LAB: a foto já vem recortada, com o lado esquerdo transparente
+          <img src={c.banner} alt="" className="h-44 w-full object-cover object-right md:absolute md:inset-0 md:h-full" />
+        ) : (
+          <div className="h-56 md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-[55%]">
+            <img src={c.imagem} alt="" className="h-full w-full object-cover md:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]" />
+          </div>
+        )}
       </div>
     </div>
   )

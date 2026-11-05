@@ -142,11 +142,7 @@ export const DICT: Record<string, Record<Lang, string>> = {
   'banner.linha': { pt: 'Linha', en: 'Line', es: 'Línea' },
   'banner.lancamento': { pt: 'Lançamento', en: 'New release', es: 'Lanzamiento' },
   'banner.confira': { pt: 'Confira', en: 'Check it out', es: 'Descúbrelo' },
-  'banner.evolution.sub': {
-    pt: 'A evolução da personalização automotiva',
-    en: 'The evolution of car customization',
-    es: 'La evolución de la personalización automotriz',
-  },
+  'banner.evolution.sub': { pt: 'Evolution Pro', en: 'Evolution Pro', es: 'Evolution Pro' },
   'banner.evolution.texto': {
     pt: '21 cores metálicas e foscas com efeitos visuais, para projetos únicos em qualquer veículo.',
     en: '21 metallic and matte colors with visual effects, for unique projects on any vehicle.',
@@ -158,10 +154,21 @@ export const DICT: Record<string, Record<Lang, string>> = {
     en: 'The muxarabi lattice in wood, for walls and furniture.',
     es: 'El diseño del muxarabi en madera, para paredes y muebles.',
   },
+  'banner.revestfacil.sub': {
+    pt: 'Revestimento vinílico adesivo',
+    en: 'Self-adhesive vinyl covering',
+    es: 'Revestimiento vinílico adhesivo',
+  },
   'banner.revestfacil.texto': {
     pt: 'Renove sem obra. Paredes, armários e bancadas com uma nova cara.',
     en: 'Renovate with no construction work. Walls, cabinets and countertops with a new look.',
     es: 'Renueva sin obra. Paredes, armarios y encimeras con una nueva cara.',
+  },
+  'banner.signs.sub': { pt: 'Alltak Signs Premium', en: 'Alltak Signs Premium', es: 'Alltak Signs Premium' },
+  'banner.signs.texto': {
+    pt: 'Ideal para aplicações que requerem mais fechamento de cor, moldabilidade e tonalidades vibrantes.',
+    en: 'Ideal for applications that call for better color coverage, conformability and vibrant shades.',
+    es: 'Ideal para aplicaciones que requieren mejor cubrimiento de color, moldeabilidad y tonos vibrantes.',
   },
 
   // ---- footer ----

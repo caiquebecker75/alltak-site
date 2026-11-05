@@ -185,9 +185,3 @@
     }
   }
 }
-
-/* reflexo das faixas do banner Evolution Pro (BannerRoll) */
-@keyframes brilhoEvo {
-  0% { transform: translateX(0); }
-  60%, 100% { transform: translateX(400%); }
-}

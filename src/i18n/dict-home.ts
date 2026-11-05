@@ -73,11 +73,6 @@ export const DICT_HOME: Record<string, Record<Lang, string>> = {
   // ---- carrossel de campanhas (BannerRoll): acessibilidade ----
   'banner.anterior': { pt: 'Banner anterior', en: 'Previous banner', es: 'Banner anterior' },
   'banner.proximo': { pt: 'Próximo banner', en: 'Next banner', es: 'Siguiente banner' },
-  'banner.revestfacil.alt': {
-    pt: 'Alltak RevestFácil · Revestimento vinílico adesivo',
-    en: 'Alltak RevestFácil · Self-adhesive vinyl covering',
-    es: 'Alltak RevestFácil · Revestimiento vinílico adhesivo',
-  },
 
   // ---- carro em SVG ----
   'car.aria': { pt: 'Prévia do veículo envelopado', en: 'Wrapped vehicle preview', es: 'Vista previa del vehículo rotulado' },

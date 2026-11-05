@@ -11,6 +11,8 @@ export type Curso = {
   chamada: string
   resumo: string
   imagem: string // foto do card e do banner (as artes antigas, de 2021, tinham texto embutido)
+  card?: string // foto do card da arte da 75LAB (nov/2026), no lugar de imagem
+  banner?: string // faixa da 75LAB: foto à direita, lado esquerdo transparente para o texto
   modulos?: string[] // slugs dos módulos (Academia)
   pai?: string
   blocos: Bloco[]
@@ -67,6 +69,8 @@ export const CURSOS: Curso[] = [
     chamada: 'Envelopamento automotivo sem mistérios',
     resumo: 'O método Alltak de envelopamento automotivo, criado por Thiago Sossai, em dois módulos: Intermediário e Avançado.',
     imagem: './colors/wraps/18S192M_ap.jpg',
+    card: './assets/2026/academy-academia-card.webp',
+    banner: './assets/2026/academy-academia.webp',
     modulos: ['modulo-intermediario', 'modulo-avancado'],
     blocos: [{ titulo: 'Sobre a Academia', texto: INTRO_ACADEMIA }],
   },
@@ -148,6 +152,8 @@ export const CURSOS: Curso[] = [
     chamada: 'Aprenda envelopamento decorativo com a Alltak',
     resumo: 'Revestimento de paredes, móveis, geladeiras e vidros num ambiente que simula situações reais, para você oferecer tudo o que o revestimento vinílico pode trazer ao design de interiores.',
     imagem: `${UP}/2021/06/envelopamento-decorativo-alltak-decor-aplicacao1.jpg`,
+    card: './assets/2026/academy-decor-card.webp',
+    banner: './assets/2026/academy-decor.webp',
     blocos: [
       {
         titulo: 'Obra limpa',
@@ -202,6 +208,8 @@ export const CURSOS: Curso[] = [
     chamada: 'Workshops gratuitos pelo Brasil',
     resumo: 'A equipe Alltak® viaja pelo Brasil com distribuidores e parceiros, num bate-papo sobre as possibilidades criativas e lucrativas em decoração, comunicação visual e envelopamento automotivo.',
     imagem: `${UP}/2023/09/WhatsApp-Image-2023-09-26-at-17.30.22.jpeg`,
+    card: './assets/2026/academy-experience-card.webp',
+    banner: './assets/2026/academy-experience.webp',
     blocos: [
       {
         titulo: 'Sobre a Alltak Experience',

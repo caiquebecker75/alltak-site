@@ -2,22 +2,13 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import ColorExplorer from '../components/ColorExplorer'
-import { PRODUCT_CATEGORIES, STORE_URL } from '../data/site'
+import { CATEGORY_IMAGE, PRODUCT_CATEGORIES, STORE_URL } from '../data/site'
 import linhas from '../data/wp/linhas.json'
 import { destinoDaLinha } from '../data/familias'
 import { useI18n } from '../i18n'
 
 type LinhaT = { categoria: string; slug: string; nome: string }
 
-const CATEGORY_IMAGE: Record<string, string> = {
-  automotivo: './assets/automotivo_03.avif',
-  arquitetura: './assets/decor_02.avif',
-  impressao: './assets/sign_03.avif',
-  'sign-design': './assets/sign_02.avif',
-  'aplicacoes-tecnicas': './assets/decor_03.avif',
-  'wrap-care': './assets/automotivo_02.avif',
-  acessorios: './assets/decor_01.avif',
-}
 
 export default function Produtos() {
   const { t, tv } = useI18n()
@@ -45,8 +36,9 @@ export default function Produtos() {
             <Reveal key={cat.slug}>
               <div id={`cat-${cat.slug}`} className="grid items-start gap-8 md:grid-cols-5">
                 <div className={`md:col-span-2 ${i % 2 ? 'md:order-2' : ''}`}>
-                  <div className="frame-trap aspect-[4/3] cursor-hot">
-                    <img src={CATEGORY_IMAGE[cat.slug]} alt={tv(cat.name)} loading="lazy" className="img-zoom" />
+                  <div className="group aspect-[1137/895] cursor-hot overflow-hidden">
+                    <img src={CATEGORY_IMAGE[cat.slug]} alt={tv(cat.name)} loading="lazy"
+                      className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.03]" />
                   </div>
                 </div>
                 <div className="md:col-span-3">

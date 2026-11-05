@@ -222,9 +222,9 @@ export default function Home() {
           </Reveal>
           <Reveal delay={140} dir="right">
             <Parallax speed={-0.06}>
-              <div className="frame-trap clip-tz aspect-[4/3] w-full cursor-hot">
-                <img src="./assets/sobre_01.avif" alt={t('home.sobre.imgAlt')} loading="lazy" />
-              </div>
+              {/* arte já recortada em trapézio (transparência no arquivo) */}
+              <img src="./assets/2026/producao-nacional.webp" alt={t('home.sobre.imgAlt')} loading="lazy"
+                className="aspect-[808/637] w-full object-contain" />
             </Parallax>
           </Reveal>
         </div>

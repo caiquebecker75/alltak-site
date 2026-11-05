@@ -67,7 +67,7 @@ export const UNITS: Unit[] = [
     descriptionKey: 'units.wraps.desc',
     description:
       'Materiais para envelopamento e customização veicular, feitos para quem exige acabamento e constância no dia a dia. Um portfólio completo para diferentes estilos e necessidades, com foco em aplicação eficiente e resultado final impecável.',
-    image: './assets/unidades/wraps.jpg',
+    image: './assets/2026/categoria-wraps.webp',
     bg: 'bg-alltak-black',
     accent: 'text-alltak-blue',
     skull: true,
@@ -83,7 +83,7 @@ export const UNITS: Unit[] = [
     descriptionKey: 'units.decor.desc',
     description:
       'Revestimentos vinílicos autoadesivos com diversas famílias, padrões e acabamentos para projetos de interiores. Ideal para renovar superfícies e compor ambientes com praticidade, mantendo um visual realista e um padrão de acabamento consistente do começo ao fim.',
-    image: './assets/unidades/decor.jpg',
+    image: './assets/2026/categoria-decor.webp',
     bg: 'bg-alltak-navy',
     accent: 'text-alltak-blue',
     logo: subDecor,
@@ -97,7 +97,7 @@ export const UNITS: Unit[] = [
     descriptionKey: 'units.signs.desc',
     description:
       'Película de PVC monomérico adesiva de altíssima qualidade, produzida com adesivo acrílico permanente, de corte preciso e fácil aplicação. Indicada para sinalização, propaganda, design, decoração e identificação de frotas, onde se exige precisão, durabilidade, estabilidade e resistência.',
-    image: './assets/unidades/signs.jpg',
+    image: './assets/2026/categoria-signs.webp',
     bg: 'bg-alltak-navy2',
     accent: 'text-alltak-blue',
     logo: subSigns,
@@ -106,6 +106,19 @@ export const UNITS: Unit[] = [
 ]
 
 export type ProductCategory = { name: string; slug: string; items: string[] }
+
+// arte de cada linha de produto (Home e página Produtos): trapézios já
+// recortados (transparência no arquivo), alternando a orientação na ordem de
+// PRODUCT_CATEGORIES (base larga embaixo, depois em cima)
+export const CATEGORY_IMAGE: Record<string, string> = {
+  automotivo: './assets/2026/produtos-automotivo.webp',
+  arquitetura: './assets/2026/produtos-arquitetura.webp',
+  impressao: './assets/2026/produtos-impressao.webp',
+  'sign-design': './assets/2026/produtos-sign-design.webp',
+  'aplicacoes-tecnicas': './assets/2026/produtos-aplicacoes-tecnicas.webp',
+  'wrap-care': './assets/2026/produtos-wrap-care.webp',
+  acessorios: './assets/2026/produtos-acessorios.webp',
+}
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {

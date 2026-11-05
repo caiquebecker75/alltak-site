@@ -1,23 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { PRODUCT_CATEGORIES } from '../data/site'
+import { CATEGORY_IMAGE, PRODUCT_CATEGORIES } from '../data/site'
 import { onScrollChange } from '../lib/onScrollChange'
 import { useI18n } from '../i18n'
 import AvisoIlustrativo from './AvisoIlustrativo'
 
-// As fotos já vêm recortadas em trapézio (transparência no próprio arquivo),
-// alternando a orientação: base larga embaixo, depois base larga em cima.
-// A ordem abaixo segue essa alternância na sequência de PRODUCT_CATEGORIES,
-// para os cards formarem o zigue-zague do formato 01 sem hexágonos.
-const CATEGORY_IMAGE: Record<string, string> = {
-  automotivo: './assets/automotivo_03.avif',
-  arquitetura: './assets/decor_02.avif',
-  impressao: './assets/sign_03.avif',
-  'sign-design': './assets/sign_02.avif',
-  'aplicacoes-tecnicas': './assets/decor_03.avif',
-  'wrap-care': './assets/automotivo_02.avif',
-  acessorios: './assets/decor_01.avif',
-}
 // destino de cada card: segmentos com cartela vão direto para as cores da
 // linha; os demais, para a página do segmento (mesmo formato de Cores)
 const DESTINO: Record<string, string> = {
@@ -28,11 +15,6 @@ const DESTINO: Record<string, string> = {
 }
 const destino = (slug: string) => DESTINO[slug] ?? `/linhas/${slug}`
 
-const RECORTE = {
-  // mesmo contorno do recorte das fotos; aqui só contém o brilho do hover
-  baseLargaEmbaixo: 'polygon(28.5% 0, 71.5% 0, 100% 100%, 0 100%)',
-  baseLargaEmCima: 'polygon(0 0, 100% 0, 71.5% 100%, 28.5% 100%)',
-}
 
 // fração do trecho fixado em que a faixa fica parada no início e no fim
 const PAUSA = 0.12
@@ -91,11 +73,9 @@ export default function HScroll() {
               className="group block w-[72vw] shrink-0 sm:w-[44vw] lg:w-[30vw]"
             >
               {/* alternating trapezoids (format 01), same proportion as the photos */}
-              <div
-                className="frame-trap aspect-[682/537]"
-                style={{ clipPath: i % 2 === 0 ? RECORTE.baseLargaEmbaixo : RECORTE.baseLargaEmCima }}
-              >
-                <img src={CATEGORY_IMAGE[c.slug]} alt={tv(c.name)} loading="lazy" className="opacity-95 group-hover:opacity-100" />
+              <div className="aspect-[1137/895] overflow-hidden">
+                <img src={CATEGORY_IMAGE[c.slug]} alt={tv(c.name)} loading="lazy"
+                  className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.03]" />
               </div>
               {/* texto alinhado ao canto de baixo da foto: no trapézio invertido a
                   base estreita começa em 28,5% da largura */}
