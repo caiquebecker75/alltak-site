@@ -11,11 +11,13 @@ import { useT } from '../i18n'
 
 type Banner = {
   key: string
-  fundo: string // arte de fundo: ./assets/2026/<fundo>.webp (e -1280.webp no celular)
+  fundo: string // arte de fundo: ./assets/2026/rotativo-<fundo>.webp (e -1280.webp);
+  // no celular, ./assets/2026/mobile-<fundo>.webp (9:16, texto no alto)
   acento: string
   acentoTexto?: string // cor do texto do botão sobre o acento
   kicker: string
   titulo: string[]
+  tituloCelular?: string[] // quebra de linha da arte do celular, quando muda
   sub: string
   texto: string
   link: string // rota interna, ou URL externa (abre em nova aba)
@@ -24,28 +26,30 @@ type Banner = {
 const BANNERS: Banner[] = [
   {
     key: 'evolution',
-    fundo: 'rotativo-evolution',
+    fundo: 'evolution',
     acento: '#b8dc2a',
     acentoTexto: '#0b0b0b',
     kicker: 'banner.lancamento',
     titulo: ['Acid Lemon'],
+    tituloCelular: ['Acid', 'Lemon'],
     sub: 'banner.evolution.sub',
     texto: 'banner.evolution.texto',
     link: '/cores?linha=wraps&familia=Evolution%20Pro',
   },
   {
     key: 'revestfacil',
-    fundo: 'rotativo-revestfacil',
+    fundo: 'revestfacil',
     acento: '#2f86ff',
     kicker: 'banner.lancamento',
     titulo: ['Revest Fácil'],
+    tituloCelular: ['Revest', 'Fácil'],
     sub: 'banner.revestfacil.sub',
     texto: 'banner.revestfacil.texto',
     link: '/produtos/revestfacil',
   },
   {
     key: 'muxarabi',
-    fundo: 'rotativo-muxarabi',
+    fundo: 'muxarabi',
     acento: '#c8a66a',
     acentoTexto: '#00205b',
     kicker: 'banner.lancamento',
@@ -56,7 +60,7 @@ const BANNERS: Banner[] = [
   },
   {
     key: 'signs',
-    fundo: 'rotativo-signs',
+    fundo: 'signs',
     acento: '#f4711f',
     kicker: 'banner.lancamento',
     titulo: ['Linha Signs', 'Premium'],
@@ -78,42 +82,45 @@ function Slide({ b, ativo }: { b: Banner; ativo: boolean }) {
       style={{ opacity: ativo ? 1 : 0, pointerEvents: ativo ? 'auto' : 'none', zIndex: ativo ? 1 : 0 }}
       aria-hidden={!ativo}
     >
-      {/* arte de fundo (o lado esquerdo é liso, para o texto), com um leve
-          zoom enquanto o banner está no ar; no celular a arte fica no alto e o
-          texto embaixo, sobre o preto */}
-      <img
-        src={`./assets/2026/${b.fundo}.webp`}
-        srcSet={`./assets/2026/${b.fundo}-1280.webp 1280w, ./assets/2026/${b.fundo}.webp 2560w`}
-        sizes="100vw"
-        alt=""
-        className="absolute inset-x-0 top-0 h-[40%] w-full object-cover object-[80%_center] md:inset-0 md:h-full md:object-right"
-        style={{ transform: ativo ? 'scale(1.04)' : 'scale(1)', transition: `transform ${DURATION + 1200}ms linear`, transformOrigin: 'right center' }}
-      />
+      {/* arte de fundo, com um leve zoom enquanto o banner está no ar: no
+          computador o lado esquerdo é liso, para o texto; no celular, o alto */}
+      <picture>
+        <source media="(max-width: 767px)" srcSet={`./assets/2026/mobile-${b.fundo}.webp`} />
+        <img
+          src={`./assets/2026/rotativo-${b.fundo}.webp`}
+          srcSet={`./assets/2026/rotativo-${b.fundo}-1280.webp 1280w, ./assets/2026/rotativo-${b.fundo}.webp 2560w`}
+          sizes="100vw"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover object-bottom md:object-right"
+          style={{ transform: ativo ? 'scale(1.04)' : 'scale(1)', transition: `transform ${DURATION + 1200}ms linear`, transformOrigin: 'right center' }}
+        />
+      </picture>
       <div className="absolute inset-0">
-        <div className="absolute inset-x-0 top-[28%] h-[12%] bg-gradient-to-b from-transparent to-black md:hidden" aria-hidden />
-
         {/* bloco de texto: mesma posição (fixo pelo topo) e tipografia em todos os
             banners; títulos de 1 ou 2 linhas só mudam onde o bloco termina */}
-        <div className="relative flex h-full flex-col justify-end px-6 pb-16 sm:px-10 md:justify-center md:px-[9.5%] md:pb-0">
-          <div className="flex items-center gap-3 text-[1.1rem] md:text-[clamp(1rem,1.55vw,2.5rem)]">
+        <div className="relative flex h-full flex-col justify-start px-[10%] pt-[12%] md:justify-center md:px-[9.5%] md:pt-0">
+          <div className="flex items-center gap-3 text-[4.6vw] md:text-[clamp(1rem,1.55vw,2.5rem)]">
             <span className="h-[1.1em] w-1.5" style={{ background: b.acento }} aria-hidden />
             <span className="font-display font-light uppercase leading-none tracking-[0.06em]" style={{ color: b.acento }}>
               {t(b.kicker)}
             </span>
           </div>
-          <h3 className="mt-2 font-display text-[2.4rem] font-light md:mt-[0.6vw] md:text-[clamp(2.2rem,4.3vw,6.75rem)] uppercase leading-[0.88] tracking-[0.01em] text-white">
+          <h3 className="mt-[2vw] font-display text-[11.5vw] font-light md:mt-[0.6vw] md:text-[clamp(2.2rem,4.3vw,6.75rem)] uppercase leading-[0.88] tracking-[0.01em] text-white">
             {b.titulo.map((l) => (
-              <span key={l} className="block">{l}</span>
+              <span key={l} className={b.tituloCelular ? 'hidden md:block' : 'block'}>{l}</span>
+            ))}
+            {b.tituloCelular?.map((l) => (
+              <span key={l} className="block md:hidden">{l}</span>
             ))}
           </h3>
-          <div className="mt-2 font-display text-[1rem] font-normal md:mt-[0.8vw] md:text-[clamp(0.95rem,1.35vw,1.9rem)] uppercase tracking-[0.12em]" style={{ color: b.acento }}>
+          <div className="mt-[2.5vw] font-display text-[4.2vw] font-normal md:mt-[0.8vw] md:text-[clamp(0.95rem,1.35vw,1.9rem)] uppercase tracking-[0.12em]" style={{ color: b.acento }}>
             {t(b.sub)}
           </div>
-          <p className="mt-3 max-w-[30rem] font-display text-[1rem] font-light md:mt-[1vw] md:max-w-[33vw] md:text-[clamp(0.95rem,1.4vw,2rem)] uppercase leading-[1.1] tracking-[0.04em] text-white/90">
+          <p className="mt-[2.5vw] max-w-[30rem] font-display text-[3.9vw] font-light md:mt-[1vw] md:max-w-[33vw] md:text-[clamp(0.95rem,1.4vw,2rem)] uppercase leading-[1.1] tracking-[0.04em] text-white/90">
             {t(b.texto)}
           </p>
           {(() => {
-            const cls = 'btn-trapezoid mt-4 self-start !px-7 !py-2.5 md:mt-[2vw]'
+            const cls = 'btn-trapezoid mt-[6vw] self-start !px-7 !py-2.5 md:mt-[2vw]'
             const st = { background: b.acento, color: b.acentoTexto ?? '#fff' }
             const rotulo = `${t('banner.confira')} →`
             return b.link.startsWith('http') ? (
@@ -148,8 +155,9 @@ export default function BannerRoll() {
 
   return (
     <section
-      // no computador, a proporção da arte (3840 × 1200), para o texto cair no lado liso
-      className="relative h-[500px] w-full overflow-hidden bg-black md:aspect-[16/5] md:h-auto"
+      // a proporção da arte (1080 × 1920 no celular, 3840 × 1200 no computador),
+      // para o texto cair na parte lisa
+      className="relative aspect-[9/16] w-full overflow-hidden bg-black md:aspect-[16/5]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

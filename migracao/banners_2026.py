@@ -1,7 +1,8 @@
 """Imagens dos banners e menus do site (75LAB, nov/2026, apresentação "IMAGENS SITE").
 
 Converte as artes em alta da pasta do Drive para o tamanho e o formato do site:
-  - banner rotativo (3840×1200, sem texto: o texto fica no site) → 2560 e 1280 px
+  - banner rotativo (3840×1200, sem texto: o texto fica no site) → 2560 e 1280 px,
+    e a versão do celular (1080×1920, texto no alto)
   - categorias Wraps/Decor/Signs (paralelogramo com transparência)
   - linhas de produto (trapézios alternados com transparência)
   - produção nacional (trapézio com transparência)
@@ -25,6 +26,10 @@ ARTES = {
     'REVEST.jpg': ('rotativo-revestfacil', 2560),
     'ROTATIVO-DECOR.jpg': ('rotativo-muxarabi', 2560),
     'ROTATIVO-SIGNS.jpg': ('rotativo-signs', 2560),
+    'ROTATIVO-MOBILE-EVOLUTION.jpg': ('mobile-evolution', 1080),
+    'ROTATIVO-MOBILE-REVEST.jpg': ('mobile-revestfacil', 1080),
+    'ROTATIVO-MOBILE-DECOR.jpg': ('mobile-muxarabi', 1080),
+    'ROTATIVO-MOBILE-SIGNS.jpg': ('mobile-signs', 1080),
     'CATEGORIA-WRAPS.png': ('categoria-wraps', 1600),
     'CATEGORIA-DECOR.png': ('categoria-decor', 1600),
     'CATEGORIA-SIGNS.png': ('categoria-signs', 1600),
