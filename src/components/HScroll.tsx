@@ -21,16 +21,31 @@ const PAUSA = 0.12
 // margem do container-x (max-w 1240px centralizado, px-5 / sm:px-8)
 const MARGEM = 'max(1.25rem, calc((100vw - 1240px) / 2 + 2rem))'
 
-// Horizontal scroll gallery: the page keeps scrolling vertically while the
-// track slides sideways through the product categories.
+const CELULAR = '(max-width: 767px)'
+
+// Horizontal scroll gallery: on desktop the page keeps scrolling vertically
+// while the track slides sideways through the product categories. On the
+// phone the track is a plain horizontal swipe (the page scroll stays normal).
 export default function HScroll() {
   const wrap = useRef<HTMLDivElement>(null)
   const track = useRef<HTMLDivElement>(null)
   const [x, setX] = useState(0)
   const [pct, setPct] = useState(0)
+  const [celular, setCelular] = useState(() => matchMedia(CELULAR).matches)
   const { t, tv } = useI18n()
 
   useEffect(() => {
+    const mq = matchMedia(CELULAR)
+    const mudou = () => setCelular(mq.matches)
+    mq.addEventListener('change', mudou)
+    return () => mq.removeEventListener('change', mudou)
+  }, [])
+
+  useEffect(() => {
+    if (celular) {
+      setX(0)
+      return
+    }
     return onScrollChange(() => {
       const el = wrap.current
       const tr = track.current
@@ -44,15 +59,23 @@ export default function HScroll() {
       setX(-p * Math.max(0, tr.scrollWidth - innerWidth))
       setPct(p)
     })
-  }, [])
+  }, [celular])
+
+  // celular: a barra de progresso acompanha o deslizar para o lado
+  const aoDeslizar = () => {
+    const tr = track.current
+    if (!tr) return
+    const max = tr.scrollWidth - tr.clientWidth
+    setPct(max > 0 ? tr.scrollLeft / max : 0)
+  }
 
   return (
-    <div ref={wrap} className="relative bg-alltak-cream" style={{ height: '340vh' }}>
-      <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
+    <div ref={wrap} className="relative bg-alltak-cream" style={{ height: celular ? 'auto' : '340vh' }}>
+      <div className={celular ? 'flex flex-col py-16' : 'sticky top-0 flex h-screen flex-col justify-center overflow-hidden'}>
         <div className="container-x mb-8 flex items-end justify-between">
           <div>
             <span className="tag">{t('hscroll.tag')}</span>
-            <h2 className="mt-4 text-5xl text-alltak-black md:text-7xl">{t('hscroll.titulo')}</h2>
+            <h2 className="mt-4 text-[2.6rem] text-alltak-black sm:text-5xl md:text-7xl">{t('hscroll.titulo')}</h2>
           </div>
           <div className="hidden font-display text-sm font-bold uppercase tracking-widest text-alltak-black/50 md:block">
             {String(Math.round(pct * 100)).padStart(3, '0')} / 100 — {t('hscroll.role')}
@@ -61,16 +84,19 @@ export default function HScroll() {
 
         <div
           ref={track}
-          className="flex w-max gap-3 will-change-transform"
+          onScroll={celular ? aoDeslizar : undefined}
+          className={celular
+            ? 'flex snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
+            : 'flex w-max gap-3 will-change-transform'}
           // começa alinhada ao título (mesma margem do container) e termina
           // com a mesma folga à direita
-          style={{ paddingLeft: MARGEM, paddingRight: MARGEM, transform: `translate3d(${x}px,0,0)` }}
+          style={{ paddingLeft: MARGEM, paddingRight: MARGEM, scrollPaddingLeft: MARGEM, transform: celular ? undefined : `translate3d(${x}px,0,0)` }}
         >
           {PRODUCT_CATEGORIES.map((c, i) => (
             <Link
               key={c.slug}
               to={destino(c.slug)}
-              className="group block w-[72vw] shrink-0 sm:w-[44vw] lg:w-[30vw]"
+              className="group block w-[72vw] shrink-0 snap-start sm:w-[44vw] lg:w-[30vw]"
             >
               {/* alternating trapezoids (format 01), same proportion as the photos */}
               <div className="aspect-[1137/895] overflow-hidden">
@@ -94,7 +120,7 @@ export default function HScroll() {
           ))}
 
           {/* end card */}
-          <Link to="/cores" className="group flex w-[60vw] shrink-0 items-center justify-center sm:w-[34vw]">
+          <Link to="/cores" className="group flex w-[60vw] shrink-0 snap-start items-center justify-center sm:w-[34vw]">
             <div className="text-center">
               <div className="font-display text-6xl font-black text-alltak-black md:text-8xl">
                 +300
