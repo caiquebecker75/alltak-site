@@ -48,10 +48,12 @@ for raiz, _, arquivos in os.walk(MIRROR):
 linhas_redir = []
 reds = json.load(open(os.path.join(BASE, 'src/data/wp/redirects.json')))
 for antiga, nova in sorted(reds.items()):
-    if antiga.rstrip('/') == nova:  # mesma rota, só sem a barra: o SPA resolve
-        continue
-    linhas_redir.append(f'{antiga} {nova} 301')
-    linhas_redir.append(f'{antiga.rstrip("/")} {nova} 301')
+    if nova.startswith('/blog'):  # o blog virou /noticias; encurta o salto
+        nova = '/noticias' + nova[len('/blog'):]
+    sem_barra = antiga.rstrip('/') or '/'
+    for origem in dict.fromkeys([antiga, sem_barra]):
+        if origem != nova and origem != '/':
+            linhas_redir.append(f'{origem} {nova} 301')
 for rel in grandes:
     nome = os.path.basename(rel)
     linhas_redir.append(f'/wp-content/uploads/{rel} {GRANDES_RELEASE}/{nome} 301')
@@ -61,13 +63,18 @@ open(os.path.join(DEPLOY, '_redirects'), 'w').write('\n'.join(linhas_redir) + '\
 open(os.path.join(DEPLOY, 'robots.txt'), 'w').write(
     f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
 
-rotas = ['/', '/produtos', '/cores', '/catalogos', '/blog', '/decoracao', '/visualizador',
-         '/onde-comprar', '/instaladores', '/cursos', '/contato', '/sobre',
+rotas = ['/', '/produtos', '/produtos/revestfacil', '/cores', '/downloads', '/noticias',
+         '/decoracao', '/onde-comprar', '/instaladores', '/cursos', '/contato', '/sobre',
          '/politica-de-privacidade', '/transparencia-salarial']
-for l in json.load(open(os.path.join(BASE, 'src/data/wp/linhas.json'))):
+for g in json.load(open(os.path.join(BASE, 'src/data/wp/downloads.json'))):
+    rotas.append(f'/downloads/{g}')
+linhas_wp = json.load(open(os.path.join(BASE, 'src/data/wp/linhas.json')))
+for cat in dict.fromkeys(l['categoria'] for l in linhas_wp):
+    rotas.append(f'/linhas/{cat}')
+for l in linhas_wp:
     rotas.append(f"/produtos/{l['categoria']}/{l['slug']}")
 for p in json.load(open(os.path.join(BASE, 'src/data/wp/blog.json'))):
-    rotas.append(f"/blog/{p['slug']}")
+    rotas.append(f"/noticias/{p['slug']}")
 for arq, linha in [('wraps.json', 'wraps'), ('decor.json', 'decor'), ('signs.json', 'signs')]:
     for c in json.load(open(os.path.join(BASE, 'src/data/catalog', arq))):
         if c.get('code'):
