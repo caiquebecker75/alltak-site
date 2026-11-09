@@ -60,15 +60,36 @@ for raiz, _, arquivos in os.walk(MIRROR):
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         shutil.copy2(src, dest)
 
+# rotas vivas do app (sitemap e proteção contra sombreamento nos redirects)
+rotas = ['/', '/produtos', '/produtos/revestfacil', '/cores', '/downloads', '/noticias',
+         '/decoracao', '/onde-comprar', '/instaladores', '/cursos', '/contato', '/sobre',
+         '/politica-de-privacidade', '/transparencia-salarial']
+for g in json.load(open(os.path.join(BASE, 'src/data/wp/downloads.json'))):
+    rotas.append(f'/downloads/{g}')
+linhas_wp = json.load(open(os.path.join(BASE, 'src/data/wp/linhas.json')))
+for cat in dict.fromkeys(l['categoria'] for l in linhas_wp):
+    rotas.append(f'/linhas/{cat}')
+for l in linhas_wp:
+    rotas.append(f"/produtos/{l['categoria']}/{l['slug']}")
+for p in json.load(open(os.path.join(BASE, 'src/data/wp/blog.json'))):
+    rotas.append(f"/noticias/{p['slug']}")
+for arq, linha in [('wraps.json', 'wraps'), ('decor.json', 'decor'), ('signs.json', 'signs')]:
+    for c in json.load(open(os.path.join(BASE, 'src/data/catalog', arq))):
+        if c.get('code'):
+            rotas.append(f"/cor/{linha}/{c['code']}")
+ROTAS_VIVAS = set(rotas)
+
 # _redirects: URLs antigas -> rotas novas (301); grandes -> release do GitHub
 linhas_redir = []
 reds = json.load(open(os.path.join(BASE, 'src/data/wp/redirects.json')))
 for antiga, nova in sorted(reds.items()):
     if nova.startswith('/blog'):  # o blog virou /noticias; encurta o salto
         nova = '/noticias' + nova[len('/blog'):]
+    if nova == '/catalogos':  # os catálogos viraram /downloads/catalogos
+        nova = '/downloads/instalador' if 'area-do-instalador' in antiga else '/downloads/catalogos'
     sem_barra = antiga.rstrip('/') or '/'
     for origem in dict.fromkeys([antiga, sem_barra]):
-        if origem != nova and origem != '/':
+        if origem != nova and origem != '/' and origem not in ROTAS_VIVAS:
             linhas_redir.append(f'{origem} {nova} 301')
 for rel in grandes:
     nome = os.path.basename(rel)
@@ -87,22 +108,6 @@ open(os.path.join(DEPLOY, '_redirects'), 'w').write('\n'.join(linhas_redir) + '\
 open(os.path.join(DEPLOY, 'robots.txt'), 'w').write(
     f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
 
-rotas = ['/', '/produtos', '/produtos/revestfacil', '/cores', '/downloads', '/noticias',
-         '/decoracao', '/onde-comprar', '/instaladores', '/cursos', '/contato', '/sobre',
-         '/politica-de-privacidade', '/transparencia-salarial']
-for g in json.load(open(os.path.join(BASE, 'src/data/wp/downloads.json'))):
-    rotas.append(f'/downloads/{g}')
-linhas_wp = json.load(open(os.path.join(BASE, 'src/data/wp/linhas.json')))
-for cat in dict.fromkeys(l['categoria'] for l in linhas_wp):
-    rotas.append(f'/linhas/{cat}')
-for l in linhas_wp:
-    rotas.append(f"/produtos/{l['categoria']}/{l['slug']}")
-for p in json.load(open(os.path.join(BASE, 'src/data/wp/blog.json'))):
-    rotas.append(f"/noticias/{p['slug']}")
-for arq, linha in [('wraps.json', 'wraps'), ('decor.json', 'decor'), ('signs.json', 'signs')]:
-    for c in json.load(open(os.path.join(BASE, 'src/data/catalog', arq))):
-        if c.get('code'):
-            rotas.append(f"/cor/{linha}/{c['code']}")
 urls = '\n'.join(f'  <url><loc>{SITE}{r}</loc></url>' for r in dict.fromkeys(rotas))
 open(os.path.join(DEPLOY, 'sitemap.xml'), 'w').write(
     '<?xml version="1.0" encoding="UTF-8"?>\n'
