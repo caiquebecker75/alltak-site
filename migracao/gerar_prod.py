@@ -29,6 +29,22 @@ shutil.rmtree(DEPLOY, ignore_errors=True)
 shutil.copytree(DIST, DEPLOY)
 os.remove(os.path.join(DEPLOY, '404.html'))
 
+# <base href="/">: o fallback SPA serve este index em rotas aninhadas; sem o base,
+# os caminhos relativos ("./wp-uploads/...") dos dados resolveriam contra a rota
+idx = os.path.join(DEPLOY, 'index.html')
+html = open(idx).read()
+if '<base ' not in html:
+    open(idx, 'w').write(html.replace('<head>', '<head>\n    <base href="/">', 1))
+
+# arquivos do próprio dist acima do limite também vão para a release do GitHub
+grandes_dist = []
+for raiz, _, arquivos in os.walk(DEPLOY):
+    for a in arquivos:
+        src = os.path.join(raiz, a)
+        if os.path.getsize(src) > LIMITE:
+            grandes_dist.append((os.path.relpath(src, DEPLOY), src))
+
+
 # espelho de uploads (URLs antigas /wp-content/uploads/... continuam servindo)
 grandes = []
 for raiz, _, arquivos in os.walk(MIRROR):
@@ -57,6 +73,14 @@ for antiga, nova in sorted(reds.items()):
 for rel in grandes:
     nome = os.path.basename(rel)
     linhas_redir.append(f'/wp-content/uploads/{rel} {GRANDES_RELEASE}/{nome} 301')
+subir = []
+for rel, caminho in grandes_dist:
+    destino = os.path.join('/private/tmp/claude-501-grandes', os.path.basename(rel))
+    os.makedirs(os.path.dirname(destino), exist_ok=True)
+    shutil.copy2(caminho, destino)
+    os.remove(caminho)
+    subir.append(destino)
+    linhas_redir.append(f'/{rel} {GRANDES_RELEASE}/{os.path.basename(rel)} 301')
 open(os.path.join(DEPLOY, '_redirects'), 'w').write('\n'.join(linhas_redir) + '\n')
 
 # robots + sitemap
@@ -89,3 +113,7 @@ tam = sum(os.path.getsize(os.path.join(r, a)) for r, _, fs in os.walk(DEPLOY) fo
 print(f'deploy-prod pronto: {n_arq} arquivos, {tam/1e6:.0f} MB')
 print(f'redirects: {len(linhas_redir)} linhas · grandes no GitHub: {grandes}')
 print(f'sitemap: {len(dict.fromkeys(rotas))} URLs')
+if subir:
+    print('SUBIR PARA A RELEASE (gh release upload catalogos --clobber):')
+    for s in subir:
+        print(' ', s)

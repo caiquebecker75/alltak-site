@@ -17,9 +17,11 @@ export default function Produtos() {
       <PageHeader eyebrow={t('prod.eyebrow')} title={t('nav.produtos')}>
         {t('prod.headerSub')}
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href="#cores" className="btn-trapezoid btn-blue !py-2.5 !text-base">
+          {/* Link do router (não <a href="#...">): com <base href="/"> no build de
+              produção, âncora relativa sairia da página */}
+          <Link to="#cores" className="btn-trapezoid btn-blue !py-2.5 !text-base">
             {t('prod.explorarCores')}
-          </a>
+          </Link>
           <a href={STORE_URL} target="_blank" rel="noreferrer" className="btn-trapezoid btn-navy !py-2.5 !text-base">
             {t('prod.comprarStore')}
           </a>
