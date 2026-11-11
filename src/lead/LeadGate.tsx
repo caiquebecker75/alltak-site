@@ -1,10 +1,23 @@
 import { createContext, useCallback, useContext, useState, type ReactNode } from 'react'
-import { useT } from '../i18n'
+import { useI18n } from '../i18n'
 
 // Lead-gated downloads: any download (catalog, logo, manual, technical bulletin)
-// opens a registration form first. On submit the lead is captured and the file
-// is released. Front-end only for now — plug the submit into the Alltak
-// CRM/e-mail endpoint where marked.
+// opens a registration form first. On submit the lead goes to the Alltak sheet
+// (Apps Script na conta marketing@75lab.com.br, que grava na planilha e avisa
+// por e-mail) and the file is released. localStorage é só reserva local.
+
+// Recebedor de leads (planilha "Alltak · Leads do site" + aviso por e-mail)
+const LEADS_ENDPOINT =
+  'https://script.google.com/macros/s/AKfycbxoU0M1aS8V0i7N9VPDrr2hCcg8179fwOvWybZ89CnuK3JoAjLNRdHI30QeZ9gaNW8c/exec'
+
+// Content-Type text/plain: o Apps Script não responde à checagem prévia (CORS)
+const enviarLead = (dados: Record<string, string>) => {
+  try {
+    void fetch(LEADS_ENDPOINT, { method: 'POST', body: JSON.stringify(dados) }).catch(() => null)
+  } catch {
+    /* lead fica na reserva local */
+  }
+}
 
 export type Download = { title: string; url: string; kind?: string }
 export type Lead = {
@@ -26,28 +39,52 @@ const field =
 export function LeadGateProvider({ children }: { children: ReactNode }) {
   const [download, setDownload] = useState<Download | null>(null)
   const [done, setDone] = useState(false)
-  const t = useT()
+  const { lang, t } = useI18n()
 
-  const open = useCallback((d: Download) => {
-    setDone(false)
-    // returning visitors skip the form
-    if (localStorage.getItem(LS_KEY)) {
-      setDownload(d)
-      setDone(true)
-    } else {
-      setDownload(d)
-    }
-  }, [])
+  const open = useCallback(
+    (d: Download) => {
+      setDone(false)
+      // returning visitors skip the form; o download repetido também é registrado
+      const salvo = localStorage.getItem(LS_KEY)
+      if (salvo) {
+        try {
+          const lead = JSON.parse(salvo)
+          if (lead && lead.email) {
+            enviarLead({
+              ...lead,
+              material: d.title,
+              pagina: window.location.pathname,
+              idioma: lang,
+              origem: 'site (retorno)',
+            })
+          }
+        } catch {
+          /* registro antigo sem dados */
+        }
+        setDownload(d)
+        setDone(true)
+      } else {
+        setDownload(d)
+      }
+    },
+    [lang],
+  )
 
   const close = () => setDownload(null)
 
   const submit = (lead: Lead) => {
-    // TODO: enviar para o CRM/e-mail da Alltak (RD Station, HubSpot, etc.)
+    enviarLead({
+      ...lead,
+      material: download?.title ?? '',
+      pagina: window.location.pathname,
+      idioma: lang,
+      origem: 'site',
+    })
     try {
       const prev = JSON.parse(localStorage.getItem('alltak_leads') || '[]')
       prev.push({ ...lead, at: new Date().toISOString(), file: download?.title })
       localStorage.setItem('alltak_leads', JSON.stringify(prev))
-      localStorage.setItem(LS_KEY, '1')
+      localStorage.setItem(LS_KEY, JSON.stringify(lead))
     } catch {
       /* ignore storage errors */
     }
