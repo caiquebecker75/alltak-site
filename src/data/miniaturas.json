@@ -2,7 +2,6 @@
  "./catalogos/catalogo-wraps-2026.pdf": "./downloads/miniaturas/catalogo-wraps-2026.jpg",
  "./catalogos/catalogo-decor-2026.pdf": "./downloads/miniaturas/catalogo-decor-2026.jpg",
  "./catalogos/catalogo-signs-2026.pdf": "./downloads/miniaturas/catalogo-signs-2026.jpg",
- "https://alltak.com.br/wp-content/uploads/2026/09/Catalogo-Digital-Alltak-Evolution-Pro-v2.pdf": "./downloads/miniaturas/catalogo-digital-alltak-evolution-pro-v2.jpg",
  "https://alltak.com.br/wp-content/uploads/2024/11/IWC-Alltak-Catalogo-Virtual.pdf": "./downloads/miniaturas/iwc-alltak-catalogo-virtual.jpg",
  "./wp-uploads/2025/04/Catalogo-Alltak-Tools_2025.pdf": "./downloads/miniaturas/catalogo-alltak-tools-2025.jpg",
  "./wp-uploads/2021/03/Catalogo-Virtual_BannerTak_mar2021.pdf": "./downloads/miniaturas/catalogo-virtual-bannertak-mar2021.jpg",
@@ -24,5 +23,6 @@
  "./wp-uploads/2021/01/manual-de-limpeza-e-conservacao-para-envelopamento-ALLTAK.pdf": "./downloads/miniaturas/manual-de-limpeza-e-conservacao-para-envelopamento-alltak.jpg",
  "./wp-uploads/2021/01/Alltak_PDV_painel_Institucional_300x130cm-scaled-1.jpg": "./downloads/miniaturas/alltak-pdv-painel-institucional-300x130cm-scaled-1.jpg",
  "./wp-uploads/2021/01/Alltak_Painel-Linha-Automotiva_205x120cm-scaled-1.jpg": "./downloads/miniaturas/alltak-painel-linha-automotiva-205x120cm-scaled-1.jpg",
- "./wp-uploads/2021/01/Alltak_Painel-de-cores_automotiva_120x100cm-scaled-1.jpg": "./downloads/miniaturas/alltak-painel-de-cores-automotiva-120x100cm-scaled-1.jpg"
+ "./wp-uploads/2021/01/Alltak_Painel-de-cores_automotiva_120x100cm-scaled-1.jpg": "./downloads/miniaturas/alltak-painel-de-cores-automotiva-120x100cm-scaled-1.jpg",
+ "./catalogos/catalogo-evolution-pro-2026.pdf": "./downloads/miniaturas/catalogo-evolution-pro-2026.jpg"
 }
