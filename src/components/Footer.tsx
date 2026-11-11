@@ -67,7 +67,17 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-sm text-white/40 md:flex-row">
           <span>© {new Date().getFullYear()} Alltak. {t('footer.rights')}</span>
-          <span>{t('footer.credito')}</span>
+          <span>
+            {t('footer.credito')}{' '}
+            <a
+              href="https://75lab.com.br"
+              target="_blank"
+              rel="noreferrer"
+              className="font-display font-bold uppercase tracking-wide text-white/70 transition hover:text-alltak-blue"
+            >
+              75 LAB
+            </a>
+          </span>
         </div>
       </div>
     </footer>

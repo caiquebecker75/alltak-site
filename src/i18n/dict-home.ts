@@ -107,9 +107,9 @@ export const DICT_HOME: Record<string, Record<Lang, string>> = {
   'footer.privacidade': { pt: 'Política de Privacidade', en: 'Privacy Policy', es: 'Política de Privacidad' },
   'footer.transparencia': { pt: 'Relatório de Transparência Salarial', en: 'Pay Transparency Report', es: 'Informe de Transparencia Salarial' },
   'footer.credito': {
-    pt: 'Site institucional · reconstrução 75 LAB',
-    en: 'Corporate website · rebuilt by 75 LAB',
-    es: 'Sitio institucional · reconstrucción 75 LAB',
+    pt: 'Site desenvolvido pela',
+    en: 'Website developed by',
+    es: 'Sitio desarrollado por',
   },
 
   // ---- WhatsApp ----
