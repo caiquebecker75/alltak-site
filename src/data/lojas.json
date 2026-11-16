@@ -479,47 +479,11 @@
  {
   "uf": "CE",
   "estado": "Ceará",
-  "cidade": "Juazeiro do Norte",
-  "empresa": "RICARDO SUPRIMENTOS",
-  "endereco": "Rua São Pedro, 1874",
-  "bairro": "Salesianos",
-  "telefone": "85 99929-6810"
- },
- {
-  "uf": "CE",
-  "estado": "Ceará",
-  "cidade": "Juazeiro do Norte",
-  "empresa": "VIA SILK",
-  "endereco": "Rua José Marrocos, 598",
-  "bairro": "Salesianos",
-  "telefone": "85 3512-9186"
- },
- {
-  "uf": "CE",
-  "estado": "Ceará",
-  "cidade": "Juazeiro do Norte",
-  "empresa": "VIA SILK",
-  "endereco": "Rua Leão XIII, 292",
-  "bairro": "Salesianos",
-  "telefone": "88 3512-9639"
- },
- {
-  "uf": "CE",
-  "estado": "Ceará",
   "cidade": "Sobral",
   "empresa": "ARTE PLAST",
   "endereco": "Rua Dom José Tupinanba da Frota, 11613",
   "bairro": "Centro",
   "telefone": "88 3611-2240"
- },
- {
-  "uf": "CE",
-  "estado": "Ceará",
-  "cidade": "Sobral",
-  "empresa": "RICARDO SUPRIMENTOS",
-  "endereco": "Rua Conselheiro Rodrigues Junior, 257",
-  "bairro": "Centro",
-  "telefone": "88 3613-2092"
  },
  {
   "uf": "CE",
@@ -1452,6 +1416,15 @@
   "uf": "PE",
   "estado": "Pernambuco",
   "cidade": "Recife",
+  "empresa": "COLORSIGN",
+  "endereco": "Av. Marechal Mascarenhas de Morais - CEP 51170-000",
+  "bairro": "",
+  "telefone": "81 3072-5559"
+ },
+ {
+  "uf": "PE",
+  "estado": "Pernambuco",
+  "cidade": "Recife",
   "empresa": "NEW CONTROL",
   "endereco": "Rua Conselheiro Teodoro, 228",
   "bairro": "Zumbi",
@@ -1663,6 +1636,15 @@
   "endereco": "Av. Doutor João Medeiros Filho, 3885",
   "bairro": "Pajucara",
   "telefone": "84 2136-4865"
+ },
+ {
+  "uf": "RN",
+  "estado": "Rio Grande do Norte",
+  "cidade": "Parnamirim",
+  "empresa": "POTISIGNS",
+  "endereco": "Av. Piloto Pereira Tim, 2756 - Loja 02",
+  "bairro": "",
+  "telefone": "84 99369-4085"
  },
  {
   "uf": "RS",
@@ -2433,6 +2415,15 @@
   "uf": "SP",
   "estado": "São Paulo",
   "cidade": "São José do Rio Preto",
+  "empresa": "ANVIBRAS",
+  "endereco": "Av. Governador Adhemar P. de Barros, 1100 - CEP 15070-560",
+  "bairro": "",
+  "telefone": "17 3215-2725"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São José do Rio Preto",
   "empresa": "EMPÓRIO DO ADESIVO",
   "endereco": "Rua Saldanha Marinho, 2302",
   "bairro": "Boa Vista",
@@ -2478,15 +2469,6 @@
   "uf": "SP",
   "estado": "São Paulo",
   "cidade": "São Paulo",
-  "empresa": "Alia Decor",
-  "endereco": "Rua Monsenhor Anacleto, 65",
-  "bairro": "Brás",
-  "telefone": "11 3313-3221"
- },
- {
-  "uf": "SP",
-  "estado": "São Paulo",
-  "cidade": "São Paulo",
   "empresa": "ANARIE BRASIL",
   "endereco": "Rua das Imbiras, 117",
   "bairro": "Tucuruvi",
@@ -2500,6 +2482,15 @@
   "endereco": "Avenida Rangel Pestana, 1356",
   "bairro": "Brás",
   "telefone": "(11) 94534-7801"
+ },
+ {
+  "uf": "SP",
+  "estado": "São Paulo",
+  "cidade": "São Paulo",
+  "empresa": "Alia Decor",
+  "endereco": "Rua Monsenhor Anacleto, 65",
+  "bairro": "Brás",
+  "telefone": "11 3313-3221"
  },
  {
   "uf": "SP",
@@ -2595,7 +2586,7 @@
   "uf": "SP",
   "estado": "São Paulo",
   "cidade": "São Paulo",
-  "empresa": "REDE SIGN",
+  "empresa": "POTISIGN",
   "endereco": "Rua Eulália, 115",
   "bairro": "Santana",
   "telefone": "11 94769-6964"

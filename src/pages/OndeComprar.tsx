@@ -15,6 +15,13 @@ const ESTADOS = Array.from(new Map(LOJAS.map((l) => [l.uf, l.estado])).entries()
   .map(([uf, estado]) => ({ uf, estado, n: LOJAS.filter((l) => l.uf === uf).length }))
   .sort((a, b) => a.uf.localeCompare(b.uf))
 
+// Distribuidores fora do Brasil (pedido pós-lançamento de 16/11)
+const INTERNACIONAIS = [
+  { pais: 'Paraguai', cidade: 'Assunção', empresa: 'Serimax S.R.L', endereco: 'Acahay, 226 - Ruta Trancha', telefone: '+595 21 237-6979', whatsapp: '595212376979' },
+  { pais: 'Uruguai', cidade: 'Montevidéu', empresa: 'Reformulart', endereco: 'La Paz, 2033', telefone: '+598 92 488-728', whatsapp: '59892488728' },
+  { pais: 'Argentina', cidade: 'Buenos Aires', empresa: 'Decortak', endereco: 'Leiva 4487 1A, Chacarita - Caba', telefone: '+54 9 11 2477-1797', whatsapp: '' },
+]
+
 // "21 3587-9004/3587-9005" -> link para o primeiro número, com DDD
 function telLink(tel: string): string {
   const [primeiro] = tel.split('/')
@@ -120,6 +127,43 @@ export default function OndeComprar() {
               ))}
             </div>
           )}
+
+          {/* Lojas em outros países */}
+          <div className="mt-14 border-t border-black/10 pt-8">
+            <h2 className="text-3xl md:text-4xl">{t('onde.outrosPaises')}</h2>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {INTERNACIONAIS.map((l, i) => (
+                <Reveal key={l.empresa} delay={i * 50}>
+                  <div className="flex h-full flex-col border border-black/10 bg-white p-5">
+                    <p className="font-display text-sm font-bold uppercase tracking-[0.18em] text-alltak-blueDark">
+                      {l.pais}{l.cidade ? ` · ${l.cidade}` : ''}
+                    </p>
+                    <h3 className="mt-1 font-display text-2xl font-bold uppercase leading-tight">{l.empresa}</h3>
+                    <p className="mt-2 text-base text-alltak-black/70">{l.endereco}</p>
+                    <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-4">
+                      {l.whatsapp ? (
+                        <a href={`https://wa.me/${l.whatsapp}`} target="_blank" rel="noreferrer"
+                          className="text-base font-semibold text-alltak-black hover:text-alltak-blueDark">
+                          {l.telefone} · WhatsApp
+                        </a>
+                      ) : (
+                        <a href={`tel:${l.telefone.replace(/[^\d+]/g, '')}`}
+                          className="text-base font-semibold text-alltak-black hover:text-alltak-blueDark">
+                          {l.telefone}
+                        </a>
+                      )}
+                      <a
+                        href={`https://www.google.com/maps/search/${encodeURIComponent(`${l.empresa}, ${l.endereco}, ${l.cidade}, ${l.pais}`)}`}
+                        target="_blank" rel="noreferrer"
+                        className="font-display text-base font-bold uppercase tracking-wide text-alltak-blueDark hover:text-alltak-blue">
+                        {t('onde.verMapa')} ↗
+                      </a>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
 
           <div className="mt-14 flex flex-wrap items-center gap-4 border-t border-black/10 pt-8">
             <span className="font-display text-2xl font-bold uppercase">{t('onde.comprarOnline')}</span>

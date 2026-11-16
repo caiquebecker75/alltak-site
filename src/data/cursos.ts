@@ -31,7 +31,7 @@ const LOCAL_ALLTAK = 'Estúdio de Envelopamento Alltak · Rua Tamotsu Iwasse, 12
 
 const INTRO_ACADEMIA = [
   'A Alltak® tornou-se referência quando o assunto é envelopamento automotivo. Por isso, há alguns anos vem realizando um trabalho focado na formação e na qualificação de profissionais para este segmento, viajando o país com workshops e cursos para que cada vez mais pessoas que querem ingressar no ramo, ou que já estão no mercado, possam oferecer o melhor serviço ao cliente, entendendo as necessidades e as dificuldades dos instaladores e das empresas em capacitar a sua equipe.',
-  'Baseado no método criado por Thiago Sossai (Instrutor Certificado PRO EXPERT®), criamos a Academia de Envelopamento Automotivo Alltak®: um curso moderno e dinâmico, com uma visão geral de todos os aspectos envolvidos no envelopamento automotivo, do equilíbrio entre qualidade, durabilidade e eficiência.',
+  'Criada pela ALLTAK ACADEMY, a Academia de Envelopamento Automotivo Alltak® é um curso moderno e dinâmico, com uma visão geral de todos os aspectos envolvidos no envelopamento automotivo, do equilíbrio entre qualidade, durabilidade e eficiência.',
 ]
 
 const MERCADO_E_METODO: Bloco[] = [
@@ -67,7 +67,7 @@ export const CURSOS: Curso[] = [
     slug: 'academia-de-envelopamento',
     nome: 'Academia de Envelopamento',
     chamada: 'Envelopamento automotivo sem mistérios',
-    resumo: 'O método Alltak de envelopamento automotivo, criado por Thiago Sossai, em dois módulos: Intermediário e Avançado.',
+    resumo: 'O método Alltak de envelopamento automotivo, criado pela ALLTAK ACADEMY, em dois módulos: Intermediário e Avançado.',
     imagem: './colors/wraps/18S192M_ap.jpg',
     card: './assets/2026/academy-academia-card.webp',
     banner: './assets/2026/academy-academia.webp',

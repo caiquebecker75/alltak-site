@@ -185,6 +185,7 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
     es: 'Ninguna tienda encontrada. Contacta a Alltak para indicarte el distribuidor más cercano.',
   },
   'onde.comprarOnline': { pt: 'Prefere comprar online?', en: 'Prefer to buy online?', es: '¿Prefieres comprar online?' },
+  'onde.outrosPaises': { pt: 'Lojas em outros países', en: 'Stores in other countries', es: 'Tiendas en otros países' },
 
   // ---- Instaladores ----
   'inst.eyebrow': { pt: 'Encontre um instalador', en: 'Find an installer', es: 'Encuentra un instalador' },
