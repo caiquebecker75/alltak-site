@@ -38,6 +38,9 @@ for path in pags: conteudo_por_path.add(path)
 for e in evs: conteudo_por_path.add(e["url_antiga"])
 conteudo_por_path.add("/events/")  # hub de eventos: itens individuais em eventos.json
 
+# linhas tiradas do ar a pedido da Alltak (não precisam de conteúdo, só de redirect)
+REMOVIDAS_A_PEDIDO = {"/produtos/arquitetura/basicas/"}  # Básicas saiu em 03/11/2026
+
 pend_rota, pend_cont, mortas_origem = [], [], []
 total = 0
 for tipo in ("paginas", "posts", "eventos"):
@@ -55,7 +58,8 @@ for tipo in ("paginas", "posts", "eventos"):
                 pend_cont.append((path, f"crawl: {meta.get('status')}"))
             continue
         tem_rota = path in redirects or path.rstrip("/") + "/" in redirects
-        tem_cont = path in conteudo_por_path or path.rstrip("/") + "/" in conteudo_por_path
+        tem_cont = (path in conteudo_por_path or path.rstrip("/") + "/" in conteudo_por_path
+                    or path.rstrip("/") + "/" in REMOVIDAS_A_PEDIDO)
         if not tem_rota: pend_rota.append(path)
         if not tem_cont: pend_cont.append((path, "sem conteúdo preservado"))
 
