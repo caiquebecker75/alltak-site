@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Reveal from '../components/Reveal'
 import lojas from '../data/lojas.json'
+import internacionais from '../data/lojas-internacionais.json'
 import { STORE_URL } from '../data/site'
 import { useT } from '../i18n'
 
@@ -15,12 +16,8 @@ const ESTADOS = Array.from(new Map(LOJAS.map((l) => [l.uf, l.estado])).entries()
   .map(([uf, estado]) => ({ uf, estado, n: LOJAS.filter((l) => l.uf === uf).length }))
   .sort((a, b) => a.uf.localeCompare(b.uf))
 
-// Distribuidores fora do Brasil (pedido pós-lançamento de 16/11)
-const INTERNACIONAIS = [
-  { pais: 'Paraguai', cidade: 'Assunção', empresa: 'Serimax S.R.L', endereco: 'Acahay, 226 - Ruta Trancha', telefone: '+595 21 237-6979', whatsapp: '595212376979' },
-  { pais: 'Uruguai', cidade: 'Montevidéu', empresa: 'Reformulart', endereco: 'La Paz, 2033', telefone: '+598 92 488-728', whatsapp: '59892488728' },
-  { pais: 'Argentina', cidade: 'Buenos Aires', empresa: 'Decortak', endereco: 'Leiva 4487 1A, Chacarita - Caba', telefone: '+54 9 11 2477-1797', whatsapp: '' },
-]
+// Distribuidores fora do Brasil: editáveis em src/data/lojas-internacionais.json
+const INTERNACIONAIS = internacionais as { pais: string; cidade: string; empresa: string; endereco: string; telefone: string; whatsapp: string }[]
 
 // "21 3587-9004/3587-9005" -> link para o primeiro número, com DDD
 function telLink(tel: string): string {
