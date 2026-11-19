@@ -33,7 +33,8 @@ export const NAV: NavItem[] = [
   { label: 'Cursos', tkey: 'nav.cursos', to: '/cursos' },
   { label: 'Downloads', tkey: 'nav.downloads', to: '/downloads' },
   { label: 'Blog', tkey: 'nav.blog', to: '/noticias' },
-  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre', sub: { tkey: 'transp.titulo', to: '/transparencia-salarial' } },
+  // Transparência Salarial saiu do menu (pedido do Marcelo, 19/11): vive dentro da página Sobre Nós
+  { label: 'Sobre Nós', tkey: 'nav.sobre', to: '/sobre' },
   { label: 'Contato', tkey: 'nav.contato', to: '/contato' },
 ]
 

@@ -160,8 +160,17 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* Transparência salarial: sem destaque (pedido pós-lançamento de 16/11);
-          o acesso fica pelo link do rodapé e pela rota /transparencia-salarial */}
+      {/* Transparência salarial: dentro da página Sobre Nós (pedido do Marcelo,
+          19/11), sem destaque no menu */}
+      <section className="bg-alltak-black pt-16 md:pt-20">
+        <div className="container-x flex flex-col items-start justify-between gap-6 border border-white/10 bg-alltak-coal p-8 md:flex-row md:items-center">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl text-white md:text-4xl">{t('transp.titulo')}</h2>
+            <p className="mt-2 text-white/60">{t('transp.headerSub')}</p>
+          </div>
+          <Link to="/transparencia-salarial" className="btn-trapezoid btn-outline shrink-0">{t('sobre.transpVer')}</Link>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="bg-alltak-black py-16 md:py-20">
