@@ -186,6 +186,7 @@ export const DICT_PAGINAS: Record<string, Record<Lang, string>> = {
   },
   'onde.comprarOnline': { pt: 'Prefere comprar online?', en: 'Prefer to buy online?', es: '¿Prefieres comprar online?' },
   'onde.outrosPaises': { pt: 'Lojas em outros países', en: 'Stores in other countries', es: 'Tiendas en otros países' },
+  'onde.btnOutros': { pt: 'Outros Países', en: 'Other Countries', es: 'Otros Países' },
 
   // ---- Instaladores ----
   'inst.eyebrow': { pt: 'Encontre um instalador', en: 'Find an installer', es: 'Encuentra un instalador' },

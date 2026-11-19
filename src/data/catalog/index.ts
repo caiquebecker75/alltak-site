@@ -88,6 +88,29 @@ export const LINES = [
 const ORDEM_DECOR = ['Kroma', 'Wood', 'Estampa', 'Azulejos', 'Cristais', 'Pedras', 'Piso Decor']
 const posicao = (f: string) => (ORDEM_DECOR.includes(f) ? ORDEM_DECOR.indexOf(f) : ORDEM_DECOR.length)
 
+
+// Boletim técnico da cor: deriva da linha correspondente em linhas.json,
+// para o botão da página da cor baixar o PDF real (pedido do Marcelo, rev2).
+import linhasWp from '../wp/linhas.json'
+
+const FAMILIA_PARA_SLUG: Record<string, string> = {
+  carbon: 'carbon', krusher: 'krusher', satin: 'satin', ultra: 'ultra',
+  fx: 'fx', grunge: 'fx', jateado: 'jateado', 'evolution pro': 'evolution-pro',
+  kroma: 'kroma', wood: 'wood', tijolo: 'tijolo',
+  color: 'color', premium: 'premium', signs: 'color',
+}
+
+export function boletimDaCor(c: Color): string | null {
+  const fam = (c.family || '').toLowerCase()
+  let slug = FAMILIA_PARA_SLUG[fam]
+  // Decor sem linha própria (Mármore, Concreto, Deck, Metrô...) usa o boletim geral Decor
+  if (!slug && c.line === 'decor') slug = 'azulejo'
+  if (!slug && c.line === 'signs') slug = 'color'
+  if (!slug) return null
+  const linha = (linhasWp as { slug: string; boletins: string[] }[]).find((l) => l.slug === slug)
+  return linha?.boletins[0] ?? null
+}
+
 export function familiesFor(line: string): string[] {
   const set = new Set<string>()
   COLORS.filter((c) => line === 'all' || c.line === line).forEach((c) => set.add(c.family))

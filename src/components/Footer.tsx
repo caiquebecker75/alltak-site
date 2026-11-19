@@ -21,6 +21,12 @@ export default function Footer() {
         <div className="md:col-span-2">
           <Logo className="h-9" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">{t('footer.tagline')}</p>
+          {/* endereço e telefone no site (pedido do Marcelo, rev2 de 19/11) */}
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
+            Rua Tamotsu Iwasse, 1273 · Vila Nova Bonsucesso<br />
+            Guarulhos · SP · CEP 07176-000<br />
+            <a href="tel:+551139885022" className="hover:text-white">(11) 3988-5022</a>
+          </p>
           <div className="mt-5 flex gap-3">
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-alltak-blue">
               Instagram

@@ -70,8 +70,16 @@ export default function OndeComprar() {
                 {e.uf}
               </button>
             ))}
+            {/* atalho para a caixa internacional (pedido do Marcelo, rev2) */}
+            <button onClick={() => setUf('outros')} aria-pressed={uf === 'outros'}
+              className={`px-4 py-2 font-display text-base font-bold uppercase tracking-wide transition ${
+                uf === 'outros' ? 'bg-alltak-blue text-white' : 'bg-white text-alltak-black hover:bg-black/5'
+              }`}>
+              {t('onde.btnOutros')}
+            </button>
           </div>
 
+          {uf !== 'outros' && (
           <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
             <input value={busca} onChange={(e) => setBusca(e.target.value)} placeholder={t('onde.buscar')}
               className="w-full border border-black/15 bg-white px-4 py-2.5 text-base text-alltak-black outline-none placeholder:text-alltak-black/40 focus:border-alltak-blue sm:max-w-md" />
@@ -79,8 +87,9 @@ export default function OndeComprar() {
               {total} {t(total === 1 ? 'onde.loja' : 'onde.lojas')}
             </span>
           </div>
+          )}
 
-          {total === 0 ? (
+          {uf === 'outros' ? null : total === 0 ? (
             <p className="mt-10 max-w-xl text-alltak-black/70">
               {t('onde.nenhuma')}{' '}
               <Link to="/contato" className="font-semibold text-alltak-blueDark underline-offset-2 hover:underline">{t('nav.contato')} →</Link>
@@ -126,7 +135,7 @@ export default function OndeComprar() {
           )}
 
           {/* Lojas em outros países */}
-          <div className="mt-14 border-t border-black/10 pt-8">
+          <div className={uf === 'outros' ? 'mt-10' : 'mt-14 border-t border-black/10 pt-8'}>
             <h2 className="text-3xl md:text-4xl">{t('onde.outrosPaises')}</h2>
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {INTERNACIONAIS.map((l, i) => (

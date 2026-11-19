@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { previaAtiva } from '../lib/previa'
-import { findColor, relatedColors, colorSlug, codigoVisivel, type Color } from '../data/catalog'
+import { findColor, relatedColors, colorSlug, codigoVisivel, boletimDaCor, type Color } from '../data/catalog'
 import { useLeadGate } from '../lead/LeadGate'
 import { STORE_URL } from '../data/site'
 import { useI18n } from '../i18n'
@@ -399,12 +399,15 @@ export default function CorDetalhe() {
             )}
 
             <div className="mt-6 flex flex-col gap-2.5">
-              <button
-                onClick={() => open({ title: `${t('cor.baixarBoletim').replace(' ↓', '')} · ${color.name} (${color.code})`, url: '#', kind: 'PDF' })}
-                className="btn-trapezoid btn-blue justify-center !text-base"
-              >
-                {t('cor.baixarBoletim')}
-              </button>
+              {/* baixa o boletim REAL da linha da cor; sem boletim conhecido, o botão não aparece */}
+              {boletimDaCor(color) && (
+                <button
+                  onClick={() => open({ title: `${t('cor.baixarBoletim').replace(' ↓', '')} · ${color.name} (${color.code})`, url: boletimDaCor(color)!, kind: 'PDF' })}
+                  className="btn-trapezoid btn-blue justify-center !text-base"
+                >
+                  {t('cor.baixarBoletim')}
+                </button>
+              )}
               <button
                 onClick={() => baixar(principal?.src ?? color.swatch, `alltak-${color.code}.jpg`)}
                 className="btn-trapezoid btn-navy justify-center !text-base"
